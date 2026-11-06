@@ -1,0 +1,65 @@
+[
+  {
+    "id": "warning-demo-789",
+    "text": "超时了，这是第七百八十九次警告！",
+    "parts": [
+      "warning-prefix",
+      "numeral-7",
+      "numeral-100",
+      "numeral-8",
+      "numeral-10",
+      "numeral-9",
+      "warning-suffix"
+    ],
+    "duration": 5.402,
+    "heard": "超时啦 这是第七百八十九次警告",
+    "phoneticMatch": 0.929,
+    "peak": 0.8985
+  },
+  {
+    "id": "warning-demo-6000",
+    "text": "超时了，这是第六千次警告！",
+    "parts": [
+      "warning-prefix",
+      "numeral-6",
+      "numeral-1000",
+      "warning-suffix"
+    ],
+    "duration": 3.572,
+    "heard": "超时啦 真是第六千次警告",
+    "phoneticMatch": 0.818,
+    "peak": 0.8985
+  },
+  {
+    "id": "warning-demo-10001",
+    "text": "超时了，这是第一万零一次警告！",
+    "parts": [
+      "warning-prefix",
+      "countdown-1",
+      "numeral-10000",
+      "numeral-0",
+      "countdown-1",
+      "warning-suffix"
+    ],
+    "duration": 4.282,
+    "heard": "超時啦!這是第一萬零一刺警告!",
+    "phoneticMatch": 0.923,
+    "peak": 0.8985
+  },
+  {
+    "id": "warning-demo-100000001",
+    "text": "超时了，这是第一亿零一次警告！",
+    "parts": [
+      "warning-prefix",
+      "countdown-1",
+      "numeral-100000000",
+      "numeral-0",
+      "countdown-1",
+      "warning-suffix"
+    ],
+    "duration": 4.553,
+    "heard": "超時啦,這是第一,一,零,一,四,請告",
+    "phoneticMatch": 0.769,
+    "peak": 0.9009
+  }
+]

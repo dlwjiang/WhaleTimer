@@ -1,0 +1,11 @@
+Use case: identity-preserve. Asset type: web timer app sprite expression sheet.
+Image 1 is the approved character reference. Create EXACTLY SIX full-body variants of this exact same blue-haired chibi HUMAN maid with whale tail. Preserve design faithfully: long cobalt blue hair with cyan tips, curved ahoge, white frilled headband, blue bow, enormous blue eyes, navy dress, white frilled apron with blue whale emblem, gold buttons and hem embroidery, white stockings, navy shoes, large whale tail curving to viewer right. High fidelity crisp pixel art matching the reference.
+Canvas: 3:2 landscape divided into EXACTLY 3 columns and 2 rows of equal square cells. Thin solid black straight separator lines and outer border, 8 pixels thick. Fully transparent actual alpha inside cells, NO painted checkerboard, scenery or shadow. Every cell centered at identical scale, same front 3/4 camera, whole body from ahoge tip to feet and full whale tail, generous transparent padding, feet on exactly the same baseline. Nothing overlaps cell borders.
+Cells in row-major order:
+1 row 1 col 1: idle — calm friendly small smile, right hand on waist, left hand open at side.
+2 row 1 col 2: happy — beaming open smile, happy upturned eyebrows, both hands excitedly near chest.
+3 row 1 col 3: cute — eyes closed in sweet crescent smile, cheeks lightly blushing, hands clasped sweetly at chest.
+4 row 2 col 1: angry — furrowed eyebrows, blue eyes open, cheeks puffed, both hands firmly on hips; stern but adorable.
+5 row 2 col 2: frustrated — exasperated pout, lowered brows, one hand at forehead and other on hip.
+6 row 2 col 3: bell — calling attention with open mouth, holding and ringing a SMALL GOLDEN HANDBELL in left hand at shoulder height, right hand on hip.
+Exactly six figures. Maintain identical character proportions, hair lengths, uniform and palette. NO wand, pointer, weapon, text, numbers, captions, watermark, extra characters or other props. The bell is exclusive to cell 6. Crisp pixel clusters and deliberate pixelated contours; avoid smooth vector/cartoon rendering.

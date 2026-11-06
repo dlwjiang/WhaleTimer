@@ -1,0 +1,89 @@
+[
+  {
+    "id": "warning-demo-11",
+    "text": "超时了，这是第十一次警告！",
+    "parts": [
+      "warning-prefix",
+      "numeral-10",
+      "countdown-1",
+      "warning-suffix"
+    ],
+    "duration": 3.704
+  },
+  {
+    "id": "warning-demo-21",
+    "text": "超时了，这是第二十一次警告！",
+    "parts": [
+      "warning-prefix",
+      "countdown-2",
+      "numeral-10",
+      "countdown-1",
+      "warning-suffix"
+    ],
+    "duration": 4.312
+  },
+  {
+    "id": "warning-demo-101",
+    "text": "超时了，这是第一百零一次警告！",
+    "parts": [
+      "warning-prefix",
+      "countdown-1",
+      "numeral-100",
+      "numeral-0",
+      "countdown-1",
+      "warning-suffix"
+    ],
+    "duration": 4.853
+  },
+  {
+    "id": "warning-demo-789",
+    "text": "超时了，这是第七百八十九次警告！",
+    "parts": [
+      "warning-prefix",
+      "numeral-7",
+      "numeral-100",
+      "numeral-8",
+      "numeral-10",
+      "numeral-9",
+      "warning-suffix"
+    ],
+    "duration": 5.122
+  },
+  {
+    "id": "warning-demo-6000",
+    "text": "超时了，这是第六千次警告！",
+    "parts": [
+      "warning-prefix",
+      "numeral-6",
+      "numeral-1000",
+      "warning-suffix"
+    ],
+    "duration": 3.67
+  },
+  {
+    "id": "warning-demo-10001",
+    "text": "超时了，这是第一万零一次警告！",
+    "parts": [
+      "warning-prefix",
+      "countdown-1",
+      "numeral-10000",
+      "numeral-0",
+      "countdown-1",
+      "warning-suffix"
+    ],
+    "duration": 5.111
+  },
+  {
+    "id": "warning-demo-100000001",
+    "text": "超时了，这是第一亿零一次警告！",
+    "parts": [
+      "warning-prefix",
+      "countdown-1",
+      "numeral-100000000",
+      "numeral-0",
+      "countdown-1",
+      "warning-suffix"
+    ],
+    "duration": 5.07
+  }
+]

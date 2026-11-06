@@ -1,0 +1,31 @@
+{
+  "duration": 5,
+  "text": "五、四、三、二、一",
+  "clips": [
+    {
+      "digit": 5,
+      "startsAt": 0,
+      "duration": 0.742
+    },
+    {
+      "digit": 4,
+      "startsAt": 1,
+      "duration": 0.739
+    },
+    {
+      "digit": 3,
+      "startsAt": 2,
+      "duration": 0.617
+    },
+    {
+      "digit": 2,
+      "startsAt": 3,
+      "duration": 0.608
+    },
+    {
+      "digit": 1,
+      "startsAt": 4,
+      "duration": 0.722
+    }
+  ]
+}

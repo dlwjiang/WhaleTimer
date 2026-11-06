@@ -1,0 +1,27 @@
+{
+  "asrModel": "Systran/faster-whisper-medium (locally cached, offline)",
+  "recognizerSettings": {
+    "language": "zh",
+    "condition_on_previous_text": false,
+    "vad_filter": false,
+    "silencePaddingSeconds": 0.5,
+    "inputSampleRate": 16000
+  },
+  "checkedClips": 17,
+  "exactPhoneticMatches": 12,
+  "minimumPhoneticMatch": 0.9,
+  "coreTimerLinesExact": true,
+  "notes": [
+    "ASR differences mostly concern final particles such as 啦/了 or 呢/呐. These are not proof of a synthesis defect.",
+    "reminder-finish was transcribed as 此后一点点 rather than 最后一点点; pronunciation remains uncertain pending listening.",
+    "The assistant runtime does not support audio input; subjective kawaii voice quality has not been auditioned."
+  ],
+  "codecAudit": {
+    "files": 17,
+    "codec": "aac",
+    "sampleRate": 24000,
+    "channels": 1,
+    "allDurationsWithin120msOfSource": true
+  },
+  "referenceSha256": "094da1e74458dbeab092d22f3f624266942e041a8dcd07faa4b8eeff3d9dc4d6"
+}

@@ -1,0 +1,88 @@
+/* Mechanical split-flap cards, scaled to the dock's available width. */
+.clock-block { container-type: inline-size; min-width: 0; }
+#timer-display {
+  margin: 4px 0 6px;
+  color: var(--flip-text);
+  font-weight: 700;
+  letter-spacing: -1px;
+  line-height: 1;
+}
+.flip-clock-face {
+  --flip-count: 4;
+  --flip-height: clamp(40px, calc(112cqw / var(--flip-count)), 84px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 100%;
+  font-size: clamp(20px, calc(85cqw / var(--flip-count)), 64px);
+  font-variant-numeric: tabular-nums;
+}
+.flip-digit {
+  position: relative;
+  display: block;
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: 65px;
+  height: var(--flip-height);
+  perspective: 500px;
+  border-radius: 9px;
+  background: var(--flip-base);
+  box-shadow: 0 3px 0 var(--flip-edge), 0 5px 9px var(--flip-shadow);
+}
+.flip-half {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.flip-half::before {
+  content: attr(data-value);
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: var(--flip-height);
+  line-height: var(--flip-height);
+  text-align: center;
+  text-shadow: var(--flip-text-shadow);
+}
+.flip-top {
+  top: 0;
+  border-radius: 9px 9px 0 0;
+  background: linear-gradient(var(--flip-top-start), var(--flip-top-end));
+  box-shadow: inset 0 1px 0 #ffffff24, inset 0 -1px 0 var(--flip-seam);
+  transform-origin: center bottom;
+}
+.flip-top::before { top: 0; }
+.flip-bottom {
+  bottom: 0;
+  border-radius: 0 0 9px 9px;
+  background: linear-gradient(var(--flip-bottom-start), var(--flip-bottom-end));
+  box-shadow: inset 0 1px 0 #ffffff12;
+  transform-origin: center top;
+}
+.flip-bottom::before { top: calc(var(--flip-height) / -2); }
+.flip-digit::after {
+  content: '';
+  position: absolute;
+  z-index: 5;
+  top: calc(50% - 3px);
+  left: -1px;
+  right: -1px;
+  height: 6px;
+  pointer-events: none;
+  background: linear-gradient(to right, var(--flip-hinge) 3px, transparent 3px, transparent calc(100% - 3px), var(--flip-hinge) calc(100% - 3px));
+}
+.flip-separator { flex: 0 0 .22em; color: var(--flip-separator); font-size: .65em; text-align: center; letter-spacing: 0; }
+.flip-separator::before { content: attr(data-value); }
+.flip-leave { z-index: 3; animation: flip-leave .24s ease-in forwards; }
+.flip-land { z-index: 4; transform: rotateX(90deg); animation: flip-land .28s .24s ease-out forwards; }
+@keyframes flip-leave { to { transform: rotateX(-90deg); } }
+@keyframes flip-land { to { transform: rotateX(0); } }
+#app[data-phase=overdue] #timer-display,
+#app[data-countdown]:not([data-countdown=""]) #timer-display { color: var(--flip-warning); }
+@media (max-width: 370px) { .flip-clock-face { gap: 4px; } }
+@media (prefers-reduced-motion: reduce) { .flip-moving { display: none; } }

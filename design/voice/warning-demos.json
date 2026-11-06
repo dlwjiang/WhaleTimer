@@ -1,0 +1,38 @@
+[
+  {
+    "id": "warning-demo-11",
+    "text": "超时了，这是第十一次警告！",
+    "parts": [
+      "warning-prefix",
+      "numeral-10",
+      "countdown-1",
+      "warning-suffix"
+    ],
+    "duration": 3.414
+  },
+  {
+    "id": "warning-demo-21",
+    "text": "超时了，这是第二十一次警告！",
+    "parts": [
+      "warning-prefix",
+      "countdown-2",
+      "numeral-10",
+      "countdown-1",
+      "warning-suffix"
+    ],
+    "duration": 3.722
+  },
+  {
+    "id": "warning-demo-101",
+    "text": "超时了，这是第一百零一次警告！",
+    "parts": [
+      "warning-prefix",
+      "countdown-1",
+      "numeral-100",
+      "numeral-0",
+      "countdown-1",
+      "warning-suffix"
+    ],
+    "duration": 4.075
+  }
+]

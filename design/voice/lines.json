@@ -1,0 +1,229 @@
+{
+  "clips": [
+    {
+      "id": "ready",
+      "text": "准备好了吗？我会陪着你哦。",
+      "file": "ready.m4a"
+    },
+    {
+      "id": "start",
+      "text": "开始啦，专心做好这一件事吧！",
+      "file": "start.m4a"
+    },
+    {
+      "id": "main-complete",
+      "text": "时间到了，我们快一点吧！",
+      "file": "main-complete.m4a"
+    },
+    {
+      "id": "grace-complete",
+      "text": "时间真的到了！我要生气啦！",
+      "file": "grace-complete.m4a"
+    },
+    {
+      "id": "reminder-promise",
+      "text": "说好的马上呢？快一点啦！",
+      "file": "reminder-promise.m4a"
+    },
+    {
+      "id": "reminder-tail",
+      "text": "再磨蹭，尾巴都要气翘起来了！",
+      "file": "reminder-tail.m4a"
+    },
+    {
+      "id": "reminder-time",
+      "text": "时间可不会等人哦，快收尾！",
+      "file": "reminder-time.m4a"
+    },
+    {
+      "id": "reminder-watching",
+      "text": "哼，我可一直在看着时间呢！",
+      "file": "reminder-watching.m4a"
+    },
+    {
+      "id": "reminder-move",
+      "text": "真的不能再拖啦，动起来！",
+      "file": "reminder-move.m4a"
+    },
+    {
+      "id": "reminder-finish",
+      "text": "最后一点点，一口气做完吧！",
+      "file": "reminder-finish.m4a"
+    },
+    {
+      "id": "reset",
+      "text": "重新开始吧，这次也一起加油！",
+      "file": "reset.m4a"
+    },
+    {
+      "id": "pause",
+      "text": "休息一下，我等你。",
+      "file": "pause.m4a"
+    },
+    {
+      "id": "resume",
+      "text": "好，继续加油！",
+      "file": "resume.m4a"
+    },
+    {
+      "id": "sound-on",
+      "text": "我会提醒你的哦。",
+      "file": "sound-on.m4a"
+    },
+    {
+      "id": "poke-angry",
+      "text": "别戳我啦，快去收尾！",
+      "file": "poke-angry.m4a"
+    },
+    {
+      "id": "poke-cute",
+      "text": "嘿嘿，我在呢。一起加油吧！",
+      "file": "poke-cute.m4a"
+    },
+    {
+      "id": "focus",
+      "text": "专心做好这一件事吧，我陪着你。",
+      "file": "focus.m4a"
+    },
+    {
+      "id": "countdown-5",
+      "text": "五",
+      "file": "countdown-5.m4a"
+    },
+    {
+      "id": "countdown-4",
+      "text": "四",
+      "file": "countdown-4.m4a"
+    },
+    {
+      "id": "countdown-3",
+      "text": "三",
+      "file": "countdown-3.m4a"
+    },
+    {
+      "id": "countdown-2",
+      "text": "二",
+      "file": "countdown-2.m4a"
+    },
+    {
+      "id": "countdown-1",
+      "text": "一",
+      "file": "countdown-1.m4a"
+    },
+    {
+      "id": "warning-1",
+      "text": "超时了，这是第一次警告！",
+      "file": "warning-1.m4a"
+    },
+    {
+      "id": "warning-2",
+      "text": "超时了，这是第二次警告！",
+      "file": "warning-2.m4a"
+    },
+    {
+      "id": "warning-3",
+      "text": "超时了，这是第三次警告！",
+      "file": "warning-3.m4a"
+    },
+    {
+      "id": "warning-4",
+      "text": "超时了，这是第四次警告！",
+      "file": "warning-4.m4a"
+    },
+    {
+      "id": "warning-5",
+      "text": "超时了，这是第五次警告！",
+      "file": "warning-5.m4a"
+    },
+    {
+      "id": "warning-6",
+      "text": "超时了，这是第六次警告！",
+      "file": "warning-6.m4a"
+    },
+    {
+      "id": "warning-7",
+      "text": "超时了，这是第七次警告！",
+      "file": "warning-7.m4a"
+    },
+    {
+      "id": "warning-8",
+      "text": "超时了，这是第八次警告！",
+      "file": "warning-8.m4a"
+    },
+    {
+      "id": "warning-9",
+      "text": "超时了，这是第九次警告！",
+      "file": "warning-9.m4a"
+    },
+    {
+      "id": "warning-10",
+      "text": "超时了，这是第十次警告！",
+      "file": "warning-10.m4a"
+    },
+    {
+      "id": "warning-prefix",
+      "text": "超时了，这是第",
+      "file": "warning-prefix.m4a"
+    },
+    {
+      "id": "warning-suffix",
+      "text": "次警告！",
+      "file": "warning-suffix.m4a"
+    },
+    {
+      "id": "numeral-0",
+      "text": "零",
+      "file": "numeral-0.m4a"
+    },
+    {
+      "id": "numeral-6",
+      "text": "六",
+      "file": "numeral-6.m4a"
+    },
+    {
+      "id": "numeral-7",
+      "text": "七",
+      "file": "numeral-7.m4a"
+    },
+    {
+      "id": "numeral-8",
+      "text": "八",
+      "file": "numeral-8.m4a"
+    },
+    {
+      "id": "numeral-9",
+      "text": "九",
+      "file": "numeral-9.m4a"
+    },
+    {
+      "id": "numeral-10",
+      "text": "十",
+      "file": "numeral-10.m4a"
+    },
+    {
+      "id": "numeral-100",
+      "text": "百",
+      "file": "numeral-100.m4a"
+    },
+    {
+      "id": "numeral-1000",
+      "text": "千",
+      "file": "numeral-1000.m4a"
+    },
+    {
+      "id": "numeral-10000",
+      "text": "万",
+      "file": "numeral-10000.m4a"
+    },
+    {
+      "id": "numeral-100000000",
+      "text": "亿",
+      "file": "numeral-100000000.m4a"
+    },
+    {
+      "id": "timer-start",
+      "text": "三、二、一，开始！",
+      "file": "timer-start.m4a"
+    }
+  ]
+}

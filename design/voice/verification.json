@@ -1,0 +1,163 @@
+[
+  {
+    "id": "reference",
+    "text": "准备好了吗？我会陪着你哦。时间到了，我们快一点吧！哼，再磨蹭，我就要生气啦！",
+    "heard": "准备好了吗?我会陪着你哦时间到了,我们快一点吧哼,再磨蹭,我就要生气了",
+    "phoneticMatch": 0.968,
+    "duration": 7.902,
+    "peak": 0.89
+  },
+  {
+    "id": "ready",
+    "text": "准备好了吗？我会陪着你哦。",
+    "file": "ready.m4a",
+    "heard": "准备好了吗?我会陪着你哦!",
+    "phoneticMatch": 1.0,
+    "duration": 2.246,
+    "peak": 0.89
+  },
+  {
+    "id": "start",
+    "text": "开始啦，专心做好这一件事吧！",
+    "file": "start.m4a",
+    "heard": "开始啦,专心做好这一件事吧!",
+    "phoneticMatch": 1.0,
+    "duration": 2.526,
+    "peak": 0.89
+  },
+  {
+    "id": "main-complete",
+    "text": "时间到了，我们快一点吧！",
+    "file": "main-complete.m4a",
+    "heard": "时间到了,我们快一点吧!",
+    "phoneticMatch": 1.0,
+    "duration": 2.008,
+    "peak": 0.89
+  },
+  {
+    "id": "grace-complete",
+    "text": "时间真的到了！我要生气啦！",
+    "file": "grace-complete.m4a",
+    "heard": "時間真的到了,我要生氣啦!",
+    "phoneticMatch": 1.0,
+    "duration": 2.194,
+    "peak": 0.89
+  },
+  {
+    "id": "reminder-promise",
+    "text": "说好的马上呢？快一点啦！",
+    "file": "reminder-promise.m4a",
+    "heard": "說好的馬上呢,快一點啦!",
+    "phoneticMatch": 1.0,
+    "duration": 2.402,
+    "peak": 0.89
+  },
+  {
+    "id": "reminder-tail",
+    "text": "再磨蹭，尾巴都要气翘起来了！",
+    "file": "reminder-tail.m4a",
+    "heard": "再磨蹭,尾巴都要蹊蹺起來啦!",
+    "phoneticMatch": 0.917,
+    "duration": 2.367,
+    "peak": 0.89
+  },
+  {
+    "id": "reminder-time",
+    "text": "时间可不会等人哦，快收尾！",
+    "file": "reminder-time.m4a",
+    "heard": "時間可不會等人哦,快收尾",
+    "phoneticMatch": 1.0,
+    "duration": 2.262,
+    "peak": 0.89
+  },
+  {
+    "id": "reminder-watching",
+    "text": "哼，我可一直在看着时间呢！",
+    "file": "reminder-watching.m4a",
+    "heard": "哼,我可一直在看着时间呐!",
+    "phoneticMatch": 0.909,
+    "duration": 2.233,
+    "peak": 0.89
+  },
+  {
+    "id": "reminder-move",
+    "text": "真的不能再拖啦，动起来！",
+    "file": "reminder-move.m4a",
+    "heard": "真的不能再拖了,动起来!",
+    "phoneticMatch": 0.9,
+    "duration": 2.392,
+    "peak": 0.89
+  },
+  {
+    "id": "reminder-finish",
+    "text": "最后一点点，一口气做完吧！",
+    "file": "reminder-finish.m4a",
+    "heard": "此后一点点,一口气做完吧!",
+    "phoneticMatch": 0.909,
+    "duration": 2.193,
+    "peak": 0.89
+  },
+  {
+    "id": "reset",
+    "text": "重新开始吧，这次也一起加油！",
+    "file": "reset.m4a",
+    "heard": "重新开始吧,这次也一起加油!",
+    "phoneticMatch": 1.0,
+    "duration": 2.717,
+    "peak": 0.89
+  },
+  {
+    "id": "pause",
+    "text": "休息一下，我等你。",
+    "file": "pause.m4a",
+    "heard": "休息一下,我等你",
+    "phoneticMatch": 1.0,
+    "duration": 1.297,
+    "peak": 0.89
+  },
+  {
+    "id": "resume",
+    "text": "好，继续加油！",
+    "file": "resume.m4a",
+    "heard": "好 继续加油",
+    "phoneticMatch": 1.0,
+    "duration": 1.229,
+    "peak": 0.89
+  },
+  {
+    "id": "sound-on",
+    "text": "我会提醒你的哦。",
+    "file": "sound-on.m4a",
+    "heard": "我會提醒你的",
+    "phoneticMatch": 0.923,
+    "duration": 1.071,
+    "peak": 0.89
+  },
+  {
+    "id": "poke-angry",
+    "text": "别戳我啦，快去收尾！",
+    "file": "poke-angry.m4a",
+    "heard": "別戳我啦,快去收尾",
+    "phoneticMatch": 1.0,
+    "duration": 1.832,
+    "peak": 0.89
+  },
+  {
+    "id": "poke-cute",
+    "text": "嘿嘿，我在呢。一起加油吧！",
+    "file": "poke-cute.m4a",
+    "heard": "嘿嘿 我在呢 一起加油吧",
+    "phoneticMatch": 1.0,
+    "duration": 2.68,
+    "peak": 0.89
+  },
+  {
+    "id": "focus",
+    "text": "专心做好这一件事吧，我陪着你。",
+    "file": "focus.m4a",
+    "heard": "專心做好這一件事吧,我陪著你!",
+    "phoneticMatch": 1.0,
+    "duration": 2.652,
+    "peak": 0.89
+  }
+]

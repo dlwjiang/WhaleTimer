@@ -1,0 +1,452 @@
+[
+  {
+    "file": "public/voice/claude/countdown-1.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/claude/countdown-2.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/claude/countdown-3.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/claude/countdown-4.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/claude/countdown-5.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/claude/focus.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/claude/grace-complete.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/claude/main-complete.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/claude/numeral-0.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/claude/numeral-10.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/claude/numeral-100.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/claude/numeral-1000.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/claude/numeral-10000.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/claude/numeral-100000000.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/claude/numeral-6.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/claude/numeral-7.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/claude/numeral-8.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/claude/numeral-9.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/claude/pause.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/claude/poke-angry.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/claude/poke-cute.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/claude/ready.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/claude/reminder-finish.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/claude/reminder-move.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/claude/reminder-promise.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/claude/reminder-tail.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/claude/reminder-time.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/claude/reminder-watching.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/claude/reset.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/claude/resume.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/claude/sound-on.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/claude/start.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/claude/timer-start.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/claude/warning-1.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/claude/warning-10.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/claude/warning-2.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/claude/warning-3.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/claude/warning-4.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/claude/warning-5.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/claude/warning-6.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/claude/warning-7.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/claude/warning-8.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/claude/warning-9.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/claude/warning-prefix.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/claude/warning-suffix.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/chatgpt/countdown-1.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/chatgpt/countdown-2.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/chatgpt/countdown-3.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/chatgpt/countdown-4.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/chatgpt/countdown-5.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/chatgpt/focus.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/chatgpt/grace-complete.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/chatgpt/main-complete.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/chatgpt/numeral-0.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/chatgpt/numeral-10.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/chatgpt/numeral-100.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/chatgpt/numeral-1000.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/chatgpt/numeral-10000.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/chatgpt/numeral-100000000.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/chatgpt/numeral-6.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/chatgpt/numeral-7.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/chatgpt/numeral-8.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/chatgpt/numeral-9.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/chatgpt/pause.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/chatgpt/poke-angry.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/chatgpt/poke-cute.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/chatgpt/ready.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/chatgpt/reminder-finish.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/chatgpt/reminder-move.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/chatgpt/reminder-promise.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/chatgpt/reminder-tail.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/chatgpt/reminder-time.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/chatgpt/reminder-watching.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/chatgpt/reset.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/chatgpt/resume.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/chatgpt/sound-on.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/chatgpt/start.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/chatgpt/timer-start.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/chatgpt/warning-1.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/chatgpt/warning-10.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/chatgpt/warning-2.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/chatgpt/warning-3.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/chatgpt/warning-4.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/chatgpt/warning-5.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/chatgpt/warning-6.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/chatgpt/warning-7.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/chatgpt/warning-8.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/chatgpt/warning-9.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/chatgpt/warning-prefix.m4a",
+    "decoded": true,
+    "error": ""
+  },
+  {
+    "file": "public/voice/chatgpt/warning-suffix.m4a",
+    "decoded": true,
+    "error": ""
+  }
+]

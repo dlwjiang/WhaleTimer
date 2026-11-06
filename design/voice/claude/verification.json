@@ -1,0 +1,468 @@
+[
+  {
+    "id": "reference",
+    "text": "准备好了吗？我会陪着你哦。时间到了，我们快一点吧！哼，再磨蹭，我就要生气啦！",
+    "heard": "准备好了吗?我会陪着你呦。时间到了,我们快一点吧。哼,在摩操,我就要生气啦。",
+    "phoneticMatch": 0.935,
+    "duration": 8.199,
+    "peak": 0.89
+  },
+  {
+    "id": "ready",
+    "text": "准备好了吗？我会陪着你哦。",
+    "file": "ready.m4a",
+    "heard": "准备好了吗?我会陪着你哟!",
+    "phoneticMatch": 0.909,
+    "duration": 2.439,
+    "peak": 0.89
+  },
+  {
+    "id": "start",
+    "text": "开始啦，专心做好这一件事吧！",
+    "file": "start.m4a",
+    "heard": "开始啦!专心做好这一件事吧!",
+    "phoneticMatch": 1.0,
+    "duration": 2.336,
+    "peak": 0.89
+  },
+  {
+    "id": "main-complete",
+    "text": "时间到了，我们快一点吧！",
+    "file": "main-complete.m4a",
+    "heard": "時間到了,我們快一點吧!",
+    "phoneticMatch": 1.0,
+    "duration": 2.313,
+    "peak": 0.89
+  },
+  {
+    "id": "grace-complete",
+    "text": "时间真的到了！我要生气啦！",
+    "file": "grace-complete.m4a",
+    "heard": "時間真的到了,我要生氣啦!",
+    "phoneticMatch": 1.0,
+    "duration": 2.173,
+    "peak": 0.89
+  },
+  {
+    "id": "reminder-promise",
+    "text": "说好的马上呢？快一点啦！",
+    "file": "reminder-promise.m4a",
+    "heard": "說好的馬上呢!快一點啦!",
+    "phoneticMatch": 1.0,
+    "duration": 2.831,
+    "peak": 0.89
+  },
+  {
+    "id": "reminder-tail",
+    "text": "再磨蹭，尾巴都要气翘起来了！",
+    "file": "reminder-tail.m4a",
+    "heard": "在摩操,尾巴都要起翹起來了!",
+    "phoneticMatch": 0.917,
+    "duration": 3.136,
+    "peak": 0.89
+  },
+  {
+    "id": "reminder-time",
+    "text": "时间可不会等人哦，快收尾！",
+    "file": "reminder-time.m4a",
+    "heard": "時間可不會等人哦!快收尾!",
+    "phoneticMatch": 1.0,
+    "duration": 2.928,
+    "peak": 0.89
+  },
+  {
+    "id": "reminder-watching",
+    "text": "哼，我可一直在看着时间呢！",
+    "file": "reminder-watching.m4a",
+    "heard": "哼,我可一直在看這時間呢",
+    "phoneticMatch": 1.0,
+    "duration": 2.571,
+    "peak": 0.89
+  },
+  {
+    "id": "reminder-move",
+    "text": "真的不能再拖啦，动起来！",
+    "file": "reminder-move.m4a",
+    "heard": "真的不能再拖啦,動起來!",
+    "phoneticMatch": 1.0,
+    "duration": 2.088,
+    "peak": 0.89
+  },
+  {
+    "id": "reminder-finish",
+    "text": "最后一点点，一口气做完吧！",
+    "file": "reminder-finish.m4a",
+    "heard": "最後一點點,一口氣做完吧!",
+    "phoneticMatch": 1.0,
+    "duration": 2.579,
+    "peak": 0.89
+  },
+  {
+    "id": "reset",
+    "text": "重新开始吧，这次也一起加油！",
+    "file": "reset.m4a",
+    "heard": "重新開始吧!這次也一起加油!",
+    "phoneticMatch": 1.0,
+    "duration": 2.596,
+    "peak": 0.89
+  },
+  {
+    "id": "pause",
+    "text": "休息一下，我等你。",
+    "file": "pause.m4a",
+    "heard": "休息一下,我等你",
+    "phoneticMatch": 1.0,
+    "duration": 1.338,
+    "peak": 0.89
+  },
+  {
+    "id": "resume",
+    "text": "好，继续加油！",
+    "file": "resume.m4a",
+    "heard": "好,继续加油!",
+    "phoneticMatch": 1.0,
+    "duration": 1.417,
+    "peak": 0.89
+  },
+  {
+    "id": "sound-on",
+    "text": "我会提醒你的哦。",
+    "file": "sound-on.m4a",
+    "heard": "我會提醒你的",
+    "phoneticMatch": 0.923,
+    "duration": 1.137,
+    "peak": 0.89
+  },
+  {
+    "id": "poke-angry",
+    "text": "别戳我啦，快去收尾！",
+    "file": "poke-angry.m4a",
+    "heard": "別戳我啦!快去收尾!",
+    "phoneticMatch": 1.0,
+    "duration": 1.571,
+    "peak": 0.89
+  },
+  {
+    "id": "poke-cute",
+    "text": "嘿嘿，我在呢。一起加油吧！",
+    "file": "poke-cute.m4a",
+    "heard": "嘿嘿 我在呢一起加油吧",
+    "phoneticMatch": 1.0,
+    "duration": 2.866,
+    "peak": 0.89
+  },
+  {
+    "id": "focus",
+    "text": "专心做好这一件事吧，我陪着你。",
+    "file": "focus.m4a",
+    "heard": "专心做好这一件事吧我陪着你",
+    "phoneticMatch": 1.0,
+    "duration": 2.429,
+    "peak": 0.89
+  },
+  {
+    "id": "countdown-5",
+    "text": "五",
+    "file": "countdown-5.m4a",
+    "heard": "喔",
+    "phoneticMatch": 0.0,
+    "duration": 0.532,
+    "peak": 0.89
+  },
+  {
+    "id": "countdown-4",
+    "text": "四",
+    "file": "countdown-4.m4a",
+    "heard": "四",
+    "phoneticMatch": 1.0,
+    "duration": 0.654,
+    "peak": 0.89
+  },
+  {
+    "id": "countdown-3",
+    "text": "三",
+    "file": "countdown-3.m4a",
+    "heard": "3",
+    "phoneticMatch": 1.0,
+    "duration": 0.381,
+    "peak": 0.89
+  },
+  {
+    "id": "countdown-2",
+    "text": "二",
+    "file": "countdown-2.m4a",
+    "heard": "啊",
+    "phoneticMatch": 0.0,
+    "duration": 0.391,
+    "peak": 0.89
+  },
+  {
+    "id": "countdown-1",
+    "text": "一",
+    "file": "countdown-1.m4a",
+    "heard": "咦",
+    "phoneticMatch": 1.0,
+    "duration": 0.398,
+    "peak": 0.89
+  },
+  {
+    "id": "warning-1",
+    "text": "超时了，这是第一次警告！",
+    "file": "warning-1.m4a",
+    "heard": "超时啦!这是第一次警告!",
+    "phoneticMatch": 0.9,
+    "duration": 2.712,
+    "peak": 0.89
+  },
+  {
+    "id": "warning-2",
+    "text": "超时了，这是第二次警告！",
+    "file": "warning-2.m4a",
+    "heard": "超时了!这是第二次警告!",
+    "phoneticMatch": 1.0,
+    "duration": 2.092,
+    "peak": 0.89
+  },
+  {
+    "id": "warning-3",
+    "text": "超时了，这是第三次警告！",
+    "file": "warning-3.m4a",
+    "heard": "超时啦!这是第三次警告!",
+    "phoneticMatch": 0.9,
+    "duration": 2.412,
+    "peak": 0.89
+  },
+  {
+    "id": "warning-4",
+    "text": "超时了，这是第四次警告！",
+    "file": "warning-4.m4a",
+    "heard": "超时啦!这是第四次警告!",
+    "phoneticMatch": 0.9,
+    "duration": 2.21,
+    "peak": 0.89
+  },
+  {
+    "id": "warning-5",
+    "text": "超时了，这是第五次警告！",
+    "file": "warning-5.m4a",
+    "heard": "超时啦!这是第五次警告!",
+    "phoneticMatch": 0.9,
+    "duration": 2.067,
+    "peak": 0.89
+  },
+  {
+    "id": "warning-6",
+    "text": "超时了，这是第六次警告！",
+    "file": "warning-6.m4a",
+    "heard": "超時啦!這是第六次警告!",
+    "phoneticMatch": 0.9,
+    "duration": 2.046,
+    "peak": 0.89
+  },
+  {
+    "id": "warning-7",
+    "text": "超时了，这是第七次警告！",
+    "file": "warning-7.m4a",
+    "heard": "超时啦!这是第七次警告!",
+    "phoneticMatch": 0.9,
+    "duration": 2.11,
+    "peak": 0.89
+  },
+  {
+    "id": "warning-8",
+    "text": "超时了，这是第八次警告！",
+    "file": "warning-8.m4a",
+    "heard": "超时啦!这是第八次警告!",
+    "phoneticMatch": 0.9,
+    "duration": 2.211,
+    "peak": 0.89
+  },
+  {
+    "id": "warning-9",
+    "text": "超时了，这是第九次警告！",
+    "file": "warning-9.m4a",
+    "heard": "超时啦!这是第九次警告!",
+    "phoneticMatch": 0.9,
+    "duration": 2.664,
+    "peak": 0.89
+  },
+  {
+    "id": "warning-10",
+    "text": "超时了，这是第十次警告！",
+    "file": "warning-10.m4a",
+    "heard": "超时啦!这是第十次警告!",
+    "phoneticMatch": 0.9,
+    "duration": 2.411,
+    "peak": 0.89
+  },
+  {
+    "id": "warning-prefix",
+    "text": "超时了，这是第",
+    "file": "warning-prefix.m4a",
+    "heard": "超時了!真是地...",
+    "phoneticMatch": 0.833,
+    "duration": 1.997,
+    "peak": 0.89
+  },
+  {
+    "id": "warning-suffix",
+    "text": "次警告！",
+    "file": "warning-suffix.m4a",
+    "heard": "四井告!",
+    "phoneticMatch": 0.667,
+    "duration": 0.631,
+    "peak": 0.89
+  },
+  {
+    "id": "numeral-0",
+    "text": "零",
+    "file": "numeral-0.m4a",
+    "heard": "咦",
+    "phoneticMatch": 0.0,
+    "duration": 0.508,
+    "peak": 0.89
+  },
+  {
+    "id": "numeral-6",
+    "text": "六",
+    "file": "numeral-6.m4a",
+    "heard": "6",
+    "phoneticMatch": 1.0,
+    "duration": 0.372,
+    "peak": 0.89
+  },
+  {
+    "id": "numeral-7",
+    "text": "七",
+    "file": "numeral-7.m4a",
+    "heard": "七",
+    "phoneticMatch": 1.0,
+    "duration": 0.722,
+    "peak": 0.8403
+  },
+  {
+    "id": "numeral-8",
+    "text": "八",
+    "file": "numeral-8.m4a",
+    "heard": "8",
+    "phoneticMatch": 1.0,
+    "duration": 0.284,
+    "peak": 0.89
+  },
+  {
+    "id": "numeral-9",
+    "text": "九",
+    "file": "numeral-9.m4a",
+    "heard": "小",
+    "phoneticMatch": 0.0,
+    "duration": 0.647,
+    "peak": 0.89
+  },
+  {
+    "id": "numeral-10",
+    "text": "十",
+    "file": "numeral-10.m4a",
+    "heard": "十",
+    "phoneticMatch": 1.0,
+    "duration": 0.708,
+    "peak": 0.89
+  },
+  {
+    "id": "numeral-100",
+    "text": "百",
+    "file": "numeral-100.m4a",
+    "heard": "拜拜",
+    "phoneticMatch": 0.667,
+    "duration": 0.414,
+    "peak": 0.89
+  },
+  {
+    "id": "numeral-1000",
+    "text": "千",
+    "file": "numeral-1000.m4a",
+    "heard": "先",
+    "phoneticMatch": 0.0,
+    "duration": 0.572,
+    "peak": 0.89
+  },
+  {
+    "id": "numeral-10000",
+    "text": "万",
+    "file": "numeral-10000.m4a",
+    "heard": "What?",
+    "phoneticMatch": 0.0,
+    "duration": 0.35,
+    "peak": 0.89
+  },
+  {
+    "id": "numeral-100000000",
+    "text": "亿",
+    "file": "numeral-100000000.m4a",
+    "heard": "",
+    "phoneticMatch": 0.0,
+    "duration": 0.621,
+    "peak": 0.89
+  },
+  {
+    "id": "timer-start",
+    "text": "三、二、一，开始！",
+    "file": "timer-start.m4a",
+    "heard": "3.2.1. 开始!",
+    "phoneticMatch": 1.0,
+    "duration": 2.953,
+    "peak": 0.8934
+  },
+  {
+    "id": "countdown-demo",
+    "text": "五四三二一",
+    "heard": "44321",
+    "phoneticMatch": 0.8,
+    "duration": 5.0,
+    "peak": 0.8934
+  },
+  {
+    "id": "warning-demo-11",
+    "text": "超时了，这是第十一次警告！",
+    "parts": [
+      "warning-prefix",
+      "numeral-10",
+      "countdown-1",
+      "warning-suffix"
+    ],
+    "duration": 3.734,
+    "heard": "超时啦 这是第十一次警告",
+    "phoneticMatch": 0.909,
+    "peak": 0.8985
+  },
+  {
+    "id": "warning-demo-21",
+    "text": "超时了，这是第二十一次警告！",
+    "parts": [
+      "warning-prefix",
+      "countdown-2",
+      "numeral-10",
+      "countdown-1",
+      "warning-suffix"
+    ],
+    "duration": 4.125,
+    "heard": "超时啦 这是第二十一次警告",
+    "phoneticMatch": 0.917,
+    "peak": 0.8985
+  },
+  {
+    "id": "warning-demo-101",
+    "text": "超时了，这是第一百零一次警告！",
+    "parts": [
+      "warning-prefix",
+      "countdown-1",
+      "numeral-100",
+      "numeral-0",
+      "countdown-1",
+      "warning-suffix"
+    ],
+    "duration": 4.346,
+    "heard": "超时啦 这是第101次警告",
+    "phoneticMatch": 0.923,
+    "peak": 0.8985
+  }
+]

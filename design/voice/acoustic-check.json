@@ -1,0 +1,8 @@
+{
+  "referencePitchMedianHz": 444.4,
+  "referencePitchInterquartileHz": [
+    351.8,
+    500.0
+  ],
+  "method": "Autocorrelation on voiced 50ms frames; diagnostic estimate only, not a perceptual style assessment."
+}

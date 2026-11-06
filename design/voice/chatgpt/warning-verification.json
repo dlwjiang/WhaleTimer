@@ -1,0 +1,35 @@
+[
+  {
+    "id": "warning-demo-101",
+    "text": "超时了，这是第一百零一次警告！",
+    "parts": [
+      "warning-prefix",
+      "countdown-1",
+      "numeral-100",
+      "numeral-0",
+      "countdown-1",
+      "warning-suffix"
+    ],
+    "duration": 4.853,
+    "heard": "超时啦!这是第101次警告!",
+    "phoneticMatch": 0.923,
+    "peak": 0.8919
+  },
+  {
+    "id": "warning-demo-789",
+    "text": "超时了，这是第七百八十九次警告！",
+    "parts": [
+      "warning-prefix",
+      "numeral-7",
+      "numeral-100",
+      "numeral-8",
+      "numeral-10",
+      "numeral-9",
+      "warning-suffix"
+    ],
+    "duration": 5.122,
+    "heard": "超时了!这是第七百八十九次警告!",
+    "phoneticMatch": 1.0,
+    "peak": 0.8963
+  }
+]

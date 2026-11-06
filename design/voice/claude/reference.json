@@ -1,0 +1,10 @@
+{
+  "text": "准备好了吗？我会陪着你哦。时间到了，我们快一点吧！哼，再磨蹭，我就要生气啦！",
+  "description": "原创二次元Q版橙发学者的年轻成年女性声线。标准普通话，女中音，中低音区，温暖圆润，带一点柔软的鼻腔共鸣，像温柔聪明的文学系学姐。声音可爱亲切但不幼童，不用尖细高音。语调从容而活泼，吐字清晰，语速适中，提醒时温柔又有主见，假装生气时俏皮地嗔怪，不喊叫。自然口语，不唱歌，不耳语，不模仿任何真人。",
+  "seed": 20261207,
+  "model": "/Users/davidjiang/Models/tts/Qwen3-TTS-12Hz-1.7B-VoiceDesign-bf16",
+  "sampleRate": 24000,
+  "duration": 8.199,
+  "elapsedSeconds": 6.88,
+  "provenance": "Original synthetic voice designed from text; no real person imitation or recording."
+}

@@ -1,0 +1,10 @@
+{
+  "text": "准备好了吗？我会陪着你哦。时间到了，我们快一点吧！哼，再磨蹭，我就要生气啦！",
+  "description": "原创二次元Q版白发小龙的年轻成年女性声线。标准普通话，清脆明亮的高音区，像小铃铛一样轻巧通透，带一点点清甜鼻音，精灵般活泼，元气十足的动漫女主角。声音高而集中，发音短促利落，尾音俏皮跳跃，情绪变化明显，惊喜感强。假装生气时可爱地鼓脸撒娇，不尖叫。成年女性，不是幼童，自然口语，不唱歌，不耳语，不模仿任何真人。",
+  "seed": 20261308,
+  "model": "/Users/davidjiang/Models/tts/Qwen3-TTS-12Hz-1.7B-VoiceDesign-bf16",
+  "sampleRate": 24000,
+  "duration": 8.728,
+  "elapsedSeconds": 8.18,
+  "provenance": "Original synthetic voice designed from text; no real person imitation or recording."
+}

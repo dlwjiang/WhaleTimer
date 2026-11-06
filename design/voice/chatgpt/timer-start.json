@@ -1,0 +1,27 @@
+{
+  "id": "timer-start",
+  "text": "三、二、一，开始！",
+  "file": "timer-start.m4a",
+  "duration": 2.98,
+  "bytes": 38110,
+  "sampleRate": 24000,
+  "seed": 974899347,
+  "assembly": [
+    {
+      "id": "countdown-3",
+      "at": 0
+    },
+    {
+      "id": "countdown-2",
+      "at": 0.8
+    },
+    {
+      "id": "countdown-1",
+      "at": 1.6
+    },
+    {
+      "id": "timer-start-ending",
+      "at": 2.4
+    }
+  ]
+}

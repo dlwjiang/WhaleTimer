@@ -1,0 +1,21 @@
+{
+  "asrModel": "Systran/faster-whisper-medium (local offline)",
+  "fullWarningClipsVerified": 10,
+  "stitchedWarningOrdinalsVerified": [
+    11,
+    21,
+    101
+  ],
+  "allPhoneticMatchesExact": true,
+  "newClips": 22,
+  "totalClips": 44,
+  "newEncodedBytes": 406756,
+  "retakes": [
+    {
+      "id": "warning-6",
+      "seedOffset": 1,
+      "reason": "Original take transcribed 警告 as 金刚; alternate take transcribed exactly."
+    }
+  ],
+  "subjectiveListening": "Not auditioned by assistant; runtime has no audio input. Composed ordinals have more segmented cadence than full sentences."
+}

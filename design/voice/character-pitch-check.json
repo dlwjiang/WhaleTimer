@@ -1,0 +1,26 @@
+[
+  {
+    "character": "whale",
+    "medianPitchHz": 449.9,
+    "pitchRangeHz": [
+      314.5,
+      563.6
+    ]
+  },
+  {
+    "character": "claude",
+    "medianPitchHz": 353.0,
+    "pitchRangeHz": [
+      265.7,
+      509.7
+    ]
+  },
+  {
+    "character": "chatgpt",
+    "medianPitchHz": 419.8,
+    "pitchRangeHz": [
+      329.4,
+      566.9
+    ]
+  }
+]

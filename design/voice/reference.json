@@ -1,0 +1,10 @@
+{
+  "text": "准备好了吗？我会陪着你哦。时间到了，我们快一点吧！哼，再磨蹭，我就要生气啦！",
+  "description": "原创二次元Q版鲸鱼女仆角色的年轻成年女性声线。标准普通话，音色明亮清甜，音调偏高但自然，轻盈灵动，元气可爱，有动漫少女的俏皮感。吐字清楚，语速轻快适中，句尾自然上扬。提醒时像关心朋友的小女仆，撒娇式小傲娇，假装生气时鼓着脸，可爱而不尖叫、不凶狠。自然说话，不唱歌，不用气声，不模仿任何真人。",
+  "seed": 20261106,
+  "model": "/Users/davidjiang/Models/tts/Qwen3-TTS-12Hz-1.7B-VoiceDesign-bf16",
+  "sampleRate": 24000,
+  "duration": 7.902,
+  "elapsedSeconds": 9.85,
+  "provenance": "Original synthetic voice designed from text; no real person imitation or recording."
+}

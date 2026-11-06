@@ -1,0 +1,17 @@
+{
+  "id": "numeral-100",
+  "text": "百",
+  "file": "numeral-100.m4a",
+  "duration": 0.455,
+  "seed": 2026110647,
+  "bytes": 6805,
+  "sampleRate": 24000,
+  "synthesisText": "一百，二百，三百。",
+  "extractedFrom": {
+    "file": "hundred-context.wav",
+    "start": 1.025,
+    "end": 1.35,
+    "paddingSeconds": 0.065,
+    "edgeFadeSeconds": 0.003
+  }
+}

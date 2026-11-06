@@ -1,0 +1,155 @@
+{
+  "source": "design/avatars/chatgpt/source-sheet.png",
+  "rows": 2,
+  "cols": 3,
+  "mode": "equal",
+  "all_separators_detected": true,
+  "x_bounds": [
+    [
+      0,
+      0
+    ],
+    [
+      512,
+      512
+    ],
+    [
+      1024,
+      1024
+    ],
+    [
+      1536,
+      1536
+    ]
+  ],
+  "y_bounds": [
+    [
+      0,
+      0
+    ],
+    [
+      512,
+      512
+    ],
+    [
+      1024,
+      1024
+    ]
+  ],
+  "cells": [
+    {
+      "row": 0,
+      "col": 0,
+      "box": [
+        6,
+        6,
+        506,
+        506
+      ],
+      "method": "native-alpha",
+      "touches_cell_edge": true,
+      "name": "idle",
+      "file": "design/avatars/chatgpt/states/idle.png",
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "row": 0,
+      "col": 1,
+      "box": [
+        518,
+        6,
+        1018,
+        506
+      ],
+      "method": "native-alpha",
+      "touches_cell_edge": true,
+      "name": "happy",
+      "file": "design/avatars/chatgpt/states/happy.png",
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "row": 0,
+      "col": 2,
+      "box": [
+        1030,
+        6,
+        1530,
+        506
+      ],
+      "method": "native-alpha",
+      "touches_cell_edge": true,
+      "name": "cute",
+      "file": "design/avatars/chatgpt/states/cute.png",
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "row": 1,
+      "col": 0,
+      "box": [
+        6,
+        518,
+        506,
+        1018
+      ],
+      "method": "native-alpha",
+      "touches_cell_edge": true,
+      "name": "angry",
+      "file": "design/avatars/chatgpt/states/angry.png",
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "row": 1,
+      "col": 1,
+      "box": [
+        518,
+        518,
+        1018,
+        1018
+      ],
+      "method": "native-alpha",
+      "name": "frustrated",
+      "file": "design/avatars/chatgpt/states/frustrated.png",
+      "size": [
+        512,
+        512
+      ]
+    },
+    {
+      "row": 1,
+      "col": 2,
+      "box": [
+        1030,
+        518,
+        1530,
+        1018
+      ],
+      "method": "native-alpha",
+      "name": "bell",
+      "file": "design/avatars/chatgpt/states/bell.png",
+      "size": [
+        512,
+        512
+      ]
+    }
+  ],
+  "empty_cells": [],
+  "clipped_cells": [
+    "r1c1",
+    "r1c2",
+    "r1c3",
+    "r2c1"
+  ],
+  "contact_sheet": "design/avatars/chatgpt/states/_contact.png"
+}

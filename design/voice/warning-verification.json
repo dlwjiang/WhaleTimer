@@ -1,0 +1,137 @@
+[
+  {
+    "id": "warning-1",
+    "text": "超时了，这是第一次警告！",
+    "file": "warning-1.m4a",
+    "heard": "超时了,这是第一次警告",
+    "phoneticMatch": 1.0,
+    "duration": 2.071,
+    "peak": 0.89
+  },
+  {
+    "id": "warning-2",
+    "text": "超时了，这是第二次警告！",
+    "file": "warning-2.m4a",
+    "heard": "超时了,这是第二次警告",
+    "phoneticMatch": 1.0,
+    "duration": 2.284,
+    "peak": 0.89
+  },
+  {
+    "id": "warning-3",
+    "text": "超时了，这是第三次警告！",
+    "file": "warning-3.m4a",
+    "heard": "超时了,这是第三次警告",
+    "phoneticMatch": 1.0,
+    "duration": 2.638,
+    "peak": 0.89
+  },
+  {
+    "id": "warning-4",
+    "text": "超时了，这是第四次警告！",
+    "file": "warning-4.m4a",
+    "heard": "超时了,这是第四次警告",
+    "phoneticMatch": 1.0,
+    "duration": 2.429,
+    "peak": 0.89
+  },
+  {
+    "id": "warning-5",
+    "text": "超时了，这是第五次警告！",
+    "file": "warning-5.m4a",
+    "heard": "超时了,这是第五次警告",
+    "phoneticMatch": 1.0,
+    "duration": 2.871,
+    "peak": 0.89
+  },
+  {
+    "id": "warning-6",
+    "text": "超时了，这是第六次警告！",
+    "file": "warning-6.m4a",
+    "heard": "超时了,这是第六次警告",
+    "phoneticMatch": 1.0,
+    "duration": 2.524,
+    "peak": 0.89
+  },
+  {
+    "id": "warning-7",
+    "text": "超时了，这是第七次警告！",
+    "file": "warning-7.m4a",
+    "heard": "超时了!这是第七次警告!",
+    "phoneticMatch": 1.0,
+    "duration": 2.571,
+    "peak": 0.89
+  },
+  {
+    "id": "warning-8",
+    "text": "超时了，这是第八次警告！",
+    "file": "warning-8.m4a",
+    "heard": "超时了,这是第八次警告",
+    "phoneticMatch": 1.0,
+    "duration": 2.129,
+    "peak": 0.89
+  },
+  {
+    "id": "warning-9",
+    "text": "超时了，这是第九次警告！",
+    "file": "warning-9.m4a",
+    "heard": "超时了,这是第九次警告",
+    "phoneticMatch": 1.0,
+    "duration": 2.484,
+    "peak": 0.89
+  },
+  {
+    "id": "warning-10",
+    "text": "超时了，这是第十次警告！",
+    "file": "warning-10.m4a",
+    "heard": "超时了,这是第十次警告",
+    "phoneticMatch": 1.0,
+    "duration": 2.154,
+    "peak": 0.89
+  },
+  {
+    "id": "warning-demo-11",
+    "text": "超时了，这是第十一次警告！",
+    "parts": [
+      "warning-prefix",
+      "numeral-10",
+      "countdown-1",
+      "warning-suffix"
+    ],
+    "duration": 3.414,
+    "heard": "超时了,这是第十一次警告",
+    "phoneticMatch": 1.0,
+    "peak": 0.894
+  },
+  {
+    "id": "warning-demo-21",
+    "text": "超时了，这是第二十一次警告！",
+    "parts": [
+      "warning-prefix",
+      "countdown-2",
+      "numeral-10",
+      "countdown-1",
+      "warning-suffix"
+    ],
+    "duration": 3.722,
+    "heard": "超时了,这是第二十一次警告",
+    "phoneticMatch": 1.0,
+    "peak": 0.894
+  },
+  {
+    "id": "warning-demo-101",
+    "text": "超时了，这是第一百零一次警告！",
+    "parts": [
+      "warning-prefix",
+      "countdown-1",
+      "numeral-100",
+      "numeral-0",
+      "countdown-1",
+      "warning-suffix"
+    ],
+    "duration": 4.075,
+    "heard": "超时了,这是第101次警告",
+    "phoneticMatch": 1.0,
+    "peak": 0.894
+  }
+]

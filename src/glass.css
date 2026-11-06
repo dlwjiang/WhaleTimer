@@ -1,0 +1,104 @@
+/* Keep optical layers behind the controls: only the scene is softened/refracted. */
+.glass-filter-defs { position: absolute; pointer-events: none; }
+.glass-panel {
+  background: linear-gradient(135deg, #ffffff14, #ffffff03 50%, #eaf2ff0a);
+  border: 1px solid #ffffff80;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  box-shadow:
+    inset 1px 1px 0 #ffffffc2,
+    inset -1px -1px 0 #ffffff52,
+    inset 0 -3px 7px #7489a410,
+    0 10px 32px #294a7e14;
+}
+.glass-panel::before,
+.glass-panel::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+}
+.glass-panel::before {
+  z-index: -2;
+  -webkit-backdrop-filter: blur(2px) saturate(115%);
+  backdrop-filter: blur(2px) saturate(115%);
+}
+.glass-panel::after {
+  z-index: -1;
+  padding: 12px;
+  background: linear-gradient(135deg, #ffffff45, #ffffff00 35%, #b8d4ff0c 65%, #ffffff32);
+  -webkit-backdrop-filter: blur(1px) saturate(135%);
+  backdrop-filter: blur(1px) saturate(135%);
+  /* Hollow rim keeps the center clear and avoids warping labels or digits. */
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+@supports (backdrop-filter: url('#glass-refraction')) {
+  .glass-panel::after {
+    backdrop-filter: url('#glass-refraction') blur(.5px) saturate(135%);
+  }
+}
+
+/* A clear lens: directional hairline reflections, a transparent center, and
+   artwork bending only at the bevel. All optics stay behind the controls. */
+.timer-panel.glass-panel {
+  background: #ffffff06;
+  border-color: #ffffff94 #7888a326 #ffffff58 #ffffff60;
+  box-shadow:
+    inset 0 1px 2px #ffffff80,
+    inset 1px 0 2px #ffffff28,
+    inset -1px -2px 3px #52648220,
+    0 2px 3px #31425c0b,
+    0 12px 30px #31425c18;
+}
+.timer-panel.glass-panel::before {
+  -webkit-backdrop-filter: blur(.8px) saturate(118%);
+  backdrop-filter: blur(.8px) saturate(118%);
+}
+.timer-panel.glass-panel::after {
+  content: '';
+  padding: 0;
+  background: linear-gradient(158deg, #ffffff40, #ffffff14 34%, #ffffff00 35%, #ffffff00 66%, #b6cbed12);
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  -webkit-mask: none;
+  mask: none;
+}
+@supports (backdrop-filter: url('#timer-glass-lens')) {
+  .timer-panel.glass-panel::before {
+    backdrop-filter: url('#timer-glass-lens') saturate(118%);
+  }
+}
+
+@media (max-width: 700px) {
+  .topbar .icon-button { background: #ffffff20; border-color: #ffffff75; }
+  .topbar .icon-button:hover { background: #ffffff60; }
+  .timer-panel .reset-track {
+    background: linear-gradient(to right, #c9dcf690 var(--drag-progress), #ffffff1a var(--drag-progress));
+    border-color: #ffffff90;
+  }
+  .timer-panel .reset-handle {
+    background: linear-gradient(140deg, #ffffffb0, #f0f6ff55);
+    box-shadow: inset 0 1px 0 #ffffffc0, 0 2px 7px #3e5c8d19;
+  }
+}
+/* The desktop header keeps its original open layout. */
+@media (min-width: 701px) {
+  .topbar.glass-panel { background: none; border: 0; box-shadow: none; }
+  .topbar.glass-panel::before, .topbar.glass-panel::after { content: none; }
+}
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .glass-panel, .timer-panel.glass-panel { background: #f2f6fef2; }
+  .glass-panel::before, .glass-panel::after,
+  .timer-panel.glass-panel::before, .timer-panel.glass-panel::after { content: none; }
+}
+@media (prefers-reduced-transparency: reduce) {
+  .glass-panel, .timer-panel.glass-panel { background: #f2f6fe; }
+  .glass-panel::before, .glass-panel::after,
+  .timer-panel.glass-panel::before, .timer-panel.glass-panel::after { content: none; }
+  .topbar .icon-button, .timer-panel .reset-track { background: #edf2fa; }
+  .timer-panel .reset-handle { background: #fff; }
+}

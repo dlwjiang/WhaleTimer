@@ -1,0 +1,101 @@
+{
+  "generatedWith": "Built-in image_gen",
+  "reference": "../chibi-samples/claude-chibi-v1.png",
+  "prompt": "generation-prompt.txt",
+  "source": "source-sheet.png",
+  "extractionManifest": "states/manifest.json",
+  "contactSheet": "states/_contact.png",
+  "verification": "All six poses visually reviewed on checkerboard. Full silhouettes, horns, wings, tail, shoes and bell retained. Extraction edge flags correspond to faint alpha background pixels; no opaque subject touches the crop edge. Native alpha preserved without keying or threshold cleanup. Equal 512px registration; lossless WebP conversion.",
+  "assets": [
+    {
+      "state": "idle",
+      "file": "public/avatars/claude/idle.webp",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 239800,
+      "visibleBoundsAtAlpha128": [
+        91,
+        14,
+        423,
+        486
+      ]
+    },
+    {
+      "state": "happy",
+      "file": "public/avatars/claude/happy.webp",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 241458,
+      "visibleBoundsAtAlpha128": [
+        91,
+        13,
+        423,
+        486
+      ]
+    },
+    {
+      "state": "cute",
+      "file": "public/avatars/claude/cute.webp",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 234828,
+      "visibleBoundsAtAlpha128": [
+        90,
+        14,
+        422,
+        486
+      ]
+    },
+    {
+      "state": "angry",
+      "file": "public/avatars/claude/angry.webp",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 241452,
+      "visibleBoundsAtAlpha128": [
+        91,
+        14,
+        423,
+        486
+      ]
+    },
+    {
+      "state": "frustrated",
+      "file": "public/avatars/claude/frustrated.webp",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 242116,
+      "visibleBoundsAtAlpha128": [
+        91,
+        14,
+        423,
+        486
+      ]
+    },
+    {
+      "state": "bell",
+      "file": "public/avatars/claude/bell.webp",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 247758,
+      "visibleBoundsAtAlpha128": [
+        90,
+        14,
+        423,
+        486
+      ]
+    }
+  ]
+}

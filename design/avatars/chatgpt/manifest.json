@@ -1,0 +1,101 @@
+{
+  "generatedWith": "Built-in image_gen",
+  "reference": "../chibi-samples/chatgpt-chibi-v1.png",
+  "prompt": "generation-prompt.txt",
+  "source": "source-sheet.png",
+  "extractionManifest": "states/manifest.json",
+  "contactSheet": "states/_contact.png",
+  "verification": "All six poses visually reviewed on checkerboard. Full silhouettes, horns, wings, tail, shoes and bell retained. Extraction edge flags correspond to faint alpha background pixels; no opaque subject touches the crop edge. Native alpha preserved without keying or threshold cleanup. Equal 512px registration; lossless WebP conversion.",
+  "assets": [
+    {
+      "state": "idle",
+      "file": "public/avatars/chatgpt/idle.webp",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 235086,
+      "visibleBoundsAtAlpha128": [
+        84,
+        9,
+        427,
+        481
+      ]
+    },
+    {
+      "state": "happy",
+      "file": "public/avatars/chatgpt/happy.webp",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 232766,
+      "visibleBoundsAtAlpha128": [
+        84,
+        9,
+        427,
+        481
+      ]
+    },
+    {
+      "state": "cute",
+      "file": "public/avatars/chatgpt/cute.webp",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 230648,
+      "visibleBoundsAtAlpha128": [
+        84,
+        9,
+        427,
+        481
+      ]
+    },
+    {
+      "state": "angry",
+      "file": "public/avatars/chatgpt/angry.webp",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 233824,
+      "visibleBoundsAtAlpha128": [
+        84,
+        9,
+        427,
+        481
+      ]
+    },
+    {
+      "state": "frustrated",
+      "file": "public/avatars/chatgpt/frustrated.webp",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 232034,
+      "visibleBoundsAtAlpha128": [
+        84,
+        9,
+        427,
+        481
+      ]
+    },
+    {
+      "state": "bell",
+      "file": "public/avatars/chatgpt/bell.webp",
+      "size": [
+        512,
+        512
+      ],
+      "bytes": 242504,
+      "visibleBoundsAtAlpha128": [
+        77,
+        9,
+        427,
+        481
+      ]
+    }
+  ]
+}

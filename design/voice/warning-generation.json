@@ -1,0 +1,27 @@
+{
+  "ids": [
+    "warning-1",
+    "warning-2",
+    "warning-3",
+    "warning-4",
+    "warning-5",
+    "warning-6",
+    "warning-7",
+    "warning-8",
+    "warning-9",
+    "warning-10",
+    "warning-prefix",
+    "warning-suffix",
+    "numeral-0",
+    "numeral-6",
+    "numeral-7",
+    "numeral-8",
+    "numeral-9",
+    "numeral-10",
+    "numeral-100",
+    "numeral-1000",
+    "numeral-10000",
+    "numeral-100000000"
+  ],
+  "text": "The first ten warnings are full sentences; later warning ordinals concatenate prefix, Mandarin digit/unit clips and suffix. Existing countdown clips supply 一 through 五."
+}

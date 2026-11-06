@@ -1,0 +1,432 @@
+{
+  "voice": "Tide — original Mandarin claude",
+  "character": "claude",
+  "language": "zh-CN",
+  "designModel": "Qwen3-TTS-12Hz-1.7B-VoiceDesign-bf16",
+  "cloneModel": "VoxCPM2-bf16",
+  "clips": [
+    {
+      "id": "ready",
+      "text": "准备好了吗？我会陪着你哦。",
+      "file": "ready.m4a",
+      "duration": 2.439,
+      "seed": 665445300,
+      "bytes": 32707,
+      "sampleRate": 24000
+    },
+    {
+      "id": "start",
+      "text": "开始啦，专心做好这一件事吧！",
+      "file": "start.m4a",
+      "duration": 2.336,
+      "seed": 805221856,
+      "bytes": 29940,
+      "sampleRate": 24000
+    },
+    {
+      "id": "main-complete",
+      "text": "时间到了，我们快一点吧！",
+      "file": "main-complete.m4a",
+      "duration": 2.313,
+      "seed": 1226901256,
+      "bytes": 32175,
+      "sampleRate": 24000
+    },
+    {
+      "id": "grace-complete",
+      "text": "时间真的到了！我要生气啦！",
+      "file": "grace-complete.m4a",
+      "duration": 2.173,
+      "seed": 4045040236,
+      "bytes": 30415,
+      "sampleRate": 24000
+    },
+    {
+      "id": "reminder-promise",
+      "text": "说好的马上呢？快一点啦！",
+      "file": "reminder-promise.m4a",
+      "duration": 2.831,
+      "seed": 3799391457,
+      "bytes": 37730,
+      "sampleRate": 24000
+    },
+    {
+      "id": "reminder-tail",
+      "text": "再磨蹭，尾巴都要气翘起来了！",
+      "file": "reminder-tail.m4a",
+      "duration": 3.136,
+      "seed": 33472765,
+      "bytes": 41153,
+      "sampleRate": 24000
+    },
+    {
+      "id": "reminder-time",
+      "text": "时间可不会等人哦，快收尾！",
+      "file": "reminder-time.m4a",
+      "duration": 2.928,
+      "seed": 3544402838,
+      "bytes": 39615,
+      "sampleRate": 24000
+    },
+    {
+      "id": "reminder-watching",
+      "text": "哼，我可一直在看着时间呢！",
+      "file": "reminder-watching.m4a",
+      "duration": 2.571,
+      "seed": 3112740259,
+      "bytes": 33606,
+      "sampleRate": 24000
+    },
+    {
+      "id": "reminder-move",
+      "text": "真的不能再拖啦，动起来！",
+      "file": "reminder-move.m4a",
+      "duration": 2.088,
+      "seed": 2416648798,
+      "bytes": 27734,
+      "sampleRate": 24000
+    },
+    {
+      "id": "reminder-finish",
+      "text": "最后一点点，一口气做完吧！",
+      "file": "reminder-finish.m4a",
+      "duration": 2.579,
+      "seed": 2179958806,
+      "bytes": 32158,
+      "sampleRate": 24000
+    },
+    {
+      "id": "reset",
+      "text": "重新开始吧，这次也一起加油！",
+      "file": "reset.m4a",
+      "duration": 2.596,
+      "seed": 105887234,
+      "bytes": 34620,
+      "sampleRate": 24000
+    },
+    {
+      "id": "pause",
+      "text": "休息一下，我等你。",
+      "file": "pause.m4a",
+      "duration": 1.338,
+      "seed": 2297429873,
+      "bytes": 19080,
+      "sampleRate": 24000
+    },
+    {
+      "id": "resume",
+      "text": "好，继续加油！",
+      "file": "resume.m4a",
+      "duration": 1.417,
+      "seed": 1025355314,
+      "bytes": 19062,
+      "sampleRate": 24000
+    },
+    {
+      "id": "sound-on",
+      "text": "我会提醒你的哦。",
+      "file": "sound-on.m4a",
+      "duration": 1.137,
+      "seed": 3020465189,
+      "bytes": 15928,
+      "sampleRate": 24000
+    },
+    {
+      "id": "poke-angry",
+      "text": "别戳我啦，快去收尾！",
+      "file": "poke-angry.m4a",
+      "duration": 1.571,
+      "seed": 4218836198,
+      "bytes": 22446,
+      "sampleRate": 24000
+    },
+    {
+      "id": "poke-cute",
+      "text": "嘿嘿，我在呢。一起加油吧！",
+      "file": "poke-cute.m4a",
+      "duration": 2.866,
+      "seed": 3920416204,
+      "bytes": 32276,
+      "sampleRate": 24000
+    },
+    {
+      "id": "focus",
+      "text": "专心做好这一件事吧，我陪着你。",
+      "file": "focus.m4a",
+      "duration": 2.429,
+      "seed": 57914958,
+      "bytes": 33271,
+      "sampleRate": 24000
+    },
+    {
+      "id": "countdown-5",
+      "text": "五",
+      "file": "countdown-5.m4a",
+      "duration": 0.532,
+      "seed": 3404572840,
+      "bytes": 7619,
+      "sampleRate": 24000
+    },
+    {
+      "id": "countdown-4",
+      "text": "四",
+      "file": "countdown-4.m4a",
+      "duration": 0.654,
+      "seed": 1988085423,
+      "bytes": 9975,
+      "sampleRate": 24000
+    },
+    {
+      "id": "countdown-3",
+      "text": "三",
+      "file": "countdown-3.m4a",
+      "duration": 0.381,
+      "seed": 2784516756,
+      "bytes": 5354,
+      "sampleRate": 24000
+    },
+    {
+      "id": "countdown-2",
+      "text": "二",
+      "file": "countdown-2.m4a",
+      "duration": 0.391,
+      "seed": 159411277,
+      "bytes": 5840,
+      "sampleRate": 24000
+    },
+    {
+      "id": "countdown-1",
+      "text": "一",
+      "file": "countdown-1.m4a",
+      "duration": 0.398,
+      "seed": 1390184605,
+      "bytes": 5901,
+      "sampleRate": 24000
+    },
+    {
+      "id": "warning-1",
+      "text": "超时了，这是第一次警告！",
+      "file": "warning-1.m4a",
+      "duration": 2.712,
+      "seed": 1471069594,
+      "bytes": 34766,
+      "sampleRate": 24000
+    },
+    {
+      "id": "warning-2",
+      "text": "超时了，这是第二次警告！",
+      "file": "warning-2.m4a",
+      "duration": 2.092,
+      "seed": 2207586367,
+      "bytes": 26965,
+      "sampleRate": 24000
+    },
+    {
+      "id": "warning-3",
+      "text": "超时了，这是第三次警告！",
+      "file": "warning-3.m4a",
+      "duration": 2.412,
+      "seed": 3730908041,
+      "bytes": 31205,
+      "sampleRate": 24000
+    },
+    {
+      "id": "warning-4",
+      "text": "超时了，这是第四次警告！",
+      "file": "warning-4.m4a",
+      "duration": 2.21,
+      "seed": 1607193877,
+      "bytes": 29084,
+      "sampleRate": 24000
+    },
+    {
+      "id": "warning-5",
+      "text": "超时了，这是第五次警告！",
+      "file": "warning-5.m4a",
+      "duration": 2.067,
+      "seed": 701309073,
+      "bytes": 28707,
+      "sampleRate": 24000
+    },
+    {
+      "id": "warning-6",
+      "text": "超时了，这是第六次警告！",
+      "file": "warning-6.m4a",
+      "duration": 2.046,
+      "seed": 334996326,
+      "bytes": 28091,
+      "sampleRate": 24000
+    },
+    {
+      "id": "warning-7",
+      "text": "超时了，这是第七次警告！",
+      "file": "warning-7.m4a",
+      "duration": 2.11,
+      "seed": 2135552434,
+      "bytes": 28423,
+      "sampleRate": 24000
+    },
+    {
+      "id": "warning-8",
+      "text": "超时了，这是第八次警告！",
+      "file": "warning-8.m4a",
+      "duration": 2.211,
+      "seed": 1235768672,
+      "bytes": 29132,
+      "sampleRate": 24000
+    },
+    {
+      "id": "warning-9",
+      "text": "超时了，这是第九次警告！",
+      "file": "warning-9.m4a",
+      "duration": 2.664,
+      "seed": 3939082179,
+      "bytes": 34497,
+      "sampleRate": 24000
+    },
+    {
+      "id": "warning-10",
+      "text": "超时了，这是第十次警告！",
+      "file": "warning-10.m4a",
+      "duration": 2.411,
+      "seed": 2784153634,
+      "bytes": 30673,
+      "sampleRate": 24000
+    },
+    {
+      "id": "warning-prefix",
+      "text": "超时了，这是第",
+      "file": "warning-prefix.m4a",
+      "duration": 1.997,
+      "seed": 4192676423,
+      "bytes": 22916,
+      "sampleRate": 24000
+    },
+    {
+      "id": "warning-suffix",
+      "text": "次警告！",
+      "file": "warning-suffix.m4a",
+      "duration": 0.631,
+      "seed": 2549377229,
+      "bytes": 9427,
+      "sampleRate": 24000
+    },
+    {
+      "id": "numeral-0",
+      "text": "零",
+      "file": "numeral-0.m4a",
+      "duration": 0.508,
+      "seed": 2512309757,
+      "bytes": 7887,
+      "sampleRate": 24000
+    },
+    {
+      "id": "numeral-6",
+      "text": "六",
+      "file": "numeral-6.m4a",
+      "duration": 0.372,
+      "seed": 3745308303,
+      "bytes": 5772,
+      "sampleRate": 24000
+    },
+    {
+      "id": "numeral-7",
+      "text": "七",
+      "file": "numeral-7.m4a",
+      "duration": 0.722,
+      "seed": 473590750,
+      "bytes": 9858,
+      "sampleRate": 24000
+    },
+    {
+      "id": "numeral-8",
+      "text": "八",
+      "file": "numeral-8.m4a",
+      "duration": 0.284,
+      "seed": 763078285,
+      "bytes": 4672,
+      "sampleRate": 24000
+    },
+    {
+      "id": "numeral-9",
+      "text": "九",
+      "file": "numeral-9.m4a",
+      "duration": 0.647,
+      "seed": 3770590973,
+      "bytes": 8523,
+      "sampleRate": 24000
+    },
+    {
+      "id": "numeral-10",
+      "text": "十",
+      "file": "numeral-10.m4a",
+      "duration": 0.708,
+      "seed": 4256433808,
+      "bytes": 11066,
+      "sampleRate": 24000
+    },
+    {
+      "id": "numeral-100",
+      "text": "百",
+      "file": "numeral-100.m4a",
+      "duration": 0.414,
+      "seed": 164804003,
+      "bytes": 5760,
+      "sampleRate": 24000
+    },
+    {
+      "id": "numeral-1000",
+      "text": "千",
+      "file": "numeral-1000.m4a",
+      "duration": 0.572,
+      "seed": 621644853,
+      "bytes": 7420,
+      "sampleRate": 24000
+    },
+    {
+      "id": "numeral-10000",
+      "text": "万",
+      "file": "numeral-10000.m4a",
+      "duration": 0.35,
+      "seed": 4250380107,
+      "bytes": 5526,
+      "sampleRate": 24000
+    },
+    {
+      "id": "numeral-100000000",
+      "text": "亿",
+      "file": "numeral-100000000.m4a",
+      "duration": 0.621,
+      "seed": 982518652,
+      "bytes": 8243,
+      "sampleRate": 24000
+    },
+    {
+      "id": "timer-start",
+      "text": "三、二、一，开始！",
+      "file": "timer-start.m4a",
+      "duration": 2.953,
+      "bytes": 26384,
+      "sampleRate": 24000,
+      "seed": 974899347,
+      "assembly": [
+        {
+          "id": "countdown-3",
+          "at": 0
+        },
+        {
+          "id": "countdown-2",
+          "at": 0.8
+        },
+        {
+          "id": "countdown-1",
+          "at": 1.6
+        },
+        {
+          "id": "timer-start-ending",
+          "at": 2.4
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,180 @@
+{
+  "source": "source-sheet.webp",
+  "rows": 2,
+  "cols": 3,
+  "mode": "equal",
+  "all_separators_detected": true,
+  "x_bounds": [
+    [
+      0,
+      0
+    ],
+    [
+      512,
+      512
+    ],
+    [
+      1024,
+      1024
+    ],
+    [
+      1536,
+      1536
+    ]
+  ],
+  "y_bounds": [
+    [
+      0,
+      0
+    ],
+    [
+      512,
+      512
+    ],
+    [
+      1024,
+      1024
+    ]
+  ],
+  "cells": [
+    {
+      "row": 0,
+      "col": 0,
+      "box": [
+        6,
+        6,
+        506,
+        506
+      ],
+      "method": "native-alpha",
+      "touches_cell_edge": true,
+      "name": "idle",
+      "file": "../../public/avatars/idle.webp",
+      "size": [
+        512,
+        512
+      ],
+      "format": "lossless WebP",
+      "bytes": 157026
+    },
+    {
+      "row": 0,
+      "col": 1,
+      "box": [
+        518,
+        6,
+        1018,
+        506
+      ],
+      "method": "native-alpha",
+      "touches_cell_edge": true,
+      "name": "happy",
+      "file": "../../public/avatars/happy.webp",
+      "size": [
+        512,
+        512
+      ],
+      "format": "lossless WebP",
+      "bytes": 156282
+    },
+    {
+      "row": 0,
+      "col": 2,
+      "box": [
+        1030,
+        6,
+        1530,
+        506
+      ],
+      "method": "native-alpha",
+      "touches_cell_edge": true,
+      "name": "cute",
+      "file": "../../public/avatars/cute.webp",
+      "size": [
+        512,
+        512
+      ],
+      "format": "lossless WebP",
+      "bytes": 154302
+    },
+    {
+      "row": 1,
+      "col": 0,
+      "box": [
+        6,
+        518,
+        506,
+        1018
+      ],
+      "method": "native-alpha",
+      "touches_cell_edge": true,
+      "name": "angry",
+      "file": "../../public/avatars/angry.webp",
+      "size": [
+        512,
+        512
+      ],
+      "format": "lossless WebP",
+      "bytes": 156926
+    },
+    {
+      "row": 1,
+      "col": 1,
+      "box": [
+        518,
+        518,
+        1018,
+        1018
+      ],
+      "method": "native-alpha",
+      "touches_cell_edge": true,
+      "name": "frustrated",
+      "file": "../../public/avatars/frustrated.webp",
+      "size": [
+        512,
+        512
+      ],
+      "format": "lossless WebP",
+      "bytes": 155674
+    },
+    {
+      "row": 1,
+      "col": 2,
+      "box": [
+        1030,
+        518,
+        1530,
+        1018
+      ],
+      "method": "native-alpha",
+      "touches_cell_edge": true,
+      "name": "bell",
+      "file": "../../public/avatars/bell.webp",
+      "size": [
+        512,
+        512
+      ],
+      "format": "lossless WebP",
+      "bytes": 159374
+    }
+  ],
+  "empty_cells": [],
+  "clipped_cells": [
+    "r1c1",
+    "r1c2",
+    "r1c3",
+    "r2c1",
+    "r2c2",
+    "r2c3"
+  ],
+  "contact_sheet": "contact-sheet.webp",
+  "generatedWith": "Built-in image_gen",
+  "reference": "../../whale-maid-avatar-concept-v2.png",
+  "prompt": "generation-prompt.txt",
+  "alphaCleanup": {
+    "snapLow": 32,
+    "snapHigh": 235,
+    "reason": "Faint alpha background from generator; preserved full character edges."
+  },
+  "visualVerification": "Reviewed full sheet and extracted checker contact sheet: all six poses correct, whole bodies, hair tip, shoes and whale tails intact. Automated edge warnings are caused by near-transparent source background pixels before alpha cleanup; no visible character clipping."
+}

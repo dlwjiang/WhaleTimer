@@ -1,0 +1,13 @@
+Use case: identity-preserve. Asset type: six-state transparent pixel-art sprite sheet for a timer companion.
+Make EXACTLY SIX full-body variants of the EXACT approved chibi character in reference image 1. Preserve the approved face, proportions, outfit, hair and accessories. Crisp detailed pixel art, stepped pixel contours and clustered cel shading as in the reference.
+Canvas: 3:2 landscape, ideally 1536x1024 or larger. EXACTLY 3 columns by 2 rows of equal square cells. Thin solid black straight separators and outer border, about 8px thick. Actual transparent alpha inside each cell. No checkerboard.
+Each cell has one whole character centered at identical scale, identical head size and camera angle; feet on the same invisible baseline at 92% cell height. Keep all hair, shoes, horns, wings, tail and props safely inside its cell with at least 6% padding. Nothing touches grid lines.
+Row-major states:
+1 row 1 col 1 IDLE: calm gentle closed-mouth smile, relaxed pose close to reference.
+2 row 1 col 2 HAPPY: bright open-mouth joyful smile, eyebrows lifted, hands excited near chest.
+3 row 1 col 3 CUTE: both eyes CLOSED in crescent smile, cheeks blushing, hands clasped sweetly at chest.
+4 row 2 col 1 ANGRY: both eyes OPEN with strongly furrowed inward eyebrows, puffed cheeks and a small scolding open mouth, hands firmly on hips, stern but adorable.
+5 row 2 col 2 FRUSTRATED: exasperated half-lidded eyes and pout, one hand to forehead and other on hip.
+6 row 2 col 3 BELL: open calling mouth, holding a small GOLDEN HANDBELL visibly raised beside the shoulder in one hand, other hand on hip.
+Exactly six distinct faces and poses; idle and angry must clearly differ. Bell appears ONLY in cell 6. All bodies identical height and size. No words, captions, numbers, labels, watermarks, scene, cast shadow, extra people, or extraneous props.
+Character invariants: long copper-orange hair, amber eyes, orange sunburst flower on side of head with black ribbon and tassels, ivory ruffled collar, black fitted waist, ivory/orange/black layered skirt with gold edging and floral motifs, tiny dark shoes. Keep the brown sunburst book against the chest in IDLE only; omit book from other poses to free both hands. Preserve skirt length and silhouette. No dragon or whale features.
