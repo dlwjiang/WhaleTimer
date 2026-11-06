@@ -40,7 +40,7 @@ export function createFlipClock(element) {
     update(value, { animate = true } = {}) {
       animate = animate && !document.defaultView?.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
       // Pausing or reduced motion reveals the current value immediately.
-      if (!animate) slots.forEach(slot => { if (slot.classList.contains('flip-digit')) settle(slot); });
+      if (!animate) slots.forEach(slot => { if (slot.classList.contains('is-flipping')) settle(slot); });
       if (value === previous) return;
       readable.textContent = value;
       element.dataset.time = value;

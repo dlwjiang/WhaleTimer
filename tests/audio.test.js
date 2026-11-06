@@ -68,6 +68,30 @@ function setup(t, options = {}) {
   return { audio, sources, contexts, spoken, tones, filters, gains, get fetchCount() { return fetchCount; }, get decoding() { return decoding; } };
 }
 
+test('only the selected opening cue is prefetched, and muted selection downloads nothing', async t => {
+  const urls = [];
+  const characterClips = Object.fromEntries(['whale', 'claude', 'chatgpt'].map(id => [id, {
+    '三、二、一，开始！': `${id}/intro.m4a`, '稍后提醒': `${id}/later.m4a`,
+  }]));
+  const { audio } = setup(t, { characterClips, fetcher: async url => {
+    urls.push(url);
+    return { ok: true, arrayBuffer: async () => new ArrayBuffer(4) };
+  } });
+  audio.setEnabled(true);
+  await new Promise(resolve => setImmediate(resolve));
+  assert.deepEqual(urls, [], 'wait for the saved character before fetching');
+  audio.setEnabled(false);
+  audio.setCharacter('claude');
+  await new Promise(resolve => setImmediate(resolve));
+  assert.deepEqual(urls, []);
+  audio.setEnabled(true);
+  await new Promise(resolve => setImmediate(resolve));
+  assert.deepEqual(urls, ['/voice/claude/intro.m4a']);
+  await audio.speak('稍后提醒');
+  await audio.speak('稍后提醒');
+  assert.deepEqual(urls, ['/voice/claude/intro.m4a', '/voice/claude/later.m4a']);
+});
+
 test('muting cancels bell tones so enabling sound cannot resume an old chime', async t => {
   const env = setup(t);
   await env.audio.unlock();
@@ -111,7 +135,7 @@ test('bundled voice starts after gesture unlock, caches decoded audio, and repla
   assert.equal(await env.audio.speak('开始啦'), true);
   assert.equal(env.sources[0].stopped, true);
   assert.equal(env.decoding, 1);
-  assert.equal(env.fetchCount, 2, 'each of the two files is preloaded once');
+  assert.equal(env.fetchCount, 1, 'only the requested clip is fetched, then reused');
   env.audio.setEnabled(false);
   assert.equal(env.sources[1].stopped, true);
   assert.equal(await env.audio.speak('快一点'), false);
@@ -301,7 +325,7 @@ test('character effects reuse decoded recordings and preserve playback rate and 
     assert.equal(env.gains.at(-1).disconnected, true);
   }
   assert.equal(env.decoding, 1);
-  assert.equal(env.fetchCount, 2);
+  assert.equal(env.fetchCount, 1);
   assert.ok(profiles[0][1] > profiles[1][1]);
   assert.deepEqual(profiles[1], [0, 0, 0]);
   assert.deepEqual(profiles[2], [0, 0, 0]);

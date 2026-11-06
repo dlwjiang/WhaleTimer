@@ -52,6 +52,41 @@ function setup(t, saved, options = {}) {
   return { app, $, calls, data, dom, configure, pointer, async finishSpeech() { assert.ok(pendingSpeech.length); pendingSpeech.shift()(true); await flush(); }, async time(ms, tick = true) { clock = ms; if (tick) app.tick(); await flush(); } };
 }
 
+test('unchanged idle ticks do not mutate the DOM or write storage', async t => {
+  let writes = 0;
+  const { $, dom, time } = setup(t, null, { storage: { getItem: () => null, setItem: () => writes++ } });
+  const initialWrites = writes;
+  const changes = [];
+  const observer = new dom.window.MutationObserver(records => changes.push(...records));
+  observer.observe($('#app'), { subtree: true, childList: true, attributes: true, characterData: true });
+  t.after(() => observer.disconnect());
+  for (let i = 1; i <= 100; i++) await time(1000 + i * 100);
+  assert.equal(changes.length, 0);
+  assert.equal(writes, initialWrites);
+});
+
+test('reset uses release coordinates, ignores other fingers, and cancels on window blur', async t => {
+  const { $, dom, pointer, app, calls } = setup(t);
+  const track = $('#reset-track'); const handle = $('#reset-handle');
+  Object.defineProperty(track, 'clientWidth', { value: 300 });
+  Object.defineProperty(handle, 'offsetWidth', { value: 38 });
+  handle.setPointerCapture = () => {}; handle.releasePointerCapture = () => {};
+  $('#primary-action').click(); await flush();
+  pointer('pointerdown', 10); pointer('pointermove', 300); pointer('pointerup', 70);
+  assert.equal(app.engine.snapshot().status, 'running', 'releasing back near the start cancels');
+  pointer('pointerdown', 10); pointer('pointerdown', 250, 2); pointer('pointerup', 300, 2);
+  assert.equal(app.engine.snapshot().status, 'running');
+  dom.window.dispatchEvent(new dom.window.Event('blur'));
+  assert.equal(track.classList.contains('dragging'), false);
+  pointer('pointerup', 300);
+  assert.equal(app.engine.snapshot().status, 'running');
+  pointer('pointerdown', 10); pointer('pointermove', 70); pointer('pointerup', 300);
+  assert.equal(app.engine.snapshot().status, 'idle', 'fast final movement completes the reset');
+  assert.equal(calls.filter(([type, text]) => type === 'speak' && text === '重新开始吧').length, 1);
+  handle.dispatchEvent(new dom.window.KeyboardEvent('keydown', { key: 'Enter', repeat: true, bubbles: true, cancelable: true }));
+  assert.equal(calls.filter(([type, text]) => type === 'speak' && text === '重新开始吧').length, 1);
+});
+
 test('default interface uses proportional progress sections without duration labels', async t => {
   const { $ } = setup(t);
   assert.equal($('#timer-display').textContent, '03:00');
@@ -293,14 +328,10 @@ test('full session rings at main boundary, switches to angry, and numbers recurr
   assert.equal($('#anger-emojis').getAttribute('aria-label'), '已超时警告 14 次');
 });
 
-test('restored overtime session continues numbering and reset returns to the first warning', async t => {
-  let now = 0;
-  const timer = new TimerEngine({ mainSeconds: 1, secondarySeconds: 1, now: () => now });
-  timer.start(); timer.completePreparation(); now = 1000; timer.tick(); timer.completePreparation(); now = 62000; timer.tick();
-  const saved = timer.serialize();
-  // Align the saved wall-clock anchor with this test harness's starting clock.
-  saved.savedAt = 1000;
-  const { $, time, app } = setup(t, { timer: saved, sound: true });
+test('overtime warning numbers survive pause and character changes, and reset starts again at one', async t => {
+  const { $, time, app } = setup(t, { timer: { mainSeconds: 1, secondarySeconds: 1 }, sound: true });
+  $('#primary-action').click(); await flush();
+  await time(2000); await time(3000); await time(63000);
   assert.equal($('#speech-cn').textContent, '超时了，这是第二次警告！');
   assert.equal(document.querySelectorAll('.anger-emoji').length, 2);
   $('#primary-action').click();
@@ -308,13 +339,13 @@ test('restored overtime session continues numbering and reset returns to the fir
   $('#character-next').click();
   assert.equal(document.querySelectorAll('.anger-emoji').length, 2);
   $('#primary-action').click();
-  await time(31000);
+  await time(93000);
   assert.equal($('#speech-cn').textContent, '超时了，这是第三次警告！');
   app.reset();
   assert.equal($('#anger-emojis').hidden, true);
   assert.equal(document.querySelectorAll('.anger-emoji').length, 0);
   $('#primary-action').click(); await flush();
-  await time(32000); await time(33000); await time(63000);
+  await time(94000); await time(95000); await time(125000);
   assert.equal($('#speech-cn').textContent, '超时了，这是第一次警告！');
 });
 
@@ -474,16 +505,42 @@ for (const character of ['whale', 'claude', 'chatgpt']) {
   });
 }
 
-test('restored grace session uses its actual phase, caption and expression without repeating bell', async t => {
-  let now = 0;
-  const timer = new TimerEngine({ mainSeconds: 1, secondarySeconds: 10, now: () => now });
-  timer.start(); timer.completePreparation(); now = 1000; timer.tick(); timer.completePreparation();
-  const { $, calls } = setup(t, { timer: timer.serialize(), sound: true });
-  assert.equal($('#app').dataset.phase, 'grace');
-  assert.equal($('#avatar').dataset.expression, 'frustrated');
-  assert.match($('#speech-cn').textContent, /时间到了/);
-  assert.equal(calls.filter(([type]) => type === 'bell' || type === 'speak').length, 0);
-});
+for (const state of ['running', 'paused', 'intro', 'grace', 'overdue']) {
+  test(`refresh discards ${state} session state while preserving preferences`, async t => {
+    let clock = 0;
+    const timer = new TimerEngine({ mainSeconds: 10, secondarySeconds: 8, overtimeSeconds: 5, overtimeAlerts: false, now: () => clock });
+    timer.start();
+    if (state !== 'intro') {
+      timer.completePreparation(); clock = 4000; timer.tick();
+      if (state === 'paused') timer.pause();
+      if (state === 'grace' || state === 'overdue') {
+        clock = 10000; timer.tick(); timer.completePreparation();
+        clock = state === 'grace' ? 12000 : 30000; timer.tick();
+      }
+    }
+    const { $, app, calls, time, data } = setup(t, { timer: timer.serialize(), sound: false, character: 'claude' });
+    assert.equal(app.engine.snapshot().status, 'idle');
+    assert.equal(app.engine.snapshot().phase, 'focus');
+    assert.equal(app.engine.snapshot().elapsedMs, 0);
+    assert.equal($('#timer-display').textContent, '00:10');
+    assert.equal($('#primary-action').textContent, '开始专注');
+    assert.equal($('#app').dataset.character, 'claude');
+    assert.equal($('#avatar').dataset.expression, 'idle');
+    assert.equal($('#speech-visual').classList.contains('is-visible'), false);
+    assert.equal($('#anger-emojis').hidden, true);
+    assert.equal($('#focus-progress').firstElementChild.style.width, '100%');
+    assert.equal($('#extra-progress').firstElementChild.style.width, '100%');
+    assert.equal(calls.some(([type]) => type === 'speak' || type === 'bell'), false);
+    assert.deepEqual(JSON.parse(data.get('tide-timer-v1')), { timer: { mainSeconds: 10, secondarySeconds: 8, overtimeSeconds: 5, overtimeAlerts: false }, sound: false, character: 'claude' });
+    await time(7000);
+    assert.equal(app.engine.snapshot().elapsedMs, 0);
+    $('#primary-action').click(); await flush();
+    assert.equal(app.engine.snapshot().status, 'preparing');
+    await time(10000); await time(11000);
+    assert.equal(app.engine.snapshot().status, 'running');
+    assert.equal(app.engine.snapshot().elapsedMs, 1000);
+  });
+}
 
 test('throwing storage getter does not prevent timer startup', async t => {
   Object.defineProperty(globalThis, 'localStorage', { configurable: true, get() { throw new Error('Storage blocked'); } });
@@ -611,10 +668,10 @@ test('pause and reset cancel an unfinished intro; ordinary resume does not repla
   assert.equal(app.engine.snapshot().elapsedMs, 0);
 });
 
-test('asset studio cancels preparation and a restored intro waits for a user gesture', async t => {
+test('asset studio cancels preparation after a refreshed intro starts afresh', async t => {
   const timer = new TimerEngine(); timer.start();
   const { $, app, calls } = setup(t, { timer: timer.serialize(), sound: true }, { deferSpeech: true });
-  assert.equal(app.engine.snapshot().status, 'paused');
+  assert.equal(app.engine.snapshot().status, 'idle');
   assert.equal(calls.filter(([type]) => type === 'speak').length, 0);
   $('#primary-action').click();
   $('#settings-open').click(); $('#assets-open').click(); await flush();

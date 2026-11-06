@@ -17,6 +17,7 @@ export function createAudio({ clips, characterClips = CHARACTER_CLIPS, fetcher =
   let speechSource;
   let activeSpeech;
   let characterId = 'whale';
+  let characterSelected = false;
   let revision = 0;
   let clickRevision = 0;
   let voices = [];
@@ -53,12 +54,12 @@ export function createAudio({ clips, characterClips = CHARACTER_CLIPS, fetcher =
     return pendingFiles.get(file);
   }
 
-  // Preload files silently. The first user gesture unlocks the audio context.
+  // Warm only the selected companion's opening cue. Other clips load on demand.
   const clipsFor = id => clips ?? characterClips[id] ?? characterClips.whale;
   function preloadVoice() {
-    if (AudioContext && !disposed) Object.values(clipsFor(characterId)).forEach(file => { void fetchClip(file).catch(() => {}); });
+    const file = clipsFor(characterId)?.['三、二、一，开始！'];
+    if (file && AudioContext && enabled && !disposed) void fetchClip(file).catch(() => {});
   }
-  preloadVoice();
 
   function unlock() {
     if (!enabled || disposed) return;
@@ -345,6 +346,7 @@ export function createAudio({ clips, characterClips = CHARACTER_CLIPS, fetcher =
     },
     setCharacter(id) {
       characterId = Object.hasOwn(VOICE_PROFILES, id) ? id : 'whale';
+      characterSelected = true;
       preloadVoice();
     },
     get supported() { return Boolean(AudioContext || (synth && globalThis.SpeechSynthesisUtterance)); },
@@ -353,7 +355,7 @@ export function createAudio({ clips, characterClips = CHARACTER_CLIPS, fetcher =
       if (!enabled) {
         silence();
         context?.suspend().catch(() => {});
-      }
+      } else if (characterSelected) preloadVoice();
     },
     silence,
     destroy() {

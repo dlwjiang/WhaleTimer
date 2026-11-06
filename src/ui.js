@@ -38,16 +38,19 @@ export function mountApp(root, { now = Date.now, storage, audio = createAudio(),
   let saved;
   try { saved = JSON.parse(storage?.getItem(STORAGE_KEY)); } catch { /* Storage can be unavailable. */ }
   let engine;
-  try { engine = TimerEngine.restore(saved?.timer, { now }); } catch { engine = new TimerEngine({ now }); }
-  if (!engine) engine = new TimerEngine({ now });
+  try {
+    // Migrate preferences from older saves, without restoring an active session.
+    const { mainSeconds, secondarySeconds, overtimeSeconds, overtimeAlerts } = saved?.timer ?? {};
+    engine = new TimerEngine({ mainSeconds, secondarySeconds, overtimeSeconds, overtimeAlerts, now });
+  } catch { engine = new TimerEngine({ now }); }
   let character = getCharacter(saved?.character);
   let sound = saved?.sound !== false;
   audio.setEnabled(sound);
   let expression = 'idle';
   let expressionUntil = 0;
   let ambientAt = now() + 12000;
-  let lastSavedSecond = -1;
   let lastAnnouncement = '';
+  let renderedSound;
   let destroyed = false;
   let preparation = null;
 
@@ -119,6 +122,9 @@ export function mountApp(root, { now = Date.now, storage, audio = createAudio(),
     <div id="announcer" class="sr-only" role="status" aria-live="polite"></div>`;
 
   const $ = selector => root.querySelector(selector);
+  const attribute = (element, name, value) => {
+    if (element.getAttribute(name) !== String(value)) element.setAttribute(name, value);
+  };
   const flipClock = createFlipClock($('#timer-display'));
   const dialog = $('#settings-dialog');
   const glassLens = createGlassLens(root);
@@ -131,7 +137,9 @@ export function mountApp(root, { now = Date.now, storage, audio = createAudio(),
   const cleanups = [];
   const on = (target, type, fn, options) => { target.addEventListener(type, fn, options); cleanups.push(() => target.removeEventListener(type, fn, options)); };
   function persist() {
-    try { storage?.setItem(STORAGE_KEY, JSON.stringify({ timer: engine.serialize(), sound, character: character.id })); } catch { /* Private browsing and full storage don't stop the timer. */ }
+    const { mainSeconds, secondarySeconds, overtimeSeconds, overtimeAlerts } = engine;
+    const timer = { mainSeconds, secondarySeconds, overtimeSeconds, overtimeAlerts };
+    try { storage?.setItem(STORAGE_KEY, JSON.stringify({ timer, sound, character: character.id })); } catch { /* Private browsing and full storage don't stop the timer. */ }
   }
   function announce(text) {
     if (text !== lastAnnouncement) { $('#announcer').textContent = text; lastAnnouncement = text; }
@@ -205,35 +213,44 @@ export function mountApp(root, { now = Date.now, storage, audio = createAudio(),
     const grace = phase === 'grace';
     const preparing = status === 'preparing';
     const active = status === 'running' || preparing;
-    root.dataset.phase = phase;
-    root.dataset.status = status;
-    root.dataset.countdown = grace && status === 'running' && remainingMs <= SECONDARY_COUNTDOWN_SECONDS * 1000 ? String(Math.ceil(remainingMs / 1000)) : '';
+    attribute(root, 'data-phase', phase);
+    attribute(root, 'data-status', status);
+    attribute(root, 'data-countdown', grace && status === 'running' && remainingMs <= SECONDARY_COUNTDOWN_SECONDS * 1000 ? String(Math.ceil(remainingMs / 1000)) : '');
     const time = overdue ? `+${formatTime(overdueMs)}` : formatTime(remainingMs);
     flipClock.update(time, { animate: status === 'running' && !document.hidden });
-    $('#timer-display').setAttribute('aria-label', `${overdue ? '已超时' : grace ? '加时剩余' : '专注剩余'} ${time}`);
+    attribute($('#timer-display'), 'aria-label', `${overdue ? '已超时' : grace ? '加时剩余' : '专注剩余'} ${time}`);
     const action = active ? 'pause' : 'play';
     const actionButton = $('#primary-action');
     if (actionButton.dataset.action !== action) {
       actionButton.dataset.action = action;
       actionButton.querySelector('.timer-action-icon').innerHTML = icon(action);
     }
-    actionButton.querySelector('.timer-action-label').textContent = active ? '暂停' : status === 'paused' ? '继续' : '开始专注';
+    const label = actionButton.querySelector('.timer-action-label');
+    const actionText = active ? '暂停' : status === 'paused' ? '继续' : '开始专注';
+    if (label.textContent !== actionText) label.textContent = actionText;
     // Focus drains first from the far right, followed by extra time on the left.
-    $('.progress-sections').style.gridTemplateColumns = `minmax(0, ${snapshot.secondarySeconds}fr) minmax(0, ${snapshot.mainSeconds}fr)`;
+    const progressStyle = $('.progress-sections').style;
+    const columns = `minmax(0, ${snapshot.secondarySeconds}fr) minmax(0, ${snapshot.mainSeconds}fr)`;
+    if (progressStyle.gridTemplateColumns !== columns) progressStyle.gridTemplateColumns = columns;
     for (const [id, remaining, seconds] of [
       ['focus-progress', snapshot.mainRemainingMs, snapshot.mainSeconds],
       ['extra-progress', snapshot.secondaryRemainingMs, snapshot.secondarySeconds],
     ]) {
       const percentage = Math.min(100, Math.max(0, remaining / (seconds * 1000) * 100));
       const track = $(`#${id}`);
-      track.firstElementChild.style.width = `${percentage}%`;
-      track.setAttribute('aria-valuenow', String(Math.round(percentage)));
+      const width = `${percentage}%`;
+      if (track.firstElementChild.style.width !== width) track.firstElementChild.style.width = width;
+      attribute(track, 'aria-valuenow', Math.round(percentage));
     }
-    $('#sound-toggle').innerHTML = icon(sound ? 'sound' : 'mute');
-    $('#sound-toggle').setAttribute('aria-label', sound ? '关闭声音' : '开启声音');
-    $('#sound-toggle').title = sound ? '关闭声音' : '开启声音';
-    $('#sound-toggle').setAttribute('aria-pressed', String(sound));
-    $('#audio-note').hidden = audio.supported || !sound;
+    if (renderedSound !== sound) {
+      renderedSound = sound;
+      $('#sound-toggle').innerHTML = icon(sound ? 'sound' : 'mute');
+      $('#sound-toggle').setAttribute('aria-label', sound ? '关闭声音' : '开启声音');
+      $('#sound-toggle').title = sound ? '关闭声音' : '开启声音';
+      $('#sound-toggle').setAttribute('aria-pressed', String(sound));
+    }
+    const hideAudioNote = audio.supported || !sound;
+    if ($('#audio-note').hidden !== hideAudioNote) $('#audio-note').hidden = hideAudioNote;
     if (expressionUntil && now() >= expressionUntil) {
       setExpression(overdue ? 'angry' : grace ? 'frustrated' : 'idle');
       ambientAt = now() + 12000;
@@ -242,8 +259,6 @@ export function mountApp(root, { now = Date.now, storage, audio = createAudio(),
       setExpression(overdue ? 'frustrated' : grace ? 'cute' : Math.random() > 0.5 ? 'cute' : 'happy', overdue ? 'huff' : 'sway', 3200);
       ambientAt = now() + 15000;
     }
-    const second = Math.floor(now() / 1000);
-    if (second !== lastSavedSecond) { persist(); lastSavedSecond = second; }
   }
   function cancelPreparation() {
     preparation = null;
@@ -431,50 +446,44 @@ export function mountApp(root, { now = Date.now, storage, audio = createAudio(),
   });
 
   let drag = null;
-  let preventClick = false;
   const handle = $('#reset-handle');
   const track = $('#reset-track');
+  const moveDrag = event => {
+    if (!drag || drag.id !== event.pointerId) return;
+    const dx = Math.max(0, Math.min(drag.distance, event.clientX - drag.start));
+    drag.fraction = drag.distance > 0 ? dx / drag.distance : 0;
+    track.style.setProperty('--drag-x', `${dx}px`);
+  };
   const finishDrag = (event, cancelled = false) => {
     if (!drag || event.pointerId !== drag.id) return;
+    if (!cancelled) moveDrag(event);
     const complete = !cancelled && drag.fraction >= 0.88;
     const pointerId = drag.id;
     drag = null;
-    preventClick = true;
     try { handle.releasePointerCapture(pointerId); } catch { /* Pointer may have been released by the browser. */ }
     track.classList.remove('dragging'); track.style.setProperty('--drag-x', '0px');
     if (complete) reset();
   };
   on(handle, 'pointerdown', event => {
-    if (event.button !== 0) return;
-    preventClick = false;
-    drag = { id: event.pointerId, start: event.clientX, fraction: 0, distance: track.clientWidth - handle.offsetWidth - 12 };
-    handle.setPointerCapture(event.pointerId); track.classList.add('dragging');
+    if (event.button !== 0 || event.isPrimary === false || drag) return;
+    drag = { id: event.pointerId, start: event.clientX, fraction: 0, distance: Math.max(0, track.clientWidth - handle.offsetWidth - 2 * (handle.offsetLeft || 6)) };
+    try { handle.setPointerCapture(event.pointerId); } catch { /* Capture can be unavailable after interruption. */ }
+    track.classList.add('dragging');
   });
-  on(handle, 'pointermove', event => {
-    if (!drag || drag.id !== event.pointerId) return;
-    const dx = Math.max(0, Math.min(drag.distance, event.clientX - drag.start));
-    drag.fraction = drag.distance > 0 ? dx / drag.distance : 0;
-    track.style.setProperty('--drag-x', `${dx}px`);
-  });
+  on(handle, 'pointermove', moveDrag);
   on(handle, 'pointerup', event => finishDrag(event));
   on(handle, 'pointercancel', event => finishDrag(event, true));
   on(handle, 'lostpointercapture', event => finishDrag(event, true));
-  on(handle, 'click', event => { if (event.detail === 0 && !preventClick) reset(); preventClick = false; });
-  on(handle, 'keydown', event => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); reset(); } });
-  on(document, 'visibilitychange', () => { if (!document.hidden) tick(); });
+  on(handle, 'click', event => { if (event.detail === 0) reset(); });
+  on(handle, 'keydown', event => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); if (!event.repeat) reset(); } });
+  const cancelDrag = () => { if (drag) finishDrag({ pointerId: drag.id }, true); };
+  on(globalThis.window, 'blur', cancelDrag);
+  on(document, 'visibilitychange', () => { if (!document.hidden) tick(); else cancelDrag(); });
   on(globalThis.window, 'pagehide', persist);
   const interval = autoTick ? setInterval(tick, 100) : null;
   renderCharacter();
-  const initial = engine.snapshot();
-  if (initial.status === 'paused') say('休息一下，我等你。', 'cute', 'breathe', false);
-  else if (initial.phase === 'overdue') {
-    const warning = engine.lastReminderIndex;
-    if (warning > 0) say(warningText(warning), 'angry', 'breathe', false);
-    else say('时间真的到了！我要生气啦！', 'angry', 'breathe', false);
-  }
-  else if (initial.phase === 'grace') say('时间到了，我们快一点吧！', 'frustrated', 'breathe', false);
-  else if (initial.status === 'running') say('专心做好这一件事吧，我陪着你。', 'idle', 'breathe', false);
-  else setExpression('idle');
+  setExpression('idle');
   tick();
+  persist();
   return { tick, reset, engine, destroy() { destroyed = true; cancelPreparation(); clearInterval(interval); cleanups.forEach(fn => fn()); assetPanel.destroy(); glassTuner.destroy(); glassLens.destroy(); speechCaption.destroy(); characterSwipe.destroy(); speaking.destroy(); characterCarousel.destroy(); flipClock.destroy(); audio.destroy(); } };
 }
