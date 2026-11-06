@@ -4,17 +4,144 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="theme-color" content="#edf2fa" />
-    <meta name="application-name" content="伴刻" />
+    <meta name="application-name" content="伴刻 Banke" />
     <meta name="apple-mobile-web-app-title" content="伴刻" />
-    <meta name="description" content="专注、加时与超时提醒，让可爱的小伙伴陪你按自己的节奏完成任务。" />
+    <meta name="description" content="A free DeepSeek anime maid focus timer with Claude &amp; ChatGPT companions, Mandarin voice reminders, and custom sessions. 伴刻：鲸鱼娘陪你专注，无需登录。" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://whaletimer.vercel.app/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="伴刻 Banke" />
+    <meta property="og:url" content="https://whaletimer.vercel.app/" />
+    <meta property="og:image" content="https://whaletimer.vercel.app/avatars/idle.webp" />
+    <meta property="og:image:type" content="image/webp" />
+    <meta property="og:image:width" content="512" />
+    <meta property="og:image:height" content="512" />
+    <meta property="og:image:alt" content="Banke’s DeepSeek-inspired blue-haired whale maid in pixel art" />
+    <meta property="og:title" content="DeepSeek Anime Maid Focus Timer · 伴刻 Banke" />
+    <meta property="og:description" content="Put DeepSeek-chan on focus duty. A free anime companion timer with DeepSeek, Claude &amp; ChatGPT fan avatars, custom sessions, and Mandarin reminders." />
+    <meta property="og:locale" content="zh_CN" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:image" content="https://whaletimer.vercel.app/avatars/idle.webp" />
+    <meta name="twitter:image:alt" content="Banke’s DeepSeek-inspired blue-haired whale maid in pixel art" />
+    <meta name="twitter:title" content="DeepSeek Anime Maid Focus Timer · 伴刻 Banke" />
+    <meta name="twitter:description" content="Your AI meme companion, on focus duty. Free browser timer with DeepSeek, Claude &amp; ChatGPT fan avatars. No account or API key." />
     <link rel="preload" href="/fonts/ZCOOLKuaiLe-Regular.ttf" as="font" type="font/ttf" crossorigin />
-    <title>伴刻 · 你的专注伙伴</title>
+    <title>DeepSeek Anime Maid Focus Timer · 伴刻 Banke</title>
     <link rel="icon" type="image/png" sizes="32x32" href="/brand/favicon-32.png" />
     <link rel="icon" type="image/png" sizes="192x192" href="/brand/icon-192.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/brand/apple-touch-icon.png" />
+    <link rel="stylesheet" href="/src/discover.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "@id": "https://whaletimer.vercel.app/#application",
+        "url": "https://whaletimer.vercel.app/",
+        "image": "https://whaletimer.vercel.app/avatars/idle.webp",
+        "name": "伴刻 Banke",
+        "alternateName": "Banke Focus Timer",
+        "description": "A free browser focus timer with DeepSeek anime maid, Claude, and ChatGPT fan-inspired companions, Mandarin voice reminders, and customizable focus and wrap-up sessions.",
+        "applicationCategory": "ProductivityApplication",
+        "operatingSystem": "Any device with a modern web browser",
+        "browserRequirements": "Requires JavaScript",
+        "inLanguage": "zh-CN",
+        "isAccessibleForFree": true,
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "featureList": [
+          "Three selectable fan-inspired pixel-art companions: DeepSeek, Claude, and ChatGPT",
+          "Custom focus and wrap-up durations from 0.1 to 180 minutes each",
+          "3 + 2 and 25 + 5 minute focus and wrap-up presets",
+          "Mandarin voice reminders and optional recurring overtime alerts",
+          "Locally saved preferences; no account or API key required"
+        ],
+        "author": { "@type": "Person", "name": "David Jiang", "url": "https://dj.theory-a.com" }
+      }
+    </script>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app" tabindex="-1"></div>
+    <noscript><p class="javascript-note">计时器需要 JavaScript。Enable JavaScript to use the timer; the guide below is available without it.</p></noscript>
+    <article id="about-timer" class="discover" lang="en" aria-labelledby="discover-title">
+      <header class="discover-intro">
+        <p class="discover-kicker">伴刻 Banke · Your focus companion</p>
+        <h1 id="discover-title">DeepSeek anime maid focus timer</h1>
+        <p class="discover-lead">Put DeepSeek-chan on focus duty.</p>
+        <p>Banke is a free browser timer with DeepSeek, Claude, and ChatGPT fan-inspired anime avatars. Pick a companion, set a focus session, and let Mandarin voice reminders nudge you through the last few minutes of coding, studying, or writing. No account, download, or API key needed.</p>
+        <p lang="zh-CN">伴刻是一款免费的 AI 角色陪伴专注计时器。DeepSeek 鲸鱼娘女仆、Claude 和 ChatGPT 像素伙伴陪你写代码、学习与工作；支持自定义专注时长、加时和中文语音超时提醒，无需登录。</p>
+        <a class="discover-cta" href="#app">Meet your focus companion <span aria-hidden="true">↑</span></a>
+      </header>
+
+      <section class="discover-section" aria-labelledby="companions-title">
+        <h2 id="companions-title">Three AI meme companions. One task at a time.</h2>
+        <div class="discover-companions">
+          <section class="discover-character">
+            <img src="/avatars/idle.webp" alt="DeepSeek-inspired pixel-art whale girl with blue hair, a maid dress, and a white apron" width="512" height="512" loading="lazy" decoding="async" />
+            <h3>DeepSeek · The whale maid</h3>
+            <p>The blue-haired whale girl brings DeepSeek-chan energy to your desk: happy when you start, bell in hand when time runs out, and increasingly cross when you keep going.</p>
+          </section>
+          <section class="discover-character">
+            <img src="/avatars/claude/idle.webp" alt="Claude-inspired pixel-art companion with orange hair, an ivory dress, and a book" width="512" height="512" loading="lazy" decoding="async" />
+            <h3>Claude · The bookish companion</h3>
+            <p>An orange-haired scholar with a book and a warm study scene. Pick her for a paper-reading session, a code review, or that document you have been putting off.</p>
+          </section>
+          <section class="discover-character">
+            <img src="/avatars/chatgpt/idle.webp" alt="ChatGPT-inspired white-haired pixel-art dragon companion with lilac wings and a blue cloud" width="512" height="512" loading="lazy" decoding="async" />
+            <h3>ChatGPT · The little cloud dragon</h3>
+            <p>A white-haired dragon with lilac wings and a cloud friend. A little company for writing, debugging, and finishing one small thing before opening another tab.</p>
+          </section>
+        </div>
+      </section>
+
+      <section class="discover-section" aria-labelledby="meme-title">
+        <h2 id="meme-title">What is the DeepSeek anime maid meme?</h2>
+        <p>DeepSeek-chan, also called Whale-chan or the DeepSeek whale girl, is a fan-made anime personification associated with DeepSeek’s whale identity. The blue-haired maid appears in community art, reaction stickers, and desktop pets. Chinese fan names include <span lang="zh-CN">DeepSeek 娘、鲸鱼娘和大肥鱼</span>; a recurring joke gives her an appetite for rice and a talent for avoiding work.</p>
+        <p>Banke turns that playful idea into a focus companion: this time, the whale maid is the one reminding <em>you</em> to finish. These are independently made fan-inspired characters, with no affiliation with or endorsement by DeepSeek, Anthropic, or OpenAI.</p>
+        <p class="discover-source">Explore the community context: <a href="https://github.com/DejavuMoe/deepseek_wale_girl">DeepSeek whale-girl fan stickers</a> and <a href="https://www.thexpin.com/p/weekly-dose-of-china-tech-110226">X.PIN’s whale-girl culture roundup</a>.</p>
+      </section>
+
+      <section class="discover-section" aria-labelledby="how-title">
+        <h2 id="how-title">A focus ritual for coding, studying, and side projects</h2>
+        <ol class="discover-steps">
+          <li><strong>Choose one task and one companion.</strong> Swipe the character or use the side arrows to switch between DeepSeek, Claude, and ChatGPT.</li>
+          <li><strong>Set your session.</strong> Open <span lang="zh-CN">计时设置</span> (the gear button). Start small with 3 + 2 minutes, choose 25 + 5, or customize both durations.</li>
+          <li><strong>Start, then wrap up.</strong> Press <span lang="zh-CN">开始专注</span>. After focus time, the second countdown gives you time to finish. Pause when you need to; slide right to reset.</li>
+        </ol>
+        <p>Try one bug fix, one eval review, or one section of a paper per session. For a vibe-coding session, use the wrap-up time to read the diff and decide what to test next.</p>
+      </section>
+
+      <section class="discover-section discover-faq" aria-labelledby="faq-title">
+        <h2 id="faq-title">About the timer</h2>
+        <details open>
+          <summary>Can I use this as an AI avatar Pomodoro timer?</summary>
+          <p>You can use Banke to time a 25-minute focus session with an anime avatar. Its 25 + 5 preset means 25 minutes of focus followed by 5 minutes of wrap-up time, with overtime reminders after that. It does not automatically alternate work and rest or count Pomodoro rounds. Pause or reset when you are ready for a break.</p>
+        </details>
+        <details open>
+          <summary>Does the avatar use a live AI model or chat with me?</summary>
+          <p>No. “AI companion” describes the AI-themed characters. Expressions and bundled Mandarin voice clips react to timer events and taps. Banke does not send prompts to DeepSeek, Claude, or ChatGPT, and it needs no model subscription or API key.</p>
+        </details>
+        <details open>
+          <summary>Is this a DeepSeek desktop pet or a Claude Code extension?</summary>
+          <p>Banke is a browser focus companion. Keep it open beside your editor or study material on desktop, or use it in your phone browser. It does not install an always-on-top desktop pet or connect to your coding agent.</p>
+        </details>
+        <details open>
+          <summary>Is it free, and what gets saved?</summary>
+          <p>The timer is free and requires no account. Your browser saves your selected companion, durations, sound setting, and overtime preferences locally. Refreshing or reopening starts a fresh, stopped session. The site uses Vercel Analytics for usage measurement.</p>
+        </details>
+        <details open>
+          <summary>Are the interface and voices available in English?</summary>
+          <p>The timer controls and character voices are currently in Simplified Chinese and Mandarin. This English guide explains the controls. You can mute speech with the speaker button and use the visual countdown.</p>
+        </details>
+        <details open lang="zh-CN">
+          <summary>这是 DeepSeek 鲸鱼娘番茄钟吗？</summary>
+          <p>伴刻是一款受 DeepSeek 鲸鱼娘梗启发的专注计时器，也可切换 Claude 和 ChatGPT 同人伙伴。25 + 5 预设是 25 分钟专注加 5 分钟收尾，并非自动循环的工作／休息番茄钟。点击齿轮调整时长，点击「开始专注」启动；无需注册或 API 密钥。</p>
+        </details>
+      </section>
+      <footer class="discover-footer">
+        <a href="#app">Back to the timer ↑</a>
+        <a href="https://dj.theory-a.com">About the creator · 关于作者</a>
+      </footer>
+    </article>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

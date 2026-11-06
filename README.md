@@ -8,6 +8,10 @@ Six generated mouth PNGs add about 14 KB; blinks reuse the existing closed-eye a
 
 A mobile-first Vite app with three swappable pixel-art companions: Deepseek, Claude, and ChatGPT. Vanilla JavaScript and CSS; no backend or account required.
 
+Search discovery now includes a static English/Chinese guide below the timer, a DeepSeek anime maid title and description, social metadata, `WebApplication` structured data, and crawlable companion images and FAQs. The guide lives outside `#app` so it remains available before JavaScript and survives app mounting. See [research, query priorities, and launch checks](docs/seo-research.md). The timer remains Chinese/Mandarin; the guide explains that the 25 + 5 preset is focus plus wrap-up time, not automatic work/rest cycles.
+
+Canonical, sitemap, and social-image URLs use the repository's published homepage, `https://whaletimer.vercel.app/`. When changing the primary domain, update `index.html`, `public/robots.txt`, and `public/sitemap.xml` together. Deploying under a subdirectory also requires adjusting those absolute URLs; `robots.txt` must be served from the host root.
+
 On mobile, the character sits behind transparent liquid-glass controls. The dock and header use light translucent layers. The timer dock spans the available mobile width and meets the bottom of the screen, with larger clock cards and controls. Its clear glass has a top highlight and refraction along the top lip; the left, right, and bottom borders and edge shadows are removed. Padding keeps controls inside device safe areas. An embedded 4.5 KB displacement map bends the background without a runtime renderer; a light-blur treatment and opaque reduced-transparency mode provide fallbacks. Controls sit above the optical layers. The avatar is about 15% smaller with a narrow-screen size cap. The headline, quote box, stage row, status tag, and helper copy have been removed from the main screen; speech announcements remain available to screen readers. Small or landscape screens scroll so the face and controls remain accessible; reduced transparency and browsers without backdrop blur get opaque fallbacks.
 
 ## Run

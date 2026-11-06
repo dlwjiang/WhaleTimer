@@ -1,0 +1,57 @@
+/* Static, crawlable guide below the full-height timer. Scoped to avoid
+   changing the companion scene, dialogs, or timer controls. */
+.discover,
+.javascript-note {
+  box-sizing: border-box;
+  width: min(100% - 40px, 960px);
+  margin-inline: auto;
+  color: #344762;
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+.discover { padding: 72px 0 32px; }
+.discover-intro { max-width: 740px; }
+.discover-kicker { color: #51688c; font-size: 13px; letter-spacing: .06em; }
+.discover h1,
+.discover h2,
+.discover h3 { color: #253451; line-height: 1.25; text-wrap: balance; }
+.discover h1 { font-size: clamp(30px, 5vw, 46px); letter-spacing: -.035em; margin: 12px 0 20px; }
+.discover h2 { font-size: clamp(23px, 3vw, 30px); letter-spacing: -.02em; margin: 0 0 24px; }
+.discover h3 { font-size: 18px; margin: 16px 0 10px; }
+.discover p { margin: 0 0 18px; }
+.discover .discover-lead { font-size: 22px; color: #42619b; }
+.discover a { color: #345ba6; text-underline-offset: 4px; }
+.discover a:focus-visible,
+.discover summary:focus-visible { outline: 3px solid #6589e8; outline-offset: 5px; }
+.discover .discover-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  min-height: 48px;
+  margin-top: 6px;
+  padding: 10px 20px;
+  border-radius: 14px;
+  color: white;
+  background: #426bd0;
+  text-decoration: none;
+}
+.discover-section { padding-top: 48px; margin-top: 48px; border-top: 1px solid #cfdaea; }
+.discover-companions { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; }
+.discover-character img { display: block; width: min(100%, 200px); height: auto; margin: 0 auto; image-rendering: pixelated; }
+.discover-character p { font-size: 15px; }
+.discover .discover-source { font-size: 14px; color: #51627c; }
+.discover-steps { padding-left: 24px; }
+.discover-steps li { padding-left: 6px; margin-bottom: 16px; }
+.discover-faq details { padding: 20px 0; border-bottom: 1px solid #d8e1ed; }
+.discover-faq summary { cursor: pointer; font-weight: 600; color: #253451; line-height: 1.6; }
+.discover-faq details p { margin: 14px 0 0; }
+.discover-footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px; margin-top: 48px; font-size: 14px; }
+@media (max-width: 700px) {
+  .discover { padding-top: 48px; }
+  .discover-companions { grid-template-columns: 1fr; gap: 24px; }
+  .discover-character { padding: 20px; background: #ffffff55; border-radius: 20px; }
+  .discover-character img { width: 160px; }
+  .discover-section { padding-top: 32px; margin-top: 32px; }
+}

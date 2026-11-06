@@ -93,7 +93,7 @@ export function mountApp(root, { now = Date.now, storage, audio = createAudio(),
           <p id="audio-note" class="audio-note" hidden>此浏览器无法播放中文语音，计时和角色状态仍会正常更新。</p>
         </section>
       </main>
-      <footer class="footer"><a class="about-link" href="https://dj.theory-a.com" target="_blank" rel="noopener noreferrer" aria-label="关于作者：打开个人作品集（新标签页）">关于作者 · About <span aria-hidden="true">↗</span></a><span>按自己的节奏来 <span aria-hidden="true">✧</span></span></footer>
+      <footer class="footer"><a class="about-link" href="#about-timer">关于伴刻 · Timer guide</a><a class="about-link" href="https://dj.theory-a.com" target="_blank" rel="noopener noreferrer" aria-label="关于作者：打开个人作品集（新标签页）">关于作者 · About <span aria-hidden="true">↗</span></a><span>按自己的节奏来 <span aria-hidden="true">✧</span></span></footer>
     </div>
     <dialog id="settings-dialog" aria-labelledby="settings-title"><form id="settings-form">
       <div class="dialog-heading"><h2 id="settings-title">计时设置</h2><button type="button" id="settings-close" class="icon-button" aria-label="关闭设置">${icon('close')}</button></div>

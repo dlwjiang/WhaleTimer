@@ -85,6 +85,6 @@
     gap: 6px;
   }
   .flip-digit { max-width: 76px; }
-  .footer { justify-content: center; margin: 0; }
+  .footer { justify-content: center; gap: 24px; margin: 0; }
   .footer > span:last-child { display: none; }
 }
