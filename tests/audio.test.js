@@ -25,7 +25,7 @@ function setup(t, options = {}) {
       return { length, sampleRate, numberOfChannels: channels, getChannelData: channel => data[channel] };
     }
     createOscillator() {
-      const tone = { frequency: {}, connect() {}, disconnect() {}, start() {}, stop(at) { if (at === undefined) this.cancelled = true; } };
+      const tone = { frequency: { setValueAtTime(value) { this.value = value; }, exponentialRampToValueAtTime(value) { this.target = value; } }, connect() {}, disconnect() {}, start() {}, stop(at) { if (at === undefined) this.cancelled = true; } };
       tones.push(tone);
       return tone;
     }
@@ -78,6 +78,28 @@ test('muting cancels bell tones so enabling sound cannot resume an old chime', a
   env.audio.setEnabled(true);
   await env.audio.unlock();
   assert.equal(env.tones.length, 6);
+});
+
+test('play and pause clicks differ, preserve speech, and obey mute and cancellation', async t => {
+  const env = setup(t);
+  await env.audio.speak('开始啦');
+  await env.audio.click('play');
+  const play = env.tones.map(tone => tone.frequency.value);
+  await env.audio.click('pause');
+  assert.equal(env.tones.length, 6);
+  assert.notDeepEqual(env.tones.slice(3).map(tone => tone.frequency.value), play);
+  assert.equal(env.sources.length, 3, 'each click adds a broadband contact snap');
+  assert.equal(env.sources[0].stopped, undefined);
+  env.audio.setEnabled(false);
+  assert.ok(env.tones.every(tone => tone.cancelled));
+  await env.audio.click('play');
+  assert.equal(env.tones.length, 6);
+  assert.equal(env.sources.length, 3, 'mute also suppresses the contact snap');
+  env.audio.setEnabled(true);
+  const pending = env.audio.click('play');
+  env.audio.silence();
+  await pending;
+  assert.equal(env.tones.length, 6, 'cancelled unlock cannot play a stale click');
 });
 
 test('bundled voice starts after gesture unlock, caches decoded audio, and replaces earlier speech', async t => {

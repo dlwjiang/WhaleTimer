@@ -21,6 +21,7 @@ function setup(t, saved, options = {}) {
   const pendingSpeech = [];
   const audio = {
     supported: true,
+    click: action => calls.push(['click', action]),
     setCharacter: id => calls.push(['character', id]),
     setEnabled: value => { calls.push(['enabled', value]); if (!value) pendingSpeech.splice(0).forEach(resolve => resolve(false)); }, unlock: () => calls.push(['unlock']),
     bell: () => calls.push(['bell']), speak: (text, playback) => {
@@ -57,24 +58,35 @@ test('default interface uses proportional progress sections without duration lab
   assert.equal($('.time-details'), null);
   assert.equal($('#duration-label'), null);
   assert.equal($('#extra-label'), null);
-  assert.equal($('.progress-sections').style.gridTemplateColumns, 'minmax(0, 180fr) minmax(0, 120fr)');
+  assert.equal($('.progress-sections').style.gridTemplateColumns, 'minmax(0, 120fr) minmax(0, 180fr)');
   assert.equal(document.querySelectorAll('.avatar-image').length, 6);
   assert.equal($('#avatar').dataset.expression, 'idle');
   assert.equal(formatTime(1), '00:01');
   assert.equal(formatTime(3600000), '60:00');
 });
 
-test('unequal timer durations size the sections proportionally and fill each phase independently', async t => {
-  const { $, configure, time } = setup(t);
+test('proportional time bars start full, drain from right to left, and refill on reset', async t => {
+  const { $, app, configure, time } = setup(t);
+  assert.deepEqual([...$('.progress-sections').children].map(track => track.id), ['extra-progress', 'focus-progress']);
+  const expectBars = (focus, extra) => {
+    for (const [id, value] of [['focus-progress', focus], ['extra-progress', extra]]) {
+      assert.equal($(`#${id}`).getAttribute('aria-valuenow'), String(value));
+      assert.equal($(`#${id}`).firstElementChild.style.width, `${value}%`);
+    }
+  };
+  expectBars(100, 100);
   configure('0.1', '0.2');
-  assert.equal($('.progress-sections').style.gridTemplateColumns, 'minmax(0, 6fr) minmax(0, 12fr)');
+  expectBars(100, 100);
+  assert.equal($('.progress-sections').style.gridTemplateColumns, 'minmax(0, 12fr) minmax(0, 6fr)');
   $('#primary-action').click(); await flush();
   await time(4000);
-  assert.equal($('#focus-progress').getAttribute('aria-valuenow'), '50');
-  assert.equal($('#extra-progress').getAttribute('aria-valuenow'), '0');
+  expectBars(50, 100);
   await time(7000); await time(13000);
-  assert.equal($('#focus-progress').getAttribute('aria-valuenow'), '100');
-  assert.equal($('#extra-progress').getAttribute('aria-valuenow'), '50');
+  expectBars(0, 50);
+  await time(19000);
+  expectBars(0, 0);
+  app.reset();
+  expectBars(100, 100);
 });
 
 test('disabling repeated alerts preserves the ending alert and overtime clock, and saves the preference', async t => {
@@ -314,7 +326,7 @@ test('pause exactly at a boundary consumes the transition silently and preserves
   $('#primary-action').click(); await flush();
   assert.equal(app.engine.snapshot().status, 'paused');
   assert.equal(app.engine.snapshot().phase, 'grace');
-  assert.equal(calls.filter(([type]) => type === 'speak' || type === 'bell').length, 0);
+  assert.deepEqual(calls.filter(([type]) => type === 'speak' || type === 'bell'), [['speak', '休息一下，我等你。']]);
   assert.match($('#speech-cn').textContent, /休息/);
   await time(100000);
   assert.equal($('#timer-display').textContent, '00:06');
@@ -417,18 +429,37 @@ test('drag reset requires crossing threshold, pointer cancellation aborts, keybo
   pointer('pointerdown', 10); pointer('pointermove', 300); pointer('pointercancel', 300);
   assert.equal(app.engine.snapshot().status, 'running');
   assert.equal(calls.filter(([, text]) => text === '重新开始吧').length, 0);
+  assert.equal(calls.filter(([type, action]) => type === 'click' && action === 'pause').length, 0);
   pointer('pointerdown', 10); pointer('pointermove', 300); pointer('pointerup', 300);
   assert.equal(app.engine.snapshot().status, 'idle');
   assert.equal($('#timer-display').textContent, '03:00');
   assert.equal($('#speech-cn').textContent, '重新开始吧');
   assert.equal(calls.filter(([, text]) => text === '重新开始吧').length, 1);
+  assert.equal(calls.filter(([type, action]) => type === 'click' && action === 'pause').length, 1);
   $('#primary-action').click(); await flush(); await time(6000);
   handle.dispatchEvent(new dom.window.KeyboardEvent('keydown', { key: 'Enter', bubbles: true, cancelable: true }));
   assert.equal(app.engine.snapshot().status, 'idle');
   assert.equal(calls.filter(([, text]) => text === '重新开始吧').length, 2);
+  assert.equal(calls.filter(([type, action]) => type === 'click' && action === 'pause').length, 2);
 });
 
 for (const character of ['whale', 'claude', 'chatgpt']) {
+  test(`${character} speaks on pause and keeps the caption when muted`, async t => {
+    const { $, calls, app } = setup(t, { character, sound: true });
+    $('#primary-action').click(); await flush();
+    calls.length = 0;
+    $('#primary-action').click(); await flush();
+    assert.equal(app.engine.snapshot().status, 'paused');
+    assert.deepEqual(calls.filter(([type]) => type === 'speak'), [['speak', '休息一下，我等你。']]);
+    $('#sound-toggle').click();
+    $('#primary-action').click(); await flush();
+    calls.length = 0;
+    $('#primary-action').click(); await flush();
+    assert.equal(app.engine.snapshot().status, 'paused');
+    assert.equal($('#speech-cn').textContent, '休息一下，我等你。');
+    assert.equal(calls.some(([type]) => type === 'speak'), false);
+  });
+
   test(`${character} speaks the shortened reset cue and respects mute`, t => {
     const { $, calls } = setup(t, { character, sound: true });
     assert.deepEqual(calls.find(([type]) => type === 'character'), ['character', character]);
@@ -462,24 +493,27 @@ test('throwing storage getter does not prevent timer startup', async t => {
   assert.equal(app.engine.snapshot().status, 'running');
 });
 
-test('secondary final five seconds speak Chinese once per second and finish with the angry reminder', async t => {
+test('secondary final three seconds speak Chinese once per second and finish with the angry reminder', async t => {
   const { $, configure, time, calls } = setup(t);
   configure('0.1', '0.2');
   $('#primary-action').click(); await flush();
   await time(7000);
   calls.length = 0;
-  await time(13999);
-  assert.equal(calls.filter(([type]) => type === 'speak').length, 0);
-  const digits = ['五', '四', '三', '二', '一'];
-  for (let index = 0; index < 5; index++) {
-    await time(14000 + index * 1000);
+  for (const timestamp of [14000, 15000, 15999]) {
+    await time(timestamp);
+    assert.equal(calls.filter(([type]) => type === 'speak').length, 0);
+    assert.equal($('#app').dataset.countdown, '');
+  }
+  const digits = ['三', '二', '一'];
+  for (let index = 0; index < 3; index++) {
+    await time(16000 + index * 1000);
     assert.equal($('#speech-cn').textContent, digits[index]);
     assert.equal($('#speech-visual').textContent, digits[index]);
     assert.equal($('#speech-visual').dataset.kind, 'countdown');
     assert.equal($('#speech-visual').classList.contains('is-visible'), true);
-    assert.equal($('#app').dataset.countdown, String(5 - index));
+    assert.equal($('#app').dataset.countdown, String(3 - index));
     assert.equal($('#speech').classList.contains('is-countdown'), true);
-    await time(14099 + index * 1000);
+    await time(16099 + index * 1000);
   }
   assert.deepEqual(calls.filter(([type]) => type === 'speak').map(([, text]) => text), digits);
   await time(19000);
@@ -495,9 +529,9 @@ test('muted countdown keeps visible digits without speaking', async t => {
   $('#sound-toggle').click();
   calls.length = 0; // The earlier settings save speaks its reset cue before mute.
   $('#primary-action').click(); await flush();
-  await time(4000); await time(10000); await time(17000);
-  assert.equal($('#speech-cn').textContent, '五');
-  assert.equal($('#speech-visual').textContent, '五');
+  await time(4000); await time(10000); await time(19000);
+  assert.equal($('#speech-cn').textContent, '三');
+  assert.equal($('#speech-visual').textContent, '三');
   assert.equal(calls.filter(([type]) => type === 'speak').length, 0);
 });
 

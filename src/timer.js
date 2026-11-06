@@ -1,5 +1,6 @@
 const SECOND = 1000;
 export const DEFAULT_OVERTIME_SECONDS = 30;
+export const SECONDARY_COUNTDOWN_SECONDS = 3;
 
 export function validateOvertimeSeconds(value) {
   if (!Number.isInteger(value) || value < 1 || value > 86400) {
@@ -109,7 +110,7 @@ export class TimerEngine {
     }
     if (snapshot.phase === 'grace') {
       const number = Math.ceil(snapshot.remainingMs / SECOND);
-      if (number >= 1 && number <= 5 && number < this.lastCountdownNumber) {
+      if (number >= 1 && number <= SECONDARY_COUNTDOWN_SECONDS && number < this.lastCountdownNumber) {
         // Speak only the current digit after a delayed callback.
         events.push({ type: 'secondary-countdown', number, elapsedMs });
         this.lastCountdownNumber = number;

@@ -1,4 +1,35 @@
+/* Typed, inherited colors let gradients and every dependent control blend
+   together. Interrupted switches continue from the currently displayed color. */
+@property --character-accent { syntax: '<color>'; inherits: true; initial-value: #426bd0; }
+@property --character-accent-light { syntax: '<color>'; inherits: true; initial-value: #6487e5; }
+@property --character-soft { syntax: '<color>'; inherits: true; initial-value: #eaf0ff; }
+@property --character-extra { syntax: '<color>'; inherits: true; initial-value: #6c9eae; }
+@property --flip-text { syntax: '<color>'; inherits: true; initial-value: #eef9ff; }
+@property --flip-base { syntax: '<color>'; inherits: true; initial-value: #192e4b; }
+@property --flip-edge { syntax: '<color>'; inherits: true; initial-value: #13263f; }
+@property --flip-shadow { syntax: '<color>'; inherits: true; initial-value: #182d4d25; }
+@property --flip-top-start { syntax: '<color>'; inherits: true; initial-value: #34567d; }
+@property --flip-top-end { syntax: '<color>'; inherits: true; initial-value: #233b5d; }
+@property --flip-bottom-start { syntax: '<color>'; inherits: true; initial-value: #294363; }
+@property --flip-bottom-end { syntax: '<color>'; inherits: true; initial-value: #395d83; }
+@property --flip-seam { syntax: '<color>'; inherits: true; initial-value: #10213a; }
+@property --flip-hinge { syntax: '<color>'; inherits: true; initial-value: #8bbcd4; }
+@property --flip-separator { syntax: '<color>'; inherits: true; initial-value: #536e91; }
+@property --flip-text-shadow-color { syntax: '<color>'; inherits: true; initial-value: #0005; }
+@property --flip-text-shadow-blur { syntax: '<length>'; inherits: true; initial-value: 1px; }
+@property --flip-warning { syntax: '<color>'; inherits: true; initial-value: #ffcfbd; }
+@property --speech-color { syntax: '<color>'; inherits: true; initial-value: #426bc2; }
+@property --speech-shadow { syntax: '<color>'; inherits: true; initial-value: #34538d70; }
+
 #app {
+  transition-property: --character-accent, --character-accent-light,
+    --character-soft, --character-extra, --flip-text, --flip-base,
+    --flip-edge, --flip-shadow, --flip-top-start, --flip-top-end,
+    --flip-bottom-start, --flip-bottom-end, --flip-seam, --flip-hinge,
+    --flip-separator, --flip-text-shadow-color, --flip-text-shadow-blur,
+    --flip-warning, --speech-color, --speech-shadow;
+  transition-duration: 280ms;
+  transition-timing-function: cubic-bezier(.16, 1, .3, 1);
   --character-accent: #426bd0;
   --character-accent-light: #6487e5;
   --character-soft: #eaf0ff;
@@ -15,7 +46,8 @@
   --flip-seam: #10213a;
   --flip-hinge: #8bbcd4;
   --flip-separator: #536e91;
-  --flip-text-shadow: 0 1px 1px #0005;
+  --flip-text-shadow-color: #0005;
+  --flip-text-shadow-blur: 1px;
   --flip-warning: #ffcfbd;
 }
 #app[data-character=claude] {
@@ -52,12 +84,15 @@
   --flip-seam: #bcaaca;
   --flip-hinge: #a894bd;
   --flip-separator: #806c97;
-  --flip-text-shadow: 0 1px 0 #ffffffa0;
+  --flip-text-shadow-color: #ffffffa0;
+  --flip-text-shadow-blur: 0px;
   --flip-warning: #94365a;
 }
 .timer-panel > .primary-button { background: linear-gradient(145deg, var(--character-accent-light), var(--accent)); }
 #focus-progress > div { background: var(--character-accent); }
 #extra-progress > div { background: var(--character-extra); }
+/* The palette already animates; avoid a second, trailing color transition. */
+.progress-track > div { transition: width .1s linear; }
 .character-option[aria-pressed=true] { border-color: var(--character-accent); background: var(--character-soft); }
 .character-option[aria-pressed=true]::after { background: var(--character-accent); }
 
@@ -84,6 +119,10 @@
   transform-style: preserve-3d;
   backface-visibility: hidden;
 }
+/* Match DeepSeek's foot line at the glass lip. Keep the offset on each
+   carousel face so poses, facial features and cylinder rotation move together. */
+.character-face[data-character=claude] { translate: 0 4%; }
+.character-face[data-character=chatgpt] { translate: 0 5.5%; }
 .character-art, .portrait-features {
   position: absolute;
   inset: 0;

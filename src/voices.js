@@ -1,7 +1,7 @@
 import voiceLines from '../design/voice/lines.json' with { type: 'json' };
 
 export const VOICE_SETS = [
-  { id: 'whale', name: 'deepseek', description: '清甜元气', directory: '' },
+  { id: 'whale', name: 'Deepseek', description: '清甜元气', directory: '' },
   { id: 'claude', name: 'Claude', description: '温暖学姐', directory: 'claude/' },
   { id: 'chatgpt', name: 'ChatGPT', description: '清脆小龙', directory: 'chatgpt/' },
 ].map(voice => ({ ...voice, clips: voiceLines.clips.map(clip => ({ ...clip, file: `${voice.directory}${clip.file}` })) }));

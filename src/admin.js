@@ -60,7 +60,7 @@ export function createAssetPanel(root, { onOpen, onClose } = {}) {
         <div class="asset-background-options" aria-label="预览背景"><button type="button" data-background="checker" aria-pressed="true">棋盘格</button><button type="button" data-background="light" aria-pressed="false">浅色</button><button type="button" data-background="dark" aria-pressed="false">深色</button></div>
         <label class="asset-motion-toggle"><input type="checkbox">预览动作</label>
       </div>
-      <figure class="asset-image-preview" data-background="checker" data-animate="false" data-motion="breathe"><img src="${base}avatars/idle.webp" alt="deepseek 安静陪伴的表情"><figcaption><strong>deepseek</strong><span>安静陪伴</span></figcaption></figure>
+      <figure class="asset-image-preview" data-background="checker" data-animate="false" data-motion="breathe"><img src="${base}avatars/idle.webp" alt="Deepseek 安静陪伴的表情"><figcaption><strong>Deepseek</strong><span>安静陪伴</span></figcaption></figure>
       <p class="asset-image-error asset-load-error" hidden>图片加载失败。 <a href="${base}avatars/idle.webp" target="_blank" rel="noopener">打开图片文件</a></p>
       <div class="asset-image-grid" aria-label="选择角色图片">${IMAGES.map((item, index) => `<button type="button" data-expression="${item.id}" aria-pressed="${index === 0}" aria-label="预览：${item.name}"><img src="${item.url}" alt="" loading="lazy"><span>${item.name}</span></button>`).join('')}</div>
       <p class="asset-image-note">每位伙伴都有六种表情：安静、开心、可爱、生气、着急和摇铃。动作预览会遵循设备的减少动态效果设置。</p>

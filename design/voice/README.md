@@ -73,6 +73,6 @@ The reproducible `timer-start` action in `scripts/generate_voice.py` creates thi
 
 ## Short reset cue
 
-The reset cue is now “重新开始吧”. All three characters' `reset.wav` and deployed `reset.m4a` files were regenerated with their existing voice references using local VoxCPM2 (`clips --only reset --character …`). Durations: deepseek 0.979 s, Claude 0.949 s, ChatGPT 0.988 s. Each character directory contains `reset-verification.json`; local Whisper transcribed all three exactly. The previous longer WAV, AAC and manifest entry are preserved under each design directory's `reset-original/` folder. Selective reset verification writes its own report rather than overwriting warning checks.
+The reset cue is now “重新开始吧”. All three characters' `reset.wav` and deployed `reset.m4a` files were regenerated with their existing voice references using local VoxCPM2 (`clips --only reset --character …`). Durations: Deepseek 0.979 s, Claude 0.949 s, ChatGPT 0.988 s. Each character directory contains `reset-verification.json`; local Whisper transcribed all three exactly. The previous longer WAV, AAC and manifest entry are preserved under each design directory's `reset-original/` folder. Selective reset verification writes its own report rather than overwriting warning checks.
 
 Reset now cancels previous speech and plays this cue when sound is enabled, including drag, keyboard and settings-save resets. Muting still leaves the visible caption without audio.

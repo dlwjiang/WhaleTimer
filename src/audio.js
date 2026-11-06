@@ -18,6 +18,7 @@ export function createAudio({ clips, characterClips = CHARACTER_CLIPS, fetcher =
   let activeSpeech;
   let characterId = 'whale';
   let revision = 0;
+  let clickRevision = 0;
   let voices = [];
   let speechActivity;
   const speechListeners = new Set();
@@ -87,6 +88,7 @@ export function createAudio({ clips, characterClips = CHARACTER_CLIPS, fetcher =
   }
 
   function silence() {
+    clickRevision += 1;
     stopSpeech();
     for (const { oscillator, gain } of bellTones) {
       try { oscillator.stop(); } catch { /* Already ended. */ }
@@ -94,6 +96,67 @@ export function createAudio({ clips, characterClips = CHARACTER_CLIPS, fetcher =
       gain.disconnect();
     }
     bellTones.clear();
+  }
+
+  // Weighted switch: low body, audible midrange knock, and a broadband snap.
+  // Fast pitch drops remove the musical ring; the bass decays without a hard cut.
+  async function click(action) {
+    if (!enabled || disposed) return;
+    const request = ++clickRevision;
+    await unlock();
+    if (!enabled || disposed || request !== clickRevision || context?.state !== 'running') return;
+    const start = context.currentTime;
+    // [initial Hz, settled Hz, peak, decay seconds, delay, waveform]
+    const layers = action === 'play'
+      ? [[145, 72, .34, .16, 0, 'sine'], [480, 220, .28, .075, 0, 'triangle'], [1800, 850, .12, .022, .014, 'square']]
+      : [[185, 90, .34, .18, 0, 'sine'], [620, 280, .28, .085, 0, 'triangle'], [2400, 1100, .12, .018, 0, 'square']];
+    try {
+      for (const [frequency, settledFrequency, volume, duration, delay, type] of layers) {
+        const oscillator = context.createOscillator();
+        const gain = context.createGain();
+        oscillator.type = type;
+        oscillator.frequency.setValueAtTime(frequency, start + delay);
+        oscillator.frequency.exponentialRampToValueAtTime(settledFrequency, start + delay + Math.min(.025, duration * .5));
+        gain.gain.setValueAtTime(0, start + delay);
+        gain.gain.linearRampToValueAtTime(volume, start + delay + .0005);
+        gain.gain.setValueAtTime(volume, start + delay + .003);
+        gain.gain.exponentialRampToValueAtTime(.0001, start + delay + duration);
+        oscillator.connect(gain);
+        gain.connect(context.destination);
+        const tone = { oscillator, gain };
+        bellTones.add(tone);
+        oscillator.onended = () => { oscillator.disconnect(); gain.disconnect(); bellTones.delete(tone); };
+        oscillator.start(start + delay);
+        oscillator.stop(start + delay + duration + .01);
+      }
+      // A crisp, non-tonal impact makes the contact audible on phone speakers.
+      const rate = context.sampleRate || 44100;
+      const duration = action === 'play' ? .028 : .022;
+      const buffer = context.createBuffer(1, Math.ceil(rate * duration), rate);
+      const samples = buffer.getChannelData(0);
+      let seed = 731;
+      let previous = 0;
+      for (let i = 0; i < samples.length; i++) {
+        seed = (Math.imul(seed, 1664525) + 1013904223) >>> 0;
+        const noise = seed / 2147483648 - 1;
+        samples[i] = (noise - previous) * .5;
+        previous = noise;
+      }
+      const oscillator = context.createBufferSource();
+      const gain = context.createGain();
+      oscillator.buffer = buffer;
+      gain.gain.setValueAtTime(0, start);
+      gain.gain.linearRampToValueAtTime(.24, start + .0003);
+      gain.gain.setValueAtTime(.24, start + .002);
+      gain.gain.exponentialRampToValueAtTime(.0001, start + duration);
+      oscillator.connect(gain);
+      gain.connect(context.destination);
+      const tone = { oscillator, gain };
+      bellTones.add(tone);
+      oscillator.onended = () => { oscillator.disconnect(); gain.disconnect(); bellTones.delete(tone); };
+      oscillator.start(start);
+      oscillator.stop(start + duration);
+    } catch { /* Feedback must never interfere with the timer. */ }
   }
 
   function bell() {
@@ -271,7 +334,7 @@ export function createAudio({ clips, characterClips = CHARACTER_CLIPS, fetcher =
   }
 
   return {
-    unlock, bell, speak,
+    unlock, bell, speak, click,
     getSpeechFrame() {
       if (!speechActivity || context?.state !== 'running') return { active: false, level: 0 };
       return { active: true, character: speechActivity.character, level: speechActivity.sample() };

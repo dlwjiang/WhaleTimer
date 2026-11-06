@@ -2,10 +2,12 @@ import { createSpeechCaption } from './speech.js';
 import { createAngerEmojis } from './anger.js';
 import { createCharacterSwipe } from './character-swipe.js';
 import { createGlassTuner } from './glass-tuner.js';
+import { createGlassLens } from './glass-lens.js';
+import { GLASS_DISPLACEMENT_MAP } from './glass-map.js';
 import { createCharacterCarousel } from './character-carousel.js';
 import { createSpeaking } from './speaking.js';
 import { createFlipClock } from './flip-clock.js';
-import { TimerEngine } from './timer.js';
+import { TimerEngine, SECONDARY_COUNTDOWN_SECONDS } from './timer.js';
 import { createAudio } from './audio.js';
 import { createAssetPanel } from './admin.js';
 import { warningText } from './warnings.js';
@@ -53,9 +55,8 @@ export function mountApp(root, { now = Date.now, storage, audio = createAudio(),
     <svg class="glass-filter-defs" aria-hidden="true" focusable="false" width="0" height="0">
       <defs>
         <filter id="timer-glass-lens" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
-          <feImage href="${import.meta.env?.BASE_URL ?? '/'}glass/displacement-map.png" x="0" y="0" width="100%" height="100%" preserveAspectRatio="none" result="lens"/>
-          <feDisplacementMap in="SourceGraphic" in2="lens" scale="30" xChannelSelector="R" yChannelSelector="G"/>
-          <feGaussianBlur stdDeviation="0.3"/>
+          <feImage href="${GLASS_DISPLACEMENT_MAP}" x="0" y="0" width="440" height="224" preserveAspectRatio="none" result="lens"/>
+          <feDisplacementMap in="SourceGraphic" in2="lens" scale="27" xChannelSelector="R" yChannelSelector="G"/>
         </filter>
         <filter id="glass-refraction" x="-10%" y="-10%" width="120%" height="120%" color-interpolation-filters="sRGB">
           <feTurbulence type="fractalNoise" baseFrequency="0.012 0.018" numOctaves="1" seed="8" result="ripples"/>
@@ -81,15 +82,15 @@ export function mountApp(root, { now = Date.now, storage, audio = createAudio(),
         <section class="timer-panel glass-panel" aria-label="双阶段计时器">
           <div class="clock-block"><div id="timer-display" class="timer-display" role="timer" aria-label="专注计时">03:00</div></div>
           <div class="progress-sections">
-            <div id="focus-progress" class="progress-track" role="progressbar" aria-label="专注进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div></div></div>
-            <div id="extra-progress" class="progress-track" role="progressbar" aria-label="加时进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div></div></div>
+            <div id="extra-progress" class="progress-track" role="progressbar" aria-label="加时剩余时间" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100"><div></div></div>
+            <div id="focus-progress" class="progress-track" role="progressbar" aria-label="专注剩余时间" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100"><div></div></div>
           </div>
-          <button id="primary-action" class="primary-button">${icon('play')}<span>开始专注</span></button>
+          <button id="primary-action" class="primary-button"><span class="timer-action-icon" aria-hidden="true">${icon('play')}</span><span class="timer-action-label">开始专注</span></button>
           <div id="reset-track" class="reset-track"><span class="reset-label">右滑重新开始</span><button id="reset-handle" class="reset-handle" aria-label="重置计时器。向右拖动，或按回车键或空格键。" title="右滑或按回车键重置">${icon('arrow')}</button></div>
           <p id="audio-note" class="audio-note" hidden>此浏览器无法播放中文语音，计时和角色状态仍会正常更新。</p>
         </section>
       </main>
-      <footer class="footer"><span>少一点匆忙，多一点从容。</span><span>按自己的节奏来 <span aria-hidden="true">✧</span></span></footer>
+      <footer class="footer"><a class="about-link" href="https://dj.theory-a.com" target="_blank" rel="noopener noreferrer" aria-label="关于作者：打开个人作品集（新标签页）">关于作者 · About <span aria-hidden="true">↗</span></a><span>按自己的节奏来 <span aria-hidden="true">✧</span></span></footer>
     </div>
     <dialog id="settings-dialog" aria-labelledby="settings-title"><form id="settings-form">
       <div class="dialog-heading"><h2 id="settings-title">计时设置</h2><button type="button" id="settings-close" class="icon-button" aria-label="关闭设置">${icon('close')}</button></div>
@@ -111,7 +112,6 @@ export function mountApp(root, { now = Date.now, storage, audio = createAudio(),
       <p id="settings-error" class="form-error" role="alert"></p>
       <button class="primary-button" type="submit">${icon('check')}<span>保存并重置计时</span></button>
       <div class="settings-links">
-      <button type="button" id="glass-tuner-open" class="asset-panel-link">磨砂玻璃调节 <span aria-hidden="true">↗</span></button>
       <button type="button" id="assets-open" class="asset-panel-link">语音与图片 <span aria-hidden="true">↗</span></button>
       <a class="about-link" href="https://dj.theory-a.com" target="_blank" rel="noopener noreferrer" aria-label="关于作者：打开个人作品集（新标签页）">关于作者 · About <span aria-hidden="true">↗</span></a>
       </div>
@@ -121,6 +121,7 @@ export function mountApp(root, { now = Date.now, storage, audio = createAudio(),
   const $ = selector => root.querySelector(selector);
   const flipClock = createFlipClock($('#timer-display'));
   const dialog = $('#settings-dialog');
+  const glassLens = createGlassLens(root);
   const glassTuner = createGlassTuner(root, { storage, onClose: () => $('#settings-open').focus() });
   const avatar = $('#avatar');
   const characterCarousel = createCharacterCarousel(avatar, { index: CHARACTERS.indexOf(character) });
@@ -206,17 +207,24 @@ export function mountApp(root, { now = Date.now, storage, audio = createAudio(),
     const active = status === 'running' || preparing;
     root.dataset.phase = phase;
     root.dataset.status = status;
-    root.dataset.countdown = grace && status === 'running' && remainingMs <= 5000 ? String(Math.ceil(remainingMs / 1000)) : '';
+    root.dataset.countdown = grace && status === 'running' && remainingMs <= SECONDARY_COUNTDOWN_SECONDS * 1000 ? String(Math.ceil(remainingMs / 1000)) : '';
     const time = overdue ? `+${formatTime(overdueMs)}` : formatTime(remainingMs);
     flipClock.update(time, { animate: status === 'running' && !document.hidden });
     $('#timer-display').setAttribute('aria-label', `${overdue ? '已超时' : grace ? '加时剩余' : '专注剩余'} ${time}`);
-    $('#primary-action').innerHTML = `${icon(active ? 'pause' : 'play')}<span>${active ? '暂停' : status === 'paused' ? '继续' : '开始专注'}</span>`;
-    $('.progress-sections').style.gridTemplateColumns = `minmax(0, ${snapshot.mainSeconds}fr) minmax(0, ${snapshot.secondarySeconds}fr)`;
+    const action = active ? 'pause' : 'play';
+    const actionButton = $('#primary-action');
+    if (actionButton.dataset.action !== action) {
+      actionButton.dataset.action = action;
+      actionButton.querySelector('.timer-action-icon').innerHTML = icon(action);
+    }
+    actionButton.querySelector('.timer-action-label').textContent = active ? '暂停' : status === 'paused' ? '继续' : '开始专注';
+    // Focus drains first from the far right, followed by extra time on the left.
+    $('.progress-sections').style.gridTemplateColumns = `minmax(0, ${snapshot.secondarySeconds}fr) minmax(0, ${snapshot.mainSeconds}fr)`;
     for (const [id, remaining, seconds] of [
       ['focus-progress', snapshot.mainRemainingMs, snapshot.mainSeconds],
       ['extra-progress', snapshot.secondaryRemainingMs, snapshot.secondarySeconds],
     ]) {
-      const percentage = Math.min(100, Math.max(0, (1 - remaining / (seconds * 1000)) * 100));
+      const percentage = Math.min(100, Math.max(0, remaining / (seconds * 1000) * 100));
       const track = $(`#${id}`);
       track.firstElementChild.style.width = `${percentage}%`;
       track.setAttribute('aria-valuenow', String(Math.round(percentage)));
@@ -292,17 +300,23 @@ export function mountApp(root, { now = Date.now, storage, audio = createAudio(),
     say('重新开始吧', 'happy', 'bounce');
     announce('计时已重置，准备重新开始。');
     persist(); render();
+    void audio.click?.('pause');
   }
   on($('#primary-action'), 'click', () => {
     audio.unlock();
     const status = engine.snapshot().status;
+    const actionButton = $('#primary-action');
+    delete actionButton.dataset.feedback;
+    // Restart even after a reset or a rapid second click; never delay the timer.
+    void actionButton.offsetWidth;
+    actionButton.dataset.feedback = status === 'running' || status === 'preparing' ? 'pause' : 'play';
     let result;
     if (status === 'running' || status === 'preparing') {
       result = engine.pause();
       handleEvents(result.events, false);
       result.events = [];
       cancelPreparation();
-      say('休息一下，我等你。', 'cute', 'breathe', false);
+      say('休息一下，我等你。', 'cute', 'breathe');
       announce('计时已暂停。');
     } else if (status === 'paused') {
       result = engine.resume(); announce('计时已继续。');
@@ -312,6 +326,7 @@ export function mountApp(root, { now = Date.now, storage, audio = createAudio(),
       announce('准备开始专注计时。');
     }
     handleEvents(result.events); beginPreparation(); persist(); render();
+    void audio.click?.(actionButton.dataset.feedback);
   });
   on($('#sound-toggle'), 'click', () => {
     sound = !sound; audio.setEnabled(sound);
@@ -367,7 +382,6 @@ export function mountApp(root, { now = Date.now, storage, audio = createAudio(),
     },
     onClose() { $('#settings-open').focus(); },
   });
-  on($('#glass-tuner-open'), 'click', () => { dialog.close(); glassTuner.open(); });
   on($('#assets-open'), 'click', () => { dialog.close(); assetPanel.open(); });
   on(dialog, 'click', event => { if (event.target === dialog) { const r = dialog.getBoundingClientRect(); if (event.clientX < r.left || event.clientX > r.right || event.clientY < r.top || event.clientY > r.bottom) dialog.close(); } });
   root.querySelectorAll('[data-preset]').forEach(button => on(button, 'click', () => {
@@ -427,7 +441,7 @@ export function mountApp(root, { now = Date.now, storage, audio = createAudio(),
     drag = null;
     preventClick = true;
     try { handle.releasePointerCapture(pointerId); } catch { /* Pointer may have been released by the browser. */ }
-    track.classList.remove('dragging'); track.style.setProperty('--drag-x', '0px'); track.style.setProperty('--drag-progress', '0%');
+    track.classList.remove('dragging'); track.style.setProperty('--drag-x', '0px');
     if (complete) reset();
   };
   on(handle, 'pointerdown', event => {
@@ -440,7 +454,7 @@ export function mountApp(root, { now = Date.now, storage, audio = createAudio(),
     if (!drag || drag.id !== event.pointerId) return;
     const dx = Math.max(0, Math.min(drag.distance, event.clientX - drag.start));
     drag.fraction = drag.distance > 0 ? dx / drag.distance : 0;
-    track.style.setProperty('--drag-x', `${dx}px`); track.style.setProperty('--drag-progress', `${drag.fraction * 100}%`);
+    track.style.setProperty('--drag-x', `${dx}px`);
   });
   on(handle, 'pointerup', event => finishDrag(event));
   on(handle, 'pointercancel', event => finishDrag(event, true));
@@ -462,5 +476,5 @@ export function mountApp(root, { now = Date.now, storage, audio = createAudio(),
   else if (initial.status === 'running') say('专心做好这一件事吧，我陪着你。', 'idle', 'breathe', false);
   else setExpression('idle');
   tick();
-  return { tick, reset, engine, destroy() { destroyed = true; cancelPreparation(); clearInterval(interval); cleanups.forEach(fn => fn()); assetPanel.destroy(); glassTuner.destroy(); speechCaption.destroy(); characterSwipe.destroy(); speaking.destroy(); characterCarousel.destroy(); flipClock.destroy(); audio.destroy(); } };
+  return { tick, reset, engine, destroy() { destroyed = true; cancelPreparation(); clearInterval(interval); cleanups.forEach(fn => fn()); assetPanel.destroy(); glassTuner.destroy(); glassLens.destroy(); speechCaption.destroy(); characterSwipe.destroy(); speaking.destroy(); characterCarousel.destroy(); flipClock.destroy(); audio.destroy(); } };
 }

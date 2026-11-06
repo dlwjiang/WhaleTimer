@@ -1,12 +1,13 @@
 export const GLASS_PARAMS = [
-  { key: 'blurPx', label: '模糊 · Blur', min: 0, max: 24, step: .5, value: 6, unit: 'px', css: '--glass-blur' },
+  { key: 'blurPx', label: '模糊 · Blur', min: 0, max: 24, step: .5, value: 1, unit: 'px', css: '--glass-blur' },
   { key: 'saturationPct', label: '饱和度 · Saturation', min: 50, max: 200, step: 5, value: 130, unit: '%', css: '--glass-saturation' },
   { key: 'tintPct', label: '磨砂浓度 · Tint', min: 0, max: 80, step: 1, value: 32, unit: '%', css: '--glass-tint' },
-  { key: 'sheenPct', label: '反光 · Sheen', min: 0, max: 80, step: 1, value: 22, unit: '%', css: '--glass-sheen' },
-  { key: 'edgeHighlightPct', label: '顶部高光 · Edge', min: 0, max: 100, step: 1, value: 58, unit: '%', css: '--glass-edge' },
-  { key: 'refractionPx', label: '顶部折射 · Refraction', min: 0, max: 60, step: 1, value: 30, unit: 'px' },
+  { key: 'sheenPct', label: '反光 · Sheen', min: 0, max: 80, step: 1, value: 33, unit: '%', css: '--glass-sheen' },
+  { key: 'edgeHighlightPct', label: '顶部高光 · Edge', min: 0, max: 100, step: 1, value: 69, unit: '%', css: '--glass-edge' },
+  { key: 'refractionPx', label: '顶部折射 · Refraction', min: 0, max: 60, step: 1, value: 27, unit: 'px' },
 ];
-const STORAGE_KEY = 'banke-glass-draft-v1';
+// A new preset starts fresh instead of restoring drafts from before approval.
+const STORAGE_KEY = 'banke-glass-draft-v1-preset-2';
 export function normalizeGlass(values = {}) {
   return Object.fromEntries(GLASS_PARAMS.map(param => {
     const value = values?.[param.key];
@@ -86,8 +87,7 @@ export function createGlassTuner(root, { storage, onClose = () => {} } = {}) {
       status.textContent = '请复制已选中的 JSON';
     }
   });
-  render();
-  if (saved?.version === 1) apply();
+  apply();
   return {
     open() { panel.hidden = false; apply(); panel.querySelector('input').focus({ preventScroll: true }); },
     close,

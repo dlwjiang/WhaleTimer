@@ -17,7 +17,9 @@ test('sliders apply live, export exact values, and restore the saved draft', t =
   let saved;
   const storage = { setItem: (_, value) => { saved = value; }, getItem: () => saved };
   const { tuner, root, $, dom } = setup(t, storage);
-  assert.equal(root.dataset.glassTuned, undefined);
+  assert.equal(root.dataset.glassTuned, 'true');
+  assert.deepEqual(JSON.parse($('textarea').value), { version: 1, blurPx: 1, saturationPct: 130, tintPct: 32, sheenPct: 33, edgeHighlightPct: 69, refractionPx: 27 });
+  assert.equal($('feDisplacementMap').getAttribute('scale'), '27');
   tuner.open();
   const input = $('[data-param=blurPx]');
   input.value = '10.5'; input.dispatchEvent(new dom.window.Event('input', { bubbles: true }));
@@ -28,7 +30,7 @@ test('sliders apply live, export exact values, and restore the saved draft', t =
   assert.equal(restored.root.style.getPropertyValue('--glass-blur'), '10.5px');
   assert.equal(restored.$('aside').hidden, true);
   $('[data-reset]').click();
-  assert.equal(root.style.getPropertyValue('--glass-blur'), '6px');
+  assert.equal(root.style.getPropertyValue('--glass-blur'), '1px');
 });
 
 test('JSON copies to the clipboard and remains manually selectable when clipboard access fails', async t => {
@@ -47,11 +49,11 @@ test('JSON copies to the clipboard and remains manually selectable when clipboar
 test('invalid drafts are bounded; Escape closes the panel without changing the preview', t => {
   assert.equal(normalizeGlass({ blurPx: 999, tintPct: -3, sheenPct: NaN }).blurPx, 24);
   assert.equal(normalizeGlass({ tintPct: -3 }).tintPct, 0);
-  assert.equal(normalizeGlass(null).blurPx, 6);
+  assert.equal(normalizeGlass(null).blurPx, 1);
   const { tuner, $, dom, closes, root } = setup(t, { getItem: () => '{broken' });
   tuner.open();
   $('aside').dispatchEvent(new dom.window.KeyboardEvent('keydown', { key: 'Escape', bubbles: true }));
   assert.equal($('aside').hidden, true);
   assert.equal(closes(), 1);
-  assert.equal(root.style.getPropertyValue('--glass-blur'), '6px');
+  assert.equal(root.style.getPropertyValue('--glass-blur'), '1px');
 });

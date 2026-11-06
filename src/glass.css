@@ -44,18 +44,20 @@
 
 /* An open glass sheet: only the top lip catches light and refracts the scene. */
 .timer-panel.glass-panel {
+  --glass-default-blur: 1px;
+  --glass-default-saturation: 130%;
+  --glass-lens-filter: blur(0px);
   background: #ffffff06;
+  -webkit-backdrop-filter: var(--glass-lens-filter) blur(var(--glass-blur, var(--glass-default-blur))) saturate(var(--glass-saturation, var(--glass-default-saturation)));
+  backdrop-filter: var(--glass-lens-filter) blur(var(--glass-blur, var(--glass-default-blur))) saturate(var(--glass-saturation, var(--glass-default-saturation)));
   border-width: 1px 0 0;
   border-color: #ffffff94;
   border-radius: 28px 28px 0 0;
   box-shadow: inset 0 1px 2px #ffffff60;
 }
-.timer-panel.glass-panel::before {
-  -webkit-backdrop-filter: blur(.8px) saturate(118%);
-  backdrop-filter: blur(.8px) saturate(118%);
-  -webkit-mask-image: linear-gradient(#000 0 12px, transparent 32px);
-  mask-image: linear-gradient(#000 0 12px, transparent 32px);
-}
+/* Filtering the pane itself replaces its backdrop in one pass. A masked
+   pseudo-element would blend the displaced image with the original scene. */
+.timer-panel.glass-panel::before { content: none; }
 .timer-panel.glass-panel::after {
   content: '';
   padding: 0;
@@ -70,25 +72,24 @@
   z-index: 1;
 }
 @supports (backdrop-filter: url('#timer-glass-lens')) {
-  .timer-panel.glass-panel::before {
-    backdrop-filter: url('#timer-glass-lens') saturate(118%);
-  }
+  .timer-panel.glass-panel { --glass-lens-filter: url('#timer-glass-lens'); }
 }
 
 @media (max-width: 700px) {
-  /* Frost the full sheet as well as refracting the top lip, so the lower
-     controls and safe-area padding still read as glass over the scenery. */
+  .timer-panel.glass-panel {
+    --glass-default-blur: 1px;
+    --glass-default-saturation: 130%;
+  }
+  /* Tint and reflections are paint only; they never resample the backdrop. */
   .timer-panel.glass-panel::after {
     background:
       linear-gradient(158deg, #ffffff38, #ffffff12 34%, transparent 35%),
       linear-gradient(to bottom, #ffffff20, #edf3ff52);
-    -webkit-backdrop-filter: blur(6px) saturate(130%);
-    backdrop-filter: blur(6px) saturate(130%);
   }
   .topbar .icon-button { background: #ffffff20; border-color: #ffffff75; }
   .topbar .icon-button:hover { background: #ffffff60; }
   .timer-panel .reset-track {
-    background: linear-gradient(to right, #c9dcf690 var(--drag-progress), #ffffff1a var(--drag-progress));
+    background: #ffffff1a;
     border-color: #ffffff90;
   }
   .timer-panel .reset-handle {
@@ -106,8 +107,6 @@
   background:
     linear-gradient(158deg, rgb(255 255 255 / var(--glass-sheen)), rgb(255 255 255 / calc(var(--glass-sheen) / 3)) 34%, transparent 35%),
     linear-gradient(to bottom, rgb(255 255 255 / calc(var(--glass-tint) * .4)), rgb(237 243 255 / var(--glass-tint)));
-  -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-saturation));
-  backdrop-filter: blur(var(--glass-blur)) saturate(var(--glass-saturation));
 }
 
 /* The desktop header keeps its original open layout. */
@@ -123,7 +122,7 @@
 }
 @media (prefers-reduced-transparency: reduce) {
   .glass-panel, .timer-panel.glass-panel,
-  [data-glass-tuned=true] .timer-panel.glass-panel { background: #f2f6fe; }
+  [data-glass-tuned=true] .timer-panel.glass-panel { background: #f2f6fe; -webkit-backdrop-filter: none; backdrop-filter: none; }
   .glass-panel::before, .glass-panel::after,
   .timer-panel.glass-panel::before, .timer-panel.glass-panel::after { content: none; }
   .topbar .icon-button, .timer-panel .reset-track { background: #edf2fa; }

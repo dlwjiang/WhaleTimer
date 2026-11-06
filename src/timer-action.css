@@ -1,0 +1,143 @@
+/* A tinted glass key with a simple inline icon in the partner palette.
+   Scope to the timer: the settings submit button keeps its own treatment. */
+#primary-action {
+  --action-ink: color-mix(in srgb, var(--character-accent) 72%, #182337);
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  gap: 10px;
+  padding: 10px 14px;
+  border: 1px solid color-mix(in srgb, var(--character-accent-light) 24%, #ffffffb8);
+  border-radius: 18px;
+  color: var(--action-ink);
+  background:
+    linear-gradient(155deg, #ffffffa3, #ffffff12 48%, #ffffff00 49%),
+    linear-gradient(115deg,
+      color-mix(in srgb, var(--character-soft) 78%, transparent),
+      color-mix(in srgb, var(--character-accent-light) 27%, transparent));
+  box-shadow:
+    inset 0 1px 0 #fffffff0,
+    inset 0 -1px 0 color-mix(in srgb, var(--character-accent) 16%, transparent),
+    inset 0 0 16px #ffffff24,
+    0 3px 0 color-mix(in srgb, var(--character-accent) 24%, var(--character-soft)),
+    0 4px 12px color-mix(in srgb, var(--character-accent) 12%, transparent);
+  -webkit-backdrop-filter: blur(8px) saturate(130%);
+  backdrop-filter: blur(8px) saturate(130%);
+  font-size: 13px;
+  font-weight: 650;
+  letter-spacing: .06em;
+  text-shadow: 0 1px 0 #ffffffa8;
+  filter: none;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+  -webkit-tap-highlight-color: transparent;
+}
+#primary-action .timer-action-icon {
+  display: grid;
+  place-items: center;
+  flex: 0 0 18px;
+  width: 18px;
+  height: 18px;
+}
+#primary-action .timer-action-icon svg { width: 17px; height: 17px; stroke-width: 2; }
+#primary-action[data-action=play] .timer-action-icon svg { fill: currentColor; transform: translateX(-1px); }
+#primary-action .timer-action-label { white-space: nowrap; }
+.timer-panel .reset-label {
+  font-size: 13px;
+  color: color-mix(in srgb, var(--character-accent) 68%, #344358);
+}
+/* Extend the flat slider to the key's visible lower edge without adding depth. */
+.timer-panel #reset-track {
+  align-self: stretch;
+  height: auto;
+  min-height: 56px;
+  margin-bottom: -3px;
+  border: 1px solid color-mix(in srgb, var(--character-accent-light) 24%, #ffffffb8);
+  border-radius: 18px;
+  background:
+    linear-gradient(125deg, #ffffff66, #ffffff08 55%),
+    linear-gradient(110deg,
+      color-mix(in srgb, var(--character-soft) 60%, transparent),
+      color-mix(in srgb, var(--character-accent-light) 22%, transparent));
+  -webkit-backdrop-filter: blur(6px) saturate(125%);
+  backdrop-filter: blur(6px) saturate(125%);
+  box-shadow: none;
+}
+.timer-panel #reset-handle {
+  top: calc(50% - 21px);
+  color: #fff;
+  background: var(--character-accent);
+  border: 1px solid color-mix(in srgb, var(--character-accent) 75%, #fff);
+  border-radius: 13px;
+  box-shadow: none;
+}
+.timer-panel #reset-handle:focus-visible {
+  outline-color: var(--character-accent);
+  outline-offset: 2px;
+}
+@media (hover: hover) {
+  .timer-panel #reset-handle:hover { background: color-mix(in srgb, var(--character-accent) 88%, #182337); }
+}
+@media (max-width: 700px) {
+  .timer-panel #reset-track { min-height: 60px; }
+  .timer-panel #reset-handle { top: calc(50% - 24px); }
+}
+/* The pause action means the timer is engaged: latch the glass key down. */
+#primary-action[data-action=pause] {
+  transform: translateY(2px) scale(.99);
+  border-color: color-mix(in srgb, var(--character-accent) 28%, #ffffff60);
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--character-accent) 18%, transparent), #ffffff18 75%),
+    linear-gradient(115deg,
+      color-mix(in srgb, var(--character-soft) 80%, transparent),
+      color-mix(in srgb, var(--character-accent-light) 35%, transparent));
+  box-shadow:
+    inset 0 3px 6px color-mix(in srgb, var(--character-accent) 30%, transparent),
+    inset 0 1px 2px color-mix(in srgb, var(--action-ink) 22%, transparent),
+    inset 0 -1px 0 #ffffff80,
+    0 1px 0 #ffffffb3;
+}
+@media (hover: hover) {
+  #primary-action[data-action=play]:hover {
+    transform: translateY(-1px);
+    filter: none;
+    box-shadow: inset 0 1px 0 #fff, inset 0 0 20px #ffffff66,
+      0 3px 0 color-mix(in srgb, var(--character-accent) 24%, var(--character-soft)),
+      0 6px 16px color-mix(in srgb, var(--character-accent) 19%, transparent);
+  }
+}
+#primary-action:active {
+  transform: translateY(3px) scale(.96);
+  box-shadow: inset 0 3px 7px color-mix(in srgb, var(--character-accent) 25%, transparent), inset 0 1px 0 #ffffff80;
+  filter: none;
+  transition-duration: 65ms;
+}
+/* Play latches into the recess; pause releases the key with a small rebound.
+   Only user activation sets feedback, so timer ticks cannot replay it. */
+#primary-action[data-feedback=play] { animation: timer-play-click 420ms backwards; }
+#primary-action[data-feedback=pause] { animation: timer-pause-click 300ms backwards; }
+@keyframes timer-play-click {
+  0% { transform: translateY(3px) scale(.95); box-shadow: inset 0 3px 8px color-mix(in srgb, var(--character-accent) 28%, transparent); }
+  42% { transform: translateY(1px) scale(.997); }
+  70% { transform: translateY(2.5px) scale(.987); }
+  100% { transform: translateY(2px) scale(.99); }
+}
+@keyframes timer-pause-click {
+  0% { transform: translateY(2px) scale(.99); }
+  28% { transform: translateY(3px) scale(.955); box-shadow: inset 0 4px 9px color-mix(in srgb, var(--character-accent) 32%, transparent), inset 0 -1px 0 #ffffffb0; }
+  62% { transform: translateY(-1px) scale(1.012); }
+  100% { transform: translateY(0) scale(1); }
+}
+#primary-action:focus-visible {
+  outline: 2px solid var(--character-accent);
+  outline-offset: 3px;
+}
+@media (max-width: 360px) {
+  #primary-action { gap: 7px; padding-inline: 8px; font-size: 12px; }
+  .timer-panel .reset-label { font-size: 12px; }
+}
+@media (prefers-reduced-transparency: reduce) {
+  #primary-action,
+  #primary-action[data-action=pause],
+  .timer-panel #reset-track { background: var(--character-soft); -webkit-backdrop-filter: none; backdrop-filter: none; }
+  .timer-panel #reset-handle { background: var(--character-accent); }
+}

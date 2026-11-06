@@ -234,13 +234,16 @@ test('pause/resume preserve clock high-water; reset starts fresh without negativ
   advance(1500); assert.equal(restored.snapshot().elapsedMs, 1000);
 });
 
-test('secondary countdown emits five through one exactly once at each boundary', () => {
+test('secondary countdown stays silent at five and four, then emits three through one exactly once', () => {
   const { timer, advance } = clockTimer({ mainSeconds: 10, secondarySeconds: 10 });
   beginFocus(timer); advance(5000); assert.deepEqual(types(timer.tick()), []);
   advance(5000); assert.deepEqual(types(timer.tick()), ['main-complete']);
-  timer.completePreparation(); advance(4999);
-  assert.deepEqual(types(timer.tick()), []); advance(1);
-  for (let number = 5; number >= 1; number--) {
+  timer.completePreparation();
+  for (const delta of [5000, 1000, 999]) {
+    advance(delta); assert.deepEqual(types(timer.tick()), []);
+  }
+  advance(1);
+  for (let number = 3; number >= 1; number--) {
     assert.deepEqual(timer.tick().events, [{ type: 'secondary-countdown', number, elapsedMs: 20000 - number * 1000 }]);
     assert.deepEqual(types(timer.tick()), []);
     advance(999); assert.deepEqual(types(timer.tick()), []); advance(1);
@@ -257,7 +260,7 @@ test('late grace ticks emit only the current countdown digit', () => {
 });
 
 test('short secondary countdowns emit nothing until grace preparation completes', () => {
-  for (const secondarySeconds of [5, 3, 1]) {
+  for (const secondarySeconds of [3, 2, 1]) {
     const { timer, advance } = clockTimer({ mainSeconds: 1, secondarySeconds });
     beginFocus(timer); advance(600000);
     assert.deepEqual(types(timer.tick()), ['main-complete']);
@@ -269,20 +272,20 @@ test('short secondary countdowns emit nothing until grace preparation completes'
 
 test('countdown pause and reload dedupe digits while legacy saves remain compatible', () => {
   const { timer, advance, now } = clockTimer({ mainSeconds: 1, secondarySeconds: 10 });
-  beginGrace(timer, advance); advance(5000);
-  assert.equal(timer.tick().events[0].number, 5);
+  beginGrace(timer, advance); advance(7000);
+  assert.equal(timer.tick().events[0].number, 3);
   let restored = TimerEngine.restore(timer.serialize(), { now });
   assert.deepEqual(types(restored.tick()), []);
   restored.pause(); const saved = restored.serialize(); advance(60000);
   restored = TimerEngine.restore(saved, { now });
   assert.deepEqual(types(restored.tick()), []);
   assert.deepEqual(types(restored.resume()), []); advance(1000);
-  assert.equal(restored.tick().events[0].number, 4);
+  assert.equal(restored.tick().events[0].number, 2);
   const legacy = restored.serialize();
   delete legacy.lastCountdownNumber; delete legacy.preparationPhase;
   const fromLegacy = TimerEngine.restore(legacy, { now });
   assert.equal(fromLegacy.snapshot().phase, 'grace');
-  assert.equal(fromLegacy.tick().events[0].number, 4);
+  assert.equal(fromLegacy.tick().events[0].number, 2);
   assert.deepEqual(types(fromLegacy.tick()), []);
   for (const marker of [0, 7, 2.5, '4']) {
     assert.equal(TimerEngine.restore({ ...legacy, lastCountdownNumber: marker }, { now }).snapshot().status, 'idle');
@@ -291,14 +294,14 @@ test('countdown pause and reload dedupe digits while legacy saves remain compati
 
 test('reset and configure clear countdown history', () => {
   const { timer, advance } = clockTimer({ mainSeconds: 1, secondarySeconds: 10 });
-  const reachFive = () => {
-    beginGrace(timer, advance); advance(5000);
-    assert.equal(timer.tick().events[0].number, 5);
+  const reachThree = () => {
+    beginGrace(timer, advance); advance(7000);
+    assert.equal(timer.tick().events[0].number, 3);
   };
-  reachFive(); timer.reset();
+  reachThree(); timer.reset();
   assert.equal(timer.serialize().lastCountdownNumber, 6);
-  reachFive(); timer.configure({ mainSeconds: 1, secondarySeconds: 10 });
-  assert.equal(timer.serialize().lastCountdownNumber, 6); reachFive();
+  reachThree(); timer.configure({ mainSeconds: 1, secondarySeconds: 10 });
+  assert.equal(timer.serialize().lastCountdownNumber, 6); reachThree();
 });
 
 test('custom overtime interval controls warning numbers through pause, restore and late ticks', () => {
