@@ -124,6 +124,42 @@ test('proportional time bars start full, drain from right to left, and refill on
   expectBars(100, 100);
 });
 
+test('zero extra time saves and uses one progress bar with a single completion alert', async t => {
+  const { $, app, configure, time, calls, data } = setup(t);
+  configure('0.1', '0');
+  assert.equal($('#settings-dialog').open, false);
+  assert.equal(JSON.parse(data.get('tide-timer-v1')).timer.secondarySeconds, 0);
+  assert.equal($('.progress-sections').style.gridTemplateColumns, '1fr');
+  assert.equal($('#extra-progress').hidden, true);
+  assert.equal($('#extra-progress').getAttribute('aria-valuenow'), '0');
+  assert.equal($('#extra-progress').firstElementChild.style.width, '0%');
+  $('#primary-action').click(); await flush();
+  calls.length = 0;
+  await time(4000);
+  assert.equal($('#focus-progress').getAttribute('aria-valuenow'), '50');
+  await time(7000);
+  assert.equal(app.engine.snapshot().preparationPhase, null);
+  assert.equal($('#timer-display').textContent, '+00:00');
+  assert.deepEqual(calls.filter(([type]) => type === 'speak'), [['speak', '时间真的到了！我要生气啦！']]);
+  assert.equal(calls.some(([type]) => type === 'bell'), false);
+  await time(8000);
+  assert.equal(calls.filter(([type]) => type === 'speak').length, 1);
+  $('#settings-open').click();
+  assert.equal($('#secondary-duration').value, '0');
+  configure('0.1', '0.1');
+  assert.equal($('#extra-progress').hidden, false);
+  assert.equal($('#extra-progress').getAttribute('aria-valuenow'), '100');
+  assert.equal($('.progress-sections').style.gridTemplateColumns, 'minmax(0, 6fr) minmax(0, 6fr)');
+});
+
+test('saved zero extra time reloads as a fresh regular timer', t => {
+  const { $, app } = setup(t, { timer: { mainSeconds: 60, secondarySeconds: 0 } });
+  assert.equal(app.engine.snapshot().secondarySeconds, 0);
+  assert.equal(app.engine.snapshot().status, 'idle');
+  assert.equal($('#timer-display').textContent, '01:00');
+  assert.equal($('#extra-progress').hidden, true);
+});
+
 test('disabling repeated alerts preserves the ending alert and overtime clock, and saves the preference', async t => {
   const { $, app, configure, dom, time, calls, data } = setup(t);
   configure();

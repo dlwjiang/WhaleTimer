@@ -105,11 +105,11 @@ export function mountApp(root, { now = Date.now, storage, audio = createAudio(),
       </fieldset>
       <div class="settings-durations">
       <label class="duration-field" for="main-duration"><span><strong>专注时长</strong><small>第一阶段的倒计时</small></span><span class="number-input"><input id="main-duration" name="main" type="text" required inputmode="decimal" autocomplete="off" spellcheck="false"><span>分钟</span></span></label>
-      <label class="duration-field" for="secondary-duration"><span><strong>加时时长</strong><small>专注结束后的收尾时间</small></span><span class="number-input"><input id="secondary-duration" name="secondary" type="text" required inputmode="decimal" autocomplete="off" spellcheck="false"><span>分钟</span></span></label>
+      <label class="duration-field" for="secondary-duration"><span><strong>加时时长</strong><small>设为 0 可关闭加时</small></span><span class="number-input"><input id="secondary-duration" name="secondary" type="text" required inputmode="decimal" autocomplete="off" spellcheck="false"><span>分钟</span></span></label>
       </div>
       <div class="settings-overtime">
-      <label class="duration-field overtime-toggle" for="overtime-alerts"><span><strong>重复超时提醒</strong><small>关闭后仅在加时结束时提醒一次</small></span><input id="overtime-alerts" name="overtime-alerts" type="checkbox" role="switch" checked></label>
-      <label class="duration-field" for="overtime-interval"><span><strong>超时提醒间隔</strong><small>加时结束后的提醒频率</small></span><span class="number-input"><input id="overtime-interval" name="overtime" type="text" required inputmode="numeric" autocomplete="off" spellcheck="false"><span>秒</span></span></label>
+      <label class="duration-field overtime-toggle" for="overtime-alerts"><span><strong>重复超时提醒</strong><small>关闭后仅在计时结束时提醒一次</small></span><input id="overtime-alerts" name="overtime-alerts" type="checkbox" role="switch" checked></label>
+      <label class="duration-field" for="overtime-interval"><span><strong>超时提醒间隔</strong><small>计时结束后的提醒频率</small></span><span class="number-input"><input id="overtime-interval" name="overtime" type="text" required inputmode="numeric" autocomplete="off" spellcheck="false"><span>秒</span></span></label>
       </div>
       <div class="preset-row" aria-label="计时预设"><button type="button" data-preset="3,2">短暂专注 <b>3 + 2</b></button><button type="button" data-preset="25,5">深度专注 <b>25 + 5</b></button><button type="button" data-preset="0.1,0.2">快速体验 <b>6 秒 + 12 秒</b></button></div>
       <p id="settings-error" class="form-error" role="alert"></p>
@@ -230,13 +230,15 @@ export function mountApp(root, { now = Date.now, storage, audio = createAudio(),
     if (label.textContent !== actionText) label.textContent = actionText;
     // Focus drains first from the far right, followed by extra time on the left.
     const progressStyle = $('.progress-sections').style;
-    const columns = `minmax(0, ${snapshot.secondarySeconds}fr) minmax(0, ${snapshot.mainSeconds}fr)`;
+    const columns = snapshot.secondarySeconds === 0 ? '1fr'
+      : `minmax(0, ${snapshot.secondarySeconds}fr) minmax(0, ${snapshot.mainSeconds}fr)`;
     if (progressStyle.gridTemplateColumns !== columns) progressStyle.gridTemplateColumns = columns;
+    $('#extra-progress').hidden = snapshot.secondarySeconds === 0;
     for (const [id, remaining, seconds] of [
       ['focus-progress', snapshot.mainRemainingMs, snapshot.mainSeconds],
       ['extra-progress', snapshot.secondaryRemainingMs, snapshot.secondarySeconds],
     ]) {
-      const percentage = Math.min(100, Math.max(0, remaining / (seconds * 1000) * 100));
+      const percentage = seconds ? Math.min(100, Math.max(0, remaining / (seconds * 1000) * 100)) : 0;
       const track = $(`#${id}`);
       const width = `${percentage}%`;
       if (track.firstElementChild.style.width !== width) track.firstElementChild.style.width = width;
@@ -414,7 +416,7 @@ export function mountApp(root, { now = Date.now, storage, audio = createAudio(),
   on($('#overtime-alerts'), 'change', syncOvertimeSetting);
   const durationError = input => input.id === 'overtime-interval'
     ? '请输入 1 至 86400 之间的整数秒数。'
-    : '请输入 0.1 至 180 之间的分钟数，最多保留一位小数。';
+    : `请输入 ${input.id === 'secondary-duration' ? '0' : '0.1'} 至 180 之间的分钟数，最多保留一位小数。`;
   durationInputs.forEach(input => {
     // Select after pointer placement as well as keyboard focus, including repeat taps.
     on(input, 'focus', () => input.select());
@@ -428,9 +430,10 @@ export function mountApp(root, { now = Date.now, storage, audio = createAudio(),
       if (input.disabled) { input.setCustomValidity(''); return; }
       const value = input.value.trim();
       const overtime = input.id === 'overtime-interval';
+      const minimum = input.id === 'secondary-duration' ? 0 : 0.1;
       const valid = overtime
         ? /^[0-9]+$/.test(value) && Number(value) >= 1 && Number(value) <= 86400
-        : /^(?:[0-9]+(?:\.[0-9])?|\.[0-9])$/.test(value) && Number(value) >= 0.1 && Number(value) <= 180;
+        : /^(?:[0-9]+(?:\.[0-9])?|\.[0-9])$/.test(value) && Number(value) >= minimum && Number(value) <= 180;
       input.setCustomValidity(valid ? '' : durationError(input));
     });
     if (!$('#settings-form').reportValidity()) return;

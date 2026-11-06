@@ -9,6 +9,64 @@ function clockTimer(options = {}) {
 }
 const types = result => result.events.map(event => event.type);
 const beginFocus = timer => { timer.start(); return timer.completePreparation(); };
+
+test('zero secondary duration completes once without a grace preparation or countdown', () => {
+  const { timer, advance } = clockTimer({ mainSeconds: 6, secondarySeconds: 0 });
+  beginFocus(timer);
+  advance(5999);
+  assert.deepEqual(types(timer.tick()), []);
+  assert.equal(timer.snapshot().remainingMs, 1);
+  advance(1);
+  const completed = timer.tick();
+  assert.deepEqual(types(completed), ['secondary-complete']);
+  assert.equal(completed.snapshot.status, 'running');
+  assert.equal(completed.snapshot.preparationPhase, null);
+  assert.equal(completed.snapshot.phase, 'overdue');
+  assert.equal(completed.snapshot.overdueMs, 0);
+  assert.deepEqual(types(timer.tick()), []);
+  advance(30000);
+  assert.deepEqual(types(timer.tick()), ['overdue-reminder']);
+  timer.reset();
+  assert.equal(timer.snapshot().secondarySeconds, 0);
+  assert.equal(timer.snapshot().remainingMs, 6000);
+});
+
+test('zero secondary duration preserves late elapsed time and completion across restoration', () => {
+  const { timer, advance, now } = clockTimer({ mainSeconds: 6, secondarySeconds: 0 });
+  beginFocus(timer);
+  const saved = timer.serialize();
+  advance(96000);
+  const restored = TimerEngine.restore(saved, { now });
+  const completed = restored.tick();
+  assert.deepEqual(types(completed), ['secondary-complete']);
+  assert.equal(completed.snapshot.overdueMs, 90000);
+  assert.deepEqual(types(restored.tick()), []);
+  const again = TimerEngine.restore(restored.serialize(), { now });
+  assert.deepEqual(types(again.tick()), []);
+  again.pause(); advance(5000); again.resume();
+  advance(30000);
+  assert.equal(again.tick().events[0].reminderIndex, 4);
+});
+
+test('zero secondary duration respects disabled repeat alerts on a late tick', () => {
+  const { timer, advance } = clockTimer({ mainSeconds: 6, secondarySeconds: 0, overtimeAlerts: false });
+  beginFocus(timer); advance(66000);
+  assert.deepEqual(types(timer.tick()), ['secondary-complete']);
+  assert.equal(timer.snapshot().overdueMs, 60000);
+  advance(30000);
+  assert.deepEqual(types(timer.tick()), []);
+});
+
+test('secondary duration accepts zero while rejecting invalid durations atomically', () => {
+  const { timer } = clockTimer();
+  timer.configure({ mainSeconds: 6, secondarySeconds: 0 });
+  for (const secondarySeconds of [-1, 0.5, NaN, Infinity, '0', 86401, undefined]) {
+    assert.throws(() => timer.configure({ mainSeconds: 12, secondarySeconds }), RangeError);
+    assert.equal(timer.snapshot().mainSeconds, 6);
+    assert.equal(timer.snapshot().secondarySeconds, 0);
+  }
+});
+
 function beginGrace(timer, advance) {
   beginFocus(timer); advance(timer.mainSeconds * 1000); timer.tick();
   return timer.completePreparation();

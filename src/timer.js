@@ -16,11 +16,12 @@ function validateOvertimeAlerts(value) {
 
 export const DEFAULT_DURATIONS = Object.freeze({ mainSeconds: 180, secondarySeconds: 120 });
 
-/** Durations are whole seconds, from one second through 24 hours each. */
+/** Whole-second durations up to 24 hours; zero disables the secondary timer. */
 export function validateDurations({ mainSeconds, secondarySeconds }) {
   for (const [name, value] of Object.entries({ mainSeconds, secondarySeconds })) {
-    if (!Number.isInteger(value) || value < 1 || value > 86400) {
-      throw new RangeError(`${name === 'mainSeconds' ? '专注时长' : '加时时长'}须为 1 至 86400 秒的整数。`);
+    const minimum = name === 'mainSeconds' ? 1 : 0;
+    if (!Number.isInteger(value) || value < minimum || value > 86400) {
+      throw new RangeError(`${name === 'mainSeconds' ? '专注时长' : '加时时长'}须为 ${minimum} 至 86400 秒的整数。`);
     }
   }
   return { mainSeconds, secondarySeconds };
@@ -52,7 +53,7 @@ export class TimerEngine {
     let measured = this.accumulatedMs + (this.status === 'running'
       ? Math.max(0, at - this.runningSince) : 0);
     // The secondary clock cannot start until its preparation has completed.
-    if (this.announcedStage === 0) measured = Math.min(measured, this.mainSeconds * SECOND);
+    if (this.secondarySeconds > 0 && this.announcedStage === 0) measured = Math.min(measured, this.mainSeconds * SECOND);
     // A system-clock correction must never refill sand or revisit an earlier phase.
     // After a backwards jump, freeze until the wall clock catches up.
     this.highWaterMs = Math.max(this.highWaterMs, measured);
@@ -92,7 +93,7 @@ export class TimerEngine {
     const events = [];
     if (this.status !== 'running') return { snapshot, events };
     const { elapsedMs, totalDurationMs } = snapshot;
-    if (elapsedMs >= this.mainSeconds * SECOND && this.announcedStage < 1) {
+    if (this.secondarySeconds > 0 && elapsedMs >= this.mainSeconds * SECOND && this.announcedStage < 1) {
       events.push({ type: 'main-complete', elapsedMs, message: '时间到了，快一点啦！' });
       this.announcedStage = 1;
       this.accumulatedMs = this.mainSeconds * SECOND;
@@ -233,7 +234,7 @@ export class TimerEngine {
         || (saved.announcedStage >= 1 && saved.elapsedMs < mainMs)
         || (saved.announcedStage >= 2 && saved.elapsedMs < totalMs)
         || (preparationPhase === 'focus' && (saved.elapsedMs !== 0 || saved.announcedStage !== 0))
-        || (preparationPhase === 'grace' && (saved.elapsedMs !== mainMs || saved.announcedStage !== 1 || lastCountdownNumber !== 6))
+        || (preparationPhase === 'grace' && (timer.secondarySeconds === 0 || saved.elapsedMs !== mainMs || saved.announcedStage !== 1 || lastCountdownNumber !== 6))
         || (lastCountdownNumber < 6 && (saved.elapsedMs < mainMs
           || Math.ceil((totalMs - saved.elapsedMs) / SECOND) > lastCountdownNumber))
         || saved.lastReminderIndex > Math.max(0, Math.floor((saved.elapsedMs - totalMs) / (timer.overtimeSeconds * SECOND)))) {
@@ -243,7 +244,7 @@ export class TimerEngine {
       timer.preparationPhase = preparationPhase;
       const timestamp = now();
       timer.accumulatedMs = saved.elapsedMs + (saved.status === 'running' ? Math.max(0, timestamp - saved.savedAt) : 0);
-      if (saved.announcedStage === 0) timer.accumulatedMs = Math.min(timer.accumulatedMs, mainMs);
+      if (timer.secondarySeconds > 0 && saved.announcedStage === 0) timer.accumulatedMs = Math.min(timer.accumulatedMs, mainMs);
       timer.highWaterMs = timer.accumulatedMs;
       timer.runningSince = saved.status === 'running' ? Math.max(timestamp, saved.savedAt) : null;
       timer.announcedStage = saved.announcedStage;
