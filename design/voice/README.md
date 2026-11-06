@@ -70,3 +70,9 @@ All ten final full warnings and the three stitched demos transcribed exactly wit
 `timer-start.m4a` says “三、二、一，开始！” in 2.879 seconds. It reuses the verified 三、二、一 recordings and a new locally generated “开始！” ending in the same voice. The digits start at 0.0, 0.8, and 1.6 seconds; “开始” starts at 2.4 seconds. The resulting AAC clip is 22,188 bytes at 24 kHz mono. Both the complete phrase and its `timer-start` ID appear in the app’s standard mapping and manifest (45 clips total).
 
 The reproducible `timer-start` action in `scripts/generate_voice.py` creates this paced composition. `timer-start.json` records the exact assembly; `timer-start.wav` is the lossless source. The internal ending recording remains in `design/voice/` and is not separately exposed as an app phrase. `timer-start-verification.json` holds the local transcript check.
+
+## Short reset cue
+
+The reset cue is now “重新开始吧”. All three characters' `reset.wav` and deployed `reset.m4a` files were regenerated with their existing voice references using local VoxCPM2 (`clips --only reset --character …`). Durations: deepseek 0.979 s, Claude 0.949 s, ChatGPT 0.988 s. Each character directory contains `reset-verification.json`; local Whisper transcribed all three exactly. The previous longer WAV, AAC and manifest entry are preserved under each design directory's `reset-original/` folder. Selective reset verification writes its own report rather than overwriting warning checks.
+
+Reset now cancels previous speech and plays this cue when sound is enabled, including drag, keyboard and settings-save resets. Muting still leaves the visible caption without audio.

@@ -1,5 +1,6 @@
 import { CHARACTER_CLIPS } from './voices.js';
 import { warningSegments } from './warnings.js';
+import { speechEnvelope } from './speech-envelope.js';
 
 // Retain the original whale's tone; new characters have their own generated voices.
 const VOICE_PROFILES = {
@@ -18,6 +19,9 @@ export function createAudio({ clips, characterClips = CHARACTER_CLIPS, fetcher =
   let characterId = 'whale';
   let revision = 0;
   let voices = [];
+  let speechActivity;
+  const speechListeners = new Set();
+  const envelopes = new WeakMap();
   const pendingFiles = new Map();
   const decodedFiles = new Map();
   const bellTones = new Set();
@@ -28,6 +32,12 @@ export function createAudio({ clips, characterClips = CHARACTER_CLIPS, fetcher =
   const base = import.meta.env?.BASE_URL ?? '/';
   loadVoices();
   synth?.addEventListener('voiceschanged', loadVoices);
+
+  function notifySpeech() {
+    for (const listener of speechListeners) {
+      try { listener(); } catch { /* Animation cannot interrupt audio. */ }
+    }
+  }
 
   function fetchClip(file) {
     if (!pendingFiles.has(file)) {
@@ -52,7 +62,10 @@ export function createAudio({ clips, characterClips = CHARACTER_CLIPS, fetcher =
   function unlock() {
     if (!enabled || disposed) return;
     try {
-      if (AudioContext && !context) context = new AudioContext();
+      if (AudioContext && !context) {
+        context = new AudioContext();
+        context.addEventListener?.('statechange', notifySpeech);
+      }
       const resuming = context?.resume();
       resuming?.catch(() => {});
       return resuming;
@@ -158,6 +171,7 @@ export function createAudio({ clips, characterClips = CHARACTER_CLIPS, fetcher =
     if (!enabled || disposed) return Promise.resolve(false);
     stopSpeech();
     const requestRevision = revision;
+    const speakingCharacter = characterId;
     const profile = VOICE_PROFILES[characterId];
     const selectedClips = clipsFor(characterId);
     let releaseEffects = () => {};
@@ -173,6 +187,10 @@ export function createAudio({ clips, characterClips = CHARACTER_CLIPS, fetcher =
       finish(value) {
         releaseEffects();
         settle(value);
+        if (speechActivity?.request === request) {
+          speechActivity = undefined;
+          notifySpeech();
+        }
         if (activeSpeech === request) activeSpeech = undefined;
       },
     };
@@ -221,8 +239,12 @@ export function createAudio({ clips, characterClips = CHARACTER_CLIPS, fetcher =
             request.finish(current());
           };
           speechSource = source;
+          let envelope = envelopes.get(buffer);
+          if (!envelope) { envelope = speechEnvelope(buffer); envelopes.set(buffer, envelope); }
           const startedAt = context.currentTime;
           source.start();
+          speechActivity = { request, character: speakingCharacter, sample: () => envelope(context.currentTime - startedAt) };
+          notifySpeech();
           notifyStart({ elapsedMs: () => Math.max(0, (context.currentTime - startedAt) * 1000) });
           if (!waitUntilEnd) settle(true);
           return;
@@ -250,6 +272,14 @@ export function createAudio({ clips, characterClips = CHARACTER_CLIPS, fetcher =
 
   return {
     unlock, bell, speak,
+    getSpeechFrame() {
+      if (!speechActivity || context?.state !== 'running') return { active: false, level: 0 };
+      return { active: true, character: speechActivity.character, level: speechActivity.sample() };
+    },
+    subscribeSpeech(listener) {
+      speechListeners.add(listener);
+      return () => speechListeners.delete(listener);
+    },
     setCharacter(id) {
       characterId = Object.hasOwn(VOICE_PROFILES, id) ? id : 'whale';
       preloadVoice();
@@ -266,8 +296,10 @@ export function createAudio({ clips, characterClips = CHARACTER_CLIPS, fetcher =
     destroy() {
       disposed = true;
       silence();
+      speechListeners.clear();
       abortController.abort();
       synth?.removeEventListener('voiceschanged', loadVoices);
+      context?.removeEventListener?.('statechange', notifySpeech);
       context?.close().catch(() => {});
       pendingFiles.clear();
       decodedFiles.clear();

@@ -62,9 +62,13 @@ export function createCharacterSwipe(surface, { onSwipe, onStart = () => {}, onD
     if (complete) onSwipe(direction);
     if (horizontal) onRelease(direction);
   });
-  for (const type of ['pointercancel', 'lostpointercapture']) {
-    on(type, event => { if (gesture?.id === event.pointerId) clear(); });
-  }
+  on('pointercancel', event => { if (gesture?.id === event.pointerId) clear(); });
+  on('lostpointercapture', event => {
+    // Touch starts with implicit capture on the avatar. Taking capture on the
+    // scene bubbles a loss event from that child; it is a handoff, not a cancel.
+    // Only losing the scene's own capture should end an active drag.
+    if (event.target === surface && gesture?.id === event.pointerId) clear();
+  });
   const view = surface.ownerDocument.defaultView;
   const cancel = () => clear();
   view.addEventListener('blur', cancel);

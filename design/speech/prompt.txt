@@ -1,0 +1,10 @@
+Use case: stylized-concept.
+Asset type: tiny transparent chibi anime mouth sprite atlas for audio-driven animation.
+Create ONLY six isolated mouth drawings in a perfectly regular 3-column 2-row grid, square cells, all centered at the same location within their cells with identical scale and baseline. No faces, skin, noses, eyes, heads, text, frames, borders or props. True transparent background everywhere outside the mouth strokes and mouth interior.
+Style: adorable chibi anime girl, hand-inked dark warm brown outlines (not thick black), clean coral red inner mouth and small soft pink tongue, tiny and simple enough to read at 20px wide. No lipstick or realistic teeth. Mouth drawings occupy about 45% of each square cell width.
+Top row (friendly): 1 closed soft smile (a single curved line); 2 small slightly open smiling mouth; 3 wide open happy speaking mouth with rounded U shape, dark coral interior, pink tongue.
+Bottom row (stern/pouting): 1 closed small downward pout line; 2 small open oval speaking mouth; 3 open rounded squarish mildly scolding speaking mouth, coral interior, pink tongue.
+Keep maximum mouth width the same across the two rows and keep each mouth vertically centered. Production sprite sheet, exactly six mouths, consistent ink weight and shared palette. Do not include checkerboard pixels in the image.
+
+Cleanup edit:
+Edit this mouth sprite atlas. Preserve all six mouths, positions, scale and style exactly. Remove every glow, halo, shadow and colored haze outside the mouth strokes. The exterior must be completely transparent right up to the clean antialiased ink edge. Make the outline a darker muted brown, similar to hand-inked anime linework, rather than reddish luminous brown. No gradients/glow outside mouths. Actual alpha transparency. Keep 3 columns and 2 rows.

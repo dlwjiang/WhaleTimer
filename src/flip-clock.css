@@ -84,5 +84,13 @@
 @keyframes flip-land { to { transform: rotateX(0); } }
 #app[data-phase=overdue] #timer-display,
 #app[data-countdown]:not([data-countdown=""]) #timer-display { color: var(--flip-warning); }
+@media (max-width: 700px) {
+  .flip-clock-face {
+    --flip-height: clamp(40px, calc(112cqw / var(--flip-count)), 96px);
+    font-size: clamp(20px, calc(85cqw / var(--flip-count)), 72px);
+    gap: 6px;
+  }
+  .flip-digit { max-width: 76px; }
+}
 @media (max-width: 370px) { .flip-clock-face { gap: 4px; } }
 @media (prefers-reduced-motion: reduce) { .flip-moving { display: none; } }

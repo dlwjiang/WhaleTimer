@@ -2,6 +2,8 @@ import './style.css';
 import './flip-clock.css';
 import './character-theme.css';
 import './glass.css';
+import './desktop.css';
+import './glass-tuner.css';
 import './admin.css';
 import { mountApp } from './ui.js';
 

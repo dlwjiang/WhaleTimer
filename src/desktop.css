@@ -1,0 +1,90 @@
+/* Desktop is one centered composition; mobile keeps its edge-to-edge scene. */
+@media (min-width: 701px) {
+  .app-shell {
+    max-width: none;
+    padding: 24px clamp(24px, 4vw, 64px) 18px;
+    isolation: isolate;
+  }
+  /* Reuse the painted paper texture; tint only these background layers so
+     the character, logo and glass controls retain their original colors. */
+  .app-shell::before,
+  .app-shell::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background: #edf2f7 url('/backgrounds/paper-texture-v1.webp') center / cover;
+    opacity: 0;
+    transition: opacity 280ms cubic-bezier(.16, 1, .3, 1);
+  }
+  .app-shell::before { filter: hue-rotate(150deg) saturate(1.15); }
+  .app-shell::after { filter: hue-rotate(65deg) saturate(1.05); }
+  #app[data-character=claude] .app-shell::before,
+  #app[data-character=chatgpt] .app-shell::after {
+    opacity: 1;
+  }
+  .topbar {
+    width: 100%;
+    max-width: 1440px;
+    margin-inline: auto;
+  }
+  .main-layout {
+    --scene-size: clamp(300px, calc(100svh - 450px), 640px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: min(100%, 960px);
+    min-height: 0;
+    margin: 0 auto;
+    padding: 12px 0 20px;
+  }
+  .companion {
+    flex: none;
+    align-self: center;
+    width: min(100%, 760px);
+    height: var(--scene-size);
+    min-height: 0;
+  }
+  .avatar-wrap {
+    top: 0;
+    bottom: auto;
+    width: var(--scene-size);
+    height: var(--scene-size);
+    max-width: 100%;
+  }
+  .scene-backdrop { bottom: -32%; }
+  
+  
+  .character-step { top: calc(50% - 22px); }
+  .character-previous { left: max(12px, calc(50% - var(--scene-size) * .5 - 28px)); }
+  .character-next { right: max(12px, calc(50% - var(--scene-size) * .5 - 28px)); }
+
+  .timer-panel {
+    flex: none;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-areas: 'clock clock' 'progress progress' 'action reset' 'audio audio';
+    gap: 12px;
+    width: min(100%, 560px);
+    margin: 0;
+    padding: 40px 28px;
+  }
+  .clock-block { grid-area: clock; padding: 0; }
+  .progress-sections { grid-area: progress; margin: 0 0 3px; }
+  .timer-panel > .primary-button { grid-area: action; min-height: 56px; padding: 12px; }
+  .timer-panel .reset-track { grid-area: reset; height: 56px; margin: 0; }
+  .timer-panel .reset-handle { width: 42px; height: 42px; }
+  .timer-panel .reset-label { color: #4c6486; padding-left: 40px; }
+  .audio-note { grid-area: audio; margin: 0; }
+  .flip-clock-face {
+    --flip-height: clamp(64px, calc(112cqw / var(--flip-count)), 96px);
+    font-size: clamp(32px, calc(85cqw / var(--flip-count)), 72px);
+    gap: 6px;
+  }
+  .flip-digit { max-width: 76px; }
+  .footer { justify-content: center; margin: 0; }
+  .footer > span:last-child { display: none; }
+}

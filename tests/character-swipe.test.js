@@ -19,9 +19,9 @@ function setup(t) {
     onRelease: direction => feedback.push(['release', direction]),
   });
   t.after(() => { swipe.destroy(); dom.window.close(); });
-  function pointer(type, x, y = 100, { target = avatar, id = 1, primary = true, button = 0, time } = {}) {
+  function pointer(type, x, y = 100, { target = avatar, id = 1, primary = true, button = 0, time, pointerType = 'mouse' } = {}) {
     const event = new dom.window.Event(type, { bubbles: true, cancelable: true });
-    Object.assign(event, { pointerId: id, clientX: x, clientY: y, isPrimary: primary, button });
+    Object.assign(event, { pointerId: id, clientX: x, clientY: y, isPrimary: primary, button, pointerType });
     if (time !== undefined) Object.defineProperty(event, 'timeStamp', { value: time });
     target.dispatchEvent(event);
     return event;
@@ -67,7 +67,7 @@ test('taps, short drags, vertical scrolls and diagonal scrolls never switch char
 test('pointer cancellation, lost capture and a second finger cancel a drag', t => {
   const { pointer, surface, changes } = setup(t);
   for (const type of ['pointercancel', 'lostpointercapture']) {
-    pointer('pointerdown', 200); pointer('pointermove', 80); pointer(type, 80); pointer('pointerup', 80);
+    pointer('pointerdown', 200); pointer('pointermove', 80); pointer(type, 80, 100, { target: surface }); pointer('pointerup', 80);
     assert.equal(surface.dataset.swiping, undefined);
   }
   pointer('pointerdown', 200); pointer('pointermove', 80);
@@ -75,6 +75,23 @@ test('pointer cancellation, lost capture and a second finger cancel a drag', t =
   pointer('pointerup', 80);
   assert.equal(surface.dataset.swiping, undefined);
   assert.deepEqual(changes, []);
+});
+
+test('touch capture transferring from the avatar to the scene does not cancel the swipe', t => {
+  const { pointer, surface, changes, feedback, click } = setup(t);
+  const touch = { pointerType: 'touch' };
+  pointer('pointerdown', 240, 100, touch);
+  pointer('pointermove', 210, 102, touch);
+  // Touch implicitly captures the avatar. Moving capture to the scene then
+  // bubbles lostpointercapture from that child before subsequent moves.
+  pointer('lostpointercapture', 210, 102, touch);
+  assert.equal(surface.dataset.swiping, 'true');
+  pointer('pointermove', 100, 104, { ...touch, target: surface });
+  pointer('pointerup', 100, 104, { ...touch, target: surface });
+  assert.deepEqual(changes, [1]);
+  assert.deepEqual(feedback.at(-1), ['release', 1]);
+  assert.equal(click().defaultPrevented, true);
+  assert.equal(surface.dataset.swiping, undefined);
 });
 
 test('controls and non-primary buttons are ignored; new taps and keyboard clicks still work after swiping', t => {

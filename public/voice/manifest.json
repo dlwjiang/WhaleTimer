@@ -96,12 +96,13 @@
     },
     {
       "id": "reset",
-      "text": "重新开始吧，这次也一起加油！",
+      "text": "重新开始吧",
       "file": "reset.m4a",
-      "duration": 2.717,
-      "seed": 85626027,
-      "bytes": 32929,
-      "sampleRate": 24000
+      "duration": 0.979,
+      "seed": 3911608055,
+      "bytes": 13469,
+      "sampleRate": 24000,
+      "synthesisText": "重新开始吧"
     },
     {
       "id": "pause",

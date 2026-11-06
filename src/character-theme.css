@@ -84,6 +84,22 @@
   transform-style: preserve-3d;
   backface-visibility: hidden;
 }
+.character-art, .portrait-features {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.character-art { display: grid; place-items: center; transform-origin: 50% 90%; }
+.portrait-features { overflow: visible; }
+.character-art.is-active[data-speaking=true] {
+  /* Independent transform property preserves the existing expression motion. */
+  rotate: calc((var(--speech-lean, 0)) * 1deg);
+}
+.character-art[data-mouth="1"] { --speech-lean: -.25; }
+.character-art[data-mouth="2"] { --speech-lean: .3; }
+.character-art { transition: rotate 120ms ease-out; }
 .character-preview {
   position: absolute;
   width: 100%;
@@ -96,7 +112,7 @@
 }
 .character-preview.is-visible { opacity: 1; }
 .avatar-wrap[data-rotating=true] .character-face { will-change: transform, opacity; }
-.avatar-wrap[data-rotating=true] .is-visible { animation-play-state: paused; }
+.avatar-wrap[data-rotating=true] .character-art { animation-play-state: paused; }
 .avatar-wrap[data-rotating=true] .scene-backdrop { will-change: opacity; }
 .character-step {
   position: absolute;
@@ -118,3 +134,6 @@
 .character-next { right: 8px; }
 .character-previous svg { transform: rotate(180deg); }
 @media (max-width: 700px) { .character-step { top: clamp(230px, 36%, 350px); } }
+@media (prefers-reduced-motion: reduce) {
+  .character-art { transform: none !important; rotate: none !important; }
+}

@@ -1,5 +1,6 @@
 import { CHARACTERS, characterImage } from './characters.js';
 import { sceneBackground } from './scene.js';
+import { createPortrait } from './portrait.js';
 
 const wrap = value => ((value % CHARACTERS.length) + CHARACTERS.length) % CHARACTERS.length;
 const clamp = (value, min, max) => Math.max(min, Math.min(max, value));
@@ -48,21 +49,27 @@ export function createCharacterCarousel(avatar, { index = 0 } = {}) {
     const face = document.createElement('span');
     face.className = 'character-face';
     face.dataset.character = character.id;
+    const art = document.createElement('span');
+    art.className = 'character-art';
+    face.append(art);
     const images = Object.keys(character.images).map(name => {
       const image = document.createElement('img');
       image.dataset.expression = name;
       image.src = characterImage(character, name);
       image.draggable = false;
-      face.append(image);
+      art.append(image);
       return image;
     });
     viewport.append(face);
-    return { face, images, backdrop };
+    const portrait = createPortrait(art, character.id);
+    return { face, art, portrait, images, backdrop };
   });
 
   function updateExpressions() {
-    faces.forEach(({ face, images }, i) => {
+    faces.forEach(({ face, art, portrait, images }, i) => {
       const active = i === wrap(target);
+      art.classList.toggle('is-active', active);
+      portrait.expression(expression);
       face.setAttribute('aria-hidden', String(!active));
       images.forEach(image => {
         const visible = image.dataset.expression === expression;
@@ -137,12 +144,21 @@ export function createCharacterCarousel(avatar, { index = 0 } = {}) {
       snap();
     },
     updateExpression(next) { expression = next; updateExpressions(); },
+    speak(character, shape) {
+      faces.forEach(({ art, portrait }, i) => {
+        const speaking = CHARACTERS[i].id === character;
+        art.dataset.speaking = String(speaking);
+        portrait.mouth(speaking ? shape : 0);
+      });
+    },
+    blink(value) { faces.forEach(({ portrait }, i) => portrait.blink(value && i === wrap(target))); },
     destroy() {
       disposed = true;
       stop();
       view.removeEventListener('resize', paint);
       motion?.removeEventListener('change', onMotionChange);
       viewport.remove();
+      faces.forEach(({ portrait }) => portrait.destroy());
       faces.forEach(({ backdrop }) => backdrop.remove());
       delete avatar.dataset.rotating;
     },

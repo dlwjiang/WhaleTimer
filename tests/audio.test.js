@@ -352,3 +352,48 @@ test('effect failure plays the original clip and playback-start timing follows t
   env.contexts[0].currentTime = .8;
   assert.equal(timing.elapsedMs(), 800);
 });
+
+test('speech activity follows PCM and the audio clock, retains its speaker, and cancels synchronously', async t => {
+  const pcm = Float32Array.from({ length: 1000 }, (_, i) => i >= 100 && i < 500 ? .12 : 0);
+  const env = setup(t, { decode: () => ({ length: pcm.length, sampleRate: 1000, numberOfChannels: 1, getChannelData: () => pcm }) });
+  const notifications = [];
+  const unsubscribe = env.audio.subscribeSpeech(() => notifications.push(env.audio.getSpeechFrame()));
+  assert.deepEqual(env.audio.getSpeechFrame(), { active: false, level: 0 });
+  await env.audio.speak('开始啦');
+  assert.deepEqual(env.audio.getSpeechFrame(), { active: true, character: 'whale', level: 0 });
+  env.contexts[0].currentTime = .2;
+  assert.equal(env.audio.getSpeechFrame().level, 1);
+  env.audio.setCharacter('claude');
+  assert.equal(env.audio.getSpeechFrame().character, 'whale', 'switching companions does not give the new face the old voice');
+  env.contexts[0].currentTime = .7;
+  assert.equal(env.audio.getSpeechFrame().level, 0, 'silence inside a recording closes the mouth');
+  const old = env.sources[0];
+  await env.audio.speak('快一点');
+  assert.equal(env.audio.getSpeechFrame().character, 'claude');
+  old.onended();
+  assert.equal(env.audio.getSpeechFrame().character, 'claude', 'stale ended cannot clear the new meter');
+  env.audio.silence();
+  assert.deepEqual(notifications.at(-1), { active: false, level: 0 });
+  const count = notifications.length;
+  unsubscribe();
+  await env.audio.speak('开始啦');
+  env.sources.at(-1).onended();
+  assert.deepEqual(env.audio.getSpeechFrame(), { active: false, level: 0 });
+  assert.equal(notifications.length, count);
+});
+
+test('bell tones, suspended audio and system speech never produce a fabricated PCM mouth signal', async t => {
+  const env = setup(t);
+  await env.audio.unlock(); env.audio.bell();
+  assert.deepEqual(env.audio.getSpeechFrame(), { active: false, level: 0 });
+  await env.audio.speak('开始啦');
+  env.contexts[0].state = 'suspended';
+  assert.equal(env.audio.getSpeechFrame().active, false);
+  env.contexts[0].state = 'running';
+  assert.equal(env.audio.getSpeechFrame().active, true);
+  await env.audio.speak('没有本地录音');
+  assert.equal(env.spoken.length, 1);
+  assert.deepEqual(env.audio.getSpeechFrame(), { active: false, level: 0 });
+  env.audio.setEnabled(false);
+  assert.equal(env.audio.getSpeechFrame().active, false);
+});

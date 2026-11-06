@@ -266,7 +266,8 @@ def verify():
         verification_file = 'verification.json'
         if args.only:
             verification_file = ('countdown-verification.json' if args.only.startswith('countdown')
-                else 'timer-start-verification.json' if args.only.startswith('timer-start') else 'warning-verification.json')
+                else 'timer-start-verification.json' if args.only.startswith('timer-start')
+                else 'reset-verification.json' if args.only == 'reset' else 'warning-verification.json')
         write_json(DESIGN / verification_file, results)
 
 if __name__ == '__main__':

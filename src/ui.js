@@ -1,7 +1,9 @@
 import { createSpeechCaption } from './speech.js';
 import { createAngerEmojis } from './anger.js';
 import { createCharacterSwipe } from './character-swipe.js';
+import { createGlassTuner } from './glass-tuner.js';
 import { createCharacterCarousel } from './character-carousel.js';
+import { createSpeaking } from './speaking.js';
 import { createFlipClock } from './flip-clock.js';
 import { TimerEngine } from './timer.js';
 import { createAudio } from './audio.js';
@@ -63,8 +65,8 @@ export function mountApp(root, { now = Date.now, storage, audio = createAudio(),
     </svg>
     <div class="app-shell">
       <header class="topbar glass-panel">
-        <a class="brand" href="./" aria-label="潮汐首页"><img class="brand-logo" src="${import.meta.env?.BASE_URL ?? '/'}brand/companion-hourglass-128.png" alt="" width="40" height="40"><span>潮汐<span class="brand-caption">陪你专注的小伙伴</span></span></a>
-        <div class="header-actions"><span class="local-note"><span></span>陪你专注当下</span><button id="sound-toggle" class="icon-button" aria-label="关闭声音" title="关闭声音"></button><button id="settings-open" class="icon-button" aria-label="计时设置" title="计时设置">${icon('settings')}</button></div>
+        <a class="brand" href="./" aria-label="伴刻首页"><img class="brand-logo" src="${import.meta.env?.BASE_URL ?? '/'}brand/companion-hourglass-128.png" alt="" width="40" height="40"><span class="brand-copy"><span class="brand-title">伴刻</span><span class="brand-caption">你的专注伙伴</span></span></a>
+        <div class="header-actions"><button id="sound-toggle" class="icon-button" aria-label="关闭声音" title="关闭声音"></button><button id="settings-open" class="icon-button" aria-label="计时设置" title="计时设置">${icon('settings')}</button></div>
       </header>
       <main class="main-layout">
         <section class="companion" aria-label="你的专注伙伴">
@@ -75,7 +77,6 @@ export function mountApp(root, { now = Date.now, storage, audio = createAudio(),
           <button id="avatar" class="avatar-wrap" title="点击打招呼，左右拖动切换伙伴" aria-describedby="character-swipe-help" aria-keyshortcuts="ArrowLeft ArrowRight"><span class="avatar-shadow" aria-hidden="true"></span></button>
           <div id="speech-visual" class="speech-caption" lang="zh-CN" aria-hidden="true"></div>
           <div id="anger-emojis" class="anger-emojis" role="img" hidden></div>
-          <div class="companion-name"><span class="online-dot"></span><strong>你的计时小助手</strong><span id="mood-label">我会陪着你。</span></div>
         </section>
         <section class="timer-panel glass-panel" aria-label="双阶段计时器">
           <div class="clock-block"><div id="timer-display" class="timer-display" role="timer" aria-label="专注计时">03:00</div></div>
@@ -84,38 +85,46 @@ export function mountApp(root, { now = Date.now, storage, audio = createAudio(),
             <div id="extra-progress" class="progress-track" role="progressbar" aria-label="加时进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div></div></div>
           </div>
           <button id="primary-action" class="primary-button">${icon('play')}<span>开始专注</span></button>
-          <div id="reset-track" class="reset-track"><span class="reset-chevron" aria-hidden="true">› › ›</span><span class="reset-label">右滑重新开始</span><button id="reset-handle" class="reset-handle" aria-label="重置计时器。向右拖动，或按回车键或空格键。" title="右滑或按回车键重置">${icon('arrow')}</button></div>
+          <div id="reset-track" class="reset-track"><span class="reset-label">右滑重新开始</span><button id="reset-handle" class="reset-handle" aria-label="重置计时器。向右拖动，或按回车键或空格键。" title="右滑或按回车键重置">${icon('arrow')}</button></div>
           <p id="audio-note" class="audio-note" hidden>此浏览器无法播放中文语音，计时和角色状态仍会正常更新。</p>
         </section>
       </main>
       <footer class="footer"><span>少一点匆忙，多一点从容。</span><span>按自己的节奏来 <span aria-hidden="true">✧</span></span></footer>
     </div>
     <dialog id="settings-dialog" aria-labelledby="settings-title"><form id="settings-form">
-      <div class="dialog-heading"><div><span class="eyebrow">按你的节奏</span><h2 id="settings-title">计时设置</h2></div><button type="button" id="settings-close" class="icon-button" aria-label="关闭设置">${icon('close')}</button></div>
-      <p class="dialog-intro">留一点专注时间，也留一点收尾的余地。</p>
+      <div class="dialog-heading"><h2 id="settings-title">计时设置</h2><button type="button" id="settings-close" class="icon-button" aria-label="关闭设置">${icon('close')}</button></div>
       <fieldset class="character-picker" aria-describedby="character-note">
         <legend>选择伙伴</legend>
         <div class="character-options">${CHARACTERS.map(item => `<button type="button" class="character-option" data-character="${item.id}" aria-pressed="${item.id === character.id}" aria-label="选择${item.name}"><img src="${characterImage(item)}" alt="" draggable="false"><span>${item.name}</span></button>`).join('')}</div>
-        <p id="character-note">随时切换，自动保存，不影响当前计时。</p>
-        <p id="character-status" class="character-status" role="status" aria-live="polite"></p>
+        <p id="character-note" class="sr-only">随时切换，自动保存，不影响当前计时。</p>
+        <p id="character-status" class="character-status sr-only" role="status" aria-live="polite"></p>
       </fieldset>
+      <div class="settings-durations">
       <label class="duration-field" for="main-duration"><span><strong>专注时长</strong><small>第一阶段的倒计时</small></span><span class="number-input"><input id="main-duration" name="main" type="text" required inputmode="decimal" autocomplete="off" spellcheck="false"><span>分钟</span></span></label>
       <label class="duration-field" for="secondary-duration"><span><strong>加时时长</strong><small>专注结束后的收尾时间</small></span><span class="number-input"><input id="secondary-duration" name="secondary" type="text" required inputmode="decimal" autocomplete="off" spellcheck="false"><span>分钟</span></span></label>
+      </div>
+      <div class="settings-overtime">
       <label class="duration-field overtime-toggle" for="overtime-alerts"><span><strong>重复超时提醒</strong><small>关闭后仅在加时结束时提醒一次</small></span><input id="overtime-alerts" name="overtime-alerts" type="checkbox" role="switch" checked></label>
       <label class="duration-field" for="overtime-interval"><span><strong>超时提醒间隔</strong><small>加时结束后的提醒频率</small></span><span class="number-input"><input id="overtime-interval" name="overtime" type="text" required inputmode="numeric" autocomplete="off" spellcheck="false"><span>秒</span></span></label>
+      </div>
       <div class="preset-row" aria-label="计时预设"><button type="button" data-preset="3,2">短暂专注 <b>3 + 2</b></button><button type="button" data-preset="25,5">深度专注 <b>25 + 5</b></button><button type="button" data-preset="0.1,0.2">快速体验 <b>6 秒 + 12 秒</b></button></div>
       <p id="settings-error" class="form-error" role="alert"></p>
       <button class="primary-button" type="submit">${icon('check')}<span>保存并重置计时</span></button>
+      <div class="settings-links">
+      <button type="button" id="glass-tuner-open" class="asset-panel-link">磨砂玻璃调节 <span aria-hidden="true">↗</span></button>
       <button type="button" id="assets-open" class="asset-panel-link">语音与图片 <span aria-hidden="true">↗</span></button>
-      <p class="settings-footnote">每位伙伴都有独立的中文声线。点击开始以启用声音，并保持页面打开以接收提醒。</p>
+      <a class="about-link" href="https://dj.theory-a.com" target="_blank" rel="noopener noreferrer" aria-label="关于作者：打开个人作品集（新标签页）">关于作者 · About <span aria-hidden="true">↗</span></a>
+      </div>
     </form></dialog>
     <div id="announcer" class="sr-only" role="status" aria-live="polite"></div>`;
 
   const $ = selector => root.querySelector(selector);
   const flipClock = createFlipClock($('#timer-display'));
   const dialog = $('#settings-dialog');
+  const glassTuner = createGlassTuner(root, { storage, onClose: () => $('#settings-open').focus() });
   const avatar = $('#avatar');
   const characterCarousel = createCharacterCarousel(avatar, { index: CHARACTERS.indexOf(character) });
+  const speaking = createSpeaking({ avatar, audio, carousel: characterCarousel });
   const speechCaption = createSpeechCaption({ element: $('#speech-visual'), avatar, container: $('.companion'), now, character: () => character.id });
   const angerEmojis = createAngerEmojis({ element: $('#anger-emojis'), avatar, container: $('.companion'), character: () => character.id });
   const cleanups = [];
@@ -136,7 +145,6 @@ export function mountApp(root, { now = Date.now, storage, audio = createAudio(),
     audio.setCharacter?.(character.id);
     avatar.setAttribute('aria-label', `和${character.name}打个招呼`);
     $('.companion').setAttribute('aria-label', `你的伙伴：${character.name}`);
-    $('.companion-name strong').textContent = `${character.name} · 你的计时小助手`;
     root.querySelectorAll('.character-option').forEach(button => {
       button.setAttribute('aria-pressed', String(button.dataset.character === character.id));
     });
@@ -213,7 +221,6 @@ export function mountApp(root, { now = Date.now, storage, audio = createAudio(),
       track.firstElementChild.style.width = `${percentage}%`;
       track.setAttribute('aria-valuenow', String(Math.round(percentage)));
     }
-    $('#mood-label').textContent = status === 'paused' ? '歇一会儿，我等你。' : overdue ? '要抓紧时间啦。' : grace ? '再加把劲……' : '我会陪着你。';
     $('#sound-toggle').innerHTML = icon(sound ? 'sound' : 'mute');
     $('#sound-toggle').setAttribute('aria-label', sound ? '关闭声音' : '开启声音');
     $('#sound-toggle').title = sound ? '关闭声音' : '开启声音';
@@ -282,7 +289,7 @@ export function mountApp(root, { now = Date.now, storage, audio = createAudio(),
   function reset() {
     cancelPreparation();
     engine.reset();
-    say('重新开始吧，这次也一起加油！', 'happy', 'bounce', false);
+    say('重新开始吧', 'happy', 'bounce');
     announce('计时已重置，准备重新开始。');
     persist(); render();
   }
@@ -335,6 +342,7 @@ export function mountApp(root, { now = Date.now, storage, audio = createAudio(),
     cycleCharacter(event.key === 'ArrowLeft' ? -1 : 1);
   });
   on($('#settings-open'), 'click', () => {
+    glassTuner.close(false);
     const snapshot = engine.snapshot();
     $('#main-duration').value = snapshot.mainSeconds / 60;
     $('#secondary-duration').value = snapshot.secondarySeconds / 60;
@@ -359,6 +367,7 @@ export function mountApp(root, { now = Date.now, storage, audio = createAudio(),
     },
     onClose() { $('#settings-open').focus(); },
   });
+  on($('#glass-tuner-open'), 'click', () => { dialog.close(); glassTuner.open(); });
   on($('#assets-open'), 'click', () => { dialog.close(); assetPanel.open(); });
   on(dialog, 'click', event => { if (event.target === dialog) { const r = dialog.getBoundingClientRect(); if (event.clientX < r.left || event.clientX > r.right || event.clientY < r.top || event.clientY > r.bottom) dialog.close(); } });
   root.querySelectorAll('[data-preset]').forEach(button => on(button, 'click', () => {
@@ -453,5 +462,5 @@ export function mountApp(root, { now = Date.now, storage, audio = createAudio(),
   else if (initial.status === 'running') say('专心做好这一件事吧，我陪着你。', 'idle', 'breathe', false);
   else setExpression('idle');
   tick();
-  return { tick, reset, engine, destroy() { destroyed = true; cancelPreparation(); clearInterval(interval); cleanups.forEach(fn => fn()); assetPanel.destroy(); speechCaption.destroy(); characterSwipe.destroy(); characterCarousel.destroy(); flipClock.destroy(); audio.destroy(); } };
+  return { tick, reset, engine, destroy() { destroyed = true; cancelPreparation(); clearInterval(interval); cleanups.forEach(fn => fn()); assetPanel.destroy(); glassTuner.destroy(); speechCaption.destroy(); characterSwipe.destroy(); speaking.destroy(); characterCarousel.destroy(); flipClock.destroy(); audio.destroy(); } };
 }

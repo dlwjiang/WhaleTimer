@@ -406,7 +406,7 @@ test('settings cancel and invalid duration do not mutate an active timer; save r
 });
 
 test('drag reset requires crossing threshold, pointer cancellation aborts, keyboard reset works', async t => {
-  const { $, app, pointer, time, dom } = setup(t);
+  const { $, app, pointer, time, dom, calls } = setup(t);
   const track = $('#reset-track'); const handle = $('#reset-handle');
   Object.defineProperty(track, 'clientWidth', { value: 300 });
   Object.defineProperty(handle, 'offsetWidth', { value: 38 });
@@ -416,13 +416,32 @@ test('drag reset requires crossing threshold, pointer cancellation aborts, keybo
   assert.equal(app.engine.snapshot().status, 'running');
   pointer('pointerdown', 10); pointer('pointermove', 300); pointer('pointercancel', 300);
   assert.equal(app.engine.snapshot().status, 'running');
+  assert.equal(calls.filter(([, text]) => text === '重新开始吧').length, 0);
   pointer('pointerdown', 10); pointer('pointermove', 300); pointer('pointerup', 300);
   assert.equal(app.engine.snapshot().status, 'idle');
   assert.equal($('#timer-display').textContent, '03:00');
+  assert.equal($('#speech-cn').textContent, '重新开始吧');
+  assert.equal(calls.filter(([, text]) => text === '重新开始吧').length, 1);
   $('#primary-action').click(); await flush(); await time(6000);
   handle.dispatchEvent(new dom.window.KeyboardEvent('keydown', { key: 'Enter', bubbles: true, cancelable: true }));
   assert.equal(app.engine.snapshot().status, 'idle');
+  assert.equal(calls.filter(([, text]) => text === '重新开始吧').length, 2);
 });
+
+for (const character of ['whale', 'claude', 'chatgpt']) {
+  test(`${character} speaks the shortened reset cue and respects mute`, t => {
+    const { $, calls } = setup(t, { character, sound: true });
+    assert.deepEqual(calls.find(([type]) => type === 'character'), ['character', character]);
+    calls.length = 0;
+    $('#reset-handle').click();
+    assert.deepEqual(calls.filter(([type]) => type === 'silence' || type === 'speak'), [['silence'], ['speak', '重新开始吧']]);
+    $('#sound-toggle').click();
+    calls.length = 0;
+    $('#reset-handle').click();
+    assert.equal($('#speech-cn').textContent, '重新开始吧');
+    assert.equal(calls.some(([type]) => type === 'speak'), false);
+  });
+}
 
 test('restored grace session uses its actual phase, caption and expression without repeating bell', async t => {
   let now = 0;
@@ -474,6 +493,7 @@ test('muted countdown keeps visible digits without speaking', async t => {
   const { $, configure, time, calls } = setup(t);
   configure('0.1', '0.2');
   $('#sound-toggle').click();
+  calls.length = 0; // The earlier settings save speaks its reset cue before mute.
   $('#primary-action').click(); await flush();
   await time(4000); await time(10000); await time(17000);
   assert.equal($('#speech-cn').textContent, '五');
@@ -503,7 +523,9 @@ test('opening the asset panel pauses the active timer and closing does not silen
 
 test('focus waits for its countdown, while extra time starts after the reminder without another countdown', async t => {
   const { $, app, configure, time, calls, finishSpeech } = setup(t, null, { deferSpeech: true });
-  configure(); $('#primary-action').click();
+  configure();
+  calls.length = 0; // Measure the intro independently of the settings reset cue.
+  $('#primary-action').click();
   assert.equal(app.engine.snapshot().status, 'preparing');
   assert.equal($('#speech-cn').textContent, '三、二、一，开始！');
   for (const [elapsed, text] of [[0, '三'], [800, '二'], [1600, '一'], [2400, '开始！']]) {

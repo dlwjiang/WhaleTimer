@@ -3,8 +3,8 @@ const base = import.meta.env?.BASE_URL ?? '/';
 export const EXPRESSIONS = ['idle', 'happy', 'cute', 'angry', 'frustrated', 'bell'];
 export const CHARACTERS = [
   {
-    id: 'whale', name: '鲸鱼女仆',
-    description: '蓝发鲸鱼女仆，身穿藏蓝色裙子和白色围裙',
+    id: 'whale', name: 'deepseek',
+    description: '蓝发的 deepseek，身穿藏蓝色裙子和白色围裙',
     images: Object.fromEntries(EXPRESSIONS.map(name => [name, `avatars/${name}.webp`])),
   },
   {
