@@ -1,0 +1,709 @@
+{
+  "method": "Decode actual bundled AAC digits, assemble one-second slots, then recognize 5→1 with local Whisper. Human pronunciation review remains separate.",
+  "sequences": {
+    "en/mochi": {
+      "sha256": "b91b8714154b86fad1873cad34a05df9c7a709279e94b39ec3abdcef0a632339",
+      "recognized": [
+        " Five,",
+        " four,",
+        " three,",
+        " two,",
+        " one."
+      ],
+      "status": "verified"
+    },
+    "zh-Hans/mochi": {
+      "sha256": "94056e16c2d487888fcc74c61d6804fb77b1ab8ed6a8434bb1f14cc747f53ae0",
+      "recognized": [
+        "五、",
+        "四、",
+        "三、",
+        "二、",
+        "一"
+      ],
+      "status": "verified"
+    },
+    "ja/mochi": {
+      "sha256": "c6474531eddc06aa0da02205966f957ff7bd8c481ad3460364058e71e311ad3d",
+      "recognized": [
+        "5",
+        " 4",
+        " 3",
+        " 2",
+        " 1"
+      ],
+      "status": "verified"
+    },
+    "ko/mochi": {
+      "sha256": "6006709799f59d5fc1bb0961cb59106908294f376db03a5cabe906f87632cc11",
+      "recognized": [
+        " 5",
+        " 4",
+        " 3",
+        " 2",
+        " 1"
+      ],
+      "status": "verified"
+    },
+    "es/mochi": {
+      "sha256": "d4a5f5a2cf0c403ab4ec07e641d02549571f8d553c9f694f0a6ff6a5a0f7217b",
+      "recognized": [
+        " 5,",
+        " 4,",
+        " 3,",
+        " 2,",
+        " 1."
+      ],
+      "status": "verified"
+    },
+    "pt-BR/mochi": {
+      "sha256": "bfe3c6597f19bb4b7a339b20041e903f6e25ec599ff754ba9986394748bf0324",
+      "recognized": [
+        " 5,",
+        " 4,",
+        " 3,",
+        " 2,",
+        " 1."
+      ],
+      "status": "verified"
+    },
+    "fr/mochi": {
+      "sha256": "ba6aa44c52d17628fb19b5c169ca4d7020de897d37e86b53d3da7e46ffae3a0b",
+      "recognized": [
+        " 5,",
+        " 4,",
+        " 3,",
+        " 2,",
+        " 1"
+      ],
+      "status": "verified"
+    },
+    "de/mochi": {
+      "sha256": "8cd5bcb1dd28e251845aa39c4a1df5f34b5f049073d30c31d1677362a338f8ad",
+      "recognized": [
+        " fünf,",
+        " vier,",
+        " drei,",
+        " zwei,",
+        " eins."
+      ],
+      "status": "verified"
+    },
+    "en/pip": {
+      "sha256": "0dc281b3f8d7c96b26582197eaa07582f160c92bc4eb2f69a42aa9a192764838",
+      "recognized": [
+        " Five,",
+        " four,",
+        " three,",
+        " two,",
+        " one."
+      ],
+      "status": "verified"
+    },
+    "zh-Hans/pip": {
+      "sha256": "c663ae08e20bf7aa6acd358756539a0d473fe99a90f215023fb17384025108b1",
+      "recognized": [
+        "5",
+        "4",
+        "3",
+        "2",
+        "1"
+      ],
+      "status": "verified"
+    },
+    "ja/pip": {
+      "sha256": "a264d42f99e2ae036822d5c3e2d1e3b43177f8d76985cd59038feb56b290b776",
+      "recognized": [
+        "5、",
+        "4、",
+        "3、",
+        "2、",
+        "1"
+      ],
+      "status": "verified"
+    },
+    "ko/pip": {
+      "sha256": "52e2429e402b5780d759cb6e2641c620629ed0d83f08951e1004a06b9228bad1",
+      "recognized": [
+        " 5,",
+        " 4,",
+        " 3,",
+        " 2,",
+        " 1"
+      ],
+      "status": "verified"
+    },
+    "es/pip": {
+      "sha256": "54565a42ea0a230ab62f63b8dbbcdd5c84e634a003267fad8250d13dee6f6cf0",
+      "recognized": [
+        " Cinco,",
+        " cuatro,",
+        " tres,",
+        " dos,",
+        " uno."
+      ],
+      "status": "verified"
+    },
+    "pt-BR/pip": {
+      "sha256": "fd157c5ce144794a34984d3018bcc44dbf91df81884b882912305cac29f65487",
+      "recognized": [
+        " 5,",
+        " 4,",
+        " 3,",
+        " 2,",
+        " 1!"
+      ],
+      "status": "verified"
+    },
+    "fr/pip": {
+      "sha256": "72c7226deedafdb7c33dc5f2ea68469cc3185230848679942ba139536cf9239e",
+      "recognized": [
+        " Cinq,",
+        " quatre,",
+        " trois,",
+        " deux,",
+        " un."
+      ],
+      "status": "verified"
+    },
+    "de/pip": {
+      "sha256": "466f3e7fde2d53ba5b1bb3b64006ddd5b92cf08df2f9e3529093196eccfad055",
+      "recognized": [
+        " Fünf,",
+        " vier,",
+        " drei,",
+        " zwei,",
+        " eins."
+      ],
+      "status": "verified"
+    },
+    "en/jun": {
+      "sha256": "e4945dfd07f8bddfbd8400853c37f2773013aadbc33d9854794ebe38f83bf29f",
+      "recognized": [
+        " Five,",
+        " four,",
+        " three,",
+        " two,",
+        " one."
+      ],
+      "status": "verified"
+    },
+    "zh-Hans/jun": {
+      "sha256": "9a4d1dabb1d4d1c8e5ece34498a4a1633a9b73aeb69afd7948b26f753b7c5282",
+      "recognized": [
+        "五、",
+        "四、",
+        "三、",
+        "二、",
+        "一"
+      ],
+      "status": "verified"
+    },
+    "ja/jun": {
+      "sha256": "935f88af974570e949fafb0b1454851993e26f11eca094f4fc16e2cd3a3c9919",
+      "recognized": [
+        "5",
+        " 4",
+        " 3",
+        " 2",
+        " 1"
+      ],
+      "status": "verified"
+    },
+    "ko/jun": {
+      "sha256": "154c37568ade631b84b8af04514d5a64113b95e889edd1c11811b27c31d57510",
+      "recognized": [
+        " 5,",
+        " 4,",
+        " 3,",
+        " 2,",
+        " 1"
+      ],
+      "status": "verified"
+    },
+    "es/jun": {
+      "sha256": "344f4c862a690af6c4749b0801c91129b49c865180c9050adf6ab94982565ad2",
+      "recognized": [
+        " 5,",
+        " 4,",
+        " 3,",
+        " 2,",
+        " 1."
+      ],
+      "status": "verified"
+    },
+    "pt-BR/jun": {
+      "sha256": "d94143d602f4ef56a1d5341cfe7f73cb9f816befd38f5acbb1a3cc3df77a7fca",
+      "recognized": [
+        " 5,",
+        " 4,",
+        " 3,",
+        " 2,",
+        " 1."
+      ],
+      "status": "verified"
+    },
+    "fr/jun": {
+      "sha256": "141c1a1108e184aea86b8c0e7cbe36226911be005245135f44a8b884aee60052",
+      "recognized": [
+        " 5,",
+        " 4,",
+        " 3,",
+        " 2,",
+        " 1."
+      ],
+      "status": "verified"
+    },
+    "de/jun": {
+      "sha256": "fb8628f1bbd3baf4ee12094ade8736dca8bbddd1345855442ef6bc1b6c89fa02",
+      "recognized": [
+        " fünf,",
+        " vier,",
+        " drei,",
+        " zwei,",
+        " eins."
+      ],
+      "status": "verified"
+    },
+    "en/bean": {
+      "sha256": "fc24e60f866b7b5bbb569311c55460bfd2397c4cbea4e3607dfc33bbbcee1962",
+      "recognized": [
+        " Five,",
+        " four,",
+        " three,",
+        " two,",
+        " one."
+      ],
+      "status": "verified"
+    },
+    "zh-Hans/bean": {
+      "sha256": "b5b74d4242730cd8f461dfb7e179d73d421e0481fba4ad69e71765d26c4fdce2",
+      "recognized": [
+        "五、",
+        "四、",
+        "三、",
+        "二、",
+        "一"
+      ],
+      "status": "verified"
+    },
+    "ja/bean": {
+      "sha256": "bd8778636189730d316a2aa9e36c7eed5d23093d0e8f52ed7309a174f080bb8f",
+      "recognized": [
+        "5、",
+        "4、",
+        "3、",
+        "2、",
+        "1"
+      ],
+      "status": "verified"
+    },
+    "ko/bean": {
+      "sha256": "9563b0df7a260d62e7bc0276c011edaf84e51015eb5d40c42977beb11d743eaf",
+      "recognized": [
+        " 5,",
+        " 4,",
+        " 3,",
+        " 2,",
+        " 1"
+      ],
+      "status": "verified"
+    },
+    "es/bean": {
+      "sha256": "6e6c633f3a4478a49658661e80095b0c68dfd5bacf8587cf60a832c6dbe97e6f",
+      "recognized": [
+        " 5,",
+        " 4,",
+        " 3,",
+        " 2,",
+        " 1."
+      ],
+      "status": "verified"
+    },
+    "pt-BR/bean": {
+      "sha256": "638012af13b4d18e68e4bead8aa4fff8bfe554b3abe5dfe4fbcffeca64285a4b",
+      "recognized": [
+        " 5,",
+        " 4,",
+        " 3,",
+        " 2,",
+        " 1..."
+      ],
+      "status": "verified"
+    },
+    "fr/bean": {
+      "sha256": "aa83ee6dbf0d0f9bec3948eb1a43a22bfde79a6f7a181486c511939db6e37c9a",
+      "recognized": [
+        " Cinq,",
+        " quatre,",
+        " trois,",
+        " deux,",
+        " un."
+      ],
+      "status": "verified"
+    },
+    "de/bean": {
+      "sha256": "b06612acb7cb8f979e4108b5a04545ba5cb0016a55a107239be704dc1c301a4f",
+      "recognized": [
+        " Fünf,",
+        " vier,",
+        " drei,",
+        " zwei,",
+        " eins."
+      ],
+      "status": "verified"
+    },
+    "en/luna": {
+      "sha256": "647d32f4f9497b837d3b8d7fc87c45ff6f6bfb50f4243787bce3deaab46ded76",
+      "recognized": [
+        " 5,",
+        " 4,",
+        " 3,",
+        " 2,",
+        " 1."
+      ],
+      "status": "verified"
+    },
+    "zh-Hans/luna": {
+      "sha256": "e13eee0636b73925a9980adc19ed02aa9643af34b6254ad635ca0110bcf1b519",
+      "recognized": [
+        "五、",
+        "四、",
+        "三、",
+        "二、",
+        "一"
+      ],
+      "status": "verified"
+    },
+    "ja/luna": {
+      "sha256": "b6095e228671adefae7d4c81932927a1eecf5ed39740160d4afbf0a60aeefcb6",
+      "recognized": [
+        "5",
+        " 4",
+        " 3",
+        " 2",
+        " 1"
+      ],
+      "status": "verified"
+    },
+    "ko/luna": {
+      "sha256": "5b9ebcb6a4404bdbc1d814eaca3c0f52502c88acf9872bb22145d90287dfa50e",
+      "recognized": [
+        " 5,",
+        " 4,",
+        " 3,",
+        " 2,",
+        " 1"
+      ],
+      "status": "verified"
+    },
+    "es/luna": {
+      "sha256": "c15043b67cea23fa4ed9434e664b3ae1c0481ced7097edc4d565b5a73b75864c",
+      "recognized": [
+        " 5,",
+        " 4,",
+        " 3,",
+        " 2,",
+        " 1."
+      ],
+      "status": "verified"
+    },
+    "pt-BR/luna": {
+      "sha256": "ebb7ac8192a8e60d923654643273d306fb2847a8a5d487afbd692ad9e4b47e4e",
+      "recognized": [
+        " 5,",
+        " 4,",
+        " 3,",
+        " 2,",
+        " 1."
+      ],
+      "status": "verified"
+    },
+    "fr/luna": {
+      "sha256": "57ea225f9bdd37ce4ec57c20b2a63b3500d07621fcb159bfe3eed30738306917",
+      "recognized": [
+        " Cinq,",
+        " quatre,",
+        " trois,",
+        " deux,",
+        " un."
+      ],
+      "status": "verified"
+    },
+    "de/luna": {
+      "sha256": "fa547ec3001b453e240329b91fd2566a76be9b0ed4b6274ad2012816222a5894",
+      "recognized": [
+        " fünf,",
+        " vier,",
+        " drei,",
+        " zwei,",
+        " eins."
+      ],
+      "status": "verified"
+    },
+    "en/atlas": {
+      "sha256": "3006ce39374435736028f6a640db0ca89b840e0b04f5d0e7f2af38ea91983cb0",
+      "recognized": [
+        " Five,",
+        " four,",
+        " three,",
+        " two,",
+        " one."
+      ],
+      "status": "verified"
+    },
+    "zh-Hans/atlas": {
+      "sha256": "44b8024e32270af0c5c842c8e2090342f8703d5d6e3bdbae3e16223fdee54a19",
+      "recognized": [
+        "五、",
+        "四、",
+        "三、",
+        "二、",
+        "一"
+      ],
+      "status": "verified"
+    },
+    "ja/atlas": {
+      "sha256": "19eeabcea960b878324a7c3a07b67081b4f6db71d2617fd6fbbbe88652881d7b",
+      "recognized": [
+        "5、",
+        "4、",
+        "3、",
+        "2、",
+        "1"
+      ],
+      "status": "verified"
+    },
+    "ko/atlas": {
+      "sha256": "6d7a77be1a01e80f6edcd6f976518142905b3ff00fd6174597861250fe3d1373",
+      "recognized": [
+        " 5,",
+        " 4,",
+        " 3,",
+        " 2,",
+        " 1"
+      ],
+      "status": "verified"
+    },
+    "es/atlas": {
+      "sha256": "b2b49d927ff1a18dfbba3960763b9402c475c223096797548a7a61fc22426d31",
+      "recognized": [
+        " 5,",
+        " 4,",
+        " 3,",
+        " 2,",
+        " 1."
+      ],
+      "status": "verified"
+    },
+    "pt-BR/atlas": {
+      "sha256": "7a9aea68047dfb03004ecea746c848815ab2efe7f1f319fd7e9e509ecc7d7573",
+      "recognized": [
+        " 5,",
+        " 4,",
+        " 3,",
+        " 2,",
+        " 1."
+      ],
+      "status": "verified"
+    },
+    "fr/atlas": {
+      "sha256": "9ce64b4ac17ae3d0119078f25db2aec81b207618a48e2639ddfdd30f117054f4",
+      "recognized": [
+        " Cinq,",
+        " quatre,",
+        " trois,",
+        " deux,",
+        " un."
+      ],
+      "status": "verified"
+    },
+    "de/atlas": {
+      "sha256": "dabbd9c48b2e61db535aad573bdf82611c05bda42a5a6ec0d5920a10d3134d7c",
+      "recognized": [
+        " 5,",
+        " 4,",
+        " 3,",
+        " 2,",
+        " 1"
+      ],
+      "status": "verified"
+    },
+    "en/nova": {
+      "sha256": "a39792ce9e11d0c89458c8f898e66209a30b54e074ec71f550da43aa87a8486d",
+      "recognized": [
+        " 5,",
+        " 4,",
+        " 3,",
+        " 2,",
+        " 1."
+      ],
+      "status": "verified"
+    },
+    "zh-Hans/nova": {
+      "sha256": "cc1670a9fa2e7449ad003f1925830dcc03775a57449f373642c37f7edaa3a73c",
+      "recognized": [
+        "五、",
+        "四、",
+        "三、",
+        "二、",
+        "一"
+      ],
+      "status": "verified"
+    },
+    "ja/nova": {
+      "sha256": "a1f87d001e08d0fd8c59dc9ebc1c3632cfb3073c21250edcb59797baf09cce29",
+      "recognized": [
+        "5",
+        " 4",
+        " 3",
+        " 2",
+        " 1"
+      ],
+      "status": "verified"
+    },
+    "ko/nova": {
+      "sha256": "82d5a2edba65b865368052e29a4578b842f1047ffa9bf2b9e14aca3ff4845263",
+      "recognized": [
+        " 5,",
+        " 4,",
+        " 3,",
+        " 2,",
+        " 1"
+      ],
+      "status": "verified"
+    },
+    "es/nova": {
+      "sha256": "37c8c4b9986aa6aa13ed6958c684166616eb49cd0d46a3cc73696bdce525db29",
+      "recognized": [
+        " 5,",
+        " 4,",
+        " 3,",
+        " 2,",
+        " 1"
+      ],
+      "status": "verified"
+    },
+    "pt-BR/nova": {
+      "sha256": "30093781aac4082f0345f249094a3986adcd0c12393da2deba489a80a0773d49",
+      "recognized": [
+        " 5,",
+        " 4,",
+        " 3,",
+        " 2,",
+        " 1."
+      ],
+      "status": "verified"
+    },
+    "fr/nova": {
+      "sha256": "1c31a53f9b5d736551c3c1a8b57e6bef7becfbdaac86a52f1423b68eceb6061d",
+      "recognized": [
+        " 5,",
+        " 4,",
+        " 3,",
+        " 2,",
+        " 1."
+      ],
+      "status": "verified"
+    },
+    "de/nova": {
+      "sha256": "f01fade0f9fa59392e7358dec1659e9b0977679cd12a86eb7b4b153eda1e0b1c",
+      "recognized": [
+        " 5,",
+        " 4,",
+        " 3,",
+        " 2,",
+        " 1."
+      ],
+      "status": "verified"
+    },
+    "en/orbit": {
+      "sha256": "e0a1e242400057ee63cae8543f8afcda666ffa2a864730fd783ba82b22a28f48",
+      "recognized": [
+        " Five,",
+        " four,",
+        " three,",
+        " two,",
+        " one."
+      ],
+      "status": "verified"
+    },
+    "zh-Hans/orbit": {
+      "sha256": "6242c3826a122ede2e95ca132f56ccc5bfe56bde2cf83b356d9b16dd844b4134",
+      "recognized": [
+        "5、",
+        "4、",
+        "3、",
+        "2、",
+        "1"
+      ],
+      "status": "verified"
+    },
+    "ja/orbit": {
+      "sha256": "4fdb1ae1cabf841d7f450b82a3ba90e3ee34ce9a7fdc2881f6d73c5762244819",
+      "recognized": [
+        "5、",
+        "4、",
+        "3、",
+        "2、",
+        "1"
+      ],
+      "status": "verified"
+    },
+    "ko/orbit": {
+      "sha256": "90a61ecda01737045fe5d36ca2ec7a23ca266b750636d820940dc55a184b2f9b",
+      "recognized": [
+        " 5,",
+        " 4,",
+        " 3,",
+        " 2,",
+        " 1"
+      ],
+      "status": "verified"
+    },
+    "es/orbit": {
+      "sha256": "42d8d81b8e0139bef86673b2a040974a945dc02760bd3dc52b423d911ad3ea67",
+      "recognized": [
+        " 5",
+        " 4",
+        " 3",
+        " 2",
+        " 1"
+      ],
+      "status": "verified"
+    },
+    "pt-BR/orbit": {
+      "sha256": "1e89a56b685d5b05ca315f380b767467f0308d479f3b1ac406cf238bc15aed1c",
+      "recognized": [
+        " 5,",
+        " 4,",
+        " 3,",
+        " 2,",
+        " 1."
+      ],
+      "status": "verified"
+    },
+    "fr/orbit": {
+      "sha256": "bc7d09c8720a630ee6752c9b5247338653b769615e6ab9f4bdc3ecc72053a352",
+      "recognized": [
+        " 5,",
+        " 4,",
+        " 3,",
+        " 2,",
+        " 1"
+      ],
+      "status": "verified"
+    },
+    "de/orbit": {
+      "sha256": "6d5923b320e954eb363454d1a8a412c22f5ed07c89388541f0f240fcdd78573a",
+      "recognized": [
+        " Fünf,",
+        " vier,",
+        " drei,",
+        " zwei,",
+        " eins."
+      ],
+      "status": "verified"
+    }
+  }
+}

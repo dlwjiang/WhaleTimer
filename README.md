@@ -1,5 +1,7 @@
 # 伴刻 · 你的专注伙伴
 
+The native **Tick & Kin** iPhone, iPad, and iPhone Duo app lives in [`ios/`](ios/README.md), with free Mochi and Pip companions, three optional StoreKit companion packs, Pomodoro sessions and local reminders. Nine UI languages and eight spoken languages (768 offline recordings) are included free. Open `ios/Banke.xcodeproj` in Xcode 27.1 or newer.
+
 伴刻 brings all three companions under one name. Settings retain their original storage key. Refreshing or reopening starts a fresh, stopped timer, while keeping durations, character, sound, and overtime preferences; elapsed time and warning counts are not restored.
 
 The companions now speak with three audio-driven mouth shapes. A cached 100 Hz amplitude envelope follows the actual decoded recording and playback clock; smoothing and hysteresis keep syllables lively without flickering. Silence closes the mouth, and pause, reset, mute and audio completion stop it immediately. All 18 poses have registered overlays, with friendly/scolding mouth sets, subtle speaking motion, and occasional idle/happy blinks. Switching characters keeps an ongoing phrase attached to its original speaker. Reduced motion disables facial animation. Browser system-voice fallback retains captions but has no mouth sync because its audio samples are unavailable.

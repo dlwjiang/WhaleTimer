@@ -1,0 +1,42 @@
+[
+  {
+    "language": "en",
+    "start": 0,
+    "end": 2.52
+  },
+  {
+    "language": "zh-Hans",
+    "start": 3.52,
+    "end": 6.05
+  },
+  {
+    "language": "ja",
+    "start": 7.05,
+    "end": 9.87
+  },
+  {
+    "language": "ko",
+    "start": 10.87,
+    "end": 13.89
+  },
+  {
+    "language": "es",
+    "start": 14.89,
+    "end": 17.94
+  },
+  {
+    "language": "pt-BR",
+    "start": 18.94,
+    "end": 22.22
+  },
+  {
+    "language": "fr",
+    "start": 23.22,
+    "end": 25.23
+  },
+  {
+    "language": "de",
+    "start": 26.23,
+    "end": 29.9
+  }
+]

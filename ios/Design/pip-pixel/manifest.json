@@ -1,0 +1,111 @@
+{
+  "source": "ios/Design/pip-pixel-sheet.png",
+  "rows": 2,
+  "cols": 2,
+  "mode": "lines",
+  "all_separators_detected": true,
+  "x_bounds": [
+    [
+      0,
+      8
+    ],
+    [
+      622,
+      633
+    ],
+    [
+      1246,
+      1254
+    ]
+  ],
+  "y_bounds": [
+    [
+      0,
+      7
+    ],
+    [
+      621,
+      630
+    ],
+    [
+      1246,
+      1254
+    ]
+  ],
+  "cells": [
+    {
+      "row": 0,
+      "col": 0,
+      "box": [
+        14,
+        13,
+        616,
+        615
+      ],
+      "method": "native-alpha",
+      "name": "idle",
+      "file": "ios/Design/pip-pixel/idle.png",
+      "size": [
+        640,
+        640
+      ]
+    },
+    {
+      "row": 0,
+      "col": 1,
+      "box": [
+        639,
+        13,
+        1240,
+        615
+      ],
+      "method": "native-alpha",
+      "name": "focus",
+      "file": "ios/Design/pip-pixel/focus.png",
+      "size": [
+        640,
+        640
+      ]
+    },
+    {
+      "row": 1,
+      "col": 0,
+      "box": [
+        14,
+        636,
+        616,
+        1240
+      ],
+      "method": "native-alpha",
+      "name": "rest",
+      "file": "ios/Design/pip-pixel/rest.png",
+      "size": [
+        640,
+        640
+      ]
+    },
+    {
+      "row": 1,
+      "col": 1,
+      "box": [
+        639,
+        636,
+        1240,
+        1240
+      ],
+      "method": "native-alpha",
+      "touches_cell_edge": true,
+      "name": "happy",
+      "file": "ios/Design/pip-pixel/happy.png",
+      "size": [
+        640,
+        640
+      ]
+    }
+  ],
+  "empty_cells": [],
+  "clipped_cells": [
+    "r2c2"
+  ],
+  "contact_sheet": "ios/Design/pip-pixel/_contact.png"
+}

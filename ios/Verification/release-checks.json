@@ -1,0 +1,71 @@
+{
+  "date": "2026-11-09",
+  "coreTests": {
+    "passed": 19,
+    "log": "/tmp/banke-core-final.log"
+  },
+  "hostedTests": {
+    "passed": 16,
+    "skipped": 0,
+    "result": "/tmp/banke-audio-derived/Logs/Test/Test-BankeStoreKit-2026.11.09_20-03-25-+0800.xcresult",
+    "log": "/tmp/banke-hosted-complete.log"
+  },
+  "unsignedDeviceRelease": {
+    "result": "BUILD SUCCEEDED",
+    "log": "/tmp/banke-device-release-final.log",
+    "sourceAudioMatchesBundle": true,
+    "localStoreKitAndTestPluginsExcluded": true
+  },
+  "resources": {
+    "translationKeys": 150,
+    "writtenLocales": 9,
+    "spokenLocales": 8,
+    "localizedProducts": 4,
+    "decodedRecordings": 768,
+    "encodedCountdownSequences": 64,
+    "flaggedCountdownSequences": 0,
+    "manifestSHA256": "6f1c7e49109a3afa46b561014c75d3956e80e377fb3683805d5a85523da90699"
+  },
+  "transcriptDiagnostics": {
+    "context-verified": 320,
+    "transcript-match": 430,
+    "check": 18
+  },
+  "limitations": [
+    "Machine transcripts are diagnostics, not native-speaker approval.",
+    "Physical-device audio, accessibility and layout spot checks remain.",
+    "One rapid simulator Dynamic Type override crash was not reproduced; cause remains unresolved.",
+    "Native speaking poses replace web lip-sync overlays; native materials approximate the web refraction shader."
+  ],
+  "floatingSpeechFollowUp": {
+    "date": "2026-11-09",
+    "hostedTestsPassed": 16,
+    "result": "/tmp/banke-audio-derived/Logs/Test/Test-BankeStoreKit-2026.11.09_22-03-29-+0800.xcresult",
+    "log": "/tmp/banke-floating-speech-tests.log",
+    "resourceCheckPassed": true,
+    "visualSpotCheck": "Pending user review of mouth placement, disappearance, long translated phrases and large text.",
+    "localizedBrandRename": "Pending name selection after collision searches; Focus Friends not applied."
+  },
+  "localizedBrandFollowUp": {
+    "date": "2026-11-09",
+    "names": {
+      "en": "Tick & Kin",
+      "ja": "ときのとも",
+      "ko": "째깍친구",
+      "zh-Hans": "伴刻",
+      "zh-Hant": "伴刻",
+      "es": "Tiempo y Compañía",
+      "pt-BR": "Tempo & Companhia",
+      "fr": "Temps Complice",
+      "de": "Taktfreunde"
+    },
+    "hostedTestsPassed": 16,
+    "result": "/tmp/banke-audio-derived/Logs/Test/Test-BankeStoreKit-2026.11.09_22-11-14-+0800.xcresult",
+    "log": "/tmp/banke-localized-brand-tests.log",
+    "unsignedDeviceRelease": "BUILD SUCCEEDED",
+    "buildLog": "/tmp/banke-localized-brand-release.log",
+    "compiledDeviceNameLocalesVerified": 9,
+    "translationKeys": 151,
+    "visualSpotCheck": "User: change language in Settings, inspect the title at normal/large text sizes; check Home Screen naming with iOS app-language selection."
+  }
+}

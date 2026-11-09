@@ -1,0 +1,50 @@
+{
+  "zh-Hans/bean": {
+    "sourceSHA256": "5b32fe9cec9a2f1a783135ac8e2068961ce2ed522ddaecf37e2b6b8a749121fd",
+    "boundaries": [
+      0,
+      0.76,
+      1.66,
+      2.56,
+      3.48,
+      4.160166666666667
+    ],
+    "reason": "ASR timestamp split through the end of 二, leaking it into 一. Boundaries moved into the original waveform's quiet gaps; staged encoded sequence recognizes all five numbers."
+  },
+  "ko/pip": {
+    "sourceSHA256": "716e5280b8a243f2346a8e9c29969a37429cdb4de50f34273315b3ffa68d5344",
+    "boundaries": [
+      0,
+      0.53,
+      1.42,
+      2.26,
+      2.94,
+      3.539125
+    ],
+    "reason": "Move boundaries into measured quiet gaps to preserve final consonants. Staged encoded sequence recognizes all five numbers."
+  },
+  "ja/nova": {
+    "sourceSHA256": "7151453a350531cc12094425933c2f9e9dc35ddbb3eb4ffa18ce2ba35b7126e7",
+    "boundaries": [
+      1.1,
+      1.68,
+      2.2,
+      3.02,
+      3.9,
+      4.563583333333334
+    ],
+    "reason": "Remove leaked は from the introductory それでは and use quiet gaps between numerals."
+  },
+  "ko/orbit": {
+    "sourceSHA256": "bfcb2ad6ccedf2850252d362fe6500f44e26c7369280a680d53f88c503fc3476",
+    "boundaries": [
+      0,
+      0.92,
+      2.31,
+      3.44,
+      4.43,
+      5.320333333333333
+    ],
+    "reason": "Preserve the complete 사 vowel by splitting in measured quiet gaps; the previous encoded sequence omitted four in recognition."
+  }
+}

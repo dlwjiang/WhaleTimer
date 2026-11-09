@@ -1,0 +1,108 @@
+{
+  "source": "ios/Design/atlas-pixel-sheet.png",
+  "rows": 2,
+  "cols": 2,
+  "mode": "lines",
+  "all_separators_detected": true,
+  "x_bounds": [
+    [
+      0,
+      8
+    ],
+    [
+      621,
+      633
+    ],
+    [
+      1247,
+      1254
+    ]
+  ],
+  "y_bounds": [
+    [
+      0,
+      7
+    ],
+    [
+      621,
+      632
+    ],
+    [
+      1246,
+      1254
+    ]
+  ],
+  "cells": [
+    {
+      "row": 0,
+      "col": 0,
+      "box": [
+        14,
+        13,
+        615,
+        615
+      ],
+      "method": "native-alpha",
+      "name": "idle",
+      "file": "ios/Design/atlas-pixel/idle.png",
+      "size": [
+        640,
+        640
+      ]
+    },
+    {
+      "row": 0,
+      "col": 1,
+      "box": [
+        639,
+        13,
+        1241,
+        615
+      ],
+      "method": "native-alpha",
+      "name": "focus",
+      "file": "ios/Design/atlas-pixel/focus.png",
+      "size": [
+        640,
+        640
+      ]
+    },
+    {
+      "row": 1,
+      "col": 0,
+      "box": [
+        14,
+        638,
+        615,
+        1240
+      ],
+      "method": "native-alpha",
+      "name": "rest",
+      "file": "ios/Design/atlas-pixel/rest.png",
+      "size": [
+        640,
+        640
+      ]
+    },
+    {
+      "row": 1,
+      "col": 1,
+      "box": [
+        639,
+        638,
+        1241,
+        1240
+      ],
+      "method": "native-alpha",
+      "name": "happy",
+      "file": "ios/Design/atlas-pixel/happy.png",
+      "size": [
+        640,
+        640
+      ]
+    }
+  ],
+  "empty_cells": [],
+  "clipped_cells": [],
+  "contact_sheet": "ios/Design/atlas-pixel/_contact.png"
+}

@@ -1,0 +1,205 @@
+{
+  "pending": [],
+  "reviewed_flags": "flagged-lines-listening.json, flagged-lines-listening-2.json and retakes-and-counts-listening.json; model observations only, not native-speaker approval.",
+  "resolved": [
+    {
+      "character": "jun",
+      "language": "ko",
+      "cues": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "reason": "Full sequence attempt passed transcript but segment length gate rejected it. Retry using the padded-word-boundary fallback now in countdown_voices.py.",
+      "status": "resolved",
+      "resolution": "Regenerated with padded boundary fallback; actual encoded five-to-one sequence passes local recognition.",
+      "clipSHA256": {
+        "1": "4b5dc071d16cb00be246913e8e68f245faca068cead3ff3cd0b2bb528e4be257",
+        "2": "cbdeb139d618455dcb9c9a26ee6a471c09640264d3f423642b4b0b6abd977501",
+        "3": "3ac55217ccf1e768cb14aa755058a91d358a43c2346660ba0f3f5f329a2e9aaa",
+        "4": "c1a71ff378ffec7b8559e11029b0a716ca1fa3c2be311472407a6b0ab0e6f182",
+        "5": "1966c93414ce603aebf1a285dc95654810e3e5ab0f84d7d84840335f0041c1f9"
+      }
+    },
+    {
+      "character": "pip",
+      "language": "zh-Hans",
+      "cues": [
+        "greeting"
+      ],
+      "retake": 1,
+      "reason": "Expected 一页书; local ASR heard 一夜說 and media perception heard 一二三. Both differ from the written caption; regenerate for clarity.",
+      "status": "resolved",
+      "resolution": "Retake clearly says the scripted 一页书，一个小魔法，慢慢来. Local transcript agrees. Media perception invented an alternative 一棵树 intention; that suggestion does not match the script and was rejected.",
+      "clipSHA256": {
+        "greeting": "645f7301d9fed8fa7a4f33fe670103e750452b745237c4d31ff37db0488435b8"
+      }
+    },
+    {
+      "character": "bean",
+      "language": "ja",
+      "cues": [
+        "focusComplete"
+      ],
+      "retake": 1,
+      "reason": "Media review heard a clipped final Japanese volitional vowel; regenerate a complete rest invitation.",
+      "status": "resolved",
+      "resolution": "Retake restores the full 休もう ending with no reported clipping. Rising intonation is an optional acting-review item, not missing content.",
+      "clipSHA256": {
+        "focusComplete": "0a0a890d33d28e336513ae0e177361b7268ab97634ac7c433f59a1d6796aef0a"
+      }
+    },
+    {
+      "character": "bean",
+      "language": "pt-BR",
+      "cues": [
+        "reset"
+      ],
+      "retake": 1,
+      "reason": "Both recognizers disagree with Um novo começo at the start; regenerate clearly.",
+      "status": "resolved",
+      "resolution": "Media review hears Ah, um novo começo, com calma with clean articulation. The mild leading interjection is accepted; local ASR remains uncertain, so native-speaker review is still recommended.",
+      "clipSHA256": {
+        "reset": "5ff748210192f9408fd6495518232d7523fcaa16ffbd8a39c1fbcd4d5080126b"
+      }
+    },
+    {
+      "character": "luna",
+      "language": "ja",
+      "cues": [
+        "focusComplete"
+      ],
+      "retake": 1,
+      "reason": "Local transcript cannot resolve the final 休もう; try another take for clearer articulation.",
+      "previousSHA256": "58773ab30b1e5b1f34352bce347e7760926327091f52b4705c231609e35418e9",
+      "status": "resolved-local-diagnostic",
+      "resolution": "New encoded take matches the intended script in local transcription: お疲れさま。少し休もう。",
+      "clipSHA256": {
+        "focusComplete": "21c953f823f192ac427ac5d0eefbd7883f51c2da61e9db88c8b7a4158553beb0"
+      }
+    },
+    {
+      "character": "atlas",
+      "language": "zh-Hans",
+      "cues": [
+        "pause"
+      ],
+      "retake": 1,
+      "reason": "Local transcript hears 谢谢一会儿 instead of 歇一会儿; try a clearer opening.",
+      "previousSHA256": "119501c1727ba65a144600a07496ee2f2d6269d1470f7bbe378dba8602cb15d4",
+      "status": "resolved-local-diagnostic",
+      "resolution": "New encoded take matches the intended script in local transcription: 歇一会儿 我等你",
+      "clipSHA256": {
+        "pause": "d1813025f455d01197b2e7de039b139e2e38058cc5b02ad3e81de7805beb987a"
+      }
+    },
+    {
+      "character": "atlas",
+      "language": "ja",
+      "cues": [
+        "greeting"
+      ],
+      "retake": 4,
+      "reason": "Local transcript hears 誤解心 instead of 好奇心 and misses を; try a clearer greeting.",
+      "previousSHA256": "e5099d0fe8dc0b95e12adc84ca90804cbd65c79dcda702ddb0b4745de0a57c23",
+      "status": "resolved-local-diagnostic",
+      "resolution": "Three unclear retakes prompted a simpler Japanese localization, ここで、ゆっくり学ぼう。 Caption and generation script changed together; take 4 matches exactly in local transcription.",
+      "clipSHA256": {
+        "greeting": "c7e93726dfce67ecfed3c8048a8ebaf6f00cc923154669f8f8faadf13d7b91b6"
+      }
+    },
+    {
+      "character": "atlas",
+      "language": "ko",
+      "cues": [
+        "go"
+      ],
+      "retake": 1,
+      "reason": "4.16-second start cue includes a long unintended vocalization before 자, 시작하자 according to the local transcript; regenerate without that lead-in.",
+      "previousSHA256": "24cf2650811f23340f67be1b40fea3f1b5b1d1fa4e419cb964077dbfd8795e45",
+      "status": "resolved-local-diagnostic",
+      "resolution": "New encoded take matches the intended script in local transcription: 자, 시작하자!",
+      "clipSHA256": {
+        "go": "80af932fb43a395ebd68907a5286c9db83c733050dfdcc6be3aab4c1117a57a2"
+      }
+    },
+    {
+      "character": "orbit",
+      "language": "ja",
+      "cues": [
+        "greeting"
+      ],
+      "retake": 1,
+      "reason": "Local transcript hears グミットミッション instead of 君のミッション; try a clearer opening.",
+      "previousSHA256": "861644f4e9e09780c0557d75afa10f72b60ca9a4798dc8def6eb51cdba25a230",
+      "status": "resolved-local-diagnostic",
+      "resolution": "Local transcript now reads 君のミッション一緒に進めよう; 一緒 and いっしょ are orthographic equivalents. Native-speaker acting review remains.",
+      "clipSHA256": {
+        "greeting": "f4a09ba80fee6b9f584a37885c419ecbb31db4f37f60d98694cbac7c51b81535"
+      }
+    },
+    {
+      "character": "orbit",
+      "language": "pt-BR",
+      "cues": [
+        "greeting"
+      ],
+      "retake": 1,
+      "reason": "Final local transcript differs from script: Sou a Miss Negação. Tenha companhia!",
+      "previousSHA256": "9f615b94943119cc690bc3bda2a18750b1405e7f1e11649814cd58876d2ec884",
+      "status": "resolved-local-diagnostic",
+      "resolution": "New encoded take matches the intended script in local transcription: Sua missão tem companhia!",
+      "clipSHA256": {
+        "greeting": "19511438bf8f69015a4c139d4284e40025838f03e4b8af34f8e6f687591d281f"
+      }
+    },
+    {
+      "character": "atlas",
+      "language": "fr",
+      "cues": [
+        "pause"
+      ],
+      "retake": 1,
+      "reason": "Final local transcript differs from script: He's on pause. Je t'attends.",
+      "previousSHA256": "64deaf6ed85542d6b88353c2ce518f7f6b92e46053ae54095eb6ca1d2eb9d7f0",
+      "status": "resolved-local-diagnostic",
+      "resolution": "New encoded take matches the intended script in local transcription: Fais une pause. Je t'attends.",
+      "clipSHA256": {
+        "pause": "b407ce65859a6059d4f21f1c1f3f05cb5da222e63fe11b822b5413a206dc63b5"
+      }
+    },
+    {
+      "character": "luna",
+      "language": "de",
+      "cues": [
+        "go"
+      ],
+      "retake": 1,
+      "reason": "Final local transcript differs from script: Slow Skates",
+      "previousSHA256": "8fae62f53982c12f36593b34a099f4317819a9ddaf646d47a74f340fb56af26d",
+      "status": "resolved-local-diagnostic",
+      "resolution": "New encoded take matches the intended script in local transcription: Los gehts!",
+      "clipSHA256": {
+        "go": "a3d569794cff3b253d60e4a137170ea6b37ce61d664e8d0753b4230f64010fa6"
+      }
+    },
+    {
+      "character": "nova",
+      "language": "de",
+      "cues": [
+        "go"
+      ],
+      "retake": 1,
+      "reason": "Final local transcript differs from script: The skates!",
+      "previousSHA256": "563e63c96e04ed3a2217cb3ce8ab517c43c794bcc6809b2e429527430e32b3c2",
+      "status": "resolved-local-diagnostic",
+      "resolution": "New encoded take matches the intended script in local transcription: Los gehts!",
+      "clipSHA256": {
+        "go": "909446049158e487fdf4d0577e32f80f1ece300795372f055486afe2de8ad29f"
+      }
+    }
+  ],
+  "note": "Resolved means the identified defect was addressed by recorded evidence; it is not native-speaker approval of the full voice library."
+}

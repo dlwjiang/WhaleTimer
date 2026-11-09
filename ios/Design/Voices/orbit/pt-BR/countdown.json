@@ -1,0 +1,43 @@
+{
+  "method": "context-countdown-v1",
+  "text": "Cinco. Quatro. Três. Dois. Um.",
+  "instruct": "Speak in Brazilian Portuguese naturally. Clearly count down from five to one.",
+  "seed": 2465266340,
+  "words": [
+    {
+      "text": " 5,",
+      "start": 0.0,
+      "end": 0.36
+    },
+    {
+      "text": " 4,",
+      "start": 0.9,
+      "end": 1.44
+    },
+    {
+      "text": " 3,",
+      "start": 2.1,
+      "end": 2.7
+    },
+    {
+      "text": " 2,",
+      "start": 3.28,
+      "end": 3.54
+    },
+    {
+      "text": " 1.",
+      "start": 4.44,
+      "end": 4.86
+    }
+  ],
+  "boundaries": [
+    0,
+    0.63,
+    1.77,
+    2.99,
+    3.99,
+    5.043458333333334
+  ],
+  "recognizer": "faster-whisper-small",
+  "note": "Transcript and boundary check; not native-speaker approval."
+}

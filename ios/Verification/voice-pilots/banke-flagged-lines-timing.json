@@ -1,0 +1,47 @@
+[
+  {
+    "clip": "de/mochi/go",
+    "start": 0,
+    "end": 1.14
+  },
+  {
+    "clip": "zh-Hans/pip/greeting",
+    "start": 2.14,
+    "end": 4.41
+  },
+  {
+    "clip": "ja/pip/focusComplete",
+    "start": 5.41,
+    "end": 8.24
+  },
+  {
+    "clip": "ja/pip/greeting",
+    "start": 9.24,
+    "end": 12.76
+  },
+  {
+    "clip": "fr/pip/resume",
+    "start": 13.76,
+    "end": 14.55
+  },
+  {
+    "clip": "ja/jun/go",
+    "start": 15.55,
+    "end": 17.47
+  },
+  {
+    "clip": "ja/jun/focusComplete",
+    "start": 18.47,
+    "end": 20.96
+  },
+  {
+    "clip": "ja/jun/breakComplete",
+    "start": 21.96,
+    "end": 25.36
+  },
+  {
+    "clip": "es/jun/pause",
+    "start": 26.36,
+    "end": 28.88
+  }
+]

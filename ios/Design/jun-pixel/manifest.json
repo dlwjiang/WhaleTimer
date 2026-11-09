@@ -1,0 +1,108 @@
+{
+  "source": "ios/Design/jun-pixel-sheet.png",
+  "rows": 2,
+  "cols": 2,
+  "mode": "lines",
+  "all_separators_detected": true,
+  "x_bounds": [
+    [
+      0,
+      9
+    ],
+    [
+      621,
+      633
+    ],
+    [
+      1245,
+      1254
+    ]
+  ],
+  "y_bounds": [
+    [
+      0,
+      9
+    ],
+    [
+      621,
+      631
+    ],
+    [
+      1245,
+      1254
+    ]
+  ],
+  "cells": [
+    {
+      "row": 0,
+      "col": 0,
+      "box": [
+        15,
+        15,
+        615,
+        615
+      ],
+      "method": "native-alpha",
+      "name": "idle",
+      "file": "ios/Design/jun-pixel/idle.png",
+      "size": [
+        640,
+        640
+      ]
+    },
+    {
+      "row": 0,
+      "col": 1,
+      "box": [
+        639,
+        15,
+        1239,
+        615
+      ],
+      "method": "native-alpha",
+      "name": "focus",
+      "file": "ios/Design/jun-pixel/focus.png",
+      "size": [
+        640,
+        640
+      ]
+    },
+    {
+      "row": 1,
+      "col": 0,
+      "box": [
+        15,
+        637,
+        615,
+        1239
+      ],
+      "method": "native-alpha",
+      "name": "rest",
+      "file": "ios/Design/jun-pixel/rest.png",
+      "size": [
+        640,
+        640
+      ]
+    },
+    {
+      "row": 1,
+      "col": 1,
+      "box": [
+        639,
+        637,
+        1239,
+        1239
+      ],
+      "method": "native-alpha",
+      "name": "happy",
+      "file": "ios/Design/jun-pixel/happy.png",
+      "size": [
+        640,
+        640
+      ]
+    }
+  ],
+  "empty_cells": [],
+  "clipped_cells": [],
+  "contact_sheet": "ios/Design/jun-pixel/_contact.png"
+}

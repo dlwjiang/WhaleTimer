@@ -1,0 +1,108 @@
+{
+  "source": "ios/Design/nova-pixel-sheet.png",
+  "rows": 2,
+  "cols": 2,
+  "mode": "lines",
+  "all_separators_detected": true,
+  "x_bounds": [
+    [
+      0,
+      8
+    ],
+    [
+      622,
+      633
+    ],
+    [
+      1246,
+      1254
+    ]
+  ],
+  "y_bounds": [
+    [
+      0,
+      8
+    ],
+    [
+      622,
+      631
+    ],
+    [
+      1246,
+      1254
+    ]
+  ],
+  "cells": [
+    {
+      "row": 0,
+      "col": 0,
+      "box": [
+        14,
+        14,
+        616,
+        616
+      ],
+      "method": "native-alpha",
+      "name": "idle",
+      "file": "ios/Design/nova-pixel/idle.png",
+      "size": [
+        640,
+        640
+      ]
+    },
+    {
+      "row": 0,
+      "col": 1,
+      "box": [
+        639,
+        14,
+        1240,
+        616
+      ],
+      "method": "native-alpha",
+      "name": "focus",
+      "file": "ios/Design/nova-pixel/focus.png",
+      "size": [
+        640,
+        640
+      ]
+    },
+    {
+      "row": 1,
+      "col": 0,
+      "box": [
+        14,
+        637,
+        616,
+        1240
+      ],
+      "method": "native-alpha",
+      "name": "rest",
+      "file": "ios/Design/nova-pixel/rest.png",
+      "size": [
+        640,
+        640
+      ]
+    },
+    {
+      "row": 1,
+      "col": 1,
+      "box": [
+        639,
+        637,
+        1240,
+        1240
+      ],
+      "method": "native-alpha",
+      "name": "happy",
+      "file": "ios/Design/nova-pixel/happy.png",
+      "size": [
+        640,
+        640
+      ]
+    }
+  ],
+  "empty_cells": [],
+  "clipped_cells": [],
+  "contact_sheet": "ios/Design/nova-pixel/_contact.png"
+}

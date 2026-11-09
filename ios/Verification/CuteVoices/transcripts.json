@@ -1,0 +1,86 @@
+{
+  "mochi/en/greeting": {
+    "sha256": "b957db62edcdec0a73473f86acc80c702805d0a3fc3facda74a97df5496198d9",
+    "expected": "A little company. A little progress.",
+    "heard": "A little company. A little progress.",
+    "similarity": 1.0,
+    "review": "transcript-match"
+  },
+  "mochi/en/focusComplete": {
+    "sha256": "dec79748dbbe0b8b7b1618a8c55a146c21da0614b8f27685e9d07db6625dc27c",
+    "expected": "Well done! Time for a little break.",
+    "heard": "Well done! Time for a little break!",
+    "similarity": 1.0,
+    "review": "transcript-match"
+  },
+  "mochi/fr/greeting": {
+    "sha256": "e6bf695fcbed49e05d4afe668957f7f3a6764b6d5b0cd0004794be2167e3b012",
+    "expected": "Un peu de compagnie. Un peu de progrès.",
+    "heard": "un peu de compagnie, un peu de progrès.",
+    "similarity": 1.0,
+    "review": "transcript-match"
+  },
+  "mochi/fr/focusComplete": {
+    "sha256": "98978c1f6537b611dbbfe14fb8f42b99b6041be210e1523eb0e0ab6ac36fbe5a",
+    "expected": "Bravo ! C'est l'heure d'une petite pause.",
+    "heard": "Bravo ! C'est l'heure d'une petite pause.",
+    "similarity": 1.0,
+    "review": "transcript-match"
+  },
+  "pip/en/greeting": {
+    "sha256": "ca9007d6310b02f7c5b4581489a9f0758de9151e9d018399fb690253a07227cd",
+    "expected": "One page, one little spell at a time.",
+    "heard": "One page, one little spell at a time.",
+    "similarity": 1.0,
+    "review": "transcript-match"
+  },
+  "pip/en/focusComplete": {
+    "sha256": "e6728563f1cd2961d841ce78440ba49b07d751e02ff2faa910fd59ee48407671",
+    "expected": "Well done! Time for a little break.",
+    "heard": "Well done! Time for a little break!",
+    "similarity": 1.0,
+    "review": "transcript-match"
+  },
+  "pip/fr/greeting": {
+    "sha256": "c018e87fd54187c94530f6799a941ad2e1509a14d291e36e5860cf1b6da49e12",
+    "expected": "Une page, un petit sort à la fois.",
+    "heard": "Une page, un petit sort à la fois.",
+    "similarity": 1.0,
+    "review": "transcript-match"
+  },
+  "pip/fr/focusComplete": {
+    "sha256": "7a77f88cc9087fa0dae71a32177d0a0d8ae33796a652802851a3b97b93d9f71f",
+    "expected": "Bravo ! C'est l'heure d'une petite pause.",
+    "heard": "Bravo, c'est l'heure d'une petite pause.",
+    "similarity": 1.0,
+    "review": "transcript-match"
+  },
+  "jun/en/greeting": {
+    "sha256": "13dc5624d05bdd352b01291a14e0649a5b82169ea9d34c85f143e354b5217b47",
+    "expected": "The café is open. Take your time.",
+    "heard": "The cafe is open. Take your time.",
+    "similarity": 0.96,
+    "review": "transcript-match"
+  },
+  "jun/en/focusComplete": {
+    "sha256": "239473fbfa684fae984e1a6c15993c535a012bb3dc99055ad7c6f0f0e721f8b7",
+    "expected": "Well done! Time for a little break.",
+    "heard": "Well done, time for a little break.",
+    "similarity": 1.0,
+    "review": "transcript-match"
+  },
+  "jun/fr/greeting": {
+    "sha256": "cdda78e72089e1358d370caeb25a9e84dbe7af93019ed663c0ba555a84abdec2",
+    "expected": "Le café est ouvert. Prends ton temps.",
+    "heard": "Le café est ouvert. Prends ton temps.",
+    "similarity": 1.0,
+    "review": "transcript-match"
+  },
+  "jun/fr/focusComplete": {
+    "sha256": "d41787f1e45e192b976aa1c03c96333d7d598736033d3133e8de408a57b19f8a",
+    "expected": "Bravo ! C'est l'heure d'une petite pause.",
+    "heard": "Bravo ! C'est l'heure d'une petite pause.",
+    "similarity": 1.0,
+    "review": "transcript-match"
+  }
+}

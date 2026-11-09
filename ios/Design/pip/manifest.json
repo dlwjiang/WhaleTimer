@@ -1,0 +1,117 @@
+{
+  "source": "ios/Design/pip-sheet.png",
+  "rows": 2,
+  "cols": 2,
+  "mode": "lines",
+  "all_separators_detected": true,
+  "x_bounds": [
+    [
+      0,
+      10
+    ],
+    [
+      619,
+      635
+    ],
+    [
+      1244,
+      1254
+    ]
+  ],
+  "y_bounds": [
+    [
+      0,
+      9
+    ],
+    [
+      618,
+      632
+    ],
+    [
+      1243,
+      1254
+    ]
+  ],
+  "cells": [
+    {
+      "row": 0,
+      "col": 0,
+      "box": [
+        16,
+        15,
+        613,
+        612
+      ],
+      "method": "native-alpha",
+      "touches_cell_edge": true,
+      "name": "idle",
+      "file": "ios/Design/pip/idle.png",
+      "size": [
+        640,
+        640
+      ]
+    },
+    {
+      "row": 0,
+      "col": 1,
+      "box": [
+        641,
+        15,
+        1238,
+        612
+      ],
+      "method": "native-alpha",
+      "touches_cell_edge": true,
+      "name": "focus",
+      "file": "ios/Design/pip/focus.png",
+      "size": [
+        640,
+        640
+      ]
+    },
+    {
+      "row": 1,
+      "col": 0,
+      "box": [
+        16,
+        638,
+        613,
+        1237
+      ],
+      "method": "native-alpha",
+      "touches_cell_edge": true,
+      "name": "rest",
+      "file": "ios/Design/pip/rest.png",
+      "size": [
+        640,
+        640
+      ]
+    },
+    {
+      "row": 1,
+      "col": 1,
+      "box": [
+        641,
+        638,
+        1238,
+        1237
+      ],
+      "method": "native-alpha",
+      "touches_cell_edge": true,
+      "name": "happy",
+      "file": "ios/Design/pip/happy.png",
+      "size": [
+        640,
+        640
+      ]
+    }
+  ],
+  "empty_cells": [],
+  "clipped_cells": [
+    "r1c1",
+    "r1c2",
+    "r2c1",
+    "r2c2"
+  ],
+  "contact_sheet": "ios/Design/pip/_contact.png"
+}

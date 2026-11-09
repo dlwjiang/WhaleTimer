@@ -1,0 +1,108 @@
+{
+  "source": "ios/Design/orbit-pixel-sheet.png",
+  "rows": 2,
+  "cols": 2,
+  "mode": "lines",
+  "all_separators_detected": true,
+  "x_bounds": [
+    [
+      0,
+      9
+    ],
+    [
+      622,
+      633
+    ],
+    [
+      1246,
+      1254
+    ]
+  ],
+  "y_bounds": [
+    [
+      0,
+      8
+    ],
+    [
+      621,
+      631
+    ],
+    [
+      1244,
+      1254
+    ]
+  ],
+  "cells": [
+    {
+      "row": 0,
+      "col": 0,
+      "box": [
+        15,
+        14,
+        616,
+        615
+      ],
+      "method": "native-alpha",
+      "name": "idle",
+      "file": "ios/Design/orbit-pixel/idle.png",
+      "size": [
+        640,
+        640
+      ]
+    },
+    {
+      "row": 0,
+      "col": 1,
+      "box": [
+        639,
+        14,
+        1240,
+        615
+      ],
+      "method": "native-alpha",
+      "name": "focus",
+      "file": "ios/Design/orbit-pixel/focus.png",
+      "size": [
+        640,
+        640
+      ]
+    },
+    {
+      "row": 1,
+      "col": 0,
+      "box": [
+        15,
+        637,
+        616,
+        1238
+      ],
+      "method": "native-alpha",
+      "name": "rest",
+      "file": "ios/Design/orbit-pixel/rest.png",
+      "size": [
+        640,
+        640
+      ]
+    },
+    {
+      "row": 1,
+      "col": 1,
+      "box": [
+        639,
+        637,
+        1240,
+        1238
+      ],
+      "method": "native-alpha",
+      "name": "happy",
+      "file": "ios/Design/orbit-pixel/happy.png",
+      "size": [
+        640,
+        640
+      ]
+    }
+  ],
+  "empty_cells": [],
+  "clipped_cells": [],
+  "contact_sheet": "ios/Design/orbit-pixel/_contact.png"
+}

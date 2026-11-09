@@ -1,0 +1,22 @@
+[
+  {
+    "clip": "de/jun/go",
+    "start": 0,
+    "end": 1.19
+  },
+  {
+    "clip": "ja/bean/focusComplete",
+    "start": 2.19,
+    "end": 5.36
+  },
+  {
+    "clip": "ko/bean/focusComplete",
+    "start": 6.36,
+    "end": 8.26
+  },
+  {
+    "clip": "pt-BR/bean/reset",
+    "start": 9.26,
+    "end": 12.87
+  }
+]

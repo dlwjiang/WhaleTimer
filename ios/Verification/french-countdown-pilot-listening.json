@@ -1,0 +1,15 @@
+{
+ "ok": true,
+ "file": "/tmp/banke-countdown-fr.wav",
+ "kind": "audio",
+ "model": "gemini-3.8-flash-medium",
+ "seconds": 28.5,
+ "response": "### Words and Language Heard\n* **Language:** French\n* **Exact words heard:** **« cinq, quatre, trois, deux, un »** (5, 4, 3, 2, 1)\n\n---\n\n### Pronunciation Assessment (French Speaker Perspective)\n* **Overall impression:** The voice is distinctly synthetic/TTS-generated, but the phonology and accent are unmistakably **standard French** (Hexagonal/Metropolitan), not an English speaker reading French.\n* **« deux » ([dø]):** The vowel is articulated as the proper French close-mid front rounded vowel `[ø]`. It avoids the classic English phonetic substitution of `/duː/` or a diphthongized \"doo\".\n* **« un » ([œ̃] / [ɛ̃]):** Pronounced with a natural front open-mid nasal vowel (as typical in modern standard French, merged towards `[ɛ̃]`), rather than an English-accented nasalized vowel or an unnatural consonant ending like `[ʌn]`.\n* **« cinq », « quatre », « trois »:** \n  * *« cinq »* has a clean nasal `[sɛ̃k]`.\n  * *« quatre »* sounds like `[katʁ]` / `[kat]`, which is normal for spoken French counting.\n  * *« trois »* has standard uvular `[ʁ]`.\n\n---\n\n### Potential Issues & Artifacts\n* **English-like pronunciation:** None detected. The phoneme inventory and cadence are authentic to standard French.\n* **Garbling / Distortions:** None; the audio is clean and clear.\n* **Repetition / Missing numbers:** None; strictly 5 down to 1.\n* **Clipping:** No noticeable clipping or harsh digital distortion at the peaks.\n* **Speed / Cadence:** Regular, rhythmic countdown pace (~1 second per count), well-suited for a countdown timer or cue.\n",
+ "usage": {
+  "input_tokens": 17948,
+  "output_tokens": 1207,
+  "thinking_tokens": 720,
+  "cache_read_tokens": 0,
+  "total_tokens": 19155
+ }
+}

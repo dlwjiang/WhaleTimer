@@ -1,0 +1,108 @@
+{
+  "source": "ios/Design/mochi-sheet.png",
+  "rows": 2,
+  "cols": 2,
+  "mode": "lines",
+  "all_separators_detected": true,
+  "x_bounds": [
+    [
+      0,
+      11
+    ],
+    [
+      619,
+      635
+    ],
+    [
+      1243,
+      1254
+    ]
+  ],
+  "y_bounds": [
+    [
+      0,
+      10
+    ],
+    [
+      619,
+      634
+    ],
+    [
+      1243,
+      1254
+    ]
+  ],
+  "cells": [
+    {
+      "row": 0,
+      "col": 0,
+      "box": [
+        17,
+        16,
+        613,
+        613
+      ],
+      "method": "native-alpha",
+      "name": "idle",
+      "file": "ios/Design/mochi/idle.png",
+      "size": [
+        640,
+        640
+      ]
+    },
+    {
+      "row": 0,
+      "col": 1,
+      "box": [
+        641,
+        16,
+        1237,
+        613
+      ],
+      "method": "native-alpha",
+      "name": "focus",
+      "file": "ios/Design/mochi/focus.png",
+      "size": [
+        640,
+        640
+      ]
+    },
+    {
+      "row": 1,
+      "col": 0,
+      "box": [
+        17,
+        640,
+        613,
+        1237
+      ],
+      "method": "native-alpha",
+      "name": "rest",
+      "file": "ios/Design/mochi/rest.png",
+      "size": [
+        640,
+        640
+      ]
+    },
+    {
+      "row": 1,
+      "col": 1,
+      "box": [
+        641,
+        640,
+        1237,
+        1237
+      ],
+      "method": "native-alpha",
+      "name": "happy",
+      "file": "ios/Design/mochi/happy.png",
+      "size": [
+        640,
+        640
+      ]
+    }
+  ],
+  "empty_cells": [],
+  "clipped_cells": [],
+  "contact_sheet": "ios/Design/mochi/_contact.png"
+}

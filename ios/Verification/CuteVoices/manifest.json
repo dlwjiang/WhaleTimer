@@ -1,0 +1,71 @@
+{
+  "model": "VoxCPM2-bf16",
+  "direction": "soft and playful",
+  "profiles": {
+    "mochi": "An original cute feminine plush desk-cat character voice. Soft, light, rounded mezzo soprano with a small warm smile in every phrase. Gentle playful rises and falls, affectionate tiny pauses, cozy and reassuring. Sweet clear conversational speech, softly energetic, relaxed and close. No whispering, no singing, no meowing.",
+    "pip": "An original cute feminine little botanical apprentice character voice. Light warm soprano, bright rounded vowels and a smiling gentle lilt. Playful curiosity, softly buoyant phrasing, tender encouraging warmth. Small delighted inflections with clear relaxed speech. No shouting, no whispering, no singing.",
+    "jun": "An original charming masculine cafe companion voice. Soft warm light tenor with a friendly audible smile and rounded mellow resonance. Gently playful, affectionate, cozy, lightly lilting short phrases, relaxed easy articulation. A sweet encouraging companion talking quietly beside you. No whispering, no deep announcer delivery, no singing."
+  },
+  "clips": {
+    "mochi/en/greeting": {
+      "text": "A little company. A little progress.",
+      "seed": 1364578460,
+      "seconds": 2.9089583333333335
+    },
+    "mochi/en/focusComplete": {
+      "text": "Well done! Time for a little break.",
+      "seed": 2414196114,
+      "seconds": 2.1235208333333335
+    },
+    "mochi/fr/greeting": {
+      "text": "Un peu de compagnie. Un peu de progrès.",
+      "seed": 2564976704,
+      "seconds": 2.3854583333333332
+    },
+    "mochi/fr/focusComplete": {
+      "text": "Bravo ! C'est l'heure d'une petite pause.",
+      "seed": 2135501998,
+      "seconds": 3.1980833333333334
+    },
+    "pip/en/greeting": {
+      "text": "One page, one little spell at a time.",
+      "seed": 214836393,
+      "seconds": 2.8801666666666668
+    },
+    "pip/en/focusComplete": {
+      "text": "Well done! Time for a little break.",
+      "seed": 246413765,
+      "seconds": 2.4530833333333333
+    },
+    "pip/fr/greeting": {
+      "text": "Une page, un petit sort à la fois.",
+      "seed": 1799128412,
+      "seconds": 2.393291666666667
+    },
+    "pip/fr/focusComplete": {
+      "text": "Bravo ! C'est l'heure d'une petite pause.",
+      "seed": 4153514675,
+      "seconds": 2.1996875
+    },
+    "jun/en/greeting": {
+      "text": "The café is open. Take your time.",
+      "seed": 1583587587,
+      "seconds": 2.833833333333333
+    },
+    "jun/en/focusComplete": {
+      "text": "Well done! Time for a little break.",
+      "seed": 3308804887,
+      "seconds": 2.0088333333333335
+    },
+    "jun/fr/greeting": {
+      "text": "Le café est ouvert. Prends ton temps.",
+      "seed": 2662456944,
+      "seconds": 2.5507916666666666
+    },
+    "jun/fr/focusComplete": {
+      "text": "Bravo ! C'est l'heure d'une petite pause.",
+      "seed": 744128795,
+      "seconds": 2.6706041666666667
+    }
+  }
+}

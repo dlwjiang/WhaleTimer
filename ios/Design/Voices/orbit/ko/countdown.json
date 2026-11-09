@@ -1,0 +1,63 @@
+{
+  "method": "context-countdown-v1",
+  "text": "오. 사. 삼. 이. 일.",
+  "instruct": "Speak in Korean naturally. Clearly count down from five to one.",
+  "seed": 3564558413,
+  "words": [
+    {
+      "text": " 5,",
+      "start": 0.0,
+      "end": 0.4
+    },
+    {
+      "text": " 4,",
+      "start": 0.58,
+      "end": 1.76
+    },
+    {
+      "text": " 3,",
+      "start": 2.08,
+      "end": 3.06
+    },
+    {
+      "text": " 2,",
+      "start": 3.16,
+      "end": 3.94
+    },
+    {
+      "text": " 1",
+      "start": 4.04,
+      "end": 5.02
+    }
+  ],
+  "boundaries": [
+    0,
+    0.92,
+    2.31,
+    3.44,
+    4.43,
+    5.320333333333333
+  ],
+  "recognizer": "faster-whisper-small",
+  "note": "Transcript and boundary check; not native-speaker approval.",
+  "originalBoundaries": [
+    0,
+    0.49,
+    1.92,
+    3.1100000000000003,
+    3.99,
+    5.320333333333333
+  ],
+  "boundaryCorrection": {
+    "sourceSHA256": "bfcb2ad6ccedf2850252d362fe6500f44e26c7369280a680d53f88c503fc3476",
+    "boundaries": [
+      0,
+      0.92,
+      2.31,
+      3.44,
+      4.43,
+      5.320333333333333
+    ],
+    "reason": "Preserve the complete 사 vowel by splitting in measured quiet gaps; the previous encoded sequence omitted four in recognition."
+  }
+}

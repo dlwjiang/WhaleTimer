@@ -1,0 +1,63 @@
+{
+  "method": "context-countdown-v1",
+  "text": "오. 사. 삼. 이. 일.",
+  "instruct": "Speak in Korean naturally. Clearly count down from five to one.",
+  "seed": 75984744,
+  "words": [
+    {
+      "text": " 5,",
+      "start": 0.0,
+      "end": 0.26
+    },
+    {
+      "text": " 4,",
+      "start": 0.48,
+      "end": 1.08
+    },
+    {
+      "text": " 3,",
+      "start": 1.52,
+      "end": 1.94
+    },
+    {
+      "text": " 2,",
+      "start": 2.06,
+      "end": 2.66
+    },
+    {
+      "text": " 1",
+      "start": 2.86,
+      "end": 3.28
+    }
+  ],
+  "boundaries": [
+    0,
+    0.53,
+    1.42,
+    2.26,
+    2.94,
+    3.539125
+  ],
+  "recognizer": "faster-whisper-small",
+  "note": "Transcript and boundary check; not native-speaker approval.",
+  "originalBoundaries": [
+    0,
+    0.37,
+    1.3,
+    2.0,
+    2.76,
+    3.539125
+  ],
+  "boundaryCorrection": {
+    "sourceSHA256": "716e5280b8a243f2346a8e9c29969a37429cdb4de50f34273315b3ffa68d5344",
+    "boundaries": [
+      0,
+      0.53,
+      1.42,
+      2.26,
+      2.94,
+      3.539125
+    ],
+    "reason": "Move boundaries into measured quiet gaps to preserve final consonants. Staged encoded sequence recognizes all five numbers."
+  }
+}

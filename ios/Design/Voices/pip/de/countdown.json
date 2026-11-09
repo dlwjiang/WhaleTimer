@@ -1,0 +1,43 @@
+{
+  "method": "context-countdown-v1",
+  "text": "Fünf. Vier. Drei. Zwei. Eins.",
+  "instruct": "Speak in German naturally. Clearly count down from five to one.",
+  "seed": 3549203673,
+  "words": [
+    {
+      "text": " Fünf,",
+      "start": 0.0,
+      "end": 0.44
+    },
+    {
+      "text": " vier,",
+      "start": 0.68,
+      "end": 1.1
+    },
+    {
+      "text": " drei,",
+      "start": 1.7,
+      "end": 2.26
+    },
+    {
+      "text": " zwei,",
+      "start": 3.06,
+      "end": 3.6
+    },
+    {
+      "text": " eins.",
+      "start": 4.44,
+      "end": 5.1
+    }
+  ],
+  "boundaries": [
+    0,
+    0.56,
+    1.4,
+    2.66,
+    4.0200000000000005,
+    5.476395833333333
+  ],
+  "recognizer": "faster-whisper-small",
+  "note": "Transcript and boundary check; not native-speaker approval."
+}
