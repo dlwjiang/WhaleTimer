@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Check localization/commerce completeness and decodability of the shipped audio."""
 from pathlib import Path
-import argparse, json, subprocess, sys
+import argparse, json, re, subprocess, sys
 ROOT=Path(__file__).resolve().parents[1]
 LANGS={'en','ja','ko','zh-Hans','zh-Hant','es','pt-BR','fr','de'}
 CHARS=['mochi','pip','jun','bean','luna','atlas','nova','orbit']
@@ -11,6 +11,13 @@ def main():
     parser=argparse.ArgumentParser();parser.add_argument('--allow-incomplete',action='store_true');parser.add_argument('--decode',action='store_true');args=parser.parse_args()
     errors=[]
     catalog=json.loads((ROOT/'Banke/Localizable.xcstrings').read_text())['strings']
+    # Catch missing keys used by direct SwiftUI labels, not just incomplete
+    # translations of keys that happen to remain in the catalog.
+    literal_label = re.compile(r'\b(?:Text|Button|Toggle|Label|Section|Picker|ProgressView|TextField|alert|confirmationDialog|accessibilityLabel|accessibilityHint|navigationTitle|L10n\.text)\("([^"\\]*)"')
+    for source in (ROOT/'Banke').rglob('*.swift'):
+        for key in literal_label.findall(source.read_text()):
+            if key and key not in catalog:
+                errors.append(f'Missing UI localization key in {source.name}: {key}')
     for key,value in catalog.items():
         localizations=value.get('localizations',{})
         if set(localizations)!=LANGS:errors.append(f'Locales missing for {key}')

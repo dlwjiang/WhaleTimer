@@ -40,6 +40,9 @@ final class StudyStore: ObservableObject {
     private var audibleEffects: Bool { state.settings.soundEnabled && state.settings.effectsEnabled }
 
     func tick(now: Date = Date(), audible: Bool = true) {
+        // Calling a mutating method on @Published state publishes even when it
+        // returns without changing anything. Idle polling must stay read-only.
+        guard session.status == .running else { return }
         if state.reconcile(at: now) {
             save(); scheduleNotification()
             if audible {
@@ -205,7 +208,10 @@ final class StudyStore: ObservableObject {
     }
 
     private func updateIdleTimer() {
-        UIApplication.shared.isIdleTimerDisabled = state.settings.keepAwake && session.status == .running
+        let keepAwake = state.settings.keepAwake && session.status == .running
+        if UIApplication.shared.isIdleTimerDisabled != keepAwake {
+            UIApplication.shared.isIdleTimerDisabled = keepAwake
+        }
     }
 
     private func scheduleNotification() {

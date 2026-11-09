@@ -67,5 +67,44 @@
     "compiledDeviceNameLocalesVerified": 9,
     "translationKeys": 151,
     "visualSpotCheck": "User: change language in Settings, inspect the title at normal/large text sizes; check Home Screen naming with iOS app-language selection."
+  },
+  "performanceAndBugAudit": {
+    "date": "2026-11-10",
+    "scope": "Native iOS timer, companion selection, purchases, audio, animation/lifecycle, localization and bundled resources; code review and automated simulator checks.",
+    "reproducedBeforeFix": [
+      "100 ready-state polls published 100 redundant state changes.",
+      "100 preparation-paused polls published 100 redundant state changes.",
+      "Closing a preview before its queued task began did not cancel it.",
+      "Closing a finished preview left its caption visible."
+    ],
+    "fixes": [
+      "Skip state mutation for non-running timer polls; avoid redundant idle-timer assignments.",
+      "Track preview lifetime from queueing through caption expiration so screen dismissal cancels it.",
+      "Recheck cancellation after failed audio preparation before using synthesized fallback.",
+      "Restore Cancel translations and validate direct SwiftUI localization keys against the catalog."
+    ],
+    "checks": {
+      "coreTests": 22,
+      "hostedSimulatorTests": 20,
+      "hostedFailures": 0,
+      "idlePublicationsAfter100Polls": 0,
+      "voiceClipsDecoded": 768,
+      "localizationKeys": 151,
+      "locales": 9,
+      "commerceProducts": 4,
+      "diffWhitespaceCheck": "passed"
+    },
+    "evidence": {
+      "reproductionLog": "/tmp/banke-audit-repro.log",
+      "regressionLog": "/tmp/banke-audit-regression.log",
+      "coreLog": "/tmp/banke-audit-core.log",
+      "audioDecodeLog": "/tmp/banke-audit-resources.log",
+      "localizationLog": "/tmp/banke-audit-resource-keys.log"
+    },
+    "limits": [
+      "No new physical-device frame-time, memory-peak, energy or thermal profiling; simulator correctness is not a device performance guarantee.",
+      "No production App Store purchase or distribution-signing test.",
+      "Ask to Buy denial/pending-state handling remains subject to the relaunch limitation recorded in Commerce/README.md."
+    ]
   }
 }

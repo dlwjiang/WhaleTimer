@@ -1,6 +1,7 @@
 import XCTest
 import AVFoundation
 import SwiftUI
+import Combine
 @testable import Banke
 
 @MainActor
@@ -22,6 +23,54 @@ final class ReleaseExperienceTests: XCTestCase {
         study = nil
         defaults.removePersistentDomain(forName: suite)
         defaults = nil
+    }
+
+    func testIdlePollingDoesNotPublishUnchangedState() {
+        var publications = 0
+        let subscription = study.objectWillChange.sink { publications += 1 }
+        defer { subscription.cancel() }
+        for _ in 0..<100 { study.tick() }
+        XCTAssertEqual(publications, 0, "Ready timer should not invalidate the entire scene")
+        study.primaryAction()
+        study.primaryAction()
+        XCTAssertEqual(study.session.status, .preparationPaused)
+        publications = 0
+        for _ in 0..<100 { study.tick() }
+        XCTAssertEqual(publications, 0, "Paused timer should not invalidate the entire scene")
+    }
+
+    func testClosingPreviewBeforePlaybackTaskStartsCancelsIt() async throws {
+        study.previewVoice(.pip)
+        study.stopVoicePreview()
+        try await Task.sleep(for: .milliseconds(100))
+        XCTAssertNil(study.audio.caption)
+        XCTAssertFalse(study.audio.previewing)
+        XCTAssertFalse(study.audio.speaking)
+    }
+
+    func testClosingPreviewAfterPlaybackClearsLingeringCaption() async throws {
+        _ = await study.audio.speak("greeting", companion: .pip, audible: false, preview: true)
+        XCTAssertNotNil(study.audio.caption)
+        study.stopVoicePreview()
+        XCTAssertNil(study.audio.caption)
+    }
+
+    func testDisabledBreakCompletionKeepsFocusAndUsesNeutralCaption() async throws {
+        var state = StudyState()
+        state.settings.soundEnabled = false
+        state.settings.shortBreaksEnabled = false
+        state.settings.longBreaksEnabled = false
+        state.session.start(at: Date())
+        defaults.set(try JSONEncoder().encode(state), forKey: "banke.native.study.v1")
+        study = StudyStore(purchases: PurchaseStore(), defaults: defaults)
+        study.tick(now: try XCTUnwrap(study.session.deadline))
+        try await Task.sleep(for: .milliseconds(100))
+        XCTAssertEqual(study.session.status, .complete)
+        XCTAssertEqual(study.state.nextPhase, .focus)
+        XCTAssertEqual(study.audio.caption, L10n.text("Well done! Ready when you are."))
+        study.primaryAction()
+        XCTAssertEqual(study.session.phase, .focus)
+        XCTAssertEqual(study.session.status, .preparing)
     }
 
     func testOpeningWaitsForCuesThenResumeHasNoSecondCountdown() async throws {
@@ -152,6 +201,7 @@ final class ReleaseExperienceTests: XCTestCase {
             if language == .en { XCTAssertEqual(title, "Tick & Kin") }
             if language != .en {
                 XCTAssertNotEqual(L10n.translate("Start focusing", language: language), "Start focusing", language.rawValue)
+                XCTAssertNotEqual(L10n.translate("Cancel", language: language), "Cancel", language.rawValue)
             }
         }
         for name in ["play", "pause", "bell"] {

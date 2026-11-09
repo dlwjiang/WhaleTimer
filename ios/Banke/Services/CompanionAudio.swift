@@ -65,6 +65,8 @@ final class CompanionAudio: NSObject, ObservableObject, AVAudioPlayerDelegate, A
 
     func say(_ cue: String, companion: Companion, audible: Bool, preview: Bool = false, captionOverride: String? = nil) {
         stopSpeech()
+        // Screen dismissal can happen before the queued playback task runs.
+        previewing = preview
         cueTask = Task { @MainActor [weak self] in
             guard let self, !Task.isCancelled else { return }
             _ = await self.speak(cue, companion: companion, audible: audible, preview: preview, captionOverride: captionOverride)
@@ -92,10 +94,15 @@ final class CompanionAudio: NSObject, ObservableObject, AVAudioPlayerDelegate, A
             let ready = await CompanionAudioSession.shared.activate()
             guard generation == token, !Task.isCancelled else { return false }
             let directory = "Audio/Voices/\(L10n.language.voiceDirectory)/\(companion.rawValue)"
+            let prepared: PreparedCompanionPlayer?
+            if ready, let url = Bundle.main.url(forResource: cue, withExtension: "m4a", subdirectory: directory) {
+                prepared = await CompanionAudioSession.shared.preparePlayer(at: url)
+            } else { prepared = nil }
+            // Preparation may fail after cancellation. Do not fall through to
+            // device speech for a cue that was stopped while the actor worked.
+            guard generation == token, !Task.isCancelled else { return false }
             if !ready { result = await silentBeat(cue) }
-            else if let url = Bundle.main.url(forResource: cue, withExtension: "m4a", subdirectory: directory),
-                    let prepared = await CompanionAudioSession.shared.preparePlayer(at: url) {
-                guard generation == token, !Task.isCancelled else { return false }
+            else if let prepared {
                 let player = prepared.player
                 voicePlayer = player
                 player.delegate = self; player.volume = 0.8
@@ -117,11 +124,12 @@ final class CompanionAudio: NSObject, ObservableObject, AVAudioPlayerDelegate, A
             } else { result = await silentBeat(cue) }
         } else { result = await silentBeat(cue) }
         guard generation == token else { return false }
-        speaking = false; previewing = false
+        speaking = false
         clearTask = Task { @MainActor [weak self] in
             try? await Task.sleep(for: .seconds(max(0.18, captionLifetime - Date().timeIntervalSince(captionStarted))))
             guard !Task.isCancelled, self?.generation == token else { return }
             self?.caption = nil; self?.captionCompanion = nil; self?.captionCue = nil
+            self?.previewing = false
         }
         return result && !Task.isCancelled
     }
