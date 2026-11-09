@@ -3,9 +3,10 @@ import StoreKit
 
 struct CompanionShopView: View {
     @Environment(\.dismiss) private var dismiss
+    var initialPack: CompanionPack? = nil
     var body: some View {
         NavigationStack {
-            CompanionShopContent()
+            CompanionShopContent(initialPack: initialPack)
                 .toolbar { ToolbarItem(placement: .confirmationAction) { Button("Done") { dismiss() } } }
         }
     }
@@ -14,65 +15,71 @@ struct CompanionShopView: View {
 struct CompanionShopContent: View {
     @EnvironmentObject private var store: StudyStore
     @EnvironmentObject private var purchases: PurchaseStore
+    var initialPack: CompanionPack? = nil
 
     var body: some View {
-        ScrollView {
-            VStack(alignment: .leading, spacing: 22) {
-                VStack(alignment: .leading, spacing: 8) {
-                    Text("Find your kind of company.").font(.title2.bold())
-                    Text("Pick a world to focus in.")
-                        .font(.subheadline).foregroundStyle(.secondary)
-                }
-                VStack(alignment: .leading, spacing: 12) {
-                    Label("Always yours · Free", systemImage: "heart").font(.headline)
-                    HStack {
-                        ForEach(Companion.free) { companion in
-                            companionButton(companion)
-                        }
-                    }
-                }.paperCard()
-                ForEach(CompanionPack.allCases) { pack in
-                    NavigationLink { PackDetailView(pack: pack) } label: {
-                        VStack(alignment: .leading, spacing: 12) {
-                            PackArtwork(pack: pack, pose: "idle").frame(height: 220)
-                            HStack(alignment: .top) {
-                                VStack(alignment: .leading, spacing: 6) {
-                                    Text(pack.title).font(.headline)
-                                    Text(pack.companions.map(\.name).joined(separator: " & ")).font(.subheadline)
-                                    Text("2 companions · Voices · 1 scene").font(.caption).foregroundStyle(.secondary)
-                                }
-                                Spacer()
-                                if pack.isOwned(in: purchases.ownedProductIDs) {
-                                    Label("Owned", systemImage: "checkmark.circle.fill").font(.caption)
-                                } else {
-                                    VStack(alignment: .trailing, spacing: 5) {
-                                        Text(purchases.products[pack.productID]?.displayPrice ?? L10n.text("Preview")).font(.headline)
-                                        Text("One-time").font(.caption2)
-                                    }
-                                }
-                            }.padding(.horizontal, 16).padding(.bottom, 16)
-                        }
-                        .background(.white.opacity(0.65), in: RoundedRectangle(cornerRadius: 24))
-                        .overlay(RoundedRectangle(cornerRadius: 24).strokeBorder(.white))
-                    }.buttonStyle(.plain)
-                }
-                if CompanionPack.shouldOfferCollection(owned: purchases.ownedProductIDs) {
-                    VStack(alignment: .leading, spacing: 12) {
-                        Text("The three-pack collection").font(.title3.bold())
-                        Text("All six companions and three scenes shown here. Future packs are not included.")
+        ScrollViewReader { reader in
+            ScrollView {
+                VStack(alignment: .leading, spacing: 22) {
+                    VStack(alignment: .leading, spacing: 8) {
+                        Text("Find your kind of company.").font(.title2.bold())
+                        Text("Pick a world to focus in.")
                             .font(.subheadline).foregroundStyle(.secondary)
-                        PurchaseButton(productID: CompanionPack.collectionProductID, title: "Get all three packs", theme: CompanionTheme(.luna))
-                        Text("One purchase. No subscription.").font(.caption).foregroundStyle(.secondary)
+                    }
+                    VStack(alignment: .leading, spacing: 12) {
+                        Label("Always yours · Free", systemImage: "heart").font(.headline)
+                        HStack {
+                            ForEach(Companion.free) { companion in
+                                companionButton(companion)
+                            }
+                        }
                     }.paperCard()
-                }
-                storeFooter
-            }.padding(20).frame(maxWidth: 660).frame(maxWidth: .infinity)
+                    ForEach(CompanionPack.allCases) { pack in
+                        NavigationLink { PackDetailView(pack: pack) } label: {
+                            VStack(alignment: .leading, spacing: 12) {
+                                PackArtwork(pack: pack, pose: "idle").frame(height: 220)
+                                HStack(alignment: .top) {
+                                    VStack(alignment: .leading, spacing: 6) {
+                                        Text(pack.title).font(.headline)
+                                        Text(pack.companions.map(\.name).joined(separator: " & ")).font(.subheadline)
+                                        Text("2 companions · Voices · 1 scene").font(.caption).foregroundStyle(.secondary)
+                                    }
+                                    Spacer()
+                                    if pack.isOwned(in: purchases.ownedProductIDs) {
+                                        Label("Owned", systemImage: "checkmark.circle.fill").font(.caption)
+                                    } else {
+                                        VStack(alignment: .trailing, spacing: 5) {
+                                            Text(purchases.products[pack.productID]?.displayPrice ?? L10n.text("Preview")).font(.headline)
+                                            Text("One-time").font(.caption2)
+                                        }
+                                    }
+                                }.padding(.horizontal, 16).padding(.bottom, 16)
+                            }
+                            .background(.white.opacity(0.65), in: RoundedRectangle(cornerRadius: 24))
+                            .overlay(RoundedRectangle(cornerRadius: 24).strokeBorder(.white))
+                        }.buttonStyle(.plain).id(pack.id)
+                    }
+                    if CompanionPack.shouldOfferCollection(owned: purchases.ownedProductIDs) {
+                        VStack(alignment: .leading, spacing: 12) {
+                            Text("The three-pack collection").font(.title3.bold())
+                            Text("All six companions and three scenes shown here. Future packs are not included.")
+                                .font(.subheadline).foregroundStyle(.secondary)
+                            PurchaseButton(productID: CompanionPack.collectionProductID, title: "Get all three packs", theme: CompanionTheme(.luna))
+                            Text("One purchase. No subscription.").font(.caption).foregroundStyle(.secondary)
+                        }.paperCard()
+                    }
+                    storeFooter
+                }.padding(20).frame(maxWidth: 660).frame(maxWidth: .infinity)
+            }
+            .background(Palette.paper.ignoresSafeArea())
+            .foregroundStyle(Palette.ink)
+            .navigationTitle(L10n.text("Companions"))
+            .navigationBarTitleDisplayMode(.inline)
+            .task { if purchases.products.isEmpty { await purchases.loadProducts() } }
+            .onAppear {
+                if let initialPack { reader.scrollTo(initialPack.id, anchor: .top) }
+            }
         }
-        .background(Palette.paper.ignoresSafeArea())
-        .foregroundStyle(Palette.ink)
-        .navigationTitle(L10n.text("Companions"))
-        .navigationBarTitleDisplayMode(.inline)
-        .task { if purchases.products.isEmpty { await purchases.loadProducts() } }
     }
 
     private func companionButton(_ companion: Companion) -> some View {

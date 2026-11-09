@@ -44,7 +44,13 @@ final class StudyStore: ObservableObject {
             save(); scheduleNotification()
             if audible {
                 audio.effect("bell", enabled: audibleEffects)
-                audio.say(session.phase == .focus ? "focusComplete" : "breakComplete", companion: companion, audible: audibleVoice)
+                if session.phase == .focus && state.nextPhase == .focus {
+                    // The bundled completion line invites a break; use a neutral caption instead.
+                    audio.say("focusComplete", companion: companion, audible: false,
+                              captionOverride: L10n.text("Well done! Ready when you are."))
+                } else {
+                    audio.say(session.phase == .focus ? "focusComplete" : "breakComplete", companion: companion, audible: audibleVoice)
+                }
             }
         } else if session.status == .running {
             let second = Int(ceil(session.remaining))
@@ -148,18 +154,12 @@ final class StudyStore: ObservableObject {
         cancelPreparation(); notificationMessage = nil; scheduleNotification(); objectWillChange.send()
     }
 
-    func setIntention(_ value: String) {
-        state.intention = String(value.prefix(140))
-        save()
-    }
-
     func updateSettings(_ settings: TimerSettings) {
         if state.settings.soundEnabled != settings.soundEnabled || state.settings.voicesEnabled != settings.voicesEnabled {
             audio.stop()
         }
         if !settings.effectsEnabled { audio.stopEffects() }
-        state.settings = settings
-        if session.status == .ready { state.session.prepare(session.phase, seconds: settings.seconds(for: session.phase)) }
+        state.updateSettings(settings)
         didChange()
     }
 
@@ -216,9 +216,14 @@ final class StudyStore: ObservableObject {
         let identifier = "banke.\(UUID().uuidString)"
         let content = UNMutableNotificationContent()
         content.title = L10n.text(session.phase == .focus ? "A little progress, together." : "Ready for another little chapter?")
-        content.body = session.phase == .focus
-            ? L10n.text("%@ is ready for a break. Your focus session is complete.", companion.name)
-            : L10n.text("Your break is over. %@ is waiting in your study corner.", companion.name)
+        if session.phase == .focus {
+            let next = state.settings.phaseAfterFocus(completedInCycle: state.completedInCycle + 1)
+            content.body = next == .focus
+                ? L10n.text("Your focus session is complete. %@ is ready when you are.", companion.name)
+                : L10n.text("%@ is ready for a break. Your focus session is complete.", companion.name)
+        } else {
+            content.body = L10n.text("Your break is over. %@ is waiting in your study corner.", companion.name)
+        }
         if audibleEffects { content.sound = UNNotificationSound(named: UNNotificationSoundName("completion.wav")) }
         notificationTask = Task { [weak self] in
             let settings = await center.notificationSettings()

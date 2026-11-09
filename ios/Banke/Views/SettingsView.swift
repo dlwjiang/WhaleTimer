@@ -13,8 +13,12 @@ struct SettingsView: View {
             Form {
                 Section {
                     Stepper(L10n.text("Focus: %lld min", store.state.settings.focusMinutes), value: setting(\.focusMinutes), in: 1...180)
+                    Toggle("Short breaks", isOn: setting(\.shortBreaksEnabled))
                     Stepper(L10n.text("Short break: %lld min", store.state.settings.shortBreakMinutes), value: setting(\.shortBreakMinutes), in: 1...60)
+                        .disabled(!store.state.settings.shortBreaksEnabled)
+                    Toggle("Long breaks", isOn: setting(\.longBreaksEnabled))
                     Stepper(L10n.text("Long break: %lld min", store.state.settings.longBreakMinutes), value: setting(\.longBreakMinutes), in: 1...90)
+                        .disabled(!store.state.settings.longBreaksEnabled)
                     let presets = dynamicTypeSize.isAccessibilitySize
                         ? AnyLayout(VStackLayout(alignment: .leading)) : AnyLayout(HStackLayout())
                     presets {
@@ -24,7 +28,7 @@ struct SettingsView: View {
                     }.buttonStyle(.bordered)
                     preset("Quick try · 1 min focus + 1 min break", focus: 1, rest: 1)
                 } header: { Text("Your rhythm") } footer: {
-                    Text("Long break after four focus sessions. Duration changes apply to the next session.")
+                    Text("Long breaks follow four focus sessions. If long breaks are off, an enabled short break takes their place. With both off, continue to your next focus session. Running and paused sessions keep their remaining time.")
                 }
                 Section("Sounds and voices") {
                     Toggle("Sound enabled", isOn: setting(\.soundEnabled))
@@ -56,14 +60,16 @@ struct SettingsView: View {
                         .font(.footnote).foregroundStyle(.secondary)
                 }
                 Section("Your companions") {
-                    ForEach(purchases.availableCompanions) { companion in
-                        Button { store.select(companion) } label: {
-                            HStack {
-                                Image("\(companion.rawValue)-idle").resizable().scaledToFit().frame(width: 56, height: 56)
-                                VStack(alignment: .leading) { Text(companion.name); Text(companion.role).font(.caption).foregroundStyle(.secondary) }
-                                Spacer()
-                                if companion == store.companion { Image(systemName: "checkmark.circle.fill") }
+                    ForEach(Companion.allCases) { companion in
+                        if companion.isAvailable(in: purchases.ownedProductIDs) {
+                            Button { store.select(companion) } label: {
+                                companionRow(companion, locked: false)
                             }
+                        } else {
+                            NavigationLink {
+                                CompanionShopContent(initialPack: companion.pack)
+                            } label: { companionRow(companion, locked: true) }
+                            .accessibilityHint("View companion packs")
                         }
                     }
                 }
@@ -79,6 +85,26 @@ struct SettingsView: View {
             .toolbar { ToolbarItem(placement: .confirmationAction) { Button("Done") { dismiss() } } }
         }
         .onDisappear { store.stopVoicePreview() }
+    }
+
+    private func companionRow(_ companion: Companion, locked: Bool) -> some View {
+        HStack {
+            Image("\(companion.rawValue)-idle").resizable().interpolation(.none).scaledToFit()
+                .frame(width: 56, height: 56)
+                .saturation(locked ? 0.12 : 1).opacity(locked ? 0.65 : 1)
+                .accessibilityHidden(true)
+            VStack(alignment: .leading) {
+                Text(companion.name)
+                Text(locked ? companion.pack?.title ?? companion.role : companion.role)
+                    .font(.caption).foregroundStyle(.secondary)
+            }
+            Spacer()
+            if locked {
+                Label("Locked", systemImage: "lock.fill").font(.caption).foregroundStyle(.secondary)
+            } else if companion == store.companion {
+                Image(systemName: "checkmark.circle.fill")
+            }
+        }
     }
 
     private func setting<T>(_ keyPath: WritableKeyPath<TimerSettings, T>) -> Binding<T> {

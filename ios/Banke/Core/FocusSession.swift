@@ -17,6 +17,8 @@ struct TimerSettings: Codable, Equatable, Sendable {
     var focusMinutes = 25
     var shortBreakMinutes = 5
     var longBreakMinutes = 15
+    var shortBreaksEnabled = true
+    var longBreaksEnabled = true
     var soundEnabled = true
     var effectsEnabled = true
     var voicesEnabled = true
@@ -26,12 +28,15 @@ struct TimerSettings: Codable, Equatable, Sendable {
     init() {}
     private enum CodingKeys: String, CodingKey {
         case focusMinutes, shortBreakMinutes, longBreakMinutes, soundEnabled, effectsEnabled, voicesEnabled, notificationsEnabled, keepAwake
+        case shortBreaksEnabled, longBreaksEnabled
     }
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         focusMinutes = try values.decodeIfPresent(Int.self, forKey: .focusMinutes) ?? 25
         shortBreakMinutes = try values.decodeIfPresent(Int.self, forKey: .shortBreakMinutes) ?? 5
         longBreakMinutes = try values.decodeIfPresent(Int.self, forKey: .longBreakMinutes) ?? 15
+        shortBreaksEnabled = try values.decodeIfPresent(Bool.self, forKey: .shortBreaksEnabled) ?? true
+        longBreaksEnabled = try values.decodeIfPresent(Bool.self, forKey: .longBreaksEnabled) ?? true
         soundEnabled = try values.decodeIfPresent(Bool.self, forKey: .soundEnabled) ?? true
         effectsEnabled = try values.decodeIfPresent(Bool.self, forKey: .effectsEnabled) ?? true
         voicesEnabled = try values.decodeIfPresent(Bool.self, forKey: .voicesEnabled) ?? true
@@ -45,6 +50,11 @@ struct TimerSettings: Codable, Equatable, Sendable {
         case .shortBreak: Double(min(60, max(1, shortBreakMinutes)) * 60)
         case .longBreak: Double(min(90, max(1, longBreakMinutes)) * 60)
         }
+    }
+
+    func phaseAfterFocus(completedInCycle: Int) -> SessionPhase {
+        if completedInCycle >= 4 && longBreaksEnabled { return .longBreak }
+        return shortBreaksEnabled ? .shortBreak : .focus
     }
 }
 
@@ -122,11 +132,21 @@ struct StudyState: Codable, Sendable {
     var settings = TimerSettings()
     var session = FocusSession()
     var companion: Companion = .mochi
-    var intention = ""
     var completedInCycle = 0
 
     var nextPhase: SessionPhase {
-        session.phase == .focus ? (completedInCycle >= 4 ? .longBreak : .shortBreak) : .focus
+        session.phase == .focus ? settings.phaseAfterFocus(completedInCycle: completedInCycle) : .focus
+    }
+
+    mutating func updateSettings(_ settings: TimerSettings) {
+        self.settings = settings
+        guard session.status == .ready else { return }
+        if (session.phase == .shortBreak && !settings.shortBreaksEnabled) ||
+            (session.phase == .longBreak && !settings.longBreaksEnabled) {
+            reset()
+        } else {
+            session.prepare(session.phase, seconds: settings.seconds(for: session.phase))
+        }
     }
 
     @discardableResult

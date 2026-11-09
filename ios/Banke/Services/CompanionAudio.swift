@@ -63,22 +63,22 @@ final class CompanionAudio: NSObject, ObservableObject, AVAudioPlayerDelegate, A
         }
     }
 
-    func say(_ cue: String, companion: Companion, audible: Bool, preview: Bool = false) {
+    func say(_ cue: String, companion: Companion, audible: Bool, preview: Bool = false, captionOverride: String? = nil) {
         stopSpeech()
         cueTask = Task { @MainActor [weak self] in
             guard let self, !Task.isCancelled else { return }
-            _ = await self.speak(cue, companion: companion, audible: audible, preview: preview)
+            _ = await self.speak(cue, companion: companion, audible: audible, preview: preview, captionOverride: captionOverride)
         }
     }
 
     @discardableResult
-    func speak(_ cue: String, companion: Companion, audible: Bool, preview: Bool = false) async -> Bool {
+    func speak(_ cue: String, companion: Companion, audible: Bool, preview: Bool = false, captionOverride: String? = nil) async -> Bool {
         guard !Task.isCancelled else { return false }
         cancelPlayback()
         clearTask?.cancel()
         generation += 1
         let token = generation
-        caption = L10n.voice(cue, companion: companion)
+        caption = captionOverride ?? L10n.voice(cue, companion: companion)
         captionCompanion = companion
         captionCue = cue
         captionID += 1

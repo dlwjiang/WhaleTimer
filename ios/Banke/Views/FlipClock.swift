@@ -34,6 +34,7 @@ private struct FlipDigit: View {
     @State private var previous = ""
     @State private var outgoing = ""
     @State private var flipping = false
+    @State private var landing = false
     @State private var upperAngle = 0.0
     @State private var lowerAngle = 90.0
 
@@ -47,21 +48,21 @@ private struct FlipDigit: View {
                 }
                 if flipping {
                     VStack(spacing: 0) {
-                        half(outgoing, top: true, size: size)
-                            .rotation3DEffect(.degrees(upperAngle), axis: (x: 1, y: 0, z: 0), anchor: .bottom, perspective: 0.35)
+                        half(outgoing, top: true, size: size, moving: true)
+                            .modifier(FlapRotation(angle: upperAngle, anchor: .bottom))
                         Color.clear.frame(height: size.height / 2)
-                    }
+                    }.opacity(landing ? 0 : 1).zIndex(1)
                     VStack(spacing: 0) {
                         Color.clear.frame(height: size.height / 2)
-                        half(value, top: false, size: size)
-                            .rotation3DEffect(.degrees(lowerAngle), axis: (x: 1, y: 0, z: 0), anchor: .top, perspective: 0.35)
-                    }
+                        half(value, top: false, size: size, moving: true)
+                            .modifier(FlapRotation(angle: lowerAngle, anchor: .top))
+                    }.opacity(landing ? 1 : 0).zIndex(2)
                 }
                 HStack {
                     pivot
                     Spacer()
                     pivot
-                }.padding(.horizontal, -1)
+                }.padding(.horizontal, -1).zIndex(3)
             }
             .background(theme.clock.base, in: RoundedRectangle(cornerRadius: 9))
             .shadow(color: theme.edge, radius: 0, y: 3)
@@ -72,9 +73,14 @@ private struct FlipDigit: View {
             previous = value
             guard !old.isEmpty, old != value, !reduceMotion else { flipping = false; return }
             outgoing = old
-            upperAngle = 0; lowerAngle = 90; flipping = true
+            var reset = Transaction(); reset.disablesAnimations = true
+            withTransaction(reset) {
+                upperAngle = 0; lowerAngle = 90; landing = false; flipping = true
+            }
             withAnimation(.easeIn(duration: 0.24)) { upperAngle = -90 }
             do { try await Task.sleep(for: .milliseconds(240)) } catch { return }
+            // Never leave an edge-on card in front of the other card's numeral.
+            withTransaction(reset) { landing = true }
             withAnimation(.easeOut(duration: 0.28)) { lowerAngle = 0 }
             do { try await Task.sleep(for: .milliseconds(280)) } catch { return }
             flipping = false
@@ -95,7 +101,7 @@ private struct FlipDigit: View {
             .frame(width: 3, height: 7).shadow(color: .black.opacity(0.25), radius: 0.5, y: 1)
     }
 
-    private func half(_ text: String, top: Bool, size: CGSize) -> some View {
+    private func half(_ text: String, top: Bool, size: CGSize, moving: Bool = false) -> some View {
         LinearGradient(colors: top ? [theme.clock.topStart, theme.top] : [theme.clock.bottomStart, theme.bottom], startPoint: .top, endPoint: .bottom)
         .frame(width: size.width, height: size.height / 2)
         .overlay(alignment: top ? .top : .bottom) {
@@ -110,10 +116,10 @@ private struct FlipDigit: View {
         .clipped()
         .compositingGroup()
         .overlay(alignment: .top) {
-            Rectangle().fill(.white.opacity(top ? 0.141 : 0.071)).frame(height: 1)
+            if !moving { Rectangle().fill(.white.opacity(top ? 0.141 : 0.071)).frame(height: 1) }
         }
         .overlay(alignment: .bottom) {
-            if top { Rectangle().fill(theme.clock.seam).frame(height: 1) }
+            if top && !moving { Rectangle().fill(theme.clock.seam).frame(height: 1) }
         }
         .overlay(alignment: top ? .top : .bottom) {
             // Both flaps crop the same centered, full-height digit.
@@ -125,5 +131,21 @@ private struct FlipDigit: View {
         }
         .clipped()
         .clipShape(UnevenRoundedRectangle(topLeadingRadius: top ? 9 : 0, bottomLeadingRadius: top ? 0 : 9, bottomTrailingRadius: top ? 0 : 9, topTrailingRadius: top ? 9 : 0))
+        // Rotate one composed surface so highlights cannot sort above its glyph.
+        .compositingGroup()
+    }
+}
+
+/// Evaluate visibility at the interpolated angle, not just the animation endpoints.
+/// A flattened, edge-on face would otherwise rasterize as a bar across the hinge.
+private struct FlapRotation: AnimatableModifier {
+    var angle: Double
+    let anchor: UnitPoint
+    var animatableData: Double { get { angle } set { angle = newValue } }
+
+    func body(content: Content) -> some View {
+        content
+            .rotation3DEffect(.degrees(angle), axis: (x: 1, y: 0, z: 0), anchor: anchor, perspective: 0.35)
+            .opacity(abs(angle) >= 89.5 ? 0 : 1)
     }
 }

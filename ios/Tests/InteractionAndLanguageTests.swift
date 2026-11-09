@@ -67,6 +67,7 @@ import Testing
     let settings = try JSONDecoder().decode(TimerSettings.self, from: data)
     #expect(!settings.soundEnabled)
     #expect(settings.effectsEnabled && settings.voicesEnabled)
+    #expect(settings.shortBreaksEnabled && settings.longBreaksEnabled)
     #expect(settings.focusMinutes == 50)
     #expect(settings.notificationsEnabled && settings.keepAwake)
 }

@@ -24,7 +24,7 @@ English was selected by the user; the other names adapt the warm time-and-compan
 
 The native screen now follows the web composition: a large central pixel companion on a painted platform, the original hourglass brand mark, translucent header and control dock, circular carousel arrows, and a mechanical split-flap clock. The paper texture and the two free background paintings are reused from `public/backgrounds/`; the mark is reused from `public/brand/`. The blue and warm scholarly material colors follow `src/character-theme.css`, and the buttons follow `src/timer-action.css`. Native translucent materials approximate the web glass treatment; the web refraction shader is not ported.
 
-Mochi and Pip have new pixel-art pose sheets. Swipe horizontally or use the arrows to switch companion and palette. The optional intention opens from the pencil row below the timer. This keeps the main scene focused on the companion and clock. Screenshots are in `Verification/`.
+Mochi and Pip have new pixel-art pose sheets. Swipe horizontally or use the arrows to switch companion and palette. The main scene stays focused on the companion and clock; there is no task or intention input. Screenshots are in `Verification/`.
 
 The clock bundles the web's Manrope Bold font under its SIL Open Font License, with no runtime download. Its blue, brown and lavender faces use the web's four gradient stops, separator ink, matte paper treatment, seam beneath the lettering, and 240/280 ms flip timing. The café and orbital palettes extend the same material recipe. After rebuilding, visually check Pip against the warm web clock, Mochi's blue face, and a premium face while paused and flipping; browser and native text/compositing can still differ slightly.
 
@@ -45,9 +45,10 @@ xcodebuild -project ios/Banke.xcodeproj -scheme Banke \
 ## Free functionality
 
 - 25-minute focus, 5-minute short break, 15-minute long break; editable durations and Gentle / Classic / Deep / one-minute Quick try presets.
+- Short and long breaks can be enabled independently. Long breaks replace the fourth short break when enabled; with long breaks off, short breaks continue after every focus session. With both off, the next phase is focus. Active/paused sessions keep their remaining time; each next session still starts explicitly.
 - Pause, resume, slide-to-reset (88% threshold, accessible confirmation), break skipping, and a long break after four completed focus sessions. Each next phase starts explicitly.
 - Timestamp-based timekeeping and persisted active/paused sessions. Returning late completes one session, preserves its original completion deadline, and waits for the next action. UI polling never counts time.
-- Optional 140-character intention for the current focus session. The release stays centered on the timer and companion: no journal, daily statistics, or lifetime progress screen.
+- The release stays centered on the timer and companion: no intention input, journal, daily statistics, or lifetime progress screen. Legacy saved intentions are ignored and dropped on the next save.
 - Two permanently free companions with four original poses each: idle, focus, rest, happy. Drag-linked cylinder rotation, scene blending, tap-to-greet, floating mouth-anchored speech and speaking reactions. Outlined phrases pop in and fade away without a subtitle panel; countdown digits are larger. Reduce Motion removes spatial rotation, breathing and hinge effects.
 - Opt-in local notifications, optional bundled completion chime, and keep-awake while timing. Pause/reset cancels pending reminders; a unique notification ID also cancels a stale asynchronous scheduling operation safely.
 - No login, ads, analytics, runtime generation, or AI service. Optional companions use Apple in-app purchases. Local settings/current-session state use UserDefaults; the privacy manifest declares this access.
@@ -92,7 +93,7 @@ Mochi and Pip, all timer features, and language support remain free. All nine UI
 | Orbital Night Shift | Nova, the astronaut; Orbit, the robot | Orbital study room | $3.99 once |
 | Three-Pack Collection | All six above | All three above | $8.99 once |
 
-Each character has idle, focus, rest, and happy poses. Each pack includes matching clock/control colors. **Meet more companions** and Settings → **Companion packs** open the storefront. Preview all four poses and the companion voice before purchasing; previews do not change the active timer or unlock selection. Only owned companions appear in the main carousel. The collection is hidden after any individual purchase to avoid overlapping charges. It includes these three packs, not future packs.
+Each character has idle, focus, rest, and happy poses. Each pack includes matching clock/control colors. **Meet more companions** and Settings → **Companion packs** open the storefront. Preview all four poses and the companion voice before purchasing; previews do not change the active timer or unlock selection. All eight companions appear in the main carousel and Settings selector. Unowned companions use muted artwork and lock labels; browsing them does not change the active companion or timer. Tap a locked portrait or “View pack” to open the packs menu at its matching pack. Owned companions remain directly selectable. The collection is hidden after any individual purchase to avoid overlapping charges. It includes these three packs, not future packs.
 
 StoreKit 2 supplies localized prices and verified non-consumable entitlements. The app listens for external approval/refund updates, restores purchases explicitly, and refreshes access on foreground. Revoking the selected character returns to Mochi without resetting the timer. Existing verified StoreKit entitlements work offline; buying and restoring need the App Store. No local saved Boolean unlocks content.
 

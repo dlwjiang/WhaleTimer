@@ -130,8 +130,6 @@ struct TimerPanel: View {
     @EnvironmentObject private var store: StudyStore
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @Environment(\.dynamicTypeSize) private var dynamicTypeSize
-    @State private var editingIntention = false
-    @State private var intentionDraft = ""
     private var theme: CompanionTheme { CompanionTheme(store.companion) }
     var compact = false
 
@@ -190,16 +188,7 @@ struct TimerPanel: View {
                 SlideToReset(theme: theme) { store.reset() }
             }
 
-            if store.session.phase == .focus && store.session.status != .complete {
-                Button {
-                    intentionDraft = store.state.intention
-                    editingIntention = true
-                } label: {
-                    Label(store.state.intention.isEmpty ? L10n.text("One thing to focus on…") : store.state.intention, systemImage: "pencil")
-                        .font(.caption).lineLimit(1).frame(maxWidth: .infinity, minHeight: 32)
-                }.buttonStyle(.plain).foregroundStyle(theme.accent)
-                    .accessibilityLabel(store.state.intention.isEmpty ? L10n.text("Add a focus intention, optional") : L10n.text("Edit intention: %@", store.state.intention))
-            } else {
+            if store.session.phase != .focus {
                 Button("Back to focus") { store.skipBreak() }
                     .font(.caption).foregroundStyle(theme.accent).frame(minHeight: 32)
             }
@@ -210,11 +199,6 @@ struct TimerPanel: View {
         .padding(.horizontal, compact ? 20 : 28).padding(.top, 24).padding(.bottom, 8)
         .foregroundStyle(Palette.ink)
         .modifier(GlassSurface(tint: theme.soft, radius: 28))
-        .alert("One thing at a time", isPresented: $editingIntention) {
-            TextField("What will you work on?", text: $intentionDraft)
-            Button("Save") { store.setIntention(intentionDraft) }
-            Button("Cancel", role: .cancel) { }
-        } message: { Text("An optional intention for this session.") }
 
     }
 

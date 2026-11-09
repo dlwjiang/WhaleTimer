@@ -118,26 +118,90 @@ private let start = Date(timeIntervalSince1970: 1_800_000_000)
     #expect(restored.settings.focusMinutes == 25)
 }
 
-@Test func legacyJournalStateRestoresTimerAndCycleWithoutKeepingHistory() throws {
+@Test func legacyJournalAndIntentionRestoreTimerWithoutKeepingRemovedInputs() throws {
     var state = StudyState()
     state.companion = .pip
-    state.intention = "Read a chapter"
     state.completedInCycle = 3
     state.session.start(at: start)
     state.session.pause(at: start.addingTimeInterval(90))
     let data = try JSONEncoder().encode(state)
     var legacy = try #require(JSONSerialization.jsonObject(with: data) as? [String: Any])
+    legacy["intention"] = "Read a chapter"
     legacy["records"] = [["id": UUID().uuidString, "finishedAt": 800_000_000,
                            "seconds": 1500, "companion": "pip", "intention": "Earlier session"]]
     var restored = StudyState.restore(try JSONSerialization.data(withJSONObject: legacy))
     #expect(restored.session == state.session)
     #expect(restored.companion == .pip)
-    #expect(restored.intention == state.intention)
     #expect(restored.completedInCycle == 3)
     let saved = try #require(JSONSerialization.jsonObject(with: JSONEncoder().encode(restored)) as? [String: Any])
     #expect(saved["records"] == nil)
+    #expect(saved["intention"] == nil)
     restored.session.start(at: start.addingTimeInterval(100))
     restored.reconcile(at: start.addingTimeInterval(2000))
     #expect(restored.completedInCycle == 4)
     #expect(restored.nextPhase == .longBreak)
+}
+
+@Test(arguments: [true, false], [true, false])
+func breakTogglesControlTwoCompleteCycles(short: Bool, long: Bool) throws {
+    var state = StudyState()
+    state.settings.shortBreaksEnabled = short
+    state.settings.longBreaksEnabled = long
+    for _ in 0..<2 {
+        for count in 1...4 {
+            #expect(state.session.phase == .focus)
+            state.session.start(at: start)
+            state.reconcile(at: start.addingTimeInterval(2000))
+            #expect(state.completedInCycle == count)
+            let expected: SessionPhase = count == 4 && long ? .longBreak : short ? .shortBreak : .focus
+            #expect(state.nextPhase == expected)
+            // Settings and the pending choice survive relaunch.
+            state = StudyState.restore(try JSONEncoder().encode(state))
+            #expect(state.nextPhase == expected)
+            state.advance()
+            #expect(state.session.phase == expected)
+            #expect(state.session.status == .ready)
+            if expected != .focus {
+                state.session.start(at: start)
+                state.reconcile(at: start.addingTimeInterval(6000))
+                state.advance()
+            }
+        }
+        #expect(state.completedInCycle == 0)
+    }
+}
+
+@Test func togglingBreaksPreservesActiveSessionAndUpdatesPendingChoice() {
+    var state = StudyState()
+    state.session.start(at: start)
+    let running = state.session
+    var settings = state.settings
+    settings.shortBreaksEnabled = false
+    settings.longBreaksEnabled = false
+    state.updateSettings(settings)
+    #expect(state.session == running)
+    state.reconcile(at: start.addingTimeInterval(2000))
+    #expect(state.nextPhase == .focus)
+    settings.shortBreaksEnabled = true
+    state.updateSettings(settings)
+    #expect(state.nextPhase == .shortBreak)
+    state.advance()
+    state.session.start(at: start)
+    state.session.pause(at: start.addingTimeInterval(40))
+    let paused = state.session
+    settings.shortBreaksEnabled = false
+    state.updateSettings(settings)
+    #expect(state.session == paused)
+}
+
+@Test func disablingAnUnstartedBreakReturnsToFocus() {
+    var state = StudyState()
+    state.completedInCycle = 4
+    state.session.prepare(.longBreak, seconds: 900)
+    var settings = state.settings
+    settings.longBreaksEnabled = false
+    state.updateSettings(settings)
+    #expect(state.session.phase == .focus)
+    #expect(state.session.status == .ready)
+    #expect(state.completedInCycle == 0)
 }
