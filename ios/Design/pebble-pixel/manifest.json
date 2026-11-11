@@ -1,0 +1,108 @@
+{
+  "source": "ios/Design/pebble-pixel-sheet.png",
+  "rows": 2,
+  "cols": 2,
+  "mode": "lines",
+  "all_separators_detected": true,
+  "x_bounds": [
+    [
+      0,
+      13
+    ],
+    [
+      620,
+      634
+    ],
+    [
+      1242,
+      1254
+    ]
+  ],
+  "y_bounds": [
+    [
+      0,
+      12
+    ],
+    [
+      620,
+      633
+    ],
+    [
+      1241,
+      1254
+    ]
+  ],
+  "cells": [
+    {
+      "row": 0,
+      "col": 0,
+      "box": [
+        19,
+        18,
+        614,
+        614
+      ],
+      "method": "native-alpha",
+      "name": "idle",
+      "file": "ios/Design/pebble-pixel/idle.png",
+      "size": [
+        640,
+        640
+      ]
+    },
+    {
+      "row": 0,
+      "col": 1,
+      "box": [
+        640,
+        18,
+        1236,
+        614
+      ],
+      "method": "native-alpha",
+      "name": "focus",
+      "file": "ios/Design/pebble-pixel/focus.png",
+      "size": [
+        640,
+        640
+      ]
+    },
+    {
+      "row": 1,
+      "col": 0,
+      "box": [
+        19,
+        639,
+        614,
+        1235
+      ],
+      "method": "native-alpha",
+      "name": "rest",
+      "file": "ios/Design/pebble-pixel/rest.png",
+      "size": [
+        640,
+        640
+      ]
+    },
+    {
+      "row": 1,
+      "col": 1,
+      "box": [
+        640,
+        639,
+        1236,
+        1235
+      ],
+      "method": "native-alpha",
+      "name": "happy",
+      "file": "ios/Design/pebble-pixel/happy.png",
+      "size": [
+        640,
+        640
+      ]
+    }
+  ],
+  "empty_cells": [],
+  "clipped_cells": [],
+  "contact_sheet": "ios/Design/pebble-pixel/_contact.png"
+}

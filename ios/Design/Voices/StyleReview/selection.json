@@ -1,0 +1,44 @@
+{
+  "status": "Seven-voice pilot audition ready for user listening; full multilingual replacement remains pending voice selection.",
+  "candidates": [
+    "mochi",
+    "pebble",
+    "luna",
+    "jun",
+    "bean",
+    "maple",
+    "comet"
+  ],
+  "preserve": [
+    "pip",
+    "atlas",
+    "wisp",
+    "nova",
+    "orbit"
+  ],
+  "basis": "User listening assessment of current in-app voices.",
+  "externalAssessment": "Local generation and local diagnostics only; user will assess character fit.",
+  "bundledVoicesChanged": false,
+  "pilot": {
+    "clips": 42,
+    "languages": [
+      "en",
+      "zh-Hans"
+    ],
+    "cues": [
+      "greeting",
+      "pause",
+      "resume"
+    ],
+    "formatChecks": "passed",
+    "notes": "Local transcript diagnostics cannot judge character fit. User listening required.",
+    "diagnosticFlags": [
+      "zh-Hans/bean/greeting"
+    ],
+    "diagnosticsChecked": 42
+  },
+  "draftsExcludedFromSelection": [
+    "atlas",
+    "nova"
+  ]
+}

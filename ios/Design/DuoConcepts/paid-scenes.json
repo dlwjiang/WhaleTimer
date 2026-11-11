@@ -1,0 +1,65 @@
+{
+  "generator": "Built-in image generator",
+  "characters": {
+    "jun": {
+      "source": "Design/DuoConcepts/jun-scene.png",
+      "prompt": "Design/DuoConcepts/jun-scene-prompt.txt",
+      "runtime": "Banke/Assets.xcassets/duo-jun.imageset/scene.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "eaaf4fd730cd69812ae11474ba4623fa4bf5cf240b90d3d6918e93ab5f7e37d9"
+    },
+    "bean": {
+      "source": "Design/DuoConcepts/bean-scene.png",
+      "prompt": "Design/DuoConcepts/bean-scene-prompt.txt",
+      "runtime": "Banke/Assets.xcassets/duo-bean.imageset/scene.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "258f68c5f8869f7085a13760bd68f020199ccf6af036e9ab372620afa361f3a9"
+    },
+    "luna": {
+      "source": "Design/DuoConcepts/luna-scene.png",
+      "prompt": "Design/DuoConcepts/luna-scene-prompt.txt",
+      "runtime": "Banke/Assets.xcassets/duo-luna.imageset/scene.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "f982158d1dc67b719737e11fd9828d5c516ad140fdca57ce23ba63dab0b9191e"
+    },
+    "atlas": {
+      "source": "Design/DuoConcepts/atlas-scene.png",
+      "prompt": "Design/DuoConcepts/atlas-scene-prompt.txt",
+      "runtime": "Banke/Assets.xcassets/duo-atlas.imageset/scene.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "6a27bbf3f8fe6fd333b0f21a3f3dc0b1f02da3d92ec50d8a969f450e671fc44a"
+    },
+    "nova": {
+      "source": "Design/DuoConcepts/nova-scene.png",
+      "prompt": "Design/DuoConcepts/nova-scene-prompt.txt",
+      "runtime": "Banke/Assets.xcassets/duo-nova.imageset/scene.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "609659e719c5bc46a79efeaa72bab75f02de9756d0fa6825790d3b81eccc1615"
+    },
+    "orbit": {
+      "source": "Design/DuoConcepts/orbit-scene.png",
+      "prompt": "Design/DuoConcepts/orbit-scene-prompt.txt",
+      "runtime": "Banke/Assets.xcassets/duo-orbit.imageset/scene.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "sha256": "4c75fbf61fee895952ccb021b4c39d29b45a1830fe72b080455d5ab7dbeba75d"
+    }
+  }
+}

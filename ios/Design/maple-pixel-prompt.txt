@@ -1,0 +1,9 @@
+Use case: stylized-concept / production game sprite sheet. Create an ORIGINAL companion for the cozy Tick & Kin focus app, matching crisp detailed 16-bit anime RPG pixel art: visible square pixel clusters, selective warm dark outlines, controlled shaded palette, gentle highlights, appealing large expressive eyes. Not smooth vector, not 3D, no watercolor or blurred pixel filter.
+CHARACTER: Maple, a small cuddly red-panda baker with rusty cinnamon fur, cream cheek patches and eyebrows, dark chocolate paws, a bushy striped red-panda tail, warm amber eyes, a butter-yellow neckerchief and a simple oatmeal apron with a tiny maple-leaf pocket. Friendly cozy cafe animal, unmistakably a red panda, no human hands.
+EXACTLY 2 columns x 2 rows, four equal square cells on a square canvas. Straight solid black 8px separator lines including outer border. Cell interiors genuinely transparent alpha, no white/colored backdrop. Every subject fully inside its cell with at least 12% empty margin on ALL sides. SAME character design, proportions, scale and front-three-quarter camera in all four cells; feet on same baseline about 85% down. All ears, wings, tail and accessories completely inside cell.
+Cells in row-major order:
+1 top-left IDLE: standing on hind paws, hands gently holding apron straps, open-eyed friendly smile.
+2 top-right FOCUS: sitting reading a small recipe book resting on knees, attentive expression.
+3 bottom-left REST: seated holding a tiny cream teacup in both paws, eyes peacefully closed.
+4 bottom-right HAPPY: standing proudly holding one small golden croissant, bright delighted smile.
+Each pose clearly distinct. Exactly one character per cell. NO text, letters, numbering, logo, watermark, scenery, particles or ground/cast shadows. This transparent sheet will be sliced into four 640px square sprites, so keep clean boundaries and generous padding.

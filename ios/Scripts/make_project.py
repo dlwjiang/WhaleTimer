@@ -22,7 +22,7 @@ def write_json(path, data):
 
 catalog = app / "Assets.xcassets"
 write_json(catalog / "Contents.json", {"info": {"author": "xcode", "version": 1}})
-for companion in ("mochi", "pip", "jun", "bean", "luna", "atlas", "nova", "orbit"):
+for companion in ("mochi", "pip", "pebble", "jun", "bean", "maple", "luna", "atlas", "wisp", "nova", "orbit", "comet"):
     for pose in ("idle", "focus", "rest", "happy"):
         asset = catalog / f"{companion}-{pose}.imageset"
         asset.mkdir(exist_ok=True)

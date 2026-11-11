@@ -1,0 +1,38 @@
+{
+  "requirements": {
+    "tent_layout": "implemented; shallow landscape, folded portrait/landscape and fully open portrait inspected in isolated QA simulator",
+    "bean_anatomy": "regenerated and visually inspected",
+    "independent_character_rotation": "implemented using shared carousel motion; recorded Luna-to-Atlas transition inspected with stationary shared room; user smoothness assessment requested",
+    "shared_backgrounds": "six rooms; transitions skip identical room identities",
+    "speaking_mouths": "removed at user request 2026-11-11; floating speech and poke reactions retained; mouth metering and overlay assets removed",
+    "poke_assets_and_responses": "twelve two-frame sheets, 96 localized recordings; full-page happy pose has a brief physical reaction",
+    "consistent_timer_placement": "all-companion geometry regression passed; Pip and Pebble visually inspected behind glass",
+    "native_glass": "native glassEffect on supported iOS; simulator appearance inspected",
+    "native_header_height_alignment": "unified full-canvas coordinates across Duo postures; compact 52-point bar; right and left native rails covered by geometry regressions",
+    "visual_verification": "runtime folded portrait/landscape, shallow landscape and fully open portrait inspected; final user aesthetic spot check requested",
+    "character_refinement": "seated Atlas scale 0.70; Mochi, Pebble, Bean, Maple 0.74, anchored to seats; platform Pebble/Wisp/Comet lowered and Pip shifted left; visual assessment requested",
+    "fully_open_continuity": "inactive hinge division preserves the semi-folded layout and scene when fully open"
+  },
+  "characters": [
+    "mochi",
+    "pip",
+    "pebble",
+    "jun",
+    "bean",
+    "maple",
+    "luna",
+    "atlas",
+    "wisp",
+    "nova",
+    "orbit",
+    "comet"
+  ],
+  "checks": {
+    "core_tests": 30,
+    "native_focused_tests": 5,
+    "build": "passed 2026-11-11",
+    "resource_decode": "1248/1248 passed; final French retakes decoded separately",
+    "voice_style": "existing replacement-voice auditions remain staged for user review; poke clips use current bundled identities",
+    "refinement_checks": "2026-11-11 simulator build and 3 focused native tests passed; final sizing/placement spot check left to user"
+  }
+}

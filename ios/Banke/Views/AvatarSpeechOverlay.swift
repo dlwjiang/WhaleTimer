@@ -13,11 +13,13 @@ struct AvatarSpeechOverlay: View {
     let speech: CompanionSpeech?
     let companion: Companion
     let pose: String
+    var sceneMouth: CGPoint? = nil
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @Environment(\.dynamicTypeSize) private var dynamicTypeSize
 
     var body: some View {
-        MouthSpeechLayout(mouth: companion.mouthAnchor(pose: pose), expanded: dynamicTypeSize.isAccessibilitySize) {
+        MouthSpeechLayout(mouth: companion.mouthAnchor(pose: pose), expanded: dynamicTypeSize.isAccessibilitySize,
+                          sceneMouth: sceneMouth) {
             if let speech {
                 FloatingSpeechText(speech: speech, color: CompanionTheme(companion).accent)
                     .id(speech.id)
@@ -74,14 +76,15 @@ private struct FloatingSpeechText: View {
 private struct MouthSpeechLayout: Layout {
     let mouth: CGPoint
     let expanded: Bool
+    var sceneMouth: CGPoint? = nil
 
     func sizeThatFits(proposal: ProposedViewSize, subviews: Subviews, cache: inout ()) -> CGSize {
         proposal.replacingUnspecifiedDimensions()
     }
     func placeSubviews(in bounds: CGRect, proposal: ProposedViewSize, subviews: Subviews, cache: inout ()) {
         let size = min(bounds.width, bounds.height)
-        let mouthX = (bounds.width - size) / 2 + size * mouth.x
-        let mouthY = (bounds.height - size) / 2 + size * mouth.y
+        let mouthX = sceneMouth.map { bounds.width * $0.x } ?? ((bounds.width - size) / 2 + size * mouth.x)
+        let mouthY = sceneMouth.map { bounds.height * $0.y } ?? ((bounds.height - size) / 2 + size * mouth.y)
         let desiredX = mouthX + size * 0.055 - 20
         let x = expanded ? 12 : max(12, min(desiredX, bounds.width - 158))
         let width = max(1, min(expanded ? bounds.width - 24 : 224, bounds.width - x - 12))
@@ -99,6 +102,10 @@ private extension Companion {
     func mouthAnchor(pose: String) -> CGPoint {
         let anchors: [CGPoint]
         switch self {
+        case .pebble: anchors = [.init(x: 0.43, y: 0.41), .init(x: 0.43, y: 0.48), .init(x: 0.40, y: 0.63), .init(x: 0.48, y: 0.39)]
+        case .maple: anchors = [.init(x: 0.60, y: 0.38), .init(x: 0.57, y: 0.48), .init(x: 0.58, y: 0.45), .init(x: 0.55, y: 0.37)]
+        case .wisp: anchors = [.init(x: 0.58, y: 0.45), .init(x: 0.55, y: 0.48), .init(x: 0.47, y: 0.53), .init(x: 0.54, y: 0.37)]
+        case .comet: anchors = [.init(x: 0.52, y: 0.47), .init(x: 0.51, y: 0.55), .init(x: 0.54, y: 0.52), .init(x: 0.53, y: 0.46)]
         case .mochi: anchors = [.init(x: 0.59, y: 0.45), .init(x: 0.51, y: 0.60), .init(x: 0.36, y: 0.68), .init(x: 0.55, y: 0.40)]
         case .pip: anchors = [.init(x: 0.58, y: 0.44), .init(x: 0.57, y: 0.47), .init(x: 0.58, y: 0.44), .init(x: 0.58, y: 0.42)]
         case .jun: anchors = [.init(x: 0.52, y: 0.35), .init(x: 0.49, y: 0.38), .init(x: 0.50, y: 0.38), .init(x: 0.47, y: 0.35)]

@@ -5,47 +5,47 @@
       "productID": "app.banke.companions.midnightCafe.v1",
       "localizations": [
         {
-          "description": "Jun & Bean · Voices, poses and scene.",
+          "description": "Three companions, poses, voices and scenes.",
           "displayName": "Midnight Café",
           "locale": "en_US"
         },
         {
-          "description": "Jun & Bean · 音声、ポーズ、背景。",
+          "description": "おとも3人、ポーズ、音声、背景。",
           "displayName": "真夜中のカフェ",
           "locale": "ja"
         },
         {
-          "description": "Jun & Bean · 목소리, 포즈, 배경.",
+          "description": "친구 3명, 포즈, 목소리와 배경.",
           "displayName": "한밤의 카페",
           "locale": "ko"
         },
         {
-          "description": "Jun & Bean · 语音、动作与场景。",
+          "description": "三位伙伴、动作、语音与场景。",
           "displayName": "午夜咖啡馆",
           "locale": "zh_CN"
         },
         {
-          "description": "Jun & Bean · 語音、動作與場景。",
+          "description": "三位夥伴、動作、語音與場景。",
           "displayName": "午夜咖啡館",
           "locale": "zh_TW"
         },
         {
-          "description": "Jun & Bean · Voces, poses y escenario.",
+          "description": "Tres compañeros, poses, voces y escenarios.",
           "displayName": "Café de medianoche",
           "locale": "es_ES"
         },
         {
-          "description": "Jun & Bean · Vozes, poses e cenário.",
+          "description": "Três companheiros, poses, vozes e cenários.",
           "displayName": "Café da Meia-Noite",
           "locale": "pt_BR"
         },
         {
-          "description": "Jun & Bean · Voix, poses et décor.",
+          "description": "Trois compagnons, poses, voix et décors.",
           "displayName": "Café de minuit",
           "locale": "fr_FR"
         },
         {
-          "description": "Jun & Bean · Stimmen, Posen und Szene.",
+          "description": "Drei Begleiter, Posen, Stimmen und Szenen.",
           "displayName": "Mitternachtscafé",
           "locale": "de_DE"
         }
@@ -55,47 +55,47 @@
       "productID": "app.banke.companions.moonlightAcademy.v1",
       "localizations": [
         {
-          "description": "Luna & Atlas · Voices, poses and scene.",
+          "description": "Three companions, poses, voices and scenes.",
           "displayName": "Moonlight Academy",
           "locale": "en_US"
         },
         {
-          "description": "Luna & Atlas · 音声、ポーズ、背景。",
+          "description": "おとも3人、ポーズ、音声、背景。",
           "displayName": "月明かりの学び舎",
           "locale": "ja"
         },
         {
-          "description": "Luna & Atlas · 목소리, 포즈, 배경.",
+          "description": "친구 3명, 포즈, 목소리와 배경.",
           "displayName": "달빛 아카데미",
           "locale": "ko"
         },
         {
-          "description": "Luna & Atlas · 语音、动作与场景。",
+          "description": "三位伙伴、动作、语音与场景。",
           "displayName": "月光学院",
           "locale": "zh_CN"
         },
         {
-          "description": "Luna & Atlas · 語音、動作與場景。",
+          "description": "三位夥伴、動作、語音與場景。",
           "displayName": "月光學院",
           "locale": "zh_TW"
         },
         {
-          "description": "Luna & Atlas · Voces, poses y escenario.",
+          "description": "Tres compañeros, poses, voces y escenarios.",
           "displayName": "Academia de la luz de luna",
           "locale": "es_ES"
         },
         {
-          "description": "Luna & Atlas · Vozes, poses e cenário.",
+          "description": "Três companheiros, poses, vozes e cenários.",
           "displayName": "Academia do Luar",
           "locale": "pt_BR"
         },
         {
-          "description": "Luna & Atlas · Voix, poses et décor.",
+          "description": "Trois compagnons, poses, voix et décors.",
           "displayName": "Académie au clair de lune",
           "locale": "fr_FR"
         },
         {
-          "description": "Luna & Atlas · Stimmen, Posen und Szene.",
+          "description": "Drei Begleiter, Posen, Stimmen und Szenen.",
           "displayName": "Mondlicht-Akademie",
           "locale": "de_DE"
         }
@@ -105,47 +105,47 @@
       "productID": "app.banke.companions.orbitalNightShift.v1",
       "localizations": [
         {
-          "description": "Nova & Orbit · Voices, poses and scene.",
+          "description": "Three companions, poses, voices and scenes.",
           "displayName": "Orbital Night Shift",
           "locale": "en_US"
         },
         {
-          "description": "Nova & Orbit · 音声、ポーズ、背景。",
+          "description": "おとも3人、ポーズ、音声、背景。",
           "displayName": "軌道上の夜勤",
           "locale": "ja"
         },
         {
-          "description": "Nova & Orbit · 목소리, 포즈, 배경.",
+          "description": "친구 3명, 포즈, 목소리와 배경.",
           "displayName": "궤도 야간 근무",
           "locale": "ko"
         },
         {
-          "description": "Nova & Orbit · 语音、动作与场景。",
+          "description": "三位伙伴、动作、语音与场景。",
           "displayName": "轨道夜班",
           "locale": "zh_CN"
         },
         {
-          "description": "Nova & Orbit · 語音、動作與場景。",
+          "description": "三位夥伴、動作、語音與場景。",
           "displayName": "軌道夜班",
           "locale": "zh_TW"
         },
         {
-          "description": "Nova & Orbit · Voces, poses y escenario.",
+          "description": "Tres compañeros, poses, voces y escenarios.",
           "displayName": "Turno nocturno orbital",
           "locale": "es_ES"
         },
         {
-          "description": "Nova & Orbit · Vozes, poses e cenário.",
+          "description": "Três companheiros, poses, vozes e cenários.",
           "displayName": "Turno Noturno Orbital",
           "locale": "pt_BR"
         },
         {
-          "description": "Nova & Orbit · Voix, poses et décor.",
+          "description": "Trois compagnons, poses, voix et décors.",
           "displayName": "Quart de nuit en orbite",
           "locale": "fr_FR"
         },
         {
-          "description": "Nova & Orbit · Stimmen, Posen und Szene.",
+          "description": "Drei Begleiter, Posen, Stimmen und Szenen.",
           "displayName": "Nachtschicht im Orbit",
           "locale": "de_DE"
         }
@@ -155,47 +155,47 @@
       "productID": "app.banke.companions.collection.v1",
       "localizations": [
         {
-          "description": "Six companions, voices and three scenes.",
+          "description": "Nine companions, voices and scenes.",
           "displayName": "Three-Pack Collection",
           "locale": "en_US"
         },
         {
-          "description": "6人のおとも、音声、3つの背景。",
+          "description": "おとも9人、音声、背景。",
           "displayName": "3パックセット",
           "locale": "ja"
         },
         {
-          "description": "친구 6명, 목소리와 배경 3개.",
+          "description": "친구 9명, 목소리와 배경.",
           "displayName": "팩 3종 컬렉션",
           "locale": "ko"
         },
         {
-          "description": "六位伙伴、专属语音与三个场景。",
+          "description": "九位伙伴、语音与场景。",
           "displayName": "三包合集",
           "locale": "zh_CN"
         },
         {
-          "description": "六位夥伴、專屬語音與三個場景。",
+          "description": "九位夥伴、語音與場景。",
           "displayName": "三包合集",
           "locale": "zh_TW"
         },
         {
-          "description": "Seis compañeros, voces y tres escenarios.",
+          "description": "Nueve compañeros, voces y escenarios.",
           "displayName": "Colección de tres packs",
           "locale": "es_ES"
         },
         {
-          "description": "Seis companheiros, vozes e três cenários.",
+          "description": "Nove companheiros, vozes e cenários.",
           "displayName": "Coleção de três pacotes",
           "locale": "pt_BR"
         },
         {
-          "description": "Six compagnons, voix et trois décors.",
+          "description": "Neuf compagnons, voix et décors.",
           "displayName": "Collection de trois packs",
           "locale": "fr_FR"
         },
         {
-          "description": "Sechs Begleiter, Stimmen und drei Szenen.",
+          "description": "Neun Begleiter, Stimmen und Szenen.",
           "displayName": "Sammlung mit drei Paketen",
           "locale": "de_DE"
         }

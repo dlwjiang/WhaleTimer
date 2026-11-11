@@ -1,0 +1,108 @@
+{
+  "source": "ios/Design/maple-pixel-sheet.png",
+  "rows": 2,
+  "cols": 2,
+  "mode": "lines",
+  "all_separators_detected": true,
+  "x_bounds": [
+    [
+      0,
+      9
+    ],
+    [
+      618,
+      636
+    ],
+    [
+      1245,
+      1254
+    ]
+  ],
+  "y_bounds": [
+    [
+      0,
+      9
+    ],
+    [
+      618,
+      636
+    ],
+    [
+      1244,
+      1254
+    ]
+  ],
+  "cells": [
+    {
+      "row": 0,
+      "col": 0,
+      "box": [
+        15,
+        15,
+        612,
+        612
+      ],
+      "method": "native-alpha",
+      "name": "idle",
+      "file": "ios/Design/maple-pixel/idle.png",
+      "size": [
+        640,
+        640
+      ]
+    },
+    {
+      "row": 0,
+      "col": 1,
+      "box": [
+        642,
+        15,
+        1239,
+        612
+      ],
+      "method": "native-alpha",
+      "name": "focus",
+      "file": "ios/Design/maple-pixel/focus.png",
+      "size": [
+        640,
+        640
+      ]
+    },
+    {
+      "row": 1,
+      "col": 0,
+      "box": [
+        15,
+        642,
+        612,
+        1238
+      ],
+      "method": "native-alpha",
+      "name": "rest",
+      "file": "ios/Design/maple-pixel/rest.png",
+      "size": [
+        640,
+        640
+      ]
+    },
+    {
+      "row": 1,
+      "col": 1,
+      "box": [
+        642,
+        642,
+        1239,
+        1238
+      ],
+      "method": "native-alpha",
+      "name": "happy",
+      "file": "ios/Design/maple-pixel/happy.png",
+      "size": [
+        640,
+        640
+      ]
+    }
+  ],
+  "empty_cells": [],
+  "clipped_cells": [],
+  "contact_sheet": "ios/Design/maple-pixel/_contact.png"
+}

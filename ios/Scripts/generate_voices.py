@@ -65,12 +65,19 @@ def render(model, text, seed, *, reference=None, instruct=None, max_tokens=180):
     return None,seed
 
 def main():
+    global SOURCE, OUT
     parser=argparse.ArgumentParser()
-    parser.add_argument('--characters',default='mochi,pip,jun,bean,luna,atlas,nova,orbit')
+    parser.add_argument('--source-root',type=Path,default=SOURCE,help='Separate design workspace for auditioning replacement voices.')
+    parser.add_argument('--audio-root',type=Path,default=OUT,help='Separate encoded output directory; defaults to the bundled audio.')
+    parser.add_argument('--redesign-references',action='store_true',help='Regenerate selected references whose description changed.')
+    parser.add_argument('--references-only',action='store_true',help='Design reference voices without generating application cues.')
+    parser.add_argument('--characters',default='mochi,pip,pebble,jun,bean,maple,luna,atlas,wisp,nova,orbit,comet')
     parser.add_argument('--languages',default='en,zh-Hans,ja,ko,es,pt-BR,fr,de')
     parser.add_argument('--only',default='')
     parser.add_argument('--retake',type=int,default=0,help='New deterministic take for selected cues; selecting a digit regenerates the coherent five-number performance.')
     args=parser.parse_args()
+    SOURCE=args.source_root.resolve(); OUT=args.audio_root.resolve()
+    SOURCE.mkdir(parents=True,exist_ok=True)
     if args.retake and not args.only: parser.error('--retake requires --only to protect the rest of the library')
     if args.retake < 0: parser.error('--retake must be nonnegative')
     lines=json.loads((ROOT/'Localization/voice-lines.json').read_text())
@@ -84,16 +91,21 @@ def main():
     for character in args.characters.split(','):
         folder=SOURCE/character; folder.mkdir(exist_ok=True)
         reference=folder/'reference.wav'
-        if not reference.exists():
+        metadata=folder/'reference.json'
+        changed=reference.exists() and (not metadata.exists() or json.loads(metadata.read_text()).get('description')!=profiles[character])
+        if changed and not args.redesign_references:
+            raise SystemExit(f'{character}: profile differs from reference. Use --redesign-references or a separate --source-root to audition the new identity.')
+        if not reference.exists() or changed:
             seed=int(hashlib.sha256(character.encode()).hexdigest()[:8],16)
             started=time.monotonic()
             pcm,seed=render(model,REFERENCE,seed,instruct=profiles[character],max_tokens=350)
             if pcm is None:
-                print(f'NEEDS REVIEW: reference {character}',flush=True)
-                continue
+                raise SystemExit(f'NEEDS REVIEW: reference {character}; no cues generated from the previous identity.')
             sf.write(reference,pcm,sr,subtype='PCM_16')
             write(folder/'reference.json',{'model':MODEL.name,'text':REFERENCE,'description':profiles[character],'seed':seed,'seconds':len(pcm)/sr})
             print(f'REFERENCE {character} {len(pcm)/sr:.1f}s / {time.monotonic()-started:.1f}s compute',flush=True)
+        if args.references_only: continue
+        reference_digest=hashlib.sha256(reference.read_bytes()).hexdigest()
         for lang in args.languages.split(','):
             output=OUT/lang/character; output.mkdir(parents=True,exist_ok=True)
             source=folder/lang; source.mkdir(exist_ok=True)
@@ -102,14 +114,14 @@ def main():
                 write(manifest_path,manifest)
                 if not success: print(f'NEEDS REVIEW: countdown {lang}/{character}',flush=True)
                 mx.clear_cache()
-            for cue in ['go','pause','resume','reset','focusComplete','breakComplete','greeting']:
+            for cue in ['go','pause','resume','reset','focusComplete','breakComplete','greeting','poke']:
                 if args.only and cue not in args.only.split(','): continue
                 text=lines[lang][character if cue=='greeting' else cue]
                 key=f'{lang}/{character}/{cue}'
                 pronunciation=pronunciations.get(key,text)
                 spoken=pronunciation.get('text',text) if isinstance(pronunciation,dict) else pronunciation
                 instruction_override=pronunciation.get('instruct') if isinstance(pronunciation,dict) else None
-                fingerprint=hashlib.sha256((text+profiles[character]+MODEL.name+('spoken:'+spoken if spoken!=text else '')+('instruct:'+instruction_override if instruction_override else '')).encode()).hexdigest()
+                fingerprint=hashlib.sha256((text+profiles[character]+MODEL.name+('spoken:'+spoken if spoken!=text else '')+('instruct:'+instruction_override if instruction_override else '')+'reference:'+reference_digest).encode()).hexdigest()
                 dest=output/f'{cue}.m4a'; wav=source/f'{cue}.wav'
                 if not args.retake and manifest['clips'].get(key,{}).get('hash')==fingerprint and dest.exists(): continue
                 started=time.monotonic(); seed=(int(fingerprint[:8],16)+args.retake*1_000_003)&0xffffffff
@@ -123,13 +135,15 @@ def main():
                 sf.write(wav,pcm,sr,subtype='PCM_16')
                 duration=encode(wav,dest,cue.isdigit())
                 manifest['clips'][key]={'text':text,'hash':fingerprint,'seed':seed,'duration':round(duration,3),'sourceDuration':round(len(pcm)/sr,3),'bytes':dest.stat().st_size}
+                manifest['clips'][key]['referenceSHA256']=reference_digest
                 if spoken!=text:manifest['clips'][key]['spokenText']=spoken
                 if instruction_override:manifest['clips'][key]['instruction']=instruction_override
                 write(manifest_path,manifest)
                 print(f'{key} {duration:.2f}s / {time.monotonic()-started:.1f}s compute',flush=True)
                 mx.clear_cache()
-    wanted=args.only.split(',') if args.only else ['go','pause','resume','reset','focusComplete','breakComplete','1','2','3','4','5','greeting']
+    if args.references_only: return
+    wanted=args.only.split(',') if args.only else ['go','pause','resume','reset','focusComplete','breakComplete','1','2','3','4','5','greeting','poke']
     missing=[f'{lang}/{character}/{cue}' for character in args.characters.split(',') for lang in args.languages.split(',') for cue in wanted if f'{lang}/{character}/{cue}' not in manifest['clips']]
-    print(f'Generation finished: {len(manifest["clips"])}/768 clips. Run verify_release_resources.py before release.',flush=True)
+    print(f'Generation finished: {len(manifest["clips"])}/{len(profiles)*8*13} clips. Run verify_release_resources.py before release.',flush=True)
     if missing: raise SystemExit(f'{len(missing)} requested clips still need review: '+', '.join(missing))
 if __name__=='__main__': main()

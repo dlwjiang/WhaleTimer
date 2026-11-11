@@ -1,0 +1,96 @@
+{
+  "generator": "Built-in image_gen; no image API or CLI generation.",
+  "poseOrder": [
+    "idle",
+    "focus",
+    "rest",
+    "happy"
+  ],
+  "spriteCanvas": [
+    640,
+    640
+  ],
+  "sceneCanvas": [
+    1536,
+    1024
+  ],
+  "sceneBehavior": "Static illustrations with live speech and timer controls. Ledge fraction marks the bottom edge of the front border.",
+  "characters": {
+    "pebble": {
+      "pack": "free",
+      "ledgeFraction": 0.789,
+      "sceneMouth": [
+        0.47,
+        0.38
+      ],
+      "extractionManifest": "Design/pebble-pixel/manifest.json",
+      "files": {
+        "Design/pebble-pixel-sheet.png": "c999f99eee4d8809099fb996a866e44ce4dc125c8003c495546e54ca68ac2a85",
+        "Design/pebble-pixel-prompt.txt": "c4ca477645896f297005773066af7a887ceaff6b4c51eba08e69c3503a82fa27",
+        "Design/DuoConcepts/pebble-scene.png": "612130655730c43b896050335f75a7757e063a796b4d92281460aaa48e820a6a",
+        "Design/DuoConcepts/pebble-scene-prompt.txt": "0986828de1192a31a755652407f117a4d80958e15789a0d021e92df376bf1378",
+        "Design/pebble-pixel/idle.png": "00a8f43fcaa06474cdf153dafee8287e2b3c3c542371c12648bbfa45b628e6b2",
+        "Design/pebble-pixel/focus.png": "4238055635778a5317057e96a05026074a0f4dc5ec00eeb11f0a8973b902fb73",
+        "Design/pebble-pixel/rest.png": "a0c569360c6ea780409e149064815d7106fefb9508b31210ac5064de1ef7a7b1",
+        "Design/pebble-pixel/happy.png": "92c5754dd9471b7d749520607977c0df416c3fdfc8300091d119e9fd8cd9ccb6"
+      }
+    },
+    "maple": {
+      "pack": "midnightCafe",
+      "ledgeFraction": 0.784,
+      "sceneMouth": [
+        0.54,
+        0.36
+      ],
+      "extractionManifest": "Design/maple-pixel/manifest.json",
+      "files": {
+        "Design/maple-pixel-sheet.png": "e8a40d56172e48eb5530d8b9c3bcf243236ecd9609fe6c6c6aff0196f09d7867",
+        "Design/maple-pixel-prompt.txt": "99cb6c25b87cfe45153aade5c5a4d1bbbb782e2e483454d27b9406a99e884902",
+        "Design/DuoConcepts/maple-scene.png": "5dfef691014f6d06fa029b9fd086bfc35c4562fc7dbdb61762ec75900a425514",
+        "Design/DuoConcepts/maple-scene-prompt.txt": "9242543d1234355ac11b596307e3c3c0565d943fa5080cbd79adc2b252636afa",
+        "Design/maple-pixel/idle.png": "8c090958b24586d50ad009ca265fa678cbef30c34515a1c9e97d5b2c1d7e46b1",
+        "Design/maple-pixel/focus.png": "cf339e42b423719d4ab0e5eb02154b3dbabba1421ea1cde3673d50d19fb07580",
+        "Design/maple-pixel/rest.png": "c1898ff2b152229d78be5b9ced43babf81aab29fbe3121b5628a520381785a75",
+        "Design/maple-pixel/happy.png": "0c29e2ff2d509d919fe5a4e97fc69beaf7683b29ce625165de6515b85893333d"
+      }
+    },
+    "wisp": {
+      "pack": "moonlightAcademy",
+      "ledgeFraction": 0.786,
+      "sceneMouth": [
+        0.53,
+        0.42
+      ],
+      "extractionManifest": "Design/wisp-pixel/manifest.json",
+      "files": {
+        "Design/wisp-pixel-sheet.png": "1917aca2ae0747ea9eb905440d396a83d86ef85cd64f12406c9ae83e6dd0770c",
+        "Design/wisp-pixel-prompt.txt": "d31ce1bf67787f3e9a2c52fcd0759f4b5df485bdde00c5b25d0ada899a338390",
+        "Design/DuoConcepts/wisp-scene.png": "fdaf88fa97ac925387df2507c0b3d0f594ad386a91b8086d36d23c6c2de85d11",
+        "Design/DuoConcepts/wisp-scene-prompt.txt": "dd69ec2084f582c9c482ab2da7808cbcc78610e05e035fd25d513980aed233a0",
+        "Design/wisp-pixel/idle.png": "35fec5e6af90be592e38b2988d4842ba30cc2fe3de60a30360130662bcdd8b36",
+        "Design/wisp-pixel/focus.png": "f15524b2f5f7740202ae8c254501ec31270dacc3f46aa792efdfba1cd95a2282",
+        "Design/wisp-pixel/rest.png": "9562afa01330cfd8f3654cbb5c519459358dddc6d470a4dcae8c27e217ba491e",
+        "Design/wisp-pixel/happy.png": "ccf74aef7e98d2423de73eb221dc901ac18a8fbd912e037b61fcaa72f0627f6a"
+      }
+    },
+    "comet": {
+      "pack": "orbitalNightShift",
+      "ledgeFraction": 0.763,
+      "sceneMouth": [
+        0.51,
+        0.43
+      ],
+      "extractionManifest": "Design/comet-pixel/manifest.json",
+      "files": {
+        "Design/comet-pixel-sheet.png": "e3c4a6b85842c1c1979a45408129c9fdc04383e08e42cd65c48f1e00c1aa114f",
+        "Design/comet-pixel-prompt.txt": "0e76b783626e1001f8efde572e1a63a7f56e4844f04660c4e3b2ddbc85e9bd99",
+        "Design/DuoConcepts/comet-scene.png": "8e9fe3b6ad1c6d1b9958f92566b8bb4a3e9acbd8349aa893a6b97ad0ff4b1d4c",
+        "Design/DuoConcepts/comet-scene-prompt.txt": "f2df7885214119db8d673d501ddf5cdfef614d21eaa43580b0330fa8a73e0bef",
+        "Design/comet-pixel/idle.png": "cdc49718d11cb75446711589b6d0fd64d95e5d21be3205222075908e8d1b8ea1",
+        "Design/comet-pixel/focus.png": "a5e570d110cfad6adde37236a52c6a8679d54193438a90d4e40368729e9b59dc",
+        "Design/comet-pixel/rest.png": "5bd7bd88befa7babe6a1822f56aba60e39f0b353dbab66493ed646250e598a84",
+        "Design/comet-pixel/happy.png": "b7756ed2fa596142d99612410ee4a1be047af7faff8529616119eda4b082c727"
+      }
+    }
+  }
+}

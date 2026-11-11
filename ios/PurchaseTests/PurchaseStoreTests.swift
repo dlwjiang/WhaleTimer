@@ -29,7 +29,7 @@ final class PurchaseStoreTests: XCTestCase {
 
     func testProductsAndFreeAccess() {
         XCTAssertEqual(Set(purchases.products.keys), CompanionPack.productIDs)
-        XCTAssertEqual(purchases.availableCompanions, [.mochi, .pip])
+        XCTAssertEqual(purchases.availableCompanions, [.mochi, .pip, .pebble])
         for pack in CompanionPack.allCases {
             XCTAssertEqual(purchases.products[pack.productID]?.price, Decimal(string: "3.99"))
             XCTAssertEqual(purchases.products[pack.productID]?.type, .nonConsumable)
@@ -40,7 +40,7 @@ final class PurchaseStoreTests: XCTestCase {
     func testIndividualPurchaseRestoresWithoutDoubleCharging() async throws {
         let id = CompanionPack.midnightCafe.productID
         await purchases.purchase(id)
-        XCTAssertEqual(purchases.availableCompanions, [.mochi, .pip, .jun, .bean])
+        XCTAssertEqual(purchases.availableCompanions, [.mochi, .pip, .pebble, .jun, .bean, .maple])
         XCTAssertFalse(CompanionPack.shouldOfferCollection(owned: purchases.ownedProductIDs))
         let count = session.allTransactions().count
         await purchases.purchase(id)
@@ -50,7 +50,7 @@ final class PurchaseStoreTests: XCTestCase {
         await recreated.start()
         XCTAssertEqual(recreated.ownedProductIDs, [id])
         await recreated.restore()
-        XCTAssertEqual(recreated.availableCompanions, [.mochi, .pip, .jun, .bean])
+        XCTAssertEqual(recreated.availableCompanions, [.mochi, .pip, .pebble, .jun, .bean, .maple])
     }
 
     func testCollectionUnlocksAllAndRefundRemovesAccess() async throws {
@@ -77,7 +77,7 @@ final class PurchaseStoreTests: XCTestCase {
         XCTAssertEqual(study.session.status, .running)
         study.select(.atlas)
         XCTAssertEqual(study.companion, .mochi)
-        XCTAssertEqual(purchases.availableCompanions, [.mochi, .pip])
+        XCTAssertEqual(purchases.availableCompanions, [.mochi, .pip, .pebble])
         study.reset()
     }
 
@@ -85,20 +85,20 @@ final class PurchaseStoreTests: XCTestCase {
         session.askToBuyEnabled = true
         let id = CompanionPack.moonlightAcademy.productID
         await purchases.purchase(id)
-        XCTAssertEqual(purchases.availableCompanions, [.mochi, .pip])
+        XCTAssertEqual(purchases.availableCompanions, [.mochi, .pip, .pebble])
         XCTAssertTrue(purchases.pendingProductIDs.contains(id))
         XCTAssertTrue(purchases.isPendingConflict(CompanionPack.collectionProductID))
         let transaction = try XCTUnwrap(session.allTransactions().first)
         try session.approveAskToBuyTransaction(identifier: transaction.identifier)
         try await eventually { self.purchases.ownedProductIDs.contains(id) }
-        XCTAssertEqual(purchases.availableCompanions, [.mochi, .pip, .luna, .atlas])
+        XCTAssertEqual(purchases.availableCompanions, [.mochi, .pip, .pebble, .luna, .atlas, .wisp])
         XCTAssertFalse(purchases.pendingProductIDs.contains(id))
     }
 
     func testFailedAndCancelledPurchasesNeverGrantAccess() async throws {
         try await session.setSimulatedError(.generic(.userCancelled), forAPI: .purchase)
         await purchases.purchase(CompanionPack.orbitalNightShift.productID)
-        XCTAssertEqual(purchases.availableCompanions, [.mochi, .pip])
+        XCTAssertEqual(purchases.availableCompanions, [.mochi, .pip, .pebble])
         XCTAssertFalse(purchases.isBusy)
         try await session.setSimulatedError(.generic(.notAvailableInStorefront), forAPI: .purchase)
         await purchases.purchase(CompanionPack.orbitalNightShift.productID)
@@ -110,7 +110,7 @@ final class PurchaseStoreTests: XCTestCase {
     func testUnverifiedPurchaseNeverGrantsAccess() async throws {
         try await session.setSimulatedError(.verification(.invalidSignature), forAPI: .verification)
         await purchases.purchase(CompanionPack.midnightCafe.productID)
-        XCTAssertEqual(purchases.availableCompanions, [.mochi, .pip])
+        XCTAssertEqual(purchases.availableCompanions, [.mochi, .pip, .pebble])
         XCTAssertNotNil(purchases.message)
     }
 

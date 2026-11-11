@@ -1,0 +1,108 @@
+{
+  "source": "ios/Design/wisp-pixel-sheet.png",
+  "rows": 2,
+  "cols": 2,
+  "mode": "lines",
+  "all_separators_detected": true,
+  "x_bounds": [
+    [
+      0,
+      11
+    ],
+    [
+      620,
+      635
+    ],
+    [
+      1243,
+      1254
+    ]
+  ],
+  "y_bounds": [
+    [
+      0,
+      7
+    ],
+    [
+      617,
+      630
+    ],
+    [
+      1241,
+      1254
+    ]
+  ],
+  "cells": [
+    {
+      "row": 0,
+      "col": 0,
+      "box": [
+        17,
+        13,
+        614,
+        611
+      ],
+      "method": "native-alpha",
+      "name": "idle",
+      "file": "ios/Design/wisp-pixel/idle.png",
+      "size": [
+        640,
+        640
+      ]
+    },
+    {
+      "row": 0,
+      "col": 1,
+      "box": [
+        641,
+        13,
+        1237,
+        611
+      ],
+      "method": "native-alpha",
+      "name": "focus",
+      "file": "ios/Design/wisp-pixel/focus.png",
+      "size": [
+        640,
+        640
+      ]
+    },
+    {
+      "row": 1,
+      "col": 0,
+      "box": [
+        17,
+        636,
+        614,
+        1235
+      ],
+      "method": "native-alpha",
+      "name": "rest",
+      "file": "ios/Design/wisp-pixel/rest.png",
+      "size": [
+        640,
+        640
+      ]
+    },
+    {
+      "row": 1,
+      "col": 1,
+      "box": [
+        641,
+        636,
+        1237,
+        1235
+      ],
+      "method": "native-alpha",
+      "name": "happy",
+      "file": "ios/Design/wisp-pixel/happy.png",
+      "size": [
+        640,
+        640
+      ]
+    }
+  ],
+  "empty_cells": [],
+  "clipped_cells": [],
+  "contact_sheet": "ios/Design/wisp-pixel/_contact.png"
+}

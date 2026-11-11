@@ -1,0 +1,1 @@
+Layered Duo assets: native imagegen source outputs, prompts and inspection metadata. Character sprite sheets use two equal horizontal cells: idle and poked. Room assets contain no characters. Original flattened scenes remain as references until replacements are verified.

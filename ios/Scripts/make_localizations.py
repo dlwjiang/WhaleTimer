@@ -28,7 +28,7 @@ strings['app.name']={'extractionState':'manual','localizations':name_localizatio
 info_strings={key:{'extractionState':'manual','localizations':name_localizations} for key in ['CFBundleDisplayName','CFBundleName']}
 (root/'Banke/InfoPlist.xcstrings').write_text(json.dumps({'sourceLanguage':'en','strings':info_strings,'version':'1.0'},ensure_ascii=False,indent=2)+'\n')
 for cue in voices['en']:
-    key='voice.'+('greeting.'+cue if cue in ['mochi','pip','jun','bean','luna','atlas','nova','orbit'] else cue)
+    key='voice.'+('greeting.'+cue if cue in ['mochi','pip','pebble','jun','bean','maple','luna','atlas','wisp','nova','orbit','comet'] else cue)
     strings[key]={'extractionState':'manual','localizations':{lang:{'stringUnit':{'state':'translated','value':voices[lang][cue]}} for lang in languages}}
 (root/'Banke/Localizable.xcstrings').write_text(json.dumps({'sourceLanguage':'en','strings':strings,'version':'1.0'},ensure_ascii=False,indent=2)+'\n')
 print(f'{len(strings)} keys × {len(languages)} languages')

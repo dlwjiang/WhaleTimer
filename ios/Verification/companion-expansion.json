@@ -1,0 +1,79 @@
+{
+  "status": "Integrated and verified; simulator build installed with tabletop preview.",
+  "newCompanions": {
+    "pebble": "Free",
+    "maple": "Midnight Café",
+    "wisp": "Moonlight Academy",
+    "comet": "Orbital Night Shift"
+  },
+  "art": {
+    "newPoses": 16,
+    "newDuoScenes": 4,
+    "spriteCanvas": [
+      640,
+      640
+    ],
+    "nativeTransparency": true,
+    "emptyOrClippedCells": 0,
+    "sceneCanvas": [
+      1536,
+      1024
+    ],
+    "provenance": "../Design/companion-expansion.json"
+  },
+  "localization": {
+    "UIKeys": 159,
+    "UILanguages": 9,
+    "spokenLanguages": 8
+  },
+  "commerce": {
+    "unchangedProductIDs": true,
+    "existingOwnersReceiveAddedCompanion": true,
+    "coreTestsPassed": 24,
+    "localStoreKitTestsPassed": 7,
+    "hostedExperienceTestsPassed": 15,
+    "focusedDuoTestsPassed": 3
+  },
+  "audioRetakeReview": {
+    "zh-Hans/pebble/greeting": "Simplify the Chinese greeting for clear delivery; both Chinese captions updated.",
+    "zh-Hans/maple/pause": "Speech diagnostic recognized the opening verb incorrectly; retake.",
+    "zh-Hans/maple/greeting": "Simplified the bakery greeting after a second ambiguous diagnostic; Chinese captions updated together.",
+    "ko/maple/focusComplete": "Speech diagnostic differs materially from the scripted encouragement; retake.",
+    "fr/maple/greeting": "Used a simpler, natural French bakery encouragement after the diagnostic remained ambiguous.",
+    "fr/maple/pause": "Speech diagnostic differs materially from the scripted pause cue; retake with explicit French instruction.",
+    "es/wisp/pause": "Speech diagnostic differs from the scripted pause cue; retake with explicit Spanish instruction.",
+    "fr/wisp/pause": "Speech diagnostic differs from the scripted pause cue; retake with explicit French instruction.",
+    "fr/wisp/resume": "Short French resume phrase was not recognized; retake with explicit language instruction.",
+    "ko/wisp/focusComplete": "Completion phrase ended with the wrong word in diagnostics; retake with explicit Korean instruction.",
+    "ja/comet/pause": "Diagnostic differs from the opening words; retake with explicit Japanese instruction.",
+    "ja/comet/focusComplete": "Diagnostic includes extra laughter before the cue; retake for a clean short phrase.",
+    "fr/wisp/greeting": "Additional diagnostic flag; retake with explicit target-language instruction.",
+    "de/wisp/go": "Additional diagnostic flag; retake with explicit target-language instruction.",
+    "fr/comet/reset": "Additional diagnostic flag; retake with explicit target-language instruction."
+  },
+  "limitations": [
+    "Native-speaker pronunciation and acting review remains a release check.",
+    "Duo scenes are static paintings with live speech and timer controls."
+  ],
+  "audio": {
+    "totalClips": 1152,
+    "addedClips": 384,
+    "encodedCountdownsVerified": 96,
+    "transcriptHashesCurrent": 1152,
+    "remainingNewDiagnosticFlags": {
+      "ja/maple/focusComplete": "Kanji versus kana spelling of the same phrase.",
+      "zh-Hans/wisp/focusComplete": "Homophone spelling differences; native-speaker listening remains required."
+    },
+    "fullDecodeCheckPassed": true,
+    "simulatorBundleHashesCurrent": 1152
+  },
+  "verificationLogs": [
+    "/tmp/banke-expanded-core-tests.log",
+    "/tmp/banke-expansion-purchases.log",
+    "/tmp/banke-expansion-experience-final.log",
+    "/tmp/banke-expansion-duo-final.log",
+    "/tmp/banke-expansion-countdowns-final.log",
+    "/tmp/banke-expansion-resources-complete.log",
+    "/tmp/banke-expansion-build.log"
+  ]
+}

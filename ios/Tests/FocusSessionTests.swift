@@ -44,6 +44,21 @@ private let start = Date(timeIntervalSince1970: 1_800_000_000)
     #expect(session.remaining == 1299)
 }
 
+@Test func halfSecondRefreshesAdvanceDisplayedSecondsAtRealTimeRate() {
+    var session = FocusSession()
+    session.start(at: start)
+    // The UI polls twice a second, at an arbitrary offset from session start.
+    for sample in 0..<120 {
+        let elapsed = 0.125 + Double(sample) * 0.5
+        session.reconcile(at: start.addingTimeInterval(elapsed))
+        #expect(Int(ceil(session.remaining)) == 1500 - Int(floor(elapsed)))
+        #expect(session.deadline == start.addingTimeInterval(1500))
+    }
+    // Delayed rendering catches up to the deadline without replaying UI ticks.
+    session.reconcile(at: start.addingTimeInterval(73.25))
+    #expect(Int(ceil(session.remaining)) == 1427)
+}
+
 @Test func fourCompletedFocusSessionsEarnLongBreak() {
     var state = StudyState()
     for cycle in 1...4 {

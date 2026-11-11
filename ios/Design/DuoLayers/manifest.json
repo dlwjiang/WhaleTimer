@@ -1,0 +1,215 @@
+{
+  "generator": "Built-in imagegen",
+  "assets": {
+    "atlas": {
+      "source": "atlas-poses.png",
+      "sha256": "352fa9dd69412854fd64a522861640cda668ad5832f64b685ce28a25e8ea9a72",
+      "size": [
+        2172,
+        724
+      ],
+      "frames": [
+        "idle",
+        "poked"
+      ],
+      "alphaInspectedOnWhite": true
+    },
+    "bean": {
+      "source": "bean-poses.png",
+      "sha256": "bc6d38bd4ec3ecfd57be76d3727ba31b210cbb7a179c9d8820c96ebab995751e",
+      "size": [
+        2172,
+        724
+      ],
+      "frames": [
+        "idle",
+        "poked"
+      ],
+      "alphaInspectedOnWhite": true
+    },
+    "comet": {
+      "source": "comet-poses.png",
+      "sha256": "4b401ba02eafb8cf435ef3d4405a2bfd5b1e0474279de64d7d66fc9de9b71cdf",
+      "size": [
+        2172,
+        724
+      ],
+      "frames": [
+        "idle",
+        "poked"
+      ],
+      "alphaInspectedOnWhite": true
+    },
+    "jun": {
+      "source": "jun-poses.png",
+      "sha256": "37aa05907c81e5007b65ceef387fa2373df9f58e63ea2693dd580b00d08aaa09",
+      "size": [
+        2172,
+        724
+      ],
+      "frames": [
+        "idle",
+        "poked"
+      ],
+      "alphaInspectedOnWhite": true
+    },
+    "luna": {
+      "source": "luna-poses.png",
+      "sha256": "5b7b2d8088438ec5a21bd6ac3b55cff0223c42da6b32dddd2f5971b5a0a868fc",
+      "size": [
+        2172,
+        724
+      ],
+      "frames": [
+        "idle",
+        "poked"
+      ],
+      "alphaInspectedOnWhite": true
+    },
+    "maple": {
+      "source": "maple-poses.png",
+      "sha256": "917cf8600880b51ee376ac8730851b194f87e432a0b25082b89821e0bac06bfb",
+      "size": [
+        2172,
+        724
+      ],
+      "frames": [
+        "idle",
+        "poked"
+      ],
+      "alphaInspectedOnWhite": true
+    },
+    "mochi": {
+      "source": "mochi-poses.png",
+      "sha256": "acfd397ff1fcdbd31c2f60eeafa1aebf5f9873a176909bd7d247190e3771af29",
+      "size": [
+        2172,
+        724
+      ],
+      "frames": [
+        "idle",
+        "poked"
+      ],
+      "alphaInspectedOnWhite": true
+    },
+    "nova": {
+      "source": "nova-poses.png",
+      "sha256": "fc3435fa04feb87acedfd704c0e611e63541ca82a7cc213602c788c5db08a8c4",
+      "size": [
+        2172,
+        724
+      ],
+      "frames": [
+        "idle",
+        "poked"
+      ],
+      "alphaInspectedOnWhite": true
+    },
+    "orbit": {
+      "source": "orbit-poses.png",
+      "sha256": "ac8732aa16be3503e309156654c992655fa2c94d49eadf5ecf2f11c1de72c997",
+      "size": [
+        2172,
+        724
+      ],
+      "frames": [
+        "idle",
+        "poked"
+      ],
+      "alphaInspectedOnWhite": true
+    },
+    "pebble": {
+      "source": "pebble-poses-clean.png",
+      "sha256": "405ddc33417c51b644f2fccc50bb610607b470e7ae5bd77c4b0ca75ce19aaffa",
+      "size": [
+        2172,
+        724
+      ],
+      "frames": [
+        "idle",
+        "poked"
+      ],
+      "alphaInspectedOnWhite": true
+    },
+    "pip": {
+      "source": "pip-poses.png",
+      "sha256": "7092d12e06ef30a7cef77703ce667217d07d35dffdbc677864c62f59b8805e87",
+      "size": [
+        2172,
+        724
+      ],
+      "frames": [
+        "idle",
+        "poked"
+      ],
+      "alphaInspectedOnWhite": true
+    },
+    "wisp": {
+      "source": "wisp-poses-clean.png",
+      "sha256": "ab8bca0c357aed39fb02094986b89c3add67e86e1f71fdacb23f62d739d402dc",
+      "size": [
+        1536,
+        1024
+      ],
+      "frames": [
+        "idle",
+        "poked"
+      ],
+      "alphaInspectedOnWhite": true
+    },
+    "room-academy": {
+      "source": "room-academy.png",
+      "sha256": "347adfa2400c880f1f170f9980d1de4f6f34ca08af11c4d4eff3e5b789d2cdef",
+      "size": [
+        1536,
+        1024
+      ],
+      "charactersRemovedInspected": true
+    },
+    "room-cafe": {
+      "source": "room-cafe.png",
+      "sha256": "bd76df5774d0f2168ee0b5dd82fb94961cb2f75cdd1349715d3e9676f7a4b567",
+      "size": [
+        1536,
+        1024
+      ],
+      "charactersRemovedInspected": true
+    },
+    "room-orbit": {
+      "source": "room-orbit.png",
+      "sha256": "0f85e2c48f7a14bf0f6cd8124a15d8aa00201980bc91c170648bf211b6d77a54",
+      "size": [
+        1536,
+        1024
+      ],
+      "charactersRemovedInspected": true
+    },
+    "room-river": {
+      "source": "room-river.png",
+      "sha256": "33ea434c2652eebc8db592b84f275962521e85d17a5e717991f6d059372e3060",
+      "size": [
+        1536,
+        1024
+      ],
+      "charactersRemovedInspected": true
+    },
+    "room-study": {
+      "source": "room-study.png",
+      "sha256": "d9e10da0787b89acd48b68ed3ea51e073d68cfadff013b1ab84ee3ba779be60b",
+      "size": [
+        1536,
+        1024
+      ],
+      "charactersRemovedInspected": true
+    },
+    "room-window": {
+      "source": "room-window.png",
+      "sha256": "885493c882bae569204dd64333f508330139ee016435e7d9a91f074d606a7ed2",
+      "size": [
+        1536,
+        1024
+      ],
+      "charactersRemovedInspected": true
+    }
+  }
+}

@@ -145,7 +145,7 @@ final class StudyStore: ObservableObject {
 
     func greet() {
         guard session.status != .preparing else { return }
-        audio.say("greeting", companion: companion, audible: audibleVoice)
+        audio.say("poke", companion: companion, audible: audibleVoice)
     }
     func previewVoice(_ companion: Companion) {
         guard session.status != .preparing else { return }

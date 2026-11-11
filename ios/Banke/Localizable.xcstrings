@@ -355,120 +355,120 @@
         }
       }
     },
-    "%@ · Voices, poses and scene.": {
+    "Three companions, poses, voices and scenes.": {
       "extractionState": "manual",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "%@ · Voices, poses and scene."
+            "value": "Three companions, poses, voices and scenes."
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "%@ · 音声、ポーズ、背景。"
+            "value": "おとも3人、ポーズ、音声、背景。"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "%@ · 목소리, 포즈, 배경."
+            "value": "친구 3명, 포즈, 목소리와 배경."
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "%@ · 语音、动作与场景。"
+            "value": "三位伙伴、动作、语音与场景。"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "%@ · 語音、動作與場景。"
+            "value": "三位夥伴、動作、語音與場景。"
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "%@ · Voces, poses y escenario."
+            "value": "Tres compañeros, poses, voces y escenarios."
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "%@ · Vozes, poses e cenário."
+            "value": "Três companheiros, poses, vozes e cenários."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "%@ · Voix, poses et décor."
+            "value": "Trois compagnons, poses, voix et décors."
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "%@ · Stimmen, Posen und Szene."
+            "value": "Drei Begleiter, Posen, Stimmen und Szenen."
           }
         }
       }
     },
-    "Six companions, voices and three scenes.": {
+    "Nine companions, voices and scenes.": {
       "extractionState": "manual",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Six companions, voices and three scenes."
+            "value": "Nine companions, voices and scenes."
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "6人のおとも、音声、3つの背景。"
+            "value": "おとも9人、音声、背景。"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "친구 6명, 목소리와 배경 3개."
+            "value": "친구 9명, 목소리와 배경."
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "六位伙伴、专属语音与三个场景。"
+            "value": "九位伙伴、语音与场景。"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "六位夥伴、專屬語音與三個場景。"
+            "value": "九位夥伴、語音與場景。"
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Seis compañeros, voces y tres escenarios."
+            "value": "Nueve compañeros, voces y escenarios."
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Seis companheiros, vozes e três cenários."
+            "value": "Nove companheiros, vozes e cenários."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Six compagnons, voix et trois décors."
+            "value": "Neuf compagnons, voix et décors."
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Sechs Begleiter, Stimmen und drei Szenen."
+            "value": "Neun Begleiter, Stimmen und Szenen."
           }
         }
       }
@@ -1830,61 +1830,61 @@
         }
       }
     },
-    "2 companions · Voices · 1 scene": {
+    "3 companions · Voices · Scenes": {
       "extractionState": "manual",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "2 companions · Voices · 1 scene"
+            "value": "3 companions · Voices · Scenes"
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "おとも2人 · 音声 · 背景1つ"
+            "value": "おとも3人 · 音声 · 背景"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "친구 2명 · 목소리 · 배경 1개"
+            "value": "친구 3명 · 목소리 · 배경"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "2 位伙伴 · 专属语音 · 1 个场景"
+            "value": "3 位伙伴 · 专属语音 · 场景"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "2 位夥伴 · 專屬語音 · 1 個場景"
+            "value": "3 位夥伴 · 專屬語音 · 場景"
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "2 compañeros · Voces · 1 escenario"
+            "value": "3 compañeros · Voces · Escenarios"
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "2 companheiros · Vozes · 1 cenário"
+            "value": "3 companheiros · Vozes · Cenários"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "2 compagnons · Voix · 1 décor"
+            "value": "3 compagnons · Voix · Décors"
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "2 Begleiter · Stimmen · 1 Szene"
+            "value": "3 Begleiter · Stimmen · Szenen"
           }
         }
       }
@@ -2125,61 +2125,61 @@
         }
       }
     },
-    "All six companions and three scenes shown here. Future packs are not included.": {
+    "All nine paid companions and their scenes. Future packs are not included.": {
       "extractionState": "manual",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "All six companions and three scenes shown here. Future packs are not included."
+            "value": "All nine paid companions and their scenes. Future packs are not included."
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "ここにある6人のおともと3つの背景が含まれます。今後のパックは含まれません。"
+            "value": "有料のおとも9人とその背景が含まれます。今後のパックは含まれません。"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "여기 있는 친구 6명과 배경 3개가 모두 포함돼요. 향후 출시 팩은 포함되지 않아요."
+            "value": "유료 친구 9명과 해당 배경이 모두 포함돼요. 향후 출시 팩은 포함되지 않아요."
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "包含这里的六位伙伴和三个场景，不含未来推出的伙伴包。"
+            "value": "包含全部九位付费伙伴及其场景，不含未来推出的伙伴包。"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "包含這裡的六位夥伴和三個場景，不含未來推出的夥伴包。"
+            "value": "包含全部九位付費夥伴及其場景，不含未來推出的夥伴包。"
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Los seis compañeros y tres escenarios de aquí. No incluye packs futuros."
+            "value": "Los nueve compañeros de pago y sus escenarios. No incluye packs futuros."
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Os seis companheiros e três cenários mostrados aqui. Não inclui pacotes futuros."
+            "value": "Os nove companheiros pagos e seus cenários. Não inclui pacotes futuros."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Les six compagnons et trois décors présentés ici. Les futurs packs ne sont pas inclus."
+            "value": "Les neuf compagnons payants et leurs décors. Les futurs packs ne sont pas inclus."
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Alle sechs Begleiter und drei gezeigten Szenen. Zukünftige Pakete sind nicht enthalten."
+            "value": "Alle neun kostenpflichtigen Begleiter und ihre Szenen. Zukünftige Pakete sind nicht enthalten."
           }
         }
       }
@@ -2774,61 +2774,61 @@
         }
       }
     },
-    "Mochi, Pip, the timer, and all languages are free.": {
+    "Mochi, Pip, Pebble, the timer, and all languages are free.": {
       "extractionState": "manual",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Mochi, Pip, the timer, and all languages are free."
+            "value": "Mochi, Pip, Pebble, the timer, and all languages are free."
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "Mochi、Pip、タイマー、すべての言語は無料です。"
+            "value": "Mochi、Pip、Pebble、タイマー、すべての言語は無料です。"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "Mochi, Pip, 타이머와 모든 언어는 무료예요."
+            "value": "Mochi, Pip, Pebble, 타이머와 모든 언어는 무료예요."
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "Mochi、Pip、计时功能和所有语言均免费。"
+            "value": "Mochi、Pip、Pebble、计时功能和所有语言均免费。"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "Mochi、Pip、計時功能和所有語言均免費。"
+            "value": "Mochi、Pip、Pebble、計時功能和所有語言均免費。"
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Mochi, Pip, el temporizador y todos los idiomas son gratis."
+            "value": "Mochi, Pip, Pebble, el temporizador y todos los idiomas son gratis."
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Mochi, Pip, o timer e todos os idiomas são gratuitos."
+            "value": "Mochi, Pip, Pebble, o timer e todos os idiomas são gratuitos."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Mochi, Pip, le minuteur et toutes les langues sont gratuits."
+            "value": "Mochi, Pip, Pebble, le minuteur et toutes les langues sont gratuits."
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Mochi, Pip, der Timer und alle Sprachen sind kostenlos."
+            "value": "Mochi, Pip, Pebble, der Timer und alle Sprachen sind kostenlos."
           }
         }
       }
@@ -2951,61 +2951,61 @@
         }
       }
     },
-    "Both companions, four poses each, all voice languages, scene and timer colors. No subscription.": {
+    "Three companions, four poses each, all voice languages, scenes and timer colors. No subscription.": {
       "extractionState": "manual",
       "localizations": {
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Both companions, four poses each, all voice languages, scene and timer colors. No subscription."
+            "value": "Three companions, four poses each, all voice languages, scenes and timer colors. No subscription."
           }
         },
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "おとも2人、各4ポーズ、全言語の音声、背景、タイマーの配色。サブスクなし。"
+            "value": "おとも3人、各4ポーズ、全言語の音声、背景、タイマーの配色。サブスクなし。"
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "친구 2명, 각각 포즈 4개, 모든 언어의 목소리, 배경과 타이머 색상. 구독 없음."
+            "value": "친구 3명, 각각 포즈 4개, 모든 언어의 목소리, 배경과 타이머 색상. 구독 없음."
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "两位伙伴各四种动作、所有语言语音、场景和计时配色。无需订阅。"
+            "value": "三位伙伴各四种动作、所有语言语音、场景和计时配色。无需订阅。"
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "兩位夥伴各四種動作、所有語言語音、場景和計時配色。無需訂閱。"
+            "value": "三位夥伴各四種動作、所有語言語音、場景和計時配色。無需訂閱。"
           }
         },
         "es": {
           "stringUnit": {
             "state": "translated",
-            "value": "Ambos compañeros, cuatro poses cada uno, voces en todos los idiomas, escenario y colores. Sin suscripción."
+            "value": "Tres compañeros, cuatro poses cada uno, voces en todos los idiomas, escenarios y colores. Sin suscripción."
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Dois companheiros, quatro poses cada, vozes em todos os idiomas, cenário e cores. Sem assinatura."
+            "value": "Três companheiros, quatro poses cada, vozes em todos os idiomas, cenários e cores. Sem assinatura."
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Deux compagnons, quatre poses chacun, toutes les langues vocales, décor et couleurs. Sans abonnement."
+            "value": "Trois compagnons, quatre poses chacun, toutes les langues vocales, décors et couleurs. Sans abonnement."
           }
         },
         "de": {
           "stringUnit": {
             "state": "translated",
-            "value": "Beide Begleiter mit je vier Posen, allen Sprachversionen, Szene und Timerfarben. Kein Abo."
+            "value": "Drei Begleiter mit je vier Posen, allen Sprachversionen, Szenen und Timerfarben. Kein Abo."
           }
         }
       }
@@ -3124,6 +3124,242 @@
           "stringUnit": {
             "state": "translated",
             "value": "Derzeit nicht verfügbar"
+          }
+        }
+      }
+    },
+    "Your gentle river otter": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your gentle river otter"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "おだやかなカワウソのおとも"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "다정한 강가의 수달 친구"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "温柔的河獭伙伴"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "溫柔的河獺夥伴"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tu dulce nutria de río"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sua doce lontrinha do rio"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ta douce loutre de rivière"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dein sanfter Flussotter"
+          }
+        }
+      }
+    },
+    "Your red-panda baker": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your red-panda baker"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "レッサーパンダのパン屋さん"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "레서판다 제빵사 친구"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "你的小熊猫面包师"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "你的小熊貓麵包師"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tu panda rojo panadero"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Seu panda-vermelho padeiro"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ton panda roux boulanger"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dein Roter-Panda-Bäcker"
+          }
+        }
+      }
+    },
+    "Your little moth librarian": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your little moth librarian"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "図書館の小さな蛾のおとも"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "도서관의 작은 나방 사서"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "你的小飞蛾图书管理员"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "你的小飛蛾圖書管理員"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tu polillita bibliotecaria"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sua mariposinha bibliotecária"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ton petit papillon de nuit bibliothécaire"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dein kleiner Nachtfalter aus der Bibliothek"
+          }
+        }
+      }
+    },
+    "Your space courier": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your space courier"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "宇宙の配達屋さん"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "우주 배달부 친구"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "你的太空快递员"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "你的太空快遞員"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tu mensajero espacial"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Seu entregador espacial"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ton coursier de l’espace"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dein Weltraumkurier"
           }
         }
       }
@@ -8906,6 +9142,301 @@
           "stringUnit": {
             "state": "translated",
             "value": "Du bist auf deiner Mission nicht allein."
+          }
+        }
+      }
+    },
+    "voice.greeting.pebble": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "One little ripple at a time."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "小さな波紋を、ひとつずつ。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "작은 물결 하나씩, 천천히."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "慢慢来，我陪着你。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "慢慢來，我陪著你。"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una pequeña onda cada vez."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uma ondinha de cada vez."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Une petite vague à la fois."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eine kleine Welle nach der anderen."
+          }
+        }
+      }
+    },
+    "voice.greeting.maple": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A little focus, fresh from the oven."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "焼きたての元気で、少しずつ。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "갓 구운 응원과 함께 집중해 보자."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "新鲜面包出炉啦，一起加油吧。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "新鮮麵包出爐啦，一起加油吧。"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un poco de ánimo, recién salido del horno."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Um pouquinho de ânimo, saindo do forno."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Une petite douceur pour te donner du courage."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eine kleine Portion Mut, frisch aus dem Ofen."
+          }
+        }
+      }
+    },
+    "voice.greeting.wisp": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Let’s find a little light together."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "一緒に、小さな光を見つけよう。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "함께 작은 빛을 찾아보자."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "我们一起，找一点小小的光。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "我們一起，找一點小小的光。"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Busquemos un poquito de luz juntos."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Vamos encontrar um pouquinho de luz juntos."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trouvons une petite lumière ensemble."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Finden wir gemeinsam ein kleines Licht."
+          }
+        }
+      }
+    },
+    "voice.greeting.comet": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "One small delivery. One big adventure."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "小さなお届けものから、大きな冒険へ。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "작은 배달 하나가 큰 모험이 돼."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "送出一个小包裹，开启一场大冒险。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "送出一個小包裹，開啟一場大冒險。"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una pequeña entrega. Una gran aventura."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uma pequena entrega. Uma grande aventura."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Une petite livraison. Une grande aventure."
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eine kleine Lieferung. Ein großes Abenteuer."
+          }
+        }
+      }
+    },
+    "voice.poke": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oh! You found me!"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "あっ、見つかっちゃった！"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "앗, 나 찾았네!"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "呀，被你发现啦！"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "呀，被你發現啦！"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¡Hola! ¡Me encontraste!"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oi! Você me achou!"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oh ! Bonjour !"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Huch! Da bist du ja!"
           }
         }
       }

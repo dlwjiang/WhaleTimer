@@ -25,6 +25,17 @@ final class ReleaseExperienceTests: XCTestCase {
         defaults = nil
     }
 
+    /// Await the state transition instead of assuming a busy simulator schedules
+    /// every countdown task within 400 ms of its ideal three-second duration.
+    private func waitForFocusStart() async throws {
+        let timeout = ContinuousClock.now.advanced(by: .seconds(10))
+        while study.session.status == .preparing, ContinuousClock.now < timeout {
+            try await Task.sleep(for: .milliseconds(50))
+        }
+        XCTAssertEqual(study.session.status, .running)
+        XCTAssertNotNil(study.session.deadline)
+    }
+
     func testIdlePollingDoesNotPublishUnchangedState() {
         var publications = 0
         let subscription = study.objectWillChange.sink { publications += 1 }
@@ -108,7 +119,7 @@ final class ReleaseExperienceTests: XCTestCase {
         study.primaryAction()
         study.primaryAction() // Interrupt opening.
         study.primaryAction() // The unfinished opening must replay before timing starts.
-        try await Task.sleep(for: .milliseconds(3400))
+        try await waitForFocusStart()
         let deadline = study.session.deadline
         XCTAssertNotNil(deadline)
         study.select(.pip)
@@ -131,7 +142,7 @@ final class ReleaseExperienceTests: XCTestCase {
         study.primaryAction()
         XCTAssertEqual(study.session.status, .preparing)
         XCTAssertNil(study.session.deadline)
-        try await Task.sleep(for: .milliseconds(3400))
+        try await waitForFocusStart()
         XCTAssertEqual(study.session.status, .running)
         XCTAssertNotNil(study.session.deadline)
     }
@@ -209,8 +220,24 @@ final class ReleaseExperienceTests: XCTestCase {
         }
     }
 
+    func testEveryCompanionHasAllPosesAndLocalizedGreeting() throws {
+        for companion in Companion.allCases {
+            for pose in ["idle", "focus", "rest", "happy"] {
+                let image = try XCTUnwrap(UIImage(named: "\(companion.rawValue)-\(pose)"))
+                XCTAssertEqual(image.size.width, image.size.height)
+                XCTAssertGreaterThan(image.size.width, 0)
+            }
+            for language in AppLanguage.allCases {
+                let key = "voice.greeting.\(companion.rawValue)"
+                let text = L10n.translate(key, language: language)
+                XCTAssertFalse(text.isEmpty)
+                XCTAssertNotEqual(text, key)
+            }
+        }
+    }
+
     func testCompleteOfflineVoiceLibraryIsBundledAndFitsCountdownBeats() async throws {
-        let cues = ["go", "pause", "resume", "reset", "focusComplete", "breakComplete", "1", "2", "3", "4", "5", "greeting"]
+        let cues = ["go", "pause", "resume", "reset", "focusComplete", "breakComplete", "1", "2", "3", "4", "5", "greeting", "poke"]
         let languages = Set(AppLanguage.allCases.map(\.voiceDirectory))
         var verified = 0
         for language in languages {
@@ -227,7 +254,7 @@ final class ReleaseExperienceTests: XCTestCase {
                 }
             }
         }
-        XCTAssertEqual(verified, 768)
+        XCTAssertEqual(verified, 1248)
     }
 
     func testLiveTextSizeChangesThroughTimerCompletionPreserveSession() async throws {
@@ -243,7 +270,7 @@ final class ReleaseExperienceTests: XCTestCase {
         window.makeKeyAndVisible()
         defer { window.isHidden = true; previousWindow?.makeKey() }
         study.primaryAction()
-        try await Task.sleep(for: .milliseconds(3400))
+        try await waitForFocusStart()
         let deadline = try XCTUnwrap(study.session.deadline)
         for size in [DynamicTypeSize.xxxLarge, .accessibility1, .accessibility2,
                      .accessibility3, .accessibility4, .accessibility5, .large] {
@@ -262,6 +289,89 @@ final class ReleaseExperienceTests: XCTestCase {
         XCTAssertEqual(study.state.completedInCycle, 1)
         XCTAssertEqual(study.companion, .mochi)
     }
+
+    func testTabletopTimerFitsItsPaneAtStandardTextSize() {
+        for size in [CGSize(width: 760, height: 860), CGSize(width: 760, height: 1000),
+                     CGSize(width: 900, height: 1100)] {
+            for companion in Companion.free {
+                let division = CGRect(x: 0, y: size.height * 0.47, width: size.width, height: 16)
+                let layout = TabletopSceneLayout(size: size, division: division, companion: companion)
+                let host = UIHostingController(rootView:
+                    TimerPanel(compact: true, clockHeight: layout.clockHeight(width: size.width))
+                        .fixedSize(horizontal: false, vertical: true)
+                        .environment(\.dynamicTypeSize, .large)
+                        .environmentObject(study))
+                let measured = host.sizeThatFits(in: CGSize(width: min(900, size.width - 40), height: 2000))
+                XCTAssertLessThanOrEqual(measured.height + 24, layout.timerHeight,
+                    "\(companion): \(size) must show the complete card without scrolling or cropping")
+            }
+        }
+    }
+
+    func testPokeUsesItsOwnLocalizedResponseWithoutChangingFocusDeadline() async throws {
+        study.primaryAction()
+        try await waitForFocusStart()
+        let deadline = study.session.deadline
+        study.greet()
+        try await Task.sleep(for: .milliseconds(150))
+        XCTAssertEqual(study.audio.captionCue, "poke")
+        XCTAssertEqual(study.audio.caption, L10n.voice("poke", companion: .mochi))
+        XCTAssertEqual(study.session.deadline, deadline)
+    }
+
+    func testLayeredDuoAssetsAreBundledForEveryCompanion() throws {
+        for companion in Companion.allCases {
+            let sprite = try XCTUnwrap(UIImage(named: companion.duoSprite))
+            XCTAssertGreaterThan(sprite.size.width, 1000)
+            XCTAssertEqual(Int(sprite.size.width) % 2, 0)
+        }
+        for room in DuoRoom.allCases {
+            let background = try XCTUnwrap(UIImage(named: room.asset))
+            XCTAssertEqual(background.size.width / background.size.height, 1.5, accuracy: 0.001)
+        }
+        for size in [CGSize(width: 656, height: 340), CGSize(width: 744, height: 400)] {
+            let width = min(520, max(280, size.width * 0.56))
+            let host = UIHostingController(rootView:
+                TimerPanel(compact: true, clockHeight: min(132, max(76, (width - 82) * 96 / 304)), dense: true)
+                    .fixedSize(horizontal: false, vertical: true)
+                    .environment(\.dynamicTypeSize, .large)
+                    .environmentObject(study))
+            let measured = host.sizeThatFits(in: CGSize(width: width, height: 1000))
+            XCTAssertLessThanOrEqual(measured.height + 16, size.height)
+        }
+    }
+
+    func testTabletopArtworkAndLiveTimerSurviveCompanionAndTextSizeChanges() async throws {
+        XCTAssertEqual(Companion.tabletopCompanions, Companion.allCases)
+        for name in Companion.tabletopCompanions.compactMap({ $0.tabletopArt?.asset }) {
+            let image = try XCTUnwrap(UIImage(named: name))
+            XCTAssertEqual(image.size.width / image.size.height, 1.5, accuracy: 0.001)
+        }
+        let scene = try XCTUnwrap(UIApplication.shared.connectedScenes.compactMap { $0 as? UIWindowScene }.first)
+        let previousWindow = scene.windows.first { $0.isKeyWindow }
+        let sizes = TextSizeProbe()
+        let window = UIWindow(windowScene: scene)
+        window.rootViewController = UIHostingController(rootView:
+            TextSizeProbeView(sizes: sizes, previewTabletop: true)
+                .environmentObject(study)
+                .environmentObject(PurchaseStore())
+                .environmentObject(study.audio))
+        window.makeKeyAndVisible()
+        defer { window.isHidden = true; previousWindow?.makeKey() }
+        study.primaryAction()
+        try await waitForFocusStart()
+        let deadline = try XCTUnwrap(study.session.deadline)
+        for companion in Companion.free {
+            study.select(companion)
+            for size in [DynamicTypeSize.large, .accessibility5] {
+                sizes.value = size
+                window.layoutIfNeeded()
+                try await Task.sleep(for: .milliseconds(120))
+                XCTAssertEqual(study.companion, companion)
+                XCTAssertEqual(study.session.deadline, deadline)
+            }
+        }
+    }
 }
 
 @MainActor
@@ -271,5 +381,6 @@ private final class TextSizeProbe: ObservableObject {
 
 private struct TextSizeProbeView: View {
     @ObservedObject var sizes: TextSizeProbe
-    var body: some View { StudyView().environment(\.dynamicTypeSize, sizes.value) }
+    var previewTabletop = false
+    var body: some View { StudyView(previewTabletop: previewTabletop).environment(\.dynamicTypeSize, sizes.value) }
 }

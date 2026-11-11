@@ -17,7 +17,15 @@ def normalize(text):
     return ''.join(c for c in unicodedata.normalize('NFKC',text).lower() if c.isalnum())
 
 def main():
-    parser=argparse.ArgumentParser();parser.add_argument('--characters',default='');args=parser.parse_args()
+    global AUDIO, OUT
+    parser=argparse.ArgumentParser()
+    parser.add_argument('--characters',default='')
+    parser.add_argument('--audio-root',type=Path,default=AUDIO)
+    parser.add_argument('--source-root',type=Path,default=ROOT/'Design/Voices')
+    parser.add_argument('--report',type=Path,default=OUT)
+    args=parser.parse_args()
+    AUDIO=args.audio_root.resolve(); OUT=args.report.resolve()
+    OUT.parent.mkdir(parents=True,exist_ok=True)
     manifest=json.loads((AUDIO/'manifest.json').read_text())
     report=json.loads(OUT.read_text()) if OUT.exists() else {'method':'Local faster-whisper small/int8; diagnostics only, not native-speaker approval.','clips':{}}
     model=WhisperModel(str(MODEL),device='cpu',compute_type='int8',local_files_only=True,cpu_threads=4)
@@ -27,7 +35,7 @@ def main():
         path=AUDIO/f'{key}.m4a';digest=hashlib.sha256(path.read_bytes()).hexdigest()
         if report['clips'].get(key,{}).get('sha256')==digest:continue
         if cue.isdigit() and entry.get('method')=='context-countdown-v1':
-            source=json.loads((ROOT/'Design/Voices'/character/lang/'countdown.json').read_text())
+            source=json.loads((args.source_root/character/lang/'countdown.json').read_text())
             report['clips'][key]={'sha256':digest,'expected':entry['text'],'heard':source['words'][5-int(cue)]['text'],
                 'review':'context-verified','note':'Full source countdown recognized in order; clip boundary/format checked separately.'}
             temp=OUT.with_suffix('.tmp');temp.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n');temp.replace(OUT)

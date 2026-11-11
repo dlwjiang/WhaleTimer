@@ -3,11 +3,14 @@ import Testing
 @testable import BankeCore
 
 @Test func packsPartitionPaidCompanionsAndUnknownProductsUnlockNothing() {
+    #expect(Companion.free == [.mochi, .pip, .pebble])
+    #expect(Companion.allCases.count == 12)
     let paid = CompanionPack.allCases.flatMap(\.companions)
-    #expect(Set(paid).count == 6)
+    #expect(Set(paid).count == 9)
     #expect(Set(paid).union(Companion.free) == Set(Companion.allCases))
     #expect(Companion.allCases.filter { $0.isAvailable(in: ["unknown.product"]) } == Companion.free)
     for pack in CompanionPack.allCases {
+        #expect(pack.companions.count == 3)
         #expect(Companion.allCases.filter { $0.isAvailable(in: [pack.productID]) } == Companion.free + pack.companions)
     }
 }

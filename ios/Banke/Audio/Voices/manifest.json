@@ -8090,6 +8090,4917 @@
       "duration": 2.552,
       "sourceDuration": 2.552,
       "bytes": 21850
+    },
+    "en/pebble/5": {
+      "text": "Five.",
+      "hash": "5f6d6e4306e7ead20a42e022f6d5542b95caf461c59d47b338e5983163138dbc",
+      "seed": 1601007171,
+      "duration": 0.73,
+      "sourceDuration": 0.73,
+      "bytes": 7239,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0,
+        0.73
+      ]
+    },
+    "en/pebble/4": {
+      "text": "Four.",
+      "hash": "5f6d6e4306e7ead20a42e022f6d5542b95caf461c59d47b338e5983163138dbc",
+      "seed": 1601007171,
+      "duration": 0.621,
+      "sourceDuration": 0.621,
+      "bytes": 5854,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0.73,
+        1.53
+      ]
+    },
+    "en/pebble/3": {
+      "text": "Three.",
+      "hash": "5f6d6e4306e7ead20a42e022f6d5542b95caf461c59d47b338e5983163138dbc",
+      "seed": 1601007171,
+      "duration": 0.395,
+      "sourceDuration": 0.395,
+      "bytes": 4606,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        1.53,
+        2.37
+      ]
+    },
+    "en/pebble/2": {
+      "text": "Two.",
+      "hash": "5f6d6e4306e7ead20a42e022f6d5542b95caf461c59d47b338e5983163138dbc",
+      "seed": 1601007171,
+      "duration": 0.385,
+      "sourceDuration": 0.385,
+      "bytes": 4210,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        2.37,
+        3.1399999999999997
+      ]
+    },
+    "en/pebble/1": {
+      "text": "One.",
+      "hash": "5f6d6e4306e7ead20a42e022f6d5542b95caf461c59d47b338e5983163138dbc",
+      "seed": 1601007171,
+      "duration": 0.352,
+      "sourceDuration": 0.352,
+      "bytes": 4074,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        3.1399999999999997,
+        3.716083333333333
+      ]
+    },
+    "en/pebble/go": {
+      "text": "Let's begin!",
+      "hash": "fa5326e06d47b4288b5d7ff7da42a6307836e94993e8c4d800fed6cc1e394db4",
+      "seed": 4199753440,
+      "duration": 0.871,
+      "sourceDuration": 0.871,
+      "bytes": 9180
+    },
+    "en/pebble/pause": {
+      "text": "Take a breath. I'll wait.",
+      "hash": "311355989b88085d3fc7e4b12a0ee4e1025bcd034cdcc62dc1fc98411c58b63e",
+      "seed": 823350680,
+      "duration": 1.575,
+      "sourceDuration": 1.575,
+      "bytes": 12346
+    },
+    "en/pebble/resume": {
+      "text": "Let's keep going!",
+      "hash": "66878e96515b194f26b2e393818be709d9133edf67006a9f32d54287e5bef8a3",
+      "seed": 1720159894,
+      "duration": 0.833,
+      "sourceDuration": 0.833,
+      "bytes": 7994
+    },
+    "en/pebble/reset": {
+      "text": "A fresh start. We're ready.",
+      "hash": "e1f61532881b254820259d4df7a29937c10258323bb04132cbb3ba49162eb3a3",
+      "seed": 3791000882,
+      "duration": 2.042,
+      "sourceDuration": 2.042,
+      "bytes": 15396
+    },
+    "en/pebble/focusComplete": {
+      "text": "Well done! Time for a little break.",
+      "hash": "089de7d7f0a886b710e2c05d53953d105630526c1fe35ad89bbe6db271e75437",
+      "seed": 144566231,
+      "duration": 2.509,
+      "sourceDuration": 2.509,
+      "bytes": 19771
+    },
+    "en/pebble/breakComplete": {
+      "text": "Break's over. Ready when you are!",
+      "hash": "b729c1c3ce6f83c3a0c14f30faeacd4b78faf09772ae1e4a31b8903272865795",
+      "seed": 3072967107,
+      "duration": 1.887,
+      "sourceDuration": 1.887,
+      "bytes": 16394
+    },
+    "en/pebble/greeting": {
+      "text": "One little ripple at a time.",
+      "hash": "a8ac1787afced01880d20c1a36177c7f94abb6445aacf73e7c04aa3ac089fc8c",
+      "seed": 2829850503,
+      "duration": 1.461,
+      "sourceDuration": 1.461,
+      "bytes": 13365
+    },
+    "zh-Hans/pebble/5": {
+      "text": "五。",
+      "hash": "3ca86ca450a13855f45fc6df3fc244abcb3eb03ff98a02b30b4951483adfdceb",
+      "seed": 1017670820,
+      "duration": 0.324,
+      "sourceDuration": 0.324,
+      "bytes": 3900,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0,
+        0.39999999999999997
+      ]
+    },
+    "zh-Hans/pebble/4": {
+      "text": "四。",
+      "hash": "3ca86ca450a13855f45fc6df3fc244abcb3eb03ff98a02b30b4951483adfdceb",
+      "seed": 1017670820,
+      "duration": 0.462,
+      "sourceDuration": 0.462,
+      "bytes": 5865,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0.39999999999999997,
+        1.48
+      ]
+    },
+    "zh-Hans/pebble/3": {
+      "text": "三。",
+      "hash": "3ca86ca450a13855f45fc6df3fc244abcb3eb03ff98a02b30b4951483adfdceb",
+      "seed": 1017670820,
+      "duration": 0.402,
+      "sourceDuration": 0.402,
+      "bytes": 4275,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        1.48,
+        2.7
+      ]
+    },
+    "zh-Hans/pebble/2": {
+      "text": "二。",
+      "hash": "3ca86ca450a13855f45fc6df3fc244abcb3eb03ff98a02b30b4951483adfdceb",
+      "seed": 1017670820,
+      "duration": 0.204,
+      "sourceDuration": 0.204,
+      "bytes": 3126,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        2.7,
+        3.58
+      ]
+    },
+    "zh-Hans/pebble/1": {
+      "text": "一。",
+      "hash": "3ca86ca450a13855f45fc6df3fc244abcb3eb03ff98a02b30b4951483adfdceb",
+      "seed": 1017670820,
+      "duration": 0.76,
+      "sourceDuration": 0.892,
+      "bytes": 5557,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        3.58,
+        4.4718125
+      ]
+    },
+    "zh-Hans/pebble/go": {
+      "text": "开始吧！",
+      "hash": "8ff8a3b061e10ccf70c8d09ce9018d94bd035d37aa4eff1bb37ec77b26555fd5",
+      "seed": 2415436720,
+      "duration": 0.536,
+      "sourceDuration": 0.536,
+      "bytes": 5539
+    },
+    "zh-Hans/pebble/pause": {
+      "text": "歇一会儿，我等你。",
+      "hash": "74a3d468b5b552bf028c531fd6b5142fefd3b72846d6cdacade855624486aa80",
+      "seed": 1956893800,
+      "duration": 1.259,
+      "sourceDuration": 1.259,
+      "bytes": 11219
+    },
+    "zh-Hans/pebble/resume": {
+      "text": "好，我们继续！",
+      "hash": "990ebfde0b02813356026500d6256e7d1ed27bc45a500b4a325cc695fb7b1489",
+      "seed": 2567880670,
+      "duration": 1.634,
+      "sourceDuration": 1.634,
+      "bytes": 16486
+    },
+    "zh-Hans/pebble/reset": {
+      "text": "重新开始，我们准备好啦。",
+      "hash": "fa91467724b81e3a032111de5e00073cb5efce8d7876acaabd18a583f86df788",
+      "seed": 4203824759,
+      "duration": 1.781,
+      "sourceDuration": 1.781,
+      "bytes": 15584
+    },
+    "zh-Hans/pebble/focusComplete": {
+      "text": "做得好！该休息一下啦。",
+      "hash": "e78b0e81c59caac8abde6338022a25a4e2b89d9da6de78f6b74a4c7d9d63f396",
+      "seed": 3884650113,
+      "duration": 1.909,
+      "sourceDuration": 1.909,
+      "bytes": 16605
+    },
+    "zh-Hans/pebble/breakComplete": {
+      "text": "休息结束啦，准备好了就开始吧！",
+      "hash": "d742e93c24c3bac0976a8c3254e95e082d7b9f50b25c32472878b1748485bd60",
+      "seed": 3611486524,
+      "duration": 2.416,
+      "sourceDuration": 2.416,
+      "bytes": 20153
+    },
+    "zh-Hans/pebble/greeting": {
+      "text": "慢慢来，我陪着你。",
+      "hash": "8452fd4c0dbb19d70fef52a1ec21271ed087e761e5062ec2289f6b39af906f69",
+      "seed": 2221031311,
+      "duration": 1.726,
+      "sourceDuration": 1.726,
+      "bytes": 16022,
+      "instruction": "Speak Mandarin Chinese naturally and clearly, with a soft warm smile."
+    },
+    "ja/pebble/5": {
+      "text": "ご。",
+      "hash": "e69ee60f1a535fa8589fc6531bb520b8bdb88f674b0be3c6872b1393f8864558",
+      "seed": 3869173263,
+      "duration": 0.25,
+      "sourceDuration": 0.25,
+      "bytes": 3279,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0.88,
+        1.42
+      ]
+    },
+    "ja/pebble/4": {
+      "text": "よん。",
+      "hash": "e69ee60f1a535fa8589fc6531bb520b8bdb88f674b0be3c6872b1393f8864558",
+      "seed": 3869173263,
+      "duration": 0.76,
+      "sourceDuration": 0.865,
+      "bytes": 5968,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        1.42,
+        2.33
+      ]
+    },
+    "ja/pebble/3": {
+      "text": "さん。",
+      "hash": "e69ee60f1a535fa8589fc6531bb520b8bdb88f674b0be3c6872b1393f8864558",
+      "seed": 3869173263,
+      "duration": 0.415,
+      "sourceDuration": 0.415,
+      "bytes": 4641,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        2.33,
+        3.0700000000000003
+      ]
+    },
+    "ja/pebble/2": {
+      "text": "に。",
+      "hash": "e69ee60f1a535fa8589fc6531bb520b8bdb88f674b0be3c6872b1393f8864558",
+      "seed": 3869173263,
+      "duration": 0.268,
+      "sourceDuration": 0.268,
+      "bytes": 3568,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        3.0700000000000003,
+        3.62
+      ]
+    },
+    "ja/pebble/1": {
+      "text": "いち。",
+      "hash": "e69ee60f1a535fa8589fc6531bb520b8bdb88f674b0be3c6872b1393f8864558",
+      "seed": 3869173263,
+      "duration": 0.76,
+      "sourceDuration": 0.894,
+      "bytes": 9078,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        3.62,
+        4.5135625
+      ]
+    },
+    "ja/pebble/go": {
+      "text": "さあ、始めよう！",
+      "hash": "ae7a9d7ad6ec4359b6d00000d8ba90589957abab41b75084b87c42397dbb3aac",
+      "seed": 2927271290,
+      "duration": 2.478,
+      "sourceDuration": 2.478,
+      "bytes": 22172
+    },
+    "ja/pebble/pause": {
+      "text": "ひと息つこう。待ってるね。",
+      "hash": "2bac0eafba238283eb3137926510cacf582146c9fcd41f9d1ede4fcde0b95fca",
+      "seed": 732696239,
+      "duration": 1.869,
+      "sourceDuration": 1.869,
+      "bytes": 16009
+    },
+    "ja/pebble/resume": {
+      "text": "よし、続けよう！",
+      "hash": "79cd50055f9d6021f40837cc4c9c84ca5b4ebf17152af6293d8566f8859e9f59",
+      "seed": 2043498501,
+      "duration": 1.477,
+      "sourceDuration": 1.477,
+      "bytes": 13750
+    },
+    "ja/pebble/reset": {
+      "text": "気持ちを新たに、もう一度。",
+      "hash": "eeb420dc104a2be6435bae32eba22f63c7dd9291ff9ef2354b902866b148452e",
+      "seed": 4004782300,
+      "duration": 2.238,
+      "sourceDuration": 2.238,
+      "bytes": 19162
+    },
+    "ja/pebble/focusComplete": {
+      "text": "おつかれさま！少し休もう。",
+      "hash": "0f594613823a36385f2b6c320e6a972b9238f25a8436189b90b19adef1935f96",
+      "seed": 257508883,
+      "duration": 1.995,
+      "sourceDuration": 1.995,
+      "bytes": 16938
+    },
+    "ja/pebble/breakComplete": {
+      "text": "休憩おしまい。準備ができたら始めよう！",
+      "hash": "5d9a2fea32b29e874b358ce85f0c6fadad732f87d6a1a8426bc521f64ef28a29",
+      "seed": 1570385898,
+      "duration": 2.673,
+      "sourceDuration": 2.673,
+      "bytes": 26624
+    },
+    "ja/pebble/greeting": {
+      "text": "小さな波紋を、ひとつずつ。",
+      "hash": "7eeff876b4beb26f052fdee7eb3f434a1f9ce590e4e1cf4550f45490035f1141",
+      "seed": 2129655926,
+      "duration": 2.586,
+      "sourceDuration": 2.586,
+      "bytes": 22280
+    },
+    "ko/pebble/5": {
+      "text": "오.",
+      "hash": "28249e7a632d48c793e2629b7d5acff8ef1fdfe871580d5067c4d96d9ee83ab8",
+      "seed": 673488506,
+      "duration": 0.379,
+      "sourceDuration": 0.379,
+      "bytes": 4254,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0,
+        0.43
+      ]
+    },
+    "ko/pebble/4": {
+      "text": "사.",
+      "hash": "28249e7a632d48c793e2629b7d5acff8ef1fdfe871580d5067c4d96d9ee83ab8",
+      "seed": 673488506,
+      "duration": 0.514,
+      "sourceDuration": 0.514,
+      "bytes": 5582,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0.43,
+        1.56
+      ]
+    },
+    "ko/pebble/3": {
+      "text": "삼.",
+      "hash": "28249e7a632d48c793e2629b7d5acff8ef1fdfe871580d5067c4d96d9ee83ab8",
+      "seed": 673488506,
+      "duration": 0.477,
+      "sourceDuration": 0.477,
+      "bytes": 5199,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        1.56,
+        2.3899999999999997
+      ]
+    },
+    "ko/pebble/2": {
+      "text": "이.",
+      "hash": "28249e7a632d48c793e2629b7d5acff8ef1fdfe871580d5067c4d96d9ee83ab8",
+      "seed": 673488506,
+      "duration": 0.357,
+      "sourceDuration": 0.357,
+      "bytes": 4245,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        2.3899999999999997,
+        3.34
+      ]
+    },
+    "ko/pebble/1": {
+      "text": "일.",
+      "hash": "28249e7a632d48c793e2629b7d5acff8ef1fdfe871580d5067c4d96d9ee83ab8",
+      "seed": 673488506,
+      "duration": 0.384,
+      "sourceDuration": 0.384,
+      "bytes": 3906,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        3.34,
+        4.213354166666667
+      ]
+    },
+    "ko/pebble/go": {
+      "text": "자, 시작하자!",
+      "hash": "5af4253046f057a56b5c9fc742fe4cc0f5f5d12a2cb292b56fb5fbba976a17c1",
+      "seed": 1525949744,
+      "duration": 0.973,
+      "sourceDuration": 0.973,
+      "bytes": 9080
+    },
+    "ko/pebble/pause": {
+      "text": "잠깐 쉬어. 기다릴게.",
+      "hash": "d240bd75cacfe219ae039c1b7b6cbf19d9d072432c9db2390fe0384550e89e5f",
+      "seed": 3527458165,
+      "duration": 1.858,
+      "sourceDuration": 1.858,
+      "bytes": 14321
+    },
+    "ko/pebble/resume": {
+      "text": "좋아, 계속해 보자!",
+      "hash": "46f095c2389ffc7d2f0211c689e016f4bbcc3564ca7dae6104d6601bb23247b3",
+      "seed": 1190172098,
+      "duration": 1.91,
+      "sourceDuration": 1.91,
+      "bytes": 16247
+    },
+    "ko/pebble/reset": {
+      "text": "새로운 마음으로 다시 시작하자.",
+      "hash": "4608feb3f293830b1ce19f0dc56a5caaac05d8abbac7850dad7cfb6f3a2f8504",
+      "seed": 1174994611,
+      "duration": 1.838,
+      "sourceDuration": 1.838,
+      "bytes": 15525
+    },
+    "ko/pebble/focusComplete": {
+      "text": "잘했어! 이제 잠깐 쉬자.",
+      "hash": "99e9b3553d5a7c9d7f86a43511ccd7a50c4e92f31bcbc0279fc82cc1edbc7195",
+      "seed": 2582229845,
+      "duration": 2.985,
+      "sourceDuration": 2.985,
+      "bytes": 21589
+    },
+    "ko/pebble/breakComplete": {
+      "text": "쉬는 시간 끝! 준비되면 시작하자.",
+      "hash": "7979cb1bdf241b24f8ad8a64dc96a938cf0bbfe915e6e6b8988a406d9e49ba59",
+      "seed": 2038024987,
+      "duration": 2.4,
+      "sourceDuration": 2.4,
+      "bytes": 22189
+    },
+    "ko/pebble/greeting": {
+      "text": "작은 물결 하나씩, 천천히.",
+      "hash": "03314633239bbc29df7662bb5ca7e2b8f861f84986545de6e9729d2a9b3ce7d4",
+      "seed": 53560883,
+      "duration": 2.18,
+      "sourceDuration": 2.18,
+      "bytes": 17626
+    },
+    "es/pebble/5": {
+      "text": "Cinco.",
+      "hash": "1abb2571f20882cb1d4b85b981f278a24cd434a0c9ef48b5e10d6571823e5340",
+      "seed": 448472433,
+      "duration": 0.56,
+      "sourceDuration": 0.56,
+      "bytes": 5758,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0,
+        0.5599999999999999
+      ]
+    },
+    "es/pebble/4": {
+      "text": "Cuatro.",
+      "hash": "1abb2571f20882cb1d4b85b981f278a24cd434a0c9ef48b5e10d6571823e5340",
+      "seed": 448472433,
+      "duration": 0.76,
+      "sourceDuration": 0.954,
+      "bytes": 6610,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0.5599999999999999,
+        1.52
+      ]
+    },
+    "es/pebble/3": {
+      "text": "Tres.",
+      "hash": "1abb2571f20882cb1d4b85b981f278a24cd434a0c9ef48b5e10d6571823e5340",
+      "seed": 448472433,
+      "duration": 0.449,
+      "sourceDuration": 0.449,
+      "bytes": 5474,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        1.52,
+        2.33
+      ]
+    },
+    "es/pebble/2": {
+      "text": "Dos.",
+      "hash": "1abb2571f20882cb1d4b85b981f278a24cd434a0c9ef48b5e10d6571823e5340",
+      "seed": 448472433,
+      "duration": 0.409,
+      "sourceDuration": 0.409,
+      "bytes": 4591,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        2.33,
+        3.0
+      ]
+    },
+    "es/pebble/1": {
+      "text": "Uno.",
+      "hash": "1abb2571f20882cb1d4b85b981f278a24cd434a0c9ef48b5e10d6571823e5340",
+      "seed": 448472433,
+      "duration": 0.609,
+      "sourceDuration": 0.609,
+      "bytes": 6265,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        3.0,
+        3.6085833333333333
+      ]
+    },
+    "es/pebble/go": {
+      "text": "¡Vamos a empezar!",
+      "hash": "616a54be318eeff064806c6f752016539942ef69e4bf080e5a5cc46769c6b676",
+      "seed": 1634358462,
+      "duration": 1.578,
+      "sourceDuration": 1.578,
+      "bytes": 13464
+    },
+    "es/pebble/pause": {
+      "text": "Toma un respiro. Te espero.",
+      "hash": "883922fe751248177e3abdce11089ceb7ce362e642e7d25d45c58045b434109b",
+      "seed": 2285445886,
+      "duration": 1.637,
+      "sourceDuration": 1.637,
+      "bytes": 14438
+    },
+    "es/pebble/resume": {
+      "text": "¡Sigamos adelante!",
+      "hash": "7e8040fd710e77f72d19d8f31688030b1a0de3433650f6cec2760622c27e819f",
+      "seed": 2122334461,
+      "duration": 1.535,
+      "sourceDuration": 1.535,
+      "bytes": 12746
+    },
+    "es/pebble/reset": {
+      "text": "Empecemos de nuevo, con calma.",
+      "hash": "00cc23de88dd60510124e029e67659567e34299e1307bd2e99b24c134a57a4f3",
+      "seed": 13378526,
+      "duration": 2.69,
+      "sourceDuration": 2.69,
+      "bytes": 23178
+    },
+    "es/pebble/focusComplete": {
+      "text": "¡Muy bien! Es hora de descansar un poco.",
+      "hash": "3f16ca5279a2bb5eeba8752ad992b85b764fb4e83320cd7495add5af01ce98ea",
+      "seed": 1058458194,
+      "duration": 2.433,
+      "sourceDuration": 2.433,
+      "bytes": 19874
+    },
+    "es/pebble/breakComplete": {
+      "text": "Se acabó el descanso. ¡Cuando quieras!",
+      "hash": "df9c3753429704cf8c72cb065e4fd7f93355e74e2c33ab31f96b73fd0f11ed17",
+      "seed": 3751556947,
+      "duration": 2.751,
+      "sourceDuration": 2.751,
+      "bytes": 22285
+    },
+    "es/pebble/greeting": {
+      "text": "Una pequeña onda cada vez.",
+      "hash": "c5014db50b1deedc98192962e96f8e466452ba45d4126aefc8027516c868ed2f",
+      "seed": 3305196981,
+      "duration": 1.684,
+      "sourceDuration": 1.684,
+      "bytes": 15356
+    },
+    "pt-BR/pebble/5": {
+      "text": "Cinco.",
+      "hash": "af9102dc18baa9d608e30a03b6e4a5feb8a5441940239de538ab88528cd1a9d9",
+      "seed": 2945516252,
+      "duration": 0.52,
+      "sourceDuration": 0.52,
+      "bytes": 5358,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0,
+        0.52
+      ]
+    },
+    "pt-BR/pebble/4": {
+      "text": "Quatro.",
+      "hash": "af9102dc18baa9d608e30a03b6e4a5feb8a5441940239de538ab88528cd1a9d9",
+      "seed": 2945516252,
+      "duration": 0.76,
+      "sourceDuration": 0.85,
+      "bytes": 7113,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0.52,
+        1.37
+      ]
+    },
+    "pt-BR/pebble/3": {
+      "text": "Três.",
+      "hash": "af9102dc18baa9d608e30a03b6e4a5feb8a5441940239de538ab88528cd1a9d9",
+      "seed": 2945516252,
+      "duration": 0.76,
+      "sourceDuration": 0.91,
+      "bytes": 7780,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        1.37,
+        2.2800000000000002
+      ]
+    },
+    "pt-BR/pebble/2": {
+      "text": "Dois.",
+      "hash": "af9102dc18baa9d608e30a03b6e4a5feb8a5441940239de538ab88528cd1a9d9",
+      "seed": 2945516252,
+      "duration": 0.76,
+      "sourceDuration": 0.85,
+      "bytes": 7562,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        2.2800000000000002,
+        3.13
+      ]
+    },
+    "pt-BR/pebble/1": {
+      "text": "Um.",
+      "hash": "af9102dc18baa9d608e30a03b6e4a5feb8a5441940239de538ab88528cd1a9d9",
+      "seed": 2945516252,
+      "duration": 0.76,
+      "sourceDuration": 0.881,
+      "bytes": 7172,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        3.13,
+        4.011333333333333
+      ]
+    },
+    "pt-BR/pebble/go": {
+      "text": "Vamos começar!",
+      "hash": "0f9abec9beb04a17a681ff4db88df04d4d0df7bd79c5ffbec20b8e5a310915fb",
+      "seed": 261799625,
+      "duration": 1.129,
+      "sourceDuration": 1.129,
+      "bytes": 9835
+    },
+    "pt-BR/pebble/pause": {
+      "text": "Respira um pouco. Eu espero.",
+      "hash": "073d92ada06776af3b2650bc9686f283f8d9bc95efc8b8e4486248bbb5a6ecba",
+      "seed": 121475757,
+      "duration": 2.169,
+      "sourceDuration": 2.169,
+      "bytes": 18827
+    },
+    "pt-BR/pebble/resume": {
+      "text": "Vamos continuar!",
+      "hash": "b9d37a9fc4811ce14ba450d7ac9b0c47c5765d7898efff8bfda5f2b70a419c8f",
+      "seed": 3117644447,
+      "duration": 1.5,
+      "sourceDuration": 1.5,
+      "bytes": 12576
+    },
+    "pt-BR/pebble/reset": {
+      "text": "Um novo começo, com calma.",
+      "hash": "71221a66f503c11cb2eaf717602da6c0122f4b413f40cebff423d17f2fde7d62",
+      "seed": 1898060390,
+      "duration": 2.054,
+      "sourceDuration": 2.054,
+      "bytes": 17541
+    },
+    "pt-BR/pebble/focusComplete": {
+      "text": "Muito bem! Hora de descansar um pouco.",
+      "hash": "2439a97fb38727cb537774de461829550fad8479fb6620a3208c1ce383c63146",
+      "seed": 607758719,
+      "duration": 2.56,
+      "sourceDuration": 2.56,
+      "bytes": 23550
+    },
+    "pt-BR/pebble/breakComplete": {
+      "text": "O descanso acabou. Vamos quando você quiser!",
+      "hash": "93e1570a012d9ed773e798a1349ed854dd45828342e8e655ce7fcc26d9e11d7e",
+      "seed": 2481018634,
+      "duration": 3.133,
+      "sourceDuration": 3.133,
+      "bytes": 28300
+    },
+    "pt-BR/pebble/greeting": {
+      "text": "Uma ondinha de cada vez.",
+      "hash": "7c182a8eedb6928bfd09bc5f1214c79268dfd20ed9f20496bc59f4edd2e35cb4",
+      "seed": 2081958542,
+      "duration": 1.666,
+      "sourceDuration": 1.666,
+      "bytes": 15421
+    },
+    "fr/pebble/5": {
+      "text": "Cinq.",
+      "hash": "bef014aa02e8b4acd00803a748448aa260fea32754a62572a252d28ec6e3a40f",
+      "seed": 3203404970,
+      "duration": 0.38,
+      "sourceDuration": 0.38,
+      "bytes": 4305,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0,
+        0.38
+      ]
+    },
+    "fr/pebble/4": {
+      "text": "Quatre.",
+      "hash": "bef014aa02e8b4acd00803a748448aa260fea32754a62572a252d28ec6e3a40f",
+      "seed": 3203404970,
+      "duration": 0.49,
+      "sourceDuration": 0.49,
+      "bytes": 5889,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0.38,
+        0.87
+      ]
+    },
+    "fr/pebble/3": {
+      "text": "Trois.",
+      "hash": "bef014aa02e8b4acd00803a748448aa260fea32754a62572a252d28ec6e3a40f",
+      "seed": 3203404970,
+      "duration": 0.57,
+      "sourceDuration": 0.57,
+      "bytes": 6258,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0.87,
+        1.44
+      ]
+    },
+    "fr/pebble/2": {
+      "text": "Deux.",
+      "hash": "bef014aa02e8b4acd00803a748448aa260fea32754a62572a252d28ec6e3a40f",
+      "seed": 3203404970,
+      "duration": 0.344,
+      "sourceDuration": 0.344,
+      "bytes": 3814,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        1.44,
+        1.8599999999999999
+      ]
+    },
+    "fr/pebble/1": {
+      "text": "Un.",
+      "hash": "bef014aa02e8b4acd00803a748448aa260fea32754a62572a252d28ec6e3a40f",
+      "seed": 3203404970,
+      "duration": 0.331,
+      "sourceDuration": 0.331,
+      "bytes": 3912,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        1.8599999999999999,
+        2.3925
+      ]
+    },
+    "fr/pebble/go": {
+      "text": "C'est parti !",
+      "hash": "b88fb4bf31277f00699e4d63c9c0603eb5f9ee372d9355ce103ffc0d45d596bf",
+      "seed": 3096425663,
+      "duration": 0.907,
+      "sourceDuration": 0.907,
+      "bytes": 8313
+    },
+    "fr/pebble/pause": {
+      "text": "Fais une pause. Je t'attends.",
+      "hash": "70aca448f2b2c87865f187f93e7e97a589cef3309739338c47f70bb208537e4d",
+      "seed": 1890362440,
+      "duration": 1.837,
+      "sourceDuration": 1.837,
+      "bytes": 16466
+    },
+    "fr/pebble/resume": {
+      "text": "On continue !",
+      "hash": "bcf3253ec41b7eff90d2fb2ddb405e949b870aa19dc4350f1242706b89f5f9e4",
+      "seed": 3170051390,
+      "duration": 0.689,
+      "sourceDuration": 0.689,
+      "bytes": 6553
+    },
+    "fr/pebble/reset": {
+      "text": "On repart du bon pied.",
+      "hash": "f108cb5a0dcf7d555b5e7abe20c606ca808072db1ffe8b98d319ce5ccb854e9a",
+      "seed": 4043885402,
+      "duration": 1.368,
+      "sourceDuration": 1.368,
+      "bytes": 11703
+    },
+    "fr/pebble/focusComplete": {
+      "text": "Bravo ! C'est l'heure d'une petite pause.",
+      "hash": "57cc13ff6a7cb8926fc85eee14d463cab4e340ec9265a560e66e480f64e5710a",
+      "seed": 1472992255,
+      "duration": 2.275,
+      "sourceDuration": 2.275,
+      "bytes": 20782
+    },
+    "fr/pebble/breakComplete": {
+      "text": "La pause est finie. On reprend quand tu veux !",
+      "hash": "68a5b95a9f446bae319d3ff7695c0687f1064fc009fc28d192bd2bbd9af4cb43",
+      "seed": 1755691354,
+      "duration": 1.92,
+      "sourceDuration": 1.92,
+      "bytes": 16880
+    },
+    "fr/pebble/greeting": {
+      "text": "Une petite vague à la fois.",
+      "hash": "31542e3a702e35980c113bf937991c23ef96496d47ece2c8b4673edf3293aa9f",
+      "seed": 827600442,
+      "duration": 1.241,
+      "sourceDuration": 1.241,
+      "bytes": 11008
+    },
+    "de/pebble/5": {
+      "text": "Fünf.",
+      "hash": "e6c0c390a5a77703f17ec5097a501d5729d308a72f2fca1aa52b727f316512eb",
+      "seed": 3871392656,
+      "duration": 0.35,
+      "sourceDuration": 0.35,
+      "bytes": 4012,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0,
+        0.35
+      ]
+    },
+    "de/pebble/4": {
+      "text": "Vier.",
+      "hash": "e6c0c390a5a77703f17ec5097a501d5729d308a72f2fca1aa52b727f316512eb",
+      "seed": 3871392656,
+      "duration": 0.51,
+      "sourceDuration": 0.51,
+      "bytes": 5211,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0.35,
+        0.8600000000000001
+      ]
+    },
+    "de/pebble/3": {
+      "text": "Drei.",
+      "hash": "e6c0c390a5a77703f17ec5097a501d5729d308a72f2fca1aa52b727f316512eb",
+      "seed": 3871392656,
+      "duration": 0.421,
+      "sourceDuration": 0.421,
+      "bytes": 4592,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0.8600000000000001,
+        1.5499999999999998
+      ]
+    },
+    "de/pebble/2": {
+      "text": "Zwei.",
+      "hash": "e6c0c390a5a77703f17ec5097a501d5729d308a72f2fca1aa52b727f316512eb",
+      "seed": 3871392656,
+      "duration": 0.391,
+      "sourceDuration": 0.391,
+      "bytes": 4551,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        1.5499999999999998,
+        2.1399999999999997
+      ]
+    },
+    "de/pebble/1": {
+      "text": "Eins.",
+      "hash": "e6c0c390a5a77703f17ec5097a501d5729d308a72f2fca1aa52b727f316512eb",
+      "seed": 3871392656,
+      "duration": 0.469,
+      "sourceDuration": 0.469,
+      "bytes": 5715,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        2.1399999999999997,
+        2.79525
+      ]
+    },
+    "de/pebble/go": {
+      "text": "Los geht's!",
+      "hash": "fe01b9db5bb81b046b595472afe084794ce91b4b0d11fd5fec8f8b3f7f208dd1",
+      "seed": 4261525979,
+      "duration": 1.16,
+      "sourceDuration": 1.16,
+      "bytes": 10171
+    },
+    "de/pebble/pause": {
+      "text": "Atme kurz durch. Ich warte auf dich.",
+      "hash": "192ff3b4571c02ea5020ef9d3f7bac5ff16a697e6d9f9e563b5291a5ac38e949",
+      "seed": 422572980,
+      "duration": 2.24,
+      "sourceDuration": 2.24,
+      "bytes": 20624
+    },
+    "de/pebble/resume": {
+      "text": "Weiter geht's!",
+      "hash": "c916d4935b2a75a094aad5f05667d0b38ce76e9948f956fe8b9795628093bef2",
+      "seed": 3373716627,
+      "duration": 1.024,
+      "sourceDuration": 1.024,
+      "bytes": 9673
+    },
+    "de/pebble/reset": {
+      "text": "Ein frischer Start. Wir sind bereit.",
+      "hash": "8a8079626eff8025df0a577230b29143e9536dc79a73200dab6fe2d0a580b05e",
+      "seed": 2323675490,
+      "duration": 1.573,
+      "sourceDuration": 1.573,
+      "bytes": 14625
+    },
+    "de/pebble/focusComplete": {
+      "text": "Gut gemacht! Zeit für eine kleine Pause.",
+      "hash": "99c1f516d3292fffeb893f30b7ecb47a1f5b3a1b36ec7e4e8a5bd21232cd0f2b",
+      "seed": 2579625238,
+      "duration": 2.066,
+      "sourceDuration": 2.066,
+      "bytes": 19985
+    },
+    "de/pebble/breakComplete": {
+      "text": "Die Pause ist vorbei. Bereit, wenn du es bist!",
+      "hash": "d9d1189b5a384f4779ec7e46e9886e2a0b683cbbd0ffaa654a3ab44acb80ad47",
+      "seed": 3654359195,
+      "duration": 3.146,
+      "sourceDuration": 3.146,
+      "bytes": 25294
+    },
+    "de/pebble/greeting": {
+      "text": "Eine kleine Welle nach der anderen.",
+      "hash": "eca4ecc9a855378aca10b2b7f9b908805f30ae3f3e376bca3c13fbcbc61d6b32",
+      "seed": 3970231497,
+      "duration": 1.92,
+      "sourceDuration": 1.92,
+      "bytes": 16148
+    },
+    "en/maple/5": {
+      "text": "Five.",
+      "hash": "79b1d2a152f1bd1e9a594c608e28d22ebdb9a78248b2cf7c74e9aae2b2de43ed",
+      "seed": 2041696929,
+      "duration": 0.556,
+      "sourceDuration": 0.556,
+      "bytes": 5601,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0,
+        0.66
+      ]
+    },
+    "en/maple/4": {
+      "text": "Four.",
+      "hash": "79b1d2a152f1bd1e9a594c608e28d22ebdb9a78248b2cf7c74e9aae2b2de43ed",
+      "seed": 2041696929,
+      "duration": 0.588,
+      "sourceDuration": 0.588,
+      "bytes": 5906,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0.66,
+        1.69
+      ]
+    },
+    "en/maple/3": {
+      "text": "Three.",
+      "hash": "79b1d2a152f1bd1e9a594c608e28d22ebdb9a78248b2cf7c74e9aae2b2de43ed",
+      "seed": 2041696929,
+      "duration": 0.486,
+      "sourceDuration": 0.486,
+      "bytes": 5192,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        1.69,
+        2.61
+      ]
+    },
+    "en/maple/2": {
+      "text": "Two.",
+      "hash": "79b1d2a152f1bd1e9a594c608e28d22ebdb9a78248b2cf7c74e9aae2b2de43ed",
+      "seed": 2041696929,
+      "duration": 0.444,
+      "sourceDuration": 0.444,
+      "bytes": 4627,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        2.61,
+        3.51
+      ]
+    },
+    "en/maple/1": {
+      "text": "One.",
+      "hash": "79b1d2a152f1bd1e9a594c608e28d22ebdb9a78248b2cf7c74e9aae2b2de43ed",
+      "seed": 2041696929,
+      "duration": 0.455,
+      "sourceDuration": 0.455,
+      "bytes": 4902,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        3.51,
+        4.307645833333333
+      ]
+    },
+    "en/maple/go": {
+      "text": "Let's begin!",
+      "hash": "424943d59d7fb174fc96af2f1efb2359189b8ba70a29bc461207de76300329b5",
+      "seed": 1112097749,
+      "duration": 1.038,
+      "sourceDuration": 1.038,
+      "bytes": 9117
+    },
+    "en/maple/pause": {
+      "text": "Take a breath. I'll wait.",
+      "hash": "d1a233f5d7a64829a68dd56128692371e6aa8a6ec3d54086c2e0b1662aa164b5",
+      "seed": 3517068277,
+      "duration": 1.583,
+      "sourceDuration": 1.583,
+      "bytes": 14248
+    },
+    "en/maple/resume": {
+      "text": "Let's keep going!",
+      "hash": "21ef351960e557dd62b6e6510abe2f6a118e959117c5a245a714c45f71ff9c14",
+      "seed": 569324825,
+      "duration": 1.491,
+      "sourceDuration": 1.491,
+      "bytes": 13518
+    },
+    "en/maple/reset": {
+      "text": "A fresh start. We're ready.",
+      "hash": "b08914a0b97d5b096901d71b492ff4f679369f3d18e1a31082c8a1d553f24326",
+      "seed": 2961773728,
+      "duration": 1.716,
+      "sourceDuration": 1.716,
+      "bytes": 14333
+    },
+    "en/maple/focusComplete": {
+      "text": "Well done! Time for a little break.",
+      "hash": "8fcd5dc6cb3cd640f073fe263f1e5ed1b0e7731cacc967705c4002d91d3bd14d",
+      "seed": 2412600774,
+      "duration": 2.023,
+      "sourceDuration": 2.023,
+      "bytes": 18619
+    },
+    "en/maple/breakComplete": {
+      "text": "Break's over. Ready when you are!",
+      "hash": "00aa8f562345c3e1da8fbd9b1276b51cb8e8c4adea4a829bf7f3b46ddf5ea9e4",
+      "seed": 11177814,
+      "duration": 1.644,
+      "sourceDuration": 1.644,
+      "bytes": 14271
+    },
+    "en/maple/greeting": {
+      "text": "A little focus, fresh from the oven.",
+      "hash": "95ab78b35ac4aa0958bedb64cd9257ebbdda44f8861371e9cb093a0522e15e67",
+      "seed": 2511042739,
+      "duration": 2.367,
+      "sourceDuration": 2.367,
+      "bytes": 21233
+    },
+    "zh-Hans/maple/5": {
+      "text": "五。",
+      "hash": "14271f49b94918546d1622d99309b99865c0bb26304292b7612f75a8cb61ae7a",
+      "seed": 338108233,
+      "duration": 0.43,
+      "sourceDuration": 0.43,
+      "bytes": 4684,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0,
+        0.43
+      ]
+    },
+    "zh-Hans/maple/4": {
+      "text": "四。",
+      "hash": "14271f49b94918546d1622d99309b99865c0bb26304292b7612f75a8cb61ae7a",
+      "seed": 338108233,
+      "duration": 0.76,
+      "sourceDuration": 0.96,
+      "bytes": 7352,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0.43,
+        1.3900000000000001
+      ]
+    },
+    "zh-Hans/maple/3": {
+      "text": "三。",
+      "hash": "14271f49b94918546d1622d99309b99865c0bb26304292b7612f75a8cb61ae7a",
+      "seed": 338108233,
+      "duration": 0.76,
+      "sourceDuration": 0.84,
+      "bytes": 7180,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        1.3900000000000001,
+        2.23
+      ]
+    },
+    "zh-Hans/maple/2": {
+      "text": "二。",
+      "hash": "14271f49b94918546d1622d99309b99865c0bb26304292b7612f75a8cb61ae7a",
+      "seed": 338108233,
+      "duration": 0.75,
+      "sourceDuration": 0.75,
+      "bytes": 7583,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        2.23,
+        2.98
+      ]
+    },
+    "zh-Hans/maple/1": {
+      "text": "一。",
+      "hash": "14271f49b94918546d1622d99309b99865c0bb26304292b7612f75a8cb61ae7a",
+      "seed": 338108233,
+      "duration": 0.76,
+      "sourceDuration": 1.01,
+      "bytes": 6801,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        2.98,
+        3.9896875
+      ]
+    },
+    "zh-Hans/maple/go": {
+      "text": "开始吧！",
+      "hash": "b5fdead319f746403541d309a3232468ae26eddf36dfe536d872c16a1e6ed329",
+      "seed": 3053316819,
+      "duration": 0.707,
+      "sourceDuration": 0.707,
+      "bytes": 6810
+    },
+    "zh-Hans/maple/pause": {
+      "text": "歇一会儿，我等你。",
+      "hash": "b384d8548b4a27981a7b50cc25a0c3447e8f2f3a749cab6588dc46b140ec5e56",
+      "seed": 3012827799,
+      "duration": 1.827,
+      "sourceDuration": 1.827,
+      "bytes": 15825,
+      "instruction": "Speak Mandarin Chinese naturally and clearly, gently playful and reassuring."
+    },
+    "zh-Hans/maple/resume": {
+      "text": "好，我们继续！",
+      "hash": "7c22820f45aab44e13fccd07929649dcaff381da50c873b27f58b698bf6dd2dc",
+      "seed": 2082636303,
+      "duration": 1.597,
+      "sourceDuration": 1.597,
+      "bytes": 13478
+    },
+    "zh-Hans/maple/reset": {
+      "text": "重新开始，我们准备好啦。",
+      "hash": "cbe2f7a5a7ff90ae683e48711d4fb070330328ed28976ab4a0ac91e23ff1493a",
+      "seed": 3420649381,
+      "duration": 2.161,
+      "sourceDuration": 2.161,
+      "bytes": 19598
+    },
+    "zh-Hans/maple/focusComplete": {
+      "text": "做得好！该休息一下啦。",
+      "hash": "f56d69439fae386d72cb183c3919ad1f8de6231a0a61408ed850fb85321ca2db",
+      "seed": 4117588291,
+      "duration": 2.284,
+      "sourceDuration": 2.284,
+      "bytes": 19951
+    },
+    "zh-Hans/maple/breakComplete": {
+      "text": "休息结束啦，准备好了就开始吧！",
+      "hash": "8e73ecd868d6182890b071e0f86ae48c0d363d8d563bedefdbcc6fd557313416",
+      "seed": 2389961944,
+      "duration": 2.546,
+      "sourceDuration": 2.546,
+      "bytes": 22904
+    },
+    "zh-Hans/maple/greeting": {
+      "text": "新鲜面包出炉啦，一起加油吧。",
+      "hash": "a0336a178e8bc22800901507114334d2cd890b3bc6a86c134a21e04f67838eb1",
+      "seed": 2689724061,
+      "duration": 2.585,
+      "sourceDuration": 2.585,
+      "bytes": 22910,
+      "instruction": "Speak Mandarin Chinese naturally and clearly, gently playful and reassuring."
+    },
+    "ja/maple/5": {
+      "text": "ご。",
+      "hash": "d31045d1ec691d01c198f6785040f0e3a773daa86fc8729a02d04007b0624a95",
+      "seed": 3541059025,
+      "duration": 0.45,
+      "sourceDuration": 0.45,
+      "bytes": 4824,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        1.3399999999999999,
+        1.79
+      ]
+    },
+    "ja/maple/4": {
+      "text": "よん。",
+      "hash": "d31045d1ec691d01c198f6785040f0e3a773daa86fc8729a02d04007b0624a95",
+      "seed": 3541059025,
+      "duration": 0.37,
+      "sourceDuration": 0.37,
+      "bytes": 4153,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        1.79,
+        2.16
+      ]
+    },
+    "ja/maple/3": {
+      "text": "さん。",
+      "hash": "d31045d1ec691d01c198f6785040f0e3a773daa86fc8729a02d04007b0624a95",
+      "seed": 3541059025,
+      "duration": 0.41,
+      "sourceDuration": 0.41,
+      "bytes": 4520,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        2.16,
+        2.5700000000000003
+      ]
+    },
+    "ja/maple/2": {
+      "text": "に。",
+      "hash": "d31045d1ec691d01c198f6785040f0e3a773daa86fc8729a02d04007b0624a95",
+      "seed": 3541059025,
+      "duration": 0.36,
+      "sourceDuration": 0.36,
+      "bytes": 4030,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        2.5700000000000003,
+        2.9299999999999997
+      ]
+    },
+    "ja/maple/1": {
+      "text": "いち。",
+      "hash": "d31045d1ec691d01c198f6785040f0e3a773daa86fc8729a02d04007b0624a95",
+      "seed": 3541059025,
+      "duration": 0.75,
+      "sourceDuration": 0.75,
+      "bytes": 7150,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        2.9299999999999997,
+        3.6801666666666666
+      ]
+    },
+    "ja/maple/go": {
+      "text": "さあ、始めよう！",
+      "hash": "bd0f3e4747ad689a9c2801cc72530c05896317f29daba7a43aca25c14266189e",
+      "seed": 3171892807,
+      "duration": 1.564,
+      "sourceDuration": 1.564,
+      "bytes": 14446
+    },
+    "ja/maple/pause": {
+      "text": "ひと息つこう。待ってるね。",
+      "hash": "312b671f34ca0db88b4b34a615b9945322467d2d00acd51b5c60ef9e1b79020d",
+      "seed": 824928031,
+      "duration": 1.92,
+      "sourceDuration": 1.92,
+      "bytes": 17012
+    },
+    "ja/maple/resume": {
+      "text": "よし、続けよう！",
+      "hash": "d1070b46ca32d807efac4d845a2d091891ae83014d7bb77ca621566e8313d09c",
+      "seed": 3506899782,
+      "duration": 1.289,
+      "sourceDuration": 1.289,
+      "bytes": 11394
+    },
+    "ja/maple/reset": {
+      "text": "気持ちを新たに、もう一度。",
+      "hash": "5abdd8cac8d8ab5d0a15c3dc111c58885dd287f4ad1b882b41c763c392a8c2af",
+      "seed": 1522391242,
+      "duration": 2.33,
+      "sourceDuration": 2.33,
+      "bytes": 20441
+    },
+    "ja/maple/focusComplete": {
+      "text": "おつかれさま！少し休もう。",
+      "hash": "1541c6a19af8d86d9644fd5f4eccf43b71bee83b6578826124c5f07c444f942a",
+      "seed": 356632225,
+      "duration": 2.268,
+      "sourceDuration": 2.268,
+      "bytes": 19813
+    },
+    "ja/maple/breakComplete": {
+      "text": "休憩おしまい。準備ができたら始めよう！",
+      "hash": "eb9a99c98afee2bdcbf155f345839e4899a8808fccc35f353dfbc0ff4d810618",
+      "seed": 3952777673,
+      "duration": 2.991,
+      "sourceDuration": 2.991,
+      "bytes": 25299
+    },
+    "ja/maple/greeting": {
+      "text": "焼きたての元気で、少しずつ。",
+      "hash": "60d57b9b0c6f057d7158f405aa71fd29e7494183996c52580b5272749ca6a6c6",
+      "seed": 1624603547,
+      "duration": 2.24,
+      "sourceDuration": 2.24,
+      "bytes": 20252
+    },
+    "ko/maple/5": {
+      "text": "오.",
+      "hash": "73d4c246ce6148704cd8bc7ae3c5ac2b7a216fd900532bcf5213c3b802815f23",
+      "seed": 1943325224,
+      "duration": 0.76,
+      "sourceDuration": 0.92,
+      "bytes": 7138,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0,
+        0.92
+      ]
+    },
+    "ko/maple/4": {
+      "text": "사.",
+      "hash": "73d4c246ce6148704cd8bc7ae3c5ac2b7a216fd900532bcf5213c3b802815f23",
+      "seed": 1943325224,
+      "duration": 0.76,
+      "sourceDuration": 1.3,
+      "bytes": 7453,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0.92,
+        2.2199999999999998
+      ]
+    },
+    "ko/maple/3": {
+      "text": "삼.",
+      "hash": "73d4c246ce6148704cd8bc7ae3c5ac2b7a216fd900532bcf5213c3b802815f23",
+      "seed": 1943325224,
+      "duration": 0.76,
+      "sourceDuration": 0.85,
+      "bytes": 7178,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        2.2199999999999998,
+        3.0700000000000003
+      ]
+    },
+    "ko/maple/2": {
+      "text": "이.",
+      "hash": "73d4c246ce6148704cd8bc7ae3c5ac2b7a216fd900532bcf5213c3b802815f23",
+      "seed": 1943325224,
+      "duration": 0.77,
+      "sourceDuration": 0.77,
+      "bytes": 7314,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        3.0700000000000003,
+        3.84
+      ]
+    },
+    "ko/maple/1": {
+      "text": "일.",
+      "hash": "73d4c246ce6148704cd8bc7ae3c5ac2b7a216fd900532bcf5213c3b802815f23",
+      "seed": 1943325224,
+      "duration": 0.768,
+      "sourceDuration": 0.768,
+      "bytes": 6841,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        3.84,
+        4.608395833333334
+      ]
+    },
+    "ko/maple/go": {
+      "text": "자, 시작하자!",
+      "hash": "73f0a7786305dd0f5ce4d399722e333d3090890c32c67012922c55763927027f",
+      "seed": 1945151352,
+      "duration": 1.267,
+      "sourceDuration": 1.267,
+      "bytes": 10988
+    },
+    "ko/maple/pause": {
+      "text": "잠깐 쉬어. 기다릴게.",
+      "hash": "8694a29de00a8b5ac4c36cd39c19879c638b1c8351145ca50c3a9763dfde619d",
+      "seed": 2257887901,
+      "duration": 1.649,
+      "sourceDuration": 1.649,
+      "bytes": 15605
+    },
+    "ko/maple/resume": {
+      "text": "좋아, 계속해 보자!",
+      "hash": "697b2d9f389704f7429a4f5770e9f7d1dcfcc91f184605ef8519e9f293433ebb",
+      "seed": 1769680287,
+      "duration": 1.85,
+      "sourceDuration": 1.85,
+      "bytes": 16736
+    },
+    "ko/maple/reset": {
+      "text": "새로운 마음으로 다시 시작하자.",
+      "hash": "286739c987157cd63dd7a62757d8ecdc1be5794df55c146bc8dca3d18ded45da",
+      "seed": 677853641,
+      "duration": 2.07,
+      "sourceDuration": 2.07,
+      "bytes": 18033
+    },
+    "ko/maple/focusComplete": {
+      "text": "잘했어! 이제 잠깐 쉬자.",
+      "hash": "a8e634cfd1b10c1226916e116774764db74ed352865b349ff951c7385dc773f4",
+      "seed": 2834659090,
+      "duration": 2.56,
+      "sourceDuration": 2.56,
+      "bytes": 22642,
+      "instruction": "Speak Korean naturally and clearly. Warm and gentle encouragement."
+    },
+    "ko/maple/breakComplete": {
+      "text": "쉬는 시간 끝! 준비되면 시작하자.",
+      "hash": "3a44da1a0a3c20a775ffa2d2cb16f3d1cd40828d688a58057e7f3050868e5122",
+      "seed": 977590810,
+      "duration": 3.35,
+      "sourceDuration": 3.35,
+      "bytes": 28995
+    },
+    "ko/maple/greeting": {
+      "text": "갓 구운 응원과 함께 집중해 보자.",
+      "hash": "f045df84081f3abc28adaa54a6fa0ba55c4ceff367ddf3ed6ac7083afff8d9ac",
+      "seed": 4031111044,
+      "duration": 2.526,
+      "sourceDuration": 2.526,
+      "bytes": 22050
+    },
+    "es/maple/5": {
+      "text": "Cinco.",
+      "hash": "befd3c341770e663cd7d24ae5cb471322699bafa745a73c056fdc91cb22494e1",
+      "seed": 3204267060,
+      "duration": 0.55,
+      "sourceDuration": 0.55,
+      "bytes": 5737,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0,
+        0.55
+      ]
+    },
+    "es/maple/4": {
+      "text": "Cuatro.",
+      "hash": "befd3c341770e663cd7d24ae5cb471322699bafa745a73c056fdc91cb22494e1",
+      "seed": 3204267060,
+      "duration": 0.76,
+      "sourceDuration": 1.06,
+      "bytes": 7574,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0.55,
+        1.6099999999999999
+      ]
+    },
+    "es/maple/3": {
+      "text": "Tres.",
+      "hash": "befd3c341770e663cd7d24ae5cb471322699bafa745a73c056fdc91cb22494e1",
+      "seed": 3204267060,
+      "duration": 0.76,
+      "sourceDuration": 0.926,
+      "bytes": 7466,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        1.6099999999999999,
+        2.55
+      ]
+    },
+    "es/maple/2": {
+      "text": "Dos.",
+      "hash": "befd3c341770e663cd7d24ae5cb471322699bafa745a73c056fdc91cb22494e1",
+      "seed": 3204267060,
+      "duration": 0.76,
+      "sourceDuration": 0.94,
+      "bytes": 7153,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        2.55,
+        3.49
+      ]
+    },
+    "es/maple/1": {
+      "text": "Uno.",
+      "hash": "befd3c341770e663cd7d24ae5cb471322699bafa745a73c056fdc91cb22494e1",
+      "seed": 3204267060,
+      "duration": 0.76,
+      "sourceDuration": 0.962,
+      "bytes": 7457,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        3.49,
+        4.4518125
+      ]
+    },
+    "es/maple/go": {
+      "text": "¡Vamos a empezar!",
+      "hash": "65aed547b2a735a342ad294c8e2e8e5aa4bbecce5e5c87e47cd24eea0935fe2b",
+      "seed": 1705956679,
+      "duration": 1.016,
+      "sourceDuration": 1.016,
+      "bytes": 9632
+    },
+    "es/maple/pause": {
+      "text": "Toma un respiro. Te espero.",
+      "hash": "55f6bd994ed5f5a989c5dfccc088e2ab1f7bd514dffd7e56e5fddfcb42ee891c",
+      "seed": 1442233753,
+      "duration": 2.56,
+      "sourceDuration": 2.56,
+      "bytes": 23934
+    },
+    "es/maple/resume": {
+      "text": "¡Sigamos adelante!",
+      "hash": "b388144dc27b1c484617e0f73d78aecc110c3e9244646b6a66e288cc6ef73bcc",
+      "seed": 3012039757,
+      "duration": 1.177,
+      "sourceDuration": 1.177,
+      "bytes": 10497
+    },
+    "es/maple/reset": {
+      "text": "Empecemos de nuevo, con calma.",
+      "hash": "f95582e55d7289fc8f696f04f3d488fee4007777b39db587b98490e94eda0757",
+      "seed": 4183130853,
+      "duration": 2.375,
+      "sourceDuration": 2.375,
+      "bytes": 21600
+    },
+    "es/maple/focusComplete": {
+      "text": "¡Muy bien! Es hora de descansar un poco.",
+      "hash": "de5739ea61303aece2590818947cb8f01b739893a4980ae015b395acca6c289c",
+      "seed": 3730258410,
+      "duration": 2.4,
+      "sourceDuration": 2.4,
+      "bytes": 20773
+    },
+    "es/maple/breakComplete": {
+      "text": "Se acabó el descanso. ¡Cuando quieras!",
+      "hash": "bcf00a59b7f1db0b25d10edb3d327a392d4be68395844f745d4964763b7285fb",
+      "seed": 3169847897,
+      "duration": 2.265,
+      "sourceDuration": 2.265,
+      "bytes": 19301
+    },
+    "es/maple/greeting": {
+      "text": "Un poco de ánimo, recién salido del horno.",
+      "hash": "90dc5d9106f4b93a9a014deb9da788caa6a1cd720e8dae7e22f6f44f47b41da6",
+      "seed": 2430360977,
+      "duration": 2.72,
+      "sourceDuration": 2.72,
+      "bytes": 23234
+    },
+    "pt-BR/maple/5": {
+      "text": "Cinco.",
+      "hash": "b5dc3842dff86b842df540001adea0bfb931ddd5b662c24d674b9d8acdd101c7",
+      "seed": 3051110436,
+      "duration": 0.67,
+      "sourceDuration": 0.67,
+      "bytes": 6492,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0,
+        0.67
+      ]
+    },
+    "pt-BR/maple/4": {
+      "text": "Quatro.",
+      "hash": "b5dc3842dff86b842df540001adea0bfb931ddd5b662c24d674b9d8acdd101c7",
+      "seed": 3051110436,
+      "duration": 0.609,
+      "sourceDuration": 0.609,
+      "bytes": 6254,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0.67,
+        1.71
+      ]
+    },
+    "pt-BR/maple/3": {
+      "text": "Três.",
+      "hash": "b5dc3842dff86b842df540001adea0bfb931ddd5b662c24d674b9d8acdd101c7",
+      "seed": 3051110436,
+      "duration": 0.638,
+      "sourceDuration": 0.638,
+      "bytes": 6134,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        1.71,
+        2.71
+      ]
+    },
+    "pt-BR/maple/2": {
+      "text": "Dois.",
+      "hash": "b5dc3842dff86b842df540001adea0bfb931ddd5b662c24d674b9d8acdd101c7",
+      "seed": 3051110436,
+      "duration": 0.76,
+      "sourceDuration": 1.09,
+      "bytes": 7377,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        2.71,
+        3.8
+      ]
+    },
+    "pt-BR/maple/1": {
+      "text": "Um.",
+      "hash": "b5dc3842dff86b842df540001adea0bfb931ddd5b662c24d674b9d8acdd101c7",
+      "seed": 3051110436,
+      "duration": 0.76,
+      "sourceDuration": 1.133,
+      "bytes": 7229,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        3.8,
+        4.932666666666667
+      ]
+    },
+    "pt-BR/maple/go": {
+      "text": "Vamos começar!",
+      "hash": "e7ec734de07d1aea72595f77ca30944284f0736d1f9d4cf5c4430d71b388af2d",
+      "seed": 3891032909,
+      "duration": 1.056,
+      "sourceDuration": 1.056,
+      "bytes": 9524
+    },
+    "pt-BR/maple/pause": {
+      "text": "Respira um pouco. Eu espero.",
+      "hash": "c0a5df7f7cdbe15b424ef73f40bd11a43f679832a72ed2d5939f66662d6c29a6",
+      "seed": 3232096127,
+      "duration": 2.214,
+      "sourceDuration": 2.214,
+      "bytes": 19598
+    },
+    "pt-BR/maple/resume": {
+      "text": "Vamos continuar!",
+      "hash": "f133833510e8c88ce93de6d4d21ec467ee96d60a417b25ee208a89c5aba6f131",
+      "seed": 4046684981,
+      "duration": 1.129,
+      "sourceDuration": 1.129,
+      "bytes": 10173
+    },
+    "pt-BR/maple/reset": {
+      "text": "Um novo começo, com calma.",
+      "hash": "7829b988fde831a2d833422b59fed757f2ee71bb82ae937212bb1e30090f2ca8",
+      "seed": 2016000392,
+      "duration": 2.352,
+      "sourceDuration": 2.352,
+      "bytes": 21358
+    },
+    "pt-BR/maple/focusComplete": {
+      "text": "Muito bem! Hora de descansar um pouco.",
+      "hash": "586226a5784bc7363361fabed5b0bc9ebe8c071cd1fa808f8ffb0c47c07122f7",
+      "seed": 1482827429,
+      "duration": 2.88,
+      "sourceDuration": 2.88,
+      "bytes": 24416
+    },
+    "pt-BR/maple/breakComplete": {
+      "text": "O descanso acabou. Vamos quando você quiser!",
+      "hash": "b191f082c03377f9b4c43c1120e3acdf2687ed8116e9dc660b4c6fe2cda6871b",
+      "seed": 2979131522,
+      "duration": 2.88,
+      "sourceDuration": 2.88,
+      "bytes": 25737
+    },
+    "pt-BR/maple/greeting": {
+      "text": "Um pouquinho de ânimo, saindo do forno.",
+      "hash": "a5adc26fae1b9403665cf36b4e93259d5d37dc9b6ad18f621c1fad8e325d97de",
+      "seed": 2779628143,
+      "duration": 3.2,
+      "sourceDuration": 3.2,
+      "bytes": 28938
+    },
+    "fr/maple/5": {
+      "text": "Cinq.",
+      "hash": "649d874dc5fd56d36934a5f2ead28b08fdd17b19ff880d10927101a2b0746391",
+      "seed": 1688048416,
+      "duration": 0.617,
+      "sourceDuration": 0.617,
+      "bytes": 6068,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0,
+        0.64
+      ]
+    },
+    "fr/maple/4": {
+      "text": "Quatre.",
+      "hash": "649d874dc5fd56d36934a5f2ead28b08fdd17b19ff880d10927101a2b0746391",
+      "seed": 1688048416,
+      "duration": 0.591,
+      "sourceDuration": 0.591,
+      "bytes": 5890,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0.64,
+        1.69
+      ]
+    },
+    "fr/maple/3": {
+      "text": "Trois.",
+      "hash": "649d874dc5fd56d36934a5f2ead28b08fdd17b19ff880d10927101a2b0746391",
+      "seed": 1688048416,
+      "duration": 0.511,
+      "sourceDuration": 0.511,
+      "bytes": 5247,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        1.69,
+        2.67
+      ]
+    },
+    "fr/maple/2": {
+      "text": "Deux.",
+      "hash": "649d874dc5fd56d36934a5f2ead28b08fdd17b19ff880d10927101a2b0746391",
+      "seed": 1688048416,
+      "duration": 0.501,
+      "sourceDuration": 0.501,
+      "bytes": 5203,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        2.67,
+        3.6799999999999997
+      ]
+    },
+    "fr/maple/1": {
+      "text": "Un.",
+      "hash": "649d874dc5fd56d36934a5f2ead28b08fdd17b19ff880d10927101a2b0746391",
+      "seed": 1688048416,
+      "duration": 0.418,
+      "sourceDuration": 0.418,
+      "bytes": 4080,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        3.6799999999999997,
+        4.480166666666666
+      ]
+    },
+    "fr/maple/go": {
+      "text": "C'est parti !",
+      "hash": "7889d88886806b38e4659c48821279fd9f74b9377aa331f5a31a36c99fbdb281",
+      "seed": 2022299784,
+      "duration": 1.266,
+      "sourceDuration": 1.266,
+      "bytes": 11360
+    },
+    "fr/maple/pause": {
+      "text": "Fais une pause. Je t'attends.",
+      "hash": "5ecd0bf41a1f7c66aaed7b58d47d3cabd58a2a22cf9f15ff8e7460f65bd4648b",
+      "seed": 1591496247,
+      "duration": 1.92,
+      "sourceDuration": 1.92,
+      "bytes": 16757,
+      "instruction": "Speak French naturally and clearly. Warm and gently playful."
+    },
+    "fr/maple/resume": {
+      "text": "On continue !",
+      "hash": "5c4c77d9f639bed052b35203e65eeeebdef7292b3b59bf9cb43e90bbd652bfe7",
+      "seed": 1548515289,
+      "duration": 0.994,
+      "sourceDuration": 0.994,
+      "bytes": 9630
+    },
+    "fr/maple/reset": {
+      "text": "On repart du bon pied.",
+      "hash": "f6c140ae49258711597f8536fc26a95846dde01a04a655e50db5363f7a899a9c",
+      "seed": 4139860142,
+      "duration": 1.76,
+      "sourceDuration": 1.76,
+      "bytes": 15693
+    },
+    "fr/maple/focusComplete": {
+      "text": "Bravo ! C'est l'heure d'une petite pause.",
+      "hash": "233d268acf956d8b2b5ebff7decf5260395b302451e9ff179804704976b587a7",
+      "seed": 591210122,
+      "duration": 2.324,
+      "sourceDuration": 2.324,
+      "bytes": 19407
+    },
+    "fr/maple/breakComplete": {
+      "text": "La pause est finie. On reprend quand tu veux !",
+      "hash": "fb851363c0dc765cc8b0b3f06d0adee7c68aacd20ca617a18bec9a6ae267ba1a",
+      "seed": 4219802467,
+      "duration": 2.208,
+      "sourceDuration": 2.208,
+      "bytes": 18980
+    },
+    "fr/maple/greeting": {
+      "text": "Une petite douceur pour te donner du courage.",
+      "hash": "8ca219b728f3a1fb93028e34abfbab9a161b4bb5515c2d0db790dffeea47d75a",
+      "seed": 2361433661,
+      "duration": 3.039,
+      "sourceDuration": 3.039,
+      "bytes": 27113,
+      "instruction": "Speak French naturally and clearly. Warm and gently playful."
+    },
+    "de/maple/5": {
+      "text": "Fünf.",
+      "hash": "e85b4e77456a3e5ddebfb2bf23dd06c365bd6726b8285fdff5464aa297b90b0e",
+      "seed": 3898297975,
+      "duration": 0.64,
+      "sourceDuration": 0.64,
+      "bytes": 6528,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0,
+        0.64
+      ]
+    },
+    "de/maple/4": {
+      "text": "Vier.",
+      "hash": "e85b4e77456a3e5ddebfb2bf23dd06c365bd6726b8285fdff5464aa297b90b0e",
+      "seed": 3898297975,
+      "duration": 0.76,
+      "sourceDuration": 1.02,
+      "bytes": 7217,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0.64,
+        1.66
+      ]
+    },
+    "de/maple/3": {
+      "text": "Drei.",
+      "hash": "e85b4e77456a3e5ddebfb2bf23dd06c365bd6726b8285fdff5464aa297b90b0e",
+      "seed": 3898297975,
+      "duration": 0.76,
+      "sourceDuration": 0.95,
+      "bytes": 7181,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        1.66,
+        2.61
+      ]
+    },
+    "de/maple/2": {
+      "text": "Zwei.",
+      "hash": "e85b4e77456a3e5ddebfb2bf23dd06c365bd6726b8285fdff5464aa297b90b0e",
+      "seed": 3898297975,
+      "duration": 0.76,
+      "sourceDuration": 0.92,
+      "bytes": 7148,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        2.61,
+        3.5300000000000002
+      ]
+    },
+    "de/maple/1": {
+      "text": "Eins.",
+      "hash": "e85b4e77456a3e5ddebfb2bf23dd06c365bd6726b8285fdff5464aa297b90b0e",
+      "seed": 3898297975,
+      "duration": 0.76,
+      "sourceDuration": 1.11,
+      "bytes": 7131,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        3.5300000000000002,
+        4.6401666666666666
+      ]
+    },
+    "de/maple/go": {
+      "text": "Los geht's!",
+      "hash": "7f4490b5279a0fec1bf37cc492c6c48016e25b3f5a8c2f83be6d18226d31a5c8",
+      "seed": 2135199925,
+      "duration": 1.142,
+      "sourceDuration": 1.142,
+      "bytes": 9674
+    },
+    "de/maple/pause": {
+      "text": "Atme kurz durch. Ich warte auf dich.",
+      "hash": "f42a8ab193f6e375d9c2ac5e0a75ea0d85314a4e93b0d725f8a9bd471af8e970",
+      "seed": 4096428721,
+      "duration": 2.451,
+      "sourceDuration": 2.451,
+      "bytes": 21324
+    },
+    "de/maple/resume": {
+      "text": "Weiter geht's!",
+      "hash": "adf542111adca3f6051cfe323f1f48128e1c3e21f6132a3503a564f0ff63b696",
+      "seed": 2918531601,
+      "duration": 1.104,
+      "sourceDuration": 1.104,
+      "bytes": 9478
+    },
+    "de/maple/reset": {
+      "text": "Ein frischer Start. Wir sind bereit.",
+      "hash": "6113af1c450bc3972b8823bce7e833e610d18293b2bc00c437f4f1e4e709dd23",
+      "seed": 1628679964,
+      "duration": 2.067,
+      "sourceDuration": 2.067,
+      "bytes": 18343
+    },
+    "de/maple/focusComplete": {
+      "text": "Gut gemacht! Zeit für eine kleine Pause.",
+      "hash": "1ed550e0c68417267e95fb7b36fdadd8d959b5e89650f2f155d5fc12758f662e",
+      "seed": 517296352,
+      "duration": 2.4,
+      "sourceDuration": 2.4,
+      "bytes": 22445
+    },
+    "de/maple/breakComplete": {
+      "text": "Die Pause ist vorbei. Bereit, wenn du es bist!",
+      "hash": "af51b668bc5d25279a582bd0a23354adf0d85ea078045a345b0a9887291f95ba",
+      "seed": 2941367912,
+      "duration": 3.467,
+      "sourceDuration": 3.467,
+      "bytes": 29299
+    },
+    "de/maple/greeting": {
+      "text": "Eine kleine Portion Mut, frisch aus dem Ofen.",
+      "hash": "46ea645635c779fae1fce362cb411383356bfa80602a51be35d1c7691edf02a6",
+      "seed": 1189766230,
+      "duration": 3.04,
+      "sourceDuration": 3.04,
+      "bytes": 28292
+    },
+    "en/wisp/5": {
+      "text": "Five.",
+      "hash": "946d6ceaca727b6c32af3e56aeb84a0908b8cf51150e0bdc238311990dfb7950",
+      "seed": 2490199274,
+      "duration": 0.52,
+      "sourceDuration": 0.52,
+      "bytes": 5597,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0,
+        0.52
+      ]
+    },
+    "en/wisp/4": {
+      "text": "Four.",
+      "hash": "946d6ceaca727b6c32af3e56aeb84a0908b8cf51150e0bdc238311990dfb7950",
+      "seed": 2490199274,
+      "duration": 0.493,
+      "sourceDuration": 0.493,
+      "bytes": 5207,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0.52,
+        1.55
+      ]
+    },
+    "en/wisp/3": {
+      "text": "Three.",
+      "hash": "946d6ceaca727b6c32af3e56aeb84a0908b8cf51150e0bdc238311990dfb7950",
+      "seed": 2490199274,
+      "duration": 0.418,
+      "sourceDuration": 0.418,
+      "bytes": 5272,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        1.55,
+        2.45
+      ]
+    },
+    "en/wisp/2": {
+      "text": "Two.",
+      "hash": "946d6ceaca727b6c32af3e56aeb84a0908b8cf51150e0bdc238311990dfb7950",
+      "seed": 2490199274,
+      "duration": 0.407,
+      "sourceDuration": 0.407,
+      "bytes": 4569,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        2.45,
+        3.33
+      ]
+    },
+    "en/wisp/1": {
+      "text": "One.",
+      "hash": "946d6ceaca727b6c32af3e56aeb84a0908b8cf51150e0bdc238311990dfb7950",
+      "seed": 2490199274,
+      "duration": 0.41,
+      "sourceDuration": 0.41,
+      "bytes": 4541,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        3.33,
+        4.131479166666667
+      ]
+    },
+    "en/wisp/go": {
+      "text": "Let's begin!",
+      "hash": "1c5cd7681f35502e611d7fb30ba7fd357e9086bb7a93b9eb62453bfe6c16b384",
+      "seed": 475846504,
+      "duration": 0.906,
+      "sourceDuration": 0.906,
+      "bytes": 8208
+    },
+    "en/wisp/pause": {
+      "text": "Take a breath. I'll wait.",
+      "hash": "f36006046f035d322e8dc8f2ac19f5592bc2efdb00d1a71a63aeae6248da3277",
+      "seed": 4083156484,
+      "duration": 1.367,
+      "sourceDuration": 1.367,
+      "bytes": 12570
+    },
+    "en/wisp/resume": {
+      "text": "Let's keep going!",
+      "hash": "1a418dfd12698ad5c903131b0d1b1c576042e2fb40fe544ad8ae3af2f48f4475",
+      "seed": 440503805,
+      "duration": 0.994,
+      "sourceDuration": 0.994,
+      "bytes": 9195
+    },
+    "en/wisp/reset": {
+      "text": "A fresh start. We're ready.",
+      "hash": "0c10f6421f9ca17189e5840b97f2822ab2f38bc6b1ed5d851e5fc5736fa5c8fb",
+      "seed": 202438210,
+      "duration": 1.64,
+      "sourceDuration": 1.64,
+      "bytes": 14142
+    },
+    "en/wisp/focusComplete": {
+      "text": "Well done! Time for a little break.",
+      "hash": "a815c54b2c42341d3f92c524f5239bed5c306fba11fd8862d835503a594b81ce",
+      "seed": 2819999051,
+      "duration": 2.055,
+      "sourceDuration": 2.055,
+      "bytes": 18946
+    },
+    "en/wisp/breakComplete": {
+      "text": "Break's over. Ready when you are!",
+      "hash": "739568cee4fb36d87f6d793c619e17e2df3e76d5ed6d70a94877a117d39cab74",
+      "seed": 1939171534,
+      "duration": 2.232,
+      "sourceDuration": 2.232,
+      "bytes": 19404
+    },
+    "en/wisp/greeting": {
+      "text": "Let’s find a little light together.",
+      "hash": "467513fd99b1244291a8337aa231328191cb00543b63a1bb3fb0afaf9ac11529",
+      "seed": 1182077949,
+      "duration": 1.716,
+      "sourceDuration": 1.716,
+      "bytes": 17064
+    },
+    "zh-Hans/wisp/5": {
+      "text": "五。",
+      "hash": "1ca16263d88af4d44a80904d7da65e2581da0731e56c7446be4db00b63a46de8",
+      "seed": 480338531,
+      "duration": 0.367,
+      "sourceDuration": 0.367,
+      "bytes": 4230,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0,
+        0.42
+      ]
+    },
+    "zh-Hans/wisp/4": {
+      "text": "四。",
+      "hash": "1ca16263d88af4d44a80904d7da65e2581da0731e56c7446be4db00b63a46de8",
+      "seed": 480338531,
+      "duration": 0.461,
+      "sourceDuration": 0.461,
+      "bytes": 4867,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0.42,
+        1.74
+      ]
+    },
+    "zh-Hans/wisp/3": {
+      "text": "三。",
+      "hash": "1ca16263d88af4d44a80904d7da65e2581da0731e56c7446be4db00b63a46de8",
+      "seed": 480338531,
+      "duration": 0.437,
+      "sourceDuration": 0.437,
+      "bytes": 4805,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        1.74,
+        3.08
+      ]
+    },
+    "zh-Hans/wisp/2": {
+      "text": "二。",
+      "hash": "1ca16263d88af4d44a80904d7da65e2581da0731e56c7446be4db00b63a46de8",
+      "seed": 480338531,
+      "duration": 0.33,
+      "sourceDuration": 0.33,
+      "bytes": 3902,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        3.08,
+        3.99
+      ]
+    },
+    "zh-Hans/wisp/1": {
+      "text": "一。",
+      "hash": "1ca16263d88af4d44a80904d7da65e2581da0731e56c7446be4db00b63a46de8",
+      "seed": 480338531,
+      "duration": 0.315,
+      "sourceDuration": 0.315,
+      "bytes": 3933,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        3.99,
+        4.760208333333333
+      ]
+    },
+    "zh-Hans/wisp/go": {
+      "text": "开始吧！",
+      "hash": "5bcdce9c0e9077b8f382d63f7fb014e76ffdd950b6f95e644b610c7ad2607b6c",
+      "seed": 1540214428,
+      "duration": 0.64,
+      "sourceDuration": 0.64,
+      "bytes": 6204
+    },
+    "zh-Hans/wisp/pause": {
+      "text": "歇一会儿，我等你。",
+      "hash": "0cb2cef99dacef0a8cfc6dd8b641359ee9347680c0c091346507b639e559e5f7",
+      "seed": 213044985,
+      "duration": 1.376,
+      "sourceDuration": 1.376,
+      "bytes": 13679
+    },
+    "zh-Hans/wisp/resume": {
+      "text": "好，我们继续！",
+      "hash": "3c14b6d9719a04457be22d9dd047a28c8031cb86ee44555496478dacc043a9b2",
+      "seed": 1007990489,
+      "duration": 1.038,
+      "sourceDuration": 1.038,
+      "bytes": 9955
+    },
+    "zh-Hans/wisp/reset": {
+      "text": "重新开始，我们准备好啦。",
+      "hash": "ee6b86fbcc25d9c7f4c0c409c984fe38a64989999ff4b5b113b2925787be35c7",
+      "seed": 4000024315,
+      "duration": 2.46,
+      "sourceDuration": 2.46,
+      "bytes": 22551
+    },
+    "zh-Hans/wisp/focusComplete": {
+      "text": "做得好！该休息一下啦。",
+      "hash": "74227170c4b3d3b9f99645fea66be255762588a289d97449a4d44b3cfe9f748f",
+      "seed": 1948414320,
+      "duration": 2.42,
+      "sourceDuration": 2.42,
+      "bytes": 22769
+    },
+    "zh-Hans/wisp/breakComplete": {
+      "text": "休息结束啦，准备好了就开始吧！",
+      "hash": "128dcdaf2ce7d819eae75b2551b4bd25face46bda3e43353a25bed4ea5e9ac14",
+      "seed": 311283119,
+      "duration": 2.395,
+      "sourceDuration": 2.395,
+      "bytes": 20397
+    },
+    "zh-Hans/wisp/greeting": {
+      "text": "我们一起，找一点小小的光。",
+      "hash": "4c5d798707de8088124a728b429c6a275286ffc54c4003bb94a28a13b4e04ab0",
+      "seed": 1281194375,
+      "duration": 2.508,
+      "sourceDuration": 2.508,
+      "bytes": 21316
+    },
+    "ja/wisp/5": {
+      "text": "ご。",
+      "hash": "d3d8badb9fe464addffd0952d24e4679b5e94bf472cdc6d0ff4f8537eac10a28",
+      "seed": 3554196187,
+      "duration": 0.271,
+      "sourceDuration": 0.271,
+      "bytes": 3509,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0.8200000000000001,
+        1.33
+      ]
+    },
+    "ja/wisp/4": {
+      "text": "よん。",
+      "hash": "d3d8badb9fe464addffd0952d24e4679b5e94bf472cdc6d0ff4f8537eac10a28",
+      "seed": 3554196187,
+      "duration": 0.3,
+      "sourceDuration": 0.3,
+      "bytes": 3471,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        1.33,
+        1.96
+      ]
+    },
+    "ja/wisp/3": {
+      "text": "さん。",
+      "hash": "d3d8badb9fe464addffd0952d24e4679b5e94bf472cdc6d0ff4f8537eac10a28",
+      "seed": 3554196187,
+      "duration": 0.349,
+      "sourceDuration": 0.349,
+      "bytes": 4132,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        1.96,
+        2.56
+      ]
+    },
+    "ja/wisp/2": {
+      "text": "に。",
+      "hash": "d3d8badb9fe464addffd0952d24e4679b5e94bf472cdc6d0ff4f8537eac10a28",
+      "seed": 3554196187,
+      "duration": 0.261,
+      "sourceDuration": 0.261,
+      "bytes": 3283,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        2.56,
+        3.0700000000000003
+      ]
+    },
+    "ja/wisp/1": {
+      "text": "いち。",
+      "hash": "d3d8badb9fe464addffd0952d24e4679b5e94bf472cdc6d0ff4f8537eac10a28",
+      "seed": 3554196187,
+      "duration": 0.221,
+      "sourceDuration": 0.221,
+      "bytes": 2931,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        3.0700000000000003,
+        3.4877291666666665
+      ]
+    },
+    "ja/wisp/go": {
+      "text": "さあ、始めよう！",
+      "hash": "a4c9196b1aea250a38d84cb1972ffe5725c14644aeb8c3073a9dba50e28dbe41",
+      "seed": 2764642667,
+      "duration": 1.783,
+      "sourceDuration": 1.783,
+      "bytes": 16379
+    },
+    "ja/wisp/pause": {
+      "text": "ひと息つこう。待ってるね。",
+      "hash": "243584d96e14bb9d8d9c17f9306326ff1066c784e547a3340d88741b3e195fbd",
+      "seed": 607487193,
+      "duration": 2.73,
+      "sourceDuration": 2.73,
+      "bytes": 23593
+    },
+    "ja/wisp/resume": {
+      "text": "よし、続けよう！",
+      "hash": "a963334f38806f6e034c7a5977e5f0d2ea9315d8c55302f237bcaed4586e679a",
+      "seed": 2841850703,
+      "duration": 1.427,
+      "sourceDuration": 1.427,
+      "bytes": 15340
+    },
+    "ja/wisp/reset": {
+      "text": "気持ちを新たに、もう一度。",
+      "hash": "fd2ed2c4613e077a47ef0e9ab90d158806f32d57067e8406b62aabc0c24a3ffc",
+      "seed": 4247704260,
+      "duration": 2.207,
+      "sourceDuration": 2.207,
+      "bytes": 19781
+    },
+    "ja/wisp/focusComplete": {
+      "text": "おつかれさま！少し休もう。",
+      "hash": "2c0e2ec99f95a7e3e7083e31bd3cd02a5ed0a1898479c141b5ba98046d17fcdd",
+      "seed": 739126985,
+      "duration": 2.501,
+      "sourceDuration": 2.501,
+      "bytes": 20984
+    },
+    "ja/wisp/breakComplete": {
+      "text": "休憩おしまい。準備ができたら始めよう！",
+      "hash": "8e145a688c59e39f4375390dc439a8efad7466781bccfc77ef92d92573795b60",
+      "seed": 2383699545,
+      "duration": 3.572,
+      "sourceDuration": 3.572,
+      "bytes": 25676
+    },
+    "ja/wisp/greeting": {
+      "text": "一緒に、小さな光を見つけよう。",
+      "hash": "529b547c713198fb187bc28713f5650e3d81ccbd76f31a5f79d39354952c8af7",
+      "seed": 1385911420,
+      "duration": 2.456,
+      "sourceDuration": 2.456,
+      "bytes": 21392
+    },
+    "ko/wisp/5": {
+      "text": "오.",
+      "hash": "3d00c261d8503ab842da57ea90a7b065b676d3d846bc8ae7fb92afad41eadf4a",
+      "seed": 1023459937,
+      "duration": 0.415,
+      "sourceDuration": 0.415,
+      "bytes": 4607,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0,
+        0.55
+      ]
+    },
+    "ko/wisp/4": {
+      "text": "사.",
+      "hash": "3d00c261d8503ab842da57ea90a7b065b676d3d846bc8ae7fb92afad41eadf4a",
+      "seed": 1023459937,
+      "duration": 0.552,
+      "sourceDuration": 0.552,
+      "bytes": 5535,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0.55,
+        2.05
+      ]
+    },
+    "ko/wisp/3": {
+      "text": "삼.",
+      "hash": "3d00c261d8503ab842da57ea90a7b065b676d3d846bc8ae7fb92afad41eadf4a",
+      "seed": 1023459937,
+      "duration": 0.76,
+      "sourceDuration": 1.32,
+      "bytes": 7131,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        2.05,
+        3.37
+      ]
+    },
+    "ko/wisp/2": {
+      "text": "이.",
+      "hash": "3d00c261d8503ab842da57ea90a7b065b676d3d846bc8ae7fb92afad41eadf4a",
+      "seed": 1023459937,
+      "duration": 0.76,
+      "sourceDuration": 1.29,
+      "bytes": 7219,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        3.37,
+        4.66
+      ]
+    },
+    "ko/wisp/1": {
+      "text": "일.",
+      "hash": "3d00c261d8503ab842da57ea90a7b065b676d3d846bc8ae7fb92afad41eadf4a",
+      "seed": 1023459937,
+      "duration": 0.76,
+      "sourceDuration": 1.452,
+      "bytes": 7138,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        4.66,
+        6.1121875
+      ]
+    },
+    "ko/wisp/go": {
+      "text": "자, 시작하자!",
+      "hash": "4567209d2cdd1c0af923ffda36c20b6f25acbd7a8071509982c51809a8df49ec",
+      "seed": 1164386461,
+      "duration": 1.92,
+      "sourceDuration": 1.92,
+      "bytes": 16183
+    },
+    "ko/wisp/pause": {
+      "text": "잠깐 쉬어. 기다릴게.",
+      "hash": "f54afb9e3075c773a782ba0d061cf8a87878fc951806e353b6f75d38256892c3",
+      "seed": 4115331998,
+      "duration": 1.752,
+      "sourceDuration": 1.752,
+      "bytes": 16505
+    },
+    "ko/wisp/resume": {
+      "text": "좋아, 계속해 보자!",
+      "hash": "5e7edc5882825e965aa3ee7736e739b01fb9ff1450e0364b35dbf50e4343c24f",
+      "seed": 1585372248,
+      "duration": 1.588,
+      "sourceDuration": 1.588,
+      "bytes": 14085
+    },
+    "ko/wisp/reset": {
+      "text": "새로운 마음으로 다시 시작하자.",
+      "hash": "358be7c59bf2337558ddb934905f03eeb71bc5d254f661bad63f29e529786313",
+      "seed": 898361285,
+      "duration": 2.17,
+      "sourceDuration": 2.17,
+      "bytes": 17722
+    },
+    "ko/wisp/focusComplete": {
+      "text": "잘했어! 이제 잠깐 쉬자.",
+      "hash": "82d04d1314f25b133f051d77f2827c222e24385f45d51be646a42cbea4bd5d59",
+      "seed": 2195689302,
+      "duration": 2.394,
+      "sourceDuration": 2.394,
+      "bytes": 20973,
+      "instruction": "Speak Korean naturally and clearly. Warm and gentle encouragement."
+    },
+    "ko/wisp/breakComplete": {
+      "text": "쉬는 시간 끝! 준비되면 시작하자.",
+      "hash": "2a071ea969cf80f5670b858a111b29f46dd6ae408e2331415334bfb7fd6db6d0",
+      "seed": 705109673,
+      "duration": 3.019,
+      "sourceDuration": 3.019,
+      "bytes": 27698
+    },
+    "ko/wisp/greeting": {
+      "text": "함께 작은 빛을 찾아보자.",
+      "hash": "dcdd6b741d6eecf7cdca188a659861a17a154ed4e05ed1b8740bdda0b77ea108",
+      "seed": 3705498484,
+      "duration": 1.92,
+      "sourceDuration": 1.92,
+      "bytes": 17358
+    },
+    "es/wisp/5": {
+      "text": "Cinco.",
+      "hash": "4481818a413c4f1f5178fc6a3752ff7049b4b267069b1f6ffbc33f85be3803a9",
+      "seed": 1149337994,
+      "duration": 0.34,
+      "sourceDuration": 0.34,
+      "bytes": 3858,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0,
+        0.34
+      ]
+    },
+    "es/wisp/4": {
+      "text": "Cuatro.",
+      "hash": "4481818a413c4f1f5178fc6a3752ff7049b4b267069b1f6ffbc33f85be3803a9",
+      "seed": 1149337994,
+      "duration": 0.5,
+      "sourceDuration": 0.5,
+      "bytes": 5133,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0.34,
+        0.84
+      ]
+    },
+    "es/wisp/3": {
+      "text": "Tres.",
+      "hash": "4481818a413c4f1f5178fc6a3752ff7049b4b267069b1f6ffbc33f85be3803a9",
+      "seed": 1149337994,
+      "duration": 0.48,
+      "sourceDuration": 0.48,
+      "bytes": 5873,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0.84,
+        1.32
+      ]
+    },
+    "es/wisp/2": {
+      "text": "Dos.",
+      "hash": "4481818a413c4f1f5178fc6a3752ff7049b4b267069b1f6ffbc33f85be3803a9",
+      "seed": 1149337994,
+      "duration": 0.6,
+      "sourceDuration": 0.6,
+      "bytes": 5923,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        1.32,
+        1.92
+      ]
+    },
+    "es/wisp/1": {
+      "text": "Uno.",
+      "hash": "4481818a413c4f1f5178fc6a3752ff7049b4b267069b1f6ffbc33f85be3803a9",
+      "seed": 1149337994,
+      "duration": 0.76,
+      "sourceDuration": 0.84,
+      "bytes": 7342,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        1.92,
+        2.7601875
+      ]
+    },
+    "es/wisp/go": {
+      "text": "¡Vamos a empezar!",
+      "hash": "952625930765edc46598469fcd863a067a75a6f4275b34019e257fed2424f917",
+      "seed": 2502305171,
+      "duration": 0.996,
+      "sourceDuration": 0.996,
+      "bytes": 8846
+    },
+    "es/wisp/pause": {
+      "text": "Toma un respiro. Te espero.",
+      "hash": "6753cc620337e0427e49d0a470d7e54ab2fe7b8bce7246e9dac659754c432925",
+      "seed": 1734545061,
+      "duration": 1.593,
+      "sourceDuration": 1.593,
+      "bytes": 14069,
+      "instruction": "Speak Spanish naturally and clearly. Warm and gently playful."
+    },
+    "es/wisp/resume": {
+      "text": "¡Sigamos adelante!",
+      "hash": "8c7c91cdc2af567ac892e6d141f2d9aa04a202762b2ef0ca100b100d9ab11d30",
+      "seed": 2356974029,
+      "duration": 1.096,
+      "sourceDuration": 1.096,
+      "bytes": 9806
+    },
+    "es/wisp/reset": {
+      "text": "Empecemos de nuevo, con calma.",
+      "hash": "d80ae5c1bb85aa7780451f4c5b708258686633542cf062fe8e49ec982ebdcd1d",
+      "seed": 3624592833,
+      "duration": 1.698,
+      "sourceDuration": 1.698,
+      "bytes": 14698
+    },
+    "es/wisp/focusComplete": {
+      "text": "¡Muy bien! Es hora de descansar un poco.",
+      "hash": "3fe88eb82ebd73e1544fbd97fbc7cd84c6235b31508d732f5321f7980b1676d9",
+      "seed": 1072205496,
+      "duration": 2.134,
+      "sourceDuration": 2.134,
+      "bytes": 18747
+    },
+    "es/wisp/breakComplete": {
+      "text": "Se acabó el descanso. ¡Cuando quieras!",
+      "hash": "4e08f0a07f3bd30ca9f0ac2a22b50a1690ec9d1d61c64a466a659bedbfd6d482",
+      "seed": 1309208736,
+      "duration": 2.011,
+      "sourceDuration": 2.011,
+      "bytes": 17699
+    },
+    "es/wisp/greeting": {
+      "text": "Busquemos un poquito de luz juntos.",
+      "hash": "a9ad742a0341e38f5a9cf944137cc70d8eadf56499d1ce77de26c7f6f1675745",
+      "seed": 2846716970,
+      "duration": 2.304,
+      "sourceDuration": 2.304,
+      "bytes": 20101
+    },
+    "pt-BR/wisp/5": {
+      "text": "Cinco.",
+      "hash": "bd0fd4344bc40c3586322e930e4631e33187368dfe838f717fe486602a7c645c",
+      "seed": 3171931188,
+      "duration": 0.57,
+      "sourceDuration": 0.57,
+      "bytes": 6029,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0,
+        0.5700000000000001
+      ]
+    },
+    "pt-BR/wisp/4": {
+      "text": "Quatro.",
+      "hash": "bd0fd4344bc40c3586322e930e4631e33187368dfe838f717fe486602a7c645c",
+      "seed": 3171931188,
+      "duration": 0.78,
+      "sourceDuration": 0.78,
+      "bytes": 8656,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0.5700000000000001,
+        1.35
+      ]
+    },
+    "pt-BR/wisp/3": {
+      "text": "Três.",
+      "hash": "bd0fd4344bc40c3586322e930e4631e33187368dfe838f717fe486602a7c645c",
+      "seed": 3171931188,
+      "duration": 0.71,
+      "sourceDuration": 0.71,
+      "bytes": 7675,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        1.35,
+        2.06
+      ]
+    },
+    "pt-BR/wisp/2": {
+      "text": "Dois.",
+      "hash": "bd0fd4344bc40c3586322e930e4631e33187368dfe838f717fe486602a7c645c",
+      "seed": 3171931188,
+      "duration": 0.64,
+      "sourceDuration": 0.64,
+      "bytes": 7085,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        2.06,
+        2.7
+      ]
+    },
+    "pt-BR/wisp/1": {
+      "text": "Um.",
+      "hash": "bd0fd4344bc40c3586322e930e4631e33187368dfe838f717fe486602a7c645c",
+      "seed": 3171931188,
+      "duration": 0.715,
+      "sourceDuration": 0.715,
+      "bytes": 6873,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        2.7,
+        3.4154166666666668
+      ]
+    },
+    "pt-BR/wisp/go": {
+      "text": "Vamos começar!",
+      "hash": "c6f984f2262fd4aee3c267b70b90b987f2e75c315dfb2faf53627ddc89ba4475",
+      "seed": 3338241266,
+      "duration": 1.238,
+      "sourceDuration": 1.238,
+      "bytes": 10445
+    },
+    "pt-BR/wisp/pause": {
+      "text": "Respira um pouco. Eu espero.",
+      "hash": "f64ea6b15e22956b7e60bc1e157fb54a98e9ad71013e66e72fa379d8bbdb62e6",
+      "seed": 4132349617,
+      "duration": 2.374,
+      "sourceDuration": 2.374,
+      "bytes": 21149
+    },
+    "pt-BR/wisp/resume": {
+      "text": "Vamos continuar!",
+      "hash": "e6e39bcb202dd377b44e5e3ef7fdd441e9719c5d5fa79c9dc6f257b0054db680",
+      "seed": 3873676235,
+      "duration": 1.17,
+      "sourceDuration": 1.17,
+      "bytes": 10273
+    },
+    "pt-BR/wisp/reset": {
+      "text": "Um novo começo, com calma.",
+      "hash": "bdeab8cb930f8e9a0444f569cee65b250c1d2745dff68c83e61bc56620e0f371",
+      "seed": 3186276555,
+      "duration": 3.292,
+      "sourceDuration": 3.292,
+      "bytes": 27955
+    },
+    "pt-BR/wisp/focusComplete": {
+      "text": "Muito bem! Hora de descansar um pouco.",
+      "hash": "cadb47553ee72431951237605dc47c73ee87f379083b620385bc92dbd7450f82",
+      "seed": 3403368277,
+      "duration": 2.528,
+      "sourceDuration": 2.528,
+      "bytes": 22652
+    },
+    "pt-BR/wisp/breakComplete": {
+      "text": "O descanso acabou. Vamos quando você quiser!",
+      "hash": "c91bb24da9165fc9f0b65c4f5ad10c3a9edfdcd2fac037cc19a1044263444fe9",
+      "seed": 3374035533,
+      "duration": 2.689,
+      "sourceDuration": 2.689,
+      "bytes": 22786
+    },
+    "pt-BR/wisp/greeting": {
+      "text": "Vamos encontrar um pouquinho de luz juntos.",
+      "hash": "14c6fd473e2550be2ca0bb0cecc822001d3456f9a0a4fcb0c934573fa9e70b10",
+      "seed": 348585287,
+      "duration": 2.426,
+      "sourceDuration": 2.426,
+      "bytes": 21282
+    },
+    "fr/wisp/5": {
+      "text": "Cinq.",
+      "hash": "9bd798807452f5c196215bc638e742d30fd7ff26d42455f3c48ad5a2577fccfd",
+      "seed": 2614597760,
+      "duration": 0.49,
+      "sourceDuration": 0.49,
+      "bytes": 5197,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0,
+        0.49
+      ]
+    },
+    "fr/wisp/4": {
+      "text": "Quatre.",
+      "hash": "9bd798807452f5c196215bc638e742d30fd7ff26d42455f3c48ad5a2577fccfd",
+      "seed": 2614597760,
+      "duration": 0.52,
+      "sourceDuration": 0.52,
+      "bytes": 6662,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0.49,
+        1.01
+      ]
+    },
+    "fr/wisp/3": {
+      "text": "Trois.",
+      "hash": "9bd798807452f5c196215bc638e742d30fd7ff26d42455f3c48ad5a2577fccfd",
+      "seed": 2614597760,
+      "duration": 0.64,
+      "sourceDuration": 0.64,
+      "bytes": 6782,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        1.01,
+        1.65
+      ]
+    },
+    "fr/wisp/2": {
+      "text": "Deux.",
+      "hash": "9bd798807452f5c196215bc638e742d30fd7ff26d42455f3c48ad5a2577fccfd",
+      "seed": 2614597760,
+      "duration": 0.289,
+      "sourceDuration": 0.289,
+      "bytes": 3528,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        1.65,
+        2.06
+      ]
+    },
+    "fr/wisp/1": {
+      "text": "Un.",
+      "hash": "9bd798807452f5c196215bc638e742d30fd7ff26d42455f3c48ad5a2577fccfd",
+      "seed": 2614597760,
+      "duration": 0.5,
+      "sourceDuration": 0.5,
+      "bytes": 6690,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        2.06,
+        2.5601666666666665
+      ]
+    },
+    "fr/wisp/go": {
+      "text": "C'est parti !",
+      "hash": "5d8b8d157a73e4e3d90f37e1fe29d1c6a622c9b24b034c97a59d420fe6c10e0f",
+      "seed": 1569426709,
+      "duration": 1.772,
+      "sourceDuration": 1.772,
+      "bytes": 15122
+    },
+    "fr/wisp/pause": {
+      "text": "Fais une pause. Je t'attends.",
+      "hash": "652c2b9561ee2606982fa21f097feb34214cf60a847fd2479369a2b7d793a998",
+      "seed": 1698393560,
+      "duration": 2.55,
+      "sourceDuration": 2.55,
+      "bytes": 21065,
+      "instruction": "Speak French naturally and clearly. Warm and gently playful."
+    },
+    "fr/wisp/resume": {
+      "text": "On continue !",
+      "hash": "9fef0762e2d367126177bfeab08c0cde0530889d4f6cab388de43ac1e981d59f",
+      "seed": 2684242341,
+      "duration": 1.28,
+      "sourceDuration": 1.28,
+      "bytes": 11145,
+      "instruction": "Speak French naturally and clearly. Warm and gently playful."
+    },
+    "fr/wisp/reset": {
+      "text": "On repart du bon pied.",
+      "hash": "a05c68703294603da0aa49cd934cbb553a6579cbc79fefefbd34f5e8d59521ea",
+      "seed": 2690410608,
+      "duration": 1.222,
+      "sourceDuration": 1.222,
+      "bytes": 10870
+    },
+    "fr/wisp/focusComplete": {
+      "text": "Bravo ! C'est l'heure d'une petite pause.",
+      "hash": "54d553fc5421deeb3df610001ea4336c2dbb2d71397d1a9aeb5d1373889244a7",
+      "seed": 1423266812,
+      "duration": 2.54,
+      "sourceDuration": 2.54,
+      "bytes": 21481
+    },
+    "fr/wisp/breakComplete": {
+      "text": "La pause est finie. On reprend quand tu veux !",
+      "hash": "d22fe07280006e440d21e8197ebbbcbdf9b1d09524e7052d3fc8a5717a7f0a22",
+      "seed": 3526353010,
+      "duration": 2.236,
+      "sourceDuration": 2.236,
+      "bytes": 18716
+    },
+    "fr/wisp/greeting": {
+      "text": "Trouvons une petite lumière ensemble.",
+      "hash": "261add2546076ee0d003f2bde33ed43d091fe2c9e1a2b6497cbd001bb953211c",
+      "seed": 640294760,
+      "duration": 2.809,
+      "sourceDuration": 2.809,
+      "bytes": 25947,
+      "instruction": "Speak French naturally and clearly. Soft and friendly, without extra words."
+    },
+    "de/wisp/5": {
+      "text": "Fünf.",
+      "hash": "8bc5be3731fcefc3834638651063b76214aef9d7b507d669aaa00b9b8809e2f7",
+      "seed": 2344992311,
+      "duration": 0.452,
+      "sourceDuration": 0.452,
+      "bytes": 4886,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0,
+        0.61
+      ]
+    },
+    "de/wisp/4": {
+      "text": "Vier.",
+      "hash": "8bc5be3731fcefc3834638651063b76214aef9d7b507d669aaa00b9b8809e2f7",
+      "seed": 2344992311,
+      "duration": 0.314,
+      "sourceDuration": 0.314,
+      "bytes": 3702,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0.61,
+        1.33
+      ]
+    },
+    "de/wisp/3": {
+      "text": "Drei.",
+      "hash": "8bc5be3731fcefc3834638651063b76214aef9d7b507d669aaa00b9b8809e2f7",
+      "seed": 2344992311,
+      "duration": 0.63,
+      "sourceDuration": 0.63,
+      "bytes": 6106,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        1.33,
+        1.96
+      ]
+    },
+    "de/wisp/2": {
+      "text": "Zwei.",
+      "hash": "8bc5be3731fcefc3834638651063b76214aef9d7b507d669aaa00b9b8809e2f7",
+      "seed": 2344992311,
+      "duration": 0.381,
+      "sourceDuration": 0.381,
+      "bytes": 4189,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        1.96,
+        2.5
+      ]
+    },
+    "de/wisp/1": {
+      "text": "Eins.",
+      "hash": "8bc5be3731fcefc3834638651063b76214aef9d7b507d669aaa00b9b8809e2f7",
+      "seed": 2344992311,
+      "duration": 0.475,
+      "sourceDuration": 0.475,
+      "bytes": 5177,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        2.5,
+        3.1334583333333335
+      ]
+    },
+    "de/wisp/go": {
+      "text": "Los geht's!",
+      "hash": "dff3cf9956cc0b8bb02d45af91af274c29108051e03333809b4b28373caecfb2",
+      "seed": 3758297564,
+      "duration": 0.838,
+      "sourceDuration": 0.838,
+      "bytes": 7754,
+      "instruction": "Speak German naturally and clearly. Soft and friendly."
+    },
+    "de/wisp/pause": {
+      "text": "Atme kurz durch. Ich warte auf dich.",
+      "hash": "2401d3c9eb6d2688e7bdf4616ece7b58dfdcd006e1b8e5915b939c2780bf9cd5",
+      "seed": 604099529,
+      "duration": 2.143,
+      "sourceDuration": 2.143,
+      "bytes": 20188
+    },
+    "de/wisp/resume": {
+      "text": "Weiter geht's!",
+      "hash": "3d60fb04e5ba1477c5535f570a188562ab7370ce5ff364e0b353f51cd4cc4d41",
+      "seed": 1029765892,
+      "duration": 0.679,
+      "sourceDuration": 0.679,
+      "bytes": 6677
+    },
+    "de/wisp/reset": {
+      "text": "Ein frischer Start. Wir sind bereit.",
+      "hash": "ef676b964a92fe2ca498f80ba6c68f9538146468550e314c860391d68db96c1f",
+      "seed": 4016532374,
+      "duration": 2.206,
+      "sourceDuration": 2.206,
+      "bytes": 19254
+    },
+    "de/wisp/focusComplete": {
+      "text": "Gut gemacht! Zeit für eine kleine Pause.",
+      "hash": "08b9a4c746b09c0b1902f8648637f7ed851a34150a7a621263dbaec74934cb36",
+      "seed": 146384071,
+      "duration": 1.917,
+      "sourceDuration": 1.917,
+      "bytes": 17553
+    },
+    "de/wisp/breakComplete": {
+      "text": "Die Pause ist vorbei. Bereit, wenn du es bist!",
+      "hash": "88b4670379c0f697ccd41581c58683dad01abdf7cc5481c51a3c88613d3ad910",
+      "seed": 2293524227,
+      "duration": 2.88,
+      "sourceDuration": 2.88,
+      "bytes": 25817
+    },
+    "de/wisp/greeting": {
+      "text": "Finden wir gemeinsam ein kleines Licht.",
+      "hash": "6b874c148e7738921574f7642cb56ebb8fb548876266b5a789ce85931d9362e1",
+      "seed": 1804028948,
+      "duration": 1.676,
+      "sourceDuration": 1.676,
+      "bytes": 14604
+    },
+    "en/comet/5": {
+      "text": "Five.",
+      "hash": "8ba79f2ee1cd1bad39744904035eb28564f1cf51f0368213e67730a50ad9a340",
+      "seed": 2343018286,
+      "duration": 0.626,
+      "sourceDuration": 0.626,
+      "bytes": 6203,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0,
+        0.67
+      ]
+    },
+    "en/comet/4": {
+      "text": "Four.",
+      "hash": "8ba79f2ee1cd1bad39744904035eb28564f1cf51f0368213e67730a50ad9a340",
+      "seed": 2343018286,
+      "duration": 0.566,
+      "sourceDuration": 0.566,
+      "bytes": 5881,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0.67,
+        2.03
+      ]
+    },
+    "en/comet/3": {
+      "text": "Three.",
+      "hash": "8ba79f2ee1cd1bad39744904035eb28564f1cf51f0368213e67730a50ad9a340",
+      "seed": 2343018286,
+      "duration": 0.515,
+      "sourceDuration": 0.515,
+      "bytes": 5274,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        2.03,
+        3.33
+      ]
+    },
+    "en/comet/2": {
+      "text": "Two.",
+      "hash": "8ba79f2ee1cd1bad39744904035eb28564f1cf51f0368213e67730a50ad9a340",
+      "seed": 2343018286,
+      "duration": 0.489,
+      "sourceDuration": 0.489,
+      "bytes": 5228,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        3.33,
+        4.93
+      ]
+    },
+    "en/comet/1": {
+      "text": "One.",
+      "hash": "8ba79f2ee1cd1bad39744904035eb28564f1cf51f0368213e67730a50ad9a340",
+      "seed": 2343018286,
+      "duration": 0.495,
+      "sourceDuration": 0.495,
+      "bytes": 5220,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        4.93,
+        6.080166666666667
+      ]
+    },
+    "en/comet/go": {
+      "text": "Let's begin!",
+      "hash": "48322b560652409a05245f513238e0f8ed49b7277e3cb9c39191ca581098b85f",
+      "seed": 1211247446,
+      "duration": 0.881,
+      "sourceDuration": 0.881,
+      "bytes": 8132
+    },
+    "en/comet/pause": {
+      "text": "Take a breath. I'll wait.",
+      "hash": "b52b8e330c12bfc312bf10296986ee31dc5ec63e9680f64e02473aff6a893ace",
+      "seed": 3039530547,
+      "duration": 1.187,
+      "sourceDuration": 1.187,
+      "bytes": 10660
+    },
+    "en/comet/resume": {
+      "text": "Let's keep going!",
+      "hash": "8afeebe4536b8c37d57948e97e8bbe3cae0794569eb7a341679a9ebfcad169a9",
+      "seed": 2331962340,
+      "duration": 0.946,
+      "sourceDuration": 0.946,
+      "bytes": 9364
+    },
+    "en/comet/reset": {
+      "text": "A fresh start. We're ready.",
+      "hash": "363f8cc65602b153e08a0e5c482cab7ab0c2980ed1087ef199780a8c196b97e9",
+      "seed": 910134470,
+      "duration": 1.76,
+      "sourceDuration": 1.76,
+      "bytes": 16061
+    },
+    "en/comet/focusComplete": {
+      "text": "Well done! Time for a little break.",
+      "hash": "17fd383d1fe32c97700ba32b7b86aa61ca2574782d4f461f29ce23a81ed7cb2c",
+      "seed": 402470973,
+      "duration": 2.24,
+      "sourceDuration": 2.24,
+      "bytes": 20477
+    },
+    "en/comet/breakComplete": {
+      "text": "Break's over. Ready when you are!",
+      "hash": "31ee9139132106b6d2ab62c7cff6666f9d26ad68dd765a06abd4939591681c3e",
+      "seed": 837718329,
+      "duration": 1.752,
+      "sourceDuration": 1.752,
+      "bytes": 14703
+    },
+    "en/comet/greeting": {
+      "text": "One small delivery. One big adventure.",
+      "hash": "426d8b9af12b7c2ada73dc39a71e3ed37cb9a343da141c95eb0706edf59351fa",
+      "seed": 1114475418,
+      "duration": 2.649,
+      "sourceDuration": 2.649,
+      "bytes": 23268
+    },
+    "zh-Hans/comet/5": {
+      "text": "五。",
+      "hash": "192fb9a9add2aeed7635bb8381977a1d881666fa43bf1a4fa2174984eade2cea",
+      "seed": 422558121,
+      "duration": 0.4,
+      "sourceDuration": 0.4,
+      "bytes": 4567,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0,
+        0.4
+      ]
+    },
+    "zh-Hans/comet/4": {
+      "text": "四。",
+      "hash": "192fb9a9add2aeed7635bb8381977a1d881666fa43bf1a4fa2174984eade2cea",
+      "seed": 422558121,
+      "duration": 0.425,
+      "sourceDuration": 0.425,
+      "bytes": 4540,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0.4,
+        1.55
+      ]
+    },
+    "zh-Hans/comet/3": {
+      "text": "三。",
+      "hash": "192fb9a9add2aeed7635bb8381977a1d881666fa43bf1a4fa2174984eade2cea",
+      "seed": 422558121,
+      "duration": 0.416,
+      "sourceDuration": 0.416,
+      "bytes": 4464,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        1.55,
+        2.66
+      ]
+    },
+    "zh-Hans/comet/2": {
+      "text": "二。",
+      "hash": "192fb9a9add2aeed7635bb8381977a1d881666fa43bf1a4fa2174984eade2cea",
+      "seed": 422558121,
+      "duration": 0.302,
+      "sourceDuration": 0.302,
+      "bytes": 3734,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        2.66,
+        3.4699999999999998
+      ]
+    },
+    "zh-Hans/comet/1": {
+      "text": "一。",
+      "hash": "192fb9a9add2aeed7635bb8381977a1d881666fa43bf1a4fa2174984eade2cea",
+      "seed": 422558121,
+      "duration": 0.3,
+      "sourceDuration": 0.3,
+      "bytes": 3520,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        3.4699999999999998,
+        4.138229166666667
+      ]
+    },
+    "zh-Hans/comet/go": {
+      "text": "开始吧！",
+      "hash": "7e7e31b32936f0a73cf14d82aa0a9996ed9eef4ec987602f3085afd8f491bc8c",
+      "seed": 2122199475,
+      "duration": 0.581,
+      "sourceDuration": 0.581,
+      "bytes": 5892
+    },
+    "zh-Hans/comet/pause": {
+      "text": "歇一会儿，我等你。",
+      "hash": "f8a17c502b7779e2258ff6bb2bd2b669326f8c8208c89872c9944538400e8363",
+      "seed": 4171332688,
+      "duration": 1.318,
+      "sourceDuration": 1.318,
+      "bytes": 11432
+    },
+    "zh-Hans/comet/resume": {
+      "text": "好，我们继续！",
+      "hash": "f91e2324ed238ae7f3f04bf77ffd4a1f300e12f77dabd15d82fc4f1bf80f5205",
+      "seed": 4179501860,
+      "duration": 1.146,
+      "sourceDuration": 1.146,
+      "bytes": 10155
+    },
+    "zh-Hans/comet/reset": {
+      "text": "重新开始，我们准备好啦。",
+      "hash": "427881acd8f6a7e9ba752e069be4530007d4dad2cb8af8fe7fd6038971ee3320",
+      "seed": 1115193772,
+      "duration": 2.417,
+      "sourceDuration": 2.417,
+      "bytes": 20418
+    },
+    "zh-Hans/comet/focusComplete": {
+      "text": "做得好！该休息一下啦。",
+      "hash": "df3532be9a8b6d5df8f70653155e89eadfedf095fb28065292d4fac4f484195a",
+      "seed": 3744805566,
+      "duration": 1.906,
+      "sourceDuration": 1.906,
+      "bytes": 16543
+    },
+    "zh-Hans/comet/breakComplete": {
+      "text": "休息结束啦，准备好了就开始吧！",
+      "hash": "4b862d7b2c36ba94bb1f488939f8550bbf334d703f78612f2e39628bf9e42176",
+      "seed": 1267084667,
+      "duration": 2.446,
+      "sourceDuration": 2.446,
+      "bytes": 21535
+    },
+    "zh-Hans/comet/greeting": {
+      "text": "送出一个小包裹，开启一场大冒险。",
+      "hash": "8bad5e8fd6ec19b828aecc4145351697ad5627dcf2e98caf990cc949319cb5a9",
+      "seed": 2343394959,
+      "duration": 2.71,
+      "sourceDuration": 2.71,
+      "bytes": 23729
+    },
+    "ja/comet/5": {
+      "text": "ご。",
+      "hash": "05fc01a1004e7049f0c640d641ca75493083fa4d601743db56bea4fc9f9f87ed",
+      "seed": 100401569,
+      "duration": 0.279,
+      "sourceDuration": 0.279,
+      "bytes": 3516,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0.8400000000000001,
+        1.32
+      ]
+    },
+    "ja/comet/4": {
+      "text": "よん。",
+      "hash": "05fc01a1004e7049f0c640d641ca75493083fa4d601743db56bea4fc9f9f87ed",
+      "seed": 100401569,
+      "duration": 0.71,
+      "sourceDuration": 0.71,
+      "bytes": 6873,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        1.32,
+        2.0300000000000002
+      ]
+    },
+    "ja/comet/3": {
+      "text": "さん。",
+      "hash": "05fc01a1004e7049f0c640d641ca75493083fa4d601743db56bea4fc9f9f87ed",
+      "seed": 100401569,
+      "duration": 0.423,
+      "sourceDuration": 0.423,
+      "bytes": 4527,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        2.0300000000000002,
+        2.58
+      ]
+    },
+    "ja/comet/2": {
+      "text": "に。",
+      "hash": "05fc01a1004e7049f0c640d641ca75493083fa4d601743db56bea4fc9f9f87ed",
+      "seed": 100401569,
+      "duration": 0.268,
+      "sourceDuration": 0.268,
+      "bytes": 3592,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        2.58,
+        3.06
+      ]
+    },
+    "ja/comet/1": {
+      "text": "いち。",
+      "hash": "05fc01a1004e7049f0c640d641ca75493083fa4d601743db56bea4fc9f9f87ed",
+      "seed": 100401569,
+      "duration": 0.409,
+      "sourceDuration": 0.409,
+      "bytes": 4531,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        3.06,
+        3.6301666666666668
+      ]
+    },
+    "ja/comet/go": {
+      "text": "さあ、始めよう！",
+      "hash": "8efce7dc0f654b64922f3fdc768edddd66adb6a7d412e139197d587314eeaa45",
+      "seed": 2398939100,
+      "duration": 1.633,
+      "sourceDuration": 1.633,
+      "bytes": 14136
+    },
+    "ja/comet/pause": {
+      "text": "ひと息つこう。待ってるね。",
+      "hash": "8478a38c9b5826e57e605369f3f81cde507e1eff75c357dee73bef512e73c5ac",
+      "seed": 2223498703,
+      "duration": 2.975,
+      "sourceDuration": 2.975,
+      "bytes": 27083,
+      "instruction": "Speak Japanese naturally and clearly. Soft and friendly, without laughter or extra words."
+    },
+    "ja/comet/resume": {
+      "text": "よし、続けよう！",
+      "hash": "a92472299310aea7357e4b546b75c96a50843545ab9ddf1a12920a203698ee87",
+      "seed": 2837738025,
+      "duration": 1.05,
+      "sourceDuration": 1.05,
+      "bytes": 9526
+    },
+    "ja/comet/reset": {
+      "text": "気持ちを新たに、もう一度。",
+      "hash": "3918bcda5b5055abb48a0f7eec47b51974919f62f1171b431033197d8c9aec36",
+      "seed": 957922522,
+      "duration": 2.959,
+      "sourceDuration": 2.959,
+      "bytes": 25790
+    },
+    "ja/comet/focusComplete": {
+      "text": "おつかれさま！少し休もう。",
+      "hash": "3eff3ac0946d92dd82f10466f18388b2d0359a9daba67ef0c7a1f90b7e643cf0",
+      "seed": 1057914115,
+      "duration": 2.682,
+      "sourceDuration": 2.682,
+      "bytes": 22703,
+      "instruction": "Speak Japanese naturally and clearly. Soft and friendly, without laughter or extra words."
+    },
+    "ja/comet/breakComplete": {
+      "text": "休憩おしまい。準備ができたら始めよう！",
+      "hash": "1f7bb8faccea3e92337bfb7508eae72d6688f6d3a3624d85a522b2733760da56",
+      "seed": 528201978,
+      "duration": 3.814,
+      "sourceDuration": 3.814,
+      "bytes": 30233
+    },
+    "ja/comet/greeting": {
+      "text": "小さなお届けものから、大きな冒険へ。",
+      "hash": "ccf34238340881f25a27be53ba9e030b52212f42c00686c98a7b534b3a9b892c",
+      "seed": 3438494264,
+      "duration": 3.503,
+      "sourceDuration": 3.503,
+      "bytes": 30304
+    },
+    "ko/comet/5": {
+      "text": "오.",
+      "hash": "a68f36d789054380f9d4bc68c3ae1aa204a961e9c87d244fe2f302dc26b86fd1",
+      "seed": 2794404552,
+      "duration": 0.34,
+      "sourceDuration": 0.34,
+      "bytes": 3827,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0,
+        0.33999999999999997
+      ]
+    },
+    "ko/comet/4": {
+      "text": "사.",
+      "hash": "a68f36d789054380f9d4bc68c3ae1aa204a961e9c87d244fe2f302dc26b86fd1",
+      "seed": 2794404552,
+      "duration": 0.355,
+      "sourceDuration": 0.355,
+      "bytes": 4242,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0.33999999999999997,
+        1.13
+      ]
+    },
+    "ko/comet/3": {
+      "text": "삼.",
+      "hash": "a68f36d789054380f9d4bc68c3ae1aa204a961e9c87d244fe2f302dc26b86fd1",
+      "seed": 2794404552,
+      "duration": 0.46,
+      "sourceDuration": 0.46,
+      "bytes": 4885,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        1.13,
+        2.13
+      ]
+    },
+    "ko/comet/2": {
+      "text": "이.",
+      "hash": "a68f36d789054380f9d4bc68c3ae1aa204a961e9c87d244fe2f302dc26b86fd1",
+      "seed": 2794404552,
+      "duration": 0.351,
+      "sourceDuration": 0.351,
+      "bytes": 4202,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        2.13,
+        3.34
+      ]
+    },
+    "ko/comet/1": {
+      "text": "일.",
+      "hash": "a68f36d789054380f9d4bc68c3ae1aa204a961e9c87d244fe2f302dc26b86fd1",
+      "seed": 2794404552,
+      "duration": 0.41,
+      "sourceDuration": 0.41,
+      "bytes": 4587,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        3.34,
+        4.624333333333333
+      ]
+    },
+    "ko/comet/go": {
+      "text": "자, 시작하자!",
+      "hash": "2e05fd03bfa61622e179d090b81eb875dbd4f800479862d25ce9e84fbf33ea4a",
+      "seed": 772144387,
+      "duration": 1.246,
+      "sourceDuration": 1.246,
+      "bytes": 10747
+    },
+    "ko/comet/pause": {
+      "text": "잠깐 쉬어. 기다릴게.",
+      "hash": "761c5df703361547b5f8ec5aa93cc761b46462ba5b7e5dfdcc204c4279118a38",
+      "seed": 1981570551,
+      "duration": 1.92,
+      "sourceDuration": 1.92,
+      "bytes": 17004
+    },
+    "ko/comet/resume": {
+      "text": "좋아, 계속해 보자!",
+      "hash": "2b9384ad0c2fd1f483237e2b134def6496a57426d75f02aa50e84be4acc6f8ed",
+      "seed": 731088045,
+      "duration": 1.369,
+      "sourceDuration": 1.369,
+      "bytes": 11491
+    },
+    "ko/comet/reset": {
+      "text": "새로운 마음으로 다시 시작하자.",
+      "hash": "c5d7ab110537e45a87a8bea5cd2abdef73fbd739a8f416ea6fc2eae08d5d683c",
+      "seed": 3319245585,
+      "duration": 2.56,
+      "sourceDuration": 2.56,
+      "bytes": 22660
+    },
+    "ko/comet/focusComplete": {
+      "text": "잘했어! 이제 잠깐 쉬자.",
+      "hash": "712ea8cd980243e20a8201fc79fcd030a9b36b9a8a44912a1431daf614fe5711",
+      "seed": 1898883277,
+      "duration": 1.915,
+      "sourceDuration": 1.915,
+      "bytes": 16193
+    },
+    "ko/comet/breakComplete": {
+      "text": "쉬는 시간 끝! 준비되면 시작하자.",
+      "hash": "71c9cc41dae76351cba7bbad9bb4527f78204a8e1c5d8c6e6007d7f0d5dbf05d",
+      "seed": 1909050433,
+      "duration": 2.681,
+      "sourceDuration": 2.681,
+      "bytes": 22655
+    },
+    "ko/comet/greeting": {
+      "text": "작은 배달 하나가 큰 모험이 돼.",
+      "hash": "55c70a192e1da99f7e1f94e1a80c71ad9cf2176877130fb005baedb46d04764a",
+      "seed": 1439107609,
+      "duration": 1.92,
+      "sourceDuration": 1.92,
+      "bytes": 17448
+    },
+    "es/comet/5": {
+      "text": "Cinco.",
+      "hash": "e315085039294794fd344dcbc57fb782b5e8c6c7936328817803c6c4c1f8c9d1",
+      "seed": 3809806416,
+      "duration": 0.39,
+      "sourceDuration": 0.39,
+      "bytes": 4345,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0,
+        0.39
+      ]
+    },
+    "es/comet/4": {
+      "text": "Cuatro.",
+      "hash": "e315085039294794fd344dcbc57fb782b5e8c6c7936328817803c6c4c1f8c9d1",
+      "seed": 3809806416,
+      "duration": 0.55,
+      "sourceDuration": 0.55,
+      "bytes": 5653,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0.39,
+        0.94
+      ]
+    },
+    "es/comet/3": {
+      "text": "Tres.",
+      "hash": "e315085039294794fd344dcbc57fb782b5e8c6c7936328817803c6c4c1f8c9d1",
+      "seed": 3809806416,
+      "duration": 0.61,
+      "sourceDuration": 0.61,
+      "bytes": 6037,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0.94,
+        1.5499999999999998
+      ]
+    },
+    "es/comet/2": {
+      "text": "Dos.",
+      "hash": "e315085039294794fd344dcbc57fb782b5e8c6c7936328817803c6c4c1f8c9d1",
+      "seed": 3809806416,
+      "duration": 0.62,
+      "sourceDuration": 0.62,
+      "bytes": 6220,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        1.5499999999999998,
+        2.17
+      ]
+    },
+    "es/comet/1": {
+      "text": "Uno.",
+      "hash": "e315085039294794fd344dcbc57fb782b5e8c6c7936328817803c6c4c1f8c9d1",
+      "seed": 3809806416,
+      "duration": 0.444,
+      "sourceDuration": 0.444,
+      "bytes": 4599,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        2.17,
+        2.8739583333333334
+      ]
+    },
+    "es/comet/go": {
+      "text": "¡Vamos a empezar!",
+      "hash": "eb9f6477169acc90b19db89348afd84a0fbad76dffb8b6c8fa4047a396d29051",
+      "seed": 3953091703,
+      "duration": 1.203,
+      "sourceDuration": 1.203,
+      "bytes": 11208
+    },
+    "es/comet/pause": {
+      "text": "Toma un respiro. Te espero.",
+      "hash": "cde5dda0660e121823ee853e4f0c44885148a3acfc50c83d08aee4cf3c5b0276",
+      "seed": 3454393760,
+      "duration": 1.869,
+      "sourceDuration": 1.869,
+      "bytes": 15661
+    },
+    "es/comet/resume": {
+      "text": "¡Sigamos adelante!",
+      "hash": "65bf57d53c1cd64103d0ceb7be93aa04b2043235d51a2f37b560d0ff4c0a31a7",
+      "seed": 1707038677,
+      "duration": 1.192,
+      "sourceDuration": 1.192,
+      "bytes": 10396
+    },
+    "es/comet/reset": {
+      "text": "Empecemos de nuevo, con calma.",
+      "hash": "7c2aab0b3214eb6049d7f5a161be63961ef23781c78c0ae2224af129a09afdb3",
+      "seed": 2083171083,
+      "duration": 2.022,
+      "sourceDuration": 2.022,
+      "bytes": 17593
+    },
+    "es/comet/focusComplete": {
+      "text": "¡Muy bien! Es hora de descansar un poco.",
+      "hash": "d02f78a85a6da88fad07d449fb365e243ec5627665684b8a764987e2f521d38a",
+      "seed": 3492772008,
+      "duration": 2.218,
+      "sourceDuration": 2.218,
+      "bytes": 19736
+    },
+    "es/comet/breakComplete": {
+      "text": "Se acabó el descanso. ¡Cuando quieras!",
+      "hash": "5398152107fffa698dfaa5fe21fe7f9d6e79b28bdccaf40100b806425e90a1bf",
+      "seed": 1402475809,
+      "duration": 2.88,
+      "sourceDuration": 2.88,
+      "bytes": 24492
+    },
+    "es/comet/greeting": {
+      "text": "Una pequeña entrega. Una gran aventura.",
+      "hash": "0f7bd68c4b6b3041d562fd234bc43e846bd33e6aa7f85f3387f0a5dfd2012eb9",
+      "seed": 259774092,
+      "duration": 3.483,
+      "sourceDuration": 3.483,
+      "bytes": 30181
+    },
+    "pt-BR/comet/5": {
+      "text": "Cinco.",
+      "hash": "d0e732e2492859435180b06cebcc4c7508fb2b5cb5ca13b47dc987a79586b398",
+      "seed": 3504814788,
+      "duration": 0.37,
+      "sourceDuration": 0.37,
+      "bytes": 4159,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0,
+        0.37
+      ]
+    },
+    "pt-BR/comet/4": {
+      "text": "Quatro.",
+      "hash": "d0e732e2492859435180b06cebcc4c7508fb2b5cb5ca13b47dc987a79586b398",
+      "seed": 3504814788,
+      "duration": 0.61,
+      "sourceDuration": 0.61,
+      "bytes": 6233,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0.37,
+        0.98
+      ]
+    },
+    "pt-BR/comet/3": {
+      "text": "Três.",
+      "hash": "d0e732e2492859435180b06cebcc4c7508fb2b5cb5ca13b47dc987a79586b398",
+      "seed": 3504814788,
+      "duration": 0.332,
+      "sourceDuration": 0.332,
+      "bytes": 3863,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0.98,
+        1.52
+      ]
+    },
+    "pt-BR/comet/2": {
+      "text": "Dois.",
+      "hash": "d0e732e2492859435180b06cebcc4c7508fb2b5cb5ca13b47dc987a79586b398",
+      "seed": 3504814788,
+      "duration": 0.5,
+      "sourceDuration": 0.5,
+      "bytes": 5342,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        1.52,
+        2.02
+      ]
+    },
+    "pt-BR/comet/1": {
+      "text": "Um.",
+      "hash": "d0e732e2492859435180b06cebcc4c7508fb2b5cb5ca13b47dc987a79586b398",
+      "seed": 3504814788,
+      "duration": 0.587,
+      "sourceDuration": 0.587,
+      "bytes": 5596,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        2.02,
+        2.6072291666666665
+      ]
+    },
+    "pt-BR/comet/go": {
+      "text": "Vamos começar!",
+      "hash": "787e572138a9e4a60623d0762f99a21e4d03d6c1c690d927cc279b71c1eb8c64",
+      "seed": 2021545761,
+      "duration": 1.009,
+      "sourceDuration": 1.009,
+      "bytes": 8816
+    },
+    "pt-BR/comet/pause": {
+      "text": "Respira um pouco. Eu espero.",
+      "hash": "7959d7564b7bc8932e5ed018cefce87d6d48afed037d45076b79e7c4c61a590d",
+      "seed": 2035930966,
+      "duration": 1.704,
+      "sourceDuration": 1.704,
+      "bytes": 15088
+    },
+    "pt-BR/comet/resume": {
+      "text": "Vamos continuar!",
+      "hash": "6a8297bcac5ba8f280e9b45ac51bfbfa0b8aea298cfe5416639f9d5e3d3fa585",
+      "seed": 1786943420,
+      "duration": 1.343,
+      "sourceDuration": 1.343,
+      "bytes": 11480
+    },
+    "pt-BR/comet/reset": {
+      "text": "Um novo começo, com calma.",
+      "hash": "332e46b8d9755a60965a02507ef69049c93ab562ef1dc00ad425ec7dbabf9868",
+      "seed": 858670776,
+      "duration": 2.4,
+      "sourceDuration": 2.4,
+      "bytes": 20641
+    },
+    "pt-BR/comet/focusComplete": {
+      "text": "Muito bem! Hora de descansar um pouco.",
+      "hash": "4dc0c2276f7997df11e8f38da21a6ca2f9cd30868b2b1573ca0be5f0f3061de3",
+      "seed": 1304478247,
+      "duration": 3.272,
+      "sourceDuration": 3.272,
+      "bytes": 29902
+    },
+    "pt-BR/comet/breakComplete": {
+      "text": "O descanso acabou. Vamos quando você quiser!",
+      "hash": "e5966887b14b82e6c236b1ec7b69986556f05316b50c46fa2cc91d145c5bbc22",
+      "seed": 3851839623,
+      "duration": 2.4,
+      "sourceDuration": 2.4,
+      "bytes": 21199
+    },
+    "pt-BR/comet/greeting": {
+      "text": "Uma pequena entrega. Uma grande aventura.",
+      "hash": "c2b14b11a6170764d9f12eba4312aa9f767dbf3a004b8cf131c66fe39a1eea7c",
+      "seed": 3266398993,
+      "duration": 2.72,
+      "sourceDuration": 2.72,
+      "bytes": 25175
+    },
+    "fr/comet/5": {
+      "text": "Cinq.",
+      "hash": "370359a626da44d03402f33505b04543434a590300e4617df65446dd39708ade",
+      "seed": 922966438,
+      "duration": 0.57,
+      "sourceDuration": 0.57,
+      "bytes": 5673,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0,
+        0.5700000000000001
+      ]
+    },
+    "fr/comet/4": {
+      "text": "Quatre.",
+      "hash": "370359a626da44d03402f33505b04543434a590300e4617df65446dd39708ade",
+      "seed": 922966438,
+      "duration": 0.77,
+      "sourceDuration": 0.77,
+      "bytes": 7268,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0.5700000000000001,
+        1.3399999999999999
+      ]
+    },
+    "fr/comet/3": {
+      "text": "Trois.",
+      "hash": "370359a626da44d03402f33505b04543434a590300e4617df65446dd39708ade",
+      "seed": 922966438,
+      "duration": 0.399,
+      "sourceDuration": 0.399,
+      "bytes": 4602,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        1.3399999999999999,
+        2.02
+      ]
+    },
+    "fr/comet/2": {
+      "text": "Deux.",
+      "hash": "370359a626da44d03402f33505b04543434a590300e4617df65446dd39708ade",
+      "seed": 922966438,
+      "duration": 0.433,
+      "sourceDuration": 0.433,
+      "bytes": 4893,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        2.02,
+        2.7800000000000002
+      ]
+    },
+    "fr/comet/1": {
+      "text": "Un.",
+      "hash": "370359a626da44d03402f33505b04543434a590300e4617df65446dd39708ade",
+      "seed": 922966438,
+      "duration": 0.333,
+      "sourceDuration": 0.333,
+      "bytes": 3953,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        2.7800000000000002,
+        3.4852083333333335
+      ]
+    },
+    "fr/comet/go": {
+      "text": "C'est parti !",
+      "hash": "486487154ca7f054b41a0594c13f0c0c0f63ca04b00faf889161d7b5ab145ded",
+      "seed": 1214547733,
+      "duration": 0.679,
+      "sourceDuration": 0.679,
+      "bytes": 6927
+    },
+    "fr/comet/pause": {
+      "text": "Fais une pause. Je t'attends.",
+      "hash": "3d16c9135d932139c231a2110b3f5ffcbe777d2d07514f0bd2008048b2659731",
+      "seed": 1024903443,
+      "duration": 1.528,
+      "sourceDuration": 1.528,
+      "bytes": 13948
+    },
+    "fr/comet/resume": {
+      "text": "On continue !",
+      "hash": "8baf58b1295c865a0bc5e7d2818317e50ee94974452319bc12b7105c8a601e73",
+      "seed": 2343524529,
+      "duration": 0.865,
+      "sourceDuration": 0.865,
+      "bytes": 8535
+    },
+    "fr/comet/reset": {
+      "text": "On repart du bon pied.",
+      "hash": "1f1763451427248d521d6aec1d4c3b096d3166bfb564af94c89e0d7503387921",
+      "seed": 522626440,
+      "duration": 1.271,
+      "sourceDuration": 1.271,
+      "bytes": 11693,
+      "instruction": "Speak French naturally and clearly. Soft and friendly, without extra words."
+    },
+    "fr/comet/focusComplete": {
+      "text": "Bravo ! C'est l'heure d'une petite pause.",
+      "hash": "ede6458aac3d1e3cceb657900c04132cea890b262aa00036b17c3663aa655ec0",
+      "seed": 3991291274,
+      "duration": 2.283,
+      "sourceDuration": 2.283,
+      "bytes": 20335
+    },
+    "fr/comet/breakComplete": {
+      "text": "La pause est finie. On reprend quand tu veux !",
+      "hash": "1f71bf66f0fcff4f19f73a42d568c090da40bab3c721f7aa7e5980fcc7190569",
+      "seed": 527548262,
+      "duration": 2.267,
+      "sourceDuration": 2.267,
+      "bytes": 20317
+    },
+    "fr/comet/greeting": {
+      "text": "Une petite livraison. Une grande aventure.",
+      "hash": "8b42086fd7fe8721b9fbe6c0e37cde6dd9888ec593a094e6088fbbaa8ecb9ace",
+      "seed": 2336360559,
+      "duration": 2.24,
+      "sourceDuration": 2.24,
+      "bytes": 20844
+    },
+    "de/comet/5": {
+      "text": "Fünf.",
+      "hash": "0527a6676efc612ce31fb878cf4296d1a28e4cf027e1b10adeed700f685cf155",
+      "seed": 86484583,
+      "duration": 0.705,
+      "sourceDuration": 0.705,
+      "bytes": 6836,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0,
+        0.77
+      ]
+    },
+    "de/comet/4": {
+      "text": "Vier.",
+      "hash": "0527a6676efc612ce31fb878cf4296d1a28e4cf027e1b10adeed700f685cf155",
+      "seed": 86484583,
+      "duration": 0.63,
+      "sourceDuration": 0.63,
+      "bytes": 6315,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0.77,
+        2.62
+      ]
+    },
+    "de/comet/3": {
+      "text": "Drei.",
+      "hash": "0527a6676efc612ce31fb878cf4296d1a28e4cf027e1b10adeed700f685cf155",
+      "seed": 86484583,
+      "duration": 0.629,
+      "sourceDuration": 0.629,
+      "bytes": 6209,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        2.62,
+        4.13
+      ]
+    },
+    "de/comet/2": {
+      "text": "Zwei.",
+      "hash": "0527a6676efc612ce31fb878cf4296d1a28e4cf027e1b10adeed700f685cf155",
+      "seed": 86484583,
+      "duration": 0.684,
+      "sourceDuration": 0.684,
+      "bytes": 6548,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        4.13,
+        5.68
+      ]
+    },
+    "de/comet/1": {
+      "text": "Eins.",
+      "hash": "0527a6676efc612ce31fb878cf4296d1a28e4cf027e1b10adeed700f685cf155",
+      "seed": 86484583,
+      "duration": 0.702,
+      "sourceDuration": 0.702,
+      "bytes": 6455,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        5.68,
+        7.111291666666666
+      ]
+    },
+    "de/comet/go": {
+      "text": "Los geht's!",
+      "hash": "700358713a6f28278bd8fc496d6533359bd46a9149e8e61462eb27165c1b0f17",
+      "seed": 1879267441,
+      "duration": 1.12,
+      "sourceDuration": 1.12,
+      "bytes": 10393
+    },
+    "de/comet/pause": {
+      "text": "Atme kurz durch. Ich warte auf dich.",
+      "hash": "9ed07665b88a831db42ba3cf102fd56f4751a97a4f5767ac6ae9d396c7c274ae",
+      "seed": 2664461925,
+      "duration": 2.337,
+      "sourceDuration": 2.337,
+      "bytes": 20497
+    },
+    "de/comet/resume": {
+      "text": "Weiter geht's!",
+      "hash": "c650c2e7648bf0d7c23c235509919f2ba2df7d55ed878e04a8e0af697076c285",
+      "seed": 3327181543,
+      "duration": 0.948,
+      "sourceDuration": 0.948,
+      "bytes": 8865
+    },
+    "de/comet/reset": {
+      "text": "Ein frischer Start. Wir sind bereit.",
+      "hash": "ac20afc4e722b55853035de64f19374208c440ef5549fd53d7085f27c26e139c",
+      "seed": 2887823300,
+      "duration": 2.393,
+      "sourceDuration": 2.393,
+      "bytes": 20853
+    },
+    "de/comet/focusComplete": {
+      "text": "Gut gemacht! Zeit für eine kleine Pause.",
+      "hash": "40c6ac60b499513910ac42086927a0743701a6fe67172bab16d6a8eff10a5eed",
+      "seed": 1086762080,
+      "duration": 2.847,
+      "sourceDuration": 2.847,
+      "bytes": 25132
+    },
+    "de/comet/breakComplete": {
+      "text": "Die Pause ist vorbei. Bereit, wenn du es bist!",
+      "hash": "c085eca20afebfa3c8d5d911eb4f341eb544e1bffe7acfcbb45b2739bbaf9e5c",
+      "seed": 3230002338,
+      "duration": 2.72,
+      "sourceDuration": 2.72,
+      "bytes": 25018
+    },
+    "de/comet/greeting": {
+      "text": "Eine kleine Lieferung. Ein großes Abenteuer.",
+      "hash": "4c04e8d0406a08f04762956fddcf7ae3d202f663f160a646b935ec28b4a68ab5",
+      "seed": 1275390160,
+      "duration": 2.957,
+      "sourceDuration": 2.957,
+      "bytes": 25652
+    },
+    "en/mochi/poke": {
+      "text": "Oh! You found me!",
+      "hash": "4f5d972d50863575d5c640688af2a7af63733d8e216fbb38f9e099933a9dc058",
+      "seed": 1331533613,
+      "duration": 1.78,
+      "sourceDuration": 1.78,
+      "bytes": 14887,
+      "referenceSHA256": "e619e9ee04bbad35e31e9fdb928b2cf2b572e096a61c88e6101cea340d89f4aa"
+    },
+    "zh-Hans/mochi/poke": {
+      "text": "呀，被你发现啦！",
+      "hash": "83c9734d1ab215354b618add0d588e377a82e7a0e118a4ab671ca5abc04cde7c",
+      "seed": 2211017549,
+      "duration": 1.785,
+      "sourceDuration": 1.785,
+      "bytes": 15086,
+      "referenceSHA256": "e619e9ee04bbad35e31e9fdb928b2cf2b572e096a61c88e6101cea340d89f4aa"
+    },
+    "ja/mochi/poke": {
+      "text": "あっ、見つかっちゃった！",
+      "hash": "c4b8813d375b124c6adfb26745aec3b09b5137ad458c69482f1a7d8aba9c1a2a",
+      "seed": 3300426045,
+      "duration": 2.115,
+      "sourceDuration": 2.115,
+      "bytes": 18315,
+      "referenceSHA256": "e619e9ee04bbad35e31e9fdb928b2cf2b572e096a61c88e6101cea340d89f4aa"
+    },
+    "ko/mochi/poke": {
+      "text": "앗, 나 찾았네!",
+      "hash": "56eb07c8709e815bae6942386dbb8698c53e01daa7cd843dd4e70219047a9166",
+      "seed": 1458243528,
+      "duration": 1.753,
+      "sourceDuration": 1.753,
+      "bytes": 15762,
+      "referenceSHA256": "e619e9ee04bbad35e31e9fdb928b2cf2b572e096a61c88e6101cea340d89f4aa"
+    },
+    "es/mochi/poke": {
+      "text": "¡Hola! ¡Me encontraste!",
+      "hash": "50071a3e45731e787e69a5f16f383c894c6ccac69a34d3a74383f810b40e0841",
+      "seed": 1342642750,
+      "duration": 2.24,
+      "sourceDuration": 2.24,
+      "bytes": 19077,
+      "referenceSHA256": "e619e9ee04bbad35e31e9fdb928b2cf2b572e096a61c88e6101cea340d89f4aa"
+    },
+    "pt-BR/mochi/poke": {
+      "text": "Oi! Você me achou!",
+      "hash": "2b0999d76337d94916fd7606addda344b3dde6293dc1e28b3a68fd8266d1ce42",
+      "seed": 722049495,
+      "duration": 2.08,
+      "sourceDuration": 2.08,
+      "bytes": 17510,
+      "referenceSHA256": "e619e9ee04bbad35e31e9fdb928b2cf2b572e096a61c88e6101cea340d89f4aa"
+    },
+    "fr/mochi/poke": {
+      "text": "Oh ! Bonjour !",
+      "hash": "cd908ebe58e110b75138ca72003b4ef2fed1c3d233cf90ff55f6efaa33d4640f",
+      "seed": 3448803006,
+      "duration": 2.144,
+      "sourceDuration": 2.144,
+      "bytes": 18092,
+      "referenceSHA256": "e619e9ee04bbad35e31e9fdb928b2cf2b572e096a61c88e6101cea340d89f4aa"
+    },
+    "de/mochi/poke": {
+      "text": "Huch! Da bist du ja!",
+      "hash": "40fa309f8d671d2b38224d7cc32d472c10016864da64b96e580cfa48ca7f6172",
+      "seed": 1090138271,
+      "duration": 2.08,
+      "sourceDuration": 2.08,
+      "bytes": 17896,
+      "referenceSHA256": "e619e9ee04bbad35e31e9fdb928b2cf2b572e096a61c88e6101cea340d89f4aa"
+    },
+    "en/pip/poke": {
+      "text": "Oh! You found me!",
+      "hash": "9873f14961ae96197db8046427330f818d06a3f1c745b92dbf206c46b0eaab7c",
+      "seed": 2557735241,
+      "duration": 1.437,
+      "sourceDuration": 1.437,
+      "bytes": 12740,
+      "referenceSHA256": "8a3b60f53e02deb3c1a23eeef865009dbe0a9980d09647ecb499daeac3e98245"
+    },
+    "zh-Hans/pip/poke": {
+      "text": "呀，被你发现啦！",
+      "hash": "cb0f209bedd8c58233aab775d98c5435a7a507c6761f79fa5a300d3bf32f78ec",
+      "seed": 3406766235,
+      "duration": 1.871,
+      "sourceDuration": 1.871,
+      "bytes": 15680,
+      "referenceSHA256": "8a3b60f53e02deb3c1a23eeef865009dbe0a9980d09647ecb499daeac3e98245"
+    },
+    "ja/pip/poke": {
+      "text": "あっ、見つかっちゃった！",
+      "hash": "1c628854014e3c16635ea00049c4d681aa36e2fe8f06229f27d09b6a94297191",
+      "seed": 476219476,
+      "duration": 3.2,
+      "sourceDuration": 3.2,
+      "bytes": 28071,
+      "referenceSHA256": "8a3b60f53e02deb3c1a23eeef865009dbe0a9980d09647ecb499daeac3e98245"
+    },
+    "ko/pip/poke": {
+      "text": "앗, 나 찾았네!",
+      "hash": "c7d64bd9cf82d248e5654a34f6d559812ed1b5a2f9b7ccb040e343a3e9e635e2",
+      "seed": 3353710108,
+      "duration": 1.76,
+      "sourceDuration": 1.76,
+      "bytes": 14908,
+      "referenceSHA256": "8a3b60f53e02deb3c1a23eeef865009dbe0a9980d09647ecb499daeac3e98245"
+    },
+    "es/pip/poke": {
+      "text": "¡Hola! ¡Me encontraste!",
+      "hash": "94d3c0b33e50e201a4af2d2f5f4021231773a18ba5d20c3e98e7529955681145",
+      "seed": 2496905395,
+      "duration": 1.591,
+      "sourceDuration": 1.591,
+      "bytes": 13762,
+      "referenceSHA256": "8a3b60f53e02deb3c1a23eeef865009dbe0a9980d09647ecb499daeac3e98245"
+    },
+    "pt-BR/pip/poke": {
+      "text": "Oi! Você me achou!",
+      "hash": "10c16a359ab001ecabe1f7d19a3391988782f4a39aae99c2215abcd98d66b5f1",
+      "seed": 281111093,
+      "duration": 1.868,
+      "sourceDuration": 1.868,
+      "bytes": 16985,
+      "referenceSHA256": "8a3b60f53e02deb3c1a23eeef865009dbe0a9980d09647ecb499daeac3e98245"
+    },
+    "fr/pip/poke": {
+      "text": "Oh ! Bonjour !",
+      "hash": "9b7e24c0185da97297fc21de61eaf7c71c0f9f8fa9cf3f1a269551603526507c",
+      "seed": 2608735424,
+      "duration": 1.004,
+      "sourceDuration": 1.004,
+      "bytes": 8754,
+      "referenceSHA256": "8a3b60f53e02deb3c1a23eeef865009dbe0a9980d09647ecb499daeac3e98245"
+    },
+    "de/pip/poke": {
+      "text": "Huch! Da bist du ja!",
+      "hash": "0c1bff8ab82885fe61c9a09ef926dd2a6cb024ca2093c191c806edef3cbde4a7",
+      "seed": 203161482,
+      "duration": 1.617,
+      "sourceDuration": 1.617,
+      "bytes": 14535,
+      "referenceSHA256": "8a3b60f53e02deb3c1a23eeef865009dbe0a9980d09647ecb499daeac3e98245"
+    },
+    "en/pebble/poke": {
+      "text": "Oh! You found me!",
+      "hash": "ed086eb8c73f2cee04457bab4c00a74c4a9ec467a74fd388adb9cdbf95debf91",
+      "seed": 3976752824,
+      "duration": 1.623,
+      "sourceDuration": 1.623,
+      "bytes": 13472,
+      "referenceSHA256": "420c897bbedddf2eefe6e80f87a5627804d223486c2d2e59fcc57c1a49208866"
+    },
+    "zh-Hans/pebble/poke": {
+      "text": "呀，被你发现啦！",
+      "hash": "3953d9396770f8fdad8886e11bb7c531466d8452da3f9945d0bf2afc44b7ba4f",
+      "seed": 961796409,
+      "duration": 2.182,
+      "sourceDuration": 2.182,
+      "bytes": 17981,
+      "referenceSHA256": "420c897bbedddf2eefe6e80f87a5627804d223486c2d2e59fcc57c1a49208866"
+    },
+    "ja/pebble/poke": {
+      "text": "あっ、見つかっちゃった！",
+      "hash": "1c85aaea4f35c002f38b3e2838de25a8380fa43b3cce71b737efda93c4b8eaac",
+      "seed": 478522090,
+      "duration": 1.832,
+      "sourceDuration": 1.832,
+      "bytes": 18119,
+      "referenceSHA256": "420c897bbedddf2eefe6e80f87a5627804d223486c2d2e59fcc57c1a49208866"
+    },
+    "ko/pebble/poke": {
+      "text": "앗, 나 찾았네!",
+      "hash": "54f3b050bbaddb943d0d3c80698b11f93cd12fd2d5dcf4819a1eaf9cd081c459",
+      "seed": 1425256528,
+      "duration": 1.856,
+      "sourceDuration": 1.856,
+      "bytes": 17144,
+      "referenceSHA256": "420c897bbedddf2eefe6e80f87a5627804d223486c2d2e59fcc57c1a49208866"
+    },
+    "es/pebble/poke": {
+      "text": "¡Hola! ¡Me encontraste!",
+      "hash": "4ad18cd83ca440469095b5632539f39acaa20ed1e13c39ec34e1efe89faef1ab",
+      "seed": 1255247064,
+      "duration": 2.282,
+      "sourceDuration": 2.282,
+      "bytes": 19896,
+      "referenceSHA256": "420c897bbedddf2eefe6e80f87a5627804d223486c2d2e59fcc57c1a49208866"
+    },
+    "pt-BR/pebble/poke": {
+      "text": "Oi! Você me achou!",
+      "hash": "8e02fb9e836a0e4349b0dfb94974b8fbccf1dc4d1344a2fc77ab3687787892cf",
+      "seed": 2382560158,
+      "duration": 1.738,
+      "sourceDuration": 1.738,
+      "bytes": 16069,
+      "referenceSHA256": "420c897bbedddf2eefe6e80f87a5627804d223486c2d2e59fcc57c1a49208866"
+    },
+    "fr/pebble/poke": {
+      "text": "Oh ! Bonjour !",
+      "hash": "ca8684fa275a3064568b4fbe38230044396c4d54010133252656f102aa0e2b8b",
+      "seed": 3397813498,
+      "duration": 1.393,
+      "sourceDuration": 1.393,
+      "bytes": 12149,
+      "referenceSHA256": "420c897bbedddf2eefe6e80f87a5627804d223486c2d2e59fcc57c1a49208866"
+    },
+    "de/pebble/poke": {
+      "text": "Huch! Da bist du ja!",
+      "hash": "be50285262fa8048e3baa0c86a1b4d2d6e0db5cd7861267b95836634bc5f96d4",
+      "seed": 3192924242,
+      "duration": 1.6,
+      "sourceDuration": 1.6,
+      "bytes": 13968,
+      "referenceSHA256": "420c897bbedddf2eefe6e80f87a5627804d223486c2d2e59fcc57c1a49208866"
+    },
+    "en/jun/poke": {
+      "text": "Oh! You found me!",
+      "hash": "4659398a3d04ef90ff89f0e66aca4102f69307b923907de264e5c0c84a33f9ca",
+      "seed": 1180252554,
+      "duration": 1.261,
+      "sourceDuration": 1.261,
+      "bytes": 11127,
+      "referenceSHA256": "88983aa83d21eafd0cb56f51e76b8968cd0e53820d41873c3fc243df3c31da3a"
+    },
+    "zh-Hans/jun/poke": {
+      "text": "呀，被你发现啦！",
+      "hash": "bf0bc9e6a91b00a35d224873a0de00ef579ebe00c47ce360380065f1291018b1",
+      "seed": 3205220838,
+      "duration": 2.676,
+      "sourceDuration": 2.676,
+      "bytes": 21768,
+      "referenceSHA256": "88983aa83d21eafd0cb56f51e76b8968cd0e53820d41873c3fc243df3c31da3a"
+    },
+    "ja/jun/poke": {
+      "text": "あっ、見つかっちゃった！",
+      "hash": "e01704725197dd8087c598f8ce721e8e0909fb68de3c3cc267646ea3f264bc42",
+      "seed": 3759604850,
+      "duration": 1.426,
+      "sourceDuration": 1.426,
+      "bytes": 12943,
+      "referenceSHA256": "88983aa83d21eafd0cb56f51e76b8968cd0e53820d41873c3fc243df3c31da3a"
+    },
+    "ko/jun/poke": {
+      "text": "앗, 나 찾았네!",
+      "hash": "f47d0eefa4e6414d344b98a7fcf9182d0c848d92feded580db93fedf3136cecc",
+      "seed": 4101836527,
+      "duration": 1.238,
+      "sourceDuration": 1.238,
+      "bytes": 10829,
+      "referenceSHA256": "88983aa83d21eafd0cb56f51e76b8968cd0e53820d41873c3fc243df3c31da3a"
+    },
+    "es/jun/poke": {
+      "text": "¡Hola! ¡Me encontraste!",
+      "hash": "f4b46bfdc17b67e1a32b7f49bbead7bbdba0d943308b58811680f92eb05a9efa",
+      "seed": 4105464829,
+      "duration": 2.08,
+      "sourceDuration": 2.08,
+      "bytes": 18468,
+      "referenceSHA256": "88983aa83d21eafd0cb56f51e76b8968cd0e53820d41873c3fc243df3c31da3a"
+    },
+    "pt-BR/jun/poke": {
+      "text": "Oi! Você me achou!",
+      "hash": "c444989cbd08e6746c59595bea7f41497109bd2abe5d88e64df5a0f58f2edc43",
+      "seed": 3292829852,
+      "duration": 1.73,
+      "sourceDuration": 1.73,
+      "bytes": 14113,
+      "referenceSHA256": "88983aa83d21eafd0cb56f51e76b8968cd0e53820d41873c3fc243df3c31da3a"
+    },
+    "fr/jun/poke": {
+      "text": "Oh ! Bonjour !",
+      "hash": "dfc37dd3324b4ea2960b499ce2a991b661b7c4cb1a9fae57ab7d87789d1a06b7",
+      "seed": 3754130899,
+      "duration": 2.08,
+      "sourceDuration": 2.08,
+      "bytes": 17481,
+      "referenceSHA256": "88983aa83d21eafd0cb56f51e76b8968cd0e53820d41873c3fc243df3c31da3a"
+    },
+    "de/jun/poke": {
+      "text": "Huch! Da bist du ja!",
+      "hash": "33f10b03942ab01ac1d078733b788a5d8da5a97353865588d2570db9985bb3a2",
+      "seed": 871435011,
+      "duration": 2.069,
+      "sourceDuration": 2.069,
+      "bytes": 17903,
+      "referenceSHA256": "88983aa83d21eafd0cb56f51e76b8968cd0e53820d41873c3fc243df3c31da3a"
+    },
+    "en/bean/poke": {
+      "text": "Oh! You found me!",
+      "hash": "1fa1a77c1d43d0c7276f48d1bff34ac1ff15d92cb65c090432ba431eb742c26d",
+      "seed": 530687868,
+      "duration": 1.592,
+      "sourceDuration": 1.592,
+      "bytes": 13665,
+      "referenceSHA256": "95b22e61afd2e436847de2773adcdfb654bef1d6150c588319edc865858aa427"
+    },
+    "zh-Hans/bean/poke": {
+      "text": "呀，被你发现啦！",
+      "hash": "9ea109ece8f593894fbc17a93328ef81f5499f4afc5f15fb6bc39ee2246d629a",
+      "seed": 2661353964,
+      "duration": 2.452,
+      "sourceDuration": 2.452,
+      "bytes": 21387,
+      "referenceSHA256": "95b22e61afd2e436847de2773adcdfb654bef1d6150c588319edc865858aa427"
+    },
+    "ja/bean/poke": {
+      "text": "あっ、見つかっちゃった！",
+      "hash": "7a855aac35e509ed8e026803b0200cb7fb06dd4d42278c21dd8bd924a7e2f128",
+      "seed": 2055559852,
+      "duration": 1.402,
+      "sourceDuration": 1.402,
+      "bytes": 12064,
+      "referenceSHA256": "95b22e61afd2e436847de2773adcdfb654bef1d6150c588319edc865858aa427"
+    },
+    "ko/bean/poke": {
+      "text": "앗, 나 찾았네!",
+      "hash": "05cda715a660459e7a02102d4d00a9a654c28a37fcf9dc0d1ca0b32582ca733d",
+      "seed": 97363733,
+      "duration": 1.691,
+      "sourceDuration": 1.691,
+      "bytes": 14393,
+      "referenceSHA256": "95b22e61afd2e436847de2773adcdfb654bef1d6150c588319edc865858aa427"
+    },
+    "es/bean/poke": {
+      "text": "¡Hola! ¡Me encontraste!",
+      "hash": "3704a169ed74926400575fd98bd9ec544651cd55ec31ce2580216bfa7966ddc3",
+      "seed": 923050345,
+      "duration": 2.24,
+      "sourceDuration": 2.24,
+      "bytes": 19327,
+      "referenceSHA256": "95b22e61afd2e436847de2773adcdfb654bef1d6150c588319edc865858aa427"
+    },
+    "pt-BR/bean/poke": {
+      "text": "Oi! Você me achou!",
+      "hash": "3d8f4aea750fbab8ad3862a4493fbc0f27c8894667ff8af3e6bb51984347d3a9",
+      "seed": 1032801002,
+      "duration": 2.397,
+      "sourceDuration": 2.397,
+      "bytes": 16026,
+      "referenceSHA256": "95b22e61afd2e436847de2773adcdfb654bef1d6150c588319edc865858aa427"
+    },
+    "fr/bean/poke": {
+      "text": "Oh ! Bonjour !",
+      "hash": "155456f32ae8575291141c3c3fede80b3f7ddae36a3b3046db90c1abaf512e3c",
+      "seed": 357848819,
+      "duration": 1.522,
+      "sourceDuration": 1.522,
+      "bytes": 13079,
+      "referenceSHA256": "95b22e61afd2e436847de2773adcdfb654bef1d6150c588319edc865858aa427"
+    },
+    "de/bean/poke": {
+      "text": "Huch! Da bist du ja!",
+      "hash": "c70867e9b617b649e78193187ce64ead98704422430e4d5956c645ab9482a173",
+      "seed": 3339216873,
+      "duration": 1.586,
+      "sourceDuration": 1.586,
+      "bytes": 13540,
+      "referenceSHA256": "95b22e61afd2e436847de2773adcdfb654bef1d6150c588319edc865858aa427"
+    },
+    "en/maple/poke": {
+      "text": "Oh! You found me!",
+      "hash": "6d11ef27bc42dd8c34fb9348477866014659c3b4bfdb984e32150d70005c27e6",
+      "seed": 1829891879,
+      "duration": 1.427,
+      "sourceDuration": 1.427,
+      "bytes": 12053,
+      "referenceSHA256": "15e5a5e2a8c7efdb2f214103894460e1c88c244461022e5b90c9a3f22494e27b"
+    },
+    "zh-Hans/maple/poke": {
+      "text": "呀，被你发现啦！",
+      "hash": "9ead2fb1b35d1a540c1231c38b6222765c49b7ed111a673348981f9de4a2e4ed",
+      "seed": 2662150065,
+      "duration": 2.631,
+      "sourceDuration": 2.631,
+      "bytes": 21920,
+      "referenceSHA256": "15e5a5e2a8c7efdb2f214103894460e1c88c244461022e5b90c9a3f22494e27b"
+    },
+    "ja/maple/poke": {
+      "text": "あっ、見つかっちゃった！",
+      "hash": "44c872775ba5cee8be67fb2e795911c0d4d4d7f244c7a17b49abd2c89e1d8d54",
+      "seed": 1153987191,
+      "duration": 1.778,
+      "sourceDuration": 1.778,
+      "bytes": 15221,
+      "referenceSHA256": "15e5a5e2a8c7efdb2f214103894460e1c88c244461022e5b90c9a3f22494e27b"
+    },
+    "ko/maple/poke": {
+      "text": "앗, 나 찾았네!",
+      "hash": "b037dd1af2189103549cb9da881a967ef43610c736ecfa082d479761928bf291",
+      "seed": 2956451098,
+      "duration": 1.92,
+      "sourceDuration": 1.92,
+      "bytes": 16759,
+      "referenceSHA256": "15e5a5e2a8c7efdb2f214103894460e1c88c244461022e5b90c9a3f22494e27b"
+    },
+    "es/maple/poke": {
+      "text": "¡Hola! ¡Me encontraste!",
+      "hash": "02eabb087010dbee7014a355e2cb1d565605933f818ca7a93de4cd3405b4dbf5",
+      "seed": 48937736,
+      "duration": 1.6,
+      "sourceDuration": 1.6,
+      "bytes": 14759,
+      "referenceSHA256": "15e5a5e2a8c7efdb2f214103894460e1c88c244461022e5b90c9a3f22494e27b"
+    },
+    "pt-BR/maple/poke": {
+      "text": "Oi! Você me achou!",
+      "hash": "e8cbd97f80916583dbb7183d710235909f23b32e02c660b8797e2c401764efa4",
+      "seed": 3905673599,
+      "duration": 2.49,
+      "sourceDuration": 2.49,
+      "bytes": 20023,
+      "referenceSHA256": "15e5a5e2a8c7efdb2f214103894460e1c88c244461022e5b90c9a3f22494e27b"
+    },
+    "fr/maple/poke": {
+      "text": "Oh ! Bonjour !",
+      "hash": "b31e01606adb43a00f3eeed8a9ef594679bc4d2e5f08b09111db342c7effd9ea",
+      "seed": 3005088096,
+      "duration": 1.44,
+      "sourceDuration": 1.44,
+      "bytes": 12257,
+      "referenceSHA256": "15e5a5e2a8c7efdb2f214103894460e1c88c244461022e5b90c9a3f22494e27b"
+    },
+    "de/maple/poke": {
+      "text": "Huch! Da bist du ja!",
+      "hash": "88e66053ed8f2f2ad400ad7078abd6e69b5737e75d8453541dcb6e5c9344970c",
+      "seed": 2296799315,
+      "duration": 1.76,
+      "sourceDuration": 1.76,
+      "bytes": 16292,
+      "referenceSHA256": "15e5a5e2a8c7efdb2f214103894460e1c88c244461022e5b90c9a3f22494e27b"
+    },
+    "en/luna/poke": {
+      "text": "Oh! You found me!",
+      "hash": "89371614a5a995899ada57d08bb963f10b510ae9eb7fbaa2de97886a4da81a7e",
+      "seed": 2302088724,
+      "duration": 1.913,
+      "sourceDuration": 1.913,
+      "bytes": 16014,
+      "referenceSHA256": "a996a64de39a14076d8f32a772540845e8577538171650c3389571db154ac93f"
+    },
+    "zh-Hans/luna/poke": {
+      "text": "呀，被你发现啦！",
+      "hash": "7eef3bfc78f713c2b2d1d19e6ace3fcceff56cdd39efea9e75a68bac6b4376b0",
+      "seed": 2130607679,
+      "duration": 2.143,
+      "sourceDuration": 2.143,
+      "bytes": 15791,
+      "referenceSHA256": "a996a64de39a14076d8f32a772540845e8577538171650c3389571db154ac93f"
+    },
+    "ja/luna/poke": {
+      "text": "あっ、見つかっちゃった！",
+      "hash": "0922ef30db914240a153d0f4f6f23c43ccc22fb3db383c6976f00863dd25fe7a",
+      "seed": 153284400,
+      "duration": 2.492,
+      "sourceDuration": 2.492,
+      "bytes": 23748,
+      "referenceSHA256": "a996a64de39a14076d8f32a772540845e8577538171650c3389571db154ac93f"
+    },
+    "ko/luna/poke": {
+      "text": "앗, 나 찾았네!",
+      "hash": "dee0101870a79a4b97a27eeaf1845204fc9f7e0a6c923fe2bc59e7a0f847ad15",
+      "seed": 3740226139,
+      "duration": 1.753,
+      "sourceDuration": 1.753,
+      "bytes": 15562,
+      "referenceSHA256": "a996a64de39a14076d8f32a772540845e8577538171650c3389571db154ac93f"
+    },
+    "es/luna/poke": {
+      "text": "¡Hola! ¡Me encontraste!",
+      "hash": "98116059cf12f6cc5815c26e7dd631fb8d2d13db977446b61dc607814adc0953",
+      "seed": 2551275609,
+      "duration": 2.385,
+      "sourceDuration": 2.385,
+      "bytes": 16597,
+      "referenceSHA256": "a996a64de39a14076d8f32a772540845e8577538171650c3389571db154ac93f"
+    },
+    "pt-BR/luna/poke": {
+      "text": "Oi! Você me achou!",
+      "hash": "bfeb252f16f3f1b88bfd2ef48f5e6c3100a5e6f73236ce8e5e0e51b422b32c3d",
+      "seed": 3219858735,
+      "duration": 1.757,
+      "sourceDuration": 1.757,
+      "bytes": 15118,
+      "referenceSHA256": "a996a64de39a14076d8f32a772540845e8577538171650c3389571db154ac93f"
+    },
+    "fr/luna/poke": {
+      "text": "Oh ! Bonjour !",
+      "hash": "e1fa7e455578218a1ef8bc77cf54042944235ff248d02d815f408ca2d5e28c08",
+      "seed": 3791289925,
+      "duration": 1.901,
+      "sourceDuration": 1.901,
+      "bytes": 15691,
+      "referenceSHA256": "a996a64de39a14076d8f32a772540845e8577538171650c3389571db154ac93f"
+    },
+    "de/luna/poke": {
+      "text": "Huch! Da bist du ja!",
+      "hash": "19bd7445dff64c28710cd3f33ef2e9a0e7bd3e7bb5c87efb246fddca723f5000",
+      "seed": 431846469,
+      "duration": 1.738,
+      "sourceDuration": 1.738,
+      "bytes": 14029,
+      "referenceSHA256": "a996a64de39a14076d8f32a772540845e8577538171650c3389571db154ac93f"
+    },
+    "en/atlas/poke": {
+      "text": "Oh! You found me!",
+      "hash": "f22a4d6a6e6f8cbfe5b3692cb4e077a36190b48fb7a79f99321da8e3fd4729bc",
+      "seed": 4062858602,
+      "duration": 2.08,
+      "sourceDuration": 2.08,
+      "bytes": 17321,
+      "referenceSHA256": "cb46db6fbe777cbe60fd6400c7df896d95f2b3d6ae6d78201ad1fb09ff0a82d0"
+    },
+    "zh-Hans/atlas/poke": {
+      "text": "呀，被你发现啦！",
+      "hash": "d46dcb260490136d95166895c953925e58fa7b723e26f92b28ca9e1b8c065000",
+      "seed": 3563965222,
+      "duration": 1.776,
+      "sourceDuration": 1.776,
+      "bytes": 14982,
+      "referenceSHA256": "cb46db6fbe777cbe60fd6400c7df896d95f2b3d6ae6d78201ad1fb09ff0a82d0"
+    },
+    "ja/atlas/poke": {
+      "text": "あっ、見つかっちゃった！",
+      "hash": "951dead942adcdd443d35f14c8a2be29d222e0cc78e0acc07afc7ab2ddf576c0",
+      "seed": 2501765849,
+      "duration": 1.97,
+      "sourceDuration": 1.97,
+      "bytes": 17552,
+      "referenceSHA256": "cb46db6fbe777cbe60fd6400c7df896d95f2b3d6ae6d78201ad1fb09ff0a82d0"
+    },
+    "ko/atlas/poke": {
+      "text": "앗, 나 찾았네!",
+      "hash": "2796aee13f1ff09c4483dd905d291f14120cdd66056f2a2e239f27a2704455d2",
+      "seed": 664186593,
+      "duration": 1.597,
+      "sourceDuration": 1.597,
+      "bytes": 14695,
+      "referenceSHA256": "cb46db6fbe777cbe60fd6400c7df896d95f2b3d6ae6d78201ad1fb09ff0a82d0"
+    },
+    "es/atlas/poke": {
+      "text": "¡Hola! ¡Me encontraste!",
+      "hash": "2a94d5e65f61d4bd81d66a3508265bb97bf2f6f14124c17d28646851f6161216",
+      "seed": 714397158,
+      "duration": 2.168,
+      "sourceDuration": 2.168,
+      "bytes": 21082,
+      "referenceSHA256": "cb46db6fbe777cbe60fd6400c7df896d95f2b3d6ae6d78201ad1fb09ff0a82d0"
+    },
+    "pt-BR/atlas/poke": {
+      "text": "Oi! Você me achou!",
+      "hash": "e63fcbfd525cd441c18d2e8df448268b1eec0e1594a635ed8d8f71c15770141c",
+      "seed": 3863940672,
+      "duration": 1.92,
+      "sourceDuration": 1.92,
+      "bytes": 16018,
+      "referenceSHA256": "cb46db6fbe777cbe60fd6400c7df896d95f2b3d6ae6d78201ad1fb09ff0a82d0"
+    },
+    "fr/atlas/poke": {
+      "text": "Oh ! Bonjour !",
+      "hash": "f5bf04638b48bc7fd2866afa067d359ab81f1ffe1d63901d0423ef4b76a747f9",
+      "seed": 4122936419,
+      "duration": 1.597,
+      "sourceDuration": 1.597,
+      "bytes": 13684,
+      "referenceSHA256": "cb46db6fbe777cbe60fd6400c7df896d95f2b3d6ae6d78201ad1fb09ff0a82d0"
+    },
+    "de/atlas/poke": {
+      "text": "Huch! Da bist du ja!",
+      "hash": "3943024f9b1fb9ea2c43754c87f9862de0749d145c553b2e4ead365de47e75bf",
+      "seed": 960692815,
+      "duration": 1.997,
+      "sourceDuration": 1.997,
+      "bytes": 17291,
+      "referenceSHA256": "cb46db6fbe777cbe60fd6400c7df896d95f2b3d6ae6d78201ad1fb09ff0a82d0"
+    },
+    "en/wisp/poke": {
+      "text": "Oh! You found me!",
+      "hash": "3384ebda9745f4636178b803ad6f4f83ed3de4e31e8056458763ca7c71f5444b",
+      "seed": 864349146,
+      "duration": 1.306,
+      "sourceDuration": 1.306,
+      "bytes": 11765,
+      "referenceSHA256": "b1bab2962d8928338a43a69c4771ae3c1827117eab7b1d1e45d62297f87c52e6"
+    },
+    "zh-Hans/wisp/poke": {
+      "text": "呀，被你发现啦！",
+      "hash": "b6a66633554ae3afdaabd4688a7fa1ed9a73ed747642e0ab98c861973d5772aa",
+      "seed": 3065358454,
+      "duration": 1.392,
+      "sourceDuration": 1.392,
+      "bytes": 12257,
+      "referenceSHA256": "b1bab2962d8928338a43a69c4771ae3c1827117eab7b1d1e45d62297f87c52e6"
+    },
+    "ja/wisp/poke": {
+      "text": "あっ、見つかっちゃった！",
+      "hash": "d371512dbe8548e22b7903a523bc9efbbbe42fa64ac6ea4f23af79196157b0b1",
+      "seed": 3547418925,
+      "duration": 1.6,
+      "sourceDuration": 1.6,
+      "bytes": 14359,
+      "referenceSHA256": "b1bab2962d8928338a43a69c4771ae3c1827117eab7b1d1e45d62297f87c52e6"
+    },
+    "ko/wisp/poke": {
+      "text": "앗, 나 찾았네!",
+      "hash": "b65f0121616567179e097bf0b993b69303b9bcdd3bcedd01da8231b9e2f0234b",
+      "seed": 3059679521,
+      "duration": 1.512,
+      "sourceDuration": 1.512,
+      "bytes": 13810,
+      "referenceSHA256": "b1bab2962d8928338a43a69c4771ae3c1827117eab7b1d1e45d62297f87c52e6"
+    },
+    "es/wisp/poke": {
+      "text": "¡Hola! ¡Me encontraste!",
+      "hash": "eec932f068bcad78bdf45cfe6841056140d35ecd41aa1554c6840ca34c4c72bc",
+      "seed": 4006163184,
+      "duration": 2.08,
+      "sourceDuration": 2.08,
+      "bytes": 18788,
+      "referenceSHA256": "b1bab2962d8928338a43a69c4771ae3c1827117eab7b1d1e45d62297f87c52e6"
+    },
+    "pt-BR/wisp/poke": {
+      "text": "Oi! Você me achou!",
+      "hash": "cfc17bccc4fce63bf9dd972fcf8abdd5e970b7dc1c8327aa88e69e8fc25c7934",
+      "seed": 3485563852,
+      "duration": 1.98,
+      "sourceDuration": 1.98,
+      "bytes": 16848,
+      "referenceSHA256": "b1bab2962d8928338a43a69c4771ae3c1827117eab7b1d1e45d62297f87c52e6"
+    },
+    "fr/wisp/poke": {
+      "text": "Oh ! Bonjour !",
+      "hash": "8c568e92908f909c5197420096677eab694a56ca1165fb20720c8ad672f39a5d",
+      "seed": 2354482834,
+      "duration": 1.531,
+      "sourceDuration": 1.531,
+      "bytes": 12583,
+      "referenceSHA256": "b1bab2962d8928338a43a69c4771ae3c1827117eab7b1d1e45d62297f87c52e6"
+    },
+    "de/wisp/poke": {
+      "text": "Huch! Da bist du ja!",
+      "hash": "92ff352d9d0d07d20b02764a1abc7db6a8a9419b776f44718afda370464ae7a2",
+      "seed": 2466198829,
+      "duration": 1.549,
+      "sourceDuration": 1.549,
+      "bytes": 14978,
+      "referenceSHA256": "b1bab2962d8928338a43a69c4771ae3c1827117eab7b1d1e45d62297f87c52e6"
+    },
+    "en/nova/poke": {
+      "text": "Oh! You found me!",
+      "hash": "665994fd7328929cc9a944e94e37703e559f8b6daeb75baaa957b2cb7f2df537",
+      "seed": 1717146877,
+      "duration": 1.92,
+      "sourceDuration": 1.92,
+      "bytes": 15478,
+      "referenceSHA256": "141f47a267b79515b8741ade07e9ba109ad914d0e2825390b75cf4f4791c007b"
+    },
+    "zh-Hans/nova/poke": {
+      "text": "呀，被你发现啦！",
+      "hash": "e76cdc1c304e9967c115cc4e16cc394a7e67f5ae75ad63504b4a38890217733e",
+      "seed": 3882671132,
+      "duration": 1.666,
+      "sourceDuration": 1.666,
+      "bytes": 14807,
+      "referenceSHA256": "141f47a267b79515b8741ade07e9ba109ad914d0e2825390b75cf4f4791c007b"
+    },
+    "ja/nova/poke": {
+      "text": "あっ、見つかっちゃった！",
+      "hash": "bb6b12f0ecbf0b1024de24ad156c4b8a9a3906b44aaf73ac085a8ed08735e8d0",
+      "seed": 3145356595,
+      "duration": 1.989,
+      "sourceDuration": 1.989,
+      "bytes": 17559,
+      "referenceSHA256": "141f47a267b79515b8741ade07e9ba109ad914d0e2825390b75cf4f4791c007b"
+    },
+    "ko/nova/poke": {
+      "text": "앗, 나 찾았네!",
+      "hash": "0cea05cf3adcce692a28602918dce2c5f8dd7f46a2a923c132a33cf09652bbfb",
+      "seed": 216663503,
+      "duration": 1.711,
+      "sourceDuration": 1.711,
+      "bytes": 13997,
+      "referenceSHA256": "141f47a267b79515b8741ade07e9ba109ad914d0e2825390b75cf4f4791c007b"
+    },
+    "es/nova/poke": {
+      "text": "¡Hola! ¡Me encontraste!",
+      "hash": "895bd34c18fe13994061435ea1e20714afd0323e792842499262134962de31a6",
+      "seed": 2304496460,
+      "duration": 1.818,
+      "sourceDuration": 1.818,
+      "bytes": 16388,
+      "referenceSHA256": "141f47a267b79515b8741ade07e9ba109ad914d0e2825390b75cf4f4791c007b"
+    },
+    "pt-BR/nova/poke": {
+      "text": "Oi! Você me achou!",
+      "hash": "a282bfd9be32b4b723cd78dcf2797ebbc06962809726e60cdc81bcebec2c0e37",
+      "seed": 2726477785,
+      "duration": 1.739,
+      "sourceDuration": 1.739,
+      "bytes": 14577,
+      "referenceSHA256": "141f47a267b79515b8741ade07e9ba109ad914d0e2825390b75cf4f4791c007b"
+    },
+    "fr/nova/poke": {
+      "text": "Oh ! Bonjour !",
+      "hash": "7ba5ff2bfdcdef43ff20412da8b548dcde84a998a9ab900ce2d88736f1b51929",
+      "seed": 2074476331,
+      "duration": 1.169,
+      "sourceDuration": 1.169,
+      "bytes": 9801,
+      "referenceSHA256": "141f47a267b79515b8741ade07e9ba109ad914d0e2825390b75cf4f4791c007b"
+    },
+    "de/nova/poke": {
+      "text": "Huch! Da bist du ja!",
+      "hash": "52e786b250f9c5ca7b311356b02e9ecc305dbaa96e31b4cb9df90b1cb914ed7b",
+      "seed": 1390905010,
+      "duration": 2.185,
+      "sourceDuration": 2.185,
+      "bytes": 19867,
+      "referenceSHA256": "141f47a267b79515b8741ade07e9ba109ad914d0e2825390b75cf4f4791c007b"
+    },
+    "en/orbit/poke": {
+      "text": "Oh! You found me!",
+      "hash": "aba5e4beb9a4b2f7f7b75f91fc8382913070c52515a920242ac3cbf57048095e",
+      "seed": 2879775934,
+      "duration": 1.6,
+      "sourceDuration": 1.6,
+      "bytes": 14761,
+      "referenceSHA256": "e05f5628fdfc164a5858b1dfec832135a54f8732838cf7ce7957465055ae653e"
+    },
+    "zh-Hans/orbit/poke": {
+      "text": "呀，被你发现啦！",
+      "hash": "437049d8678f4d960271b0f09b3535b92ace87eb29740eec8f998a9e0397ad07",
+      "seed": 1131432408,
+      "duration": 1.829,
+      "sourceDuration": 1.829,
+      "bytes": 16935,
+      "referenceSHA256": "e05f5628fdfc164a5858b1dfec832135a54f8732838cf7ce7957465055ae653e"
+    },
+    "ja/orbit/poke": {
+      "text": "あっ、見つかっちゃった！",
+      "hash": "a535a43290c3a335f765a6c982eaa1b054d8e2975fd672683cd3b4cabc6f7ad6",
+      "seed": 2771756082,
+      "duration": 1.944,
+      "sourceDuration": 1.944,
+      "bytes": 19742,
+      "referenceSHA256": "e05f5628fdfc164a5858b1dfec832135a54f8732838cf7ce7957465055ae653e"
+    },
+    "ko/orbit/poke": {
+      "text": "앗, 나 찾았네!",
+      "hash": "ec7596865b7f57a685cdd6b38ec08842bc6b0ccb0b2cef491d3dd1a0fcd64f3f",
+      "seed": 3967129222,
+      "duration": 1.407,
+      "sourceDuration": 1.407,
+      "bytes": 12926,
+      "referenceSHA256": "e05f5628fdfc164a5858b1dfec832135a54f8732838cf7ce7957465055ae653e"
+    },
+    "es/orbit/poke": {
+      "text": "¡Hola! ¡Me encontraste!",
+      "hash": "88622ddabe8846498747d4b896fdbe8f7c549a574f92c50d53ff9661b258940c",
+      "seed": 2288135642,
+      "duration": 1.932,
+      "sourceDuration": 1.932,
+      "bytes": 18377,
+      "referenceSHA256": "e05f5628fdfc164a5858b1dfec832135a54f8732838cf7ce7957465055ae653e"
+    },
+    "pt-BR/orbit/poke": {
+      "text": "Oi! Você me achou!",
+      "hash": "be34f7a9db13eee46f330424395d056ac9693f2cf373180ede29c1185688a66e",
+      "seed": 3191142313,
+      "duration": 1.44,
+      "sourceDuration": 1.44,
+      "bytes": 12203,
+      "referenceSHA256": "e05f5628fdfc164a5858b1dfec832135a54f8732838cf7ce7957465055ae653e"
+    },
+    "fr/orbit/poke": {
+      "text": "Oh ! Bonjour !",
+      "hash": "8e735c439c889e0a3ecaba9b2ebe2a9acde6637874c48fa48562a6f909333100",
+      "seed": 2389924931,
+      "duration": 1.227,
+      "sourceDuration": 1.227,
+      "bytes": 11342,
+      "referenceSHA256": "e05f5628fdfc164a5858b1dfec832135a54f8732838cf7ce7957465055ae653e"
+    },
+    "de/orbit/poke": {
+      "text": "Huch! Da bist du ja!",
+      "hash": "609aeff3cdd3c40adfdf84067d4101df6c74761f0810570082e6990580d1a7af",
+      "seed": 1620766707,
+      "duration": 1.92,
+      "sourceDuration": 1.92,
+      "bytes": 16757,
+      "referenceSHA256": "e05f5628fdfc164a5858b1dfec832135a54f8732838cf7ce7957465055ae653e"
+    },
+    "en/comet/poke": {
+      "text": "Oh! You found me!",
+      "hash": "23c7da8fe9219323ce7f8fefcc4eca5d8032357d2d179e1fb1e83c71a1a54125",
+      "seed": 600300175,
+      "duration": 1.643,
+      "sourceDuration": 1.643,
+      "bytes": 14541,
+      "referenceSHA256": "13f4bd6dc21f423e95b890f7567041a92b8641b604e494d400eef6110022f103"
+    },
+    "zh-Hans/comet/poke": {
+      "text": "呀，被你发现啦！",
+      "hash": "d6ee4eff8bd457506499a2f45879cdd0ca69ed04690889c332a90a977d8246ad",
+      "seed": 3605942015,
+      "duration": 1.727,
+      "sourceDuration": 1.727,
+      "bytes": 15051,
+      "referenceSHA256": "13f4bd6dc21f423e95b890f7567041a92b8641b604e494d400eef6110022f103"
+    },
+    "ja/comet/poke": {
+      "text": "あっ、見つかっちゃった！",
+      "hash": "8b69440304b26906963a54e9d6942624c2cf1201058d2b9a04d2ba63953a5170",
+      "seed": 2338931715,
+      "duration": 1.592,
+      "sourceDuration": 1.592,
+      "bytes": 14191,
+      "referenceSHA256": "13f4bd6dc21f423e95b890f7567041a92b8641b604e494d400eef6110022f103"
+    },
+    "ko/comet/poke": {
+      "text": "앗, 나 찾았네!",
+      "hash": "391cb1788591ca226258f8761b455250322fd0e71b2c392f845b4a0ef1f6ad46",
+      "seed": 958181752,
+      "duration": 1.229,
+      "sourceDuration": 1.229,
+      "bytes": 10847,
+      "referenceSHA256": "13f4bd6dc21f423e95b890f7567041a92b8641b604e494d400eef6110022f103"
+    },
+    "es/comet/poke": {
+      "text": "¡Hola! ¡Me encontraste!",
+      "hash": "be7414628fbcdec735d64344e3af449525d91a434d0183bd50c82a7f43e0c0f0",
+      "seed": 3195278434,
+      "duration": 1.614,
+      "sourceDuration": 1.614,
+      "bytes": 14131,
+      "referenceSHA256": "13f4bd6dc21f423e95b890f7567041a92b8641b604e494d400eef6110022f103"
+    },
+    "pt-BR/comet/poke": {
+      "text": "Oi! Você me achou!",
+      "hash": "f9a88108dc1f321bfd7faf803da3240cc16aee687afbf995aaf89f3a25369f91",
+      "seed": 4188569864,
+      "duration": 1.639,
+      "sourceDuration": 1.639,
+      "bytes": 13957,
+      "referenceSHA256": "13f4bd6dc21f423e95b890f7567041a92b8641b604e494d400eef6110022f103"
+    },
+    "fr/comet/poke": {
+      "text": "Oh ! Bonjour !",
+      "hash": "c6294175a0db3e7d4acaa55db9b4a8ca23dac07f99cb7bc42b798dd74c1a0077",
+      "seed": 3324592501,
+      "duration": 1.44,
+      "sourceDuration": 1.44,
+      "bytes": 12758,
+      "referenceSHA256": "13f4bd6dc21f423e95b890f7567041a92b8641b604e494d400eef6110022f103"
+    },
+    "de/comet/poke": {
+      "text": "Huch! Da bist du ja!",
+      "hash": "f279088b28d65ad3fd460b32653cba8500f31920d949572570937acb96a9e387",
+      "seed": 4068018315,
+      "duration": 2.192,
+      "sourceDuration": 2.192,
+      "bytes": 18720,
+      "referenceSHA256": "13f4bd6dc21f423e95b890f7567041a92b8641b604e494d400eef6110022f103"
     }
   }
 }

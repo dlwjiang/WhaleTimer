@@ -4,17 +4,25 @@ import SwiftUI
 struct FlipClock: View {
     let value: String
     let theme: CompanionTheme
+    var maximumHeight: CGFloat = 96
     var body: some View {
         GeometryReader { proxy in
             let count = value.filter { $0 != ":" }.count
-            let width = min(76, (proxy.size.width - CGFloat(count) * 6 - 18) / CGFloat(count))
-            let height = min(96, width * 96 / 76)
-            let fontSize = height * 0.75
+            let width = max(1, min(maximumHeight * 76 / 96,
+                (proxy.size.width - CGFloat(count) * 6 - 18) / CGFloat(count)))
+            let height = min(maximumHeight, width * 96 / 76)
             HStack(spacing: 6) {
                 ForEach(Array(value.enumerated()), id: \.offset) { _, character in
                     if character == ":" {
-                        Text(verbatim: ":").font(.custom("Manrope-Bold", fixedSize: fontSize * 0.65))
-                            .foregroundStyle(theme.clock.separator).frame(width: 12)
+                        // Center the visible marks on the hinge, independent of
+                        // the font's baseline and asymmetric glyph bearings.
+                        VStack(spacing: height * 0.09) {
+                            ForEach(0..<2) { _ in
+                                RoundedRectangle(cornerRadius: height * 0.006)
+                                    .fill(theme.clock.separator)
+                                    .frame(width: height * 0.055, height: height * 0.065)
+                            }
+                        }.frame(width: 12, height: height)
                     } else {
                         FlipDigit(value: String(character), theme: theme)
                             .frame(width: width, height: height)
@@ -22,7 +30,7 @@ struct FlipClock: View {
                 }
             }.frame(maxWidth: .infinity, maxHeight: .infinity)
         }
-        .frame(height: 96)
+        .frame(height: maximumHeight)
         .accessibilityHidden(true)
     }
 }
@@ -34,29 +42,34 @@ private struct FlipDigit: View {
     @State private var previous = ""
     @State private var outgoing = ""
     @State private var flipping = false
-    @State private var landing = false
-    @State private var upperAngle = 0.0
-    @State private var lowerAngle = 90.0
+    @State private var flipProgress = 0.0
+    private let flipDuration = 0.9
 
     var body: some View {
         GeometryReader { proxy in
             let size = proxy.size
             ZStack {
+                // Only the fixed housing casts a shadow. A shadow on the whole
+                // stack can project the moving flap's edge across the numeral.
+                RoundedRectangle(cornerRadius: 9).fill(theme.clock.base)
+                    .shadow(color: theme.edge, radius: 0, y: 3)
+                    .shadow(color: theme.clock.shadow, radius: 4.5, y: 5)
                 VStack(spacing: 0) {
-                    half(value, top: true, size: size)
-                    half(flipping ? outgoing : value, top: false, size: size)
+                    // Restore the printed seam only once the card has landed.
+                    half(value, top: true, size: size, moving: flipping)
+                    half(flipping ? outgoing : value, top: false, size: size, moving: flipping)
                 }
                 if flipping {
                     VStack(spacing: 0) {
                         half(outgoing, top: true, size: size, moving: true)
-                            .modifier(FlapRotation(angle: upperAngle, anchor: .bottom))
+                            .modifier(FlapRotation(progress: flipProgress, top: true))
                         Color.clear.frame(height: size.height / 2)
-                    }.opacity(landing ? 0 : 1).zIndex(1)
+                    }.drawingGroup().zIndex(1)
                     VStack(spacing: 0) {
                         Color.clear.frame(height: size.height / 2)
                         half(value, top: false, size: size, moving: true)
-                            .modifier(FlapRotation(angle: lowerAngle, anchor: .top))
-                    }.opacity(landing ? 1 : 0).zIndex(2)
+                            .modifier(FlapRotation(progress: flipProgress, top: false))
+                    }.drawingGroup().zIndex(2)
                 }
                 HStack {
                     pivot
@@ -64,9 +77,6 @@ private struct FlipDigit: View {
                     pivot
                 }.padding(.horizontal, -1).zIndex(3)
             }
-            .background(theme.clock.base, in: RoundedRectangle(cornerRadius: 9))
-            .shadow(color: theme.edge, radius: 0, y: 3)
-            .shadow(color: theme.clock.shadow, radius: 4.5, y: 5)
         }
         .task(id: value) {
             let old = previous
@@ -75,15 +85,13 @@ private struct FlipDigit: View {
             outgoing = old
             var reset = Transaction(); reset.disablesAnimations = true
             withTransaction(reset) {
-                upperAngle = 0; lowerAngle = 90; landing = false; flipping = true
+                flipProgress = 0; flipping = true
             }
-            withAnimation(.easeIn(duration: 0.24)) { upperAngle = -90 }
-            do { try await Task.sleep(for: .milliseconds(240)) } catch { return }
-            // Never leave an edge-on card in front of the other card's numeral.
-            withTransaction(reset) { landing = true }
-            withAnimation(.easeOut(duration: 0.28)) { lowerAngle = 0 }
-            do { try await Task.sleep(for: .milliseconds(280)) } catch { return }
-            flipping = false
+            // Both halves follow the same presentation progress; no sleep-driven
+            // handoff can expose an edge-on face while the other half is moving.
+            withAnimation(.linear(duration: flipDuration)) { flipProgress = 1 }
+            do { try await Task.sleep(for: .seconds(flipDuration)) } catch { return }
+            withTransaction(reset) { flipping = false }
         }
     }
 
@@ -131,21 +139,27 @@ private struct FlipDigit: View {
         }
         .clipped()
         .clipShape(UnevenRoundedRectangle(topLeadingRadius: top ? 9 : 0, bottomLeadingRadius: top ? 0 : 9, bottomTrailingRadius: top ? 0 : 9, topTrailingRadius: top ? 9 : 0))
-        // Rotate one composed surface so highlights cannot sort above its glyph.
-        .compositingGroup()
+        // Rasterize the face and glyph together before applying perspective.
+        .drawingGroup()
     }
 }
 
-/// Evaluate visibility at the interpolated angle, not just the animation endpoints.
-/// A flattened, edge-on face would otherwise rasterize as a bar across the hinge.
+/// Derive both phases and their visibility from one interpolated animation clock.
 private struct FlapRotation: AnimatableModifier {
-    var angle: Double
-    let anchor: UnitPoint
-    var animatableData: Double { get { angle } set { angle = newValue } }
+    var progress: Double
+    let top: Bool
+    var animatableData: Double { get { progress } set { progress = newValue } }
 
     func body(content: Content) -> some View {
+        let phase = min(1, max(0, top ? progress * 2 : (progress - 0.5) * 2))
+        let angle = top ? -90 * phase * phase : 90 * (1 - phase) * (1 - phase)
+        let active = top ? progress < 0.5 : progress >= 0.5
+        let visible = active && abs(angle) < 89.5
         content
-            .rotation3DEffect(.degrees(angle), axis: (x: 1, y: 0, z: 0), anchor: anchor, perspective: 0.35)
-            .opacity(abs(angle) >= 89.5 ? 0 : 1)
+            // An exactly edge-on projection is singular even at zero opacity.
+            // Hidden faces use an identity transform instead of a degenerate one.
+            .rotation3DEffect(.degrees(visible ? angle : 0), axis: (x: 1, y: 0, z: 0),
+                              anchor: top ? .bottom : .top, perspective: 0.35)
+            .opacity(visible ? 1 : 0)
     }
 }

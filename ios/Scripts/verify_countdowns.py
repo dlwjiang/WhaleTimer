@@ -8,10 +8,18 @@ ROOT=Path(__file__).resolve().parents[1]
 AUDIO=ROOT/'Banke/Audio/Voices'
 REPORT=ROOT/'Verification/encoded-countdowns.json'
 LANGS=['en','zh-Hans','ja','ko','es','pt-BR','fr','de']
-CHARS=['mochi','pip','jun','bean','luna','atlas','nova','orbit']
+CHARS=['mochi','pip','pebble','jun','bean','maple','luna','atlas','wisp','nova','orbit','comet']
 
 def main():
-    parser=argparse.ArgumentParser();parser.add_argument('--allow-incomplete',action='store_true');args=parser.parse_args()
+    global AUDIO, REPORT, CHARS
+    parser=argparse.ArgumentParser()
+    parser.add_argument('--allow-incomplete',action='store_true')
+    parser.add_argument('--audio-root',type=Path,default=AUDIO)
+    parser.add_argument('--report',type=Path,default=REPORT)
+    parser.add_argument('--characters',default=','.join(CHARS))
+    args=parser.parse_args()
+    AUDIO=args.audio_root.resolve(); REPORT=args.report.resolve(); CHARS=args.characters.split(',')
+    REPORT.parent.mkdir(parents=True,exist_ok=True)
     report=json.loads(REPORT.read_text()) if REPORT.exists() else {'method':'Decode actual bundled AAC digits, assemble one-second slots, then recognize 5→1 with local Whisper. Human pronunciation review remains separate.','sequences':{}}
     missing=[]
     for character in CHARS:
@@ -31,6 +39,6 @@ def main():
             temp=REPORT.with_suffix('.tmp');temp.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n');temp.replace(REPORT)
             print(key,report['sequences'][key]['status'],[w['text'] for w in words],flush=True)
     review=[k for k,v in report['sequences'].items() if v['status']!='verified']
-    print(f'{len(report["sequences"])}/64 encoded countdowns checked; {len(review)} need review; {len(missing)} missing.',flush=True)
+    print(f'{len(report["sequences"])}/{len(CHARS)*len(LANGS)} encoded countdowns checked; {len(review)} need review; {len(missing)} missing.',flush=True)
     if review or (missing and not args.allow_incomplete):raise SystemExit(1)
 if __name__=='__main__':main()

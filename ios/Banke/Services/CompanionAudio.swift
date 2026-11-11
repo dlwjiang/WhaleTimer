@@ -138,6 +138,7 @@ final class CompanionAudio: NSObject, ObservableObject, AVAudioPlayerDelegate, A
         do { try await Task.sleep(for: .milliseconds(cue.count == 1 ? 750 : cue == "go" ? 600 : 1800)); return true }
         catch { return false }
     }
+
     func stopSpeech() {
         generation += 1; cueTask?.cancel(); cueTask = nil; clearTask?.cancel()
         cancelPlayback(); caption = nil; captionCompanion = nil; captionCue = nil; previewing = false

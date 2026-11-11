@@ -31,7 +31,7 @@ struct CompanionTheme {
     init(_ companion: Companion) {
         clock = ClockMaterial(companion)
         // Preserve the web's blue and warm scholarly material recipes.
-        if companion == .mochi {
+        if companion == .mochi || companion == .pebble {
             accent = Color(hex: 0x426bd0); soft = Color(hex: 0xeaf0ff)
             top = Color(hex: 0x233b5d); bottom = Color(hex: 0x395d83)
             edge = Color(hex: 0x13263f); hinge = Color(hex: 0x8bbcd4)
@@ -76,20 +76,20 @@ struct ClockMaterial {
 
     init(_ companion: Companion) {
         switch companion {
-        case .mochi:
+        case .mochi, .pebble:
             self.init(topStart: 0x34567d, bottomStart: 0x294363, base: 0x192e4b,
                       seam: 0x10213a, separator: 0x536e91, shadow: 0x182d4d, shadowAlpha: 0x25)
         case .pip:
             self.init(topStart: 0x714c38, bottomStart: 0x58382c, base: 0x3c251e,
                       seam: 0x342018, separator: 0x946747, shadow: 0x57301c, shadowAlpha: 0x30)
-        case .jun, .bean:
+        case .jun, .bean, .maple:
             self.init(topStart: 0x604744, bottomStart: 0x493739, base: 0x30262c,
                       seam: 0x262333, separator: 0x946b52, shadow: 0x382733, shadowAlpha: 0x30)
-        case .luna, .atlas:
+        case .luna, .atlas, .wisp:
             self.init(topStart: 0xfaf7ff, bottomStart: 0xe8ddf4, base: 0xc7b7dc,
                       seam: 0xbcaaca, separator: 0x806c97, shadow: 0x66517d, shadowAlpha: 0x28,
                       lightTextShadow: true)
-        case .nova, .orbit:
+        case .nova, .orbit, .comet:
             self.init(topStart: 0x2b5966, bottomStart: 0x204b58, base: 0x142f3d,
                       seam: 0x102d3b, separator: 0x568c95, shadow: 0x142f3d, shadowAlpha: 0x30)
         }
@@ -112,8 +112,12 @@ struct GlassSurface: ViewModifier {
     @Environment(\.accessibilityReduceTransparency) private var reduceTransparency
     var tint: Color = Palette.paper
     var radius: CGFloat = 26
+    var native = false
+    @ViewBuilder
     func body(content: Content) -> some View {
-        content
+        if native, !reduceTransparency, #available(iOS 26.0, *) {
+            content.glassEffect(.regular.tint(tint.opacity(0.08)), in: .rect(cornerRadius: radius))
+        } else { content
             .background {
                 RoundedRectangle(cornerRadius: radius)
                     .fill(reduceTransparency ? tint : tint.opacity(0.18))
@@ -132,6 +136,7 @@ struct GlassSurface: ViewModifier {
                     }
                     .shadow(color: Palette.ink.opacity(0.07), radius: 18, y: 8)
             }
+        }
     }
 }
 

@@ -1,0 +1,317 @@
+{
+  "method": "Local faster-whisper small/int8, wording diagnostics; not acting or cuteness approval.",
+  "clips": {
+    "mochi-a": {
+      "sha256": "1d1f8c4ced5b4f0388b15d1f5173508582c3e1960d252a13c337c1b12e46f2f6",
+      "heard": "Hi, I'm right here! Let's do one little thing together! Ready? Here we go!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "mochi-b": {
+      "sha256": "025aaf63efe170b97bbd6ef33372f73592fe7ab45d4d9e9d2e9a7bc5b344beba",
+      "heard": "Hi, I'm right here. Let's do one little thing together. Ready? Here we go!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "pip-a": {
+      "sha256": "7049b1e18d7c606ce25384d340bb4f047d648c92e383688cbdda2914e5e71fb7",
+      "heard": "Hi, I'm right here. Let's do one little thing together. Ready? Here we go!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "pip-b": {
+      "sha256": "37196e6f8efa5d796ba35cc69c906aba296dfea4cf7653a98825c77e389f8dc8",
+      "heard": "Hi, I'm right here. Let's do one little thing together ready here we go",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "pebble-a": {
+      "sha256": "ab24e364b5dae6f3b52219aadef6cb8cfe01ed7f1616ada9e2f0b4e5ee229b8d",
+      "heard": "Hi, I'm right here. Let's do one little thing together. Ready? Here we go.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "pebble-b": {
+      "sha256": "3fc7ccc3981b6d24c8404226ed0063d556b4dd1fa17aa56594bf79ecc7e793e1",
+      "heard": "Hi! I'm right here! Let's do one little thing together. Ready? Here we go!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "jun-a": {
+      "sha256": "10d0a370117a6339c4a66b5a0527c44d5d1f417fe64c4ac45b74c8da6adbd340",
+      "heard": "Hi, I'm right here. Let's do one little thing together ready here we go",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "jun-b": {
+      "sha256": "f06a650fbf01e2f1defdca351473bec08509591c49bd206a093c50d8b1332b0d",
+      "heard": "Hi, I'm right here. Let's do one little thing together ready here we go",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "bean-a": {
+      "sha256": "40051f6b942e3d455c6ee8a1a78a95c06d23b6713871325b6d36fb5be96c8179",
+      "heard": "Hi! I'm right here. Let's do one little thing together. Ready? Here we go!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "bean-b": {
+      "sha256": "198a23260128500a341826fd73d476443f3073b2f854cd81633fa824b2cfe634",
+      "heard": "Hi, I'm right here. Let's do one little thing together. Ready? Here we go!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "maple-a": {
+      "sha256": "cbd126446589d2902baf8db4d5ec22c6bcf4a6b5324b71b5bbd5e5cfd3afe4a4",
+      "heard": "Hi, I'm right here! Let's do one little thing together! Ready? Here we go!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "maple-b": {
+      "sha256": "670858f7b4fc74289190476b7b96a06cee71307529450c77d3aac1f95f5bd095",
+      "heard": "Hi! I'm right here. Let's do one little thing together. Ready? Here we go!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "luna-a": {
+      "sha256": "b025d2aae8c563fdf14b8e15c066da33e890c950d1eb4667dca297c7ebadaf29",
+      "heard": "Hi! I'm right here! Let's do one little thing together, ready? Here we go!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "luna-b": {
+      "sha256": "85be97cd7e5112ba34f1b662081722ba1ae22ee1266f6fc84b27fdaa86ec0d4f",
+      "heard": "Hi, I'm right here. Let's do one little thing together. Ready? Here we go.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "atlas-a": {
+      "sha256": "2de5a15c430e47f3c53dcaca19546a77b1d5505a5ca24d4c61172ac3ce61152b",
+      "heard": "Hi, I'm right here. Let's do one little thing together. Ready? Here we go!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "atlas-b": {
+      "sha256": "6872746d1a75c2cb86d40b79cfeb16d69262f85f54a7d3f664aa9c8427009245",
+      "heard": "Hi! I'm right here. Let's do one little thing together. Ready? Here we go!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "wisp-a": {
+      "sha256": "b5f6016c5e3e298794ef647766e82678968ddfe51f1522e7845a6443816200bb",
+      "heard": "Hi! I'm right here! Let's do one little thing together. Ready? Here we go!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "wisp-b": {
+      "sha256": "057f663ca439bf8d15f9806b435564ae035a85f9c0cc8622c27d764258afb974",
+      "heard": "Hi! I'm right here! Let's do one little thing together. Ready? Here we go!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "nova-a": {
+      "sha256": "305b1887fef67fc8252e2a9ebcd1624661b57a237dd9876ba0bc4221921910cc",
+      "heard": "Hi! I'm right here! Let's do one little thing together! Ready? Here we go!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "nova-b": {
+      "sha256": "f9564d7a09e4b20206c025c78b73c9f98a46f19ad9cffc2876a54205d6055ea3",
+      "heard": "Hi, I'm right here! Let's do one little thing together! Ready? Here we go!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "orbit-a": {
+      "sha256": "9acef30cd0a723b56496024ca3eb5393c1375e3ae9062791e1e36d9527ce2377",
+      "heard": "Hi, I'm right here. Let's do one little thing together. Ready? Here we go!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "orbit-b": {
+      "sha256": "d7c0961701f3db0a0db64854ab228b000ae550ccb436bb6881426707cd6efaa8",
+      "heard": "Hi! I'm right here! Let's do one little thing together! Ready? Here we go!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "comet-a": {
+      "sha256": "c5a64daf3aeacb273f1141cb5a2e1737bb4045bb2c5ee7a9da643bebe4389e54",
+      "heard": "Hi, I'm right here. Let's do one little thing together ready here we go",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "comet-b": {
+      "sha256": "07f68b2c59cec08fbdc8d3cbc59b698231e4c1b406cb7eb2b463b31944c63ee2",
+      "heard": "Hi! I'm right here. Let's do one little thing together. Ready? Here we go!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "mochi-c": {
+      "sha256": "c664af0435688379741547a3f0f69f97ea53ea7dcc984717b2a4f970a9967c67",
+      "heard": "Hi! I'm right here! Let's do one little thing together! Ready? Here we go!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "mochi-d": {
+      "sha256": "0caa705c4c4d83db3ed933fe1110b10b995eedd97080ad8571b91df0b77cbe57",
+      "heard": "Hi, I'm right here. Let's do one little thing together ready here we go",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "pip-c": {
+      "sha256": "3126c11812290986c57cecc1df2c7002456f06bb09cfe057f2354fda45534fe4",
+      "heard": "Hi! I'm right here. Let's do one little thing together. Ready? Here we go!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "pip-d": {
+      "sha256": "2800f711fe7e7dc30a7dc51d0ac099bc36cddc3562130ac35285157cc9af5544",
+      "heard": "I... I'm right here! Let's do one little thing together. Ready? Here we go!",
+      "similarity": 0.991,
+      "review": "transcript-match"
+    },
+    "pebble-c": {
+      "sha256": "38d1ce74ed264529398257109a74d5edd4fb089ffc6b3ab8ff1e893ed8e37e1b",
+      "heard": "Hi! I'm right here! Let's do one little thing together! Ready? Here we go!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "pebble-d": {
+      "sha256": "490408fab0c31b16644d4134da51536e90c9ad62b4830eab78393893e381d8c5",
+      "heard": "Hi! I'm right here! Let's do one little thing together! Ready? Here we go!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "jun-c": {
+      "sha256": "063164e11635ef5e14b8ec97971e8b12c16db5b1a7db0ee4423b7244e7a85105",
+      "heard": "Hi! I'm right here. Let's do one little thing together. Ready? Here we go!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "jun-d": {
+      "sha256": "d1603701476db68c11abd09427122cf4d40c6e84bb03241eb5f58742e34b0c06",
+      "heard": "Hi, I'm right here. Let's do one little thing together. Ready? Here we go!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "bean-c": {
+      "sha256": "ec2dc4edccc92baac92e01ff965c1157fe6e6519bbc1b54debe0592fc926bec8",
+      "heard": "Hi, I'm right here! Let's do one little thing together! Ready? Here we go!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "bean-d": {
+      "sha256": "e1054ef4f7c35f22ad223baffe5a610348a62159c42b31bb3198934030024c35",
+      "heard": "Hey! I'm right here! Let's do one little thing together! Ready? Here we go!",
+      "similarity": 0.972,
+      "review": "transcript-match"
+    },
+    "maple-c": {
+      "sha256": "1fbbdef3280948942cf7cb40f9330f5d354f3e4a23c841325cd91ed15fb057fc",
+      "heard": "Hi, I'm right here. Let's do one little thing together ready here we go",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "maple-d": {
+      "sha256": "781e6f0097ddaf650980892f43de3ff784f6d44dd1e75724c28dbf1a53413e16",
+      "heard": "Hi, I'm right here. Let's do one little thing together ready here we go",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "luna-c": {
+      "sha256": "506d0502caf36e64f73ccb5847728fb3a7d6aceda45a249d566e114391de370c",
+      "heard": "Hi! I'm right here! Let's do one little thing together! Ready? Here we go!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "luna-d": {
+      "sha256": "7ebf87c6dadbca119bf8702629c5d4f8a19a00ea4d452583a3bdf1c0a9da5d75",
+      "heard": "Hi! I'm right here. Let's do one little thing together. Ready? Here we go!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "atlas-c": {
+      "sha256": "82c8ef37ccbe28ba817b342bce538af8eb6646e683ee5562e75540be2a17dae9",
+      "heard": "Hi! I'm right here! Let's do one little thing together! Ready? Here we go!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "atlas-d": {
+      "sha256": "01e0cc1c81ffd531ee2968118dfb7d87d0defd84898af279d79ec9729139b63a",
+      "heard": "Hi, I'm right here. Let's do one little thing together ready. Here we go",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "wisp-c": {
+      "sha256": "32af724d64716e7d0995f2b23a5ddc78c23ffc491f8e6fa06fe68222bdcd79ed",
+      "heard": "Hi, I'm right here. Let's do one little thing together ready here we go",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "wisp-d": {
+      "sha256": "9236df05d6f8912690e7fd6ab1880e2508526ea11d26b084d2fa2ea44b77e573",
+      "heard": "Hi, I'm right here. Let's do one little thing together ready here we go",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "nova-c": {
+      "sha256": "8bdd53e2ad595e8a5c1f95990d1c5e23e67fd2c71177d617be5d4928213d36b6",
+      "heard": "Hi! I'm right here! Let's do one little thing together! Ready? Here we go!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "nova-d": {
+      "sha256": "af39e701e85dcef46946c53a14163d63b66309e36ce013bde3b2fd2647046134",
+      "heard": "Hi! I'm right here! Let's do one little thing together! Ready? Here we go!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "orbit-c": {
+      "sha256": "93514b9d491d9bfa580f1580c043d19b7379147e9f1f13df7615fe8993f916cf",
+      "heard": "Hi, I'm right here. Let's do one little thing together. Ready? Here we go",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "orbit-d": {
+      "sha256": "fd3634b8122d38a82e451a6510ae029a879cc2cd2385693f2c8bec5f5499afc9",
+      "heard": "Hi, I'm right here. Let's do one little thing together. Ready? Here we go!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "comet-c": {
+      "sha256": "6b6564312d378d34a994eea1f564a1f6d1aeed688d759b3d849077c3b1232791",
+      "heard": "Hey! I'm right here! Let's do one little thing together! Ready? Here we go!",
+      "similarity": 0.972,
+      "review": "transcript-match"
+    },
+    "comet-d": {
+      "sha256": "9a40573ebca31fc22c863c2643c1529f30539910f2254a2e37f501ffd05943c0",
+      "heard": "Hey! I'm right here! Let's do one little thing together! Ready? Here we go! Hey!",
+      "similarity": 0.946,
+      "review": "transcript-match"
+    },
+    "jun-r2-a": {
+      "sha256": "55ed326023d9a88649df5c3cf6b92277bd73aa67a10c04b63fee1aa567f40627",
+      "heard": "Hi, I'm right here! Let's do one little thing together. Ready? Here we go!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "jun-r2-b": {
+      "sha256": "8f7e95a04cf30ef79ff0e0b1a76d4934240b4aa28fb86c8b20cab4d18e946d70",
+      "heard": "Hi, I'm right here. Let's do one little thing together. Ready? Here we go!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "jun-r2-c": {
+      "sha256": "5486872a9d865175b272904f680bae0b67fa5084e9414c15c1b186b25563a368",
+      "heard": "Hi, I'm right here. Let's do one little thing together. Ready? Here we go.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "jun-r2-d": {
+      "sha256": "0e94d12a441165fc3fe94ce600badc236a45485fc396c452421b36e5eb5cff67",
+      "heard": "Hi, I'm right here. Let's do one little thing together ready here we go",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    }
+  }
+}

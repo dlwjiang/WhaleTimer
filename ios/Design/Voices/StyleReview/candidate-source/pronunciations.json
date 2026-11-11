@@ -1,0 +1,52 @@
+{
+  "ja/atlas/greeting": {
+    "text": "ここで、ゆっくり まなぼう。",
+    "instruct": "Speak Japanese naturally and clearly."
+  },
+  "zh-Hans/pebble/greeting": {
+    "text": "慢慢来，我陪着你。",
+    "instruct": "Speak Mandarin Chinese naturally and clearly, with a soft warm smile."
+  },
+  "zh-Hans/maple/pause": {
+    "instruct": "Speak Mandarin Chinese naturally and clearly, gently playful and reassuring."
+  },
+  "zh-Hans/maple/greeting": {
+    "instruct": "Speak Mandarin Chinese naturally and clearly, gently playful and reassuring."
+  },
+  "ko/maple/focusComplete": {
+    "instruct": "Speak Korean naturally and clearly. Warm and gentle encouragement."
+  },
+  "fr/maple/greeting": {
+    "instruct": "Speak French naturally and clearly. Warm and gently playful."
+  },
+  "fr/maple/pause": {
+    "instruct": "Speak French naturally and clearly. Warm and gently playful."
+  },
+  "es/wisp/pause": {
+    "instruct": "Speak Spanish naturally and clearly. Warm and gently playful."
+  },
+  "fr/wisp/pause": {
+    "instruct": "Speak French naturally and clearly. Warm and gently playful."
+  },
+  "fr/wisp/resume": {
+    "instruct": "Speak French naturally and clearly. Warm and gently playful."
+  },
+  "ko/wisp/focusComplete": {
+    "instruct": "Speak Korean naturally and clearly. Warm and gentle encouragement."
+  },
+  "ja/comet/pause": {
+    "instruct": "Speak Japanese naturally and clearly. Soft and friendly, without laughter or extra words."
+  },
+  "ja/comet/focusComplete": {
+    "instruct": "Speak Japanese naturally and clearly. Soft and friendly, without laughter or extra words."
+  },
+  "fr/wisp/greeting": {
+    "instruct": "Speak French naturally and clearly. Soft and friendly, without extra words."
+  },
+  "de/wisp/go": {
+    "instruct": "Speak German naturally and clearly. Soft and friendly."
+  },
+  "fr/comet/reset": {
+    "instruct": "Speak French naturally and clearly. Soft and friendly, without extra words."
+  }
+}

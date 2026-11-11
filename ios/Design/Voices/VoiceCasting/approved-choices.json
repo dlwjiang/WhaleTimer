@@ -1,0 +1,157 @@
+{
+  "version": 1,
+  "active": "jun",
+  "choices": {
+    "mochi": {
+      "voice": "maple-b",
+      "status": "picked",
+      "notes": ""
+    },
+    "pip": {
+      "voice": "pip-a",
+      "status": "picked",
+      "notes": ""
+    },
+    "pebble": {
+      "voice": "pebble-a",
+      "status": "picked",
+      "notes": ""
+    },
+    "jun": {
+      "voice": "jun-r2-c",
+      "status": "picked",
+      "notes": ""
+    },
+    "bean": {
+      "voice": "bean-a",
+      "status": "picked",
+      "notes": ""
+    },
+    "maple": {
+      "voice": "maple-d",
+      "status": "picked",
+      "notes": ""
+    },
+    "luna": {
+      "voice": "luna-b",
+      "status": "picked",
+      "notes": ""
+    },
+    "atlas": {
+      "voice": "atlas-b",
+      "status": "picked",
+      "notes": ""
+    },
+    "wisp": {
+      "voice": "wisp-a",
+      "status": "picked",
+      "notes": ""
+    },
+    "nova": {
+      "voice": "nova-b",
+      "status": "picked",
+      "notes": ""
+    },
+    "orbit": {
+      "voice": "orbit-c",
+      "status": "picked",
+      "notes": ""
+    },
+    "comet": {
+      "voice": "comet-a",
+      "status": "picked",
+      "notes": ""
+    }
+  },
+  "exportedAt": "2026-11-11T02:09:42.938Z",
+  "auditionText": "Hi! I'm right here. Let's do one little thing together. Ready? Here we go!",
+  "language": "en",
+  "selectedVoices": {
+    "mochi": {
+      "voice": "maple-b",
+      "name": "Marshmallow baker",
+      "model": "Qwen3-TTS-12Hz-1.7B-VoiceDesign-bf16",
+      "instruction": "A feminine plush red panda with a rounded pillowy childlike voice, soft slightly nasal vowels and slow cozy pauses. Bashful sweetness and gentle cuddly delivery, small and soft without elegant adult resonance. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises.",
+      "sha256": "670858f7b4fc74289190476b7b96a06cee71307529450c77d3aac1f95f5bd095"
+    },
+    "pip": {
+      "voice": "pip-a",
+      "name": "Garden sprite",
+      "model": "Qwen3-TTS-12Hz-1.7B-VoiceDesign-bf16",
+      "instruction": "A tiny cheerful anime garden girl with a high silver soprano, bright forward resonance and fast curious rising intonation. Youthful exuberance and tiny precise consonants, sweet sparkling kawaii delivery. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises.",
+      "sha256": "7049b1e18d7c606ce25384d340bb4f047d648c92e383688cbdda2914e5e71fb7"
+    },
+    "pebble": {
+      "voice": "pebble-a",
+      "name": "Otter pup",
+      "model": "Qwen3-TTS-12Hz-1.7B-VoiceDesign-bf16",
+      "instruction": "A baby cartoon otter with a very small boyish voice, round bubbly vowels and an earnest little squeak at phrase endings. Bright playful delight, adorable youthful mascot, short soft consonants. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises.",
+      "sha256": "ab24e364b5dae6f3b52219aadef6cb8cfe01ed7f1616ada9e2f0b4e5ee229b8d"
+    },
+    "bean": {
+      "voice": "bean-a",
+      "name": "Troublemaker kitten",
+      "model": "Qwen3-TTS-12Hz-1.7B-VoiceDesign-bf16",
+      "instruction": "A tiny boyish cartoon kitten with an unusually thin squeaky nasal voice, cheeky grin and fast punchy syllables. Mischievous little upward pitch flicks, youthful funny creature energy, affectionately impish. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises.",
+      "sha256": "40051f6b942e3d455c6ee8a1a78a95c06d23b6713871325b6d36fb5be96c8179"
+    },
+    "maple": {
+      "voice": "maple-d",
+      "name": "Honey fairy",
+      "model": "VoxCPM2-bf16",
+      "instruction": "A miniature feminine woodland fairy with a thin breathy flute-like high voice, soft gentle flowing speech and a shy smiling lilt. Delicate youthful warmth, lightly musical inflections without singing. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises.",
+      "sha256": "781e6f0097ddaf650980892f43de3ff784f6d44dd1e75724c28dbf1a53413e16"
+    },
+    "luna": {
+      "voice": "luna-b",
+      "name": "Dreamy moon fairy",
+      "model": "Qwen3-TTS-12Hz-1.7B-VoiceDesign-bf16",
+      "instruction": "A tiny feminine moon fairy with a very light breathy high voice, smooth floating phrases and delicate airy consonants. Youthful shy wonder, soft intimate delivery that stays clearly audible, weightless and magical. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises.",
+      "sha256": "85be97cd7e5112ba34f1b662081722ba1ae22ee1266f6fc84b27fdaa86ec0d4f"
+    },
+    "atlas": {
+      "voice": "atlas-b",
+      "name": "Library sprite",
+      "model": "Qwen3-TTS-12Hz-1.7B-VoiceDesign-bf16",
+      "instruction": "A miniature feminine library owl fairy with a clear high glassy voice, delicate crisp consonants and gentle measured little phrases. Young bright-eyed wonder and a sweet quiet smile, airy small-scale resonance. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises.",
+      "sha256": "6872746d1a75c2cb86d40b79cfeb16d69262f85f54a7d3f664aa9c8427009245"
+    },
+    "wisp": {
+      "voice": "wisp-a",
+      "name": "Glass-wing fairy",
+      "model": "Qwen3-TTS-12Hz-1.7B-VoiceDesign-bf16",
+      "instruction": "A miniature feminine moth fairy with a very high crystalline voice, thin bell-like resonance and delicate quick little phrases. Youthful sparkling curiosity and tiny precise consonants, sweet magical energy. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises.",
+      "sha256": "b5f6016c5e3e298794ef647766e82678968ddfe51f1522e7845a6443816200bb"
+    },
+    "nova": {
+      "voice": "nova-b",
+      "name": "Space scout",
+      "model": "Qwen3-TTS-12Hz-1.7B-VoiceDesign-bf16",
+      "instruction": "A tiny tomboy space scout with a small reedy high tenor, smiling nasal twang and punchy staccato rhythm. Scrappy youthful charm, quick cheeky confidence and buoyant cartoon adventure energy. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises.",
+      "sha256": "f9564d7a09e4b20206c025c78b73c9f98a46f19ad9cffc2876a54205d6055ea3"
+    },
+    "orbit": {
+      "voice": "orbit-c",
+      "name": "Pocket gadget",
+      "model": "VoxCPM2-bf16",
+      "instruction": "A tiny boyish toy robot with a reedy nasal squeak, eager quick bursts and endearingly jerky comic timing. High youthful playful voice, little pitch jumps and bright curious excitement, no buzzing. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises.",
+      "sha256": "93514b9d491d9bfa580f1580c043d19b7379147e9f1f13df7615fe8993f916cf"
+    },
+    "comet": {
+      "voice": "comet-a",
+      "name": "Bunny chime",
+      "model": "Qwen3-TTS-12Hz-1.7B-VoiceDesign-bf16",
+      "instruction": "A tiny female cartoon bunny with a very high clear bell-like voice, bright forward resonance and quick springy hopping phrases. Cute youthful excitement, crisp little consonants and delighted upward scoops. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises.",
+      "sha256": "c5a64daf3aeacb273f1141cb5a2e1737bb4045bb2c5ee7a9da643bebe4389e54"
+    },
+    "jun": {
+      "voice": "jun-r2-c",
+      "name": "Sleepy café boy",
+      "model": "Qwen3-TTS-12Hz-1.7B-VoiceDesign-bf16",
+      "instruction": "A clearly male soft-spoken youthful café boy. Gentle lower-tenor speaking register with small warm rounded chest resonance, a light breathy texture and shy unhurried pauses. Cuddly, tender and youthful rather than mature or authoritative; a bashful little smile. 男声，温柔少年音，圆润柔软，带一点气声，害羞乖巧。 Use a natural male speaking voice, not a female voice or falsetto. Speak only the supplied English text. No extra words, music, singing or laughter.",
+      "sha256": "5486872a9d865175b272904f680bae0b67fa5084e9414c15c1b186b25563a368"
+    }
+  },
+  "source": "User export plus explicit Mochi → Maple B and Jun → Sleepy café boy (round 2 C) selections.",
+  "finalizedAt": "2026-11-11T02:20:25.178599+00:00"
+}

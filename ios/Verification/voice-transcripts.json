@@ -5376,6 +5376,3366 @@
       "heard": "Du bist auf deiner Mission nicht allein!",
       "similarity": 1.0,
       "review": "transcript-match"
+    },
+    "en/pebble/5": {
+      "sha256": "9c886f088133cc217c3a75473e3136e79bdf2d2aad8403db23e3dc3e0ab80144",
+      "expected": "Five.",
+      "heard": " five,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "en/pebble/4": {
+      "sha256": "3681c1cc24ae557be393db7216d502d0946e274076f85b533f693d5ee94f2779",
+      "expected": "Four.",
+      "heard": " four,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "en/pebble/3": {
+      "sha256": "689748e854cd54e2e9a30152d47901cec816abd44581e2f8b04a7a5cc88d2b04",
+      "expected": "Three.",
+      "heard": " three,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "en/pebble/2": {
+      "sha256": "12d025b60e1a68eee229eabfab9dce1c94c0161bfdd6e76cc6d79d0fa741bd80",
+      "expected": "Two.",
+      "heard": " two,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "en/pebble/1": {
+      "sha256": "e6e590c05753c44a7e2f9453fcfaa4642c3317abf40763b00728e5ba23868470",
+      "expected": "One.",
+      "heard": " one.",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "en/pebble/go": {
+      "sha256": "97a2bb0041ad4aa8532d30ce7873e33f157918aef2943cde894f161712fddfa3",
+      "expected": "Let's begin!",
+      "heard": "Let's begin!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "en/pebble/pause": {
+      "sha256": "3a975756485218e801a9f7837c9dd458a06de436f5f05636cae61612c867d42f",
+      "expected": "Take a breath. I'll wait.",
+      "heard": "Take a breath. I'll wait",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "en/pebble/resume": {
+      "sha256": "f1dc27e4a9d959a721060a26b2cc4fcb98dd2d7ae559463dfe459f8a2e784ea1",
+      "expected": "Let's keep going!",
+      "heard": "Let's keep going.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "en/pebble/reset": {
+      "sha256": "632691b8953b56a46e6854c2f30e4f3aad1ab93d7d7a2c388d0e804ed64eed6c",
+      "expected": "A fresh start. We're ready.",
+      "heard": "A fresh start. We're ready.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "en/pebble/focusComplete": {
+      "sha256": "7a48348dc729d04eb2fddf1448d283f3314740bbc753b0e3aa3ccf83074ca0aa",
+      "expected": "Well done! Time for a little break.",
+      "heard": "Well done! Time for a little break.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "en/pebble/breakComplete": {
+      "sha256": "c424fe5b6673ecb24e622b0291a60ff8d46a7f6524e7580d90abfa88b8b1c05e",
+      "expected": "Break's over. Ready when you are!",
+      "heard": "Breaks over ready when you are",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "en/pebble/greeting": {
+      "sha256": "aed54f3a6ae2784c0f6f4b7435d5d8e9ed78ec4b8c9401d78054f29e54a14451",
+      "expected": "One little ripple at a time.",
+      "heard": "One little ripple at a time.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "zh-Hans/pebble/5": {
+      "sha256": "1725de4e5c225c76de0ecfa1fc5020a2f7a2c836d5c4ccaa6172dac925100fa5",
+      "expected": "五。",
+      "heard": "五",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "zh-Hans/pebble/4": {
+      "sha256": "9a82af636e82b277f40c070dabf4ca6e3c65fac15c3d48d728cb38d83478b0c3",
+      "expected": "四。",
+      "heard": " 四",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "zh-Hans/pebble/3": {
+      "sha256": "77201556a5f64afa1758f9ab7825c7003ad2349a76a3d2b1f04f555dc7eb361c",
+      "expected": "三。",
+      "heard": " 三",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "zh-Hans/pebble/2": {
+      "sha256": "4f7453c9150029f4d90d3eed0481ebd144c121d320c982a24d8af8d3ac28cfe6",
+      "expected": "二。",
+      "heard": " 二",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "zh-Hans/pebble/1": {
+      "sha256": "228d935cf134e32c9d7e3850066e534f13cdbf6b00444c609c68e6c5872d9005",
+      "expected": "一。",
+      "heard": " 一",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "zh-Hans/pebble/go": {
+      "sha256": "831afd7c7ef303b74498a67b3dd0237d5e3d166445114423524badf5873b6691",
+      "expected": "开始吧！",
+      "heard": "開始吧",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "zh-Hans/pebble/pause": {
+      "sha256": "3bf0819b30e04426b31cad98a9f6fc7415d40d5720d09cde9855b9155ed6f494",
+      "expected": "歇一会儿，我等你。",
+      "heard": "歇一会 我等你",
+      "similarity": 0.923,
+      "review": "transcript-match"
+    },
+    "zh-Hans/pebble/resume": {
+      "sha256": "b3fc520410d66f113bbe963f01214d0fd4ea59db3c1835eadcc6375a5fb761b0",
+      "expected": "好，我们继续！",
+      "heard": "好 我们继续",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "zh-Hans/pebble/reset": {
+      "sha256": "78a84e7e746afaa4197875940ef8f3a88a72cfaed2ef1790c4f7fead73668f90",
+      "expected": "重新开始，我们准备好啦。",
+      "heard": "重新开始 我们准备好了",
+      "similarity": 0.9,
+      "review": "transcript-match"
+    },
+    "zh-Hans/pebble/focusComplete": {
+      "sha256": "900a0019c5cad4911058427eb6948db48be730400886a34c9bd3ed3760ec0baf",
+      "expected": "做得好！该休息一下啦。",
+      "heard": "做得好 改休息一下啦",
+      "similarity": 0.889,
+      "review": "transcript-match"
+    },
+    "zh-Hans/pebble/breakComplete": {
+      "sha256": "9f1fd91ed211c87416f9cf72a2dddb744376373dab0e41047bc2fa4225d33d67",
+      "expected": "休息结束啦，准备好了就开始吧！",
+      "heard": "休息結束了 準備好了就開始吧",
+      "similarity": 0.923,
+      "review": "transcript-match"
+    },
+    "zh-Hans/pebble/greeting": {
+      "sha256": "72a8f12490005c8d010d1855e68c5ee75369a96887869bd753d7da5cc927aae8",
+      "expected": "慢慢来，我陪着你。",
+      "heard": "慢慢来,我陪着你。",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "ja/pebble/5": {
+      "sha256": "4534f48300eb5c7c701bc3a0a3af3d07eace202b879a8215bb59e42e88d2f2cc",
+      "expected": "ご。",
+      "heard": "5、",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "ja/pebble/4": {
+      "sha256": "7e7e0cffb7bce28ee2a6d1effb7e86c6e0ebdaeb01fe471d83602593103de84d",
+      "expected": "よん。",
+      "heard": "4、",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "ja/pebble/3": {
+      "sha256": "dcc05d4a17fcc187f33f99bdae8482d7a16a01f22f5068a3f515bf89fe47c103",
+      "expected": "さん。",
+      "heard": "3、",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "ja/pebble/2": {
+      "sha256": "28e58ecc40baf3078394c844b91a75854da6a9b84b6783b19e823de76e0c7c93",
+      "expected": "に。",
+      "heard": "2、",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "ja/pebble/1": {
+      "sha256": "b6b53dc0cc4dfae3a6fbadcfffcf636db27a7971f063f64561b89c97eca58a4f",
+      "expected": "いち。",
+      "heard": "1",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "ja/pebble/go": {
+      "sha256": "1be7351f01bdc98cecb7888c3f0bbfd80e8d84fb40b59810c23d3e16a7de2147",
+      "expected": "さあ、始めよう！",
+      "heard": "さあ始めよう",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "ja/pebble/pause": {
+      "sha256": "d12da1bb8cb0c9cc2884ec9723dbf5382a062b96eede8db2beec8509d303b4dc",
+      "expected": "ひと息つこう。待ってるね。",
+      "heard": "一息つこう待ってるね",
+      "similarity": 0.857,
+      "review": "transcript-match"
+    },
+    "ja/pebble/resume": {
+      "sha256": "05809cd4692d3c73b080483a0cea076681f6d1574ab747f3131751900f1f06b9",
+      "expected": "よし、続けよう！",
+      "heard": "よし、続けよう",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "ja/pebble/reset": {
+      "sha256": "e890b2ccb11045948480d823074f1369f69714bc55aaeb288b92b00cb7f0e32e",
+      "expected": "気持ちを新たに、もう一度。",
+      "heard": "気持ちを新たにもう一度",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "ja/pebble/focusComplete": {
+      "sha256": "da0af72006116a5f8308bf6ff796a04c95f8dfa7a2c7e1c78496c281703045b0",
+      "expected": "おつかれさま！少し休もう。",
+      "heard": "お疲れさま少し休もう",
+      "similarity": 0.857,
+      "review": "transcript-match"
+    },
+    "ja/pebble/breakComplete": {
+      "sha256": "e79be57961c7018c795bd3184407d4477e5b071517ec0aee63c62d7fee7d29b9",
+      "expected": "休憩おしまい。準備ができたら始めよう！",
+      "heard": "受けおしまい準備ができたら始めよう",
+      "similarity": 0.882,
+      "review": "transcript-match"
+    },
+    "ja/pebble/greeting": {
+      "sha256": "9bfdb2ad4fe59ad9e1658de5c6785e530b78dad65e1f356d25f3241bbb65d092",
+      "expected": "小さな波紋を、ひとつずつ。",
+      "heard": "小さな波紋を一つずつ",
+      "similarity": 0.857,
+      "review": "transcript-match"
+    },
+    "ko/pebble/5": {
+      "sha256": "a1c1b2bd7f44f542a441a5d3d6bb878b7cfe94ef35005c3eab7359e39d13645c",
+      "expected": "오.",
+      "heard": " 5,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "ko/pebble/4": {
+      "sha256": "c1ed3312f308b5b6d113f6fd27b0570844c1eb689f8bd6703c7322bdff9421f2",
+      "expected": "사.",
+      "heard": " 4,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "ko/pebble/3": {
+      "sha256": "833ee7c1fff772b07a5c41863363cd3a9f51ab6e7e8c32ecd36285c63729fdb5",
+      "expected": "삼.",
+      "heard": " 3,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "ko/pebble/2": {
+      "sha256": "6c65f6a664950ec1a8e105da6864a0b19dfe8311de43b79ceefbe885cdb1e237",
+      "expected": "이.",
+      "heard": " 2,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "ko/pebble/1": {
+      "sha256": "3d34dfb5953ecdfd539e77594619992d70bdb8614aaa4167ec4b43ee11f1884b",
+      "expected": "일.",
+      "heard": " 1",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "ko/pebble/go": {
+      "sha256": "a5faea7d5065e547905e31acf6cc2568d3088eb984982e4a58e3c1f7db5493b4",
+      "expected": "자, 시작하자!",
+      "heard": "자 시작하자!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "ko/pebble/pause": {
+      "sha256": "d998e8be0657ea2bdc42d8d7eb26d616c72f809ce898ccb790093e883166e980",
+      "expected": "잠깐 쉬어. 기다릴게.",
+      "heard": "잠깐 쉬어. 기다릴게.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "ko/pebble/resume": {
+      "sha256": "dd9d466e448ae1d5cbe6f6b41e14fdbffc07ad036d62f82a0c994358e358b274",
+      "expected": "좋아, 계속해 보자!",
+      "heard": "좋아! 계속해보자!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "ko/pebble/reset": {
+      "sha256": "3bf0672233ae2f720251e27e3881977541f97c0a634b2c14d84c44f24b9beb10",
+      "expected": "새로운 마음으로 다시 시작하자.",
+      "heard": "새로운 마음으로 다시 시작하자",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "ko/pebble/focusComplete": {
+      "sha256": "b5d2e8c86f45b48f7a6a0cd53bc673e8ddb39437e5a1a222a5b5d21df1de576f",
+      "expected": "잘했어! 이제 잠깐 쉬자.",
+      "heard": "잘했어! 이제 잠깐 쉬자!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "ko/pebble/breakComplete": {
+      "sha256": "78d77a0aedc5747df3820c331217ff5ffbb6cab4ed934c716a3b71f47aa06983",
+      "expected": "쉬는 시간 끝! 준비되면 시작하자.",
+      "heard": "쉬는 시간 끝! 준비되면 시작하자!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "ko/pebble/greeting": {
+      "sha256": "94e3d73b4c82b35c7fd187eab97fac5f0f4a22c8efff8ebe38b48871b1a76c1b",
+      "expected": "작은 물결 하나씩, 천천히.",
+      "heard": "작은 물결 하나씩 천천히",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "es/pebble/5": {
+      "sha256": "6d5f87dc580e7503fcdf6f81132aabcbcbc0c45ccf930af03ed773e48b1b582d",
+      "expected": "Cinco.",
+      "heard": " 5,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "es/pebble/4": {
+      "sha256": "bdee03bac406d8aff13a0c0de34bd3ffeb04f4e8b83a2806074a3ec01720528e",
+      "expected": "Cuatro.",
+      "heard": " 4,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "es/pebble/3": {
+      "sha256": "8bbb87fdff4c276257d96a128211d9b7befa2affe5289268863ef1e73ed75ea6",
+      "expected": "Tres.",
+      "heard": " 3,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "es/pebble/2": {
+      "sha256": "2a4122876cd9ff1ed0ee64a299d1a45459d712bc90893eae8b2fbc849d44c08c",
+      "expected": "Dos.",
+      "heard": " 2,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "es/pebble/1": {
+      "sha256": "3bfcb1037f4a17303360cde2b9a58b63edfaa3adc6eba3032899fbc57a9c7637",
+      "expected": "Uno.",
+      "heard": " 1.",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "es/pebble/go": {
+      "sha256": "bc53937e28fbe4cc482695a8d41df88ad3cb4601b0226a8a322e074f13e90df8",
+      "expected": "¡Vamos a empezar!",
+      "heard": "¡Vamos a empezar!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "es/pebble/pause": {
+      "sha256": "fa689ad10391b075e4e25bad592adac0cf8665fee8e4749f2c5b4b4ce9006f0e",
+      "expected": "Toma un respiro. Te espero.",
+      "heard": "Toma un respiro, te espero.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "es/pebble/resume": {
+      "sha256": "edb1c93364d90665e23e860d638ed6a6b26de8b43550d2f42a5160f41bbb4e69",
+      "expected": "¡Sigamos adelante!",
+      "heard": "¡Sigamos adelante!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "es/pebble/reset": {
+      "sha256": "246363fdbc09dc09717fb0018cae7c505b6f041d2273a21e4db5582df3a04914",
+      "expected": "Empecemos de nuevo, con calma.",
+      "heard": "Empecemos de nuevo con calma.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "es/pebble/focusComplete": {
+      "sha256": "2e0bd30c242ece97ed4c973538ac321c85c922a1139977c856503a4ec2dd61f1",
+      "expected": "¡Muy bien! Es hora de descansar un poco.",
+      "heard": "Muy bien. Es hora de descansar un poco.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "es/pebble/breakComplete": {
+      "sha256": "56515a79e7928cbdaf7cd6ca7114c11e80d039e693a60f1569ea7741867191c1",
+      "expected": "Se acabó el descanso. ¡Cuando quieras!",
+      "heard": "Se acabó el descanso, cuando quieras.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "es/pebble/greeting": {
+      "sha256": "192af3f9aa2c3f66192286a4765a32a037f7fd78817f5c1f89266b0d173af5d1",
+      "expected": "Una pequeña onda cada vez.",
+      "heard": "Una pequeña onda cada vez.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "pt-BR/pebble/5": {
+      "sha256": "2efca11a53ce5c8ff7bb7881b40f3ad2ef95f64aad6945a05b46e88a56cfa9f7",
+      "expected": "Cinco.",
+      "heard": " 5,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "pt-BR/pebble/4": {
+      "sha256": "0d2d48892422ee17da5fa96da8d51ec5274cce3482a5254bce1f89bb14e229c6",
+      "expected": "Quatro.",
+      "heard": " 4,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "pt-BR/pebble/3": {
+      "sha256": "d796022f4aa4057fd5676234b69509cb50b23155e6a923811a2af45ddc0d4620",
+      "expected": "Três.",
+      "heard": " 3,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "pt-BR/pebble/2": {
+      "sha256": "2c19a1edafdee56b0937d0673ba0e6c74722b047738d3b19830ec5fe4a95f994",
+      "expected": "Dois.",
+      "heard": " 2,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "pt-BR/pebble/1": {
+      "sha256": "77636909968cb84dce3c413eba4122ab83e65e8ca1e273bb577950f6d7e20a57",
+      "expected": "Um.",
+      "heard": " 1.",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "pt-BR/pebble/go": {
+      "sha256": "9464956f136f76c50046df5c7fb21907c47e2c97b2e25d6e4253130a48c2a35a",
+      "expected": "Vamos começar!",
+      "heard": "Vamos começar!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "pt-BR/pebble/pause": {
+      "sha256": "0d24bef01e8a1e4050273d7f4631bf7a81c9f91f4cf6c29b302f305d58188b2c",
+      "expected": "Respira um pouco. Eu espero.",
+      "heard": "Respira um pouco! Eu espero!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "pt-BR/pebble/resume": {
+      "sha256": "af7ac08a445cba9b02205bfeed08d1ceaa22397695ce297f5012d27032a3545f",
+      "expected": "Vamos continuar!",
+      "heard": "Vamos continuar!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "pt-BR/pebble/reset": {
+      "sha256": "3231b4b161ce59399c26805112906af322579879fb9b527a07c6975bf4d37e47",
+      "expected": "Um novo começo, com calma.",
+      "heard": "Um novo começo, com calma.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "pt-BR/pebble/focusComplete": {
+      "sha256": "9f205b1e05368ee57500a4d72818ba486cfcdd980cb4bf64024a1ff5dd84b7de",
+      "expected": "Muito bem! Hora de descansar um pouco.",
+      "heard": "Muito bem! Hora de descansar um pouco.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "pt-BR/pebble/breakComplete": {
+      "sha256": "a933586e46e99da4a518fac0974771a130d603ced01485f771f15072ca187666",
+      "expected": "O descanso acabou. Vamos quando você quiser!",
+      "heard": "O descanso acabou. Vamos quando você quiser.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "pt-BR/pebble/greeting": {
+      "sha256": "5e55b38ead71056f616fc1ebd5c7edb2fe27e5b9fc3400052eb3579f386151b8",
+      "expected": "Uma ondinha de cada vez.",
+      "heard": "Uma ondinha de cada vez.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "fr/pebble/5": {
+      "sha256": "769a3b20cc066b948b6dcfc4d415be299d528d98f53244d20767a1eb88f0f9ff",
+      "expected": "Cinq.",
+      "heard": " 5,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "fr/pebble/4": {
+      "sha256": "66c74148ce96edaf9fb238238a8b276a47c0d372d4deefa3e6d1707d5d8dfac3",
+      "expected": "Quatre.",
+      "heard": " 4,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "fr/pebble/3": {
+      "sha256": "a9a88fbefc925ce24ca4d0ade1aa8278f399b71ca1aee96d18c8dd1309d6d178",
+      "expected": "Trois.",
+      "heard": " 3,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "fr/pebble/2": {
+      "sha256": "5d4ebc7a472beb1d9f67b0edc1e59b1623163f85efc7812600e71b4922329591",
+      "expected": "Deux.",
+      "heard": " 2,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "fr/pebble/1": {
+      "sha256": "078856d8de03075afd1b43ff5f447f53db2174f54d3ca1407230d0225628216b",
+      "expected": "Un.",
+      "heard": " 1.",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "fr/pebble/go": {
+      "sha256": "56eedb7b4bed9c10800eb6d989018d7416fd631d84e3d9455f453eee5790ecd0",
+      "expected": "C'est parti !",
+      "heard": "C'est parti !",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "fr/pebble/pause": {
+      "sha256": "f313b64ff88358a041abf612a3f9f77a4cab42e8574e2e3ba5b45c772c8eed2c",
+      "expected": "Fais une pause. Je t'attends.",
+      "heard": "Fais une pause, je t'attends.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "fr/pebble/resume": {
+      "sha256": "6b7b9164c470c712f197acbc7da2a5ba774961f7962c4ac73efa554f1d183f00",
+      "expected": "On continue !",
+      "heard": "On continue !",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "fr/pebble/reset": {
+      "sha256": "e83efdcedae057fc8cfdeb1f7ca848ae81bde479d96e7c0c56b860ed0b94cb1d",
+      "expected": "On repart du bon pied.",
+      "heard": "On repart du bon pied.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "fr/pebble/focusComplete": {
+      "sha256": "dc855ca0530fa308f206b56bd6d3ed63ccce2f007ae18658a13ceff476357676",
+      "expected": "Bravo ! C'est l'heure d'une petite pause.",
+      "heard": "Bravo ! C'est l'heure d'une petite pause.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "fr/pebble/breakComplete": {
+      "sha256": "0ddd3cd34677549b5cf0b6df023c7f01909a5151efa416619a76b967f73bde4b",
+      "expected": "La pause est finie. On reprend quand tu veux !",
+      "heard": "La pause est finie. On reprend quand tu veux.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "fr/pebble/greeting": {
+      "sha256": "b07447e8217d0543123914c30fa942a5a5f1be5219c0b601ac394d4a8ebc8b1a",
+      "expected": "Une petite vague à la fois.",
+      "heard": "Une petite vague à la fois.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "de/pebble/5": {
+      "sha256": "4a962dac066c5c392fae892e1a247fa894d3aaa59d5d9f0bb88624192d6e1b6a",
+      "expected": "Fünf.",
+      "heard": " fünf,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "de/pebble/4": {
+      "sha256": "b0029c2f4130aefdf42487e3a04fa6d01088118149d5986cb8585f9265f67b7e",
+      "expected": "Vier.",
+      "heard": " vier,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "de/pebble/3": {
+      "sha256": "eb4f175757401e586e31474a6740e25d3df77e27c2774a76c67864b9337204ff",
+      "expected": "Drei.",
+      "heard": " drei,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "de/pebble/2": {
+      "sha256": "9e7216df7ed056ee7576e0164ce9d62bc7fd526cd007a907ab11f22bf896535f",
+      "expected": "Zwei.",
+      "heard": " zwei,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "de/pebble/1": {
+      "sha256": "c2556f677c2b7c6ce603fd18f8ce5d723e85365ebce8af5c3aeae3fa5e59df76",
+      "expected": "Eins.",
+      "heard": " eins.",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "de/pebble/go": {
+      "sha256": "0c366cd43f092e579b583dc21e0fa4e5cbbf75bd4053b79b7f5d52954537eeab",
+      "expected": "Los geht's!",
+      "heard": "Los gehts!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "de/pebble/pause": {
+      "sha256": "e420ed789526a78d7366d0c94bc764f7cb66860107a1a8d7988a74d76e9c48b0",
+      "expected": "Atme kurz durch. Ich warte auf dich.",
+      "heard": "Atme kurz durch. Ich warte auf dich.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "de/pebble/resume": {
+      "sha256": "e0d407776f65bd00ac90c4eb49f0fe5933cbac9a05a0918a72806f6d5b450886",
+      "expected": "Weiter geht's!",
+      "heard": "Weiter geht's!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "de/pebble/reset": {
+      "sha256": "fd742b0046141edef85c14e0dee232f3d65ba858ca0e416cce1c0cf566e22e1c",
+      "expected": "Ein frischer Start. Wir sind bereit.",
+      "heard": "Ein frischer Start. Wir sind bereit.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "de/pebble/focusComplete": {
+      "sha256": "8102fd8b8bae5ef6f6d14129ab854a3b267caa1796b1cecd2e5f244926b6d843",
+      "expected": "Gut gemacht! Zeit für eine kleine Pause.",
+      "heard": "Gut gemacht, Zeit für eine kleine Pause.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "de/pebble/breakComplete": {
+      "sha256": "941d1d395cb3db94f45c0adc3a68b27f5e2012bbff3cec96f931db9b61f54e93",
+      "expected": "Die Pause ist vorbei. Bereit, wenn du es bist!",
+      "heard": "Die Pause ist vorbei. Bereit, wenn du es bist.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "de/pebble/greeting": {
+      "sha256": "d5aa508438b4efde3ab0825ce9671d3beae963c59ac2e0dd918952d42581c10e",
+      "expected": "Eine kleine Welle nach der anderen.",
+      "heard": "Eine kleine Welle nach der anderen.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "en/maple/5": {
+      "sha256": "56e10578de7dcd67f9500c5dd27d97739fcec32e46b4afe8ad6509e1a98b7afa",
+      "expected": "Five.",
+      "heard": " Five,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "en/maple/4": {
+      "sha256": "865013dc08271458c87b464da6b303cc12b23b82beb89857fac635cd09ed9cca",
+      "expected": "Four.",
+      "heard": " four,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "en/maple/3": {
+      "sha256": "d7b1f082c7144c23628ad189c3b81d4c9b7a6cd48996c9762ebb7b5c32f0d40d",
+      "expected": "Three.",
+      "heard": " three,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "en/maple/2": {
+      "sha256": "7ae8be50dac9ead14df4526a77037d40adf8fd463592ca28660730d4db925616",
+      "expected": "Two.",
+      "heard": " two,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "en/maple/1": {
+      "sha256": "1d09a2b0f63230fb51bac389a1b73c3ccb79564ab4bd370be5f4295ddbd730c9",
+      "expected": "One.",
+      "heard": " one.",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "en/maple/go": {
+      "sha256": "d7e1b6dead35b756aacc37928f2a275a3ecbb4c0d4796e488b870ffbaf17e325",
+      "expected": "Let's begin!",
+      "heard": "Let's begin.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "en/maple/pause": {
+      "sha256": "912db544dcc3a99871201f22981767d361686c5b82167c637c26447a4d1f4ad1",
+      "expected": "Take a breath. I'll wait.",
+      "heard": "Take a breath. I'll wait.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "en/maple/resume": {
+      "sha256": "fe59bd989a9ea7754b33948c85bc4cd04136ae46a005988f1889b1b65db45298",
+      "expected": "Let's keep going!",
+      "heard": "Let's keep going.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "en/maple/reset": {
+      "sha256": "76590f01f8e0b5f0aff3f7762658e18e433a2efd144a664204f71b433192733a",
+      "expected": "A fresh start. We're ready.",
+      "heard": "A fresh start. We're ready.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "en/maple/focusComplete": {
+      "sha256": "4fe00f7ea200867d491330a0fb26b1ba63be160689c2c63fe975bd111060637e",
+      "expected": "Well done! Time for a little break.",
+      "heard": "Well done, time for a little break.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "en/maple/breakComplete": {
+      "sha256": "450b78ca7f39d580de16f71ef764959510c5c8960ba52d186c9fd6c046670274",
+      "expected": "Break's over. Ready when you are!",
+      "heard": "Break's over. Ready when you are.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "en/maple/greeting": {
+      "sha256": "912824058b51146c1b58bdea0784dd52cb8da96a910ffcb208a4c754d3343604",
+      "expected": "A little focus, fresh from the oven.",
+      "heard": "A little focus, fresh from the oven.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "zh-Hans/maple/5": {
+      "sha256": "d254cc653bd5eab1e1d82e66d56cc6a2a9d3b0a914fff898b59cc5f4644e0a6a",
+      "expected": "五。",
+      "heard": "5,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "zh-Hans/maple/4": {
+      "sha256": "a7a348eabcfc848399acdb803a63c03a8d8cb0a0257d93af63bdf3de12e2fafc",
+      "expected": "四。",
+      "heard": "4,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "zh-Hans/maple/3": {
+      "sha256": "93a60b1ac666e37e448d0065905bb13233d3d8cc100011a2e702d7e4f1ceb3f8",
+      "expected": "三。",
+      "heard": "3,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "zh-Hans/maple/2": {
+      "sha256": "7e653a9ec510ed95d1ab78f8955904dc81d8c775a5cd818b0a986352993e7c82",
+      "expected": "二。",
+      "heard": "2,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "zh-Hans/maple/1": {
+      "sha256": "d670f652a63c350711f3f3cd2107f3ca0ac73eea0a53cb6c36b95896e1204427",
+      "expected": "一。",
+      "heard": "1",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "zh-Hans/maple/go": {
+      "sha256": "a0f9a459f9e7af8eda3cfdd3db91e50d71dc85179a81762cad05609ee5ce5482",
+      "expected": "开始吧！",
+      "heard": "开始吧!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "zh-Hans/maple/pause": {
+      "sha256": "800478cdedf8b0894decc7251608324f58cd7bb338acf8bcc9ea881e7b47dd81",
+      "expected": "歇一会儿，我等你。",
+      "heard": "歇一会儿,我等你。",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "zh-Hans/maple/resume": {
+      "sha256": "c21a078168faaa0605e2059f5fb512897b1e752222e5cacc1b34fc535f4ae676",
+      "expected": "好，我们继续！",
+      "heard": "好,我们继续!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "zh-Hans/maple/reset": {
+      "sha256": "01928204147dc96d68d5c013d843b43d4838a4c6de19772d7e61f3e1cbff9656",
+      "expected": "重新开始，我们准备好啦。",
+      "heard": "重新開始,我們準備好啦!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "zh-Hans/maple/focusComplete": {
+      "sha256": "710247f6b0b35a719d35820e05dce317b2fadf1a2a4a90bc54ead693f618750b",
+      "expected": "做得好！该休息一下啦。",
+      "heard": "做得好,该休息一下啦!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "zh-Hans/maple/breakComplete": {
+      "sha256": "9eade0281d497a7cbadb2c5f692e3b4e016b562a31009fdf510b42d67c7d1e4c",
+      "expected": "休息结束啦，准备好了就开始吧！",
+      "heard": "休息結束啦,準備好了就開始吧!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "zh-Hans/maple/greeting": {
+      "sha256": "fd2959a9af39965ccf11cdce08e87e344172e6e1711d71dcee796d4a1791cb04",
+      "expected": "新鲜面包出炉啦，一起加油吧。",
+      "heard": "新鮮麵包出爐了 一起加油吧",
+      "similarity": 0.917,
+      "review": "transcript-match"
+    },
+    "ja/maple/5": {
+      "sha256": "d865e860b39e44526313f9539ee70755696ab1d6c7b16874229df4abf52a44cf",
+      "expected": "ご。",
+      "heard": "5、",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "ja/maple/4": {
+      "sha256": "29a62fa954fa26514ee08bb6d7d7ae9c7c6469730ae1622df9da73c89d90910b",
+      "expected": "よん。",
+      "heard": "4、",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "ja/maple/3": {
+      "sha256": "a8ebac1c12928ca448c0c1504f6eb8651f665bb1a04649325609f78f6ecb3236",
+      "expected": "さん。",
+      "heard": "3、",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "ja/maple/2": {
+      "sha256": "124a0a7fd0395fa061c8eb2bfb1d870e12448f64aadfb9fa9f994233df9eeca5",
+      "expected": "に。",
+      "heard": "2、",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "ja/maple/1": {
+      "sha256": "9665c1a1642e95f8c1c22fedd49e28d353c99a3f2891763a2351e548df8192fb",
+      "expected": "いち。",
+      "heard": "1",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "ja/maple/go": {
+      "sha256": "ee7447bfff23c3758fe21bf3ec3231cf7d147628f1029ce8a5304df78a37d08d",
+      "expected": "さあ、始めよう！",
+      "heard": "さあ始めよう",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "ja/maple/pause": {
+      "sha256": "891650009790fb8316af1dee5ee6b742d44ec171489b5769164d73da1a93b62e",
+      "expected": "ひと息つこう。待ってるね。",
+      "heard": "ひと行きつこう待ってるね",
+      "similarity": 0.87,
+      "review": "transcript-match"
+    },
+    "ja/maple/resume": {
+      "sha256": "3e7b0eaa5d506533575918218898ab917e541c509eda41a5f65f217c9cac079f",
+      "expected": "よし、続けよう！",
+      "heard": "よし続けよう",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "ja/maple/reset": {
+      "sha256": "a0682566e55c76c566bd19723d1449dbeb667a53d483e0c9fc93bb0a739d4125",
+      "expected": "気持ちを新たに、もう一度。",
+      "heard": "気持ちを新たにもう一度",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "ja/maple/focusComplete": {
+      "sha256": "acb9aebe1d3330c1d744e91e555f47a03d6eb74833f1faa4aa8136ee8f1b2faa",
+      "expected": "おつかれさま！少し休もう。",
+      "heard": "お疲れ様!少し休もう!",
+      "similarity": 0.7,
+      "review": "check"
+    },
+    "ja/maple/breakComplete": {
+      "sha256": "3d3f17b676aa91d98e50614dd2224ec4de4198d0d74170bd70caa67b516d6f8e",
+      "expected": "休憩おしまい。準備ができたら始めよう！",
+      "heard": "休憩行しまい 準備ができたら始めよう",
+      "similarity": 0.941,
+      "review": "transcript-match"
+    },
+    "ja/maple/greeting": {
+      "sha256": "8bb1ab298f3491ab775e3d71e225659d65fd444d64da555907661f9c0c023b9a",
+      "expected": "焼きたての元気で、少しずつ。",
+      "heard": "焼きたての元気で少しずつ",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "ko/maple/5": {
+      "sha256": "ff81e3f7b3a43979261aed8d3671d9055c2823b050821cb795dd03f877edb3cd",
+      "expected": "오.",
+      "heard": " 5,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "ko/maple/4": {
+      "sha256": "58749a170cdb8f83ffd0f03d4c6f661a69a93120bfb39409bab835464c3cc6b2",
+      "expected": "사.",
+      "heard": " 4,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "ko/maple/3": {
+      "sha256": "e505877a72b4cfdaf85f8b2c7ad57a42dcf496713e4dabdc13354d00af3be397",
+      "expected": "삼.",
+      "heard": " 3,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "ko/maple/2": {
+      "sha256": "38258edb4645ad62156068b91a8037e5e219e6822b7b12997190e44098870db3",
+      "expected": "이.",
+      "heard": " 2,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "ko/maple/1": {
+      "sha256": "65a31cf1965c97942b4c5cb0f2bfe1e45b9f9b8314bf832bb8591506008e2cc2",
+      "expected": "일.",
+      "heard": " 1",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "ko/maple/go": {
+      "sha256": "17f0fbbb1d14753dbaabe69c8ba31280f2ee03dbe397835aee0e908532fd5a17",
+      "expected": "자, 시작하자!",
+      "heard": "자 시작하자!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "ko/maple/pause": {
+      "sha256": "a71b303e47baf69d42d036c65685698cdfb177aa665d22fc57ef51f75a44690d",
+      "expected": "잠깐 쉬어. 기다릴게.",
+      "heard": "잠깐 쉬어. 기다릴게.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "ko/maple/resume": {
+      "sha256": "b7abcae329e2e1f1369767061b488872fa9a976903f1d13b7772e9dc209033ec",
+      "expected": "좋아, 계속해 보자!",
+      "heard": "좋아! 계속해보자!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "ko/maple/reset": {
+      "sha256": "2e3e42fbd6d6e0abd4329ba2e281fadb89694b4b2c5b8fb1c5a350570dda2d67",
+      "expected": "새로운 마음으로 다시 시작하자.",
+      "heard": "새로운 마음으로 다시 시작하자.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "ko/maple/focusComplete": {
+      "sha256": "245efd1d4f3c1b00267c056ca03d84c8fae976d3a43eac283f2c2d9ebc935d5e",
+      "expected": "잘했어! 이제 잠깐 쉬자.",
+      "heard": "잘했어. 이제 잠깐 쉬자.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "ko/maple/breakComplete": {
+      "sha256": "0a58a425eea4f9680f00b1f6bcfcc8fd5796e8fead40fcd36f4804c413ba35e0",
+      "expected": "쉬는 시간 끝! 준비되면 시작하자.",
+      "heard": "쉬는 시간 끝. 준비되면 시작하자.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "ko/maple/greeting": {
+      "sha256": "a1722c80780e0fada646afefd4bd379a09b0adbf1501636480c03a407bb36395",
+      "expected": "갓 구운 응원과 함께 집중해 보자.",
+      "heard": "갓 구운 응원과 함께 집중해 보자.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "es/maple/5": {
+      "sha256": "d5f4f806003a323cb53125d133dc1920fdd9fc531245ecfa80e4f506db907158",
+      "expected": "Cinco.",
+      "heard": " 5,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "es/maple/4": {
+      "sha256": "57b74ab559cbe05ca8ff4f6a894fe7e0a7d2a32f65f8b40843cdbbd7454d691d",
+      "expected": "Cuatro.",
+      "heard": " 4,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "es/maple/3": {
+      "sha256": "057598a4b2732916df17e855b1c60d39c7e69049ff29b767a7cb801790084f2d",
+      "expected": "Tres.",
+      "heard": " 3,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "es/maple/2": {
+      "sha256": "7f60f4c68c5508f67389b8c081f673ee8384c7bac84c40b52c46bf6bb95b117c",
+      "expected": "Dos.",
+      "heard": " 2,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "es/maple/1": {
+      "sha256": "8143b17048598fe8828e48f72cda7d08212978177409e280d4182c9900dd62e2",
+      "expected": "Uno.",
+      "heard": " 1.",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "es/maple/go": {
+      "sha256": "e37b0954e2e400a687bf4755083e5ac25e10a1d7c88146335dd8052038e8feae",
+      "expected": "¡Vamos a empezar!",
+      "heard": "Vamos a empezar.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "es/maple/pause": {
+      "sha256": "8a6d6be32dfe3f5b6f1492b562addfaa6d3a9138a8c6aa9c34cab5efbb491ba8",
+      "expected": "Toma un respiro. Te espero.",
+      "heard": "Toma un respiro. Te espero.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "es/maple/resume": {
+      "sha256": "68177e4e79a0d07a5568ad881b8a61cda5e6f0b88f85236d8409eff3a510e721",
+      "expected": "¡Sigamos adelante!",
+      "heard": "Sigamos adelante.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "es/maple/reset": {
+      "sha256": "b411dcae7a2cf64f4c4d99c2809dcadf10e22c28556ca9c0e63a62752eb7273c",
+      "expected": "Empecemos de nuevo, con calma.",
+      "heard": "Empecemos de nuevo, con calma.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "es/maple/focusComplete": {
+      "sha256": "906f732e7bd63e8ea1f9cd443cb5ed8de6d882d4cb49e5edaac90137475a311c",
+      "expected": "¡Muy bien! Es hora de descansar un poco.",
+      "heard": "Muy bien, es hora de descansar un poco.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "es/maple/breakComplete": {
+      "sha256": "33872631e342a6daab415bccba8411a9e30d1b696ae4b2afbe7eba71a838123d",
+      "expected": "Se acabó el descanso. ¡Cuando quieras!",
+      "heard": "Se acabó el descanso, cuando quieras.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "es/maple/greeting": {
+      "sha256": "695bb401d81265bd8e59b6e5df70bac79947a383badb17598ebdfbebec724cfe",
+      "expected": "Un poco de ánimo, recién salido del horno.",
+      "heard": "Un poco de ánimo, recién salido del horno.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "pt-BR/maple/5": {
+      "sha256": "cb8d93f2d63c33b86968807d3e10017cb4b0c6cf43cb7a308048327fd7766e47",
+      "expected": "Cinco.",
+      "heard": " 5,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "pt-BR/maple/4": {
+      "sha256": "370fcca7ea17c8bbb81fd8701402a96f170cced15f9972b1332a0dce4c10ebb7",
+      "expected": "Quatro.",
+      "heard": " 4,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "pt-BR/maple/3": {
+      "sha256": "bd807b4d579421d0fc5218630f6fa9e7a0b65aaf8f359c365639619792df327e",
+      "expected": "Três.",
+      "heard": " 3,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "pt-BR/maple/2": {
+      "sha256": "d79653c69c0abab662cbaa791711fdb21bbce9f74591bb74821cd951ad34c660",
+      "expected": "Dois.",
+      "heard": " 2,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "pt-BR/maple/1": {
+      "sha256": "27fc0a15fe3f9fd791964c4e14e8057d80d45d7623470fc1f9f52fb5547f7abd",
+      "expected": "Um.",
+      "heard": " 1.",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "pt-BR/maple/go": {
+      "sha256": "536a581686d3b10ac4c8a25eea430de0dab7ec9668aa1fca47412e064deb71e7",
+      "expected": "Vamos começar!",
+      "heard": "Vamos começar!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "pt-BR/maple/pause": {
+      "sha256": "4dc2133c1a29ddd9758c01feda068d5ddb5282dfd66230be0e460e930097f745",
+      "expected": "Respira um pouco. Eu espero.",
+      "heard": "Respira um pouco, eu espero.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "pt-BR/maple/resume": {
+      "sha256": "941c6ebab8147f1ba5f770d25f8fc182e70466553832ac355f98b8e74c736b19",
+      "expected": "Vamos continuar!",
+      "heard": "Vamos continuar?",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "pt-BR/maple/reset": {
+      "sha256": "52efdd7232c8d999b359cb1da8e8df7802e63436cc54a3577514492cff96888f",
+      "expected": "Um novo começo, com calma.",
+      "heard": "Um novo começo, com calma.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "pt-BR/maple/focusComplete": {
+      "sha256": "8360a87d0fdcf9609024532c2400f0cc80a504fdfe3904acff10b9e710797203",
+      "expected": "Muito bem! Hora de descansar um pouco.",
+      "heard": "Muito bem! Hora de descansar um pouco.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "pt-BR/maple/breakComplete": {
+      "sha256": "c21ea44209c94409bb6d0631952349206fcb63e9dba5cf5d3f39b69bdfd97417",
+      "expected": "O descanso acabou. Vamos quando você quiser!",
+      "heard": "O descanso acabou. Vamos quando você quiser.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "pt-BR/maple/greeting": {
+      "sha256": "fd994d858e8adbf0340dd9a4ef1beb7ea795cd879e2a26bc159aaf2fdccfdc12",
+      "expected": "Um pouquinho de ânimo, saindo do forno.",
+      "heard": "Um pouquinho de ânimo saindo do forno.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "fr/maple/5": {
+      "sha256": "374fe9e068bb1473fa6a7fd344325c9abf6dd3897af8b4c78beb90e02f7d9b02",
+      "expected": "Cinq.",
+      "heard": " 5,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "fr/maple/4": {
+      "sha256": "28fff54c182af3f3474cb21321ddf7698cbccc2874993f4572a8e5e4a802383a",
+      "expected": "Quatre.",
+      "heard": " 4,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "fr/maple/3": {
+      "sha256": "075951519636d5bfb005e975a963ccc3eefacf167c50efefdf8775560df7422c",
+      "expected": "Trois.",
+      "heard": " 3,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "fr/maple/2": {
+      "sha256": "e70d4b6b0e8236eeed18e2936316305f97a523e93aa61b8da7d15067a5163516",
+      "expected": "Deux.",
+      "heard": " 2,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "fr/maple/1": {
+      "sha256": "6e0caf49eb3d7bdd109266f8f86c278527216db77ed9460303263323025e1948",
+      "expected": "Un.",
+      "heard": " 1",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "fr/maple/go": {
+      "sha256": "fb134dc74ef9bbdcff77b71c53d4275e3bc5e9cd9a31ed0ca9fb106387235287",
+      "expected": "C'est parti !",
+      "heard": "C'est parti !",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "fr/maple/pause": {
+      "sha256": "1f8067388c4acd49e404d554401ac9bbc96efd38ac1f05c61946d5f6e8b846cb",
+      "expected": "Fais une pause. Je t'attends.",
+      "heard": "Fais une pause, je t'attends.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "fr/maple/resume": {
+      "sha256": "00204ffc0af3072799e0c53b2aec09a5ceffa7933e5659fc56bd9e3198f3fe60",
+      "expected": "On continue !",
+      "heard": "On continue.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "fr/maple/reset": {
+      "sha256": "a409312ad9fa6eac0a2adb8e5a33a945eff18d7baf41f06a9319db575f30b581",
+      "expected": "On repart du bon pied.",
+      "heard": "On repart du bon pied.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "fr/maple/focusComplete": {
+      "sha256": "80a5791c213c24671284dae791a435c63bf61d6192ac7f888d03c4f12b1d7b80",
+      "expected": "Bravo ! C'est l'heure d'une petite pause.",
+      "heard": "Bravo ! C'est l'heure d'une petite pause.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "fr/maple/breakComplete": {
+      "sha256": "5be5fef3b6602f76d8dccea5e7b0061ef2af75331f580f5d2dcf2f8072f98d11",
+      "expected": "La pause est finie. On reprend quand tu veux !",
+      "heard": "La pose est finie. On reprend quand tu veux.",
+      "similarity": 0.957,
+      "review": "transcript-match"
+    },
+    "fr/maple/greeting": {
+      "sha256": "68e849e348e2a7258ee0f01c543c126d71d7451cf310cd147f813a2f4fde16b3",
+      "expected": "Une petite douceur pour te donner du courage.",
+      "heard": "Un petit douceur pour te donner du courage.",
+      "similarity": 0.972,
+      "review": "transcript-match"
+    },
+    "de/maple/5": {
+      "sha256": "27c931e62a0227c645b382fad4a587b72b738173ccdb1e183d83b05f10adfc5b",
+      "expected": "Fünf.",
+      "heard": " 5,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "de/maple/4": {
+      "sha256": "bdc73e3bedc991c7e8d34055f4e438ad81634dc3aad23f39b6855369e729fcbd",
+      "expected": "Vier.",
+      "heard": " 4,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "de/maple/3": {
+      "sha256": "cee7e3d844020e0b3b5f2ca67437bef2957e48abe2826bf2acb6dadc7f5bb7c5",
+      "expected": "Drei.",
+      "heard": " 3,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "de/maple/2": {
+      "sha256": "cd22eef31f14b97712aa1d6d37363c6b97d0700ab5c72a3b0e8e6284026ba85e",
+      "expected": "Zwei.",
+      "heard": " 2,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "de/maple/1": {
+      "sha256": "da1a92ae1adaf5c4dca869fd0bb7f2a26fd430755b179dc3f8ad2c44caa9ee7d",
+      "expected": "Eins.",
+      "heard": " 1",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "de/maple/go": {
+      "sha256": "8d10c62e149ee208a7a22b8a32a907ebeed785ad630cefc768c7b704ac3cbc7a",
+      "expected": "Los geht's!",
+      "heard": "Los gehts!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "de/maple/pause": {
+      "sha256": "a2ee8743b193c1308d7037c55dfc0925c35914ef79ea0ea45d0dc3c12fbc842f",
+      "expected": "Atme kurz durch. Ich warte auf dich.",
+      "heard": "Atme kurz durch, ich warte auf dich.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "de/maple/resume": {
+      "sha256": "02febe29d25d02d97621732421562067f9eef9364122841a37dec16cd716504c",
+      "expected": "Weiter geht's!",
+      "heard": "Weiter gehts!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "de/maple/reset": {
+      "sha256": "6f38d550a6666da0e65752a6fc35317f3ba0b804bfb5465674303e4bbca12f3c",
+      "expected": "Ein frischer Start. Wir sind bereit.",
+      "heard": "Ein frischer Start, wir sind bereit.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "de/maple/focusComplete": {
+      "sha256": "3c38746cf446a2fcea71d807663d0ade466d9c4d5b87931178cf4c268906cb72",
+      "expected": "Gut gemacht! Zeit für eine kleine Pause.",
+      "heard": "Gut gemacht. Zeit für eine kleine Pause.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "de/maple/breakComplete": {
+      "sha256": "348a8a2e1b10606581438dce411ea2d6ea5bc47aba4f788e35e8c068cc5e08fd",
+      "expected": "Die Pause ist vorbei. Bereit, wenn du es bist!",
+      "heard": "Die Pause ist vorbei. Bereit, wenn du es bist.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "de/maple/greeting": {
+      "sha256": "374a8c5844937c1d0c691e90284e778e9dfe7a12617125a34f9de420d303e709",
+      "expected": "Eine kleine Portion Mut, frisch aus dem Ofen.",
+      "heard": "Eine Klein-Purchin-Mut, frisch aus dem Ofen.",
+      "similarity": 0.901,
+      "review": "transcript-match"
+    },
+    "en/wisp/5": {
+      "sha256": "5d0d0bda514c855d92a447f5a0c69aae0fcf3fda9c85ff5a6ac5fe8d4ec6eab6",
+      "expected": "Five.",
+      "heard": " 5,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "en/wisp/4": {
+      "sha256": "a12aadb866dc75c8e71620bde94b9019ccb06dc4eb20c3d53e0e2d8741d59c2a",
+      "expected": "Four.",
+      "heard": " 4,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "en/wisp/3": {
+      "sha256": "6309cbf5f14ed7a634505683d831f388d80ed400f9b5d11fb5732cabcf7a0a48",
+      "expected": "Three.",
+      "heard": " 3,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "en/wisp/2": {
+      "sha256": "f72e135578c130305e1c045130b0c13558bec84aa8259925fde5202a5ece8720",
+      "expected": "Two.",
+      "heard": " 2,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "en/wisp/1": {
+      "sha256": "c101aa90ee3cd015862c4b0925320304d5549e7ef24d6a447735aed862ed4a6b",
+      "expected": "One.",
+      "heard": " 1.",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "en/wisp/go": {
+      "sha256": "c20cf88b2ecf4b70fc0a70c06e53cb4b4b0f50b5f7b521788da98c337222a005",
+      "expected": "Let's begin!",
+      "heard": "Let's begin!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "en/wisp/pause": {
+      "sha256": "cec74d446feb76ca87e02d97e4bbddffca2cc7d72d980ebac24a0b62e05744e3",
+      "expected": "Take a breath. I'll wait.",
+      "heard": "Take a breath. I'll wait",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "en/wisp/resume": {
+      "sha256": "76745ef2602ee01a2e44bd6cc75a3f6aaa46375ae3ae8118fad933b92b376134",
+      "expected": "Let's keep going!",
+      "heard": "Let's keep going!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "en/wisp/reset": {
+      "sha256": "5e8a4aaa306943bca516f79f1105c4f518b8bcc04c699915762ae9e882d7b876",
+      "expected": "A fresh start. We're ready.",
+      "heard": "A fresh start. We're ready.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "en/wisp/focusComplete": {
+      "sha256": "bf27537df4bc63d0c13ad8c37a8f21881f27e5e645309a79b06aeb1b1ef00a06",
+      "expected": "Well done! Time for a little break.",
+      "heard": "Well done! Time for a little break!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "en/wisp/breakComplete": {
+      "sha256": "c30a1bf75506ddb1b40412988564dfc0a7b53ef7cc1eefd4554d46a741e3d55e",
+      "expected": "Break's over. Ready when you are!",
+      "heard": "Breaks over ready when you are",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "en/wisp/greeting": {
+      "sha256": "4ca080541f998b9ec3a236b05961277d35983b7855d9674a369bb488af45283f",
+      "expected": "Let’s find a little light together.",
+      "heard": "Let's find a little light together",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "zh-Hans/wisp/5": {
+      "sha256": "d3725de571969f08c77cca418192be358b386e9d3f462a95538b73d720b22ff3",
+      "expected": "五。",
+      "heard": "五、",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "zh-Hans/wisp/4": {
+      "sha256": "d971a9435033f3788e050826d1386518045f8b143b798e56b596c53af4112be7",
+      "expected": "四。",
+      "heard": "四、",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "zh-Hans/wisp/3": {
+      "sha256": "dc63354b3f367e0f0a9e890d33d8648428f8fef468bd89d1530d7e8124e15463",
+      "expected": "三。",
+      "heard": "三、",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "zh-Hans/wisp/2": {
+      "sha256": "6a7642e4573a6f71c613378ae2927d2b9ca7db5f3c90d809971860973c783c32",
+      "expected": "二。",
+      "heard": "二、",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "zh-Hans/wisp/1": {
+      "sha256": "fb04168a4dbd3b0929b95bcacb2e48df94a8f02a6dc748fb67e0cebc7e815eff",
+      "expected": "一。",
+      "heard": "一",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "zh-Hans/wisp/go": {
+      "sha256": "f3485bdb09418fd824a629d6117a644e64bc0af5046a5f60d20a5ff3edbb047c",
+      "expected": "开始吧！",
+      "heard": "開始吧",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "zh-Hans/wisp/pause": {
+      "sha256": "2aefc6594c2cee20123153f323511b3dcfb2dda715799db3f443f450016f66e2",
+      "expected": "歇一会儿，我等你。",
+      "heard": "歇一会 我等你",
+      "similarity": 0.923,
+      "review": "transcript-match"
+    },
+    "zh-Hans/wisp/resume": {
+      "sha256": "1371e7e1321aced2e59377fcf1696e5bc6dea74bdc27a7f072d8f3917c6fbae5",
+      "expected": "好，我们继续！",
+      "heard": "好,我们继续",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "zh-Hans/wisp/reset": {
+      "sha256": "d39c441e421d915abf56a0cda17136c1d985859d619296afa745077a0c149fef",
+      "expected": "重新开始，我们准备好啦。",
+      "heard": "重新开始,我们准备好了",
+      "similarity": 0.9,
+      "review": "transcript-match"
+    },
+    "zh-Hans/wisp/focusComplete": {
+      "sha256": "569d68dd39b4fd4e2a6d10f99b305fe521bb981771f07d8230887fe9b6f9530c",
+      "expected": "做得好！该休息一下啦。",
+      "heard": "做的好,改休息一下啦!",
+      "similarity": 0.778,
+      "review": "check"
+    },
+    "zh-Hans/wisp/breakComplete": {
+      "sha256": "a4ba0c3156114f0168b6b8e89110def25db1fef6d9daa4e8bb2a998dbb6f9c8c",
+      "expected": "休息结束啦，准备好了就开始吧！",
+      "heard": "休息結束啦,準備好了就開始吧!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "zh-Hans/wisp/greeting": {
+      "sha256": "bbb88295a68e6bbb4a4477efddcfa146e827db333fbec0032baf82873c6d0a11",
+      "expected": "我们一起，找一点小小的光。",
+      "heard": "我们一起找一点小小的光",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "ja/wisp/5": {
+      "sha256": "654df7035447c008c27414cb901077ce9eb6382dfc12fdffe1d9fb5c09e38afb",
+      "expected": "ご。",
+      "heard": "5、",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "ja/wisp/4": {
+      "sha256": "e6931221e6935051c673a6fdd43d3c435b95963eb5c030b1d7cd2bdbb0b0d02b",
+      "expected": "よん。",
+      "heard": "4、",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "ja/wisp/3": {
+      "sha256": "aedaa567a252ed5c2c760e06797e7e7287d16f5df212435a7c2a04bc4788111e",
+      "expected": "さん。",
+      "heard": "3、",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "ja/wisp/2": {
+      "sha256": "3f0a41384a5bf7f65c1589bda0f0be254135065fdb3f1ab411f06493997cab5e",
+      "expected": "に。",
+      "heard": "2、",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "ja/wisp/1": {
+      "sha256": "3de4fb9fa662a9aad34ec79ad39c7716058f87575647ce3b05c57adc694cbe70",
+      "expected": "いち。",
+      "heard": "1!",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "ja/wisp/go": {
+      "sha256": "c8f242438ddcbb0580a3a106fb7635c0e13062f03fa4ebf6be96800a28b0c12f",
+      "expected": "さあ、始めよう！",
+      "heard": "さあ!始めよう!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "ja/wisp/pause": {
+      "sha256": "261f0e17969657337d604034f3265b90d576e1763e637210603447ac1649764b",
+      "expected": "ひと息つこう。待ってるね。",
+      "heard": "一息つこう待ってるね",
+      "similarity": 0.857,
+      "review": "transcript-match"
+    },
+    "ja/wisp/resume": {
+      "sha256": "37ee7865930a77f2a438d4839d79c5cb5bc4064958a6ef2e1b49b775dcfe8158",
+      "expected": "よし、続けよう！",
+      "heard": "よし!続けよう!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "ja/wisp/reset": {
+      "sha256": "b65fece44aac3d14197b36bad4e3f74771118e970e62caeb0c60f5fce9ece6f1",
+      "expected": "気持ちを新たに、もう一度。",
+      "heard": "気持ちを新たにもう一度",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "ja/wisp/focusComplete": {
+      "sha256": "8467b766a21586124ae1d4cd555506e7c20ff96378791eb65aec21202b7ba1f9",
+      "expected": "おつかれさま！少し休もう。",
+      "heard": "おつかれさま!少し休もう!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "ja/wisp/breakComplete": {
+      "sha256": "83784b3ec79b268586965e073bf336677dfbcffbd7c971d076b1021b053cda7a",
+      "expected": "休憩おしまい。準備ができたら始めよう！",
+      "heard": "休憩をしまい準備ができたら始めよう",
+      "similarity": 0.941,
+      "review": "transcript-match"
+    },
+    "ja/wisp/greeting": {
+      "sha256": "f5dec1947d7cf8f5a8ad9fb8b3eec80d03fffb9d8b7385001ba66dac77a2c20a",
+      "expected": "一緒に、小さな光を見つけよう。",
+      "heard": "一緒に小さな光を見つけよう!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "ko/wisp/5": {
+      "sha256": "ba0acef22fad1c4a35345c1b1f2829a0ef6689bb6215d9f4a263ea01a1ba1db1",
+      "expected": "오.",
+      "heard": " 5,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "ko/wisp/4": {
+      "sha256": "cafc8989da1a9d4b209fe5878341977ba95462e648333c4513705b3f6622ae79",
+      "expected": "사.",
+      "heard": " 4,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "ko/wisp/3": {
+      "sha256": "573fd1476243fcbf39eddd7e925db47571e988d1fc137bea3af662d7ee359487",
+      "expected": "삼.",
+      "heard": " 3,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "ko/wisp/2": {
+      "sha256": "ce1a8f63aa1134c908ebe45c677798b0faddeab459dcb34aabc7058bceb57f70",
+      "expected": "이.",
+      "heard": " 2,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "ko/wisp/1": {
+      "sha256": "b2919b885a51977da4f3fc26f0b5162f6d1c02cf1d5a606486e1d7902e17af53",
+      "expected": "일.",
+      "heard": " 1",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "ko/wisp/go": {
+      "sha256": "d5a2d454f52583c291d3c52132c325a2da9873e5bb1630c562f72f355a526c05",
+      "expected": "자, 시작하자!",
+      "heard": "자, 시작하자!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "ko/wisp/pause": {
+      "sha256": "9d931a8c410a8c7ecf1fce91273b4ae204b78f30881e7d40d2af45bd9088d040",
+      "expected": "잠깐 쉬어. 기다릴게.",
+      "heard": "잠깐 쉬어! 기다릴게!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "ko/wisp/resume": {
+      "sha256": "a9e716ccf97d302d6f7fee6598ccf99fc25bb01da4bdcb4f14228dee1b0781ab",
+      "expected": "좋아, 계속해 보자!",
+      "heard": "좋아! 계속해보자!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "ko/wisp/reset": {
+      "sha256": "0cc446dcc633c597acf7dd8ea3be398172ce1517301e8404d9d2a48a3d3ad8f6",
+      "expected": "새로운 마음으로 다시 시작하자.",
+      "heard": "새로운 마음으로 다시 시작하자!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "ko/wisp/focusComplete": {
+      "sha256": "fc86fab6d9f31557efc278b958820b785292ce281babe5326b16af1678980054",
+      "expected": "잘했어! 이제 잠깐 쉬자.",
+      "heard": "잘했어! 이제 잠깐 쉬자!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "ko/wisp/breakComplete": {
+      "sha256": "07c904228add4a80905f1e6d13f9ea9752c079403b24d281ae8796ad958a4275",
+      "expected": "쉬는 시간 끝! 준비되면 시작하자.",
+      "heard": "쉬는 시간 끝! 준비되면 시작하자!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "ko/wisp/greeting": {
+      "sha256": "14b1c2f0166181a2e5537bc5c4ce0e2b5fc1c06b33dcc05b678ee5df96134eec",
+      "expected": "함께 작은 빛을 찾아보자.",
+      "heard": "함께 작은 빛을 찾아보자",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "es/wisp/5": {
+      "sha256": "9efda492bba2abb11e6d06259d7805cf29f5feefdf4ece66fed0dc02051a2784",
+      "expected": "Cinco.",
+      "heard": " 5",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "es/wisp/4": {
+      "sha256": "b273ada66ca593a43b0dbe1a8d1f60af431434da38fc04ba84a46d6a5459e498",
+      "expected": "Cuatro.",
+      "heard": ",4",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "es/wisp/3": {
+      "sha256": "2a6e5cbff9254b89a64f95403ce82c31edd6253a220fef91a305a9a025bc8245",
+      "expected": "Tres.",
+      "heard": ",3",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "es/wisp/2": {
+      "sha256": "823899ffc5917c4aa8f18af144a078c612c5516b1804382fe66a9045f8826c7d",
+      "expected": "Dos.",
+      "heard": ",2",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "es/wisp/1": {
+      "sha256": "6225bb3bccbe0e51100cdb4207bb47070501a07f5620ddc1ad51f7504c51e8d9",
+      "expected": "Uno.",
+      "heard": ",1",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "es/wisp/go": {
+      "sha256": "2d5247914fe15a32fcfaa32a94ac5a9832a6e8a3acba6260be311efc27c02e10",
+      "expected": "¡Vamos a empezar!",
+      "heard": "¡Vamos a empezar!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "es/wisp/pause": {
+      "sha256": "92e007cb64d34417ad16c7e5bdd998eb051cc1dbe6d54927d71a8c8b3dee9ab0",
+      "expected": "Toma un respiro. Te espero.",
+      "heard": "Toma un respiro, te espero.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "es/wisp/resume": {
+      "sha256": "f282f2a8285f2e245a7a864a686c3f1f54bdda7cd9c8e73cc29a181c25f6036f",
+      "expected": "¡Sigamos adelante!",
+      "heard": "¡Sigamos adelante!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "es/wisp/reset": {
+      "sha256": "a781c2bdd0917db516b960d46e9540079e0cfd193b1488cc042150bf93595d76",
+      "expected": "Empecemos de nuevo, con calma.",
+      "heard": "¡Empecemos de nuevo con calma!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "es/wisp/focusComplete": {
+      "sha256": "f9608e5657ecacd5ef5d749148ec92d7f453c5865890de0fd152f30d1add1b49",
+      "expected": "¡Muy bien! Es hora de descansar un poco.",
+      "heard": "Muy bien, es hora de descansar un poco.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "es/wisp/breakComplete": {
+      "sha256": "eb7a8962e3e0a4cdb61d13492cb7a29e86c64cc376fb547c1b16b937e8ac2ca0",
+      "expected": "Se acabó el descanso. ¡Cuando quieras!",
+      "heard": "Se acabó el descanso. ¡Cuando quieras!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "es/wisp/greeting": {
+      "sha256": "2f855460970a5aa337561db3ed5032e7c69c84bc85604012f92449c422160439",
+      "expected": "Busquemos un poquito de luz juntos.",
+      "heard": "busquemos un poquito de luz juntos",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "pt-BR/wisp/5": {
+      "sha256": "d33d62ecd9a95f2953e083ef7e8185916e8c91a433688bef218a758985f21239",
+      "expected": "Cinco.",
+      "heard": " 5,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "pt-BR/wisp/4": {
+      "sha256": "e56f1608b13fcf8d3e8e0062b7457e25189e1f3735890efe0eddcb70298f95fa",
+      "expected": "Quatro.",
+      "heard": " 4,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "pt-BR/wisp/3": {
+      "sha256": "09dfed630d4daed25c3e7e8d38896f2b25cd80ab593983332078ba97bbea3156",
+      "expected": "Três.",
+      "heard": " 3,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "pt-BR/wisp/2": {
+      "sha256": "2041d6708830f5f9dd105174756b6260549c25dfa5a6ddc2d688283afe9fc10b",
+      "expected": "Dois.",
+      "heard": " 2,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "pt-BR/wisp/1": {
+      "sha256": "0f97f20cbc9c10ac4e9fa9197a6a5ffde3fb51a2a5babe6a47845d14c4c1d3e9",
+      "expected": "Um.",
+      "heard": " 1...",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "pt-BR/wisp/go": {
+      "sha256": "527ad7e51ee3faefb8f1198d8de6267e06e69ae4adc33e40837ab0dff17241b5",
+      "expected": "Vamos começar!",
+      "heard": "Vamos começar!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "pt-BR/wisp/pause": {
+      "sha256": "99c9a1e35d70ce6082ddeead315b59e5a457454cdeaab158cba997123170e633",
+      "expected": "Respira um pouco. Eu espero.",
+      "heard": "Respira um pouco. Eu espero.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "pt-BR/wisp/resume": {
+      "sha256": "5229059e799dd72bdafa792fcb192f2b02f095ea16968e099e1ed2fd155cf9d2",
+      "expected": "Vamos continuar!",
+      "heard": "Vamos continuar!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "pt-BR/wisp/reset": {
+      "sha256": "ca6a2cf50db1f0e9504aff89af34bb5bd19a3d4ef975beeb3a202ca42be3a1d2",
+      "expected": "Um novo começo, com calma.",
+      "heard": "Ah, um novo começo! Com calma!",
+      "similarity": 0.952,
+      "review": "transcript-match"
+    },
+    "pt-BR/wisp/focusComplete": {
+      "sha256": "39a90d28cbb84316259d498192a0c1b83e6089626d4e2c980ff21d6b72d51bd1",
+      "expected": "Muito bem! Hora de descansar um pouco.",
+      "heard": "Muito bem! Hora de descansar um pouco!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "pt-BR/wisp/breakComplete": {
+      "sha256": "6633a7dd74a69985bf4fa7af9c59e9bb79bde5cf783d39c739c7ba9e8f370a7b",
+      "expected": "O descanso acabou. Vamos quando você quiser!",
+      "heard": "O descanso acabou! Vamos quando você quiser!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "pt-BR/wisp/greeting": {
+      "sha256": "c92b1dab788bbcaae2058d3ceb7ede8c437e744db7c421bb6ddd1150878d908d",
+      "expected": "Vamos encontrar um pouquinho de luz juntos.",
+      "heard": "Vamos encontrar um pouquinho de luz juntos.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "fr/wisp/5": {
+      "sha256": "dd366a14383e4d29f7fb47c2c453500d678e25ff26c983f56223e5da8a15e107",
+      "expected": "Cinq.",
+      "heard": " 5,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "fr/wisp/4": {
+      "sha256": "d8d55f741d918b30ecf197026a5329203602859315412098e489a92c02bd7118",
+      "expected": "Quatre.",
+      "heard": " 4,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "fr/wisp/3": {
+      "sha256": "628f8fb5ae2c9adce7ea8dcee455c942c565559d6c9be9c77d1ec6cd667c7d03",
+      "expected": "Trois.",
+      "heard": " 3,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "fr/wisp/2": {
+      "sha256": "c63c7a8a65fba29a3ff12ee370d63d98c34f3f7d1bafef9e33a993d1812a3f9a",
+      "expected": "Deux.",
+      "heard": " 2,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "fr/wisp/1": {
+      "sha256": "95e2e9688c5c47ddc2f60e823a0d252a65174ba13e4e6aee2dd16dc37c80bc74",
+      "expected": "Un.",
+      "heard": " 1.",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "fr/wisp/go": {
+      "sha256": "fbb3f1d93d29d685997970459823d1453d4303719c2aa33a186c01b6c3b705e7",
+      "expected": "C'est parti !",
+      "heard": "C'est un parti!",
+      "similarity": 0.9,
+      "review": "transcript-match"
+    },
+    "fr/wisp/pause": {
+      "sha256": "0fc2f94605d761624e859b03559bb9b14d467aa5aa11b2d3fdb943c3166b584a",
+      "expected": "Fais une pause. Je t'attends.",
+      "heard": "Hum, mais une pause, je t'attends ?",
+      "similarity": 0.894,
+      "review": "transcript-match"
+    },
+    "fr/wisp/resume": {
+      "sha256": "7f8c4ecdcafa17ab0369078aa022670ed364a7f311ba17b0c62e9e7f35058e8b",
+      "expected": "On continue !",
+      "heard": "On continue!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "fr/wisp/reset": {
+      "sha256": "d9fc85ebc7c2f00cddd2e59826ac4714c0411766587dc817d26ae7123375a526",
+      "expected": "On repart du bon pied.",
+      "heard": "On repart du bon pied !",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "fr/wisp/focusComplete": {
+      "sha256": "c5431620fbd0c98c16b52d2414050ea84edde2a56ff32bd97b28c401f659cf7e",
+      "expected": "Bravo ! C'est l'heure d'une petite pause.",
+      "heard": "Bravo ! C'est l'heure d'une petite pause !",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "fr/wisp/breakComplete": {
+      "sha256": "ed4caf9757f64ee41be472c511aa6e142a3d91bcf2a1aae82025074df2f096ae",
+      "expected": "La pause est finie. On reprend quand tu veux !",
+      "heard": "La pause est finie. On reprend quand tu veux.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "en/comet/5": {
+      "sha256": "b4ab0ff6864600ae98556a02e939266ed91bce6521f2f6d18262130e5226fc5f",
+      "expected": "Five.",
+      "heard": " 5,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "en/comet/4": {
+      "sha256": "5b6a80d1dc695622f7c7a02b316aec1e3f3c2e46aee68b50993a02edc084dcd5",
+      "expected": "Four.",
+      "heard": " 4,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "en/comet/3": {
+      "sha256": "1f3ad1f1b4c09cbb09212d18c2273b792fb335edb3f386ce266e8e9d7346c21e",
+      "expected": "Three.",
+      "heard": " 3,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "en/comet/2": {
+      "sha256": "0517afe02c2972158a3567112f1b312ba7c7fe8b526f8b5725bd21ba745e51fe",
+      "expected": "Two.",
+      "heard": " 2,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "en/comet/1": {
+      "sha256": "66a30e4349ae2f6655c9cb3f7387c8328446bde15c00ce9518b91a9532cb0771",
+      "expected": "One.",
+      "heard": " 1.",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "en/comet/go": {
+      "sha256": "8e5c17a047eaa5a2181bc38ea24a101fa9cc88d91c8dd035e33749d8d22e8d9f",
+      "expected": "Let's begin!",
+      "heard": "Let's begin!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "en/comet/pause": {
+      "sha256": "0b1ff063fd0e0c1178d33396d90b0311bad14c75c79d1f74dd03f4049a63b89b",
+      "expected": "Take a breath. I'll wait.",
+      "heard": "Take a breath. I'll wait.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "en/comet/resume": {
+      "sha256": "dad04675b609769e697bf93dd971db5cb6a7ccdd2bb5aeafcbb79b0353c62a72",
+      "expected": "Let's keep going!",
+      "heard": "Let's keep going!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "en/comet/reset": {
+      "sha256": "1593b4595c7e8e22d976574375e2af5245a7dd7be7eff0f08787e3015e728cbe",
+      "expected": "A fresh start. We're ready.",
+      "heard": "A fresh start. We're ready.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "en/comet/focusComplete": {
+      "sha256": "85bd356ef9b530a1ccd9b4bb9c2b17209cb671a643e8fa412a79184402b507b8",
+      "expected": "Well done! Time for a little break.",
+      "heard": "Well done! Time for a little break.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "en/comet/breakComplete": {
+      "sha256": "2e84e9389504e516e9e00a2602fe2a9ef4f7076eaee9a876a9c78372e51beafe",
+      "expected": "Break's over. Ready when you are!",
+      "heard": "Break's over! Ready when you are!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "en/comet/greeting": {
+      "sha256": "608c719d624a8112f88d90e57011b3afa196e2df18187bfe9d116b375c2b5ed8",
+      "expected": "One small delivery. One big adventure.",
+      "heard": "One small delivery, one big adventure.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "zh-Hans/comet/5": {
+      "sha256": "ecdfc441cf9d03de423c0e2e1cccc754991e569c0a358e999ddb9283affce377",
+      "expected": "五。",
+      "heard": "五、",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "zh-Hans/comet/4": {
+      "sha256": "978ab6ba3dbc3692a532d2ec9bacda715f8ac88f51b3cb9485d874db50fb0166",
+      "expected": "四。",
+      "heard": "四、",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "zh-Hans/comet/3": {
+      "sha256": "3b00dd66cf45260bacfe9914dba5f5dea09fffce200d6d562d84609402249d91",
+      "expected": "三。",
+      "heard": "三、",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "zh-Hans/comet/2": {
+      "sha256": "9a4c1b5a291cefdd0125a83f09222f0fb1a6a69df15b9447cf8fd8ddd4261d1b",
+      "expected": "二。",
+      "heard": "二、",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "zh-Hans/comet/1": {
+      "sha256": "eba808a1f9e77f1b9cadf96dfe74a0011c944a3d24a1731a962a749ae290d99c",
+      "expected": "一。",
+      "heard": "一",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "zh-Hans/comet/go": {
+      "sha256": "c9a8da2a2dc9ac647743eec36247f367718fa362f96879df209a8b7bf316ffda",
+      "expected": "开始吧！",
+      "heard": "开始吧",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "zh-Hans/comet/pause": {
+      "sha256": "cc547d613328c006bbfd32243bd2802f3ccfd5ddc2113d8d7a8c1a513960235f",
+      "expected": "歇一会儿，我等你。",
+      "heard": "歇一会 我等你",
+      "similarity": 0.923,
+      "review": "transcript-match"
+    },
+    "zh-Hans/comet/resume": {
+      "sha256": "c4b93d082932e93bd03da46257f8bd7062710ecdec109935058353f1ebd2b185",
+      "expected": "好，我们继续！",
+      "heard": "好,我們繼續",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "zh-Hans/comet/reset": {
+      "sha256": "d8cfb092af32d525cf0656e047026473703f4655e3b26e675d8b83b1ca5a91a0",
+      "expected": "重新开始，我们准备好啦。",
+      "heard": "重新開始,我們準備好了",
+      "similarity": 0.9,
+      "review": "transcript-match"
+    },
+    "zh-Hans/comet/focusComplete": {
+      "sha256": "9c8b022082aece30051ce1a179e7b26729d58fa90dd83d2e5bf2ffb770994b46",
+      "expected": "做得好！该休息一下啦。",
+      "heard": "做得好,改休息一下啦",
+      "similarity": 0.889,
+      "review": "transcript-match"
+    },
+    "zh-Hans/comet/breakComplete": {
+      "sha256": "b3ae8619bd137c790e41845df71a4d16475607a7a33e7f406ac46dbcae830899",
+      "expected": "休息结束啦，准备好了就开始吧！",
+      "heard": "休息結束了,準備好了就開始吧!",
+      "similarity": 0.923,
+      "review": "transcript-match"
+    },
+    "zh-Hans/comet/greeting": {
+      "sha256": "2f0f94d360dd13d79abe64201e2ed411f5905c38bdfb1680575cf5e654044c48",
+      "expected": "送出一个小包裹，开启一场大冒险。",
+      "heard": "送出一个小包裹,开启一场大冒险。",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "ja/comet/5": {
+      "sha256": "bce6b76c1ca198caca2efd17e55457baa9562b609ec6bd95c709b5832fe18152",
+      "expected": "ご。",
+      "heard": "5、",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "ja/comet/4": {
+      "sha256": "e9013131ed16cc88ac7e973bbc05ed1b5f5ec5aed0460b56361daa65ed979c1d",
+      "expected": "よん。",
+      "heard": "4、",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "ja/comet/3": {
+      "sha256": "7d801278f962ca54c072c52ce19f4b224b8894292971d5617316b21d423535a1",
+      "expected": "さん。",
+      "heard": "3、",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "ja/comet/2": {
+      "sha256": "8456ee8bd2c5d8c84613adebd871ba79902ab119e92ae288284b9ca6acde29ad",
+      "expected": "に。",
+      "heard": "2、",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "ja/comet/1": {
+      "sha256": "df8f184fcc2e05bd853fb1106f9a059f94e86607540394e2a0140a7cdbdea9e8",
+      "expected": "いち。",
+      "heard": "1",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "ja/comet/go": {
+      "sha256": "65a12d49fb55613e371a8e51d7a70f4bf8cfcd29dfd70a3eb295bc46abce6965",
+      "expected": "さあ、始めよう！",
+      "heard": "さあ、始めよう!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "ja/comet/pause": {
+      "sha256": "4dbd6288ddd62f2f0e7d56e6d68f228e18bba534dd426c189a87321b68d400ac",
+      "expected": "ひと息つこう。待ってるね。",
+      "heard": "へっひと息つこう待ってるね",
+      "similarity": 0.917,
+      "review": "transcript-match"
+    },
+    "ja/comet/resume": {
+      "sha256": "c071518fd1fb2608774549a1fe6ede219f1ea18adac59f25b0ebf8eaaee77f0c",
+      "expected": "よし、続けよう！",
+      "heard": "よし、続けよう!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "ja/comet/reset": {
+      "sha256": "e399c13919efa1105be24a644b3629f8cf857d551f88425181ec6f467544c80f",
+      "expected": "気持ちを新たに、もう一度。",
+      "heard": "気持ちを新たにもう一度",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "ja/comet/focusComplete": {
+      "sha256": "56fb93fbeed7cb44d02d9df8c926c88f50be63f8ccd089e43d25ed58ba314658",
+      "expected": "おつかれさま！少し休もう。",
+      "heard": "おつかれさま、少し休もう",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "ja/comet/breakComplete": {
+      "sha256": "d284ed995d867958b6f84dfd35f476482dac4ba3e515266ab7d8273ddec23582",
+      "expected": "休憩おしまい。準備ができたら始めよう！",
+      "heard": "休憩をしまい、準備ができたら始めよう",
+      "similarity": 0.941,
+      "review": "transcript-match"
+    },
+    "ja/comet/greeting": {
+      "sha256": "ff0ca4ff694d307e7ec47b0e211021acd1d32de0d48fd922f91f56d5bd05a864",
+      "expected": "小さなお届けものから、大きな冒険へ。",
+      "heard": "小さなお届け者から大きな冒険へ",
+      "similarity": 0.903,
+      "review": "transcript-match"
+    },
+    "ko/comet/5": {
+      "sha256": "91eb73347c14a232665a7652f1afc191c2b25f1f450f750bfe32f79a530f0311",
+      "expected": "오.",
+      "heard": " 5,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "ko/comet/4": {
+      "sha256": "c8a9591d5ffa82b3e0c26e1fa107363dcd61c701db60b4802e6ff96d1d906d13",
+      "expected": "사.",
+      "heard": " 4,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "ko/comet/3": {
+      "sha256": "bcbf0964f37615ab14d828cd42655fe85ab13db8471715e097dfdee77d144593",
+      "expected": "삼.",
+      "heard": " 3,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "ko/comet/2": {
+      "sha256": "45b67d2591155ebd3509f119a4e0f4ff815756eef713db327d6208ab363e8754",
+      "expected": "이.",
+      "heard": " 2,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "ko/comet/1": {
+      "sha256": "cb8c9a28b7d76199e0e133077e26ec316adecc23f3522c751af910862ef1c3c9",
+      "expected": "일.",
+      "heard": " 1",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "ko/comet/go": {
+      "sha256": "9c9359451b1fba5656b4894bcbe191d20ea7ba79724a9f3c31eba4d29e80736f",
+      "expected": "자, 시작하자!",
+      "heard": "자, 시작하자!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "ko/comet/pause": {
+      "sha256": "1ff0042ef2953773a30fcd29984693d5fef833755e3cf9b4c9f91e12311bf099",
+      "expected": "잠깐 쉬어. 기다릴게.",
+      "heard": "잠깐 쉬어. 기다릴게.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "ko/comet/resume": {
+      "sha256": "c49454bebcd3a83961656a570073bb0d79bb418ecd03240204c4393412bb97b8",
+      "expected": "좋아, 계속해 보자!",
+      "heard": "좋아! 계속해보자!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "ko/comet/reset": {
+      "sha256": "3d0c1ff45b4119ba0696d31c288d19b7e16e56bb10735df0efeb1eeb843bd4d9",
+      "expected": "새로운 마음으로 다시 시작하자.",
+      "heard": "새로운 마음으로 다시 시작하자!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "ko/comet/focusComplete": {
+      "sha256": "7e7c08a4c3830e1d18e0e788f32a34fdbdf31e62f55555f0ed1cf98564babbd8",
+      "expected": "잘했어! 이제 잠깐 쉬자.",
+      "heard": "잘했어! 이제 잠깐 쉬자!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "ko/comet/breakComplete": {
+      "sha256": "05b5d599c91da9bd984d535e566f15c6be30e598d1b6ecf7e91df228a7453da6",
+      "expected": "쉬는 시간 끝! 준비되면 시작하자.",
+      "heard": "쉬는 시간 끝! 준비되면 시작하자!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "ko/comet/greeting": {
+      "sha256": "e2a327161f2e30958ed7947203f6ed47d62106dec2508a59f568ab6d46764f9a",
+      "expected": "작은 배달 하나가 큰 모험이 돼.",
+      "heard": "작은 배달 하나가 큰 모험이 돼",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "es/comet/5": {
+      "sha256": "ee43dd42cc84b4f7443d75423868296294cd1558e1f3a71db0bf145a5b3d5b37",
+      "expected": "Cinco.",
+      "heard": " 5,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "es/comet/4": {
+      "sha256": "01463b58b0b900b4e49c07c54d9fb3b50b7673381a37b14a8afff94eb4d59bc5",
+      "expected": "Cuatro.",
+      "heard": " 4,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "es/comet/3": {
+      "sha256": "2dc88b7e5548538ed55555df1a9cd359b52004ea6057b10dc2235826b37fa0ab",
+      "expected": "Tres.",
+      "heard": " 3,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "es/comet/2": {
+      "sha256": "730fd213055572d00707daf616f09158f5676d50a7b4f5812986c98332860795",
+      "expected": "Dos.",
+      "heard": " 2,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "es/comet/1": {
+      "sha256": "b14d9d8e1775b1ab9b23a2ced41044c517bf9e630c894c1f655a2d21ad475804",
+      "expected": "Uno.",
+      "heard": " 1.",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "es/comet/go": {
+      "sha256": "9d830dc69e57cc0509c4dffe530f7774fbab56b5b47dc1638060a8ef94d912f0",
+      "expected": "¡Vamos a empezar!",
+      "heard": "¡Vamos a empezar!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "es/comet/pause": {
+      "sha256": "eb115d0670f20f711afdf8e2dae313a00cb239d573a4bcefda67be2fd132f622",
+      "expected": "Toma un respiro. Te espero.",
+      "heard": "Toma un respiro. Te espero.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "es/comet/resume": {
+      "sha256": "845fdf850490d4c5872f2056f1e659f539ad35147c94cf7481e892bf9268058d",
+      "expected": "¡Sigamos adelante!",
+      "heard": "¡Sigamos adelante!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "es/comet/reset": {
+      "sha256": "9f25a61cb38f6613eacfd41bfe0c6e44ae20e86f670732e77f4d5694a0d6fd01",
+      "expected": "Empecemos de nuevo, con calma.",
+      "heard": "¡Empecemos de nuevo! ¡Con calma!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "es/comet/focusComplete": {
+      "sha256": "8ee3a1523da9bd56c1bbc477c673ec480d7dd857c7b03a813233f598ff8eca83",
+      "expected": "¡Muy bien! Es hora de descansar un poco.",
+      "heard": "Muy bien, es hora de descansar un poco.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "es/comet/breakComplete": {
+      "sha256": "88e63bbfa841fc55d422b0ed5565dd6f283f4e53ded5538367c576df048a555e",
+      "expected": "Se acabó el descanso. ¡Cuando quieras!",
+      "heard": "Así acabó el descanso. Cuando quieras.",
+      "similarity": 0.951,
+      "review": "transcript-match"
+    },
+    "es/comet/greeting": {
+      "sha256": "fbb9854d81a2c3f196c4383733b715b97f805582d7351f340fae95349e69eab4",
+      "expected": "Una pequeña entrega. Una gran aventura.",
+      "heard": "Una pequeña entrega. Una gran aventura.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "pt-BR/comet/5": {
+      "sha256": "daaa99b04f5f440319fc9ec619f294de435d03ea6adf5ca551d6a9e0c2aa13a5",
+      "expected": "Cinco.",
+      "heard": " 5,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "pt-BR/comet/4": {
+      "sha256": "998a6e79d9961414f54c2c2ebdbe775b7dea0289033d69dbaa9c5b090972d58d",
+      "expected": "Quatro.",
+      "heard": " 4,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "pt-BR/comet/3": {
+      "sha256": "57eb0a9d0f55de479608ae7762991bb2c2a35d3b7ba70aafe78b8738e6569ef8",
+      "expected": "Três.",
+      "heard": " 3,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "pt-BR/comet/2": {
+      "sha256": "1cf8c85693a77653eb00f0e3cb99a5209a36de4d40f5e80442ae4d2eefe49382",
+      "expected": "Dois.",
+      "heard": " 2,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "pt-BR/comet/1": {
+      "sha256": "58aa4409950e263512ac0fd10818bee603b248a61a9e26a796e63ba275db9e44",
+      "expected": "Um.",
+      "heard": " 1",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "pt-BR/comet/go": {
+      "sha256": "2f5c4dfb1423472f45617101581dc20d2a1b78d48fb357c9d8030523985cc5ca",
+      "expected": "Vamos começar!",
+      "heard": "Vamos começar!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "pt-BR/comet/pause": {
+      "sha256": "36ef1942d551e320205ec809b2178d6a5079ef4cc6c21c2cd8a09d859f2764d5",
+      "expected": "Respira um pouco. Eu espero.",
+      "heard": "Espira um pouco. Eu espero.",
+      "similarity": 0.977,
+      "review": "transcript-match"
+    },
+    "pt-BR/comet/resume": {
+      "sha256": "886bc7adfddd01b690fa24ec1862cb87f5324a1d07a5722f1cd7dc62eee5a2a7",
+      "expected": "Vamos continuar!",
+      "heard": "Vamos continuar!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "pt-BR/comet/reset": {
+      "sha256": "86555110b56c00767d9e86bf91dadaf98b8377ef8ce799e47b07f3339e67c54e",
+      "expected": "Um novo começo, com calma.",
+      "heard": "Não vou começo com calma.",
+      "similarity": 0.9,
+      "review": "transcript-match"
+    },
+    "pt-BR/comet/focusComplete": {
+      "sha256": "6f12d00d470ab2e79c0d10bbe4d2001501fdf7677b3b19c691ccbd449c71efbc",
+      "expected": "Muito bem! Hora de descansar um pouco.",
+      "heard": "Muito bem! Hora de descansar um pouco!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "pt-BR/comet/breakComplete": {
+      "sha256": "7c6df1d857b7e14471b58597fd3b3e7674c00603b93113436078e270e2d119a9",
+      "expected": "O descanso acabou. Vamos quando você quiser!",
+      "heard": "O descanso acabou. Vamos quando você quiser!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "pt-BR/comet/greeting": {
+      "sha256": "5167f41ed669656a532a266b852f4c3f91c40f2c6d0a1ad629d7ae55b9395c84",
+      "expected": "Uma pequena entrega. Uma grande aventura.",
+      "heard": "Uma pequena entrega, uma grande aventura.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "fr/comet/5": {
+      "sha256": "5ace074d8808e2402a959a57a32ada42540a45b7385bb9ffa8e5d113526b4084",
+      "expected": "Cinq.",
+      "heard": " 5,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "fr/comet/4": {
+      "sha256": "cc854464c0180b44cfaafdeff726e147c171f6adfb98e43bac230c8f1fad4b44",
+      "expected": "Quatre.",
+      "heard": " 4,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "fr/comet/3": {
+      "sha256": "02c02dfa857d50007f2e1e973032fadc22ddddf4b32ed424f6b22caec2f67a05",
+      "expected": "Trois.",
+      "heard": " 3,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "fr/comet/2": {
+      "sha256": "a85bf24e78dfe8a3d0c8e7464160c1ed0897c9e1840683830b4898a84ea83b76",
+      "expected": "Deux.",
+      "heard": " 2,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "fr/comet/1": {
+      "sha256": "9e255799192f9a9800d5f184b8ddd13ce71c5d9a4329ed451136fdebe771b3eb",
+      "expected": "Un.",
+      "heard": " 1.",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "fr/comet/go": {
+      "sha256": "56b15d746718af45e5757cee2f6e817c63df533d1022d8325f4edd288ae8e78e",
+      "expected": "C'est parti !",
+      "heard": "C'est parti !",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "fr/comet/pause": {
+      "sha256": "4570c6bd53501269f3e517da4da1ddcee9d7c2fd5101a0cd1451d30414c73fe8",
+      "expected": "Fais une pause. Je t'attends.",
+      "heard": "Feune pause, je t'attends.",
+      "similarity": 0.905,
+      "review": "transcript-match"
+    },
+    "fr/comet/resume": {
+      "sha256": "faba41527ccf1dd6f3d2172d006eaacec9c1b4bbe3d1422dc1605770b2e39612",
+      "expected": "On continue !",
+      "heard": "On continue!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "fr/comet/reset": {
+      "sha256": "13ffd057a1462364bac4de2d7c80287fde1c9200d1e17673e770c0a07450912d",
+      "expected": "On repart du bon pied.",
+      "heard": "En répart du bon pied ?",
+      "similarity": 0.882,
+      "review": "transcript-match"
+    },
+    "fr/comet/focusComplete": {
+      "sha256": "55af1339fae600342aa79951145fcfe168f7e4daa564cb4891f864bc24b2fbd4",
+      "expected": "Bravo ! C'est l'heure d'une petite pause.",
+      "heard": "Bravo ! C'est l'heure d'une petite pause.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "fr/comet/breakComplete": {
+      "sha256": "d051e808d2926b4ea103c1641e2b59a716d4948e3078bfeb143f4332d8cf04d6",
+      "expected": "La pause est finie. On reprend quand tu veux !",
+      "heard": "La pause est finie. On reprend quand tu veux.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "fr/comet/greeting": {
+      "sha256": "58f550f683dc34cd5243ab59328164c83feb9afa6e49961d58280d8374220041",
+      "expected": "Une petite livraison. Une grande aventure.",
+      "heard": "Une petite livraison. Une grande aventure.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "de/comet/5": {
+      "sha256": "2d8e93394714c84fec14ebf7763c20aee2e5eb3d927f274330cfbde046280ebb",
+      "expected": "Fünf.",
+      "heard": " fünf,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "de/comet/4": {
+      "sha256": "57065830fc516f3ca91944d1818b22f34b11f99e2cf7013c151f95742e2cf6ca",
+      "expected": "Vier.",
+      "heard": " vier,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "de/comet/3": {
+      "sha256": "a39312d7e97a88561300ce21e5f99b1effc46a7b69ef3a6c6edf38b5cdba93c1",
+      "expected": "Drei.",
+      "heard": " drei,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "de/comet/2": {
+      "sha256": "0532040e097e7f13d176964fd5cfff9e57128d79d3657c3a4a334afb51a69481",
+      "expected": "Zwei.",
+      "heard": " zwei,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "de/comet/1": {
+      "sha256": "e53d1df4d9078d2aae6b6b44a9d447dfb441d8a0f67345128f82eec07e6db048",
+      "expected": "Eins.",
+      "heard": " eins",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "de/comet/go": {
+      "sha256": "df8edf214ef622d84f92113b4595643be50855e6ecfe888e1aa425df354e59ab",
+      "expected": "Los geht's!",
+      "heard": "Los geht's!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "de/comet/pause": {
+      "sha256": "bd2d1b8b0e9aa36fb765c9087a6cad73430caceac6e613d2b150dbe5761260a5",
+      "expected": "Atme kurz durch. Ich warte auf dich.",
+      "heard": "Atme kurz durch, ich warte auf dich.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "de/comet/resume": {
+      "sha256": "f54196961ee51f8ffb33ff58a7d7f517c5023db3650d4a29e22850ec06c545c3",
+      "expected": "Weiter geht's!",
+      "heard": "Weiter gehts!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "de/comet/reset": {
+      "sha256": "3cec45cbf6b8df71eca7a3cc696174be9d516e5ed396287d19891816785642d6",
+      "expected": "Ein frischer Start. Wir sind bereit.",
+      "heard": "Ein frischer Start! Wir sind bereit!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "de/comet/focusComplete": {
+      "sha256": "2d0e0cdb459be7da8e14e61001d3fd270195e37643c09193cded7ceebba1bee0",
+      "expected": "Gut gemacht! Zeit für eine kleine Pause.",
+      "heard": "Gut gemacht! Zeit für eine kleine Pause!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "de/comet/breakComplete": {
+      "sha256": "60b83fd6852c985e249570b02415a80be12d7832fe6de5badd641aaa745b731e",
+      "expected": "Die Pause ist vorbei. Bereit, wenn du es bist!",
+      "heard": "Die Pause ist vorbei. Bereit, wenn du's bist.",
+      "similarity": 0.986,
+      "review": "transcript-match"
+    },
+    "de/comet/greeting": {
+      "sha256": "628a875566a888a366f046ae2bf984d0fc7a184afb724ea152bf7fe9095dcb1e",
+      "expected": "Eine kleine Lieferung. Ein großes Abenteuer.",
+      "heard": "Eine kleine Lieferung. Ein großes Abenteuer.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "fr/wisp/greeting": {
+      "sha256": "fd7e8e7720c04c93936de09fb033484236c5f038524db1ac3d5183c13bd4689d",
+      "expected": "Trouvons une petite lumière ensemble.",
+      "heard": "Trouvons une petite lumière ensemble.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "de/wisp/5": {
+      "sha256": "6a65f7cd6106b56bd3ffe15a028869675aab8a680e3e485dd174bc612ee0fc7f",
+      "expected": "Fünf.",
+      "heard": " 5,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "de/wisp/4": {
+      "sha256": "489c43f1c3a5bf8b5bdffe333f18713cb57553c6b0180a45da7c8ba081d63a19",
+      "expected": "Vier.",
+      "heard": " 4,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "de/wisp/3": {
+      "sha256": "0daaccd662c34a3796089dd68fc8ad0d24eabd56acde7391c1fa61125d8d3ed5",
+      "expected": "Drei.",
+      "heard": " 3,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "de/wisp/2": {
+      "sha256": "5f8eda2780a275d6d2a9fea4cd818514411e284515c510f7aee4898a7213e402",
+      "expected": "Zwei.",
+      "heard": " 2,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "de/wisp/1": {
+      "sha256": "2265558097215a6dbabca87922793dc59acdf12f157c8d4b261a8ea32ca1f091",
+      "expected": "Eins.",
+      "heard": " 1!",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "de/wisp/go": {
+      "sha256": "8a2f25e6b8e6997dc1f631be3cbb0ef533cbdf6a5d030cddda24e3f7ba727d92",
+      "expected": "Los geht's!",
+      "heard": "Los geht's!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "de/wisp/pause": {
+      "sha256": "e789408009379601447a469b0850fc9f9f201856064ea4fa30a808f115c34377",
+      "expected": "Atme kurz durch. Ich warte auf dich.",
+      "heard": "Atme kurz durch, ich warte auf dich.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "de/wisp/resume": {
+      "sha256": "88996bc4100b960a3a0c29fd17c2cfda2f7946dc79164f7b3b1e141cfae2615d",
+      "expected": "Weiter geht's!",
+      "heard": "Weiter gehts!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "de/wisp/reset": {
+      "sha256": "3089ffc056d0bb1db656b53f66b260ef16fe31058b43a7410a2d513b8ca63006",
+      "expected": "Ein frischer Start. Wir sind bereit.",
+      "heard": "Ein Fischerstart! Wir sind bereit!",
+      "similarity": 0.982,
+      "review": "transcript-match"
+    },
+    "de/wisp/focusComplete": {
+      "sha256": "6cec5d19a9fbd81a2abb59b11b9ef0c634e326ad6ec51b084767a659ccbd322c",
+      "expected": "Gut gemacht! Zeit für eine kleine Pause.",
+      "heard": "Gut gemacht! Zeit für eine kleine Pause!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "de/wisp/breakComplete": {
+      "sha256": "6e9b6d28d6706c3541f236734d5046d714f880ad8cef21e34817bfad03d51356",
+      "expected": "Die Pause ist vorbei. Bereit, wenn du es bist!",
+      "heard": "Die Pause ist vorbei. Bereit, wenn du es bist.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "de/wisp/greeting": {
+      "sha256": "b3d2d06fc8dea47f71c908255b1c9895e2820932d123794a9c97b0c2561785e3",
+      "expected": "Finden wir gemeinsam ein kleines Licht.",
+      "heard": "finden wir gemeinsam ein kleines Licht.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "en/mochi/poke": {
+      "sha256": "5dfd4e890b8b047c741ca3b2ee3a54fb99cf3b36158dd69e7b1227b0523e6f9f",
+      "expected": "Oh! You found me!",
+      "heard": "Oh! You found me!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "zh-Hans/mochi/poke": {
+      "sha256": "644055a2ac63de833082b480574c6ff0c79ea8e5e1247eab001f49b79c265829",
+      "expected": "呀，被你发现啦！",
+      "heard": "呀 被你发现了",
+      "similarity": 0.833,
+      "review": "check"
+    },
+    "ja/mochi/poke": {
+      "sha256": "4dd2252f4b365c9867ad36b8dc0b395e05ff42ddd56d7400dee058d8bc2b2472",
+      "expected": "あっ、見つかっちゃった！",
+      "heard": "あ、見つかっちゃった",
+      "similarity": 0.947,
+      "review": "transcript-match"
+    },
+    "ko/mochi/poke": {
+      "sha256": "5633158613b1b97398f41348830f43fd520586debd177673302128171123238b",
+      "expected": "앗, 나 찾았네!",
+      "heard": "아, 나 찾았네?",
+      "similarity": 0.8,
+      "review": "check"
+    },
+    "es/mochi/poke": {
+      "sha256": "07cc9abab7a6845f8c64ae52571d7d4784c4e09fe727224e5b9afc6cf0eb6cbb",
+      "expected": "¡Hola! ¡Me encontraste!",
+      "heard": "¡Hola! ¡Me encontraste!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "pt-BR/mochi/poke": {
+      "sha256": "1f074e43ad7c05051180fa50b7c9acc71b35891af3cf4a8fc449de71889a8d0e",
+      "expected": "Oi! Você me achou!",
+      "heard": "Oi! Você me achou?",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "fr/mochi/poke": {
+      "sha256": "0acb212bc201ed2a6602d6d94f671da3b1a661557c7cedd98807dc4f1c9d0027",
+      "expected": "Oh ! Bonjour !",
+      "heard": "Oh, bonjour !",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "de/mochi/poke": {
+      "sha256": "9930214fe9da3989c687947f77aea01b97e2702845d84d5f55d832c03938be61",
+      "expected": "Huch! Da bist du ja!",
+      "heard": "Hosch! Da bist du ja!",
+      "similarity": 0.897,
+      "review": "transcript-match"
+    },
+    "en/pip/poke": {
+      "sha256": "fc3af328d0d7332fe7fe4e963093af6edf497a46a7c36458f44ddc4a7a5d6bb1",
+      "expected": "Oh! You found me!",
+      "heard": "Oh! You found me!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "zh-Hans/pip/poke": {
+      "sha256": "d6680444ae47863e4ff6598632fd302393f3bba90549f912e6522909fe47fe32",
+      "expected": "呀，被你发现啦！",
+      "heard": "呀 被你发现了",
+      "similarity": 0.833,
+      "review": "check"
+    },
+    "ja/pip/poke": {
+      "sha256": "9c6340f1e796c9702b848498c9c5e433e341b480f92d8bd44f1fc6ab38e6e9f5",
+      "expected": "あっ、見つかっちゃった！",
+      "heard": "あ、あ、見つかっちゃった",
+      "similarity": 0.9,
+      "review": "transcript-match"
+    },
+    "ko/pip/poke": {
+      "sha256": "c6f68dbd7ab84538690f93bd115bd5086cc2d1a5dc8287f4935d479c2c754a37",
+      "expected": "앗, 나 찾았네!",
+      "heard": "아! 찾았네!",
+      "similarity": 0.667,
+      "review": "check"
+    },
+    "es/pip/poke": {
+      "sha256": "b67a14644b1e257633257104c29ae34636ce8b48402446174282e80ed39b48ef",
+      "expected": "¡Hola! ¡Me encontraste!",
+      "heard": "¡Hola! ¡Y encontraste!",
+      "similarity": 0.909,
+      "review": "transcript-match"
+    },
+    "pt-BR/pip/poke": {
+      "sha256": "afcbc363fc3376170cbaef10fab6f8fdb52f36242922196477aa6a30e23e79b7",
+      "expected": "Oi! Você me achou!",
+      "heard": "Oi! Você me achou?",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "fr/pip/poke": {
+      "sha256": "92d148b8430333ec414dffde6c481b1f905c0875f070030e9c1328dc3141410b",
+      "expected": "Oh ! Bonjour !",
+      "heard": "Oh, bonjour !",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "de/pip/poke": {
+      "sha256": "9cc2a53b413f4faca64863061ec40c1e889296434c17e239a04b49d276f88786",
+      "expected": "Huch! Da bist du ja!",
+      "heard": "Halt! Da bist du ja!",
+      "similarity": 0.786,
+      "review": "check"
+    },
+    "en/pebble/poke": {
+      "sha256": "291a7d7c881e96411bcbb69eb291a3f74a9acf02d7411740befc1fb79644afa9",
+      "expected": "Oh! You found me!",
+      "heard": "Oh! You found me!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "zh-Hans/pebble/poke": {
+      "sha256": "fb91010ffcafe4c9cfa3c264a1a8c3016d767ef10bd48bbed7fbbb4012206c9f",
+      "expected": "呀，被你发现啦！",
+      "heard": "哎呀 被你发现了",
+      "similarity": 0.769,
+      "review": "check"
+    },
+    "ja/pebble/poke": {
+      "sha256": "b14d879f182c26e30db3d74b9b8770c30896c84b62f403837b5ce8662817ad4b",
+      "expected": "あっ、見つかっちゃった！",
+      "heard": "あっ見つかっちゃった",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "ko/pebble/poke": {
+      "sha256": "c1d9847ecd21af431d7ac1109f35b351b674199206cdc8beb42df3a3b396aa52",
+      "expected": "앗, 나 찾았네!",
+      "heard": "아 나 찾았네",
+      "similarity": 0.8,
+      "review": "check"
+    },
+    "es/pebble/poke": {
+      "sha256": "18aa3f8f7362383a9ea4b612dcd26387b40e93e5c878383f9a8e4a8f53bc2b8d",
+      "expected": "¡Hola! ¡Me encontraste!",
+      "heard": "¡Hola! ¡Me encontraste!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "pt-BR/pebble/poke": {
+      "sha256": "eaba36eb9ddd3c05aa3ef8b8f1838d0375c30a7b422f1782987fe5d74a617d42",
+      "expected": "Oi! Você me achou!",
+      "heard": "Oi! Você me achou?",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "fr/pebble/poke": {
+      "sha256": "ae7c656bb0fa6c3364b841160812ed9d68db1bd66f548da68a26c6f1932874de",
+      "expected": "Oh ! Bonjour !",
+      "heard": "Oh, bonjour !",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "de/pebble/poke": {
+      "sha256": "fa30dc09e49dd5292ea434cbbb6d310fad778e8f52a3eb3da55833b8858e39d4",
+      "expected": "Huch! Da bist du ja!",
+      "heard": "Puch! Da bist du ja?",
+      "similarity": 0.929,
+      "review": "transcript-match"
+    },
+    "en/jun/poke": {
+      "sha256": "b250e62363fdb7f8e0cdb01dcdadd82663ed6d6a52d1db665af741557c86d8c3",
+      "expected": "Oh! You found me!",
+      "heard": "Oh, you found me.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "zh-Hans/jun/poke": {
+      "sha256": "68d67f0dff312d175bf7e25305fd603fb73ad604bde480b19513b7f85764943f",
+      "expected": "呀，被你发现啦！",
+      "heard": "呀 被你發現了",
+      "similarity": 0.833,
+      "review": "check"
+    },
+    "ja/jun/poke": {
+      "sha256": "3de98e3f06f4078fc4504cde387c3596ca6ce2f59fb2f6d18b5fb249de20bd07",
+      "expected": "あっ、見つかっちゃった！",
+      "heard": "あっ、見つかっちゃった",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "ko/jun/poke": {
+      "sha256": "bc5d5c4775f9d0fb774369dc099877f420f26ddd41544a610ee3ef758197a7c3",
+      "expected": "앗, 나 찾았네!",
+      "heard": "아, 나 찾았네?",
+      "similarity": 0.8,
+      "review": "check"
+    },
+    "es/jun/poke": {
+      "sha256": "75d68c7560115996cf79e3abe243689da406a8f365e9b10587c12881133e541d",
+      "expected": "¡Hola! ¡Me encontraste!",
+      "heard": "¡Hola! ¿Me encontraste?",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "pt-BR/jun/poke": {
+      "sha256": "5ccf6947b599d84eb18aed0891c26c8d950ff8185a279399219c765ae35226bc",
+      "expected": "Oi! Você me achou!",
+      "heard": "Oi, você me achou?",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "fr/jun/poke": {
+      "sha256": "1a147a0a3f2cdb013b43a30717754a0da5f83cac3eda16b015390b22223d66e5",
+      "expected": "Oh ! Bonjour !",
+      "heard": "Oh, bonjour.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "de/jun/poke": {
+      "sha256": "4a433717cd387ec06b736c33dcead9e459aab3b60ec27b5ed30302f0ffc835e6",
+      "expected": "Huch! Da bist du ja!",
+      "heard": "Hörsch, da bist du ja!",
+      "similarity": 0.867,
+      "review": "transcript-match"
+    },
+    "en/bean/poke": {
+      "sha256": "4c07f6b130037c4d4f004bc59f52e5009d30699ee8a93318db7c97a5b6f05938",
+      "expected": "Oh! You found me!",
+      "heard": "Oh! You found me!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "zh-Hans/bean/poke": {
+      "sha256": "25147743da29002f47215b97926bd3e8092fc2f46125da6c2de674f5cf4aa839",
+      "expected": "呀，被你发现啦！",
+      "heard": "呀,被你发现了",
+      "similarity": 0.833,
+      "review": "check"
+    },
+    "ja/bean/poke": {
+      "sha256": "ba07c419141a4c3785afc32b8512e144834ec33f5ebdab1c5c5341b3485c7ad7",
+      "expected": "あっ、見つかっちゃった！",
+      "heard": "あ、見つかっちゃった!",
+      "similarity": 0.947,
+      "review": "transcript-match"
+    },
+    "ko/bean/poke": {
+      "sha256": "efa0f3875a8e578cabb7c751a120516b0b896e069df7a1b4baf11dd3c5dd00af",
+      "expected": "앗, 나 찾았네!",
+      "heard": "아! 나 찾았네!",
+      "similarity": 0.8,
+      "review": "check"
+    },
+    "es/bean/poke": {
+      "sha256": "bb72d5cf6c6b4320c28a865ec6a97b62c45c8f3906fe5afc9247f5260838114e",
+      "expected": "¡Hola! ¡Me encontraste!",
+      "heard": "¡Hola! ¡Me encontraste!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "pt-BR/bean/poke": {
+      "sha256": "0fc73ba5bdead47dde10663d44bf63ab2c5e5b6d23d648f795af055b698695a1",
+      "expected": "Oi! Você me achou!",
+      "heard": "Oi! Você me achou?",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "fr/bean/poke": {
+      "sha256": "ecea576c55e974f2bf7a75d0fa022af65151206a4f2ad8f4fae24390d7821c40",
+      "expected": "Oh ! Bonjour !",
+      "heard": "Oh, bonjour.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "de/bean/poke": {
+      "sha256": "9d6b341957759eced9af2d49eef51b87bb192ee9ebe7dbf06b99271b1b8fd81a",
+      "expected": "Huch! Da bist du ja!",
+      "heard": "Husch! Da bist du ja!",
+      "similarity": 0.966,
+      "review": "transcript-match"
+    },
+    "en/maple/poke": {
+      "sha256": "e5158f79f29c9f61d700579ee230815d476a1296fec5b65fa4d540d788ea961e",
+      "expected": "Oh! You found me!",
+      "heard": "Oh, you found me!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "zh-Hans/maple/poke": {
+      "sha256": "2bf3222de5ecbc2e0a996b4775b1aa42eddb385a0da327dd2b546d164f9a372d",
+      "expected": "呀，被你发现啦！",
+      "heard": "被你发现了",
+      "similarity": 0.727,
+      "review": "check"
+    },
+    "ja/maple/poke": {
+      "sha256": "29e49e1697185ab8a71be873e589721224a673ca0ec74a40d90f2c04493dc845",
+      "expected": "あっ、見つかっちゃった！",
+      "heard": "あ!見つかっちゃった!",
+      "similarity": 0.947,
+      "review": "transcript-match"
+    },
+    "ko/maple/poke": {
+      "sha256": "3d9f3a37abea9d38a4a69b9138bb2046e1e6cf3ed9ae7958f75c9c25daa179d4",
+      "expected": "앗, 나 찾았네!",
+      "heard": "아, 나 찾았네.",
+      "similarity": 0.8,
+      "review": "check"
+    },
+    "es/maple/poke": {
+      "sha256": "5eb290cd21d5caf5485641f4fd050695fad7c6e43a00f718580fa511321adba6",
+      "expected": "¡Hola! ¡Me encontraste!",
+      "heard": "Hola, me encontraste.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "pt-BR/maple/poke": {
+      "sha256": "aa1f711c23987b4d93204f4fba4151705118c0e1063019d50caf3f2d48005693",
+      "expected": "Oi! Você me achou!",
+      "heard": "Oi, você me achou?",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "fr/maple/poke": {
+      "sha256": "d806d066fedcf1919d088df3679df9cf74153eeaaaa63e640b529cabb9cf7bf4",
+      "expected": "Oh ! Bonjour !",
+      "heard": "Oh, bonjour !",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "de/maple/poke": {
+      "sha256": "28bd21fb7155034b505e47c97302680289343312859b9a578b74306b33c6822c",
+      "expected": "Huch! Da bist du ja!",
+      "heard": "Huch, da bist du ja.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "en/luna/poke": {
+      "sha256": "b6d8c46a2ce4c45280215475e125f0a84fc5abf88ae5fc71a2b8db7d4b8a3e13",
+      "expected": "Oh! You found me!",
+      "heard": "Oh, you found me.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "zh-Hans/luna/poke": {
+      "sha256": "85675ed0932f120e266d896b85cd882318733b9607a18742dc3e9969a6163f61",
+      "expected": "呀，被你发现啦！",
+      "heard": "呀,被你发现了。",
+      "similarity": 0.833,
+      "review": "check"
+    },
+    "ja/luna/poke": {
+      "sha256": "31eecb5633cfe5fb7adb442514d3bfe73f211cb56fe6f9a10ee87bf1225d1583",
+      "expected": "あっ、見つかっちゃった！",
+      "heard": "う、あ、見つかっちゃった",
+      "similarity": 0.9,
+      "review": "transcript-match"
+    },
+    "ko/luna/poke": {
+      "sha256": "676a9b86d89d1a1c97899532e826ea027570b5d87d0b63d6ef7f72efcca4e1eb",
+      "expected": "앗, 나 찾았네!",
+      "heard": "아, 나 찾았네?",
+      "similarity": 0.8,
+      "review": "check"
+    },
+    "es/luna/poke": {
+      "sha256": "3f3f6f06be0d317df7864a6b7d1a2a63f517a8e159cd8e226e8febff5aad77fd",
+      "expected": "¡Hola! ¡Me encontraste!",
+      "heard": "Hola. Me encontraste.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "pt-BR/luna/poke": {
+      "sha256": "5ffe6a2955edeeadce5893ee1376e09ab115d70bb28900cd2c734d31361121f8",
+      "expected": "Oi! Você me achou!",
+      "heard": "Oi, você me achou?",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "fr/luna/poke": {
+      "sha256": "b870d50d4d85001ddfc1492fa5caa2d832d8cfb80cf973a24dba7e224d6a5eac",
+      "expected": "Oh ! Bonjour !",
+      "heard": "Oh, bonjour.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "de/luna/poke": {
+      "sha256": "ef0238e3e2256a9e29598b18ee91a216c5992b07d6219485799cb268e01d225d",
+      "expected": "Huch! Da bist du ja!",
+      "heard": "Huch, da bist du ja.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "en/atlas/poke": {
+      "sha256": "4c5b567bcf3c37a43452cd75982022cbe65e0859a00ec5e58f51e02ed56f4079",
+      "expected": "Oh! You found me!",
+      "heard": "Oh! You found me!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "zh-Hans/atlas/poke": {
+      "sha256": "9ab4acbf4c235458fe723f26a07d6efe90fbf6a065498b4882d8d027b2485093",
+      "expected": "呀，被你发现啦！",
+      "heard": "啊,被你发现了",
+      "similarity": 0.667,
+      "review": "check"
+    },
+    "ja/atlas/poke": {
+      "sha256": "4b9bd566c4c2ad7310ad8002debc978d1bd0d3c5567641a8c284c5822675679a",
+      "expected": "あっ、見つかっちゃった！",
+      "heard": "ああ、見つかっちゃった",
+      "similarity": 0.9,
+      "review": "transcript-match"
+    },
+    "ko/atlas/poke": {
+      "sha256": "2151e4c63a512d832be5438cfeee2013afedd2bf66d4b7bcfd093bcc514aaf24",
+      "expected": "앗, 나 찾았네!",
+      "heard": "아! 나 찾았네!",
+      "similarity": 0.8,
+      "review": "check"
+    },
+    "es/atlas/poke": {
+      "sha256": "e05c650b53fbd27373c6af220fe7afb69b248f74e7346b60b0d0deed6df4dd3c",
+      "expected": "¡Hola! ¡Me encontraste!",
+      "heard": "¡Hola! ¡Me encontraste!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "pt-BR/atlas/poke": {
+      "sha256": "1cdf1214a2ebcf64e87bc58475e69557519aa005e697f0810c030f76b7046115",
+      "expected": "Oi! Você me achou!",
+      "heard": "Oi! Você me achou?",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "fr/atlas/poke": {
+      "sha256": "b255b2f9d07cf886624f6f490728f414a4fd803660c7decdc874801d0ea8ee32",
+      "expected": "Oh ! Bonjour !",
+      "heard": "Oh, bonjour !",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "de/atlas/poke": {
+      "sha256": "b9591a0881cb222692978bb10f761343a34a57fefb79ae84a26d01f91e5981bc",
+      "expected": "Huch! Da bist du ja!",
+      "heard": "Hutsch! Da bist du ja!",
+      "similarity": 0.933,
+      "review": "transcript-match"
+    },
+    "en/wisp/poke": {
+      "sha256": "459b5a74da2069bca0cba76573ee76be5e381a82c394051cedf40fb5dcfc83d8",
+      "expected": "Oh! You found me!",
+      "heard": "Oh! You found me!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "zh-Hans/wisp/poke": {
+      "sha256": "54dcc8c4ce803444cd7d10be1afc7113f2ebd2753f5db7153b7513be73aaaf11",
+      "expected": "呀，被你发现啦！",
+      "heard": "呀!被你发现啦!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "ja/wisp/poke": {
+      "sha256": "2a3811a8f9be021bc7449506ae8e531024626a8c2fee21929ba7ab528d2dcd41",
+      "expected": "あっ、見つかっちゃった！",
+      "heard": "ああ、見つかっちゃった",
+      "similarity": 0.9,
+      "review": "transcript-match"
+    },
+    "ko/wisp/poke": {
+      "sha256": "3089d8e4e9df9546cdf89dea32baad8af6206bdb4a95a2e8af3a34cb78bb0469",
+      "expected": "앗, 나 찾았네!",
+      "heard": "아! 나 찾았네!",
+      "similarity": 0.8,
+      "review": "check"
+    },
+    "es/wisp/poke": {
+      "sha256": "d5126fbb9a67536f565f2cca3c4f7a962563aee1ecc36b9500802320b95cc7ce",
+      "expected": "¡Hola! ¡Me encontraste!",
+      "heard": "¡Hola! ¡Me encontraste!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "pt-BR/wisp/poke": {
+      "sha256": "a28bc1ee2376dfdb3c7dc1f263d310b9a65b5137c6f96e55f0c83abe4b706bb7",
+      "expected": "Oi! Você me achou!",
+      "heard": "Oi! Você me achou?",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "fr/wisp/poke": {
+      "sha256": "d595273f7c61da2174673750ac0e16b86eecbb53c8eda45ad70f00e57fcaf93a",
+      "expected": "Oh ! Bonjour !",
+      "heard": "Oh ! Bonjour !",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "de/wisp/poke": {
+      "sha256": "ba269f7a67325c3bfcecd685a3d8df82fd291aeb7e50531f01d6f01c20bc42fd",
+      "expected": "Huch! Da bist du ja!",
+      "heard": "Husch, da bist du ja!",
+      "similarity": 0.966,
+      "review": "transcript-match"
+    },
+    "en/nova/poke": {
+      "sha256": "1768b5ab54cbbb71966f85c4d415cc90198717ce6973988230f0404703be711e",
+      "expected": "Oh! You found me!",
+      "heard": "Oh, you found me.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "zh-Hans/nova/poke": {
+      "sha256": "3615c51463fb0cfb505c6fb7d8c39eb05dafbd3a4b9bdb51cad5a43e6ee3ecd5",
+      "expected": "呀，被你发现啦！",
+      "heard": "呀 被你發現了",
+      "similarity": 0.833,
+      "review": "check"
+    },
+    "ja/nova/poke": {
+      "sha256": "fec4b18ddf08ce3c7459249a4c31ac437493e115c0b61349cc1843ca4da354d6",
+      "expected": "あっ、見つかっちゃった！",
+      "heard": "見つかっちゃった",
+      "similarity": 0.889,
+      "review": "transcript-match"
+    },
+    "ko/nova/poke": {
+      "sha256": "af2834f3caf6c7ba32671e76a859ef67bfd5d9fefc1975b0552ecaa4fb2ff0db",
+      "expected": "앗, 나 찾았네!",
+      "heard": "아! 나 찾았네!",
+      "similarity": 0.8,
+      "review": "check"
+    },
+    "es/nova/poke": {
+      "sha256": "d537d7dfb463987d9b85d9ba63d30cc3aa21f11251e98188aa77c90148ced31f",
+      "expected": "¡Hola! ¡Me encontraste!",
+      "heard": "¡Hola! ¡Me encontraste!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "pt-BR/nova/poke": {
+      "sha256": "6ecbff6064e3906a9509c9a8227d3dcf8847c55cd6672fa47d61579a8ff89b06",
+      "expected": "Oi! Você me achou!",
+      "heard": "Oi, você me achou?",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "fr/nova/poke": {
+      "sha256": "3ee8a767dc239f8db1545fa63e0c86ace7ef67dec1ef7d78b993d1e0ddd61f09",
+      "expected": "Oh ! Bonjour !",
+      "heard": "Oh, bonjour.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "de/nova/poke": {
+      "sha256": "158b7dd8e05f2e6c72d1fb37dce9b9a34e62eccea327253e2c34c66cbf85dfa5",
+      "expected": "Huch! Da bist du ja!",
+      "heard": "Hatsch! Da bist du ja!",
+      "similarity": 0.867,
+      "review": "transcript-match"
+    },
+    "en/orbit/poke": {
+      "sha256": "ab242754f540aa329c6e4bdfe204af76b49f102e6f501d2185b29d5cb0bc9570",
+      "expected": "Oh! You found me!",
+      "heard": "Oh! You found me!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "zh-Hans/orbit/poke": {
+      "sha256": "6f422f30c40d8d1043147a819473eebf16a04795b4e0e9e005a3ef403198c3c6",
+      "expected": "呀，被你发现啦！",
+      "heard": "呀 被你发现了",
+      "similarity": 0.833,
+      "review": "check"
+    },
+    "ja/orbit/poke": {
+      "sha256": "512ddcf733977826a3d8543c2496dd36fc0591a210ef7707dfc59f6ecf419501",
+      "expected": "あっ、見つかっちゃった！",
+      "heard": "おー、見つかっちゃった!",
+      "similarity": 0.8,
+      "review": "check"
+    },
+    "ko/orbit/poke": {
+      "sha256": "d2d5111e7ec931b15daabfa98c5792de3f9110c2b7dda8e3bc58ea9c90ab6927",
+      "expected": "앗, 나 찾았네!",
+      "heard": "아! 나 찾았네!",
+      "similarity": 0.8,
+      "review": "check"
+    },
+    "es/orbit/poke": {
+      "sha256": "78c85f421dd6a438bcce09f2c7a29f02a2872fc2fb877677381ef051e2b9c667",
+      "expected": "¡Hola! ¡Me encontraste!",
+      "heard": "¡Hola! ¡Me encontraste!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "pt-BR/orbit/poke": {
+      "sha256": "7c115fe1ad4a2f6e53f558f6570649d18b117bf2d74a717dd682b592c424360e",
+      "expected": "Oi! Você me achou!",
+      "heard": "Oi? Você me achou?",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "fr/orbit/poke": {
+      "sha256": "3c8e5223fd500deec79ed07e399de935db2d9b0d32c9bffefb727b9603ed612a",
+      "expected": "Oh ! Bonjour !",
+      "heard": "Oh ! Bonjour !",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "de/orbit/poke": {
+      "sha256": "3cef1484f9f532b94741e6552786196862a1b649fcf455eba27eb56d9575d7b0",
+      "expected": "Huch! Da bist du ja!",
+      "heard": "Kutsch! Da bist du ja!",
+      "similarity": 0.867,
+      "review": "transcript-match"
+    },
+    "en/comet/poke": {
+      "sha256": "18b3ba8ee80770e3c3cec7b98086fe6ac15f058657d72c4a12e08067fb0ac67c",
+      "expected": "Oh! You found me!",
+      "heard": "Oh! You found me!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "zh-Hans/comet/poke": {
+      "sha256": "83f4a1ea0670b00ff9e49aa3d440ab7eec2f805abcd750c9aec8e1884367cf17",
+      "expected": "呀，被你发现啦！",
+      "heard": "呀,被你发现了",
+      "similarity": 0.833,
+      "review": "check"
+    },
+    "ja/comet/poke": {
+      "sha256": "99d7793c35b95fb47f0cde58ab8dec0d7f3379400afc181eafabdbd601705ba9",
+      "expected": "あっ、見つかっちゃった！",
+      "heard": "あ、見つかっちゃった!",
+      "similarity": 0.947,
+      "review": "transcript-match"
+    },
+    "ko/comet/poke": {
+      "sha256": "324c306df239a2ecbb712e5da893540f738c28038f192b31252647c11930eeae",
+      "expected": "앗, 나 찾았네!",
+      "heard": "아! 나 찾았네!",
+      "similarity": 0.8,
+      "review": "check"
+    },
+    "es/comet/poke": {
+      "sha256": "c2fc5cc33501fbe3b451485e5b05824557083e8c7548f1928f3603669ec78481",
+      "expected": "¡Hola! ¡Me encontraste!",
+      "heard": "¡Hola! ¡Me encontraste!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "pt-BR/comet/poke": {
+      "sha256": "3a7624d2e03291bef3f40d8fadcb9960502f0c3bbbd637b9174148e43ca7d5e4",
+      "expected": "Oi! Você me achou!",
+      "heard": "Oi! Você me achou?",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "fr/comet/poke": {
+      "sha256": "4c054056fe8ece466a1633818e62d2065228e241a90295790faea9dbb83102e0",
+      "expected": "Oh ! Bonjour !",
+      "heard": "Oh, bonjour !",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "de/comet/poke": {
+      "sha256": "9355c31e6bfaadf60b8c3b8a637c61676725d79f340a6628d8e6f86c8681067e",
+      "expected": "Huch! Da bist du ja!",
+      "heard": "Husch! Da bist du ja!",
+      "similarity": 0.966,
+      "review": "transcript-match"
     }
   }
 }

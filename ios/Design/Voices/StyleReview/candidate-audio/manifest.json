@@ -1,0 +1,1391 @@
+{
+  "model": "VoxCPM2-bf16",
+  "provenance": "Original synthetic characters; no real person reference or imitation.",
+  "aliases": {
+    "zh-Hant": "zh-Hans"
+  },
+  "clips": {
+    "en/mochi/pause": {
+      "text": "Take a breath. I'll wait.",
+      "hash": "51cc39fb1a05d065ae3c9d9cd5c39203bfd678f75b0a88b64b9fadd78df0fb16",
+      "seed": 1372338683,
+      "duration": 2.327,
+      "sourceDuration": 2.327,
+      "bytes": 20243,
+      "referenceSHA256": "8496126feec63851fc33c81f63eebf56e0a8e409f14fe3cb5bb9ac869067eb88"
+    },
+    "en/mochi/resume": {
+      "text": "Let's keep going!",
+      "hash": "3bb48cd1cacc7a0a68ff3c36dd5156ea2e27ebf1da4d4ccf51ba950b4c74ec34",
+      "seed": 1001688273,
+      "duration": 1.335,
+      "sourceDuration": 1.335,
+      "bytes": 12505,
+      "referenceSHA256": "8496126feec63851fc33c81f63eebf56e0a8e409f14fe3cb5bb9ac869067eb88"
+    },
+    "en/mochi/greeting": {
+      "text": "A little company. A little progress.",
+      "hash": "fa7014774c8611a421032500b32b2ad49c719c7947d533b3b2cc245f8067b2a7",
+      "seed": 4201649271,
+      "duration": 2.364,
+      "sourceDuration": 2.364,
+      "bytes": 20421,
+      "referenceSHA256": "8496126feec63851fc33c81f63eebf56e0a8e409f14fe3cb5bb9ac869067eb88"
+    },
+    "zh-Hans/mochi/pause": {
+      "text": "歇一会儿，我等你。",
+      "hash": "d942b31b3ff4ef3f6d9fd2e266492f24a71c646e489e32f80afebd5ce38af8d3",
+      "seed": 3645027099,
+      "duration": 2.171,
+      "sourceDuration": 2.171,
+      "bytes": 18351,
+      "referenceSHA256": "8496126feec63851fc33c81f63eebf56e0a8e409f14fe3cb5bb9ac869067eb88"
+    },
+    "zh-Hans/mochi/resume": {
+      "text": "好，我们继续！",
+      "hash": "028270662242c3cf8e64e1f38b1a5d05a992ae73e28d5c919bee87b5d01a1364",
+      "seed": 42102886,
+      "duration": 1.496,
+      "sourceDuration": 1.496,
+      "bytes": 12970,
+      "referenceSHA256": "8496126feec63851fc33c81f63eebf56e0a8e409f14fe3cb5bb9ac869067eb88"
+    },
+    "zh-Hans/mochi/greeting": {
+      "text": "一点陪伴，一点进步。",
+      "hash": "739d190458bf145787dfe7e4a340e61eda6dd75b288d7a97975a2c5d9fd1424e",
+      "seed": 1939675396,
+      "duration": 4.322,
+      "sourceDuration": 4.322,
+      "bytes": 36740,
+      "referenceSHA256": "8496126feec63851fc33c81f63eebf56e0a8e409f14fe3cb5bb9ac869067eb88"
+    },
+    "en/jun/pause": {
+      "text": "Take a breath. I'll wait.",
+      "hash": "6e3ef301268a7cbe2b40e303cfedb6ec219203db5ffacd971401d04e4efd31cd",
+      "seed": 1849619201,
+      "duration": 1.784,
+      "sourceDuration": 1.784,
+      "bytes": 16028,
+      "referenceSHA256": "5c2ea0fc3580f58437b1c5382bbfc9bce2b1c48ba3b1469fa91dd7b6576273be"
+    },
+    "en/jun/resume": {
+      "text": "Let's keep going!",
+      "hash": "633511daa68b1f9c5facc2ebd4070e2bcc77c8ca7853bce5db7bd02e54e1cddf",
+      "seed": 1664422362,
+      "duration": 0.964,
+      "sourceDuration": 0.964,
+      "bytes": 8783,
+      "referenceSHA256": "5c2ea0fc3580f58437b1c5382bbfc9bce2b1c48ba3b1469fa91dd7b6576273be"
+    },
+    "en/jun/greeting": {
+      "text": "The café is open. Take your time.",
+      "hash": "afbcb4eeb5f77aec7eb42d01af913bae65a51235568c3e54188fa06ba83f5262",
+      "seed": 2948379886,
+      "duration": 2.442,
+      "sourceDuration": 2.442,
+      "bytes": 21239,
+      "referenceSHA256": "5c2ea0fc3580f58437b1c5382bbfc9bce2b1c48ba3b1469fa91dd7b6576273be"
+    },
+    "zh-Hans/jun/pause": {
+      "text": "歇一会儿，我等你。",
+      "hash": "ff49c2805b340d4a5186beedb92c82f25b8402412a4e3c3fcbd4d54511d2f8b1",
+      "seed": 4283024000,
+      "duration": 1.278,
+      "sourceDuration": 1.278,
+      "bytes": 11104,
+      "referenceSHA256": "5c2ea0fc3580f58437b1c5382bbfc9bce2b1c48ba3b1469fa91dd7b6576273be"
+    },
+    "zh-Hans/jun/resume": {
+      "text": "好，我们继续！",
+      "hash": "71926f1e9848c64959c9a154d42b91811cd245fd26935b1eaa5d3a989d0c3fed",
+      "seed": 1905422110,
+      "duration": 1.291,
+      "sourceDuration": 1.291,
+      "bytes": 11279,
+      "referenceSHA256": "5c2ea0fc3580f58437b1c5382bbfc9bce2b1c48ba3b1469fa91dd7b6576273be"
+    },
+    "zh-Hans/jun/greeting": {
+      "text": "咖啡馆开门啦，慢慢来。",
+      "hash": "6e2ab6f97b3f52c92d47f5f460447ea47073e2775b1d500892325059243fa1a7",
+      "seed": 1848293113,
+      "duration": 2.279,
+      "sourceDuration": 2.279,
+      "bytes": 21445,
+      "referenceSHA256": "5c2ea0fc3580f58437b1c5382bbfc9bce2b1c48ba3b1469fa91dd7b6576273be"
+    },
+    "en/luna/pause": {
+      "text": "Take a breath. I'll wait.",
+      "hash": "f028151466897873a68f65e89d9e79e9c342153a0ea13cf18f37298973a96019",
+      "seed": 4029158676,
+      "duration": 1.618,
+      "sourceDuration": 1.618,
+      "bytes": 15302,
+      "referenceSHA256": "006d0b2d0784976de88df858f3df75b8bbb6c0d3ceba7bde44bf03041f9db5ed"
+    },
+    "en/luna/resume": {
+      "text": "Let's keep going!",
+      "hash": "98aca957225df0dfbb9837b3890ec5bc322fe0ae42b25ca77da153295988183e",
+      "seed": 2561452375,
+      "duration": 0.85,
+      "sourceDuration": 0.85,
+      "bytes": 9017,
+      "referenceSHA256": "006d0b2d0784976de88df858f3df75b8bbb6c0d3ceba7bde44bf03041f9db5ed"
+    },
+    "en/luna/greeting": {
+      "text": "One page closer to the stars.",
+      "hash": "e07cb926c276d498e4ad2104594d98d1afa1dd8e2fd95db1068095238b896919",
+      "seed": 3766270246,
+      "duration": 1.911,
+      "sourceDuration": 1.911,
+      "bytes": 16103,
+      "referenceSHA256": "006d0b2d0784976de88df858f3df75b8bbb6c0d3ceba7bde44bf03041f9db5ed"
+    },
+    "zh-Hans/luna/pause": {
+      "text": "歇一会儿，我等你。",
+      "hash": "9306e2f30f4fdd93b667d5958206cb92bc487a7ef8d2f3968f96fdf6b4fd2c39",
+      "seed": 2466702067,
+      "duration": 1.576,
+      "sourceDuration": 1.576,
+      "bytes": 13124,
+      "referenceSHA256": "006d0b2d0784976de88df858f3df75b8bbb6c0d3ceba7bde44bf03041f9db5ed"
+    },
+    "zh-Hans/luna/resume": {
+      "text": "好，我们继续！",
+      "hash": "dc911b0bd65485fe7df20cca3c947b1715578b03f1ab6624e90a5cf2ab05fb7b",
+      "seed": 3700497163,
+      "duration": 1.532,
+      "sourceDuration": 1.532,
+      "bytes": 14054,
+      "referenceSHA256": "006d0b2d0784976de88df858f3df75b8bbb6c0d3ceba7bde44bf03041f9db5ed"
+    },
+    "zh-Hans/luna/greeting": {
+      "text": "再读一页，离星星更近一点。",
+      "hash": "a72224af5daad6cdd3c188ca255585df73751897365acca3bf9af13496f8d524",
+      "seed": 2804032687,
+      "duration": 2.88,
+      "sourceDuration": 2.88,
+      "bytes": 25662,
+      "referenceSHA256": "006d0b2d0784976de88df858f3df75b8bbb6c0d3ceba7bde44bf03041f9db5ed"
+    },
+    "en/mochi/5": {
+      "text": "Five.",
+      "hash": "f17dfdc901c57af3ddf319b05cfd4f125b1ed0d65ac496beaed642a723a84fbf",
+      "seed": 4051566025,
+      "duration": 0.76,
+      "sourceDuration": 0.89,
+      "bytes": 7271,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0,
+        0.8899999999999999
+      ]
+    },
+    "en/mochi/4": {
+      "text": "Four.",
+      "hash": "f17dfdc901c57af3ddf319b05cfd4f125b1ed0d65ac496beaed642a723a84fbf",
+      "seed": 4051566025,
+      "duration": 0.714,
+      "sourceDuration": 0.714,
+      "bytes": 6843,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0.8899999999999999,
+        1.9500000000000002
+      ]
+    },
+    "en/mochi/3": {
+      "text": "Three.",
+      "hash": "f17dfdc901c57af3ddf319b05cfd4f125b1ed0d65ac496beaed642a723a84fbf",
+      "seed": 4051566025,
+      "duration": 0.76,
+      "sourceDuration": 1.106,
+      "bytes": 7175,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        1.9500000000000002,
+        3.07
+      ]
+    },
+    "en/mochi/2": {
+      "text": "Two.",
+      "hash": "f17dfdc901c57af3ddf319b05cfd4f125b1ed0d65ac496beaed642a723a84fbf",
+      "seed": 4051566025,
+      "duration": 0.623,
+      "sourceDuration": 0.623,
+      "bytes": 6135,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        3.07,
+        4.18
+      ]
+    },
+    "en/mochi/1": {
+      "text": "One.",
+      "hash": "f17dfdc901c57af3ddf319b05cfd4f125b1ed0d65ac496beaed642a723a84fbf",
+      "seed": 4051566025,
+      "duration": 0.686,
+      "sourceDuration": 0.686,
+      "bytes": 6552,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        4.18,
+        5.209708333333333
+      ]
+    },
+    "en/mochi/go": {
+      "text": "Let's begin!",
+      "hash": "b9a28a6540b68d3261c9be9b4c83d792f0a24d4e421c7e50c07d33139edef037",
+      "seed": 3114437221,
+      "duration": 1.431,
+      "sourceDuration": 1.431,
+      "bytes": 12895,
+      "referenceSHA256": "8496126feec63851fc33c81f63eebf56e0a8e409f14fe3cb5bb9ac869067eb88"
+    },
+    "en/mochi/reset": {
+      "text": "A fresh start. We're ready.",
+      "hash": "c0afe1938421c73903f8309279a6c2a69735e1ec1791640841ee1d1ac97243a8",
+      "seed": 3232752019,
+      "duration": 2.062,
+      "sourceDuration": 2.062,
+      "bytes": 17982,
+      "referenceSHA256": "8496126feec63851fc33c81f63eebf56e0a8e409f14fe3cb5bb9ac869067eb88"
+    },
+    "en/mochi/focusComplete": {
+      "text": "Well done! Time for a little break.",
+      "hash": "e57a4ad3c2ff2af5a52b60d14b620f3db041459e9d5b78ffc15d3cf68f8d7d3a",
+      "seed": 3849997011,
+      "duration": 2.984,
+      "sourceDuration": 2.984,
+      "bytes": 27630,
+      "referenceSHA256": "8496126feec63851fc33c81f63eebf56e0a8e409f14fe3cb5bb9ac869067eb88"
+    },
+    "en/mochi/breakComplete": {
+      "text": "Break's over. Ready when you are!",
+      "hash": "ad37b398a5c9f6e7bc734a854db211b73eb251d8e1e844134ae756dd0143e2b6",
+      "seed": 2906108824,
+      "duration": 2.617,
+      "sourceDuration": 2.617,
+      "bytes": 18905,
+      "referenceSHA256": "8496126feec63851fc33c81f63eebf56e0a8e409f14fe3cb5bb9ac869067eb88"
+    },
+    "zh-Hans/mochi/5": {
+      "text": "五。",
+      "hash": "1af617d605b0ca504c1da3b2258fc3fa4965b6243b741329a751c9779cbac65d",
+      "seed": 452335574,
+      "duration": 0.583,
+      "sourceDuration": 0.583,
+      "bytes": 5824,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0,
+        0.5900000000000001
+      ]
+    },
+    "zh-Hans/mochi/4": {
+      "text": "四。",
+      "hash": "1af617d605b0ca504c1da3b2258fc3fa4965b6243b741329a751c9779cbac65d",
+      "seed": 452335574,
+      "duration": 0.714,
+      "sourceDuration": 0.714,
+      "bytes": 6796,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0.5900000000000001,
+        1.67
+      ]
+    },
+    "zh-Hans/mochi/3": {
+      "text": "三。",
+      "hash": "1af617d605b0ca504c1da3b2258fc3fa4965b6243b741329a751c9779cbac65d",
+      "seed": 452335574,
+      "duration": 0.76,
+      "sourceDuration": 1.037,
+      "bytes": 7176,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        1.67,
+        2.74
+      ]
+    },
+    "zh-Hans/mochi/2": {
+      "text": "二。",
+      "hash": "1af617d605b0ca504c1da3b2258fc3fa4965b6243b741329a751c9779cbac65d",
+      "seed": 452335574,
+      "duration": 0.581,
+      "sourceDuration": 0.581,
+      "bytes": 5908,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        2.74,
+        3.65
+      ]
+    },
+    "zh-Hans/mochi/1": {
+      "text": "一。",
+      "hash": "1af617d605b0ca504c1da3b2258fc3fa4965b6243b741329a751c9779cbac65d",
+      "seed": 452335574,
+      "duration": 0.639,
+      "sourceDuration": 0.639,
+      "bytes": 6194,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        3.65,
+        4.6761875
+      ]
+    },
+    "zh-Hans/mochi/go": {
+      "text": "开始吧！",
+      "hash": "b71f5a2004572852417f1edcd386055fc3f32cb55083b7767cd3fced3241f87a",
+      "seed": 3072285216,
+      "duration": 1.288,
+      "sourceDuration": 1.288,
+      "bytes": 11275,
+      "referenceSHA256": "8496126feec63851fc33c81f63eebf56e0a8e409f14fe3cb5bb9ac869067eb88"
+    },
+    "zh-Hans/mochi/reset": {
+      "text": "重新开始，我们准备好啦。",
+      "hash": "54827d0d319bfbf2862c90950bbdba53b70258e4cad3389321073965f50a8782",
+      "seed": 1417837837,
+      "duration": 4.456,
+      "sourceDuration": 4.456,
+      "bytes": 36975,
+      "referenceSHA256": "8496126feec63851fc33c81f63eebf56e0a8e409f14fe3cb5bb9ac869067eb88"
+    },
+    "zh-Hans/mochi/focusComplete": {
+      "text": "做得好！该休息一下啦。",
+      "hash": "e3f6d03d271d682d4278f483b2593e4af8c9e1bae1c6450e312ebea0a3fd1220",
+      "seed": 3824603197,
+      "duration": 2.219,
+      "sourceDuration": 2.219,
+      "bytes": 18757,
+      "referenceSHA256": "8496126feec63851fc33c81f63eebf56e0a8e409f14fe3cb5bb9ac869067eb88"
+    },
+    "zh-Hans/mochi/breakComplete": {
+      "text": "休息结束啦，准备好了就开始吧！",
+      "hash": "b8ecb755b971622b8c79d3fc0c9ed87c34c75fa71e64335600aaa7899b014bff",
+      "seed": 3102521173,
+      "duration": 2.631,
+      "sourceDuration": 2.631,
+      "bytes": 22736,
+      "referenceSHA256": "8496126feec63851fc33c81f63eebf56e0a8e409f14fe3cb5bb9ac869067eb88"
+    },
+    "ja/mochi/5": {
+      "text": "ご。",
+      "hash": "17f78f2f92540423beb755483ceefb2d0ba8ad662aff39d140ebd995034197e0",
+      "seed": 402100015,
+      "duration": 0.352,
+      "sourceDuration": 0.352,
+      "bytes": 4039,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0.8400000000000001,
+        1.28
+      ]
+    },
+    "ja/mochi/4": {
+      "text": "よん。",
+      "hash": "17f78f2f92540423beb755483ceefb2d0ba8ad662aff39d140ebd995034197e0",
+      "seed": 402100015,
+      "duration": 0.59,
+      "sourceDuration": 0.59,
+      "bytes": 5838,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        1.28,
+        1.87
+      ]
+    },
+    "ja/mochi/3": {
+      "text": "さん。",
+      "hash": "17f78f2f92540423beb755483ceefb2d0ba8ad662aff39d140ebd995034197e0",
+      "seed": 402100015,
+      "duration": 0.537,
+      "sourceDuration": 0.537,
+      "bytes": 5521,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        1.87,
+        2.52
+      ]
+    },
+    "ja/mochi/2": {
+      "text": "に。",
+      "hash": "17f78f2f92540423beb755483ceefb2d0ba8ad662aff39d140ebd995034197e0",
+      "seed": 402100015,
+      "duration": 0.52,
+      "sourceDuration": 0.52,
+      "bytes": 5444,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        2.52,
+        3.04
+      ]
+    },
+    "ja/mochi/1": {
+      "text": "いち。",
+      "hash": "17f78f2f92540423beb755483ceefb2d0ba8ad662aff39d140ebd995034197e0",
+      "seed": 402100015,
+      "duration": 0.446,
+      "sourceDuration": 0.446,
+      "bytes": 5320,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        3.04,
+        3.6941041666666665
+      ]
+    },
+    "ja/mochi/go": {
+      "text": "さあ、始めよう！",
+      "hash": "56fc718e515aef2f2e114f7f1ad668631432cec500c6e5bbbe46312fa0ddbb92",
+      "seed": 1459384718,
+      "duration": 1.399,
+      "sourceDuration": 1.399,
+      "bytes": 12443,
+      "referenceSHA256": "8496126feec63851fc33c81f63eebf56e0a8e409f14fe3cb5bb9ac869067eb88"
+    },
+    "ja/mochi/pause": {
+      "text": "ひと息つこう。待ってるね。",
+      "hash": "e3326d12fa8cb6b9b85b1be4e5944f2d309ef960c659ab5f3a9f6c9ca1b77df4",
+      "seed": 3811732754,
+      "duration": 2.835,
+      "sourceDuration": 2.835,
+      "bytes": 24597,
+      "referenceSHA256": "8496126feec63851fc33c81f63eebf56e0a8e409f14fe3cb5bb9ac869067eb88"
+    },
+    "ja/mochi/resume": {
+      "text": "よし、続けよう！",
+      "hash": "cca0556466daf564d1da78b838839f1f62e2107e6aee61395416483e3df6c24f",
+      "seed": 3433059684,
+      "duration": 3.532,
+      "sourceDuration": 3.532,
+      "bytes": 29657,
+      "referenceSHA256": "8496126feec63851fc33c81f63eebf56e0a8e409f14fe3cb5bb9ac869067eb88"
+    },
+    "ja/mochi/reset": {
+      "text": "気持ちを新たに、もう一度。",
+      "hash": "7715b91ba8584cf4349de3aaa8356b4d3debaab20dd4cd26cc81499e82650bd0",
+      "seed": 1997912347,
+      "duration": 3.476,
+      "sourceDuration": 3.476,
+      "bytes": 30298,
+      "referenceSHA256": "8496126feec63851fc33c81f63eebf56e0a8e409f14fe3cb5bb9ac869067eb88"
+    },
+    "ja/mochi/focusComplete": {
+      "text": "おつかれさま！少し休もう。",
+      "hash": "6d8561f0c796c417999f450d906fb14017969e5e7bc33dc7f5c359aa62da5f68",
+      "seed": 1837457904,
+      "duration": 2.665,
+      "sourceDuration": 2.665,
+      "bytes": 22848,
+      "referenceSHA256": "8496126feec63851fc33c81f63eebf56e0a8e409f14fe3cb5bb9ac869067eb88"
+    },
+    "ja/mochi/breakComplete": {
+      "text": "休憩おしまい。準備ができたら始めよう！",
+      "hash": "5152e71b556a7034672b046973e2118eba7a87e56b8030911bb657924d11299e",
+      "seed": 1364387611,
+      "duration": 4.47,
+      "sourceDuration": 4.47,
+      "bytes": 31896,
+      "referenceSHA256": "8496126feec63851fc33c81f63eebf56e0a8e409f14fe3cb5bb9ac869067eb88"
+    },
+    "ja/mochi/greeting": {
+      "text": "そばにいるよ。少しずつ進もう。",
+      "hash": "5e5ce6d7ab7f28e2af3dc04b400458050ea49b2fcc5049470150d78d7d03fee9",
+      "seed": 1583146711,
+      "duration": 3.92,
+      "sourceDuration": 3.92,
+      "bytes": 33349,
+      "referenceSHA256": "8496126feec63851fc33c81f63eebf56e0a8e409f14fe3cb5bb9ac869067eb88"
+    },
+    "ko/mochi/5": {
+      "text": "오.",
+      "hash": "baf878a484fd98541df1bb7718a898ecc05f79ec8e8bafcb341cfac4605d6249",
+      "seed": 3136846997,
+      "duration": 0.42,
+      "sourceDuration": 0.42,
+      "bytes": 4704,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0,
+        0.42
+      ]
+    },
+    "ko/mochi/4": {
+      "text": "사.",
+      "hash": "baf878a484fd98541df1bb7718a898ecc05f79ec8e8bafcb341cfac4605d6249",
+      "seed": 3136846997,
+      "duration": 0.76,
+      "sourceDuration": 1.02,
+      "bytes": 7197,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0.42,
+        1.44
+      ]
+    },
+    "ko/mochi/3": {
+      "text": "삼.",
+      "hash": "baf878a484fd98541df1bb7718a898ecc05f79ec8e8bafcb341cfac4605d6249",
+      "seed": 3136846997,
+      "duration": 0.76,
+      "sourceDuration": 1.36,
+      "bytes": 7220,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        1.44,
+        2.8
+      ]
+    },
+    "ko/mochi/2": {
+      "text": "이.",
+      "hash": "baf878a484fd98541df1bb7718a898ecc05f79ec8e8bafcb341cfac4605d6249",
+      "seed": 3136846997,
+      "duration": 0.76,
+      "sourceDuration": 1.12,
+      "bytes": 7232,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        2.8,
+        3.92
+      ]
+    },
+    "ko/mochi/1": {
+      "text": "일.",
+      "hash": "baf878a484fd98541df1bb7718a898ecc05f79ec8e8bafcb341cfac4605d6249",
+      "seed": 3136846997,
+      "duration": 0.76,
+      "sourceDuration": 1.5,
+      "bytes": 7174,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        3.92,
+        5.42
+      ]
+    },
+    "ko/mochi/go": {
+      "text": "자, 시작하자!",
+      "hash": "c9815370b113bb127514adcb36d10f5f88b3dabcc0ba2b87bdcdf3fc56627c98",
+      "seed": 3380695920,
+      "duration": 1.984,
+      "sourceDuration": 1.984,
+      "bytes": 17441,
+      "referenceSHA256": "8496126feec63851fc33c81f63eebf56e0a8e409f14fe3cb5bb9ac869067eb88"
+    },
+    "ko/mochi/pause": {
+      "text": "잠깐 쉬어. 기다릴게.",
+      "hash": "c4f34f95b40ded8d8e1d168be1167feaaeb3c54b5fe9823ce4c3d6de1dcca444",
+      "seed": 3304279957,
+      "duration": 2.51,
+      "sourceDuration": 2.51,
+      "bytes": 21537,
+      "referenceSHA256": "8496126feec63851fc33c81f63eebf56e0a8e409f14fe3cb5bb9ac869067eb88"
+    },
+    "ko/mochi/resume": {
+      "text": "좋아, 계속해 보자!",
+      "hash": "fc66969bf30f5b6e610cd60e6f235a9f3ca4dccc9bae5137224ca66997cff495",
+      "seed": 4234581659,
+      "duration": 2.456,
+      "sourceDuration": 2.456,
+      "bytes": 19959,
+      "referenceSHA256": "8496126feec63851fc33c81f63eebf56e0a8e409f14fe3cb5bb9ac869067eb88"
+    },
+    "ko/mochi/reset": {
+      "text": "새로운 마음으로 다시 시작하자.",
+      "hash": "c6a2c85e3f5f27e4dfa9259b49b26b1892c4e5b0cf45413b37c32c1397d3d120",
+      "seed": 3332556894,
+      "duration": 2.508,
+      "sourceDuration": 2.508,
+      "bytes": 21094,
+      "referenceSHA256": "8496126feec63851fc33c81f63eebf56e0a8e409f14fe3cb5bb9ac869067eb88"
+    },
+    "ko/mochi/focusComplete": {
+      "text": "잘했어! 이제 잠깐 쉬자.",
+      "hash": "fc53298b0af3b4d6c57956f79870ab9c618633e0b959f78a2a5ce9dc97ed88a5",
+      "seed": 4233308555,
+      "duration": 4.135,
+      "sourceDuration": 4.135,
+      "bytes": 33835,
+      "referenceSHA256": "8496126feec63851fc33c81f63eebf56e0a8e409f14fe3cb5bb9ac869067eb88"
+    },
+    "ko/mochi/breakComplete": {
+      "text": "쉬는 시간 끝! 준비되면 시작하자.",
+      "hash": "b6b72b64531c6a95daecd6052302658f0cd456935faa5f2aece44f94759975ed",
+      "seed": 3065457508,
+      "duration": 3.606,
+      "sourceDuration": 3.606,
+      "bytes": 30642,
+      "referenceSHA256": "8496126feec63851fc33c81f63eebf56e0a8e409f14fe3cb5bb9ac869067eb88"
+    },
+    "ko/mochi/greeting": {
+      "text": "조금씩 함께, 조금씩 앞으로.",
+      "hash": "3f6fae3406aab502e7ee4699195c2beb3ee899bdddb46f142e1b789d79fa65a6",
+      "seed": 1064283700,
+      "duration": 2.56,
+      "sourceDuration": 2.56,
+      "bytes": 22895,
+      "referenceSHA256": "8496126feec63851fc33c81f63eebf56e0a8e409f14fe3cb5bb9ac869067eb88"
+    },
+    "es/mochi/5": {
+      "text": "Cinco.",
+      "hash": "c888a81067ecfe92fc99d30b09bad40ae5bbe9cf3f168b24a610b77e75b13327",
+      "seed": 3364399120,
+      "duration": 0.6,
+      "sourceDuration": 0.6,
+      "bytes": 5993,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0,
+        0.6
+      ]
+    },
+    "es/mochi/4": {
+      "text": "Cuatro.",
+      "hash": "c888a81067ecfe92fc99d30b09bad40ae5bbe9cf3f168b24a610b77e75b13327",
+      "seed": 3364399120,
+      "duration": 0.76,
+      "sourceDuration": 0.879,
+      "bytes": 7158,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0.6,
+        1.48
+      ]
+    },
+    "es/mochi/3": {
+      "text": "Tres.",
+      "hash": "c888a81067ecfe92fc99d30b09bad40ae5bbe9cf3f168b24a610b77e75b13327",
+      "seed": 3364399120,
+      "duration": 0.459,
+      "sourceDuration": 0.459,
+      "bytes": 4911,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        1.48,
+        2.2800000000000002
+      ]
+    },
+    "es/mochi/2": {
+      "text": "Dos.",
+      "hash": "c888a81067ecfe92fc99d30b09bad40ae5bbe9cf3f168b24a610b77e75b13327",
+      "seed": 3364399120,
+      "duration": 0.479,
+      "sourceDuration": 0.479,
+      "bytes": 5070,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        2.2800000000000002,
+        2.9699999999999998
+      ]
+    },
+    "es/mochi/1": {
+      "text": "Uno.",
+      "hash": "c888a81067ecfe92fc99d30b09bad40ae5bbe9cf3f168b24a610b77e75b13327",
+      "seed": 3364399120,
+      "duration": 0.455,
+      "sourceDuration": 0.455,
+      "bytes": 4686,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        2.9699999999999998,
+        3.678875
+      ]
+    },
+    "es/mochi/go": {
+      "text": "¡Vamos a empezar!",
+      "hash": "48bd1c2b94e98280d743350a1b3653a4fc3bfec79aee626fb4a9a5afe27302f6",
+      "seed": 1220353067,
+      "duration": 1.084,
+      "sourceDuration": 1.084,
+      "bytes": 9791,
+      "referenceSHA256": "8496126feec63851fc33c81f63eebf56e0a8e409f14fe3cb5bb9ac869067eb88"
+    },
+    "es/mochi/pause": {
+      "text": "Toma un respiro. Te espero.",
+      "hash": "26c376b5d9569f2e07b2247c61b97efe8ca231434affa5c323d2bb3746c9a1a9",
+      "seed": 650344117,
+      "duration": 2.209,
+      "sourceDuration": 2.209,
+      "bytes": 18958,
+      "referenceSHA256": "8496126feec63851fc33c81f63eebf56e0a8e409f14fe3cb5bb9ac869067eb88"
+    },
+    "es/mochi/resume": {
+      "text": "¡Sigamos adelante!",
+      "hash": "60dbb0a38248ae52795a0cde35a6bd9d81f0f3240845d8fdb41d74fb5e465bd0",
+      "seed": 1625010339,
+      "duration": 1.28,
+      "sourceDuration": 1.28,
+      "bytes": 11425,
+      "referenceSHA256": "8496126feec63851fc33c81f63eebf56e0a8e409f14fe3cb5bb9ac869067eb88"
+    },
+    "es/mochi/reset": {
+      "text": "Empecemos de nuevo, con calma.",
+      "hash": "0bb715e2ed43470dd3ea7b7eed18faafd86e137cba6744b294f1a7658830cbc3",
+      "seed": 196548066,
+      "duration": 3.279,
+      "sourceDuration": 3.279,
+      "bytes": 27297,
+      "referenceSHA256": "8496126feec63851fc33c81f63eebf56e0a8e409f14fe3cb5bb9ac869067eb88"
+    },
+    "es/mochi/focusComplete": {
+      "text": "¡Muy bien! Es hora de descansar un poco.",
+      "hash": "df02354818d50c40ba3d580805b928b0f861f07c9009a6dffc0c438ef0bf4f8b",
+      "seed": 3741463880,
+      "duration": 2.843,
+      "sourceDuration": 2.843,
+      "bytes": 24020,
+      "referenceSHA256": "8496126feec63851fc33c81f63eebf56e0a8e409f14fe3cb5bb9ac869067eb88"
+    },
+    "es/mochi/breakComplete": {
+      "text": "Se acabó el descanso. ¡Cuando quieras!",
+      "hash": "cf8bb562f30f58a1c92015582242083d198aea3c56015912bfaea5ff7b929b87",
+      "seed": 3482039650,
+      "duration": 2.859,
+      "sourceDuration": 2.859,
+      "bytes": 26140,
+      "referenceSHA256": "8496126feec63851fc33c81f63eebf56e0a8e409f14fe3cb5bb9ac869067eb88"
+    },
+    "es/mochi/greeting": {
+      "text": "Un poco de compañía. Un poco de progreso.",
+      "hash": "ec97e183684abd3d204f19754fd4ac3bd0307345c94146a852fdccbbb0dd8336",
+      "seed": 3969376643,
+      "duration": 4.083,
+      "sourceDuration": 4.083,
+      "bytes": 34601,
+      "referenceSHA256": "8496126feec63851fc33c81f63eebf56e0a8e409f14fe3cb5bb9ac869067eb88"
+    },
+    "pt-BR/mochi/5": {
+      "text": "Cinco.",
+      "hash": "92828a4cc8abdf960aae3004c4d88f28bae204154dc0686360d05228dfac18b1",
+      "seed": 2458028620,
+      "duration": 0.76,
+      "sourceDuration": 0.76,
+      "bytes": 7152,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0,
+        0.76
+      ]
+    },
+    "pt-BR/mochi/4": {
+      "text": "Quatro.",
+      "hash": "92828a4cc8abdf960aae3004c4d88f28bae204154dc0686360d05228dfac18b1",
+      "seed": 2458028620,
+      "duration": 0.76,
+      "sourceDuration": 1.12,
+      "bytes": 7867,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0.76,
+        1.8800000000000001
+      ]
+    },
+    "pt-BR/mochi/3": {
+      "text": "Três.",
+      "hash": "92828a4cc8abdf960aae3004c4d88f28bae204154dc0686360d05228dfac18b1",
+      "seed": 2458028620,
+      "duration": 0.76,
+      "sourceDuration": 1.22,
+      "bytes": 7645,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        1.8800000000000001,
+        3.0999999999999996
+      ]
+    },
+    "pt-BR/mochi/2": {
+      "text": "Dois.",
+      "hash": "92828a4cc8abdf960aae3004c4d88f28bae204154dc0686360d05228dfac18b1",
+      "seed": 2458028620,
+      "duration": 0.76,
+      "sourceDuration": 0.96,
+      "bytes": 7397,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        3.0999999999999996,
+        4.0600000000000005
+      ]
+    },
+    "pt-BR/mochi/1": {
+      "text": "Um.",
+      "hash": "92828a4cc8abdf960aae3004c4d88f28bae204154dc0686360d05228dfac18b1",
+      "seed": 2458028620,
+      "duration": 0.76,
+      "sourceDuration": 0.825,
+      "bytes": 7200,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        4.0600000000000005,
+        4.884520833333333
+      ]
+    },
+    "pt-BR/mochi/go": {
+      "text": "Vamos começar!",
+      "hash": "b0c30c0503faff4f8e4b0e815602d4f2dc303b4d01ca9fe9f11e616f47b054c3",
+      "seed": 2965572613,
+      "duration": 1.227,
+      "sourceDuration": 1.227,
+      "bytes": 10502,
+      "referenceSHA256": "8496126feec63851fc33c81f63eebf56e0a8e409f14fe3cb5bb9ac869067eb88"
+    },
+    "pt-BR/mochi/pause": {
+      "text": "Respira um pouco. Eu espero.",
+      "hash": "9f1f6b7426ccd7175bddc601f859cc6f95a1a69245f63c744197b1f017ded0b0",
+      "seed": 2669636468,
+      "duration": 3.574,
+      "sourceDuration": 3.574,
+      "bytes": 30294,
+      "referenceSHA256": "8496126feec63851fc33c81f63eebf56e0a8e409f14fe3cb5bb9ac869067eb88"
+    },
+    "pt-BR/mochi/resume": {
+      "text": "Vamos continuar!",
+      "hash": "776716b22846905de2c8c3f89141de2eb273517ef85929dabbc198cedc152f52",
+      "seed": 2003244722,
+      "duration": 1.598,
+      "sourceDuration": 1.598,
+      "bytes": 13728,
+      "referenceSHA256": "8496126feec63851fc33c81f63eebf56e0a8e409f14fe3cb5bb9ac869067eb88"
+    },
+    "pt-BR/mochi/reset": {
+      "text": "Um novo começo, com calma.",
+      "hash": "a157dc7220b0d19c1531e92544699e677cee94270b4b073f15420fc2f992913f",
+      "seed": 2706889842,
+      "duration": 2.08,
+      "sourceDuration": 2.08,
+      "bytes": 18020,
+      "referenceSHA256": "8496126feec63851fc33c81f63eebf56e0a8e409f14fe3cb5bb9ac869067eb88"
+    },
+    "pt-BR/mochi/focusComplete": {
+      "text": "Muito bem! Hora de descansar um pouco.",
+      "hash": "57ad83e889adc666e518e225b6d620ff5a87c9daf5125c8377e3bb4e11de52a1",
+      "seed": 1470989288,
+      "duration": 3.36,
+      "sourceDuration": 3.36,
+      "bytes": 29620,
+      "referenceSHA256": "8496126feec63851fc33c81f63eebf56e0a8e409f14fe3cb5bb9ac869067eb88"
+    },
+    "pt-BR/mochi/breakComplete": {
+      "text": "O descanso acabou. Vamos quando você quiser!",
+      "hash": "8b9563a350a46aea39d881a91382b18f38c83bad2f5397c24f2cfdf8bd1ce0ce",
+      "seed": 2341823395,
+      "duration": 2.717,
+      "sourceDuration": 2.717,
+      "bytes": 23387,
+      "referenceSHA256": "8496126feec63851fc33c81f63eebf56e0a8e409f14fe3cb5bb9ac869067eb88"
+    },
+    "pt-BR/mochi/greeting": {
+      "text": "Um pouco de companhia. Um pouco de progresso.",
+      "hash": "12511a7ed5ec48069781949783aff3de44b0f5a8bc1f26af7c899d7c2d669d0b",
+      "seed": 307305086,
+      "duration": 3.36,
+      "sourceDuration": 3.36,
+      "bytes": 29313,
+      "referenceSHA256": "8496126feec63851fc33c81f63eebf56e0a8e409f14fe3cb5bb9ac869067eb88"
+    },
+    "fr/mochi/5": {
+      "text": "Cinq.",
+      "hash": "0eec67c7ea1fd226972e4e0ca90bda401e0777d70ab2964a937a0a4d31a27164",
+      "seed": 250374087,
+      "duration": 0.72,
+      "sourceDuration": 0.72,
+      "bytes": 6816,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0,
+        0.72
+      ]
+    },
+    "fr/mochi/4": {
+      "text": "Quatre.",
+      "hash": "0eec67c7ea1fd226972e4e0ca90bda401e0777d70ab2964a937a0a4d31a27164",
+      "seed": 250374087,
+      "duration": 0.76,
+      "sourceDuration": 1.36,
+      "bytes": 7382,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0.72,
+        2.08
+      ]
+    },
+    "fr/mochi/3": {
+      "text": "Trois.",
+      "hash": "0eec67c7ea1fd226972e4e0ca90bda401e0777d70ab2964a937a0a4d31a27164",
+      "seed": 250374087,
+      "duration": 0.76,
+      "sourceDuration": 1.25,
+      "bytes": 7122,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        2.08,
+        3.33
+      ]
+    },
+    "fr/mochi/2": {
+      "text": "Deux.",
+      "hash": "0eec67c7ea1fd226972e4e0ca90bda401e0777d70ab2964a937a0a4d31a27164",
+      "seed": 250374087,
+      "duration": 0.76,
+      "sourceDuration": 1.09,
+      "bytes": 7089,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        3.33,
+        4.42
+      ]
+    },
+    "fr/mochi/1": {
+      "text": "Un.",
+      "hash": "0eec67c7ea1fd226972e4e0ca90bda401e0777d70ab2964a937a0a4d31a27164",
+      "seed": 250374087,
+      "duration": 0.76,
+      "sourceDuration": 1.05,
+      "bytes": 7240,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        4.42,
+        5.470083333333333
+      ]
+    },
+    "fr/mochi/go": {
+      "text": "C'est parti !",
+      "hash": "e28b3569948241ac8973c40d412181a271fd2db84b3aa5a6d6595441d032a9ef",
+      "seed": 3800773993,
+      "duration": 1.12,
+      "sourceDuration": 1.12,
+      "bytes": 9913,
+      "referenceSHA256": "8496126feec63851fc33c81f63eebf56e0a8e409f14fe3cb5bb9ac869067eb88"
+    },
+    "fr/mochi/pause": {
+      "text": "Fais une pause. Je t'attends.",
+      "hash": "62488e7f497f5eca78841ac871f2af8a9f70677d5137374a92cc65e96db2d320",
+      "seed": 1648922239,
+      "duration": 3.301,
+      "sourceDuration": 3.301,
+      "bytes": 27987,
+      "referenceSHA256": "8496126feec63851fc33c81f63eebf56e0a8e409f14fe3cb5bb9ac869067eb88"
+    },
+    "fr/mochi/resume": {
+      "text": "On continue !",
+      "hash": "89768b4c0edd8e168712eec6adf0eddb75a86012d9f788aa778f6b003ed7637a",
+      "seed": 2306247500,
+      "duration": 1.089,
+      "sourceDuration": 1.089,
+      "bytes": 10036,
+      "referenceSHA256": "8496126feec63851fc33c81f63eebf56e0a8e409f14fe3cb5bb9ac869067eb88"
+    },
+    "fr/mochi/reset": {
+      "text": "On repart du bon pied.",
+      "hash": "e529c0a764539dea579e9dfe782432edffd61debb3b129181bf8f883b7234a91",
+      "seed": 3844718759,
+      "duration": 2.008,
+      "sourceDuration": 2.008,
+      "bytes": 17215,
+      "referenceSHA256": "8496126feec63851fc33c81f63eebf56e0a8e409f14fe3cb5bb9ac869067eb88"
+    },
+    "fr/mochi/focusComplete": {
+      "text": "Bravo ! C'est l'heure d'une petite pause.",
+      "hash": "e289c3724b5f227895f23114f9fd87d75ca94922eceb293388daca415723912d",
+      "seed": 3800679282,
+      "duration": 1.92,
+      "sourceDuration": 1.92,
+      "bytes": 17124,
+      "referenceSHA256": "8496126feec63851fc33c81f63eebf56e0a8e409f14fe3cb5bb9ac869067eb88"
+    },
+    "fr/mochi/breakComplete": {
+      "text": "La pause est finie. On reprend quand tu veux !",
+      "hash": "e1b67839d03eec1582e6a835def0ab8f7b9c7b3a2666a0210e17b4b344a3dc07",
+      "seed": 3786831929,
+      "duration": 2.866,
+      "sourceDuration": 2.866,
+      "bytes": 25030,
+      "referenceSHA256": "8496126feec63851fc33c81f63eebf56e0a8e409f14fe3cb5bb9ac869067eb88"
+    },
+    "fr/mochi/greeting": {
+      "text": "Un peu de compagnie. Un peu de progrès.",
+      "hash": "784d7e2bbc255dd77c50075f1e522a9d87425a70f2c4b05d9abb4e2ec6bb699e",
+      "seed": 2018344491,
+      "duration": 3.147,
+      "sourceDuration": 3.147,
+      "bytes": 27043,
+      "referenceSHA256": "8496126feec63851fc33c81f63eebf56e0a8e409f14fe3cb5bb9ac869067eb88"
+    },
+    "de/mochi/5": {
+      "text": "Fünf.",
+      "hash": "5f292ca4aa168e6cd4335456c5821e325b0d62b14dd832f7af244f35d1401c67",
+      "seed": 1596533924,
+      "duration": 0.64,
+      "sourceDuration": 0.64,
+      "bytes": 6337,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0,
+        0.64
+      ]
+    },
+    "de/mochi/4": {
+      "text": "Vier.",
+      "hash": "5f292ca4aa168e6cd4335456c5821e325b0d62b14dd832f7af244f35d1401c67",
+      "seed": 1596533924,
+      "duration": 0.71,
+      "sourceDuration": 0.71,
+      "bytes": 6891,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        0.64,
+        1.35
+      ]
+    },
+    "de/mochi/3": {
+      "text": "Drei.",
+      "hash": "5f292ca4aa168e6cd4335456c5821e325b0d62b14dd832f7af244f35d1401c67",
+      "seed": 1596533924,
+      "duration": 0.737,
+      "sourceDuration": 0.737,
+      "bytes": 7204,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        1.35,
+        2.1399999999999997
+      ]
+    },
+    "de/mochi/2": {
+      "text": "Zwei.",
+      "hash": "5f292ca4aa168e6cd4335456c5821e325b0d62b14dd832f7af244f35d1401c67",
+      "seed": 1596533924,
+      "duration": 0.508,
+      "sourceDuration": 0.508,
+      "bytes": 5188,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        2.1399999999999997,
+        2.8200000000000003
+      ]
+    },
+    "de/mochi/1": {
+      "text": "Eins.",
+      "hash": "5f292ca4aa168e6cd4335456c5821e325b0d62b14dd832f7af244f35d1401c67",
+      "seed": 1596533924,
+      "duration": 0.76,
+      "sourceDuration": 0.81,
+      "bytes": 7207,
+      "method": "context-countdown-v1",
+      "source": "countdown.wav",
+      "bounds": [
+        2.8200000000000003,
+        3.6300833333333333
+      ]
+    },
+    "de/mochi/go": {
+      "text": "Los geht's!",
+      "hash": "4c700c560b9f398629d1e754f53c6170e21f686e9a38e5a4c2cb15b8eeef308e",
+      "seed": 1282411606,
+      "duration": 1.424,
+      "sourceDuration": 1.424,
+      "bytes": 12223,
+      "referenceSHA256": "8496126feec63851fc33c81f63eebf56e0a8e409f14fe3cb5bb9ac869067eb88"
+    },
+    "de/mochi/pause": {
+      "text": "Atme kurz durch. Ich warte auf dich.",
+      "hash": "fb659ba66d82db6ccec0d9c984a4642c52656a6a050d7acb8703df7791dbba50",
+      "seed": 4217740198,
+      "duration": 4.64,
+      "sourceDuration": 4.64,
+      "bytes": 39602,
+      "referenceSHA256": "8496126feec63851fc33c81f63eebf56e0a8e409f14fe3cb5bb9ac869067eb88"
+    },
+    "de/mochi/resume": {
+      "text": "Weiter geht's!",
+      "hash": "7fa89803bd8303ba8b22a2f5846450901c9d1f34b377a0007f3f74788725b9fa",
+      "seed": 2141755395,
+      "duration": 0.903,
+      "sourceDuration": 0.903,
+      "bytes": 8294,
+      "referenceSHA256": "8496126feec63851fc33c81f63eebf56e0a8e409f14fe3cb5bb9ac869067eb88"
+    },
+    "de/mochi/reset": {
+      "text": "Ein frischer Start. Wir sind bereit.",
+      "hash": "d0540fc7777d75fc72119074dd7aa95b08e9a014d7a6db55eb1083255f994b12",
+      "seed": 3495169991,
+      "duration": 2.714,
+      "sourceDuration": 2.714,
+      "bytes": 23593,
+      "referenceSHA256": "8496126feec63851fc33c81f63eebf56e0a8e409f14fe3cb5bb9ac869067eb88"
+    },
+    "de/mochi/focusComplete": {
+      "text": "Gut gemacht! Zeit für eine kleine Pause.",
+      "hash": "417cc1ed5565b5a332c7b1a4e790e7ff83ad6941c4f92261e54dbe30d2cc4deb",
+      "seed": 1098695149,
+      "duration": 3.52,
+      "sourceDuration": 3.52,
+      "bytes": 31354,
+      "referenceSHA256": "8496126feec63851fc33c81f63eebf56e0a8e409f14fe3cb5bb9ac869067eb88"
+    },
+    "de/mochi/breakComplete": {
+      "text": "Die Pause ist vorbei. Bereit, wenn du es bist!",
+      "hash": "7b488e8d2af7b940b81481bf8008268f762119d62df25198ae9f5de5da7f91e9",
+      "seed": 2068352653,
+      "duration": 3.334,
+      "sourceDuration": 3.334,
+      "bytes": 28575,
+      "referenceSHA256": "8496126feec63851fc33c81f63eebf56e0a8e409f14fe3cb5bb9ac869067eb88"
+    },
+    "en/pebble/pause": {
+      "text": "Take a breath. I'll wait.",
+      "hash": "f8b0188f768b43c5267ba3560ad19a4e84494a6531e49056b3e9e0aa6b78432b",
+      "seed": 4172290191,
+      "duration": 1.396,
+      "sourceDuration": 1.396,
+      "bytes": 12381,
+      "referenceSHA256": "a771216a99581644c1979e7922b82f5936a88078f8164f220687a2848d7e5915"
+    },
+    "en/pebble/resume": {
+      "text": "Let's keep going!",
+      "hash": "3cd2e6f8e9e8df815d25b22f0ccfa17cdb320423e7ac02c68b31e8d778625339",
+      "seed": 1020454648,
+      "duration": 0.713,
+      "sourceDuration": 0.713,
+      "bytes": 6753,
+      "referenceSHA256": "a771216a99581644c1979e7922b82f5936a88078f8164f220687a2848d7e5915"
+    },
+    "en/pebble/greeting": {
+      "text": "One little ripple at a time.",
+      "hash": "975a2af8f20471a03a5fa7b7d0cb6d58758ec63cb03dbf9a20d4bfaa328feb7c",
+      "seed": 2539268856,
+      "duration": 1.597,
+      "sourceDuration": 1.597,
+      "bytes": 14901,
+      "referenceSHA256": "a771216a99581644c1979e7922b82f5936a88078f8164f220687a2848d7e5915"
+    },
+    "zh-Hans/pebble/pause": {
+      "text": "歇一会儿，我等你。",
+      "hash": "d1a87b0f5e299b37392a50ea17ff049091d93f31aea080d185290c8cc04e2caa",
+      "seed": 3517479695,
+      "duration": 1.302,
+      "sourceDuration": 1.302,
+      "bytes": 11487,
+      "referenceSHA256": "a771216a99581644c1979e7922b82f5936a88078f8164f220687a2848d7e5915"
+    },
+    "zh-Hans/pebble/resume": {
+      "text": "好，我们继续！",
+      "hash": "05d8dfaafd696aa925f9862d6d061eac4d42bde04086e849403d622b0a8361bb",
+      "seed": 98099114,
+      "duration": 1.151,
+      "sourceDuration": 1.151,
+      "bytes": 10121,
+      "referenceSHA256": "a771216a99581644c1979e7922b82f5936a88078f8164f220687a2848d7e5915"
+    },
+    "zh-Hans/pebble/greeting": {
+      "text": "慢慢来，我陪着你。",
+      "hash": "d3f0267994553a1ebfbdd82c65e2efb88c40d154f4b271c2c01186d3736312d8",
+      "seed": 3555731065,
+      "duration": 1.35,
+      "sourceDuration": 1.35,
+      "bytes": 11784,
+      "referenceSHA256": "a771216a99581644c1979e7922b82f5936a88078f8164f220687a2848d7e5915",
+      "instruction": "Speak Mandarin Chinese naturally and clearly, with a soft warm smile."
+    },
+    "en/bean/pause": {
+      "text": "Take a breath. I'll wait.",
+      "hash": "2fa4fe6477d387f509b1799fff47cdc2cf61a2b4e7b384d1a80897f2bb965ecd",
+      "seed": 799342180,
+      "duration": 1.6,
+      "sourceDuration": 1.6,
+      "bytes": 14361,
+      "referenceSHA256": "f963ad23b316c23a2417bb5a2cbcc0380c432d34e133b16c28d473eb8a5cc4e8"
+    },
+    "en/bean/resume": {
+      "text": "Let's keep going!",
+      "hash": "b7274f51186c95d56cbc3d8529095588c5059888e3c74ee17df8d8cc32bdc477",
+      "seed": 3072806737,
+      "duration": 1.12,
+      "sourceDuration": 1.12,
+      "bytes": 9744,
+      "referenceSHA256": "f963ad23b316c23a2417bb5a2cbcc0380c432d34e133b16c28d473eb8a5cc4e8"
+    },
+    "en/bean/greeting": {
+      "text": "This seat beside you is taken.",
+      "hash": "7ad01f9b4b6860e7a36fc6b6f49549241cdf94b00c98429df9c0f1e0d3f52147",
+      "seed": 2060459931,
+      "duration": 1.6,
+      "sourceDuration": 1.6,
+      "bytes": 15162,
+      "referenceSHA256": "f963ad23b316c23a2417bb5a2cbcc0380c432d34e133b16c28d473eb8a5cc4e8"
+    },
+    "zh-Hans/bean/pause": {
+      "text": "歇一会儿，我等你。",
+      "hash": "7af446ddd4220eecce0c7b62fcfaa510e80ef5cdc84396c71d9b1bffdc09a8a1",
+      "seed": 2062829277,
+      "duration": 1.168,
+      "sourceDuration": 1.168,
+      "bytes": 10485,
+      "referenceSHA256": "f963ad23b316c23a2417bb5a2cbcc0380c432d34e133b16c28d473eb8a5cc4e8"
+    },
+    "zh-Hans/bean/resume": {
+      "text": "好，我们继续！",
+      "hash": "91f5ed3773b320e278312b48aad90dd009cc41c579b12aad1fead352942acab2",
+      "seed": 2448813367,
+      "duration": 1.511,
+      "sourceDuration": 1.511,
+      "bytes": 13143,
+      "referenceSHA256": "f963ad23b316c23a2417bb5a2cbcc0380c432d34e133b16c28d473eb8a5cc4e8"
+    },
+    "zh-Hans/bean/greeting": {
+      "text": "你旁边的位置，我占好啦。",
+      "hash": "58d02cae8dfa780e343dcac341e6048f44d01cb4cd43bcdb24c0ec6cc4d8daf2",
+      "seed": 1492037940,
+      "duration": 1.668,
+      "sourceDuration": 1.668,
+      "bytes": 14870,
+      "referenceSHA256": "f963ad23b316c23a2417bb5a2cbcc0380c432d34e133b16c28d473eb8a5cc4e8"
+    },
+    "en/maple/pause": {
+      "text": "Take a breath. I'll wait.",
+      "hash": "3467ef518b88a0cb0799ced4ad9ef0f8e403e52dbd402ca79a8cf6b5276c1f68",
+      "seed": 879226705,
+      "duration": 1.376,
+      "sourceDuration": 1.376,
+      "bytes": 12653,
+      "referenceSHA256": "18a787a33d1122ab3fe67491fa07c731b21b75f71cb2ddaa35af2cbfc76a5337"
+    },
+    "en/maple/resume": {
+      "text": "Let's keep going!",
+      "hash": "4550d9df3d1f303256b64d264189d3da14775f18b855d101a0fe6bd1c01eba26",
+      "seed": 1162926559,
+      "duration": 1.099,
+      "sourceDuration": 1.099,
+      "bytes": 9915,
+      "referenceSHA256": "18a787a33d1122ab3fe67491fa07c731b21b75f71cb2ddaa35af2cbfc76a5337"
+    },
+    "en/maple/greeting": {
+      "text": "A little focus, fresh from the oven.",
+      "hash": "0225fa54576bdb57fb80bbed702aa57a18d22367a24e761262e9c77bb39f9046",
+      "seed": 36043348,
+      "duration": 2.35,
+      "sourceDuration": 2.35,
+      "bytes": 20686,
+      "referenceSHA256": "18a787a33d1122ab3fe67491fa07c731b21b75f71cb2ddaa35af2cbfc76a5337"
+    },
+    "zh-Hans/maple/pause": {
+      "text": "歇一会儿，我等你。",
+      "hash": "2332306b97dd26965e8df54a422f8da1cbc148008461bf289c8dbf5b60c4718e",
+      "seed": 590491755,
+      "duration": 1.492,
+      "sourceDuration": 1.492,
+      "bytes": 13822,
+      "referenceSHA256": "18a787a33d1122ab3fe67491fa07c731b21b75f71cb2ddaa35af2cbfc76a5337",
+      "instruction": "Speak Mandarin Chinese naturally and clearly, gently playful and reassuring."
+    },
+    "zh-Hans/maple/resume": {
+      "text": "好，我们继续！",
+      "hash": "b8fe8216396a1a90d3397c3fa784070804f56d65140fe6ad385d171bf1fe4495",
+      "seed": 3103687190,
+      "duration": 1.657,
+      "sourceDuration": 1.657,
+      "bytes": 14833,
+      "referenceSHA256": "18a787a33d1122ab3fe67491fa07c731b21b75f71cb2ddaa35af2cbfc76a5337"
+    },
+    "zh-Hans/maple/greeting": {
+      "text": "新鲜面包出炉啦，一起加油吧。",
+      "hash": "5090c4b9c1ca889a43f0b2936421270dcc93d452420171907bedc831ded316cd",
+      "seed": 1351664825,
+      "duration": 2.523,
+      "sourceDuration": 2.523,
+      "bytes": 24095,
+      "referenceSHA256": "18a787a33d1122ab3fe67491fa07c731b21b75f71cb2ddaa35af2cbfc76a5337",
+      "instruction": "Speak Mandarin Chinese naturally and clearly, gently playful and reassuring."
+    },
+    "en/comet/pause": {
+      "text": "Take a breath. I'll wait.",
+      "hash": "45d5d4d8c3b9cf39a303f0bb732ee44e02db11b75b896ed85220a2010277c4ef",
+      "seed": 1171641560,
+      "duration": 1.684,
+      "sourceDuration": 1.684,
+      "bytes": 15865,
+      "referenceSHA256": "ac190091c9efafd45f10b83b06c6a831d9a7c02450c73d2ea37eba409046081a"
+    },
+    "en/comet/resume": {
+      "text": "Let's keep going!",
+      "hash": "3813abf3d4981ff4eec2f5cd91102eff339ff8eed420f60cdb1c9fd26fb5f013",
+      "seed": 940813299,
+      "duration": 1.276,
+      "sourceDuration": 1.276,
+      "bytes": 12001,
+      "referenceSHA256": "ac190091c9efafd45f10b83b06c6a831d9a7c02450c73d2ea37eba409046081a"
+    },
+    "en/comet/greeting": {
+      "text": "One small delivery. One big adventure.",
+      "hash": "e899d6131c987114f67bac01078cd8e52a43e61485c71d78a6c84b73c9e1ab68",
+      "seed": 3902395923,
+      "duration": 3.52,
+      "sourceDuration": 3.52,
+      "bytes": 29949,
+      "referenceSHA256": "ac190091c9efafd45f10b83b06c6a831d9a7c02450c73d2ea37eba409046081a"
+    },
+    "zh-Hans/comet/pause": {
+      "text": "歇一会儿，我等你。",
+      "hash": "51ddeb88df571c3181ee35feccdd0373f906d6bf763fb8c95e7163c6ea52ef2c",
+      "seed": 1373498248,
+      "duration": 1.374,
+      "sourceDuration": 1.374,
+      "bytes": 11862,
+      "referenceSHA256": "ac190091c9efafd45f10b83b06c6a831d9a7c02450c73d2ea37eba409046081a"
+    },
+    "zh-Hans/comet/resume": {
+      "text": "好，我们继续！",
+      "hash": "b3f772864c89d98c127492c3f17e8a143e4ef153e6d31e24bb0e46c80008d0c2",
+      "seed": 3019338374,
+      "duration": 1.338,
+      "sourceDuration": 1.338,
+      "bytes": 11441,
+      "referenceSHA256": "ac190091c9efafd45f10b83b06c6a831d9a7c02450c73d2ea37eba409046081a"
+    },
+    "zh-Hans/comet/greeting": {
+      "text": "送出一个小包裹，开启一场大冒险。",
+      "hash": "c4266e8020dad25b122891161eabede86472df448c3e747fbba3c9d3ca1d10de",
+      "seed": 3290852992,
+      "duration": 3.507,
+      "sourceDuration": 3.507,
+      "bytes": 31195,
+      "referenceSHA256": "ac190091c9efafd45f10b83b06c6a831d9a7c02450c73d2ea37eba409046081a"
+    }
+  }
+}

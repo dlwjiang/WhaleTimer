@@ -1,0 +1,55 @@
+{
+  "note": "Rough autocorrelation diagnostic only; octave errors are possible. Higher estimated pitch does not establish character fit or acting quality.",
+  "characters": {
+    "mochi": {
+      "original": {
+        "medianEstimatedHz": 225.4,
+        "voicedFrames": 421
+      },
+      "candidate": {
+        "medianEstimatedHz": 242.4,
+        "voicedFrames": 542
+      }
+    },
+    "jun": {
+      "original": {
+        "medianEstimatedHz": 102.6,
+        "voicedFrames": 293
+      },
+      "candidate": {
+        "medianEstimatedHz": 195.1,
+        "voicedFrames": 320
+      }
+    },
+    "luna": {
+      "original": {
+        "medianEstimatedHz": 153.8,
+        "voicedFrames": 443
+      },
+      "candidate": {
+        "medianEstimatedHz": 344.1,
+        "voicedFrames": 272
+      }
+    },
+    "atlas": {
+      "original": {
+        "medianEstimatedHz": 197.5,
+        "voicedFrames": 372
+      },
+      "candidate": {
+        "medianEstimatedHz": 250.0,
+        "voicedFrames": 314
+      }
+    },
+    "nova": {
+      "original": {
+        "medianEstimatedHz": 192.8,
+        "voicedFrames": 315
+      },
+      "candidate": {
+        "medianEstimatedHz": 400.0,
+        "voicedFrames": 384
+      }
+    }
+  }
+}

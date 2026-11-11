@@ -1,0 +1,27 @@
+{
+  "method": "Decode actual bundled AAC digits, assemble one-second slots, then recognize 5→1 with local Whisper. Human pronunciation review remains separate.",
+  "sequences": {
+    "en/mochi": {
+      "sha256": "41e25478f7025badf6d2d0b19a60697856c4b3e01223e89916432159d3ddd9d4",
+      "recognized": [
+        " Five,",
+        " four,",
+        " three,",
+        " two,",
+        " one."
+      ],
+      "status": "verified"
+    },
+    "zh-Hans/mochi": {
+      "sha256": "c2ce34a3b1d97d5437d4b455d277865137a7395a9a95ede8d8b1f9172ec44fcb",
+      "recognized": [
+        "五、",
+        "四、",
+        "三、",
+        "二、",
+        "一。"
+      ],
+      "status": "verified"
+    }
+  }
+}

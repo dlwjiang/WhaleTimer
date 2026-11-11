@@ -1,0 +1,108 @@
+{
+  "source": "ios/Design/comet-pixel-sheet.png",
+  "rows": 2,
+  "cols": 2,
+  "mode": "lines",
+  "all_separators_detected": true,
+  "x_bounds": [
+    [
+      0,
+      9
+    ],
+    [
+      618,
+      636
+    ],
+    [
+      1245,
+      1254
+    ]
+  ],
+  "y_bounds": [
+    [
+      0,
+      8
+    ],
+    [
+      617,
+      634
+    ],
+    [
+      1243,
+      1254
+    ]
+  ],
+  "cells": [
+    {
+      "row": 0,
+      "col": 0,
+      "box": [
+        15,
+        14,
+        612,
+        611
+      ],
+      "method": "native-alpha",
+      "name": "idle",
+      "file": "ios/Design/comet-pixel/idle.png",
+      "size": [
+        640,
+        640
+      ]
+    },
+    {
+      "row": 0,
+      "col": 1,
+      "box": [
+        642,
+        14,
+        1239,
+        611
+      ],
+      "method": "native-alpha",
+      "name": "focus",
+      "file": "ios/Design/comet-pixel/focus.png",
+      "size": [
+        640,
+        640
+      ]
+    },
+    {
+      "row": 1,
+      "col": 0,
+      "box": [
+        15,
+        640,
+        612,
+        1237
+      ],
+      "method": "native-alpha",
+      "name": "rest",
+      "file": "ios/Design/comet-pixel/rest.png",
+      "size": [
+        640,
+        640
+      ]
+    },
+    {
+      "row": 1,
+      "col": 1,
+      "box": [
+        642,
+        640,
+        1239,
+        1237
+      ],
+      "method": "native-alpha",
+      "name": "happy",
+      "file": "ios/Design/comet-pixel/happy.png",
+      "size": [
+        640,
+        640
+      ]
+    }
+  ],
+  "empty_cells": [],
+  "clipped_cells": [],
+  "contact_sheet": "ios/Design/comet-pixel/_contact.png"
+}

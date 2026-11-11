@@ -1,0 +1,532 @@
+{
+  "version": 1,
+  "language": "en",
+  "text": "Hi! I'm right here. Let's do one little thing together. Ready? Here we go!",
+  "characters": [
+    {
+      "id": "mochi",
+      "name": "Mochi",
+      "candidates": [
+        {
+          "id": "mochi-a",
+          "letter": "A",
+          "name": "Bell kitten",
+          "description": "Tiny, sparkly and excited",
+          "engine": "qwen",
+          "instruction": "A tiny female cartoon kitten with a very high, clear bell-like voice, little chirping vowel lifts and quick delighted bursts. Youthful kawaii mascot acting, sweet eager curiosity, crisp small consonants. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises."
+        },
+        {
+          "id": "mochi-b",
+          "letter": "B",
+          "name": "Sleepy plush",
+          "description": "Round, cuddly and unhurried",
+          "engine": "qwen",
+          "instruction": "A small boyish plush kitten voice, rounded and hollow like a soft toy, slightly sleepy and gently nasal. Short cushioned syllables, slow cozy pauses, a shy smile; youthful, tender and very cute. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises."
+        },
+        {
+          "id": "mochi-c",
+          "letter": "C",
+          "name": "Cheeky squeak",
+          "description": "Nasal, mischievous and bouncy",
+          "engine": "vox",
+          "instruction": "A tiny androgynous cartoon cat with a thin squeaky nasal timbre, playful mischievous confidence and springy clipped timing. Comic upward scoops and tiny gravelly edges, adorable little creature energy. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises."
+        },
+        {
+          "id": "mochi-d",
+          "letter": "D",
+          "name": "Cloud fairy",
+          "description": "Airy, delicate and gentle",
+          "engine": "vox",
+          "instruction": "A miniature feminine cat fairy with an unusually light airy flute-like soprano, soft breath at the start of words and floating gentle phrasing. Tender, youthful and magical, clearly spoken at normal audible volume. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises."
+        }
+      ]
+    },
+    {
+      "id": "pip",
+      "name": "Pip",
+      "candidates": [
+        {
+          "id": "pip-a",
+          "letter": "A",
+          "name": "Garden sprite",
+          "description": "Sparkly anime curiosity",
+          "engine": "qwen",
+          "instruction": "A tiny cheerful anime garden girl with a high silver soprano, bright forward resonance and fast curious rising intonation. Youthful exuberance and tiny precise consonants, sweet sparkling kawaii delivery. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises."
+        },
+        {
+          "id": "pip-b",
+          "letter": "B",
+          "name": "Little adventurer",
+          "description": "Boyish, brisk and confident",
+          "engine": "qwen",
+          "instruction": "A youthful tomboy cartoon apprentice with a small bright reedy voice, smiling nasal twang and brisk confident little beats. Playfully scrappy rather than elegant, cute excited conversational delivery. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises."
+        },
+        {
+          "id": "pip-c",
+          "letter": "C",
+          "name": "Dewdrop fairy",
+          "description": "Floaty, breathy and delicate",
+          "engine": "vox",
+          "instruction": "A miniature flower fairy girl with a thin airy high voice, delicate breathy edges and dreamy slow flowing phrases. A shy smile and gentle wonder, very youthful and soft but every word audible. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises."
+        },
+        {
+          "id": "pip-d",
+          "letter": "D",
+          "name": "Budding bean",
+          "description": "Round, bashful and soft",
+          "engine": "vox",
+          "instruction": "A small feminine plush-toy apprentice with a round pillowy voice, slightly muffled warm vowels and hesitant sweet little pauses. Childlike kawaii animation, a bashful gentle lilt, cozy and reassuring. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises."
+        }
+      ]
+    },
+    {
+      "id": "pebble",
+      "name": "Pebble",
+      "candidates": [
+        {
+          "id": "pebble-a",
+          "letter": "A",
+          "name": "Otter pup",
+          "description": "Round, boyish and delighted",
+          "engine": "qwen",
+          "instruction": "A baby cartoon otter with a very small boyish voice, round bubbly vowels and an earnest little squeak at phrase endings. Bright playful delight, adorable youthful mascot, short soft consonants. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises."
+        },
+        {
+          "id": "pebble-b",
+          "letter": "B",
+          "name": "River chime",
+          "description": "Clear, feminine and lilting",
+          "engine": "qwen",
+          "instruction": "A tiny feminine otter sprite with a high clear bell-like voice, clean bright resonance and lively musical up-and-down speech. Quick curious timing and cute gentle enthusiasm, youthful and animated. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises."
+        },
+        {
+          "id": "pebble-c",
+          "letter": "C",
+          "name": "Pocket rascal",
+          "description": "Scratchy, nasal and cheeky",
+          "engine": "vox",
+          "instruction": "A tiny androgynous otter rascal with a light scratchy squeak, forward nasal resonance and quick mischievous clipped syllables. Endearingly awkward cartoon delivery, small youthful creature rather than a human narrator. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises."
+        },
+        {
+          "id": "pebble-d",
+          "letter": "D",
+          "name": "Drowsy pebble",
+          "description": "Sleepy, pillowy and tender",
+          "engine": "vox",
+          "instruction": "A tiny soft boyish plush otter, rounded hollow toy-like timbre, relaxed breathy edges and slow sleepy little pauses. Cuddly youthful voice, warm small-scale delivery and a quiet smiling lilt. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises."
+        }
+      ]
+    },
+    {
+      "id": "jun",
+      "name": "Jun",
+      "candidates": [
+        {
+          "id": "jun-r2-a",
+          "letter": "A",
+          "name": "Sunny apprentice",
+          "description": "Clear young male · bright and earnest",
+          "engine": "qwen",
+          "instruction": "A clearly male young anime café apprentice. Youthful masculine light-tenor voice in a comfortable middle speaking register, clear chest resonance and compact bright vowels. Eager smiling delivery with quick friendly lifts; sweet, boyish and playful. 男声，清亮少年音，带胸腔共鸣，活泼亲切。 Use a natural male speaking voice, not a female voice or falsetto. Speak only the supplied English text. No extra words, music, singing or laughter."
+        },
+        {
+          "id": "jun-r2-b",
+          "letter": "B",
+          "name": "Cheeky little rogue",
+          "description": "Nasal young male · raspy and mischievous",
+          "engine": "qwen",
+          "instruction": "An unmistakably male youthful cartoon café boy. Mid-register reedy tenor with a little dry husky grain, a cheeky nasal twang and clipped syncopated comic timing. Mischievous small grin, bouncy confident energy, cute scrappy boyish charm. 男声，顽皮少年，鼻腔共鸣和轻微沙哑，俏皮利落。 Use a natural male speaking voice, not a female voice or falsetto. Speak only the supplied English text. No extra words, music, singing or laughter."
+        },
+        {
+          "id": "jun-r2-c",
+          "letter": "C",
+          "name": "Sleepy café boy",
+          "description": "Soft young male · round and bashful",
+          "engine": "qwen",
+          "instruction": "A clearly male soft-spoken youthful café boy. Gentle lower-tenor speaking register with small warm rounded chest resonance, a light breathy texture and shy unhurried pauses. Cuddly, tender and youthful rather than mature or authoritative; a bashful little smile. 男声，温柔少年音，圆润柔软，带一点气声，害羞乖巧。 Use a natural male speaking voice, not a female voice or falsetto. Speak only the supplied English text. No extra words, music, singing or laughter."
+        },
+        {
+          "id": "jun-r2-d",
+          "letter": "D",
+          "name": "Pocket adventurer",
+          "description": "Bright young male · punchy and animated",
+          "engine": "qwen",
+          "instruction": "A distinctly male young cartoon adventurer with a springy forward-placed mid-high tenor, firm masculine vocal core and clean punchy consonants. Fast animated little bursts, playful rising questions and infectious smiling confidence. Cute boyish energy with a lively comic character performance. 男声，元气少年，明亮有力，节奏轻快，笑意明显。 Use a natural male speaking voice, not a female voice or falsetto. Speak only the supplied English text. No extra words, music, singing or laughter."
+        }
+      ]
+    },
+    {
+      "id": "bean",
+      "name": "Bean",
+      "candidates": [
+        {
+          "id": "bean-a",
+          "letter": "A",
+          "name": "Troublemaker kitten",
+          "description": "Thin, squeaky and impish",
+          "engine": "qwen",
+          "instruction": "A tiny boyish cartoon kitten with an unusually thin squeaky nasal voice, cheeky grin and fast punchy syllables. Mischievous little upward pitch flicks, youthful funny creature energy, affectionately impish. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises."
+        },
+        {
+          "id": "bean-b",
+          "letter": "B",
+          "name": "Cream puff",
+          "description": "Round, feminine and cuddly",
+          "engine": "qwen",
+          "instruction": "A small feminine plush kitten with a soft round marshmallow voice, warm breathy edges and slow affectionate pacing. Cute youthful cartoon delivery, gentle little rising questions and pillowy vowels. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises."
+        },
+        {
+          "id": "bean-c",
+          "letter": "C",
+          "name": "Toy cub",
+          "description": "Husky squeak, confident bounce",
+          "engine": "vox",
+          "instruction": "A little boyish toy cat with a high lightly husky squeak, rounded hollow resonance and bouncy confident rhythm. Small comic growly edges without sounding deep, adorable energetic mascot acting. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises."
+        },
+        {
+          "id": "bean-d",
+          "letter": "D",
+          "name": "Moon kitten",
+          "description": "Airy, delicate and shy",
+          "engine": "vox",
+          "instruction": "A tiny androgynous kitten spirit with a very light airy flute-like voice, delicate consonants and shy floating pauses. Sweet young magical creature, almost weightless soft resonance, clear audible speech. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises."
+        }
+      ]
+    },
+    {
+      "id": "maple",
+      "name": "Maple",
+      "candidates": [
+        {
+          "id": "maple-a",
+          "letter": "A",
+          "name": "Sugar-bell panda",
+          "description": "Sparkly, clear and excited",
+          "engine": "qwen",
+          "instruction": "A tiny female red panda baker with a high clear bell soprano, smiling forward resonance and quick excited little bursts. Very youthful kawaii mascot acting, crisp tiny consonants and buoyant delight. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises."
+        },
+        {
+          "id": "maple-b",
+          "letter": "B",
+          "name": "Marshmallow baker",
+          "description": "Round, soft and slow",
+          "engine": "qwen",
+          "instruction": "A feminine plush red panda with a rounded pillowy childlike voice, soft slightly nasal vowels and slow cozy pauses. Bashful sweetness and gentle cuddly delivery, small and soft without elegant adult resonance. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises."
+        },
+        {
+          "id": "maple-c",
+          "letter": "C",
+          "name": "Cookie rascal",
+          "description": "Boyish, reedy and playful",
+          "engine": "vox",
+          "instruction": "A tiny boyish red panda kitchen helper with a reedy squeaky voice, mischievous nasal twang and quick springy staccato phrases. Playful comic confidence, youthful adorable small-creature acting. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises."
+        },
+        {
+          "id": "maple-d",
+          "letter": "D",
+          "name": "Honey fairy",
+          "description": "Airy, musical and tender",
+          "engine": "vox",
+          "instruction": "A miniature feminine woodland fairy with a thin breathy flute-like high voice, soft gentle flowing speech and a shy smiling lilt. Delicate youthful warmth, lightly musical inflections without singing. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises."
+        }
+      ]
+    },
+    {
+      "id": "luna",
+      "name": "Luna",
+      "candidates": [
+        {
+          "id": "luna-a",
+          "letter": "A",
+          "name": "Starry schoolgirl",
+          "description": "Bright, high and curious",
+          "engine": "qwen",
+          "instruction": "A cute young anime schoolgirl astronomer with a high bright soprano, silver bell-like resonance and quick curious questioning lifts. Youthful excited wonder, precise little consonants and a gentle cheerful smile. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises."
+        },
+        {
+          "id": "luna-b",
+          "letter": "B",
+          "name": "Dreamy moon fairy",
+          "description": "Airy, ethereal and hushed",
+          "engine": "qwen",
+          "instruction": "A tiny feminine moon fairy with a very light breathy high voice, smooth floating phrases and delicate airy consonants. Youthful shy wonder, soft intimate delivery that stays clearly audible, weightless and magical. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises."
+        },
+        {
+          "id": "luna-c",
+          "letter": "C",
+          "name": "Pocket scholar",
+          "description": "Reedy, nerdy and eager",
+          "engine": "vox",
+          "instruction": "A youthful tomboy cartoon scholar with a small high reedy voice, slightly nasal precision and fast earnest bursts. Cute awkward enthusiasm and playful questioning intonation, bright and tiny rather than mature. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises."
+        },
+        {
+          "id": "luna-d",
+          "letter": "D",
+          "name": "Plush stargazer",
+          "description": "Round, bashful and cozy",
+          "engine": "vox",
+          "instruction": "A small feminine storybook stargazer with a round soft toy-like voice, warm cushioned vowels and gently hesitant pauses. Sweet bashful kawaii delivery, youthful gentle reassurance and soft rising endings. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises."
+        }
+      ]
+    },
+    {
+      "id": "atlas",
+      "name": "Atlas",
+      "candidates": [
+        {
+          "id": "atlas-a",
+          "letter": "A",
+          "name": "Owl fledgling",
+          "description": "Boyish, high and round",
+          "engine": "qwen",
+          "instruction": "A tiny owl fledgling with a small high boyish voice, hollow rounded hooty vowels and excited curious upward scoops. Adorable youthful cartoon bird, clear words and soft compact consonants. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises."
+        },
+        {
+          "id": "atlas-b",
+          "letter": "B",
+          "name": "Library sprite",
+          "description": "Feminine, clear and delicate",
+          "engine": "qwen",
+          "instruction": "A miniature feminine library owl fairy with a clear high glassy voice, delicate crisp consonants and gentle measured little phrases. Young bright-eyed wonder and a sweet quiet smile, airy small-scale resonance. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises."
+        },
+        {
+          "id": "atlas-c",
+          "letter": "C",
+          "name": "Bookish squeaker",
+          "description": "Nasal, fussy and comic",
+          "engine": "vox",
+          "instruction": "A tiny androgynous bookish cartoon owl with a thin nasal squeak, precise fussy syllables and quick excited staccato delivery. Endearingly nerdy and youthful, playful tiny pitch jumps, adorable comic timing. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises."
+        },
+        {
+          "id": "atlas-d",
+          "letter": "D",
+          "name": "Drowsy owlet",
+          "description": "Pillowy, husky and sleepy",
+          "engine": "vox",
+          "instruction": "A tiny sleepy boyish owlet with a soft hollow plush-toy timbre, slightly husky high edges and slow cushioned phrases. Warm youthful tenderness and little round vowels, cuddly bedtime creature acting. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises."
+        }
+      ]
+    },
+    {
+      "id": "wisp",
+      "name": "Wisp",
+      "candidates": [
+        {
+          "id": "wisp-a",
+          "letter": "A",
+          "name": "Glass-wing fairy",
+          "description": "Crystal clear and tiny",
+          "engine": "qwen",
+          "instruction": "A miniature feminine moth fairy with a very high crystalline voice, thin bell-like resonance and delicate quick little phrases. Youthful sparkling curiosity and tiny precise consonants, sweet magical energy. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises."
+        },
+        {
+          "id": "wisp-b",
+          "letter": "B",
+          "name": "Velvet moth",
+          "description": "Breathy, soft and slow",
+          "engine": "qwen",
+          "instruction": "A tiny androgynous moth spirit with a light breathy velvet voice, soft hollow resonance and slow floating pauses. Dreamy youthful tenderness, warm small vowels, gentle audible speech with a shy smile. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises."
+        },
+        {
+          "id": "wisp-c",
+          "letter": "C",
+          "name": "Bookworm sprite",
+          "description": "Boyish, nasal and eager",
+          "engine": "vox",
+          "instruction": "A tiny boyish library moth with a reedy nasal squeak, fast inquisitive staccato phrases and an earnest little grin. Cute youthful cartoon acting, playful fussy precision and comic upward flicks. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises."
+        },
+        {
+          "id": "wisp-d",
+          "letter": "D",
+          "name": "Moon plush",
+          "description": "Round, muffled and cuddly",
+          "engine": "vox",
+          "instruction": "A small feminine plush moth with a round pillowy voice, slightly muffled warm vowels and soothing gentle rhythmic speech. Childlike sweetness, cozy bashfulness and cuddly toy-like resonance. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises."
+        }
+      ]
+    },
+    {
+      "id": "nova",
+      "name": "Nova",
+      "candidates": [
+        {
+          "id": "nova-a",
+          "letter": "A",
+          "name": "Pocket astronaut",
+          "description": "Bright, feminine and buoyant",
+          "engine": "qwen",
+          "instruction": "A youthful anime astronaut girl with a high clear bright voice, compact crisp consonants and quick enthusiastic little phrases. Cute courageous curiosity, sparkling forward resonance and friendly playful lifts. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises."
+        },
+        {
+          "id": "nova-b",
+          "letter": "B",
+          "name": "Space scout",
+          "description": "Boyish, reedy and punchy",
+          "engine": "qwen",
+          "instruction": "A tiny tomboy space scout with a small reedy high tenor, smiling nasal twang and punchy staccato rhythm. Scrappy youthful charm, quick cheeky confidence and buoyant cartoon adventure energy. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises."
+        },
+        {
+          "id": "nova-c",
+          "letter": "C",
+          "name": "Stardust fairy",
+          "description": "Airy, dreamy and gentle",
+          "engine": "vox",
+          "instruction": "A miniature feminine space fairy with a light thin breathy soprano, soft floating phrasing and dreamy wondering pauses. Youthful delicate sweetness, clear audible words and a shy weightless lilt. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises."
+        },
+        {
+          "id": "nova-d",
+          "letter": "D",
+          "name": "Cosmic plush",
+          "description": "Round, soft and reassuring",
+          "engine": "vox",
+          "instruction": "A tiny androgynous plush astronaut with a rounded hollow toy-like voice, warm cushioned vowels and calm unhurried little phrases. Cute youthful reassurance and a soft smile, small gentle cartoon resonance. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises."
+        }
+      ]
+    },
+    {
+      "id": "orbit",
+      "name": "Orbit",
+      "candidates": [
+        {
+          "id": "orbit-a",
+          "letter": "A",
+          "name": "Bubble bot",
+          "description": "Squeaky, rounded and friendly",
+          "engine": "qwen",
+          "instruction": "A tiny androgynous cartoon robot with a very high rounded bubble-like voice, crisp short syllables and friendly rising question tones. Youthful toy character, cute staccato curiosity, natural words with no electronic sound effects. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises."
+        },
+        {
+          "id": "orbit-b",
+          "letter": "B",
+          "name": "Crystal circuit",
+          "description": "Feminine, glassy and precise",
+          "engine": "qwen",
+          "instruction": "A miniature feminine robot with a clear thin crystalline soprano, perfectly precise small consonants and smooth even little phrases. Sweet youthful politeness, bright gentle lilt and airy glass-like resonance. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises."
+        },
+        {
+          "id": "orbit-c",
+          "letter": "C",
+          "name": "Pocket gadget",
+          "description": "Boyish, nasal and jumpy",
+          "engine": "vox",
+          "instruction": "A tiny boyish toy robot with a reedy nasal squeak, eager quick bursts and endearingly jerky comic timing. High youthful playful voice, little pitch jumps and bright curious excitement, no buzzing. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises."
+        },
+        {
+          "id": "orbit-d",
+          "letter": "D",
+          "name": "Sleepy satellite",
+          "description": "Soft, hollow and slow",
+          "engine": "vox",
+          "instruction": "A tiny androgynous plush robot with a soft hollow rounded voice, slightly muffled vowels and slow evenly spaced little syllables. Cuddly youthful warmth, bashful gentle delivery, cute soft toy resonance. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises."
+        }
+      ]
+    },
+    {
+      "id": "comet",
+      "name": "Comet",
+      "candidates": [
+        {
+          "id": "comet-a",
+          "letter": "A",
+          "name": "Bunny chime",
+          "description": "Bright, feminine and springy",
+          "engine": "qwen",
+          "instruction": "A tiny female cartoon bunny with a very high clear bell-like voice, bright forward resonance and quick springy hopping phrases. Cute youthful excitement, crisp little consonants and delighted upward scoops. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises."
+        },
+        {
+          "id": "comet-b",
+          "letter": "B",
+          "name": "Pocket courier",
+          "description": "Boyish, squeaky and cheeky",
+          "engine": "qwen",
+          "instruction": "A little boyish rabbit courier with a thin squeaky nasal voice, fast punchy consonants and cheeky playful confidence. Youthful cartoon energy, short comic pauses and tiny excited pitch jumps. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises."
+        },
+        {
+          "id": "comet-c",
+          "letter": "C",
+          "name": "Cloud bunny",
+          "description": "Airy, shy and delicate",
+          "engine": "vox",
+          "instruction": "A miniature feminine cloud rabbit with an airy flute-like high voice, delicate breathy edges and slow shy floating phrases. Sweet youthful magic, light rounded vowels and a soft audible smile. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises."
+        },
+        {
+          "id": "comet-d",
+          "letter": "D",
+          "name": "Mochi bun",
+          "description": "Round, sleepy and plush",
+          "engine": "vox",
+          "instruction": "A tiny androgynous plush bunny with a round pillowy toy voice, warm slightly muffled vowels and gentle drowsy pacing. Cute childlike softness, bashful cuddly reassurance and soft rising phrase endings. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises."
+        }
+      ]
+    }
+  ],
+  "storageKey": "tick-kin-casting-approved-v1",
+  "initialState": {
+    "version": 1,
+    "active": "jun",
+    "choices": {
+      "mochi": {
+        "voice": "maple-b",
+        "status": "picked",
+        "notes": ""
+      },
+      "pip": {
+        "voice": "pip-a",
+        "status": "picked",
+        "notes": ""
+      },
+      "pebble": {
+        "voice": "pebble-a",
+        "status": "picked",
+        "notes": ""
+      },
+      "jun": {
+        "voice": "jun-r2-c",
+        "status": "picked",
+        "notes": ""
+      },
+      "bean": {
+        "voice": "bean-a",
+        "status": "picked",
+        "notes": ""
+      },
+      "maple": {
+        "voice": "maple-d",
+        "status": "picked",
+        "notes": ""
+      },
+      "luna": {
+        "voice": "luna-b",
+        "status": "picked",
+        "notes": ""
+      },
+      "atlas": {
+        "voice": "atlas-b",
+        "status": "picked",
+        "notes": ""
+      },
+      "wisp": {
+        "voice": "wisp-a",
+        "status": "picked",
+        "notes": ""
+      },
+      "nova": {
+        "voice": "nova-b",
+        "status": "picked",
+        "notes": ""
+      },
+      "orbit": {
+        "voice": "orbit-c",
+        "status": "picked",
+        "notes": ""
+      },
+      "comet": {
+        "voice": "comet-a",
+        "status": "picked",
+        "notes": ""
+      }
+    }
+  },
+  "roundNote": "All 12 voices selected. Jun uses Sleepy café boy; Mochi uses Marshmallow baker.",
+  "editionFile": "approved-lineup.html"
+}

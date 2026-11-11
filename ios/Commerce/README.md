@@ -2,11 +2,11 @@
 
 ## Launch recommendation
 
-Start at **US $3.99 per pack** and **$8.99 for the three-pack collection**, paid once. Keep Mochi, Pip, the entire timer, and all language support free. The collection saves $2.98 against three separate purchases ($11.97), about 25%. It includes the three named launch packs only; no promise of future content.
+Start at **US $3.99 per pack** and **$8.99 for the three-pack collection**, paid once. Keep Mochi, Pip, Pebble, the entire timer, and all language support free. The collection saves $2.98 against three separate purchases ($11.97), about 25%. It includes the three named launch packs only; no promise of future content.
 
-This is a launch hypothesis, not a measured profit maximum. The closest useful public benchmark is Focus Friend’s US listing: Base Bean Pack $3.99, Jelly Bean Pack $5.99, Kitt-ney Bean $4.99, and Blue Jello Bean $2.99. Our two characters plus a scene at $3.99 fit that range, but competitors’ prices do not reveal their conversion or profit. [App Store listing, checked November 9, 2026](https://apps.apple.com/us/app/focus-friend-by-hank-green/id6742278016).
+This is a launch hypothesis, not a measured profit maximum. The closest useful public benchmark is Focus Friend’s US listing: Base Bean Pack $3.99, Jelly Bean Pack $5.99, Kitt-ney Bean $4.99, and Blue Jello Bean $2.99. Our three characters plus scenes at $3.99 fit that range, but competitors’ prices do not reveal their conversion or profit. [App Store listing, checked November 9, 2026](https://apps.apple.com/us/app/focus-friend-by-hank-green/id6742278016).
 
-The strongest reason to buy should be wanting to spend time with a particular pair of companions. A free pose preview makes that choice concrete. No timed countdown sale, mandatory subscription, focus penalties, or language paywall is included. The existing four poses with gentle breathing should be described accurately; these are not full animated characters with conversational AI.
+The strongest reason to buy should be wanting to spend time with a particular group of companions. A free pose preview makes that choice concrete. No timed countdown sale, mandatory subscription, focus penalties, or language paywall is included. The existing four poses with gentle breathing should be described accurately; these are not full animated characters with conversational AI.
 
 ## Find the profitable price
 
@@ -44,7 +44,7 @@ Prices are not hard-coded in the storefront. Missing StoreKit products leave pre
 
 1. Select the Apple Developer team and the production app’s bundle identifier. Create the matching app record and these four non-consumables in App Store Connect. Complete required agreements, banking/tax setup, product localization, availability, pricing, and review assets.
 2. Use the normal **Banke** scheme for signed sandbox/TestFlight testing. Verify actual localized prices, purchase sheets, cancellation, pending approval, restore after reinstall/on another device, refunds, and offline use with previously verified purchases. Local StoreKit success does not validate App Store Connect configuration or signing.
-3. Check all eight characters at real device size, iPad resizing, Duo transitions, large text and VoiceOver. Confirm the same timer deadline survives shop navigation and ownership changes. Names/art remain prototypes pending final brand review.
+3. Check all twelve characters at real device size, iPad resizing, Duo transitions, large text and VoiceOver. Confirm the same timer deadline survives shop navigation and ownership changes. Names/art remain prototypes pending final brand review.
 4. Submit the app and IAPs through App Store review. No live products, account settings, or submissions were created by this implementation.
 
 Local testing: **BankeStoreKit** uses `Companions.storekit`; automated tests set up an `SKTestSession` and run serially. The normal **Banke** Run/Archive path contains no local commerce configuration, no test framework, and no entitlement bypass.

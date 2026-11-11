@@ -1,0 +1,43 @@
+{
+  "method": "context-countdown-v1",
+  "text": "Cinco. Cuatro. Tres. Dos. Uno.",
+  "instruct": "Speak in Spanish naturally. Clearly count down from five to one.",
+  "seed": 3070429458,
+  "words": [
+    {
+      "text": " cinco,",
+      "start": 0.0,
+      "end": 0.46
+    },
+    {
+      "text": " cuatro,",
+      "start": 1.26,
+      "end": 2.18
+    },
+    {
+      "text": " tres,",
+      "start": 2.88,
+      "end": 3.28
+    },
+    {
+      "text": " dos,",
+      "start": 3.92,
+      "end": 4.22
+    },
+    {
+      "text": " uno.",
+      "start": 5.0,
+      "end": 5.3
+    }
+  ],
+  "boundaries": [
+    0,
+    0.86,
+    2.5300000000000002,
+    3.5999999999999996,
+    4.609999999999999,
+    5.528333333333333
+  ],
+  "recognizer": "faster-whisper-small",
+  "note": "Transcript and boundary check; not native-speaker approval."
+}

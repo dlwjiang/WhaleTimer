@@ -75,7 +75,7 @@ struct SettingsView: View {
                 }
                 Section {
                     NavigationLink("Companion packs", destination: CompanionShopContent())
-                } footer: { Text("Mochi, Pip, the timer, and all languages are free.") }
+                } footer: { Text("Mochi, Pip, Pebble, the timer, and all languages are free.") }
                 Section {
                     Text("Your timer stays on this device. No account or ads. Purchases use the App Store.")
                     Text("On iPhone Duo, folding changes the layout, never the timer.")

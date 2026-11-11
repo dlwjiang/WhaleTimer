@@ -1,0 +1,38 @@
+{
+  "id": "jun",
+  "name": "Jun",
+  "candidates": [
+    {
+      "id": "jun-a",
+      "letter": "A",
+      "name": "Caf\u00e9 apprentice",
+      "description": "Bright, boyish and eager",
+      "engine": "qwen",
+      "instruction": "A youthful anime caf\u00e9 apprentice boy with a light high tenor, clear forward resonance and eager quick speech. Gentle shy smiles between bright little bursts, cute boyish energy with no deep chest resonance. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises."
+    },
+    {
+      "id": "jun-b",
+      "letter": "B",
+      "name": "Sugar sprite",
+      "description": "Androgynous, squeaky and comic",
+      "engine": "qwen",
+      "instruction": "A tiny androgynous caf\u00e9 sprite with a squeaky nasal cartoon voice and energetic staccato timing. Playfully confident and slightly impish, expressive pitch jumps and compact bright vowels. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises."
+    },
+    {
+      "id": "jun-c",
+      "letter": "C",
+      "name": "Sleepy helper",
+      "description": "Soft, round and bashful",
+      "engine": "vox",
+      "instruction": "A little boyish storybook caf\u00e9 helper with a round pillowy high voice, gentle slightly breathy texture and slow bashful pauses. Tender kawaii character acting, delicate consonants and a warm small smile. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises."
+    },
+    {
+      "id": "jun-d",
+      "letter": "D",
+      "name": "Teacup chime",
+      "description": "Light, feminine and precise",
+      "engine": "vox",
+      "instruction": "A small feminine caf\u00e9 helper with a clear crystalline high soprano, precise tiny consonants and brisk tidy rhythm. Charming playful politeness, bright youthful lilt and an unmistakably miniature cartoon scale. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises."
+    }
+  ]
+}

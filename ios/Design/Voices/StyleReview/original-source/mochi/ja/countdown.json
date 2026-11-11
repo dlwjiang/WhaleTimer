@@ -1,0 +1,43 @@
+{
+  "method": "context-countdown-v1",
+  "text": "それでは、五、四、三、二、一。",
+  "instruct": "Speak Japanese naturally.",
+  "seed": 74737495,
+  "words": [
+    {
+      "text": "5、",
+      "start": 1.44,
+      "end": 1.86
+    },
+    {
+      "text": "4、",
+      "start": 1.98,
+      "end": 2.8
+    },
+    {
+      "text": "3、",
+      "start": 3.18,
+      "end": 3.7
+    },
+    {
+      "text": "2、",
+      "start": 3.96,
+      "end": 4.4
+    },
+    {
+      "text": "1",
+      "start": 4.82,
+      "end": 5.26
+    }
+  ],
+  "boundaries": [
+    1.3599999999999999,
+    1.92,
+    2.99,
+    3.83,
+    4.61,
+    5.473958333333333
+  ],
+  "recognizer": "faster-whisper-small",
+  "note": "Transcript and boundary check; not native-speaker approval."
+}

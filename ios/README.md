@@ -1,6 +1,6 @@
 # Tick & Kin for iPhone, iPad, and iPhone Duo
 
-A native, offline SwiftUI companion Pomodoro app inspired by the web timer. The free starter set is **Mochi**, a cream desk cat, and **Pip**, a botanical apprentice. This is an independent iOS target; the web app is unchanged.
+A native, offline SwiftUI companion Pomodoro app inspired by the web timer. The free starter set is **Mochi**, a cream desk cat, **Pip**, a botanical apprentice, and **Pebble**, a gentle river otter. This is an independent iOS target; the web app is unchanged.
 
 ## Localized app names
 
@@ -24,7 +24,7 @@ English was selected by the user; the other names adapt the warm time-and-compan
 
 The native screen now follows the web composition: a large central pixel companion on a painted platform, the original hourglass brand mark, translucent header and control dock, circular carousel arrows, and a mechanical split-flap clock. The paper texture and the two free background paintings are reused from `public/backgrounds/`; the mark is reused from `public/brand/`. The blue and warm scholarly material colors follow `src/character-theme.css`, and the buttons follow `src/timer-action.css`. Native translucent materials approximate the web glass treatment; the web refraction shader is not ported.
 
-Mochi and Pip have new pixel-art pose sheets. Swipe horizontally or use the arrows to switch companion and palette. The main scene stays focused on the companion and clock; there is no task or intention input. Screenshots are in `Verification/`.
+Mochi, Pip and Pebble are the three free pixel-art companions. Swipe horizontally or use the arrows to switch companion and palette. The main scene stays focused on the companion and clock; there is no task or intention input. Screenshots are in `Verification/`.
 
 The clock bundles the web's Manrope Bold font under its SIL Open Font License, with no runtime download. Its blue, brown and lavender faces use the web's four gradient stops, separator ink, matte paper treatment, seam beneath the lettering, and 240/280 ms flip timing. The café and orbital palettes extend the same material recipe. After rebuilding, visually check Pip against the warm web clock, Mochi's blue face, and a premium face while paused and flipping; browser and native text/compositing can still differ slightly.
 
@@ -59,9 +59,13 @@ The UI, captions, notifications and purchase copy have translations for English,
 
 Layout follows current window geometry, not device model names or `UIScreen.main`. All four orientations are supported. Narrow/resized windows use a scrollable compact scene and timer; wider windows keep the web app’s centered companion-over-dock composition with a capped content width. The header remains inside the system safe area.
 
-On iOS 27.1, actual active `.division` reserved regions select `ArrangementView(.split)`. The system places the two regions around the fold in book and tabletop poses. Each pane scrolls independently, and the companion adapts to its allocated region height. `onHingeChange` gently changes the room’s light; it never drives timekeeping, starts a session, or grants progress. A single app-owned store survives inner/outer display transitions.
+On iOS 27.1, actual active `.division` reserved regions select the folded layout. Book mode uses `ArrangementView(.split)` with independent scrolling panes. Tabletop mode registers scene artwork to the horizontal division and reserves the area below its hanging limbs for the independently scrolling timer. The clock and controls stay together, with larger clock faces when height and width allow. `onHingeChange` gently changes the original carousel room’s light; it never drives timekeeping, starts a session, or grants progress. A single app-owned store survives inner/outer display transitions.
 
 The outer screen keeps the primary timer action visible at normal text size. Unfolding reveals a wider study corner; folding preserves the selected companion, phase, and deadline. In a tabletop pose the intended interaction is a companion above and stable controls below; in a book pose they sit on opposite pages.
+
+Tabletop mode uses dedicated illustrations for all twelve companions. The header shares the top row with the native status controls when space allows, leaving their right-hand lane clear; narrow and accessibility layouts retain a separate safe-area row. The artwork extends behind the header and status area, with the measured bottom edges of the ledges aligned to the horizontal division; paws and boots extend below it, and the live timer begins beneath the artwork. These scenes are static illustrations with live floating speech, carousel browsing among available companions, and timer controls. The images contain no baked-in UI. The upper-left name/dot panel is removed in tabletop mode; arrows and swipes still switch companions. The timer uses the lower pane’s width with larger cards instead of the previous 132-point cap. Book mode and the outer screen retain the original layout.
+
+For a quick simulator check, edit the **BankeStoreKit** scheme → **Run → Arguments**, add `-preview-tabletop` under **Arguments Passed On Launch**, then run on iPhone Duo (or an iPad simulator). This Debug-only argument forces the tabletop composition without requiring a fold gesture. Use the companion arrows to switch between Mochi, Pip and Pebble, tap them to check floating speech, and start/pause the real timer. Remove the argument to test automatic fold-driven layout changes.
 
 **Both displays simultaneously:** Apple’s documented `CameraCaptureAccessory` requires an active camera session and is intended for camera apps. We do not turn on a camera to obtain an outer-screen pet. This version follows the active display. A future Live Activity could give the timer a separate glanceable system presentation; it is not implemented here.
 
@@ -74,9 +78,9 @@ Apple references consulted:
 
 ## Assets
 
-`Design/` contains the exact generation prompts, original sheets, extracted poses, extraction manifests, and contact sheets. The original companions, app icon, six paid companion sheets, and three paid background paintings were made with the built-in image generator. Paid characters use the free originals as style references, without the prior branded characters. The transparent sprites in `Banke/Assets.xcassets` are the runtime copies. The clicks and two-strike bell are rendered from `src/audio.js` recipes by `Scripts/make_effects.py`; no external recording is used.
+`Design/` contains the exact generation prompts, original sheets, extracted poses, extraction manifests, and contact sheets. The original companions, app icon, nine paid companion sheets, and three paid background paintings were made with the built-in image generator. Paid characters use the free originals as style references, without the prior branded characters. The transparent sprites in `Banke/Assets.xcassets` are the runtime copies. The clicks and two-strike bell are rendered from `src/audio.js` recipes by `Scripts/make_effects.py`; no external recording is used.
 
-The runtime sprites are the eight `*-pixel/` extractions; their source sheets and exact prompts are saved alongside the first illustrated versions. The built-in image generator redrew the original characters, and the extraction utility produced matching transparent canvases. Mochi has clean extraction flags. Pip’s happy cell has an edge-alpha flag; visual inspection of the source and extracted sprite shows the hat, sprout and boots intact. The four poses are discrete states with subtle breathing, not frame-by-frame character animation. Art and names remain production prototypes, not trademark/name clearance.
+The runtime sprites are the twelve `*-pixel/` extractions; their source sheets and exact prompts are saved alongside the first illustrated versions. The built-in image generator redrew the original characters, and the extraction utility produced matching transparent canvases. Mochi has clean extraction flags. Pip’s happy cell has an edge-alpha flag; visual inspection of the source and extracted sprite shows the hat, sprout and boots intact. The four poses are discrete states with subtle breathing, not frame-by-frame character animation. Art and names remain production prototypes, not trademark/name clearance.
 
 ## Verification
 
@@ -84,16 +88,16 @@ See `Verification/README.md` for the actual checks and remaining physical-device
 
 ## Companion packs
 
-Mochi and Pip, all timer features, and language support remain free. All nine UI language options and their matching voice languages are included without an extra charge. Traditional and Simplified Chinese share Mandarin recordings with separate written captions.
+Mochi, Pip and Pebble, all timer features, and language support remain free. All nine UI language options and their matching voice languages are included without an extra charge. Traditional and Simplified Chinese share Mandarin recordings with separate written captions.
 
-| Pack | Companions | Scene | Suggested US price |
+| Pack | Companions | Scenes | Suggested US price |
 | --- | --- | --- | --- |
-| Midnight Café | Jun, the barista; Bean, the café cat | Warm café after hours | $3.99 once |
-| Moonlight Academy | Luna, the scholar; Atlas, the owl | Moonlit library | $3.99 once |
-| Orbital Night Shift | Nova, the astronaut; Orbit, the robot | Orbital study room | $3.99 once |
-| Three-Pack Collection | All six above | All three above | $8.99 once |
+| Midnight Café | Jun, the barista; Bean, the café cat; Maple, the red-panda baker | Café room + three Duo café scenes | $3.99 once |
+| Moonlight Academy | Luna, the scholar; Atlas, the owl; Wisp, the moth librarian | Library room + three Duo library scenes | $3.99 once |
+| Orbital Night Shift | Nova, the astronaut; Orbit, the robot; Comet, the rabbit courier | Orbital study room + three Duo console scenes | $3.99 once |
+| Three-Pack Collection | All nine above | All included scenes above | $8.99 once |
 
-Each character has idle, focus, rest, and happy poses. Each pack includes matching clock/control colors. **Meet more companions** and Settings → **Companion packs** open the storefront. Preview all four poses and the companion voice before purchasing; previews do not change the active timer or unlock selection. All eight companions appear in the main carousel and Settings selector. Unowned companions use muted artwork and lock labels; browsing them does not change the active companion or timer. Tap a locked portrait or “View pack” to open the packs menu at its matching pack. Owned companions remain directly selectable. The collection is hidden after any individual purchase to avoid overlapping charges. It includes these three packs, not future packs.
+Each character has idle, focus, rest, and happy poses. Existing pack and collection purchases include their new companion without a second purchase; the product identifiers are unchanged. Each pack includes matching clock/control colors. Settings → **Companion packs** opens the storefront. Preview all four poses and the companion voice before purchasing; previews do not change the active timer or unlock selection. The main carousel and its dots show only free or owned companions. All twelve companions remain in Settings, where unowned companions use muted artwork and lock labels and open the matching pack. The collection is hidden after any individual purchase to avoid overlapping charges. It includes these three packs, not future packs.
 
 StoreKit 2 supplies localized prices and verified non-consumable entitlements. The app listens for external approval/refund updates, restores purchases explicitly, and refreshes access on foreground. Revoking the selected character returns to Mochi without resetting the timer. Existing verified StoreKit entitlements work offline; buying and restoring need the App Store. No local saved Boolean unlocks content.
 
@@ -115,14 +119,14 @@ Distribution signing, live App Store product configuration, App Store submission
 
 `Localization/*.tsv`, `Localization/voice-lines.json` and `Localization/app-names.json` are the editable translation sources. Run `python3 ios/Scripts/make_localizations.py` from the repository root to rebuild the String Catalog, then `python3 ios/Scripts/make_commerce_localizations.py` to rebuild the local StoreKit copy and the unpublished App Store Connect copy draft. No language unlock product exists. Prices always follow the Apple Account storefront.
 
-`Scripts/generate_voices.py` uses the locally installed VoxCPM2 model and original synthetic character descriptions in `Design/Voices/profiles.json`. It creates eight distinct reference voices, then offline AAC cues for each character in eight spoken language directories (Traditional Chinese aliases Mandarin). All 768 clips are bundled (12 cues × 8 companions × 8 spoken languages), about 11 MB in total. Generation is resumable; `Banke/Audio/Voices/manifest.json` records each script, duration, seed and content hash. Targeted retakes use `--characters`, `--languages`, `--only` and `--retake`; pronunciation/instruction overrides live in `Design/Voices/pronunciations.json`. A Japanese greeting was localized more simply for clear delivery, with its caption changed to match the intended script.
+`Scripts/generate_voices.py` uses the locally installed VoxCPM2 model and original synthetic character descriptions in `Design/Voices/profiles.json`. It creates twelve distinct reference voices, then offline AAC cues for each character in eight spoken language directories (Traditional Chinese aliases Mandarin). All 1,248 clips are bundled (13 cues × 12 companions × 8 spoken languages), including a separate poke response. Generation is resumable; `Banke/Audio/Voices/manifest.json` records each script, duration, seed and content hash. Targeted retakes use `--characters`, `--languages`, `--only` and `--retake`; pronunciation/instruction overrides live in `Design/Voices/pronunciations.json`. A Japanese greeting was localized more simply for clear delivery, with its caption changed to match the intended script.
 
 A fresh focus starts after its spoken 3–2–1/go cues; breaks and ordinary pause/resume start directly. An interrupted opening replays its countdown on resume. Pause/reset/backgrounding cancel unfinished starts. The last five seconds have one cue per displayed second; delayed ticks skip stale numbers. Master mute and separate voice/effect controls apply to previews too; captions remain visible while muted. Foreground completion uses the bell and phase-specific speech. Background reminders use the same bell through iOS notifications.
 
-`Scripts/verify_voices.py` uses local Whisper to flag transcript mismatches. It is a diagnostic, not proof of native accent, acting quality or naturalness. Full countdown performances are recognized, split at word boundaries, then checked again as the actual encoded five-to-one sequence. `Scripts/repair_countdowns.py` applies documented boundary corrections only when the source WAV hashes match. All 64 encoded countdowns pass, and all 768 clips decode in the resource check. Native-speaker review remains a release check. The current four-pose artwork uses a happy speaking reaction, **not the web character-specific mouth overlays/lip sync**. See `Verification/MIGRATION.md` for the explicit parity audit and remaining checks.
+`Scripts/verify_voices.py` uses local Whisper to flag transcript mismatches. It is a diagnostic, not proof of native accent, acting quality or naturalness. Full countdown performances are recognized, split at word boundaries, then checked again as the actual encoded five-to-one sequence. `Scripts/repair_countdowns.py` applies documented boundary corrections only when the source WAV hashes match. The resource check validates all encoded countdowns and decodes every bundled clip. Native-speaker review remains a release check. The current four-pose artwork uses a happy speaking reaction, **not the web character-specific mouth overlays/lip sync**. See `Verification/MIGRATION.md` for the explicit parity audit and remaining checks.
 
 
-Open [the offline voice audition page](Verification/voices.html) directly in a browser to listen to all 768 recordings. It reads neighboring bundled files and needs no server or network. Choose a companion and spoken language, then play any cue. Transcript differences are shown for listening review, including ordinary Japanese spelling and Chinese homophone differences.
+Open [the offline voice audition page](Verification/voices.html) directly in a browser to listen to all 1,248 recordings. It reads neighboring bundled files and needs no server or network. Choose a companion and spoken language, then play any cue. Transcript differences are shown for listening review, including ordinary Japanese spelling and Chinese homophone differences.
 
 ```sh
 # Standard-library resource checker; --decode also requires ffmpeg/ffprobe.

@@ -1,0 +1,131 @@
+{
+  "version": 1,
+  "active": "comet",
+  "choices": {
+    "mochi": {
+      "voice": null,
+      "status": "none",
+      "notes": ""
+    },
+    "pip": {
+      "voice": "pip-a",
+      "status": "picked",
+      "notes": ""
+    },
+    "pebble": {
+      "voice": "pebble-a",
+      "status": "picked",
+      "notes": ""
+    },
+    "jun": {
+      "voice": null,
+      "status": "undecided",
+      "notes": ""
+    },
+    "bean": {
+      "voice": "bean-a",
+      "status": "picked",
+      "notes": ""
+    },
+    "maple": {
+      "voice": "maple-d",
+      "status": "picked",
+      "notes": ""
+    },
+    "luna": {
+      "voice": "luna-b",
+      "status": "picked",
+      "notes": ""
+    },
+    "atlas": {
+      "voice": "atlas-b",
+      "status": "picked",
+      "notes": ""
+    },
+    "wisp": {
+      "voice": "wisp-a",
+      "status": "picked",
+      "notes": ""
+    },
+    "nova": {
+      "voice": "nova-b",
+      "status": "picked",
+      "notes": ""
+    },
+    "orbit": {
+      "voice": "orbit-c",
+      "status": "picked",
+      "notes": ""
+    },
+    "comet": {
+      "voice": "comet-a",
+      "status": "picked",
+      "notes": ""
+    }
+  },
+  "exportedAt": "2026-11-11T02:09:42.938Z",
+  "auditionText": "Hi! I'm right here. Let's do one little thing together. Ready? Here we go!",
+  "language": "en",
+  "selectedVoices": {
+    "pip": {
+      "voice": "pip-a",
+      "name": "Garden sprite",
+      "model": "Qwen3-TTS-12Hz-1.7B-VoiceDesign-bf16",
+      "instruction": "A tiny cheerful anime garden girl with a high silver soprano, bright forward resonance and fast curious rising intonation. Youthful exuberance and tiny precise consonants, sweet sparkling kawaii delivery. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises."
+    },
+    "pebble": {
+      "voice": "pebble-a",
+      "name": "Otter pup",
+      "model": "Qwen3-TTS-12Hz-1.7B-VoiceDesign-bf16",
+      "instruction": "A baby cartoon otter with a very small boyish voice, round bubbly vowels and an earnest little squeak at phrase endings. Bright playful delight, adorable youthful mascot, short soft consonants. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises."
+    },
+    "bean": {
+      "voice": "bean-a",
+      "name": "Troublemaker kitten",
+      "model": "Qwen3-TTS-12Hz-1.7B-VoiceDesign-bf16",
+      "instruction": "A tiny boyish cartoon kitten with an unusually thin squeaky nasal voice, cheeky grin and fast punchy syllables. Mischievous little upward pitch flicks, youthful funny creature energy, affectionately impish. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises."
+    },
+    "maple": {
+      "voice": "maple-d",
+      "name": "Honey fairy",
+      "model": "VoxCPM2-bf16",
+      "instruction": "A miniature feminine woodland fairy with a thin breathy flute-like high voice, soft gentle flowing speech and a shy smiling lilt. Delicate youthful warmth, lightly musical inflections without singing. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises."
+    },
+    "luna": {
+      "voice": "luna-b",
+      "name": "Dreamy moon fairy",
+      "model": "Qwen3-TTS-12Hz-1.7B-VoiceDesign-bf16",
+      "instruction": "A tiny feminine moon fairy with a very light breathy high voice, smooth floating phrases and delicate airy consonants. Youthful shy wonder, soft intimate delivery that stays clearly audible, weightless and magical. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises."
+    },
+    "atlas": {
+      "voice": "atlas-b",
+      "name": "Library sprite",
+      "model": "Qwen3-TTS-12Hz-1.7B-VoiceDesign-bf16",
+      "instruction": "A miniature feminine library owl fairy with a clear high glassy voice, delicate crisp consonants and gentle measured little phrases. Young bright-eyed wonder and a sweet quiet smile, airy small-scale resonance. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises."
+    },
+    "wisp": {
+      "voice": "wisp-a",
+      "name": "Glass-wing fairy",
+      "model": "Qwen3-TTS-12Hz-1.7B-VoiceDesign-bf16",
+      "instruction": "A miniature feminine moth fairy with a very high crystalline voice, thin bell-like resonance and delicate quick little phrases. Youthful sparkling curiosity and tiny precise consonants, sweet magical energy. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises."
+    },
+    "nova": {
+      "voice": "nova-b",
+      "name": "Space scout",
+      "model": "Qwen3-TTS-12Hz-1.7B-VoiceDesign-bf16",
+      "instruction": "A tiny tomboy space scout with a small reedy high tenor, smiling nasal twang and punchy staccato rhythm. Scrappy youthful charm, quick cheeky confidence and buoyant cartoon adventure energy. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises."
+    },
+    "orbit": {
+      "voice": "orbit-c",
+      "name": "Pocket gadget",
+      "model": "VoxCPM2-bf16",
+      "instruction": "A tiny boyish toy robot with a reedy nasal squeak, eager quick bursts and endearingly jerky comic timing. High youthful playful voice, little pitch jumps and bright curious excitement, no buzzing. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises."
+    },
+    "comet": {
+      "voice": "comet-a",
+      "name": "Bunny chime",
+      "model": "Qwen3-TTS-12Hz-1.7B-VoiceDesign-bf16",
+      "instruction": "A tiny female cartoon bunny with a very high clear bell-like voice, bright forward resonance and quick springy hopping phrases. Cute youthful excitement, crisp little consonants and delighted upward scoops. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises."
+    }
+  }
+}

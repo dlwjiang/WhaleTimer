@@ -1,0 +1,803 @@
+{
+  "method": "Local faster-whisper small/int8; diagnostics only, not native-speaker approval.",
+  "clips": {
+    "en/mochi/pause": {
+      "sha256": "774fc40f5e3da04f8a82688e2bc265646e34443c9b2d4054b2125f629721d7f7",
+      "expected": "Take a breath. I'll wait.",
+      "heard": "Take a breath. I'll wait.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "en/mochi/resume": {
+      "sha256": "59abff41b59615fe2dc540845f5e3bbfe8b6cf0009764d2211488d7fb1257cad",
+      "expected": "Let's keep going!",
+      "heard": "Let's keep going",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "en/mochi/greeting": {
+      "sha256": "0a759ba6cf15d21f1ec73540b1055626a017fd34d07470b487e9c71169b00bf0",
+      "expected": "A little company. A little progress.",
+      "heard": "A little company. A little progress.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "zh-Hans/mochi/pause": {
+      "sha256": "d0e469d0d34743cd9c318858beb337c34e99f0f6d9bb36ee7ac2e6ad2746da60",
+      "expected": "歇一会儿，我等你。",
+      "heard": "歇一会,我等你",
+      "similarity": 0.923,
+      "review": "transcript-match"
+    },
+    "zh-Hans/mochi/resume": {
+      "sha256": "6fba076708f2316e2f0b28512436503198e5e372617c57ecc783fe4b9d75cd09",
+      "expected": "好，我们继续！",
+      "heard": "好,我们继续!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "zh-Hans/mochi/greeting": {
+      "sha256": "dfe76629edecff9d12b9d4e39cd370bdd49ff78839112e31137858092681a7fe",
+      "expected": "一点陪伴，一点进步。",
+      "heard": "一點陪伴,一點進步",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "en/jun/pause": {
+      "sha256": "d476683e831fdf085ad2df5889ea30159dce15105e4fcdb6af5144727be42c32",
+      "expected": "Take a breath. I'll wait.",
+      "heard": "Take a breath. I'll wait.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "en/jun/resume": {
+      "sha256": "3584d84e3d234b6a328432696fafe0104fe8fbc5d7e45ecc7a6820a122fa5375",
+      "expected": "Let's keep going!",
+      "heard": "Let's keep going!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "en/jun/greeting": {
+      "sha256": "2e83185019398736605029cbdd7da154c159ba642ff9663ba6684ef28d0fbb72",
+      "expected": "The café is open. Take your time.",
+      "heard": "The cafe is open. Take your time.",
+      "similarity": 0.96,
+      "review": "transcript-match"
+    },
+    "zh-Hans/jun/pause": {
+      "sha256": "6126ede2b46e95933dc0d47759eb59bee8b73b11014be895c54e91ca79b9ba4d",
+      "expected": "歇一会儿，我等你。",
+      "heard": "歇一会儿 我等你",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "zh-Hans/jun/resume": {
+      "sha256": "c5af58795737d0590feeebf97001cc393573d506b68e1b9e93cfd7b389b014e8",
+      "expected": "好，我们继续！",
+      "heard": "好,我們繼續",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "zh-Hans/jun/greeting": {
+      "sha256": "b9a6df8b3710a0d3d0c54ff01addcf4d4e3b4b6d8e4e14aeb4768fa131ffa40c",
+      "expected": "咖啡馆开门啦，慢慢来。",
+      "heard": "咖啡馆,开门啦,慢慢来",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "en/luna/pause": {
+      "sha256": "deb6e86466eec2e033e2fbb86f0b66751c6edee16093e044020865af00fb0224",
+      "expected": "Take a breath. I'll wait.",
+      "heard": "Take a breath. I'll wait.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "en/luna/resume": {
+      "sha256": "72c793572b9664ce0102422a5f1c1eaeda04f2b490fd44a95192f843e2244592",
+      "expected": "Let's keep going!",
+      "heard": "Let's keep going.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "en/luna/greeting": {
+      "sha256": "0995ff83f9e10e22474e959df8fb4dce3912bbad6f5b67afacfcb4d64b636bab",
+      "expected": "One page closer to the stars.",
+      "heard": "One page closer to the stars.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "zh-Hans/luna/pause": {
+      "sha256": "afbd5547c70c22632e264e799705f65f839421ed2bc9bb77ed13e2677bda5396",
+      "expected": "歇一会儿，我等你。",
+      "heard": "歇一會,我等你",
+      "similarity": 0.923,
+      "review": "transcript-match"
+    },
+    "zh-Hans/luna/resume": {
+      "sha256": "441361c2d44cc6f9f817b0226f5e27d97f7dac0d2e80e2bb8883a7a2cc43e18b",
+      "expected": "好，我们继续！",
+      "heard": "好,我們繼續",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "zh-Hans/luna/greeting": {
+      "sha256": "5aab9c25284f974addbb93ff3172b81806a3617ba6caa10b5b4e68bfe517820c",
+      "expected": "再读一页，离星星更近一点。",
+      "heard": "再读一页 离星星更近一点",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "en/mochi/5": {
+      "sha256": "aa9dfbc2f31f67e9f004160f5cb8a3683113822da6ccb1814e506666c7ca7c6e",
+      "expected": "Five.",
+      "heard": " Five,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "en/mochi/4": {
+      "sha256": "febcec063b83703fdd93b14df2dd2f5b062a9b3c5b870a61e93526870b0aed15",
+      "expected": "Four.",
+      "heard": " four,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "en/mochi/3": {
+      "sha256": "98da5b6f64f0cd536d2c1368f7dae8ce8c5c3507f12e5ba77ac8961fdaa546f4",
+      "expected": "Three.",
+      "heard": " three,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "en/mochi/2": {
+      "sha256": "1bd488aa0f7090ccd5186abf7b1e3daf30eefb39c06b11dddef4a04cdcece7e4",
+      "expected": "Two.",
+      "heard": " two,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "en/mochi/1": {
+      "sha256": "f5db628a2028f1fd95ae8a7f0a0fb326bd66a978850d9bbf7b36bf1d0035d597",
+      "expected": "One.",
+      "heard": " one.",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "en/mochi/go": {
+      "sha256": "612a0b1377c94f095e25b5323f9814b450aa42119133595122bc2189e0073791",
+      "expected": "Let's begin!",
+      "heard": "Let's begin!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "en/mochi/reset": {
+      "sha256": "e3b6b4b33bd16994f2ea7338f7c01dedacf97613ebd42acffd88a43a34a8dc73",
+      "expected": "A fresh start. We're ready.",
+      "heard": "A fresh start. We're ready.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "en/mochi/focusComplete": {
+      "sha256": "1e965443b17d2669c53e910f2b84814eb295708516f99552c7df9c4c6c4e06d3",
+      "expected": "Well done! Time for a little break.",
+      "heard": "Well done! Time for a little break!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "en/mochi/breakComplete": {
+      "sha256": "52c42a14e93803e0b44fbfe36af9241a749db1bda04f414e65976edff6edf770",
+      "expected": "Break's over. Ready when you are!",
+      "heard": "Break's over. Ready when you are.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "zh-Hans/mochi/5": {
+      "sha256": "21e1690c6532fa5e80d41c97cfd6307b5dfbba8168a1429ea47133f1d3c35376",
+      "expected": "五。",
+      "heard": "五、",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "zh-Hans/mochi/4": {
+      "sha256": "26b19440d142d1904d88255a0c15199b40f95d04e9a91df4ee6ecb26c70a9874",
+      "expected": "四。",
+      "heard": "四、",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "zh-Hans/mochi/3": {
+      "sha256": "ef60684a9f3507955639ee3f9faffd2401c6a42c065c1174a12f39abd87785f3",
+      "expected": "三。",
+      "heard": "三、",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "zh-Hans/mochi/2": {
+      "sha256": "9dccf4cc8e185e676e10e4979a74c1619d3066e42e3c0702292b3f745b5d9ce2",
+      "expected": "二。",
+      "heard": "二、",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "zh-Hans/mochi/1": {
+      "sha256": "546877aa6ff7df4d6e1d4f42db4a657c50224172f2f1f843ee114f9474b0f791",
+      "expected": "一。",
+      "heard": "一",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "zh-Hans/mochi/go": {
+      "sha256": "b2571a99d192e13f2cb773a0aebb58ba15ec17db54daafc17ce6151d49009298",
+      "expected": "开始吧！",
+      "heard": "開始吧",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "zh-Hans/mochi/reset": {
+      "sha256": "4b6cbe3f12637e671d2385c81405572bdfbc8a83f60bdd10138cb74713c377af",
+      "expected": "重新开始，我们准备好啦。",
+      "heard": "重新开始,我们准备好啦!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "zh-Hans/mochi/focusComplete": {
+      "sha256": "d3ca063da7f4de1cad304461a7a8515c1e1cbd7026b0f7abfff7e579569a909e",
+      "expected": "做得好！该休息一下啦。",
+      "heard": "做得好,该休息一下了",
+      "similarity": 0.889,
+      "review": "transcript-match"
+    },
+    "zh-Hans/mochi/breakComplete": {
+      "sha256": "26bae62f0d833eae00fc7fb522a1e1a05c38012be6686e29ec490c350a454e89",
+      "expected": "休息结束啦，准备好了就开始吧！",
+      "heard": "休息結束啦,準備好了就開始吧!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "ja/mochi/5": {
+      "sha256": "f8f33f9e20f10bfa6550e71c446e490e4a435b4f7fa94dc7e268609cb96208d9",
+      "expected": "ご。",
+      "heard": "5、",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "ja/mochi/4": {
+      "sha256": "23dd40f7545fa89e7e6f1a736f53b902a287c5d82c75b35c3b0a62a2e60c7059",
+      "expected": "よん。",
+      "heard": "4、",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "ja/mochi/3": {
+      "sha256": "ba06c19097b5d940d2d17f08d9b6c8551752a3f28dd777863c860840f8c13f1f",
+      "expected": "さん。",
+      "heard": "3、",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "ja/mochi/2": {
+      "sha256": "e5e5e26b6fb8c82b95540e78ca384acfee898ead6fdd6a5dc47f1890a47a28d6",
+      "expected": "に。",
+      "heard": "2、",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "ja/mochi/1": {
+      "sha256": "8e5b0a9a3eac41fe10fa9def6f28c0752b8c7b94492f2b572a2659091d717acd",
+      "expected": "いち。",
+      "heard": "1",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "ja/mochi/go": {
+      "sha256": "d1fe97c711b3d20cc29651e26675b10b37870a04655dad331421fc917c7744a2",
+      "expected": "さあ、始めよう！",
+      "heard": "さあ始めよう",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "ja/mochi/pause": {
+      "sha256": "62a3a3eb3f87b54a18a46bb42968306a9dca4ccdb91877681b554d28ac94b2d7",
+      "expected": "ひと息つこう。待ってるね。",
+      "heard": "一息つこう待ってるね",
+      "similarity": 0.857,
+      "review": "transcript-match"
+    },
+    "ja/mochi/resume": {
+      "sha256": "32df49a545f6ee8437fa09f9604199f140884765a41f5b09062431fc9ab204b1",
+      "expected": "よし、続けよう！",
+      "heard": "ふぅ、よし、続けよう",
+      "similarity": 0.857,
+      "review": "transcript-match"
+    },
+    "ja/mochi/reset": {
+      "sha256": "e1c89aebc792045ffff50f9d6ee4b1d89413c35a255dc12ccf119e7d4c8be73a",
+      "expected": "気持ちを新たに、もう一度。",
+      "heard": "気持ちを新たにもう一度",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "ja/mochi/focusComplete": {
+      "sha256": "5d3f62e8b4c2a3f2a682a4224f0a95a2ba36bce6c79978e0dc644f48bf9a4b9b",
+      "expected": "おつかれさま！少し休もう。",
+      "heard": "お疲れ様!少し休もう!",
+      "similarity": 0.7,
+      "review": "check"
+    },
+    "ja/mochi/breakComplete": {
+      "sha256": "1ffacd1fc12d3c456015aa4aff9dcceb2a2a9b44029f1a8e199710e55c4cc9ce",
+      "expected": "休憩おしまい。準備ができたら始めよう！",
+      "heard": "休憩をしまい、準備ができたら始めよう",
+      "similarity": 0.941,
+      "review": "transcript-match"
+    },
+    "ja/mochi/greeting": {
+      "sha256": "2fc4a72632a3742487799364d460d5b2a286576f26141f9fbe9622889a02526b",
+      "expected": "そばにいるよ。少しずつ進もう。",
+      "heard": "そばにいるよ。 少しずつ進もう。",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "ko/mochi/5": {
+      "sha256": "f408da8456b96ad7dac50bf720c3152c8e0e76877da90a35c3eb0ee783c76115",
+      "expected": "오.",
+      "heard": " 5",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "ko/mochi/4": {
+      "sha256": "4d1fb4572bf0a7c2be80f90356732c9d42d084e3c5fb9a3f11fbfb3a91a94951",
+      "expected": "사.",
+      "heard": " 4",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "ko/mochi/3": {
+      "sha256": "6609b881cdd48809d847d719116bf7abfa4bf9dacd97e0961395e8385aa81349",
+      "expected": "삼.",
+      "heard": " 3",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "ko/mochi/2": {
+      "sha256": "4b7b0afbeda5eabfdca0e345a8974941ab46f8d0e05a49f955b52bbc1376d350",
+      "expected": "이.",
+      "heard": " 2",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "ko/mochi/1": {
+      "sha256": "cdf4ca68b8e68e299976d9053d34a4d1947c084894ad35af86574739c647213d",
+      "expected": "일.",
+      "heard": " 1",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "ko/mochi/go": {
+      "sha256": "b8d1b20d80e7d7c6ace4d80330cf8ddf7caf9f0132fe9c1fb7e07b7332443d6d",
+      "expected": "자, 시작하자!",
+      "heard": "자, 시작하자!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "ko/mochi/pause": {
+      "sha256": "4c1aac911e92b5c8bb4d544652172b42f9cbf166ff690178d69222381cff16c8",
+      "expected": "잠깐 쉬어. 기다릴게.",
+      "heard": "잠깐 쉬어. 기다릴게.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "ko/mochi/resume": {
+      "sha256": "ca0789807da190d3b65fc6c8d16f739dc7fad4803a6536055f083b4aaf0abd73",
+      "expected": "좋아, 계속해 보자!",
+      "heard": "좋아! 계속 해보자!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "ko/mochi/reset": {
+      "sha256": "14e529d9d692dcfdc30c059057b9fde45b788e11e10c199510a80e2d3f0b2ea0",
+      "expected": "새로운 마음으로 다시 시작하자.",
+      "heard": "새로운 마음으로 다시 시작하자",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "ko/mochi/focusComplete": {
+      "sha256": "908e67d1002faa685bc0a38a40052d771cdb49c9595a84a117e0a713cee1f70c",
+      "expected": "잘했어! 이제 잠깐 쉬자.",
+      "heard": "잘했어! 이제 잠깐 쉬자!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "ko/mochi/breakComplete": {
+      "sha256": "fd464626ec1b77a8007907e25f5ed0490952caa684a362c02c841c6d8f5331a9",
+      "expected": "쉬는 시간 끝! 준비되면 시작하자.",
+      "heard": "쉬는 시간 끝! 준비되면 시작하자!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "ko/mochi/greeting": {
+      "sha256": "02705035eb4c5d7a426d547af567bcc8438edbd413bea1d1b0d6d6cbfad568b4",
+      "expected": "조금씩 함께, 조금씩 앞으로.",
+      "heard": "조금씩 함께 조금씩 앞으로",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "es/mochi/5": {
+      "sha256": "d81f697447897403dca5d121b30bd317825a5a6ffeaf4e488874697034fa3fef",
+      "expected": "Cinco.",
+      "heard": " 5,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "es/mochi/4": {
+      "sha256": "28442d6a6c365e7c05f52505ffb712e2c94d9fb00b137039db77696a9b3bc896",
+      "expected": "Cuatro.",
+      "heard": " 4,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "es/mochi/3": {
+      "sha256": "3fef0439e8d33de8bcbd0bfcca003c9183a69953d40219c6e55f2b68be32f232",
+      "expected": "Tres.",
+      "heard": " 3,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "es/mochi/2": {
+      "sha256": "8b6c5120bbe5d4121215687f7e2e1df1cd4fecce13a0e16aca55189ded96d7b0",
+      "expected": "Dos.",
+      "heard": " 2,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "es/mochi/1": {
+      "sha256": "0d72c6129723cd1ca3899f77e1f6542633fd0e037c0e623b89125ea5843db485",
+      "expected": "Uno.",
+      "heard": " 1.",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "es/mochi/go": {
+      "sha256": "eeda024d7a11edea3ff28c7c904ebe84458c3939880c6df7fea2a89c18fd7f01",
+      "expected": "¡Vamos a empezar!",
+      "heard": "¡Vamos a empezar!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "es/mochi/pause": {
+      "sha256": "8ceaa2ba2df5b90ed53a0ff75d67ff5ebd1dd0bacb9c7e76cea580f38831f794",
+      "expected": "Toma un respiro. Te espero.",
+      "heard": "¡Toma un respiro! ¡Se espero!",
+      "similarity": 0.952,
+      "review": "transcript-match"
+    },
+    "es/mochi/resume": {
+      "sha256": "33abeaf5744f530364475a36934c382f689f691123b5b86968138537dc189393",
+      "expected": "¡Sigamos adelante!",
+      "heard": "¿Sigamos adelante?",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "es/mochi/reset": {
+      "sha256": "b982ac2f6f51f4a879865fd773050fbee4b1ee7b9f0053eb710e78d1efbacd95",
+      "expected": "Empecemos de nuevo, con calma.",
+      "heard": "¿Empecemos de nuevo? ¿Con calma?",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "es/mochi/focusComplete": {
+      "sha256": "d6a5ea2d03e4dcb2137222b1624b3786f379e407c04d905d56bf304ed209ceb7",
+      "expected": "¡Muy bien! Es hora de descansar un poco.",
+      "heard": "Muy bien, es hora de descansar un poco.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "es/mochi/breakComplete": {
+      "sha256": "b960dbb3a9314de4aeded7c362b61fa8c183aaa61e021b8b251a525e7636d059",
+      "expected": "Se acabó el descanso. ¡Cuando quieras!",
+      "heard": "Se acabó el descanso, cuando quieras.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "es/mochi/greeting": {
+      "sha256": "7ec170a1f8575279b07aeab7e78f98892afaf899f0109678a7d63148fe60abc1",
+      "expected": "Un poco de compañía. Un poco de progreso.",
+      "heard": "Un poco de compañía, un poco de progreso.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "pt-BR/mochi/5": {
+      "sha256": "975f5a0ceb4ff14c77083255d92f687e20b43848e96092a9d45aeffb86072800",
+      "expected": "Cinco.",
+      "heard": " 5,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "pt-BR/mochi/4": {
+      "sha256": "423f96ce40b0fb858024a07a9cf0cfb9948b7f807eeaece02cb0e10438c99d88",
+      "expected": "Quatro.",
+      "heard": " 4,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "pt-BR/mochi/3": {
+      "sha256": "b0f47c150a6c5ad1620dc6151f3db706fb732be8298fd537355bf227303cbe5d",
+      "expected": "Três.",
+      "heard": " 3,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "pt-BR/mochi/2": {
+      "sha256": "962edfef2300497090260fef5c0a28596b0dc23159e0e3221b3b54b861026e2c",
+      "expected": "Dois.",
+      "heard": " 2,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "pt-BR/mochi/1": {
+      "sha256": "016709984139bcefa0b44f58fe8d3b2995731c732df9e76345ed6641e306b979",
+      "expected": "Um.",
+      "heard": " 1.",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "pt-BR/mochi/go": {
+      "sha256": "5a2b23048939c0c13d73bf3cec389d52b137973a7fa0820a0650fbecd2131892",
+      "expected": "Vamos começar!",
+      "heard": "Vamos começar!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "pt-BR/mochi/pause": {
+      "sha256": "9bedaca44cc4e5c4cdb9d0689ec580ced372e77cc097987fab3d12515911c9e2",
+      "expected": "Respira um pouco. Eu espero.",
+      "heard": "Respira um pouco. Eu espero.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "pt-BR/mochi/resume": {
+      "sha256": "f602be09382bad1a64efad85976fd00fe8c15f04bfa7bfef525c7dcf5d93aedd",
+      "expected": "Vamos continuar!",
+      "heard": "Vamos continuar!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "pt-BR/mochi/reset": {
+      "sha256": "d1aa2d66c8bbe288671c12d9dee97c03518198fb61b204edfccaee2fb35e493a",
+      "expected": "Um novo começo, com calma.",
+      "heard": "Há um novo começo com calma.",
+      "similarity": 0.952,
+      "review": "transcript-match"
+    },
+    "pt-BR/mochi/focusComplete": {
+      "sha256": "5cf0d5c4070e4be51471d5b383ea57bf59056257d97ad79a1b0647e76f191b8d",
+      "expected": "Muito bem! Hora de descansar um pouco.",
+      "heard": "Muito bem! Hora de descansar um pouco.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "pt-BR/mochi/breakComplete": {
+      "sha256": "bd423bef69a7ce278f8173bcf92994839243848de228ae77a090587dccbf86b0",
+      "expected": "O descanso acabou. Vamos quando você quiser!",
+      "heard": "O descanso acabou? Vamos quando você quiser!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "pt-BR/mochi/greeting": {
+      "sha256": "050dbcf39611fad6f1dd963f939e14ba2921e8dba8496119a05ab7f6a84401b6",
+      "expected": "Um pouco de companhia. Um pouco de progresso.",
+      "heard": "Um pouco de companhia, um pouco de progresso.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "fr/mochi/5": {
+      "sha256": "e8760b7f6425e90b1a30180defea7286265f34a1f118b0d6b8a1d4e84d18a180",
+      "expected": "Cinq.",
+      "heard": " 5,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "fr/mochi/4": {
+      "sha256": "21a30fa9279877290eafef14e4a20defaee030f5f3f1e5cacfdc598a63f4ccea",
+      "expected": "Quatre.",
+      "heard": " 4,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "fr/mochi/3": {
+      "sha256": "996cc398c98b5ea4ecc1338da95b674b61aff5a80f404d9594840fc6d9c3b755",
+      "expected": "Trois.",
+      "heard": " 3,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "fr/mochi/2": {
+      "sha256": "23fadda4007d7d0fb66d375c8e52426d4d7535dabc5d0e918876cf75d1044294",
+      "expected": "Deux.",
+      "heard": " 2,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "fr/mochi/1": {
+      "sha256": "ea8ad769e2e885d548fa4663294a8bfc61cf042cce652d6e49cdbef4b7b59692",
+      "expected": "Un.",
+      "heard": " 1.",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "fr/mochi/go": {
+      "sha256": "9f2912116a3c3cd268025c6ad7ccc3170aa8a82d39d03f6b8c03dc7c6d54f56f",
+      "expected": "C'est parti !",
+      "heard": "Ah, si !",
+      "similarity": 0.308,
+      "review": "check"
+    },
+    "en/pebble/pause": {
+      "sha256": "8b9699f0359c8286301b383cde1292b2bc721f6153f572ddb1e69de35afe3291",
+      "expected": "Take a breath. I'll wait.",
+      "heard": "Take a breath. I'll wait.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "en/pebble/resume": {
+      "sha256": "5705359ce88a3f3786c6651534ea77620e6e7db0ef26a8c5a22b606eb1dd434a",
+      "expected": "Let's keep going!",
+      "heard": "Let's keep going.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "en/pebble/greeting": {
+      "sha256": "25ca5ea40763078c4e6ada50ab7f0f48c354315964481b94e2405da310191983",
+      "expected": "One little ripple at a time.",
+      "heard": "One little ripple at a time.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "zh-Hans/pebble/pause": {
+      "sha256": "262d78840a1ef386fa6a87cca84a6c2203a5de7576cd087cc93407c3f704fe5b",
+      "expected": "歇一会儿，我等你。",
+      "heard": "歇一会儿,我等你",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "zh-Hans/pebble/resume": {
+      "sha256": "841d5f039885fc6e1158701492c92da37677d85e9d01393ca4c74845d217f824",
+      "expected": "好，我们继续！",
+      "heard": "好,我们继续",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "zh-Hans/pebble/greeting": {
+      "sha256": "b42bdfb4d98545c07b4bbdc761348b9bf5921528450b64ef15b85e8262371170",
+      "expected": "慢慢来，我陪着你。",
+      "heard": "慢慢来 我陪着你",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "en/bean/pause": {
+      "sha256": "657eacdcd3abca144ffbc7e427872fd4d51bc08436ecd077896d2ce2f3212d6c",
+      "expected": "Take a breath. I'll wait.",
+      "heard": "Take a breath. I'll wait.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "en/bean/resume": {
+      "sha256": "41aabaf8283092af24d9c75a0e40c9cf5eb00c530d146876b486ed2b34101486",
+      "expected": "Let's keep going!",
+      "heard": "Let's keep going!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "en/bean/greeting": {
+      "sha256": "a4aeaa2fe61f2c99825794d4d76f2928d8895e8495f0e93eae96c0574e7ca4b0",
+      "expected": "This seat beside you is taken.",
+      "heard": "This seat beside you is taken.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "zh-Hans/bean/pause": {
+      "sha256": "5cbe880e9d5cc891fd06a6d1e71d83a49aa550282d060705125c064bcc64d624",
+      "expected": "歇一会儿，我等你。",
+      "heard": "歇一会儿 我等你",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "zh-Hans/bean/resume": {
+      "sha256": "fdfae375deccdd8f0b4f907d66bdc70161c4229d7d9730df59dd0d039e2c7a05",
+      "expected": "好，我们继续！",
+      "heard": "好,我们继续!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "zh-Hans/bean/greeting": {
+      "sha256": "78401df1fcbf3f873fec420d5fbd2766a7c41104a99063b54c5a9da87d47b8f3",
+      "expected": "你旁边的位置，我占好啦。",
+      "heard": "你旁边的位置 我站好了",
+      "similarity": 0.8,
+      "review": "check"
+    },
+    "en/maple/pause": {
+      "sha256": "4587b20013848ae7136fd37afe5867b5fcaeebfaee0f66333f9431c26eda96b1",
+      "expected": "Take a breath. I'll wait.",
+      "heard": "Take a breath. I'll wait.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "en/maple/resume": {
+      "sha256": "30e650b27718b70cc443acc4f9faf02e49a4c225de9b30ce1fc20f02e3228147",
+      "expected": "Let's keep going!",
+      "heard": "Let's keep going.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "en/maple/greeting": {
+      "sha256": "27b17799c8d0b21c15f3a6c332ecfe22306f7380bee1d202eb04ffe7ad5fe85e",
+      "expected": "A little focus, fresh from the oven.",
+      "heard": "A little focus, fresh from the oven.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "zh-Hans/maple/pause": {
+      "sha256": "0103295cd412760b2e251290518226b4fe6980add1c59b9e3f6796e2c0408366",
+      "expected": "歇一会儿，我等你。",
+      "heard": "歇一会,我等你",
+      "similarity": 0.923,
+      "review": "transcript-match"
+    },
+    "zh-Hans/maple/resume": {
+      "sha256": "a545647866d2d631bc1de4075f7dfccff5ea6918b0b7f5d9db22b2136dd81296",
+      "expected": "好，我们继续！",
+      "heard": "好,我们继续。",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "zh-Hans/maple/greeting": {
+      "sha256": "c8f9c53bc2a3b2e7a9bace4d0744016d574763b88f8f9f5b663d618439b1e3a5",
+      "expected": "新鲜面包出炉啦，一起加油吧。",
+      "heard": "新鮮麵包出爐啦,一起加油吧!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "en/comet/pause": {
+      "sha256": "6c9da468571cd2df3c79a7189b3cc9a07f764725567a472b5d7bda4c3c4123ff",
+      "expected": "Take a breath. I'll wait.",
+      "heard": "Take a breath. I'll wait.",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "en/comet/resume": {
+      "sha256": "e169cb2a70748816f93adeb34cad2d24fce55c1122c983f7df71cc061846df71",
+      "expected": "Let's keep going!",
+      "heard": "Let's keep going!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "en/comet/greeting": {
+      "sha256": "b7418c2cb69ba97dcf059bdfa54aa91befd51310e681e1a9ea9f474715e0e085",
+      "expected": "One small delivery. One big adventure.",
+      "heard": "One small delivery! One big adventure!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "zh-Hans/comet/pause": {
+      "sha256": "d79e821deba949684b2b4864a21e95daaa48b5e158d9c2974c462243f50023b4",
+      "expected": "歇一会儿，我等你。",
+      "heard": "歇一会 我等你",
+      "similarity": 0.923,
+      "review": "transcript-match"
+    },
+    "zh-Hans/comet/resume": {
+      "sha256": "863ed66930817ff2b470384d002e0085bea37abd4bdeab46478dfeb1021f40b3",
+      "expected": "好，我们继续！",
+      "heard": "好,我們繼續",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "zh-Hans/comet/greeting": {
+      "sha256": "64aa83a0105a0fadf58bbc3ccaa84237b2d93d8557fa4c0dc908f29fc37378d2",
+      "expected": "送出一个小包裹，开启一场大冒险。",
+      "heard": "送出一个小包裹,开启一场大冒险。",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    }
+  }
+}

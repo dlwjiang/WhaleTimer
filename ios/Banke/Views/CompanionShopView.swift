@@ -42,7 +42,7 @@ struct CompanionShopContent: View {
                                     VStack(alignment: .leading, spacing: 6) {
                                         Text(pack.title).font(.headline)
                                         Text(pack.companions.map(\.name).joined(separator: " & ")).font(.subheadline)
-                                        Text("2 companions · Voices · 1 scene").font(.caption).foregroundStyle(.secondary)
+                                        Text("3 companions · Voices · Scenes").font(.caption).foregroundStyle(.secondary)
                                     }
                                     Spacer()
                                     if pack.isOwned(in: purchases.ownedProductIDs) {
@@ -57,12 +57,16 @@ struct CompanionShopContent: View {
                             }
                             .background(.white.opacity(0.65), in: RoundedRectangle(cornerRadius: 24))
                             .overlay(RoundedRectangle(cornerRadius: 24).strokeBorder(.white))
+                            // Rendering clips do not bound hit testing. The room
+                            // image must never make the preceding row open this pack.
+                            .contentShape(RoundedRectangle(cornerRadius: 24))
                         }.buttonStyle(.plain).id(pack.id)
+                            .accessibilityIdentifier("companion-pack-\(pack.id)")
                     }
                     if CompanionPack.shouldOfferCollection(owned: purchases.ownedProductIDs) {
                         VStack(alignment: .leading, spacing: 12) {
                             Text("The three-pack collection").font(.title3.bold())
-                            Text("All six companions and three scenes shown here. Future packs are not included.")
+                            Text("All nine paid companions and their scenes. Future packs are not included.")
                                 .font(.subheadline).foregroundStyle(.secondary)
                             PurchaseButton(productID: CompanionPack.collectionProductID, title: "Get all three packs", theme: CompanionTheme(.luna))
                             Text("One purchase. No subscription.").font(.caption).foregroundStyle(.secondary)
@@ -89,6 +93,7 @@ struct CompanionShopContent: View {
                 Label(companion.name, systemImage: store.companion == companion ? "checkmark.circle.fill" : "circle")
                     .font(.subheadline)
             }.frame(maxWidth: .infinity, minHeight: 140)
+                .contentShape(Rectangle())
         }.buttonStyle(.plain).accessibilityLabel(L10n.text("Use %@", companion.name))
     }
 
@@ -104,7 +109,7 @@ struct CompanionShopContent: View {
             }.font(.subheadline).frame(minHeight: 44)
             Text("Purchases use your Apple Account. Owned companions work offline.")
                 .font(.footnote).foregroundStyle(.secondary).multilineTextAlignment(.center)
-            Text("Mochi, Pip, the timer, and all languages are free.")
+            Text("Mochi, Pip, Pebble, the timer, and all languages are free.")
                 .font(.footnote).foregroundStyle(.secondary).multilineTextAlignment(.center)
         }.frame(maxWidth: .infinity)
     }
@@ -153,7 +158,7 @@ private struct PackDetailView: View {
                 }
                 if !pack.isOwned(in: purchases.ownedProductIDs) {
                     PurchaseButton(productID: pack.productID, title: L10n.text("Get %@", pack.title), theme: theme)
-                    Text("Both companions, four poses each, all voice languages, scene and timer colors. No subscription.")
+                    Text("Three companions, four poses each, all voice languages, scenes and timer colors. No subscription.")
                         .font(.footnote).foregroundStyle(.secondary).multilineTextAlignment(.center)
                 }
                 if let message = purchases.message { Text(L10n.text(message)).font(.footnote).multilineTextAlignment(.center) }
@@ -204,7 +209,7 @@ private struct PackArtwork: View {
             HStack(alignment: .bottom, spacing: 0) {
                 ForEach(pack.companions) { companion in
                     Image("\(companion.rawValue)-\(pose)").resizable().interpolation(.none).scaledToFit()
-                        .frame(width: proxy.size.width / 2, height: proxy.size.height * 0.88)
+                        .frame(width: proxy.size.width / CGFloat(pack.companions.count), height: proxy.size.height * 0.88)
                 }
             }
             .frame(width: proxy.size.width, height: proxy.size.height, alignment: .bottom)
@@ -217,5 +222,6 @@ private struct PackArtwork: View {
             .accessibilityElement(children: .ignore)
             .accessibilityLabel([pack.title, pack.companions.map(\.name).joined(separator: ", "), L10n.text(pose.capitalized)].joined(separator: ", "))
         }
+        .allowsHitTesting(false)
     }
 }

@@ -1,0 +1,41 @@
+{
+  "samples": 48,
+  "characters": 12,
+  "uniqueAudioHashes": 48,
+  "wordingDiagnostics": {
+    "transcript-match": 48,
+    "check": 0
+  },
+  "browserChecks": [
+    "all 48 audio metadata loaded",
+    "all character images loaded",
+    "audio playback advances",
+    "one-at-a-time playback",
+    "choice and notes survive reload",
+    "JSON export and import round trip",
+    "cross-character assignment"
+  ],
+  "styleApproval": "Pending human listening; descriptions are intended directions, not assertions of perceived age or cuteness.",
+  "applicationVoicesChanged": false,
+  "packaging": "Single HTML with embedded PNG and AAC assets; tested alone in an otherwise empty folder.",
+  "standaloneMedia": {
+    "imagesLoaded": 12,
+    "audioLoaded": 48,
+    "failures": 0,
+    "allEmbeddedBytesMatchOriginals": true
+  },
+  "junRound2": {
+    "newSamples": [
+      "jun-r2-a",
+      "jun-r2-b",
+      "jun-r2-c",
+      "jun-r2-d"
+    ],
+    "approvedChoicesPreloaded": 11,
+    "mochi": "maple-b",
+    "allOriginal48AudioFilesUnchanged": true,
+    "browserJunImageLoaded": true,
+    "browserFourNewAudioFilesLoaded": true,
+    "voiceStyleApproval": "Pending user listening."
+  }
+}

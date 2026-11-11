@@ -23,9 +23,9 @@ enum CompanionPack: String, CaseIterable, Identifiable, Sendable {
     }
     var companions: [Companion] {
         switch self {
-        case .midnightCafe: [.jun, .bean]
-        case .moonlightAcademy: [.luna, .atlas]
-        case .orbitalNightShift: [.nova, .orbit]
+        case .midnightCafe: [.jun, .bean, .maple]
+        case .moonlightAcademy: [.luna, .atlas, .wisp]
+        case .orbitalNightShift: [.nova, .orbit, .comet]
         }
     }
     var backdrop: String { "scene-\(rawValue)" }
@@ -39,15 +39,15 @@ enum CompanionPack: String, CaseIterable, Identifiable, Sendable {
 }
 
 enum Companion: String, CaseIterable, Codable, Identifiable, Sendable {
-    case mochi, pip, jun, bean, luna, atlas, nova, orbit
+    case mochi, pip, pebble, jun, bean, maple, luna, atlas, wisp, nova, orbit, comet
     var id: String { rawValue }
-    static let free: [Companion] = [.mochi, .pip]
+    static let free: [Companion] = [.mochi, .pip, .pebble]
     var pack: CompanionPack? {
         switch self {
-        case .mochi, .pip: nil
-        case .jun, .bean: .midnightCafe
-        case .luna, .atlas: .moonlightAcademy
-        case .nova, .orbit: .orbitalNightShift
+        case .mochi, .pip, .pebble: nil
+        case .jun, .bean, .maple: .midnightCafe
+        case .luna, .atlas, .wisp: .moonlightAcademy
+        case .nova, .orbit, .comet: .orbitalNightShift
         }
     }
     var name: String { rawValue.prefix(1).uppercased() + rawValue.dropFirst() }
@@ -55,12 +55,16 @@ enum Companion: String, CaseIterable, Codable, Identifiable, Sendable {
         switch self {
         case .mochi: L10n.text("Your quiet desk cat")
         case .pip: L10n.text("Your botanical study buddy")
+        case .pebble: L10n.text("Your gentle river otter")
         case .jun: L10n.text("Your midnight barista")
         case .bean: L10n.text("Your café cat")
+        case .maple: L10n.text("Your red-panda baker")
         case .luna: L10n.text("Your star-atlas scholar")
         case .atlas: L10n.text("Your little library owl")
+        case .wisp: L10n.text("Your little moth librarian")
         case .nova: L10n.text("Your orbital study partner")
         case .orbit: L10n.text("Your pocket mission robot")
+        case .comet: L10n.text("Your space courier")
         }
     }
     var greeting: String { L10n.voice("greeting", companion: self) }

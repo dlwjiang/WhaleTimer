@@ -36,13 +36,13 @@ th:first-child{width:130px}.note{font-size:13px;color:#6a665e}.flag{color:#855b1
 'use strict';
 const clips=__DATA__;
 const languages={'en':'English','zh-Hans':'Mandarin · 中文','ja':'Japanese · 日本語','ko':'Korean · 한국어','es':'Spanish · Español','pt-BR':'Portuguese · Brasil','fr':'French · Français','de':'German · Deutsch'};
-const characters=['mochi','pip','jun','bean','luna','atlas','nova','orbit'];
+const characters=['mochi','pip','pebble','jun','bean','maple','luna','atlas','wisp','nova','orbit','comet'];
 const cueNames={'greeting':'Greeting','5':'5','4':'4','3':'3','2':'2','1':'1','go':'Begin','pause':'Pause','resume':'Resume','reset':'Start over','focusComplete':'Focus complete','breakComplete':'Break complete'};
-const cueOrder=['greeting','5','4','3','2','1','go','pause','resume','reset','focusComplete','breakComplete'];
+const cueOrder=['greeting','poke','5','4','3','2','1','go','pause','resume','reset','focusComplete','breakComplete'];
 const character=document.querySelector('#character'),language=document.querySelector('#language'),player=document.querySelector('#player');
 for(const name of characters)character.add(new Option(name[0].toUpperCase()+name.slice(1),name));
 for(const [key,label] of Object.entries(languages))language.add(new Option(label,key));
-document.querySelector('#total').textContent=`${clips.length} bundled recordings · 8 companions · 8 spoken languages`;
+document.querySelector('#total').textContent=`${clips.length} bundled recordings · ${characters.length} companions · 8 spoken languages`;
 function render(){
   player.pause();player.removeAttribute('src');player.load();
   document.querySelector('#now').textContent='Choose a cue to listen.';

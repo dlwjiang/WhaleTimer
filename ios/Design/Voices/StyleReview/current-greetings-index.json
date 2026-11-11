@@ -1,0 +1,146 @@
+[
+  {
+    "character": "mochi",
+    "language": "en",
+    "start": 0,
+    "end": 2.517
+  },
+  {
+    "character": "pip",
+    "language": "en",
+    "start": 3.517,
+    "end": 5.854
+  },
+  {
+    "character": "pebble",
+    "language": "en",
+    "start": 6.854,
+    "end": 8.314
+  },
+  {
+    "character": "jun",
+    "language": "en",
+    "start": 9.314,
+    "end": 11.733
+  },
+  {
+    "character": "bean",
+    "language": "en",
+    "start": 12.733,
+    "end": 14.342
+  },
+  {
+    "character": "maple",
+    "language": "en",
+    "start": 15.342,
+    "end": 17.709
+  },
+  {
+    "character": "luna",
+    "language": "en",
+    "start": 18.709,
+    "end": 21.109
+  },
+  {
+    "character": "atlas",
+    "language": "en",
+    "start": 22.109,
+    "end": 24.125
+  },
+  {
+    "character": "wisp",
+    "language": "en",
+    "start": 25.125,
+    "end": 26.84
+  },
+  {
+    "character": "nova",
+    "language": "en",
+    "start": 27.84,
+    "end": 30.387
+  },
+  {
+    "character": "orbit",
+    "language": "en",
+    "start": 31.387,
+    "end": 33.039
+  },
+  {
+    "character": "comet",
+    "language": "en",
+    "start": 34.039,
+    "end": 36.689
+  },
+  {
+    "character": "mochi",
+    "language": "zh-Hans",
+    "start": 37.689,
+    "end": 40.222
+  },
+  {
+    "character": "pip",
+    "language": "zh-Hans",
+    "start": 41.222,
+    "end": 44.607
+  },
+  {
+    "character": "pebble",
+    "language": "zh-Hans",
+    "start": 45.607,
+    "end": 47.333
+  },
+  {
+    "character": "jun",
+    "language": "zh-Hans",
+    "start": 48.333,
+    "end": 50.413
+  },
+  {
+    "character": "bean",
+    "language": "zh-Hans",
+    "start": 51.413,
+    "end": 53.031
+  },
+  {
+    "character": "maple",
+    "language": "zh-Hans",
+    "start": 54.031,
+    "end": 56.616
+  },
+  {
+    "character": "luna",
+    "language": "zh-Hans",
+    "start": 57.616,
+    "end": 60.176
+  },
+  {
+    "character": "atlas",
+    "language": "zh-Hans",
+    "start": 61.176,
+    "end": 64.173
+  },
+  {
+    "character": "wisp",
+    "language": "zh-Hans",
+    "start": 65.173,
+    "end": 67.681
+  },
+  {
+    "character": "nova",
+    "language": "zh-Hans",
+    "start": 68.681,
+    "end": 70.995
+  },
+  {
+    "character": "orbit",
+    "language": "zh-Hans",
+    "start": 71.995,
+    "end": 73.755
+  },
+  {
+    "character": "comet",
+    "language": "zh-Hans",
+    "start": 74.755,
+    "end": 77.465
+  }
+]
