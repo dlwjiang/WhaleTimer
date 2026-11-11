@@ -1,0 +1,71 @@
+{
+  "tool": "built-in image_gen",
+  "assets": [
+    {
+      "name": "cafe",
+      "prompt": "Use case: stylized-concept. Create a production background image for Tick & Kin, a cozy companion focus timer app. Landscape 1536x1024. Full-bleed painted pixel-art environment with watercolor paper texture, delicate chunky pixel edges, warm miniature storybook game aesthetics. BACKGROUND ONLY: absolutely no people, animals, creatures, UI, timer, lettering, logos, border, device or mockup. Exact composition for app overlays: the animated character will be at x=22%, occupying x=10\u201336%, y=28\u201379%; leave that area uncluttered with no foreground objects. A broad horizontal floor/ground plane begins at y=79%, with a flat empty standing area at x=22%, y=79%. NO pedestal, no oval platform, no chairs, no furniture across this standing space. Concentrate charming environmental details at the far left edge and upper-left, and make the ENTIRE right 52% a softly lit, low-contrast, pale textured wall or mist area with no small objects: this is where the timer goes. Top 16% must remain relatively calm to sit behind the translucent header. Left and right flow into one continuous environment, no dividing line, no hard fade seam. Keep colors luminous and pale enough for blue-purple and brown app controls, avoid dark or high contrast surfaces on the right.\nScene: a cozy midnight bakery caf\u00e9 for Jun, Bean and Maple. Honey oak floor across the bottom fifth, warm cream plaster, a moonlit arched window and small hanging copper lamp at far upper left, hints of ivy and a pastry shelf at the extreme left margin. Rich amber highlights on left, quiet warm ivory plaster on right. Open empty space behind character.",
+      "source": "cafe.png",
+      "asset": "duo-landscape-cafe",
+      "sha256": "b601c01256d9a01b9831322d18ad3e684fc0324b7ae9e0846d62c3c25382f46e",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "name": "window",
+      "prompt": "Use case: stylized-concept. Create a production background image for Tick & Kin, a cozy companion focus timer app. Landscape 1536x1024. Full-bleed painted pixel-art environment with watercolor paper texture, delicate chunky pixel edges, warm miniature storybook game aesthetics. BACKGROUND ONLY: absolutely no people, animals, creatures, UI, timer, lettering, logos, border, device or mockup. Exact composition for app overlays: the animated character will be at x=22%, occupying x=10\u201336%, y=28\u201379%; leave that area uncluttered with no foreground objects. A broad horizontal floor/ground plane begins at y=79%, with a flat empty standing area at x=22%, y=79%. NO pedestal, no oval platform, no chairs, no furniture across this standing space. Concentrate charming environmental details at the far left edge and upper-left, and make the ENTIRE right 52% a softly lit, low-contrast, pale textured wall or mist area with no small objects: this is where the timer goes. Top 16% must remain relatively calm to sit behind the translucent header. Left and right flow into one continuous environment, no dividing line, no hard fade seam. Keep colors luminous and pale enough for blue-purple and brown app controls, avoid dark or high contrast surfaces on the right.\nScene: Mochi's sunny spring window nook. Pale blue whitewashed floor across bottom fifth, warm ivory plaster wall, a tall white-framed window at far left looking out to blue sky and cherry blossom garden, gauzy cream curtain at far left, a few daisies on the narrow left sill. Delicate blue, peach and sage highlights, quiet pale blue-ivory on right.",
+      "source": "window.png",
+      "asset": "duo-landscape-window",
+      "sha256": "628cb772bef84832b756faa8a4769e11404b3025a4317b7cc69243f35ed56ede",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "name": "study",
+      "prompt": "Use case: stylized-concept. Create a production background image for Tick & Kin, a cozy companion focus timer app. Landscape 1536x1024. Full-bleed painted pixel-art environment with watercolor paper texture, delicate chunky pixel edges, warm miniature storybook game aesthetics. BACKGROUND ONLY: absolutely no people, animals, creatures, UI, timer, lettering, logos, border, device or mockup. Exact composition for app overlays: the animated character will be at x=22%, occupying x=10\u201336%, y=28\u201379%; leave that area uncluttered with no foreground objects. A broad horizontal floor/ground plane begins at y=79%, with a flat empty standing area at x=22%, y=79%. NO pedestal, no oval platform, no chairs, no furniture across this standing space. Concentrate charming environmental details at the far left edge and upper-left, and make the ENTIRE right 52% a softly lit, low-contrast, pale textured wall or mist area with no small objects: this is where the timer goes. Top 16% must remain relatively calm to sit behind the translucent header. Left and right flow into one continuous environment, no dividing line, no hard fade seam. Keep colors luminous and pale enough for blue-purple and brown app controls, avoid dark or high contrast surfaces on the right.\nScene: Pip's tiny cozy woodland study. Honey birch floor across bottom fifth, pale mint cream plaster, small bookcase of sage and ochre books at the extreme left margin, a leafy round window high on far left, botanical greenery above left. Soft sunshine, green and honey accents, quiet pale sage cream on right.",
+      "source": "study.png",
+      "asset": "duo-landscape-study",
+      "sha256": "42f1e8258ab5b1cdaf985c35138c7457baad08e44f26c9010ad0209e58cf0c88",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "name": "river",
+      "prompt": "Use case: stylized-concept. Create a production background image for Tick & Kin, a cozy companion focus timer app. Landscape 1536x1024. Full-bleed painted pixel-art environment with watercolor paper texture, delicate chunky pixel edges, warm miniature storybook game aesthetics. BACKGROUND ONLY: absolutely no people, animals, creatures, UI, timer, lettering, logos, border, device or mockup. Exact composition for app overlays: the animated character will be at x=22%, occupying x=10\u201336%, y=28\u201379%; leave that area uncluttered with no foreground objects. A broad horizontal floor/ground plane begins at y=79%, with a flat empty standing area at x=22%, y=79%. NO pedestal, no oval platform, no chairs, no furniture across this standing space. Concentrate charming environmental details at the far left edge and upper-left, and make the ENTIRE right 52% a softly lit, low-contrast, pale textured wall or mist area with no small objects: this is where the timer goes. Top 16% must remain relatively calm to sit behind the translucent header. Left and right flow into one continuous environment, no dividing line, no hard fade seam. Keep colors luminous and pale enough for blue-purple and brown app controls, avoid dark or high contrast surfaces on the right.\nScene: Pebble's peaceful riverside reading veranda. Pale blue-gray wooden decking across bottom fifth; willow branches and reeds frame the extreme left edge, a glimpse of tranquil river and distant trees at upper left. The scene gently dissolves into luminous blue-white morning mist toward the center and the entire right half. Sage, water blue, soft cream. No rail or furniture crossing the character's area.",
+      "source": "river.png",
+      "asset": "duo-landscape-river",
+      "sha256": "c620833d7b512927fe474af58b5fa25494efc122d5075f8a2042e4339c84d5e4",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "name": "academy",
+      "prompt": "Use case: stylized-concept. Create a production background image for Tick & Kin, a cozy companion focus timer app. Landscape 1536x1024. Full-bleed painted pixel-art environment with watercolor paper texture, delicate chunky pixel edges, warm miniature storybook game aesthetics. BACKGROUND ONLY: absolutely no people, animals, creatures, UI, timer, lettering, logos, border, device or mockup. Exact composition for app overlays: the animated character will be at x=22%, occupying x=10\u201336%, y=28\u201379%; leave that area uncluttered with no foreground objects. A broad horizontal floor/ground plane begins at y=79%, with a flat empty standing area at x=22%, y=79%. NO pedestal, no oval platform, no chairs, no furniture across this standing space. Concentrate charming environmental details at the far left edge and upper-left, and make the ENTIRE right 52% a softly lit, low-contrast, pale textured wall or mist area with no small objects: this is where the timer goes. Top 16% must remain relatively calm to sit behind the translucent header. Left and right flow into one continuous environment, no dividing line, no hard fade seam. Keep colors luminous and pale enough for blue-purple and brown app controls, avoid dark or high contrast surfaces on the right.\nScene: Moonlight Academy for Luna, Atlas and Wisp. Pale lavender stone floor across bottom fifth, soft pearl-lilac plaster wall, a narrow tall arched window showing moon and stars at far left, hints of violet ivy, a small shelf of indigo and gold books confined to extreme left margin. Quiet magical library atmosphere. Luminous pale lavender right half, no floating objects or sparkles there.",
+      "source": "academy.png",
+      "asset": "duo-landscape-academy",
+      "sha256": "a9fc7e3a22224758a1bc1cefe330a80470a5893a6dbd3c7341bb4be211e7fd18",
+      "size": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "name": "orbit",
+      "prompt": "Use case: stylized-concept. Create a production background image for Tick & Kin, a cozy companion focus timer app. Landscape 1536x1024. Full-bleed painted pixel-art environment with watercolor paper texture, delicate chunky pixel edges, warm miniature storybook game aesthetics. BACKGROUND ONLY: absolutely no people, animals, creatures, UI, timer, lettering, logos, border, device or mockup. Exact composition for app overlays: the animated character will be at x=22%, occupying x=10\u201336%, y=28\u201379%; leave that area uncluttered with no foreground objects. A broad horizontal floor/ground plane begins at y=79%, with a flat empty standing area at x=22%, y=79%. NO pedestal, no oval platform, no chairs, no furniture across this standing space. Concentrate charming environmental details at the far left edge and upper-left, and make the ENTIRE right 52% a softly lit, low-contrast, pale textured wall or mist area with no small objects: this is where the timer goes. Top 16% must remain relatively calm to sit behind the translucent header. Left and right flow into one continuous environment, no dividing line, no hard fade seam. Keep colors luminous and pale enough for blue-purple and brown app controls, avoid dark or high contrast surfaces on the right.\nScene: Orbital Night Shift for Nova, Orbit and Comet. Soft pale blue-gray spaceship floor across bottom fifth, warm pearl-white cabin walls, a large rounded porthole confined to far left showing a pastel blue planet and stars, tiny terracotta plant and a few amber indicator lights confined to the far left margin. Cozy rounded retro space station, hand painted pixel art, not photoreal technology. Right half plain soft pearl-blue wall with no panels or buttons.",
+      "source": "orbit.png",
+      "asset": "duo-landscape-orbit",
+      "sha256": "f92e075cee134a5f9037067b081285fc6528530bab73169136977a7b35cebb43",
+      "size": [
+        1536,
+        1024
+      ]
+    }
+  ]
+}

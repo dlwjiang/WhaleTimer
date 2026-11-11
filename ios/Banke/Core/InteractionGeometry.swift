@@ -86,6 +86,7 @@ struct TabletopArt {
 enum DuoRoom: String, CaseIterable {
     case window, study, river, cafe, academy, orbit
     var asset: String { "duo-room-\(rawValue)" }
+    var landscapeAsset: String { "duo-landscape-\(rawValue)" }
     var ledgeFraction: CGFloat {
         switch self {
         case .window: 0.775

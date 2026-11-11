@@ -98,7 +98,18 @@ struct StudyView: View {
                 if let division, division.width > division.height {
                     tabletop(size: size, division: division, bottomInset: safe.bottom)
                 } else if size.width > size.height * 1.1 {
-                    sideBySide(size: size, division: division, top: contentTop, bottom: contentBottom)
+                    let landscapeRoom = usesDuoCanvas(proxy)
+                    if landscapeRoom {
+                        ZStack {
+                            DuoLandscapeBackdrop(room: store.companion.duoRoom, size: size)
+                                .id(store.companion.duoRoom)
+                                .transition(.opacity)
+                        }
+                        .animation(reduceMotion ? nil : .easeInOut(duration: 0.28), value: store.companion.duoRoom)
+                        .allowsHitTesting(false).accessibilityHidden(true)
+                    }
+                    sideBySide(size: size, division: division, top: contentTop, bottom: contentBottom,
+                               landscapeRoom: landscapeRoom)
                 } else {
                     singleColumn(size: size, top: contentTop, bottom: contentBottom)
                 }
@@ -156,12 +167,14 @@ struct StudyView: View {
         .clipped()
     }
 
-    private func sideBySide(size: CGSize, division: CGRect?, top: CGFloat, bottom: CGFloat) -> some View {
+    private func sideBySide(size: CGSize, division: CGRect?, top: CGFloat, bottom: CGFloat,
+                            landscapeRoom: Bool = false) -> some View {
         let split = division ?? CGRect(x: size.width * 0.43, y: 0, width: 8, height: size.height)
         let height = max(0, bottom - top)
         let timerWidth = max(0, size.width - split.maxX)
         return HStack(spacing: 0) {
-            CompanionScene(compact: true, openness: openness, sceneHeight: height, showsSelector: false)
+            CompanionScene(compact: true, openness: openness, sceneHeight: height,
+                           showsSelector: false, showsBackdrop: !landscapeRoom)
                 .frame(width: max(0, split.minX), height: height)
             Color.clear.frame(width: max(0, split.width), height: height)
             ScrollView {
@@ -342,3 +355,27 @@ struct TimerPanel: View {
     }
 }
 
+/// Landscape rooms span both panes and the header. Stretch the quiet floor
+/// separately so standing companions land on it without moving their artwork.
+private struct DuoLandscapeBackdrop: View {
+    let room: DuoRoom
+    let size: CGSize
+
+    var body: some View {
+        VStack(spacing: 0) {
+            band(sourceTop: 0, sourceHeight: 0.8, height: size.height * 0.70)
+            band(sourceTop: 0.8, sourceHeight: 0.2, height: size.height * 0.30)
+        }
+        .frame(width: size.width, height: size.height)
+        .clipped()
+    }
+
+    private func band(sourceTop: CGFloat, sourceHeight: CGFloat, height: CGFloat) -> some View {
+        let imageHeight = height / sourceHeight
+        return Image(room.landscapeAsset).resizable()
+            .frame(width: size.width, height: imageHeight)
+            .offset(y: -sourceTop * imageHeight)
+            .frame(width: size.width, height: height, alignment: .top)
+            .clipped()
+    }
+}

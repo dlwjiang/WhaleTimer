@@ -20,7 +20,19 @@ struct FlipClock: View {
                             ForEach(0..<2) { _ in
                                 RoundedRectangle(cornerRadius: height * 0.006)
                                     .fill(theme.clock.separator)
+                                    .overlay {
+                                        RoundedRectangle(cornerRadius: height * 0.006)
+                                            .fill(LinearGradient(stops: [
+                                                .init(color: .white.opacity(0.38), location: 0),
+                                                .init(color: .white.opacity(0.06), location: 0.38),
+                                                .init(color: .black.opacity(0.20), location: 1)
+                                            ], startPoint: .topLeading, endPoint: .bottomTrailing))
+                                    }
                                     .frame(width: height * 0.055, height: height * 0.065)
+                                    .shadow(color: theme.clock.separator.opacity(0.75), radius: 0,
+                                            y: max(1, height * 0.008))
+                                    .shadow(color: .black.opacity(0.16), radius: max(0.5, height * 0.006),
+                                            y: max(1.5, height * 0.014))
                             }
                         }.frame(width: 12, height: height)
                     } else {

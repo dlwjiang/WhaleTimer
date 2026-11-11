@@ -13,6 +13,7 @@ struct CompanionScene: View {
     var sceneHeight: CGFloat?
     var tabletopHingeY: CGFloat?
     var showsSelector = true
+    var showsBackdrop = true
     @State private var selection: Companion = .mochi
     @State private var position = 0.0
     @State private var settling = false
@@ -83,7 +84,7 @@ struct CompanionScene: View {
             }
             .frame(width: proxy.size.width, height: proxy.size.height)
             .background {
-                if tabletopHingeY == nil {
+                if tabletopHingeY == nil && showsBackdrop {
                     CylinderBackdrop(companions: neighbors, position: position, width: proxy.size.width, height: proxy.size.height)
                         .mask {
                             LinearGradient(stops: [.init(color: .clear, location: 0), .init(color: .black, location: 0.18), .init(color: .black, location: 0.82), .init(color: .clear, location: 1)], startPoint: .top, endPoint: .bottom)
@@ -232,6 +233,10 @@ private struct TabletopArtwork: View, Animatable {
                         AvatarSpeechOverlay(speech: speech?.speaker == companion ? speech : nil,
                             companion: companion, pose: pose, sceneMouth: registration.mouth)
                     }
+                    .scaleEffect(registration.approvedFraming.scale,
+                        anchor: UnitPoint(x: 0.5, y: registration.seat))
+                    .offset(x: registration.approvedFraming.x * width,
+                            y: registration.approvedFraming.y * hingeY)
                     .position(x: width / 2, y: hingeY + spriteHeight * (0.5 - registration.seat))
                     .frame(width: width, height: height)
                     .modifier(CarouselMotion(offset: offset, width: width, reduceMotion: reduceMotion,
@@ -273,6 +278,7 @@ private struct DuoSpriteRegistration {
     let seat: CGFloat
     let mouth: CGPoint
     let scale: CGFloat
+    let approvedFraming: (scale: CGFloat, x: CGFloat, y: CGFloat)
     init(_ companion: Companion, poked: Bool = false) {
         let imageSize = UIImage(named: companion.duoSprite)?.size ?? CGSize(width: 3, height: 1)
         aspect = imageSize.width / 2 / max(1, imageSize.height)
@@ -281,6 +287,23 @@ private struct DuoSpriteRegistration {
         case .atlas: scale = 0.70
         case .mochi, .pebble, .bean, .maple: scale = 0.74
         default: scale = 1
+        }
+        // User-approved Duo calibration, relative to the original baseline above.
+        // Keep this transform after the speech overlay to reproduce the audition
+        // exactly. Offsets use pane width and top-to-hinge height, respectively.
+        approvedFraming = switch companion {
+        case .mochi: (0.70, 0, -0.085)
+        case .pip: (0.79, -0.015, -0.015)
+        case .pebble: (0.77, 0, -0.080)
+        case .jun: (0.83, 0, -0.035)
+        case .bean: (0.83, 0, -0.100)
+        case .maple: (0.85, 0, -0.105)
+        case .luna: (0.74, 0, -0.110)
+        case .atlas: (0.93, 0, -0.095)
+        case .wisp: (0.75, 0, -0.090)
+        case .nova: (0.80, 0, -0.065)
+        case .orbit: (0.69, 0, -0.060)
+        case .comet: (0.80, 0, -0.090)
         }
         switch companion {
         case .mochi: seat = 0.77; mouth = CGPoint(x: 0.591, y: poked ? 0.401 : 0.388)

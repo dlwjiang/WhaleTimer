@@ -91,6 +91,21 @@ def main():
         if room and width*2!=height*3:errors.append(f'Expected 3:2 Duo room: {name}')
         if not room and (width%2 or data[25]!=6 or entry.get('frames')!=['idle','poked']):
             errors.append(f'Expected two-frame RGBA companion: {name}')
+    landscapes=json.loads((ROOT/'Design/DuoLandscape/generation.json').read_text())['assets']
+    if {entry['name'] for entry in landscapes}!={'window','study','river','cafe','academy','orbit'}:
+        errors.append('Duo landscape backgrounds must cover all six rooms')
+    for entry in landscapes:
+        source=ROOT/'Design/DuoLandscape'/entry['source']
+        asset=assets/f"{entry['asset']}.imageset"/'landscape.png'
+        if not source.exists() or not asset.exists():
+            errors.append(f"Missing Duo landscape: {entry['name']}");continue
+        data=asset.read_bytes()
+        if data!=source.read_bytes() or hashlib.sha256(data).hexdigest()!=entry['sha256']:
+            errors.append(f"Changed/stale Duo landscape: {entry['name']}")
+        if data[:8]!=b'\x89PNG\r\n\x1a\n' or len(data)<26:
+            errors.append(f"Invalid Duo landscape PNG: {entry['name']}");continue
+        if list(struct.unpack('>II',data[16:24]))!=entry['size']:
+            errors.append(f"Duo landscape size mismatch: {entry['name']}")
     audio=ROOT/'Banke/Audio/Voices';manifest=json.loads((audio/'manifest.json').read_text())
     expected={f'{lang}/{character}/{cue}' for lang in LANGS-{'zh-Hant'} for character in CHARS for cue in CUES}
     missing=expected-set(manifest['clips'])
