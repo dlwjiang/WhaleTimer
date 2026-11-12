@@ -10,6 +10,10 @@ function setup(t, saved, options = {}) {
   const dom = new JSDOM('<!doctype html><div id="app"></div>', { url: 'https://tide.test' });
   globalThis.window = dom.window;
   globalThis.document = dom.window.document;
+  if (options.wakeLock) {
+    Object.defineProperty(dom.window.document, 'visibilityState', { value: 'visible' });
+    Object.defineProperty(dom.window.navigator, 'wakeLock', { value: options.wakeLock });
+  }
   dom.window.HTMLDialogElement.prototype.showModal = function () { this.open = true; };
   dom.window.HTMLDialogElement.prototype.close = function () { this.open = false; };
   // Native media behavior is covered by the dedicated asset-panel tests.
@@ -51,6 +55,47 @@ function setup(t, saved, options = {}) {
   }
   return { app, $, calls, data, dom, configure, pointer, async finishSpeech() { assert.ok(pendingSpeech.length); pendingSpeech.shift()(true); await flush(); }, async time(ms, tick = true) { clock = ms; if (tick) app.tick(); await flush(); } };
 }
+
+test('screen stays awake through preparation, focus, grace and overtime; pause/reset/studio release it', async t => {
+  const locks = [];
+  const { $, app, time, configure, finishSpeech } = setup(t, null, {
+    deferSpeech: true,
+    wakeLock: { async request(type) {
+      assert.equal(type, 'screen');
+      const sentinel = Object.assign(new EventTarget(), {
+        released: false,
+        async release() { this.released = true; this.dispatchEvent(new Event('release')); },
+      });
+      locks.push(sentinel);
+      return sentinel;
+    } },
+  });
+  configure();
+  assert.equal(locks.length, 0);
+  $('#primary-action').click(); await flush();
+  assert.equal(app.engine.snapshot().status, 'preparing');
+  assert.equal(locks.length, 1);
+  assert.equal(locks[0].released, false);
+  await finishSpeech();
+  assert.equal(app.engine.snapshot().status, 'running');
+  await time(7000);
+  assert.equal(app.engine.snapshot().preparationPhase, 'grace');
+  await finishSpeech();
+  await time(13000);
+  assert.equal(app.engine.snapshot().phase, 'overdue');
+  assert.equal(locks.length, 1);
+  assert.equal(locks[0].released, false);
+  $('#primary-action').click(); await flush();
+  assert.equal(locks[0].released, true);
+  $('#primary-action').click(); await flush();
+  assert.equal(locks.length, 2);
+  app.reset(); await flush();
+  assert.equal(locks[1].released, true);
+  $('#primary-action').click(); await flush();
+  $('#settings-open').click(); $('#assets-open').click(); await flush();
+  assert.equal(app.engine.snapshot().status, 'paused');
+  assert.equal(locks[2].released, true);
+});
 
 test('unchanged idle ticks do not mutate the DOM or write storage', async t => {
   let writes = 0;

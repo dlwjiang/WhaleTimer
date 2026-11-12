@@ -25,11 +25,19 @@ Reload checks confirmed the localized app names/subtitles, screenshot and creati
 2. **Business: complete Digital Services Act compliance.** The account shows Complete Compliance Requirements. Choose the truthful trader status and finish contact/document verification. Private App Review contact details do not replace the public trader requirements.
 3. **[App Information](https://appstoreconnect.apple.com/apps/6833866597/distribution/info): complete Content Rights.** Check `LEGAL-AND-PRIVACY.md`, source-art and synthetic-audio provenance, and applicable licenses. Automatic approval review blocked making this legal declaration for the owner.
 4. **[App Privacy](https://appstoreconnect.apple.com/apps/6833866597/distribution/privacy): review and Publish the prepared privacy responses.** The final confirmation agrees the responses comply with applicable law and Apple's guidelines. Publishing this label is separate from submitting or releasing the app.
-5. **Choose launch countries for the app and all four purchases.** [App availability](https://appstoreconnect.apple.com/apps/6833866597/distribution/pricing) and purchase availability remain unconfigured. Automatic approval review blocked saving all 175 territories without explicit geographic authorization. A country-selection question was sent to the owner. Complete regional requirements, including mainland China filing requirements if that market is selected.
+5. **Launch countries configured November 13, 2026.** At the owner's request, saved a focused 29-market launch for the app and all four purchases, based on supported languages and excluding mainland China. Automatic availability in future countries is off. Reload checks confirmed the app shows 29 available / 146 not available and every purchase shows 29 selected. This configures availability only; nothing was submitted or released. EU trader verification and other applicable account requirements still apply.
 6. **Do a final TestFlight purchase/restore check after the real products and agreements are ready.** Confirm the support mailbox receives mail. Local StoreKit tests do not replace checking the uploaded, signed build against Apple's sandbox.
 7. **When satisfied, submit the app and its four first purchases together.** Nothing has been added for review. After approval, manual release still requires a release action.
 
 ## Purchase records
+
+### Launch countries saved November 13
+
+- Americas: United States, Canada, Argentina, Brazil, Chile, Colombia, Costa Rica, Mexico, Panama, Peru, Uruguay.
+- Europe: Austria, Belgium, France, Germany, Ireland, Luxembourg, Portugal, Spain, Switzerland, United Kingdom.
+- Asia and Pacific: Australia, Hong Kong, Japan, South Korea, Macau, New Zealand, Singapore, Taiwan.
+
+This is a focused launch selection, not a legal clearance for these markets or a finding that every excluded market requires extra filings. Brazil is included for the Brazilian Portuguese audience; Apple's regional tax/withholding adjustments may affect proceeds. Mainland China is explicitly excluded to avoid its additional filing requirements. Existing app and purchase prices were unchanged.
 
 | Product | Product ID | US base price | App Store Connect |
 | --- | --- | --- | --- |

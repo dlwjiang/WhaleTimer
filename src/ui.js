@@ -10,6 +10,7 @@ import { createFlipClock } from './flip-clock.js';
 import { TimerEngine, SECONDARY_COUNTDOWN_SECONDS } from './timer.js';
 import { createAudio } from './audio.js';
 import { createAssetPanel } from './admin.js';
+import { createScreenWakeLock } from './wake-lock.js';
 import { warningText } from './warnings.js';
 import { CHARACTERS, getCharacter, characterImage } from './characters.js';
 
@@ -126,6 +127,7 @@ export function mountApp(root, { now = Date.now, storage, audio = createAudio(),
     if (element.getAttribute(name) !== String(value)) element.setAttribute(name, value);
   };
   const flipClock = createFlipClock($('#timer-display'));
+  const wakeLock = createScreenWakeLock(root.ownerDocument);
   const dialog = $('#settings-dialog');
   const glassLens = createGlassLens(root);
   const glassTuner = createGlassTuner(root, { storage, onClose: () => $('#settings-open').focus() });
@@ -213,6 +215,7 @@ export function mountApp(root, { now = Date.now, storage, audio = createAudio(),
     const grace = phase === 'grace';
     const preparing = status === 'preparing';
     const active = status === 'running' || preparing;
+    wakeLock.setActive(active);
     attribute(root, 'data-phase', phase);
     attribute(root, 'data-status', status);
     attribute(root, 'data-countdown', grace && status === 'running' && remainingMs <= SECONDARY_COUNTDOWN_SECONDS * 1000 ? String(Math.ceil(remainingMs / 1000)) : '');
@@ -488,5 +491,5 @@ export function mountApp(root, { now = Date.now, storage, audio = createAudio(),
   setExpression('idle');
   tick();
   persist();
-  return { tick, reset, engine, destroy() { destroyed = true; cancelPreparation(); clearInterval(interval); cleanups.forEach(fn => fn()); assetPanel.destroy(); glassTuner.destroy(); glassLens.destroy(); speechCaption.destroy(); characterSwipe.destroy(); speaking.destroy(); characterCarousel.destroy(); flipClock.destroy(); audio.destroy(); } };
+  return { tick, reset, engine, destroy() { destroyed = true; wakeLock.destroy(); cancelPreparation(); clearInterval(interval); cleanups.forEach(fn => fn()); assetPanel.destroy(); glassTuner.destroy(); glassLens.destroy(); speechCaption.destroy(); characterSwipe.destroy(); speaking.destroy(); characterCarousel.destroy(); flipClock.destroy(); audio.destroy(); } };
 }
