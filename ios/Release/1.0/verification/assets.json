@@ -41,6 +41,22 @@
       "sha256": "d5d1ed48b38ef8f4e0f135b45e8883b0a32b4df28805f66e4880533d1d68704c"
     },
     {
+      "path": "marketing/app-store-header.png",
+      "width": 3840,
+      "height": 1646,
+      "bytes": 2163777,
+      "colorType": 2,
+      "sha256": "41b87baf9f394a1c5a95e10acead71bbab594785c5430c06dba8408484af5451"
+    },
+    {
+      "path": "marketing/app-store-search.png",
+      "width": 3840,
+      "height": 2560,
+      "bytes": 4584760,
+      "colorType": 2,
+      "sha256": "f98f0ee7f48a6beb341fd08e113e4216e53b257d123c57d4568fbec8b550dc5d"
+    },
+    {
       "path": "marketing/duo-desk-evening.png",
       "width": 1536,
       "height": 1024,
