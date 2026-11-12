@@ -1,0 +1,673 @@
+{
+  "method": "Second opinion on current, correctly conditioned recordings",
+  "clips": {
+    "zh-Hans/atlas/reset": {
+      "sha256": "f18346d3970504c52878ff04fd95f350af95d299d41218d279be1339e83c583c",
+      "expected": "重新开始，我们准备好啦。",
+      "heard": "重新开始,我们准备好了!",
+      "similarity": 0.9,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    },
+    "zh-Hans/atlas/poke": {
+      "sha256": "2435474db4a93026c4db08151667ac79eee4c9ab4b43a4622bd3aa1cededecb1",
+      "expected": "呀，被你发现啦！",
+      "heard": "呀!被你發現啦!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    },
+    "ko/atlas/poke": {
+      "sha256": "48c38090726d0abe377a447fdcfaf4f8f8667947cb9044c47e4932f6c628499d",
+      "expected": "앗, 나 찾았네!",
+      "heard": "앗! 나 찾았네!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    },
+    "pt-BR/atlas/go": {
+      "sha256": "084e51347e610b08f4ca963a0903ba48b239d8f6e0282a1907139f82b8301692",
+      "expected": "Vamos começar!",
+      "heard": "Vamos começar!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    },
+    "pt-BR/atlas/focusComplete": {
+      "sha256": "241a3771dc6f572585bde89203b0b52a5977221261a2624952e9851da8335d31",
+      "expected": "Muito bem! Hora de descansar um pouco.",
+      "heard": "Muito bem! Eu vou descansar um pouco.",
+      "similarity": 0.847,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "check"
+    },
+    "pt-BR/atlas/greeting": {
+      "sha256": "779e6b435f84c1d774bb1dc49deefed2e3abb796eb4b182d49d58e248a57520e",
+      "expected": "Um cantinho tranquilo para mentes curiosas.",
+      "heard": "Um canto tranquilo para mentes curiosas.",
+      "similarity": 0.958,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    },
+    "pt-BR/atlas/poke": {
+      "sha256": "5cd65c5b0c1482c73edf38fd3540cb063badf40892bf4f0b5e6a201327c4b232",
+      "expected": "Oi! Você me achou!",
+      "heard": "Oi! Você me achou!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    },
+    "fr/atlas/pause": {
+      "sha256": "b26ffc21ad20ee7843faec192e192f8008f582753c786884747148b2a22c5691",
+      "expected": "Fais une pause. Je t'attends.",
+      "heard": "Fais une pose, je t'attends.",
+      "similarity": 0.93,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    },
+    "fr/atlas/focusComplete": {
+      "sha256": "c384c9c2ca1647e1a9191e503dba5aebae37c75eb5494c3720b8166fa2490f23",
+      "expected": "Bravo ! C'est l'heure d'une petite pause.",
+      "heard": "Bravo! C'est l'heure d'une petite pose!",
+      "similarity": 0.949,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    },
+    "de/atlas/poke": {
+      "sha256": "bb942558ee2474ceeb7d71e53905da1362e5540750d72a6719469ce3389aa9a2",
+      "expected": "Huch! Da bist du ja!",
+      "heard": "Puh, da bist du ja!",
+      "similarity": 0.889,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    },
+    "zh-Hans/comet/poke": {
+      "sha256": "0923a81bf1641ec9782f2af542b9cde9b029be5896aa7256425ca40b724d1033",
+      "expected": "呀，被你发现啦！",
+      "heard": "呀,被你發現啦!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    },
+    "ja/comet/greeting": {
+      "sha256": "a10beb232adb701663a6e3007f821391047ab5d6591bce7a49a2a859a00dc0f6",
+      "expected": "小さなお届けものから、大きな冒険へ。",
+      "heard": "小さなお届け物から大きな冒険へ",
+      "similarity": 0.85,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    },
+    "ko/comet/poke": {
+      "sha256": "063a250e3e65415cfb78982f346a779cd811f2ea7f7d253e1b2f4287c00be888",
+      "expected": "앗, 나 찾았네!",
+      "heard": "앗! 나 찾았네!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    },
+    "es/comet/poke": {
+      "sha256": "c686a53567cc0dca796a30af5772afa2d58d587e42c4ec2e43fd42ced22131be",
+      "expected": "¡Hola! ¡Me encontraste!",
+      "heard": "¡Hola! ¡Me encontraste!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    },
+    "pt-BR/comet/focusComplete": {
+      "sha256": "97d7f46d9046d9ee27d5b36340b7f5f8a6d96f29a3f3ae960368edede0302166",
+      "expected": "Muito bem! Hora de descansar um pouco.",
+      "heard": "Muito bem! Hora de descansar um pouco!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    },
+    "fr/comet/pause": {
+      "sha256": "25922c00a43e5611435f748e9f3bd8c5ac45326d33c569feff2736e8436f91c4",
+      "expected": "Fais une pause. Je t'attends.",
+      "heard": "Fais une pose, j't'attends.",
+      "similarity": 0.905,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    },
+    "fr/comet/breakComplete": {
+      "sha256": "8157923f50176cd837e19aeb3b2116c60b068f1a74d157d45fee318126710eda",
+      "expected": "La pause est finie. On reprend quand tu veux !",
+      "heard": "La pause est finie. On reprend quand tu veux.",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    },
+    "de/comet/resume": {
+      "sha256": "4b3771ecd9d3ab92ba649c70f9a1fd88aeda2774f158721287a461598469a868",
+      "expected": "Weiter geht's!",
+      "heard": "Vitergates!",
+      "similarity": 0.667,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "check"
+    },
+    "de/comet/greeting": {
+      "sha256": "fd408cd7331365d87a10f1dd6341823e802b9bc3a5e1c1cfcf2fe93b04293ef8",
+      "expected": "Eine kleine Lieferung. Ein großes Abenteuer.",
+      "heard": "Eine kleine Lieferung, ein grosses Abenteuer.",
+      "similarity": 0.96,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    },
+    "de/comet/poke": {
+      "sha256": "32e3284fe35f6b96c3ac9acbd1e067a0dd635d6e3661bc9a78e8797302a6df47",
+      "expected": "Huch! Da bist du ja!",
+      "heard": "Huch, da bist du ja!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    },
+    "zh-Hans/pebble/poke": {
+      "sha256": "8db3ce1dc0704462131012ba0bb71688d60c78ad50bfb642edd22844ed541b0e",
+      "expected": "呀，被你发现啦！",
+      "heard": "呀,被你發現啦!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    },
+    "ja/pebble/greeting": {
+      "sha256": "e8d0bb88def5a38bb89c110a0cceafb24ba23920f3d6cadc35e2be0d53cd691a",
+      "expected": "小さな波紋を、ひとつずつ。",
+      "heard": "小さな波紋を一つずつ",
+      "similarity": 0.88,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    },
+    "ko/pebble/poke": {
+      "sha256": "0f7946c51e624f6c560d3d43dcc45347cdc0aefc677327718334b03e676fe9d6",
+      "expected": "앗, 나 찾았네!",
+      "heard": "아, 나 찾았네!",
+      "similarity": 0.8,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "check"
+    },
+    "es/pebble/greeting": {
+      "sha256": "971b3e35d4a333548b44b01fbca36d2960946fd28260aca61a266a40d5cd4950",
+      "expected": "Una pequeña onda cada vez.",
+      "heard": "una pequeña onda cada vez",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    },
+    "de/pebble/resume": {
+      "sha256": "6b4889efbc2d0c00659c672f5079e0023a8ebce288578cf91f2a9f5aab74c4ae",
+      "expected": "Weiter geht's!",
+      "heard": "Weiter geht's!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    },
+    "de/pebble/poke": {
+      "sha256": "49e13eb576210a791d36bbbce44ab96cc5f11075baf8e8e478e507c48477fc52",
+      "expected": "Huch! Da bist du ja!",
+      "heard": "Puh, da bist du ja!",
+      "similarity": 0.889,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    },
+    "zh-Hans/pip/pause": {
+      "sha256": "1357414b6e46ceae55ea34d50c76ef388ace9b6ffea0868e25034b7d997d6b90",
+      "expected": "歇一会儿，我等你。",
+      "heard": "新一花,我等你",
+      "similarity": 0.615,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "check"
+    },
+    "zh-Hans/pip/reset": {
+      "sha256": "408e1872790a61f968c48a7cee14ceb101885c77f3e1f0226c48f90610fd6afd",
+      "expected": "重新开始，我们准备好啦。",
+      "heard": "重新开始,我们准备好了",
+      "similarity": 0.9,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    },
+    "zh-Hans/pip/greeting": {
+      "sha256": "4711015ebc4a08a4611d705ea9e50818ad55b23bbd322ed75fa2741cafef8256",
+      "expected": "一页书，一个小魔法，慢慢来。",
+      "heard": "耶稣,一個小魔法,慢慢來",
+      "similarity": 0.762,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "check"
+    },
+    "zh-Hans/pip/poke": {
+      "sha256": "fea0352c7d443a567f1f97a846960d24de88d90af86ca513c7297e4d4d07c0a4",
+      "expected": "呀，被你发现啦！",
+      "heard": "呀,被你發現了",
+      "similarity": 0.833,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "check"
+    },
+    "ko/pip/poke": {
+      "sha256": "7915f97b9e76011517e2a27d491e89c47dd5e8dab4ae4b3c9cf3f2141cf07001",
+      "expected": "앗, 나 찾았네!",
+      "heard": "앗! 나 찾았네!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    },
+    "pt-BR/pip/go": {
+      "sha256": "ec83ec724a744c0dc034e3495bcf276e8f59568079664618e3d4f803aa8d1747",
+      "expected": "Vamos começar!",
+      "heard": "Vamos começar!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    },
+    "fr/pip/focusComplete": {
+      "sha256": "d11a5ea643b82678379690d17c97a871ccd843cd07322c1efabb8201a4e9141e",
+      "expected": "Bravo ! C'est l'heure d'une petite pause.",
+      "heard": "Bravo ! C'est l'air d'une petite pose !",
+      "similarity": 0.842,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "check"
+    },
+    "zh-Hans/bean/pause": {
+      "sha256": "f70539de37e06d7e3e30a8d1cbdd8dc670477ffb5e71ffffaf1105002aeb56c8",
+      "expected": "歇一会儿，我等你。",
+      "heard": "下一回我等你",
+      "similarity": 0.615,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "check"
+    },
+    "zh-Hans/bean/focusComplete": {
+      "sha256": "3066af380b6cdf6a51e3528ce0a53ba826a55139668bb53626b11e7a3ebb7d63",
+      "expected": "做得好！该休息一下啦。",
+      "heard": "做得好,該休息一下啦",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    },
+    "ko/bean/resume": {
+      "sha256": "cea571f02aeb8d3c0fee94bee5bc9510ad0ea1cc20beea04bb23d210b164b00e",
+      "expected": "좋아, 계속해 보자!",
+      "heard": "어! 좋아! 개보자! 사지 오만디 안조사의 상단청도 사지 개보자 사줬다",
+      "similarity": 0.235,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "check"
+    },
+    "ko/bean/reset": {
+      "sha256": "f8f1d71aa5b4088bb141231a8bd58db4834ca3cec9527abc6285626d3bb41662",
+      "expected": "새로운 마음으로 다시 시작하자.",
+      "heard": "다음 마음으로 다시 시작하자!",
+      "similarity": 0.8,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "check"
+    },
+    "ko/bean/poke": {
+      "sha256": "e9bff53d927df36ce2468b8ca23a7fb951fcdca06a47bf2965ae70f17fff6bfc",
+      "expected": "앗, 나 찾았네!",
+      "heard": "하, 나 찾았네!",
+      "similarity": 0.8,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "check"
+    },
+    "es/bean/focusComplete": {
+      "sha256": "75a4326c84015599f1f93ddf2fbce03091ba8b177a35aee1e9cad81536bb7ffd",
+      "expected": "¡Muy bien! Es hora de descansar un poco.",
+      "heard": "Jajaja, muy bien. Es hora de descansar un poco.",
+      "similarity": 0.909,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    },
+    "es/bean/poke": {
+      "sha256": "9f9fc4a0c693085d4d43484ca578d1efd10ebb6d82f2ce1215696a41bbdcac71",
+      "expected": "¡Hola! ¡Me encontraste!",
+      "heard": "¡AH! ¡MENGON TASK!",
+      "similarity": 0.621,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "check"
+    },
+    "pt-BR/bean/reset": {
+      "sha256": "d9255500e9564d6857f50c8c0ef5f70ef706b9f1e5375e96c5819317b44d6741",
+      "expected": "Um novo começo, com calma.",
+      "heard": "Um novo começo, com calma!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    },
+    "pt-BR/bean/breakComplete": {
+      "sha256": "135bfda4a807cb3838dafde7f07a18d969fccedee5485c9d6e2124d98ef879cb",
+      "expected": "O descanso acabou. Vamos quando você quiser!",
+      "heard": "O descanso acabou! Vamos com o novo século!",
+      "similarity": 0.743,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "check"
+    },
+    "pt-BR/bean/poke": {
+      "sha256": "b69c614f554a7d585c230c42aa1755d43e9b21e0e87b50e5c5ffd3129b3832e3",
+      "expected": "Oi! Você me achou!",
+      "heard": "Oi, fãs de Mio Show!",
+      "similarity": 0.37,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "check"
+    },
+    "fr/bean/pause": {
+      "sha256": "e5359c45a200bed1f776e988ad496038b078ccca5a2d861c0c72664518f08ad9",
+      "expected": "Fais une pause. Je t'attends.",
+      "heard": "Fais une pause... Je t'attends...",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    },
+    "fr/bean/reset": {
+      "sha256": "c7ed3c8f418b64be102fe297b233dd854afb656c83daaf7744a776f0cff1072d",
+      "expected": "On repart du bon pied.",
+      "heard": "Con gros de part, dit Bombier.",
+      "similarity": 0.65,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "check"
+    },
+    "de/bean/go": {
+      "sha256": "bdd460009d6b50db0de929112c1b46a5d45fc0a8a80a059e8f2b21ddb5fead4d",
+      "expected": "Los geht's!",
+      "heard": "Hallo Skates!",
+      "similarity": 0.526,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "check"
+    },
+    "de/bean/resume": {
+      "sha256": "7f4245e2b31909a2ab2208182d138a3896c1f711dd39587e7015b10126557331",
+      "expected": "Weiter geht's!",
+      "heard": "Haha, weiter geht's!",
+      "similarity": 0.846,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "check"
+    },
+    "de/bean/poke": {
+      "sha256": "821a4ca92274045ca0224c8d82f85dadc59e4323a4b497c0c6c89d3bb2d81a0d",
+      "expected": "Huch! Da bist du ja!",
+      "heard": "Ah! Huuuff! Da bist du ja!",
+      "similarity": 0.75,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "check"
+    },
+    "zh-Hans/jun/reset": {
+      "sha256": "6e4889207466f68f355e839e14fa94f25c506876b027335eb7a012d58973a667",
+      "expected": "重新开始，我们准备好啦。",
+      "heard": "重新开始,我们准备好了",
+      "similarity": 0.9,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    },
+    "zh-Hans/jun/focusComplete": {
+      "sha256": "bb7444b9ae36fd053b395375e1189f25a6c98d500b0d885411dfd463cdc3e774",
+      "expected": "做得好！该休息一下啦。",
+      "heard": "做得好,該休息一下了。",
+      "similarity": 0.889,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    },
+    "zh-Hans/jun/greeting": {
+      "sha256": "c11f76ccbf918955b2e52e96780049531330d081cb354d7401d27f433814af1d",
+      "expected": "咖啡馆开门啦，慢慢来。",
+      "heard": "咖啡館開門了,慢慢來。",
+      "similarity": 0.889,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    },
+    "zh-Hans/jun/poke": {
+      "sha256": "3fa4f5debe4bac8cece23a51f74b1f8fbba807f746c71d381e2e3581fe15944c",
+      "expected": "呀，被你发现啦！",
+      "heard": "被你發現了",
+      "similarity": 0.727,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "check"
+    },
+    "ja/jun/5": {
+      "sha256": "778e0dc8475ac4957a8c9da828a45aed1cf0c70970f5e7fc1bdb31f4e3e70308",
+      "expected": "ご。",
+      "heardCountdown": [
+        "5、",
+        "2、",
+        "3、",
+        "2、",
+        "1"
+      ],
+      "review": "check",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "ja/jun/4": {
+      "sha256": "82b86dc08bdf8b3b70bcc4ac60946f06d7cde99af050c3a8d5f226b1dcc1fdc1",
+      "expected": "よん。",
+      "heardCountdown": [
+        "5、",
+        "2、",
+        "3、",
+        "2、",
+        "1"
+      ],
+      "review": "check",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "ja/jun/3": {
+      "sha256": "c6be20373635b953a624c6ecfcfb6b4ea6433b0fd8c08199562dd513050c0f01",
+      "expected": "さん。",
+      "heardCountdown": [
+        "5、",
+        "2、",
+        "3、",
+        "2、",
+        "1"
+      ],
+      "review": "check",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "ja/jun/2": {
+      "sha256": "e5520a8add50ada6cf3d7ee25575528c1d9f88970a9726f9e6a6b4dd08622c60",
+      "expected": "に。",
+      "heardCountdown": [
+        "5、",
+        "2、",
+        "3、",
+        "2、",
+        "1"
+      ],
+      "review": "check",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "ja/jun/1": {
+      "sha256": "a81483350e80769ca4528026e5e4bbcd50c8aec821f2c41ff025ef62e07af4ff",
+      "expected": "いち。",
+      "heardCountdown": [
+        "5、",
+        "2、",
+        "3、",
+        "2、",
+        "1"
+      ],
+      "review": "check",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "ja/jun/pause": {
+      "sha256": "380809b86742eecf66b3cec818fb795bdcbee9460fe384bfd4ac93fbddb4aac2",
+      "expected": "ひと息つこう。待ってるね。",
+      "heard": "ひといちつこう、待ってるね",
+      "similarity": 0.917,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    },
+    "ja/jun/resume": {
+      "sha256": "88a3ce0248331067637e3197cd720cf21b5f8304b1a9448653f3bcb8a66547fe",
+      "expected": "よし、続けよう！",
+      "heard": "よし、続けよう!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    },
+    "ja/jun/focusComplete": {
+      "sha256": "80eafd2503c1b7764d602cfdb4065a552d3ba3a574174d33c29b0515d067f9d4",
+      "expected": "おつかれさま！少し休もう。",
+      "heard": "お疲れ様、少し休もう",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    },
+    "ko/jun/poke": {
+      "sha256": "6c51001ace27fe8993ce8edc71f620afe7df36923a3e7421196dda50eb7e862b",
+      "expected": "앗, 나 찾았네!",
+      "heard": "아, 나 찾았네.",
+      "similarity": 0.8,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "check"
+    },
+    "pt-BR/jun/breakComplete": {
+      "sha256": "bd6e2f24eaa0c7661de7502f0d72ae85f691b9bd6d28159326ec15241c74871b",
+      "expected": "O descanso acabou. Vamos quando você quiser!",
+      "heard": "O descanso acabou. Tomos quando você quiser.",
+      "similarity": 0.944,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    },
+    "fr/jun/pause": {
+      "sha256": "8d1d09f198886b0d06eb69d7de954bedb721b4d266a7c08679c429bbd439199a",
+      "expected": "Fais une pause. Je t'attends.",
+      "heard": "Fin poiss, je t'attends.",
+      "similarity": 0.7,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "check"
+    },
+    "fr/jun/poke": {
+      "sha256": "cfdac6487f03a0a356bdf88eed1577a38fa9ea005a1eb19417de248824036538",
+      "expected": "Oh ! Bonjour !",
+      "heard": "Oh, bonjour !",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    },
+    "de/jun/poke": {
+      "sha256": "1b5d05afcabdf59f43fedeed7cc08a1378faa99d05bd5490f48e6b3e1659dcaf",
+      "expected": "Huch! Da bist du ja!",
+      "heard": "Ho! Da bist du ja!",
+      "similarity": 0.846,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "check"
+    },
+    "zh-Hans/luna/reset": {
+      "sha256": "5252a14c7c3125f08c7a7d42f8bcf26bce00a9f26ddda62ff4f4ea386d6b8ab6",
+      "expected": "重新开始，我们准备好啦。",
+      "heard": "重新开始,我们准备好了",
+      "similarity": 0.9,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    },
+    "zh-Hans/luna/greeting": {
+      "sha256": "b6b9fa4a988b1e9253c52ae6a41d7a457a7321055664d5b9830bfd2c7dc8c2cb",
+      "expected": "再读一页，离星星更近一点。",
+      "heard": "再躲一夜 離星星更近一點",
+      "similarity": 0.818,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "check"
+    },
+    "zh-Hans/luna/poke": {
+      "sha256": "c54bd02822fc29eac63d9babba844dc4fe770e1d732e6485a6c9f16279376d9e",
+      "expected": "呀，被你发现啦！",
+      "heard": "呀,被你發現啦!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    },
+    "ja/luna/pause": {
+      "sha256": "ad0256f9fb7efe28f37326a94ab7627d943beabfbe860df37808e462eb5de2bb",
+      "expected": "ひと息つこう。待ってるね。",
+      "heard": "人生つこう、待ってるね",
+      "similarity": 0.727,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "check"
+    },
+    "ja/luna/greeting": {
+      "sha256": "7c965066d23b9ba76d5600ab934daaebbfb3c62d9d6ad56e2722f98638ba0549",
+      "expected": "あと一ページで、星に近づこう。",
+      "heard": "あと1級ページで星に近づこう",
+      "similarity": 0.875,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    },
+    "ja/luna/poke": {
+      "sha256": "b02d6acb938f187a6f0800508e8938a8e646c53b823876c64a9783c11a99a688",
+      "expected": "あっ、見つかっちゃった！",
+      "heard": "あ、見つかっちゃった",
+      "similarity": 0.947,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    },
+    "de/comet/5": {
+      "sha256": "f3e7b46dd2c3d3c65285f0d064e476cb080e015f0b4edddfebb55da3415525bc",
+      "expected": "Fünf.",
+      "heardCountdown": [
+        " Fünf,",
+        " vier,",
+        " drei,",
+        " zwei,",
+        " eins."
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "de/comet/4": {
+      "sha256": "6967dcfa51412f9235764a9d8671a68dd7c6161e1807a9f09cc44aa5d71ca57e",
+      "expected": "Vier.",
+      "heardCountdown": [
+        " Fünf,",
+        " vier,",
+        " drei,",
+        " zwei,",
+        " eins."
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "de/comet/3": {
+      "sha256": "bc63ae5b4a1d070682c6dd59c446b8cd390fdba8d906eede713f38171bb92416",
+      "expected": "Drei.",
+      "heardCountdown": [
+        " Fünf,",
+        " vier,",
+        " drei,",
+        " zwei,",
+        " eins."
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "de/comet/2": {
+      "sha256": "5fbf49a1e389dfac359f9ef1c7de8f409201518fc28072e7f35378fd1d4277b4",
+      "expected": "Zwei.",
+      "heardCountdown": [
+        " Fünf,",
+        " vier,",
+        " drei,",
+        " zwei,",
+        " eins."
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "de/comet/1": {
+      "sha256": "1db393a4abd14cfaabda0b9192e3e42d18c6275089814dead6fe942c9aa2c4d9",
+      "expected": "Eins.",
+      "heardCountdown": [
+        " Fünf,",
+        " vier,",
+        " drei,",
+        " zwei,",
+        " eins."
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    }
+  }
+}

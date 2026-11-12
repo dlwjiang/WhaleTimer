@@ -2,6 +2,7 @@ import XCTest
 import AVFoundation
 import SwiftUI
 import Combine
+import StoreKitTest
 @testable import Banke
 
 @MainActor
@@ -257,6 +258,221 @@ final class ReleaseExperienceTests: XCTestCase {
         XCTAssertEqual(verified, 1248)
     }
 
+    /// Native review captures of all room themes, at explicit native view sizes, using local StoreKit transactions.
+    func testDeviceRoomVisualReview() async throws {
+        let configuration = try XCTUnwrap(Bundle(for: Self.self).url(forResource: "Companions", withExtension: "storekit"))
+        let session = try SKTestSession(contentsOf: configuration)
+        session.resetToDefaultState()
+        session.clearTransactions()
+        session.disableDialogs = true
+        defer { session.clearTransactions(); session.resetToDefaultState() }
+        _ = try await session.buyProduct(identifier: CompanionPack.collectionProductID)
+        let purchases = PurchaseStore()
+        let entitlementDeadline = ContinuousClock.now.advanced(by: .seconds(5))
+        repeat {
+            await purchases.refreshEntitlements()
+            if purchases.availableCompanions == Companion.allCases { break }
+            try await Task.sleep(for: .milliseconds(100))
+        } while ContinuousClock.now < entitlementDeadline
+        XCTAssertEqual(purchases.availableCompanions, Companion.allCases,
+            "Local StoreKit did not deliver the review transaction")
+        guard purchases.availableCompanions == Companion.allCases else { return }
+        let suite = "BankeDeviceRoomReview"
+        let defaults = try XCTUnwrap(UserDefaults(suiteName: suite))
+        defaults.removePersistentDomain(forName: suite)
+        let study = StudyStore(purchases: purchases, defaults: defaults)
+        var settings = study.state.settings
+        settings.soundEnabled = false
+        study.updateSettings(settings)
+        let scene = try XCTUnwrap(UIApplication.shared.connectedScenes.compactMap { $0 as? UIWindowScene }.first)
+        let previousWindow = scene.windows.first { $0.isKeyWindow }
+        let window = UIWindow(windowScene: scene)
+        let container = UIViewController()
+        window.rootViewController = container
+        window.makeKeyAndVisible()
+        defer {
+            study.background()
+            window.isHidden = true
+            previousWindow?.makeKey()
+            if UIDevice.current.userInterfaceIdiom != .pad {
+                scene.requestGeometryUpdate(.iOS(interfaceOrientations: .portrait))
+            }
+            defaults.removePersistentDomain(forName: suite)
+        }
+        let directory = FileManager.default.temporaryDirectory.appendingPathComponent("DeviceRoomReview")
+        try FileManager.default.createDirectory(at: directory, withIntermediateDirectories: true)
+        let device = UIDevice.current.userInterfaceIdiom == .pad ? "ipad" : "phone"
+        let sizes: [(String, CGSize)] = device == "ipad"
+            ? [("portrait", CGSize(width: 1024, height: 1366)), ("landscape", CGSize(width: 1366, height: 1024))]
+            : [("portrait", CGSize(width: 393, height: 852)), ("landscape", CGSize(width: 852, height: 393))]
+        for (name, requestedSize) in sizes {
+            if device == "phone" {
+                scene.requestGeometryUpdate(.iOS(interfaceOrientations: name == "portrait" ? .portrait : .landscapeRight)) {
+                    XCTFail("Phone review rotation failed: \($0)")
+                }
+                try await Task.sleep(for: .seconds(1))
+            }
+            let size = device == "phone" ? window.bounds.size : requestedSize
+            XCTAssertEqual(size.width > size.height, name == "landscape")
+            let host = UIHostingController(rootView: StudyView()
+                .environmentObject(study).environmentObject(study.audio).environmentObject(purchases))
+            // iPad window mode can reject orientation changes. Render the same
+            // production view at explicit portrait/landscape bounds without
+            // inheriting the differently shaped parent window's safe area.
+            if device == "ipad" { host.safeAreaRegions = [] }
+            container.addChild(host)
+            container.view.addSubview(host.view)
+            host.view.frame = CGRect(origin: .zero, size: size)
+            host.didMove(toParent: container)
+            defer { host.willMove(toParent: nil); host.view.removeFromSuperview(); host.removeFromParent() }
+            try await Task.sleep(for: .milliseconds(500))
+            var captures: [UIImage] = []
+            for companion in [Companion.mochi, .pip, .pebble, .jun, .luna, .nova] {
+                study.select(companion)
+                XCTAssertEqual(study.companion, companion)
+                try await Task.sleep(for: .milliseconds(450))
+                host.view.layoutIfNeeded()
+                let image = UIGraphicsImageRenderer(bounds: host.view.bounds).image { _ in
+                    host.view.drawHierarchy(in: host.view.bounds, afterScreenUpdates: true)
+                }
+                try XCTUnwrap(image.pngData()).write(to: directory.appendingPathComponent("\(device)-\(name)-\(companion.rawValue).png"))
+                captures.append(image)
+            }
+            let cellWidth: CGFloat = name == "portrait" ? 300 : 500
+            let cellHeight = cellWidth * size.height / size.width
+            let format = UIGraphicsImageRendererFormat(); format.scale = 1
+            let sheet = UIGraphicsImageRenderer(size: CGSize(width: cellWidth * 3, height: cellHeight * 2), format: format).image { _ in
+                for (index, image) in captures.enumerated() {
+                    image.draw(in: CGRect(x: CGFloat(index % 3) * cellWidth, y: CGFloat(index / 3) * cellHeight,
+                                          width: cellWidth, height: cellHeight))
+                }
+            }
+            try XCTUnwrap(sheet.pngData()).write(to: directory.appendingPathComponent("\(device)-\(name)-contact.png"))
+        }
+        print("Device room native captures: \(directory.path)")
+    }
+
+    func testShelfPurchasePreviewVisualReview() throws {
+        let directory = FileManager.default.temporaryDirectory.appendingPathComponent("ShelfPreviewReview")
+        try FileManager.default.createDirectory(at: directory, withIntermediateDirectories: true)
+        var captures: [UIImage] = []
+        for pack in CompanionPack.allCases {
+            for poked in [false, true] {
+                let renderer = ImageRenderer(content: CompanionShelfPreview(companions: pack.companions, poked: poked)
+                    .frame(width: 600, height: 260))
+                renderer.scale = 1
+                let image = try XCTUnwrap(renderer.uiImage)
+                XCTAssertEqual(image.size, CGSize(width: 600, height: 260))
+                try XCTUnwrap(image.pngData()).write(to: directory.appendingPathComponent("\(pack.id)-\(poked ? "happy" : "idle").png"))
+                captures.append(image)
+            }
+        }
+        let format = UIGraphicsImageRendererFormat(); format.scale = 1
+        let sheet = UIGraphicsImageRenderer(size: CGSize(width: 1200, height: 780), format: format).image { _ in
+            for (index, image) in captures.enumerated() {
+                image.draw(in: CGRect(x: CGFloat(index % 2) * 600, y: CGFloat(index / 2) * 260, width: 600, height: 260))
+            }
+        }
+        try XCTUnwrap(sheet.pngData()).write(to: directory.appendingPathComponent("packs-contact.png"))
+        print("Shelf preview native captures: \(directory.path)")
+    }
+
+    func testDeviceRoomsCoverEveryFormatWithoutGapsOrDistortion() throws {
+        let windows: [(CGSize, Bool, DeviceRoomFormat)] = [
+            (CGSize(width: 393, height: 852), false, .phone),
+            (CGSize(width: 852, height: 393), false, .phoneLandscape),
+            (CGSize(width: 1024, height: 1366), true, .padPortrait),
+            (CGSize(width: 1366, height: 1024), true, .padLandscape),
+            (CGSize(width: 375, height: 1024), true, .phone),
+            (CGSize(width: 744, height: 1133), true, .padPortrait)]
+        for (size, isPad, expected) in windows {
+            let format = DeviceRoomFormat.resolve(size: size, isPad: isPad)
+            XCTAssertEqual(format, expected)
+            for room in DuoRoom.allCases {
+                let image = try XCTUnwrap(UIImage(named: format.asset(room: room)))
+                XCTAssertEqual(image.size.width / image.size.height, format.aspect, accuracy: 0.003)
+                let ledgeY = size.height * (format.isLandscape ? 0.65 : 0.46)
+                let frame = format.imageFrame(size: size, ledgeY: ledgeY, room: room,
+                    characterX: size.width * (format.isLandscape ? 0.23 : 0.5))
+                XCTAssertLessThanOrEqual(frame.minX, 0.01)
+                XCTAssertLessThanOrEqual(frame.minY, 0.01)
+                XCTAssertGreaterThanOrEqual(frame.maxX, size.width - 0.01)
+                XCTAssertGreaterThan(frame.maxY, ledgeY) // The paper layer covers the remaining canvas.
+                XCTAssertEqual(frame.width / frame.height, format.aspect, accuracy: 0.001)
+                XCTAssertEqual(frame.minY + frame.height * room.perchFraction, ledgeY, accuracy: 0.001)
+            }
+        }
+    }
+
+    func testDeviceRoomCharactersKeepFeetOnFloorAcrossPoses() {
+        for width in [320.0, 393.0, 600.0, 760.0] {
+            for floor in [180.0, 340.0, 540.0] {
+                for companion in Companion.allCases {
+                    let frame = DeviceRoomSprite.frame(companion: companion, width: width, floorY: floor)
+                    let union = DeviceRoomSprite.bounds(companion: companion, poked: false)
+                        .union(DeviceRoomSprite.bounds(companion: companion, poked: true))
+                    XCTAssertEqual(frame.minY + union.maxY * frame.height, floor, accuracy: 0.001)
+                    for poked in [false, true] {
+                        let bounds = DeviceRoomSprite.bounds(companion: companion, poked: poked)
+                        XCTAssertGreaterThanOrEqual(frame.minY + bounds.minY * frame.height, 0)
+                        XCTAssertGreaterThanOrEqual(frame.minX + bounds.minX * frame.width, 0)
+                        XCTAssertLessThanOrEqual(frame.minX + bounds.maxX * frame.width, width)
+                        XCTAssertLessThanOrEqual(frame.minY + bounds.maxY * frame.height, floor + 0.001)
+                    }
+                }
+            }
+        }
+    }
+
+    func testSharedPlatformArtworkKeepsBothExpressionsInsidePane() {
+        for size in [CGSize(width: 320, height: 220), CGSize(width: 400, height: 400), CGSize(width: 600, height: 540)] {
+            for companion in Companion.allCases {
+                let frame = CompanionArtworkLayout.platform(calibrated: true)
+                    .frame(companion: companion, width: size.width, height: size.height)
+                for poked in [false, true] {
+                    let bounds = DeviceRoomSprite.bounds(companion: companion, poked: poked)
+                    XCTAssertGreaterThanOrEqual(frame.minX + bounds.minX * frame.width, 11.99)
+                    XCTAssertGreaterThanOrEqual(frame.minY + bounds.minY * frame.height, 11.99)
+                    XCTAssertLessThanOrEqual(frame.minX + bounds.maxX * frame.width, size.width - 11.99)
+                    XCTAssertLessThanOrEqual(frame.minY + bounds.maxY * frame.height, size.height - 11.99)
+                }
+            }
+        }
+    }
+
+    /// Capture the very same renderer with both expressions in every layout.
+    /// Comparing rendered pixels catches missing or duplicated poke frames.
+    func testSharedCompanionPokeArtworkAcrossDisplays() async throws {
+        let directory = FileManager.default.temporaryDirectory.appendingPathComponent("SharedCompanionReview")
+        try FileManager.default.createDirectory(at: directory, withIntermediateDirectories: true)
+        let layouts: [(String, CGSize, CompanionArtworkLayout)] = [
+            ("phone", CGSize(width: 361, height: 390), .perched(y: 280)),
+            ("ipad", CGSize(width: 760, height: 600), .perched(y: 440)),
+            ("duo", CGSize(width: 760, height: 620), .seated(hingeY: 480)),
+            ("duo-landscape", CGSize(width: 400, height: 400), .platform(calibrated: true))]
+        for companion in Companion.allCases {
+            for (name, size, layout) in layouts {
+                var images: [UIImage] = []
+                for poked in [false, true] {
+                    let renderer = ImageRenderer(content: CompanionArtwork(companions: [companion, companion, companion],
+                        position: 0, width: size.width, height: size.height, layout: layout,
+                        reduceMotion: true, poked: poked, speech: nil))
+                    renderer.scale = 1
+                    images.append(try XCTUnwrap(renderer.uiImage))
+                }
+                XCTAssertNotEqual(images[0].pngData(), images[1].pngData(), "Missing poke expression: \(companion) / \(name)")
+                let format = UIGraphicsImageRendererFormat(); format.scale = 1
+                let sheet = UIGraphicsImageRenderer(size: CGSize(width: size.width * 2, height: size.height), format: format).image { _ in
+                    for (index, image) in images.enumerated() {
+                        image.draw(in: CGRect(x: CGFloat(index) * size.width, y: 0, width: size.width, height: size.height))
+                    }
+                }
+                try XCTUnwrap(sheet.pngData()).write(to: directory.appendingPathComponent("\(companion.rawValue)-\(name).png"))
+            }
+        }
+        print("Shared companion review: \(directory.path)")
+    }
+
     func testLiveTextSizeChangesThroughTimerCompletionPreserveSession() async throws {
         let scene = try XCTUnwrap(UIApplication.shared.connectedScenes.compactMap { $0 as? UIWindowScene }.first)
         let previousWindow = scene.windows.first { $0.isKeyWindow }
@@ -306,6 +522,36 @@ final class ReleaseExperienceTests: XCTestCase {
                     "\(companion): \(size) must show the complete card without scrolling or cropping")
             }
         }
+    }
+
+    func testHingeCountdownWordsStayOnOneCompactLineInEveryLanguage() {
+        for language in AppLanguage.allCases {
+            for cue in ["1", "2", "3", "4", "5", "go"] {
+                let speech = CompanionSpeech(id: 1, text: L10n.translate("voice.\(cue)", language: language),
+                                             cue: cue, speaker: .jun)
+                let host = UIHostingController(rootView:
+                    FloatingSpeechText(speech: speech, color: .brown, compact: true)
+                        .environment(\.dynamicTypeSize, .large))
+                let wide = host.sizeThatFits(in: CGSize(width: 600, height: 1000))
+                for width in [96.0, 146.0, 224.0] {
+                    let narrow = host.sizeThatFits(in: CGSize(width: width, height: 1000))
+                    XCTAssertLessThanOrEqual(narrow.width, width + 1, "\(language): \(cue)")
+                    XCTAssertLessThanOrEqual(narrow.height, wide.height + 1, "\(language): \(cue) must not wrap")
+                    XCTAssertLessThan(narrow.height, 55, "Countdown should use compact typography")
+                }
+            }
+        }
+    }
+
+    func testHingeSpeechStillRespectsAccessibilityTextSize() {
+        let speech = CompanionSpeech(id: 1, text: "Take a breath. I'll wait.", cue: "pause", speaker: .jun)
+        func measured(_ size: DynamicTypeSize) -> CGSize {
+            UIHostingController(rootView:
+                FloatingSpeechText(speech: speech, color: .brown, compact: true)
+                    .environment(\.dynamicTypeSize, size))
+                .sizeThatFits(in: CGSize(width: 224, height: 2000))
+        }
+        XCTAssertGreaterThan(measured(.accessibility3).height, measured(.large).height)
     }
 
     func testPokeUsesItsOwnLocalizedResponseWithoutChangingFocusDeadline() async throws {

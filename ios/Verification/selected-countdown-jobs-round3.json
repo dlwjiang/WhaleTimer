@@ -1,0 +1,40 @@
+{
+  "entries": [
+    {
+      "character": "bean",
+      "language": "ko"
+    },
+    {
+      "character": "maple",
+      "language": "de"
+    },
+    {
+      "character": "maple",
+      "language": "fr"
+    },
+    {
+      "character": "mochi",
+      "language": "de"
+    },
+    {
+      "character": "nova",
+      "language": "pt-BR"
+    },
+    {
+      "character": "orbit",
+      "language": "de"
+    },
+    {
+      "character": "orbit",
+      "language": "fr"
+    },
+    {
+      "character": "wisp",
+      "language": "ko"
+    },
+    {
+      "character": "wisp",
+      "language": "pt-BR"
+    }
+  ]
+}

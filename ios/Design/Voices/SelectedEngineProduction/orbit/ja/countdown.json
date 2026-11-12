@@ -1,0 +1,92 @@
+{
+  "method": "natural-countdown-v2",
+  "recognizer": "medium",
+  "direction": "Count quickly and crisply at about two numbers per second. Keep your character voice. Say each number briefly, without stretching vowels, adding noises, or singing.",
+  "contextOrder": [
+    6,
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+  ],
+  "synthesisInstruction": "A tiny boyish toy robot with a reedy nasal squeak, eager quick bursts and endearingly jerky comic timing. High youthful playful voice, little pitch jumps and bright curious excitement, no buzzing. Speak only the supplied Japanese words. Keep it cute and conversational, with no music, singing, added laughter or animal noises. Speak in Japanese. Count quickly and crisply at about two numbers per second. Keep your character voice. Say each number briefly, without stretching vowels, adding noises, or singing.",
+  "sourceWords": [
+    {
+      "text": "6",
+      "start": 0.0,
+      "end": 0.58
+    },
+    {
+      "text": "5",
+      "start": 0.58,
+      "end": 1.48
+    },
+    {
+      "text": "4",
+      "start": 1.5200000000000005,
+      "end": 2.16
+    },
+    {
+      "text": "3",
+      "start": 2.16,
+      "end": 2.74
+    },
+    {
+      "text": "2",
+      "start": 2.74,
+      "end": 3.38
+    },
+    {
+      "text": "1",
+      "start": 3.38,
+      "end": 4.26
+    },
+    {
+      "text": "0",
+      "start": 4.26,
+      "end": 4.66
+    }
+  ],
+  "text": "六、ご、よん、さん、に、いち、ゼロ.",
+  "words": [
+    {
+      "text": "5",
+      "start": 0.58,
+      "end": 1.48
+    },
+    {
+      "text": "4",
+      "start": 1.5200000000000005,
+      "end": 2.16
+    },
+    {
+      "text": "3",
+      "start": 2.16,
+      "end": 2.74
+    },
+    {
+      "text": "2",
+      "start": 2.74,
+      "end": 3.38
+    },
+    {
+      "text": "1",
+      "start": 3.38,
+      "end": 4.26
+    }
+  ],
+  "boundaries": [
+    0.58,
+    1.5000000000000002,
+    2.16,
+    2.74,
+    3.38,
+    4.26
+  ],
+  "sourceSHA256": "0f31d4f00bc9cb86ba5ef0a0e990f02fc09fe3b4c79ee195b97f94ff665cbfb0",
+  "seed": 505364763,
+  "speed": 1,
+  "pitch": 1
+}

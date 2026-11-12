@@ -89,8 +89,9 @@ struct SettingsView: View {
 
     private func companionRow(_ companion: Companion, locked: Bool) -> some View {
         HStack {
-            Image("\(companion.rawValue)-idle").resizable().interpolation(.none).scaledToFit()
+            CompanionShelfPreview(companions: [companion])
                 .frame(width: 56, height: 56)
+                .clipShape(RoundedRectangle(cornerRadius: 8))
                 .saturation(locked ? 0.12 : 1).opacity(locked ? 0.65 : 1)
                 .accessibilityHidden(true)
             VStack(alignment: .leading) {

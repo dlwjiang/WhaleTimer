@@ -1,0 +1,45 @@
+{
+  "method": "natural-countdown-v2",
+  "recognizer": "small",
+  "direction": null,
+  "text": "Cinco. Quatro. Três. Dois. Um.",
+  "words": [
+    {
+      "text": " Cinco,",
+      "start": 0.0,
+      "end": 0.7
+    },
+    {
+      "text": " quatro,",
+      "start": 0.8,
+      "end": 1.2
+    },
+    {
+      "text": " três,",
+      "start": 1.66,
+      "end": 2.12
+    },
+    {
+      "text": " dois,",
+      "start": 2.52,
+      "end": 2.78
+    },
+    {
+      "text": " um.",
+      "start": 3.34,
+      "end": 3.68
+    }
+  ],
+  "boundaries": [
+    0,
+    0.75,
+    1.43,
+    2.3200000000000003,
+    3.0599999999999996,
+    3.8659583333333334
+  ],
+  "sourceSHA256": "706345ae77ffcccb6ae40b2e1e70b13bd0d1542d11cab0391501d283bcd586d8",
+  "seed": 1676837705,
+  "speed": 1,
+  "pitch": 1
+}

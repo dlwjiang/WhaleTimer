@@ -1,0 +1,43 @@
+{
+  "method": "natural-countdown-v2",
+  "text": "오. 사. 삼. 이. 일.",
+  "words": [
+    {
+      "text": " 5,",
+      "start": 0.0,
+      "end": 0.3
+    },
+    {
+      "text": " 4,",
+      "start": 0.46,
+      "end": 1.4
+    },
+    {
+      "text": " 3,",
+      "start": 1.8,
+      "end": 2.46
+    },
+    {
+      "text": " 2,",
+      "start": 2.58,
+      "end": 3.42
+    },
+    {
+      "text": " 1",
+      "start": 3.54,
+      "end": 4.32
+    }
+  ],
+  "boundaries": [
+    0,
+    0.38,
+    1.6,
+    2.52,
+    3.48,
+    4.576625
+  ],
+  "sourceSHA256": "cc83194b29c80c5d6e242fd176a1e9c67a431abe2d700825fa953da632c5927c",
+  "seed": 210234303,
+  "speed": 1,
+  "pitch": 1
+}

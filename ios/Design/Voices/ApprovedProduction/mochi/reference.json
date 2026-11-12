@@ -1,0 +1,11 @@
+{
+  "voice": "maple-b",
+  "name": "Marshmallow baker",
+  "model": "Qwen3-TTS-12Hz-1.7B-VoiceDesign-bf16",
+  "description": "A feminine plush red panda with a rounded pillowy childlike voice, soft slightly nasal vowels and slow cozy pauses. Bashful sweetness and gentle cuddly delivery, small and soft without elegant adult resonance. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises.",
+  "text": "Hi! I'm right here. Let's do one little thing together. Ready? Here we go!",
+  "auditionSHA256": "670858f7b4fc74289190476b7b96a06cee71307529450c77d3aac1f95f5bd095",
+  "referenceSHA256": "1dfe3192be64d37d8b9bdce19e55873ccdc9e4d24566347ea5d90126570a5920",
+  "source": "ios/Design/Voices/VoiceCasting/audio/maple-b.m4a",
+  "method": "Decode exact selected audition to PCM, no pitch or speed changes."
+}

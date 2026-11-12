@@ -1,0 +1,43 @@
+{
+  "method": "context-countdown-v1",
+  "text": "五。 四。 三。 二。 一。",
+  "instruct": "Speak in Mandarin Chinese naturally. Clearly count down from five to one.",
+  "seed": 1400770925,
+  "words": [
+    {
+      "text": "五、",
+      "start": 0.0,
+      "end": 0.28
+    },
+    {
+      "text": "四、",
+      "start": 0.6,
+      "end": 1.38
+    },
+    {
+      "text": "三、",
+      "start": 1.92,
+      "end": 2.72
+    },
+    {
+      "text": "二、",
+      "start": 3.06,
+      "end": 4.14
+    },
+    {
+      "text": "一",
+      "start": 4.74,
+      "end": 5.44
+    }
+  ],
+  "boundaries": [
+    0,
+    0.44,
+    1.65,
+    2.89,
+    4.4399999999999995,
+    5.617208333333333
+  ],
+  "recognizer": "faster-whisper-small",
+  "note": "Transcript and boundary check; not native-speaker approval."
+}

@@ -1,0 +1,45 @@
+{
+  "method": "natural-countdown-v2",
+  "recognizer": "medium",
+  "direction": "For this countdown, say each number as a quick, clear beat. Do not draw out the vowels.",
+  "text": "Cinco, Cuatro, Tres, Dos, Uno.",
+  "words": [
+    {
+      "text": " Cinco,",
+      "start": 0.0,
+      "end": 0.82
+    },
+    {
+      "text": " cuatro,",
+      "start": 0.96,
+      "end": 1.44
+    },
+    {
+      "text": " tres,",
+      "start": 1.84,
+      "end": 2.2
+    },
+    {
+      "text": " dos,",
+      "start": 2.56,
+      "end": 2.72
+    },
+    {
+      "text": " uno!",
+      "start": 3.0,
+      "end": 3.28
+    }
+  ],
+  "boundaries": [
+    0,
+    0.8899999999999999,
+    1.6400000000000001,
+    2.38,
+    2.8600000000000003,
+    3.6144583333333333
+  ],
+  "sourceSHA256": "d4ad23e5cca26057aee2cf69dc548dac58d525744bce73c94af73056e8128d61",
+  "seed": 3787622457,
+  "speed": 1,
+  "pitch": 1
+}

@@ -20,6 +20,24 @@ OUT = ROOT / 'Banke/Audio/Voices'
 MODEL = Path(os.environ.get('BANKE_VOICE_MODEL', str(Path.home() / 'Models/tts/VoxCPM2-bf16')))
 REFERENCE = "Hello, I'm here with you. Let's take one small step together. A little focus, a little rest. You're doing well."
 
+def cache_reference_encoder(model):
+    """Reuse deterministic reference features across cues; never cache generated speech."""
+    original=model._encode_wav
+    cached={}
+    def encode_reference(audio_input, padding_mode='right', trim_silence_vad=False):
+        if not isinstance(audio_input,str):
+            return original(audio_input,padding_mode=padding_mode,trim_silence_vad=trim_silence_vad)
+        path=Path(audio_input)
+        key=(str(path.resolve()),path.stat().st_mtime_ns,padding_mode,trim_silence_vad)
+        if key not in cached:
+            # Only the current character is needed; bound memory across long runs.
+            cached.clear()
+            features=original(audio_input,padding_mode=padding_mode,trim_silence_vad=trim_silence_vad)
+            mx.eval(features)
+            cached[key]=features
+        return cached[key]
+    model._encode_wav=encode_reference
+
 def write(path, value):
     # Keep staging files outside the bundled Audio directory during development builds.
     with tempfile.NamedTemporaryFile(mode='w',dir=SOURCE,suffix='.json.tmp',delete=False) as output:
@@ -75,27 +93,50 @@ def main():
     parser.add_argument('--languages',default='en,zh-Hans,ja,ko,es,pt-BR,fr,de')
     parser.add_argument('--only',default='')
     parser.add_argument('--retake',type=int,default=0,help='New deterministic take for selected cues; selecting a digit regenerates the coherent five-number performance.')
+    parser.add_argument('--approved-choices',type=Path,help='Require exact approved audition references prepared in source-root; never redesign them.')
     args=parser.parse_args()
+    # The normal app-generation command must use the completed casting, never
+    # silently recreate the retired voice designs. Explicit audition workspaces
+    # retain their original workflow.
+    if args.source_root == SOURCE and args.approved_choices is None:
+        args.source_root = SOURCE/'ApprovedProduction'
+        args.approved_choices = SOURCE/'VoiceCasting/approved-choices.json'
     SOURCE=args.source_root.resolve(); OUT=args.audio_root.resolve()
+    if OUT == (ROOT / 'Banke/Audio/Voices').resolve():
+        parser.error('The legacy all-VoxCPM pipeline may not overwrite app voices. Stage original-engine replacements with the selected-engine pipeline; audition-reference approval is not production-audio approval.')
     SOURCE.mkdir(parents=True,exist_ok=True)
     if args.retake and not args.only: parser.error('--retake requires --only to protect the rest of the library')
     if args.retake < 0: parser.error('--retake must be nonnegative')
     lines=json.loads((ROOT/'Localization/voice-lines.json').read_text())
     profiles=json.loads((SOURCE/'profiles.json').read_text())
+    approved=json.loads(args.approved_choices.read_text()) if args.approved_choices else None
+    if approved and args.redesign_references:
+        parser.error('Approved audition references must not be redesigned')
     pronunciations=json.loads((SOURCE/'pronunciations.json').read_text()) if (SOURCE/'pronunciations.json').exists() else {}
     model=load_model(str(MODEL)); model.set_dtype(mx.float32)
+    cache_reference_encoder(model)
     sr=model.sample_rate
     OUT.mkdir(parents=True,exist_ok=True)
     manifest_path=OUT/'manifest.json'
     manifest=json.loads(manifest_path.read_text()) if manifest_path.exists() else {'model':MODEL.name,'provenance':'Original synthetic characters; no real person reference or imitation.','aliases':{'zh-Hant':'zh-Hans'},'clips':{}}
+    if approved:
+        manifest['casting']={'choicesSHA256':hashlib.sha256(args.approved_choices.read_bytes()).hexdigest(),
+                             'selectedVoices':approved['selectedVoices'],
+                             'method':'Exact approved audition audio used as local VoxCPM2 cloning references; no voice redesign.'}
     for character in args.characters.split(','):
         folder=SOURCE/character; folder.mkdir(exist_ok=True)
         reference=folder/'reference.wav'
         metadata=folder/'reference.json'
+        if approved:
+            selected=approved['selectedVoices'][character]
+            meta=json.loads(metadata.read_text()) if metadata.exists() else {}
+            if not reference.exists() or meta.get('voice')!=selected['voice'] or meta.get('auditionSHA256')!=selected['sha256'] or meta.get('referenceSHA256')!=hashlib.sha256(reference.read_bytes()).hexdigest():
+                raise SystemExit(f'{character}: missing or mismatched approved audition reference')
         changed=reference.exists() and (not metadata.exists() or json.loads(metadata.read_text()).get('description')!=profiles[character])
         if changed and not args.redesign_references:
             raise SystemExit(f'{character}: profile differs from reference. Use --redesign-references or a separate --source-root to audition the new identity.')
         if not reference.exists() or changed:
+            if approved:raise SystemExit(f'{character}: approved reference profile mismatch; refusing redesign')
             seed=int(hashlib.sha256(character.encode()).hexdigest()[:8],16)
             started=time.monotonic()
             pcm,seed=render(model,REFERENCE,seed,instruct=profiles[character],max_tokens=350)
@@ -111,6 +152,9 @@ def main():
             source=folder/lang; source.mkdir(exist_ok=True)
             if not args.only or any(c.isdigit() for c in args.only.split(',')):
                 success=generate_countdown(model,character,lang,reference,source,output,lines[lang],manifest,clean,encode,retake=args.retake)
+                if approved and success:
+                    for cue in ['1','2','3','4','5']:
+                        manifest['clips'][f'{lang}/{character}/{cue}'].update(referenceSHA256=reference_digest,castingVoice=selected['voice'],auditionSHA256=selected['sha256'],audioSHA256=hashlib.sha256((output/f'{cue}.m4a').read_bytes()).hexdigest())
                 write(manifest_path,manifest)
                 if not success: print(f'NEEDS REVIEW: countdown {lang}/{character}',flush=True)
                 mx.clear_cache()
@@ -123,7 +167,11 @@ def main():
                 instruction_override=pronunciation.get('instruct') if isinstance(pronunciation,dict) else None
                 fingerprint=hashlib.sha256((text+profiles[character]+MODEL.name+('spoken:'+spoken if spoken!=text else '')+('instruct:'+instruction_override if instruction_override else '')+'reference:'+reference_digest).encode()).hexdigest()
                 dest=output/f'{cue}.m4a'; wav=source/f'{cue}.wav'
-                if not args.retake and manifest['clips'].get(key,{}).get('hash')==fingerprint and dest.exists(): continue
+                if not args.retake and manifest['clips'].get(key,{}).get('hash')==fingerprint and dest.exists():
+                    if approved:
+                        manifest['clips'][key].update(referenceSHA256=reference_digest,castingVoice=selected['voice'],auditionSHA256=selected['sha256'],audioSHA256=hashlib.sha256(dest.read_bytes()).hexdigest())
+                        write(manifest_path,manifest)
+                    continue
                 started=time.monotonic(); seed=(int(fingerprint[:8],16)+args.retake*1_000_003)&0xffffffff
                 instruct=instruction_override or ('Speak Brazilian Portuguese naturally.' if lang=='pt-BR' else None)
                 pcm,seed=render(model,spoken,seed,reference=reference,instruct=instruct)
@@ -136,6 +184,8 @@ def main():
                 duration=encode(wav,dest,cue.isdigit())
                 manifest['clips'][key]={'text':text,'hash':fingerprint,'seed':seed,'duration':round(duration,3),'sourceDuration':round(len(pcm)/sr,3),'bytes':dest.stat().st_size}
                 manifest['clips'][key]['referenceSHA256']=reference_digest
+                manifest['clips'][key]['audioSHA256']=hashlib.sha256(dest.read_bytes()).hexdigest()
+                if approved:manifest['clips'][key].update(castingVoice=selected['voice'],auditionSHA256=selected['sha256'])
                 if spoken!=text:manifest['clips'][key]['spokenText']=spoken
                 if instruction_override:manifest['clips'][key]['instruction']=instruction_override
                 write(manifest_path,manifest)

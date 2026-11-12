@@ -1,0 +1,43 @@
+{
+  "method": "context-countdown-v1",
+  "text": "Cinq. Quatre. Trois. Deux. Un.",
+  "instruct": "Speak in French naturally. Clearly count down from five to one.",
+  "seed": 2103477356,
+  "words": [
+    {
+      "text": " 5,",
+      "start": 0.0,
+      "end": 0.48
+    },
+    {
+      "text": " 4,",
+      "start": 0.9,
+      "end": 1.5
+    },
+    {
+      "text": " 3,",
+      "start": 1.92,
+      "end": 2.42
+    },
+    {
+      "text": " 2,",
+      "start": 2.86,
+      "end": 3.46
+    },
+    {
+      "text": " 1",
+      "start": 4.04,
+      "end": 4.26
+    }
+  ],
+  "boundaries": [
+    0,
+    0.69,
+    1.71,
+    2.6399999999999997,
+    3.75,
+    4.348104166666666
+  ],
+  "recognizer": "faster-whisper-small",
+  "note": "Transcript and boundary check; not native-speaker approval."
+}

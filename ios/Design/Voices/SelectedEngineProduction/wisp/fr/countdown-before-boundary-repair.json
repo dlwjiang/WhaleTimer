@@ -1,0 +1,92 @@
+{
+  "method": "natural-countdown-v2",
+  "recognizer": "medium",
+  "direction": "Count quickly and crisply at about two numbers per second. Keep your character voice. Say each number briefly, without stretching vowels, adding noises, or singing.",
+  "contextOrder": [
+    6,
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+  ],
+  "synthesisInstruction": "A miniature feminine moth fairy with a very high crystalline voice, thin bell-like resonance and delicate quick little phrases. Youthful sparkling curiosity and tiny precise consonants, sweet magical energy. Speak only the supplied French words. Keep it cute and conversational, with no music, singing, added laughter or animal noises. Speak in French. Count quickly and crisply at about two numbers per second. Keep your character voice. Say each number briefly, without stretching vowels, adding noises, or singing.",
+  "sourceWords": [
+    {
+      "text": " Six,",
+      "start": 0.0,
+      "end": 0.84
+    },
+    {
+      "text": " cinq,",
+      "start": 1.26,
+      "end": 1.64
+    },
+    {
+      "text": " quatre,",
+      "start": 2.06,
+      "end": 2.46
+    },
+    {
+      "text": " trois,",
+      "start": 2.76,
+      "end": 3.16
+    },
+    {
+      "text": " deux,",
+      "start": 3.36,
+      "end": 3.62
+    },
+    {
+      "text": " un,",
+      "start": 4.26,
+      "end": 4.26
+    },
+    {
+      "text": " zéro.",
+      "start": 4.54,
+      "end": 4.8
+    }
+  ],
+  "text": "six, Cinq, Quatre, Trois, Deux, Un, zéro.",
+  "words": [
+    {
+      "text": " cinq,",
+      "start": 1.26,
+      "end": 1.64
+    },
+    {
+      "text": " quatre,",
+      "start": 2.06,
+      "end": 2.46
+    },
+    {
+      "text": " trois,",
+      "start": 2.76,
+      "end": 3.16
+    },
+    {
+      "text": " deux,",
+      "start": 3.36,
+      "end": 3.62
+    },
+    {
+      "text": " un,",
+      "start": 4.26,
+      "end": 4.26
+    }
+  ],
+  "boundaries": [
+    1.05,
+    1.85,
+    2.61,
+    3.26,
+    3.94,
+    4.4
+  ],
+  "sourceSHA256": "79abbaf5edf1760443f61efc4388b3040032374a5ea2a257065d63b17f644963",
+  "seed": 3215039411,
+  "speed": 1,
+  "pitch": 1
+}

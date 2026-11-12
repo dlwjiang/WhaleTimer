@@ -8,7 +8,9 @@ CHARS=['mochi','pip','pebble','jun','bean','maple','luna','atlas','wisp','nova',
 CUES=['go','pause','resume','reset','focusComplete','breakComplete','1','2','3','4','5','greeting','poke']
 
 def main():
-    parser=argparse.ArgumentParser();parser.add_argument('--allow-incomplete',action='store_true');parser.add_argument('--decode',action='store_true');args=parser.parse_args()
+    parser=argparse.ArgumentParser();parser.add_argument('--allow-incomplete',action='store_true');parser.add_argument('--decode',action='store_true')
+    parser.add_argument('--audio-root',type=Path,default=ROOT/'Banke/Audio/Voices')
+    args=parser.parse_args()
     errors=[]
     catalog=json.loads((ROOT/'Banke/Localizable.xcstrings').read_text())['strings']
     # Catch missing keys used by direct SwiftUI labels, not just incomplete
@@ -106,17 +108,53 @@ def main():
             errors.append(f"Invalid Duo landscape PNG: {entry['name']}");continue
         if list(struct.unpack('>II',data[16:24]))!=entry['size']:
             errors.append(f"Duo landscape size mismatch: {entry['name']}")
-    audio=ROOT/'Banke/Audio/Voices';manifest=json.loads((audio/'manifest.json').read_text())
+    device_rooms=json.loads((ROOT/'Design/DeviceBackgrounds/manifest.json').read_text())['assets']
+    room_names={'window','study','river','cafe','academy','orbit'}
+    formats={'phone':9/19.5,'phone-landscape':19.5/9,'pad-portrait':3/4,'pad-landscape':4/3}
+    if {(x['layout'],x['room']) for x in device_rooms}!={(f,r) for f in formats for r in room_names}:
+        errors.append('Device backgrounds must cover all six rooms in all four phone/iPad formats')
+    for entry in device_rooms:
+        source=ROOT/'Design/DeviceBackgrounds'/entry['source']
+        asset=assets/f"{entry['asset']}.imageset"/'room.png'
+        if not source.exists() or not asset.exists():
+            errors.append(f"Missing device room: {entry['name']}");continue
+        data=asset.read_bytes()
+        if data!=source.read_bytes() or hashlib.sha256(data).hexdigest()!=entry['sha256']:
+            errors.append(f"Changed/stale device room: {entry['name']}")
+        width,height=struct.unpack('>II',data[16:24])
+        if [width,height]!=entry['size'] or abs(width/height-formats[entry['layout']])>.003:
+            errors.append(f"Wrong device background format: {entry['name']}")
+        if width*height<1_000_000:errors.append(f"Device background resolution too low: {entry['name']}")
+    audio=args.audio_root;manifest=json.loads((audio/'manifest.json').read_text())
+    approved_path=ROOT/'Design/Voices/VoiceCasting/approved-choices.json'
+    approved=json.loads(approved_path.read_text())
+    if manifest.get('casting',{}).get('choicesSHA256')!=hashlib.sha256(approved_path.read_bytes()).hexdigest():
+        errors.append('Voice bundle is not generated from the current approved casting choices')
+    selected_engine=manifest.get('casting',{}).get('pipelineRevision')=='selected-engine-v2'
+    if selected_engine:
+        from selected_voice_contract import validate_bundle
+        errors.extend(validate_bundle(audio,manifest,decode=args.decode))
     expected={f'{lang}/{character}/{cue}' for lang in LANGS-{'zh-Hant'} for character in CHARS for cue in CUES}
     missing=expected-set(manifest['clips'])
+    unexpected=set(manifest['clips'])-expected
+    if unexpected:errors.append(f'Unexpected voice clips: {sorted(unexpected)}')
     voice_lines=json.loads((ROOT/'Localization/voice-lines.json').read_text())
     for key,entry in manifest['clips'].items():
+        if key not in expected:continue
         language,character,cue=key.split('/')
         if entry['text']!=voice_lines[language][character if cue=='greeting' else cue]:
             errors.append(f'Speech/caption mismatch: {key}')
         path=audio/f'{key}.m4a'
         if not path.exists() or path.stat().st_size!=entry['bytes']:errors.append(f'Missing/changed audio: {key}');continue
-        if key.split('/')[-1].isdigit() and entry.get('method')!='context-countdown-v1':errors.append(f'Unverified isolated digit: {key}')
+        selected=approved['selectedVoices'][character]
+        reference=ROOT/'Design/Voices/ApprovedProduction'/character/'reference.wav'
+        if entry.get('castingVoice')!=selected['voice'] or entry.get('auditionSHA256')!=selected['sha256']:
+            errors.append(f'Unapproved voice identity: {key}')
+        if not selected_engine and (not reference.exists() or entry.get('referenceSHA256')!=hashlib.sha256(reference.read_bytes()).hexdigest()):
+            errors.append(f'Unapproved voice reference: {key}')
+        if entry.get('audioSHA256')!=hashlib.sha256(path.read_bytes()).hexdigest():
+            errors.append(f'Voice content hash mismatch: {key}')
+        if cue.isdigit() and entry.get('method') not in ({'natural-countdown-v2','contextual-number-v2'} if selected_engine else {'context-countdown-v1'}):errors.append(f'Unverified isolated digit: {key}')
         if args.decode:
             info=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_entries','format=duration:stream=codec_name,sample_rate,channels','-of','json',str(path)]))
             stream=info['streams'][0];duration=float(info['format']['duration'])

@@ -18,7 +18,9 @@ Add notes. Choices save in the same browser where local-file storage is supporte
 Export my choices downloads a JSON file to send back. Import restores an export.
 Keyboard: 1–4 play a sample; Escape stops.
 
-The current app voice library is unchanged.
+The approved choices are now used by the app's 1,248 bundled recordings.
+ApprovedProduction retains the exact selected audition references and generation metadata.
+Open ../../../Verification/approved-voice-review.html to compare auditions with app greetings.
 Human listening determines whether a voice is cute and appropriate.
 transcripts.json contains local wording diagnostics, not acting assessments.
 plan.json and manifest.json preserve directions, models and reproducible seeds.

@@ -1,0 +1,93 @@
+{
+  "method": "natural-countdown-v2",
+  "recognizer": "medium",
+  "direction": "Say each number crisply and briefly, with a distinct quiet pause between numbers. Keep your character voice. Do not stretch vowels, add noises, or sing.",
+  "boundaryMethod": "quiet-pauses",
+  "contextOrder": [
+    6,
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+  ],
+  "synthesisInstruction": "A tiny boyish toy robot with a reedy nasal squeak, eager quick bursts and endearingly jerky comic timing. High youthful playful voice, little pitch jumps and bright curious excitement, no buzzing. Speak only the supplied French words. Keep it cute and conversational, with no music, singing, added laughter or animal noises. Speak in French. Say each number crisply and briefly, with a distinct quiet pause between numbers. Keep your character voice. Do not stretch vowels, add noises, or sing.",
+  "sourceWords": [
+    {
+      "text": " Six,",
+      "start": 0.0,
+      "end": 0.6
+    },
+    {
+      "text": " cinq,",
+      "start": 1.04,
+      "end": 1.42
+    },
+    {
+      "text": " quatre,",
+      "start": 1.92,
+      "end": 2.24
+    },
+    {
+      "text": " trois,",
+      "start": 2.52,
+      "end": 2.86
+    },
+    {
+      "text": " deux,",
+      "start": 3.0,
+      "end": 3.24
+    },
+    {
+      "text": " un,",
+      "start": 3.46,
+      "end": 3.54
+    },
+    {
+      "text": " zéro.",
+      "start": 3.62,
+      "end": 3.78
+    }
+  ],
+  "text": "six, Cinq, Quatre, Trois, Deux, Un, zéro.",
+  "words": [
+    {
+      "text": " cinq,",
+      "start": 1.04,
+      "end": 1.42
+    },
+    {
+      "text": " quatre,",
+      "start": 1.92,
+      "end": 2.24
+    },
+    {
+      "text": " trois,",
+      "start": 2.52,
+      "end": 2.86
+    },
+    {
+      "text": " deux,",
+      "start": 3.0,
+      "end": 3.24
+    },
+    {
+      "text": " un,",
+      "start": 3.46,
+      "end": 3.54
+    }
+  ],
+  "boundaries": [
+    0.675,
+    1.525,
+    2.265,
+    2.77,
+    3.16,
+    3.49
+  ],
+  "sourceSHA256": "9d1f8889964cbf37bd1e8adb0d679afdb604cca95f48375c714d36ad546c361d",
+  "seed": 506363757,
+  "speed": 1,
+  "pitch": 1
+}

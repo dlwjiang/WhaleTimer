@@ -1,0 +1,92 @@
+{
+  "method": "natural-countdown-v2",
+  "recognizer": "medium",
+  "direction": "Count quickly and crisply at about two numbers per second. Keep your character voice. Say each number briefly, without stretching vowels, adding noises, or singing.",
+  "contextOrder": [
+    6,
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+  ],
+  "synthesisInstruction": "A tiny boyish toy robot with a reedy nasal squeak, eager quick bursts and endearingly jerky comic timing. High youthful playful voice, little pitch jumps and bright curious excitement, no buzzing. Speak only the supplied Korean words. Keep it cute and conversational, with no music, singing, added laughter or animal noises. Speak in Korean. Count quickly and crisply at about two numbers per second. Keep your character voice. Say each number briefly, without stretching vowels, adding noises, or singing.",
+  "sourceWords": [
+    {
+      "text": " 6",
+      "start": 0.0,
+      "end": 0.78
+    },
+    {
+      "text": " 5",
+      "start": 0.78,
+      "end": 1.2
+    },
+    {
+      "text": " 4",
+      "start": 1.2,
+      "end": 1.44
+    },
+    {
+      "text": " 3",
+      "start": 1.44,
+      "end": 1.68
+    },
+    {
+      "text": " 2",
+      "start": 1.68,
+      "end": 1.94
+    },
+    {
+      "text": " 1",
+      "start": 1.94,
+      "end": 2.26
+    },
+    {
+      "text": " 0",
+      "start": 2.26,
+      "end": 2.58
+    }
+  ],
+  "text": "육, 오, 사, 삼, 이, 일, 영.",
+  "words": [
+    {
+      "text": " 5",
+      "start": 0.78,
+      "end": 1.2
+    },
+    {
+      "text": " 4",
+      "start": 1.2,
+      "end": 1.44
+    },
+    {
+      "text": " 3",
+      "start": 1.44,
+      "end": 1.68
+    },
+    {
+      "text": " 2",
+      "start": 1.68,
+      "end": 1.94
+    },
+    {
+      "text": " 1",
+      "start": 1.94,
+      "end": 2.26
+    }
+  ],
+  "boundaries": [
+    0.78,
+    1.2,
+    1.44,
+    1.68,
+    1.94,
+    2.26
+  ],
+  "sourceSHA256": "27ad8a3ad144bd0beff2e893f4a81b6172e3ef8a05e611072d5a3b70bd59b494",
+  "seed": 505362745,
+  "speed": 1,
+  "pitch": 1
+}

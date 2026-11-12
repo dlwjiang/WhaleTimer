@@ -1,0 +1,93 @@
+{
+  "method": "natural-countdown-v2",
+  "recognizer": "medium",
+  "direction": "Say each number crisply and briefly, with a distinct quiet pause between numbers. Keep your character voice. Do not stretch vowels, add noises, or sing.",
+  "boundaryMethod": "quiet-pauses",
+  "contextOrder": [
+    6,
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+  ],
+  "synthesisInstruction": "A miniature feminine moth fairy with a very high crystalline voice, thin bell-like resonance and delicate quick little phrases. Youthful sparkling curiosity and tiny precise consonants, sweet magical energy. Speak only the supplied Korean words. Keep it cute and conversational, with no music, singing, added laughter or animal noises. Speak in Korean. Say each number crisply and briefly, with a distinct quiet pause between numbers. Keep your character voice. Do not stretch vowels, add noises, or sing.",
+  "sourceWords": [
+    {
+      "text": " 여섯,",
+      "start": 0.0,
+      "end": 0.98
+    },
+    {
+      "text": " 다섯,",
+      "start": 0.98,
+      "end": 1.92
+    },
+    {
+      "text": " 넷,",
+      "start": 2.02,
+      "end": 2.82
+    },
+    {
+      "text": " 셋,",
+      "start": 2.94,
+      "end": 3.34
+    },
+    {
+      "text": " 둘,",
+      "start": 4.04,
+      "end": 4.2
+    },
+    {
+      "text": " 하나,",
+      "start": 4.98,
+      "end": 5.5
+    },
+    {
+      "text": " 영!",
+      "start": 6.0,
+      "end": 6.04
+    }
+  ],
+  "text": "여섯, 다섯, 넷, 셋, 둘, 하나, 영.",
+  "words": [
+    {
+      "text": " 다섯,",
+      "start": 0.98,
+      "end": 1.92
+    },
+    {
+      "text": " 넷,",
+      "start": 2.02,
+      "end": 2.82
+    },
+    {
+      "text": " 셋,",
+      "start": 2.94,
+      "end": 3.34
+    },
+    {
+      "text": " 둘,",
+      "start": 4.04,
+      "end": 4.2
+    },
+    {
+      "text": " 하나,",
+      "start": 4.98,
+      "end": 5.5
+    }
+  ],
+  "boundaries": [
+    0.845,
+    1.835,
+    2.49,
+    3.33,
+    4.315,
+    5.525
+  ],
+  "sourceSHA256": "c269f44f47b07df3f4eae7c57e4ad1a584a868c8c6ea16d10cb5253ad3932828",
+  "seed": 3216040423,
+  "speed": 1,
+  "pitch": 1
+}

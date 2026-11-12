@@ -1,0 +1,92 @@
+{
+  "method": "natural-countdown-v2",
+  "recognizer": "medium",
+  "direction": "Count quickly and crisply at about two numbers per second. Keep your character voice. Say each number briefly, without stretching vowels, adding noises, or singing.",
+  "contextOrder": [
+    6,
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+  ],
+  "synthesisInstruction": "A feminine plush red panda with a rounded pillowy childlike voice, soft slightly nasal vowels and crisp little syllables. Bashful sweetness and gentle cuddly delivery, small and soft without elegant adult resonance. Speak only the supplied Mandarin Chinese words. Keep it cute and conversational, with no music, singing, added laughter or animal noises. Speak in Mandarin Chinese. Count quickly and crisply at about two numbers per second. Keep your character voice. Say each number briefly, without stretching vowels, adding noises, or singing.",
+  "sourceWords": [
+    {
+      "text": "6、",
+      "start": 0.0,
+      "end": 0.5
+    },
+    {
+      "text": "5、",
+      "start": 0.5,
+      "end": 1.48
+    },
+    {
+      "text": "4、",
+      "start": 1.84,
+      "end": 2.28
+    },
+    {
+      "text": "3、",
+      "start": 2.74,
+      "end": 3.06
+    },
+    {
+      "text": "2、",
+      "start": 3.6,
+      "end": 4.0
+    },
+    {
+      "text": "1、",
+      "start": 4.12,
+      "end": 4.9
+    },
+    {
+      "text": "0",
+      "start": 5.18,
+      "end": 5.36
+    }
+  ],
+  "text": "六, 五, 四, 三, 二, 一, 零.",
+  "words": [
+    {
+      "text": "5、",
+      "start": 0.5,
+      "end": 1.48
+    },
+    {
+      "text": "4、",
+      "start": 1.84,
+      "end": 2.28
+    },
+    {
+      "text": "3、",
+      "start": 2.74,
+      "end": 3.06
+    },
+    {
+      "text": "2、",
+      "start": 3.6,
+      "end": 4.0
+    },
+    {
+      "text": "1、",
+      "start": 4.12,
+      "end": 4.9
+    }
+  ],
+  "boundaries": [
+    0.5,
+    1.6600000000000001,
+    2.51,
+    3.33,
+    4.0600000000000005,
+    5.04
+  ],
+  "sourceSHA256": "e980430e8a652597c3138b2c9b9ed211b485836f1b238c2905282857536b55c3",
+  "seed": 3138140481,
+  "speed": 1,
+  "pitch": 1
+}

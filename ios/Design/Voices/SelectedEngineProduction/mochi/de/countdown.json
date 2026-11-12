@@ -1,0 +1,93 @@
+{
+  "method": "natural-countdown-v2",
+  "recognizer": "medium",
+  "direction": "Say each number crisply and briefly, with a distinct quiet pause between numbers. Keep your character voice. Do not stretch vowels, add noises, or sing.",
+  "boundaryMethod": "quiet-pauses",
+  "contextOrder": [
+    6,
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+  ],
+  "synthesisInstruction": "A feminine plush red panda with a rounded pillowy childlike voice, soft slightly nasal vowels and crisp little syllables. Bashful sweetness and gentle cuddly delivery, small and soft without elegant adult resonance. Speak only the supplied German words. Keep it cute and conversational, with no music, singing, added laughter or animal noises. Speak in German. Say each number crisply and briefly, with a distinct quiet pause between numbers. Keep your character voice. Do not stretch vowels, add noises, or sing.",
+  "sourceWords": [
+    {
+      "text": " Sechs,",
+      "start": 0.0,
+      "end": 0.8
+    },
+    {
+      "text": " fünf,",
+      "start": 1.06,
+      "end": 1.6
+    },
+    {
+      "text": " vier,",
+      "start": 2.14,
+      "end": 2.58
+    },
+    {
+      "text": " drei,",
+      "start": 3.08,
+      "end": 3.62
+    },
+    {
+      "text": " zwei,",
+      "start": 4.18,
+      "end": 4.58
+    },
+    {
+      "text": " eins,",
+      "start": 5.48,
+      "end": 5.96
+    },
+    {
+      "text": " Null.",
+      "start": 6.56,
+      "end": 6.8
+    }
+  ],
+  "text": "sechs, Fünf, Vier, Drei, Zwei, Eins, null.",
+  "words": [
+    {
+      "text": " fünf,",
+      "start": 1.06,
+      "end": 1.6
+    },
+    {
+      "text": " vier,",
+      "start": 2.14,
+      "end": 2.58
+    },
+    {
+      "text": " drei,",
+      "start": 3.08,
+      "end": 3.62
+    },
+    {
+      "text": " zwei,",
+      "start": 4.18,
+      "end": 4.58
+    },
+    {
+      "text": " eins,",
+      "start": 5.48,
+      "end": 5.96
+    }
+  ],
+  "boundaries": [
+    0.785,
+    1.655,
+    2.705,
+    3.735,
+    4.875,
+    6.07
+  ],
+  "sourceSHA256": "d68b16af32d194075638d56c9ca19202c2a5ad0180d34fa11d71b993b1b7daa5",
+  "seed": 3139141493,
+  "speed": 1,
+  "pitch": 1
+}

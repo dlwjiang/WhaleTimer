@@ -1,0 +1,53 @@
+{
+  "method": "Local faster-whisper small/int8; diagnostics only, not native-speaker approval.",
+  "clips": {
+    "en/bean/breakComplete": {
+      "sha256": "b3d3389786b723c8cf9e421155b95956ba12da0e78a64a6154e34c22a64854d1",
+      "expected": "Break's over. Ready when you are!",
+      "heard": "Break's over! Ready when you are!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    },
+    "en/bean/greeting": {
+      "sha256": "c35eebac993d5a3db0aab7738412e33b714303def20e06ec29d9188019ffe4a8",
+      "expected": "This seat beside you is taken.",
+      "heard": "The seat beside you is taken!",
+      "similarity": 0.936,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    },
+    "en/luna/breakComplete": {
+      "sha256": "1ff2c8b54721b002be4f912335b56a9ff2909c0193f8a21affa6c28c9f43b9bc",
+      "expected": "Break's over. Ready when you are!",
+      "heard": "Break's over. Ready when you are.",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    },
+    "en/maple/poke": {
+      "sha256": "15d81fe614e76d61947a2a79ec89d4ae5e61e610be3d6bbdd96d082cc005823e",
+      "expected": "Oh! You found me!",
+      "heard": "Ah! You found me!",
+      "similarity": 0.917,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    },
+    "en/orbit/pause": {
+      "sha256": "53d4384cf922972137208b28e4410b539b20050159c604e98b165289cb782789",
+      "expected": "Take a breath. I'll wait.",
+      "heard": "Take a breath. I'll wait",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    },
+    "en/orbit/focusComplete": {
+      "sha256": "d6a76c43a633cedf9bf50135c3c022b83a4b844ba71e2f0effd3fbc5e3daf632",
+      "expected": "Well done! Time for a little break.",
+      "heard": "Well then time for a little break",
+      "similarity": 0.889,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    }
+  }
+}

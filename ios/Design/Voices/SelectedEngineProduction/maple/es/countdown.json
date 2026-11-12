@@ -1,0 +1,92 @@
+{
+  "method": "natural-countdown-v2",
+  "recognizer": "medium",
+  "direction": "Count quickly and crisply at about two numbers per second. Keep your character voice. Say each number briefly, without stretching vowels, adding noises, or singing.",
+  "contextOrder": [
+    6,
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+  ],
+  "synthesisInstruction": "A miniature feminine woodland fairy with a thin breathy flute-like high voice, soft gentle flowing speech and a shy smiling lilt. Delicate youthful warmth, lightly musical inflections without singing. Speak only the supplied Spanish words. Keep it cute and conversational, with no music, singing, added laughter or animal noises. Speak in Spanish. Count quickly and crisply at about two numbers per second. Keep your character voice. Say each number briefly, without stretching vowels, adding noises, or singing.",
+  "sourceWords": [
+    {
+      "text": " seis,",
+      "start": 0.0,
+      "end": 0.62
+    },
+    {
+      "text": " cinco,",
+      "start": 0.92,
+      "end": 1.44
+    },
+    {
+      "text": " cuatro,",
+      "start": 1.8,
+      "end": 2.26
+    },
+    {
+      "text": " tres,",
+      "start": 2.76,
+      "end": 3.34
+    },
+    {
+      "text": " dos,",
+      "start": 3.92,
+      "end": 4.2
+    },
+    {
+      "text": " uno,",
+      "start": 4.62,
+      "end": 5.04
+    },
+    {
+      "text": " cero.",
+      "start": 5.44,
+      "end": 5.58
+    }
+  ],
+  "text": "seis, Cinco, Cuatro, Tres, Dos, Uno, cero.",
+  "words": [
+    {
+      "text": " cinco,",
+      "start": 0.92,
+      "end": 1.44
+    },
+    {
+      "text": " cuatro,",
+      "start": 1.8,
+      "end": 2.26
+    },
+    {
+      "text": " tres,",
+      "start": 2.76,
+      "end": 3.34
+    },
+    {
+      "text": " dos,",
+      "start": 3.92,
+      "end": 4.2
+    },
+    {
+      "text": " uno,",
+      "start": 4.62,
+      "end": 5.04
+    }
+  ],
+  "boundaries": [
+    0.77,
+    1.62,
+    2.51,
+    3.63,
+    4.41,
+    5.24
+  ],
+  "sourceSHA256": "950759d9ec82d6ec888f593d07a3036048e259cec188a3d145e1581a2590e0bf",
+  "seed": 3680680016,
+  "speed": 1,
+  "pitch": 1
+}

@@ -1,0 +1,11 @@
+{
+  "voice": "atlas-b",
+  "name": "Library sprite",
+  "model": "Qwen3-TTS-12Hz-1.7B-VoiceDesign-bf16",
+  "description": "A miniature feminine library owl fairy with a clear high glassy voice, delicate crisp consonants and gentle measured little phrases. Young bright-eyed wonder and a sweet quiet smile, airy small-scale resonance. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises.",
+  "text": "Hi! I'm right here. Let's do one little thing together. Ready? Here we go!",
+  "auditionSHA256": "6872746d1a75c2cb86d40b79cfeb16d69262f85f54a7d3f664aa9c8427009245",
+  "referenceSHA256": "432b00b7620fe0cde4ff443c8c30e0e51820c084d4658f1d471c10f1e4129d3d",
+  "source": "ios/Design/Voices/VoiceCasting/audio/atlas-b.m4a",
+  "method": "Decode exact selected audition to PCM, no pitch or speed changes."
+}

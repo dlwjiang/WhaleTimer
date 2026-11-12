@@ -1,0 +1,81 @@
+{
+  "method": "natural-countdown-v2",
+  "recognizer": "medium",
+  "direction": "Say each number crisply and briefly, with a distinct quiet pause between numbers. Keep your character voice. Do not stretch vowels, add noises, or sing.",
+  "boundaryMethod": "quiet-pauses",
+  "contextOrder": [
+    5,
+    4,
+    3,
+    2,
+    1
+  ],
+  "synthesisInstruction": "A tiny boyish cartoon kitten with an unusually thin squeaky nasal voice, cheeky grin and fast punchy syllables. Mischievous little upward pitch flicks, youthful funny creature energy, affectionately impish. Speak only the supplied Korean words. Keep it cute and conversational, with no music, singing, added laughter or animal noises. Speak in Korean. Say each number crisply and briefly, with a distinct quiet pause between numbers. Keep your character voice. Do not stretch vowels, add noises, or sing.",
+  "sourceWords": [
+    {
+      "text": " 다섯,",
+      "start": 0.0,
+      "end": 1.3
+    },
+    {
+      "text": " 넷,",
+      "start": 1.56,
+      "end": 2.42
+    },
+    {
+      "text": " 셋,",
+      "start": 2.72,
+      "end": 3.22
+    },
+    {
+      "text": " 둘,",
+      "start": 3.68,
+      "end": 4.16
+    },
+    {
+      "text": " 하나",
+      "start": 4.82,
+      "end": 4.92
+    }
+  ],
+  "text": "다섯, 넷, 셋, 둘, 하나.",
+  "words": [
+    {
+      "text": " 다섯,",
+      "start": 0.0,
+      "end": 1.3
+    },
+    {
+      "text": " 넷,",
+      "start": 1.56,
+      "end": 2.42
+    },
+    {
+      "text": " 셋,",
+      "start": 2.72,
+      "end": 3.22
+    },
+    {
+      "text": " 둘,",
+      "start": 3.68,
+      "end": 4.16
+    },
+    {
+      "text": " 하나",
+      "start": 4.82,
+      "end": 4.92
+    }
+  ],
+  "boundaries": [
+    0.0,
+    1.085,
+    2.065,
+    3.2,
+    4.25,
+    5.0968333333333335
+  ],
+  "sourceSHA256": "c754ae135afc8607f419997a16522c596d469fa444fd4ecd857e875ebbc98f98",
+  "seed": 3790619439,
+  "speed": 1,
+  "pitch": 1
+}

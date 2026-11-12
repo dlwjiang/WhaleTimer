@@ -1,0 +1,81 @@
+{
+  "method": "natural-countdown-v2",
+  "recognizer": "medium",
+  "direction": "Say each number crisply and briefly, with a distinct quiet pause between numbers. Keep your character voice. Do not stretch vowels, add noises, or sing.",
+  "boundaryMethod": "quiet-pauses",
+  "contextOrder": [
+    5,
+    4,
+    3,
+    2,
+    1
+  ],
+  "synthesisInstruction": "A tiny boyish toy robot with a reedy nasal squeak, eager quick bursts and endearingly jerky comic timing. High youthful playful voice, little pitch jumps and bright curious excitement, no buzzing. Speak only the supplied German words. Keep it cute and conversational, with no music, singing, added laughter or animal noises. Speak in German. Say each number crisply and briefly, with a distinct quiet pause between numbers. Keep your character voice. Do not stretch vowels, add noises, or sing.",
+  "sourceWords": [
+    {
+      "text": " Fünf,",
+      "start": 0.0,
+      "end": 0.62
+    },
+    {
+      "text": " vier,",
+      "start": 1.26,
+      "end": 1.28
+    },
+    {
+      "text": " drei,",
+      "start": 1.58,
+      "end": 1.88
+    },
+    {
+      "text": " zwei,",
+      "start": 2.24,
+      "end": 2.62
+    },
+    {
+      "text": " eins.",
+      "start": 3.04,
+      "end": 3.18
+    }
+  ],
+  "text": "Fünf, Vier, Drei, Zwei, Eins.",
+  "words": [
+    {
+      "text": " Fünf,",
+      "start": 0.0,
+      "end": 0.62
+    },
+    {
+      "text": " vier,",
+      "start": 1.26,
+      "end": 1.28
+    },
+    {
+      "text": " drei,",
+      "start": 1.58,
+      "end": 1.88
+    },
+    {
+      "text": " zwei,",
+      "start": 2.24,
+      "end": 2.62
+    },
+    {
+      "text": " eins.",
+      "start": 3.04,
+      "end": 3.18
+    }
+  ],
+  "boundaries": [
+    0.0,
+    0.615,
+    1.265,
+    1.915,
+    2.56,
+    3.360145833333333
+  ],
+  "sourceSHA256": "3c43f26cd074b24499ba296a0b62af57831c0b8b4c777fb50e702999323ae0a8",
+  "seed": 507363760,
+  "speed": 1,
+  "pitch": 1
+}

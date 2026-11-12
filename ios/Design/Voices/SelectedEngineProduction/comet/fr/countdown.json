@@ -1,0 +1,45 @@
+{
+  "method": "natural-countdown-v2",
+  "recognizer": "medium",
+  "direction": "For this countdown, say each number as a quick, clear beat. Do not draw out the vowels.",
+  "text": "Cinq, Quatre, Trois, Deux, Un.",
+  "words": [
+    {
+      "text": " Cinq",
+      "start": 0.0,
+      "end": 0.92
+    },
+    {
+      "text": " quatre",
+      "start": 0.92,
+      "end": 1.46
+    },
+    {
+      "text": " trois",
+      "start": 1.46,
+      "end": 1.96
+    },
+    {
+      "text": " deux",
+      "start": 1.96,
+      "end": 2.26
+    },
+    {
+      "text": " un",
+      "start": 2.26,
+      "end": 2.6
+    }
+  ],
+  "boundaries": [
+    0,
+    0.92,
+    1.46,
+    1.96,
+    2.26,
+    2.6298333333333335
+  ],
+  "sourceSHA256": "351f0af9a35f0c361ad06d6744e601f39d6a1364622f92119a6553c4918a2bf2",
+  "seed": 1677834681,
+  "speed": 1,
+  "pitch": 1
+}

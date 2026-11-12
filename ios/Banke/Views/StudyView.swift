@@ -3,6 +3,7 @@ import Combine
 
 struct StudyView: View {
     #if DEBUG
+    @AppStorage("duo-shelf-framing-v3") private var framingJSON = ""
     var previewTabletop = ProcessInfo.processInfo.arguments.contains("-preview-tabletop")
     #else
     private let previewTabletop = false
@@ -15,6 +16,8 @@ struct StudyView: View {
     @State private var settingsPresented = false
     @State private var openness = 1.0
     @State private var tabletopHeaderHeight: CGFloat = 56
+    @State private var deviceHeaderHeight: CGFloat = 72
+    @ScaledMetric(relativeTo: .subheadline) private var deviceNameHeight: CGFloat = 44
     private let ticker = Timer.publish(every: 0.5, on: .main, in: .common).autoconnect()
 
     private var theme: CompanionTheme { CompanionTheme(store.companion) }
@@ -23,26 +26,10 @@ struct StudyView: View {
         NavigationStack {
             GeometryReader { proxy in
                 Group {
-                    if usesDuoCanvas(proxy) || previewTabletop || (proxy.size.width > proxy.size.height * 1.15 && proxy.size.height < 620) {
+                    if usesDuoCanvas(proxy) || previewTabletop {
                         adaptiveCanvas(proxy)
                     } else {
-                        GeometryReader { contentRegion in
-                            ScrollView {
-                                VStack(spacing: 0) {
-                                    CompanionScene(openness: openness,
-                                        sceneHeight: max(230, min(560, contentRegion.size.height - 298)))
-                                        .frame(maxWidth: 760)
-                                    TimerPanel(compact: proxy.size.width < 740)
-                                        .padding(.horizontal, 16)
-                                        .frame(maxWidth: 592)
-                                    Text("A little company. One thing at a time.")
-                                        .font(.caption2).foregroundStyle(Palette.ink.opacity(0.5))
-                                        .padding(.vertical, 16)
-                                }.frame(maxWidth: .infinity)
-                            }
-                            .scrollIndicators(.hidden)
-                        }
-                        .safeAreaInset(edge: .top, spacing: 0) { header }
+                        deviceCanvas(proxy)
                     }
                 }
                 .background {
@@ -67,6 +54,86 @@ struct StudyView: View {
         }
     }
 
+    /// Phone and iPad rooms are composed for their actual window shape. Their
+    /// seat landmark and the live sprite share the same full-screen coordinates.
+    private func deviceCanvas(_ proxy: GeometryProxy) -> some View {
+        let safe = proxy.safeAreaInsets
+        let size = CGSize(width: proxy.size.width + safe.leading + safe.trailing,
+                          height: proxy.size.height + safe.top + safe.bottom)
+        let format = DeviceRoomFormat.resolve(size: size, isPad: UIDevice.current.userInterfaceIdiom == .pad)
+        let landscape = format.isLandscape
+        let top = safe.top + deviceHeaderHeight + 12
+        let bottom = size.height - safe.bottom - 12
+        let floorY = max(top + 100, size.height * (landscape ? 0.77 : 0.54))
+        let ledgeY = max(top + 72, size.height * (landscape ? 0.65 : 0.46))
+        let feetY = floorY + min(20, size.height * 0.025)
+        let showName = UIDevice.current.userInterfaceIdiom == .pad
+        let selectorSpace: CGFloat = showName ? deviceNameHeight + 24 : 24
+        let sceneHeight = max(160, feetY - top + selectorSpace + 12)
+        return ZStack(alignment: .topLeading) {
+            ZStack {
+                DeviceRoomBackdrop(room: store.companion.duoRoom, format: format, size: size, ledgeY: ledgeY,
+                    characterX: landscape ? safe.leading + (size.width - safe.leading - safe.trailing) * 0.23 : size.width / 2)
+                    .id("\(format.rawValue)-\(store.companion.duoRoom.rawValue)")
+                    .transition(.opacity)
+            }
+            .animation(reduceMotion ? nil : .easeInOut(duration: 0.28), value: store.companion.duoRoom)
+            .allowsHitTesting(false).accessibilityHidden(true)
+            if landscape {
+                let contentWidth = max(0, size.width - safe.leading - safe.trailing)
+                let characterWidth = contentWidth * 0.46
+                let availableHeight = max(120, bottom - top)
+                HStack(spacing: 0) {
+                    CompanionScene(compact: true, openness: openness, sceneHeight: availableHeight,
+                        showsSelector: false, showsBackdrop: false, roomLedgeY: ledgeY - top)
+                        .frame(width: characterWidth, height: availableHeight)
+                    ScrollView {
+                        TimerPanel(compact: true,
+                            clockHeight: min(160, max(70, (contentWidth - characterWidth - 82) * 96 / 304)),
+                            dense: size.height < 600)
+                            .fixedSize(horizontal: false, vertical: true)
+                            .padding(14)
+                            .frame(maxWidth: .infinity, minHeight: availableHeight)
+                    }
+                    .scrollBounceBehavior(.basedOnSize).scrollIndicators(.hidden)
+                }
+                .frame(width: contentWidth, height: availableHeight)
+                .offset(x: safe.leading, y: top)
+            } else {
+                // Keep the seat attached to its painted ledge while the timer scrolls.
+                VStack(spacing: 8) {
+                    CompanionScene(openness: openness, sceneHeight: sceneHeight,
+                        showsName: showName, showsBackdrop: false, roomLedgeY: ledgeY - top)
+                        .frame(maxWidth: 760).frame(height: sceneHeight)
+                    ScrollView {
+                        TimerPanel(compact: size.width < 740,
+                            clockHeight: size.width < 600 ? 96 : 156)
+                            .padding(.horizontal, 16).frame(maxWidth: 720)
+                            .padding(.bottom, 16)
+                            .frame(maxWidth: .infinity)
+                    }
+                    .scrollBounceBehavior(.basedOnSize).scrollIndicators(.hidden)
+                }
+                .frame(width: proxy.size.width, height: max(0, bottom - top), alignment: .top)
+                .offset(x: safe.leading, y: top)
+            }
+
+            headerContent()
+                .padding(.horizontal, 14).padding(.top, 6).padding(.bottom, 8)
+                .frame(width: proxy.size.width)
+                .background {
+                    GeometryReader { measurement in
+                        Color.clear.preference(key: DeviceHeaderHeight.self, value: measurement.size.height)
+                    }
+                }
+                .offset(x: safe.leading, y: safe.top)
+        }
+        .frame(width: size.width, height: size.height, alignment: .topLeading)
+        .clipped()
+        .onPreferenceChange(DeviceHeaderHeight.self) { deviceHeaderHeight = $0 }
+        .offset(x: -safe.leading, y: -safe.top)
+    }
+
     private func usesDuoCanvas(_ proxy: GeometryProxy) -> Bool {
         if #available(iOS 27.1, *) {
             return !proxy.reservedRegions(kind: .division, options: .includeInactive).isEmpty
@@ -87,6 +154,7 @@ struct StudyView: View {
                           height: proxy.size.height + safe.top + safe.bottom)
         return GeometryReader { canvas in
             let division = canvasDivision(canvas)
+            let tuningLayout = DuoTuningLayout.resolve(size: size, division: division)
             let occlusions = canvasOcclusions(canvas)
             let placement = TabletopHeaderLayout(width: size.width, topInset: safe.top,
                 headerHeight: tabletopHeaderHeight, occlusions: occlusions, division: division,
@@ -98,20 +166,9 @@ struct StudyView: View {
                 if let division, division.width > division.height {
                     tabletop(size: size, division: division, bottomInset: safe.bottom)
                 } else if size.width > size.height * 1.1 {
-                    let landscapeRoom = usesDuoCanvas(proxy)
-                    if landscapeRoom {
-                        ZStack {
-                            DuoLandscapeBackdrop(room: store.companion.duoRoom, size: size)
-                                .id(store.companion.duoRoom)
-                                .transition(.opacity)
-                        }
-                        .animation(reduceMotion ? nil : .easeInOut(duration: 0.28), value: store.companion.duoRoom)
-                        .allowsHitTesting(false).accessibilityHidden(true)
-                    }
-                    sideBySide(size: size, division: division, top: contentTop, bottom: contentBottom,
-                               landscapeRoom: landscapeRoom)
+                    sideBySide(size: size, division: division, top: contentTop, bottom: contentBottom, tuningLayout: tuningLayout)
                 } else {
-                    singleColumn(size: size, top: contentTop, bottom: contentBottom)
+                    singleColumn(size: size, top: contentTop, bottom: contentBottom, tuningLayout: tuningLayout)
                 }
                 headerContent(compactHeight: headerTextSize.isAccessibilitySize ? nil : placement.frame.height)
                     .frame(width: placement.frame.width)
@@ -121,6 +178,15 @@ struct StudyView: View {
                         }
                     }
                     .offset(x: placement.frame.minX, y: placement.frame.minY)
+                #if DEBUG
+                if let tuningLayout {
+                    DuoFramingPanel(companion: store.companion, layout: tuningLayout,
+                        value: framingBinding(layout: tuningLayout), exportJSON: framingDraft.exportJSON())
+                        .frame(width: min(350, size.width - 32))
+                        .padding(.leading, 16).padding(.bottom, safe.bottom + 12)
+                        .frame(width: size.width, height: size.height, alignment: .bottomLeading)
+                }
+                #endif
             }
             .frame(width: size.width, height: size.height, alignment: .topLeading)
         }
@@ -167,14 +233,15 @@ struct StudyView: View {
         .clipped()
     }
 
-    private func sideBySide(size: CGSize, division: CGRect?, top: CGFloat, bottom: CGFloat,
-                            landscapeRoom: Bool = false) -> some View {
+    private func sideBySide(size: CGSize, division: CGRect?, top: CGFloat, bottom: CGFloat, tuningLayout: DuoTuningLayout?) -> some View {
         let split = division ?? CGRect(x: size.width * 0.43, y: 0, width: 8, height: size.height)
         let height = max(0, bottom - top)
         let timerWidth = max(0, size.width - split.maxX)
+        let ledgeY = height * 0.65
         return HStack(spacing: 0) {
             CompanionScene(compact: true, openness: openness, sceneHeight: height,
-                           showsSelector: false, showsBackdrop: !landscapeRoom)
+                           showsSelector: false, showsBackdrop: false, roomLedgeY: ledgeY,
+                           framingAdjustments: adjustments(layout: tuningLayout))
                 .frame(width: max(0, split.minX), height: height)
             Color.clear.frame(width: max(0, split.width), height: height)
             ScrollView {
@@ -188,33 +255,70 @@ struct StudyView: View {
         }
         .frame(width: size.width, height: height, alignment: .top)
         .offset(y: top)
+        .background(alignment: .topLeading) {
+            shelfRoom(size: size, ledgeY: top + ledgeY, characterX: split.minX / 2)
+        }
     }
 
-    private func singleColumn(size: CGSize, top: CGFloat, bottom: CGFloat) -> some View {
+    private func singleColumn(size: CGSize, top: CGFloat, bottom: CGFloat, tuningLayout: DuoTuningLayout?) -> some View {
         let height = max(0, bottom - top)
         let dense = size.width < 600
         let clockHeight = min(dense ? 112.0 : 160.0, max(76, (size.width - 110) * 96 / 304))
         let companionHeight = max(140, min(450, height - clockHeight - (dense ? 156 : 184)))
-        return ScrollView {
-            VStack(spacing: 8) {
-                CompanionScene(compact: true, openness: openness, sceneHeight: companionHeight, showsSelector: false)
-                    .frame(maxWidth: 760)
+        let ledgeY = companionHeight * 0.70
+        return VStack(spacing: 8) {
+            CompanionScene(compact: true, openness: openness, sceneHeight: companionHeight,
+                showsSelector: false, showsBackdrop: false, roomLedgeY: ledgeY,
+                framingAdjustments: adjustments(layout: tuningLayout))
+                .frame(maxWidth: 760).frame(height: companionHeight)
+            ScrollView {
                 TimerPanel(compact: true, clockHeight: clockHeight, dense: dense)
-                    .frame(maxWidth: 700)
-                    .padding(.horizontal, 16)
-            }.frame(maxWidth: .infinity)
+                    .frame(maxWidth: 700).padding(.horizontal, 16)
+                    .frame(maxWidth: .infinity).padding(.bottom, 12)
+            }
+            .scrollBounceBehavior(.basedOnSize).scrollIndicators(.hidden)
         }
-        .scrollBounceBehavior(.basedOnSize).scrollIndicators(.hidden)
-        .frame(width: size.width, height: height)
+        .frame(width: size.width, height: height, alignment: .top)
         .offset(y: top)
+        .background(alignment: .topLeading) {
+            shelfRoom(size: size, ledgeY: top + ledgeY, characterX: size.width / 2)
+        }
     }
 
-    private var header: some View {
-        headerContent()
-            .padding(.horizontal, 14).padding(.top, 6).padding(.bottom, 8)
-            .frame(maxWidth: 1000)
-            .frame(maxWidth: .infinity)
+    private func shelfRoom(size: CGSize, ledgeY: CGFloat, characterX: CGFloat) -> some View {
+        ZStack {
+            DeviceRoomBackdrop(room: store.companion.duoRoom,
+                format: DeviceRoomFormat.resolve(size: size, isPad: false),
+                size: size, ledgeY: ledgeY, characterX: characterX)
+                .id(store.companion.duoRoom).transition(.opacity)
+        }
+        .animation(reduceMotion ? nil : .easeInOut(duration: 0.28), value: store.companion.duoRoom)
+        .allowsHitTesting(false).accessibilityHidden(true)
     }
+
+    private func adjustments(layout: DuoTuningLayout?) -> [Companion: DuoFramingAdjustment] {
+        #if DEBUG
+        guard let layout else { return [:] }
+        let draft = framingDraft
+        return Dictionary(uniqueKeysWithValues: Companion.allCases.map { ($0, draft.value(for: $0, layout: layout)) })
+        #else
+        return [:]
+        #endif
+    }
+
+    #if DEBUG
+    private var framingDraft: DuoFramingDraft {
+        (try? JSONDecoder().decode(DuoFramingDraft.self, from: Data(framingJSON.utf8))) ?? .init()
+    }
+    private func framingBinding(layout: DuoTuningLayout) -> Binding<DuoFramingAdjustment> {
+        let companion = store.companion
+        return Binding(get: { framingDraft.value(for: companion, layout: layout) }, set: { value in
+            var draft = framingDraft
+            draft.set(value, companion: companion, layout: layout)
+            if let data = try? JSONEncoder().encode(draft) { framingJSON = String(decoding: data, as: UTF8.self) }
+        })
+    }
+    #endif
 
     private func headerContent(compactHeight: CGFloat? = nil) -> some View {
         HStack(spacing: 8) {
@@ -252,6 +356,11 @@ struct StudyView: View {
                 .overlay(Circle().strokeBorder(.white.opacity(0.7)))
         }.buttonStyle(.plain).accessibilityLabel(label)
     }
+}
+
+private struct DeviceHeaderHeight: PreferenceKey {
+    static var defaultValue: CGFloat = 72
+    static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) { value = nextValue() }
 }
 
 private struct TabletopHeaderHeight: PreferenceKey {
@@ -320,11 +429,14 @@ struct TimerPanel: View {
                 ? AnyLayout(VStackLayout(spacing: 12)) : AnyLayout(HStackLayout(spacing: 12))
             actions {
                 Button { store.primaryAction() } label: {
-                    HStack(spacing: 10) {
+                    HStack(spacing: dense ? 6 : 10) {
                         Image(systemName: [SessionStatus.running, .preparing].contains(store.session.status) ? "pause.fill" : "play.fill")
                             .frame(width: 18, height: 18)
                             .accessibilityHidden(true)
-                        Text(buttonTitle).lineLimit(1).minimumScaleFactor(0.7)
+                        Text(buttonTitle)
+                            .font(.system(dense ? .caption : .subheadline, weight: .semibold))
+                            .lineLimit(dynamicTypeSize.isAccessibilitySize ? nil : 1)
+                            .minimumScaleFactor(dynamicTypeSize.isAccessibilitySize ? 1 : 0.8)
                     }
                     .padding(.horizontal, 8)
                 }
@@ -332,7 +444,7 @@ struct TimerPanel: View {
                 .keyboardShortcut(.space, modifiers: [])
                 .accessibilityIdentifier("timer-primary")
 
-                SlideToReset(theme: theme) { store.reset() }
+                SlideToReset(theme: theme, compact: dense) { store.reset() }
             }
 
             if store.session.phase != .focus {
@@ -355,27 +467,111 @@ struct TimerPanel: View {
     }
 }
 
-/// Landscape rooms span both panes and the header. Stretch the quiet floor
-/// separately so standing companions land on it without moving their artwork.
-private struct DuoLandscapeBackdrop: View {
+/// The original painted ledge stays intact at every aspect ratio. Only its quiet
+/// paper footer blends into the existing paper texture; architecture scales uniformly.
+struct DeviceRoomBackdrop: View {
     let room: DuoRoom
+    let format: DeviceRoomFormat
     let size: CGSize
+    let ledgeY: CGFloat
+    let characterX: CGFloat
 
     var body: some View {
-        VStack(spacing: 0) {
-            band(sourceTop: 0, sourceHeight: 0.8, height: size.height * 0.70)
-            band(sourceTop: 0.8, sourceHeight: 0.2, height: size.height * 0.30)
+        let frame = format.imageFrame(size: size, ledgeY: ledgeY, room: room, characterX: characterX)
+        ZStack(alignment: .topLeading) {
+            paperColor
+                .overlay {
+                    Image("paper-texture").resizable().scaledToFill()
+                        .blendMode(.luminosity).opacity(0.18)
+                }
+                .frame(width: size.width, height: size.height).clipped()
+            Image(format.asset(room: room)).resizable().interpolation(.none)
+                .frame(width: frame.width, height: frame.height)
+                .mask {
+                    LinearGradient(stops: [.init(color: .black, location: 0),
+                        .init(color: .black, location: 0.90), .init(color: .clear, location: 1)],
+                        startPoint: .top, endPoint: .bottom)
+                }
+                .position(x: frame.midX, y: frame.midY)
         }
         .frame(width: size.width, height: size.height)
         .clipped()
     }
 
-    private func band(sourceTop: CGFloat, sourceHeight: CGFloat, height: CGFloat) -> some View {
-        let imageHeight = height / sourceHeight
-        return Image(room.landscapeAsset).resizable()
-            .frame(width: size.width, height: imageHeight)
-            .offset(y: -sourceTop * imageHeight)
-            .frame(width: size.width, height: height, alignment: .top)
-            .clipped()
+    private var paperColor: Color {
+        switch room {
+        case .window: Color(hex: 0xfaecda)
+        case .study: Color(hex: 0xffe3b9)
+        case .river: Color(hex: 0xfce8d2)
+        case .cafe: Color(hex: 0xffe0bc)
+        case .academy: Color(hex: 0xf6e0dc)
+        case .orbit: Color(hex: 0xfce5c6)
+        }
+    }
+
+}
+
+#if DEBUG
+/// Temporary calibration overlay: it never participates in the scene's sizing.
+private struct DuoFramingPanel: View {
+    let companion: Companion
+    let layout: DuoTuningLayout
+    @Binding var value: DuoFramingAdjustment
+    let exportJSON: String
+    @State private var expanded = false
+    @State private var copied = false
+
+    var body: some View {
+        VStack(spacing: 10) {
+            Button { expanded.toggle() } label: {
+                HStack(spacing: 8) {
+                    Image(systemName: "slider.horizontal.3")
+                    VStack(alignment: .leading, spacing: 2) {
+                        Text("Tune \(companion.name)").font(.subheadline.weight(.semibold))
+                        Text(layout.title).font(.caption)
+                    }
+                    Spacer(minLength: 4)
+                    Image(systemName: expanded ? "chevron.down" : "chevron.up")
+                }.contentShape(Rectangle())
+            }.buttonStyle(.plain)
+            if expanded {
+                tuningSlider("Scale", value: $value.scaleMultiplier, range: 0.3...1.8, step: 0.01, percentage: false)
+                tuningSlider("Horizontal", value: $value.offsetXFraction, range: -0.5...0.5, step: 0.005)
+                tuningSlider("Vertical", value: $value.offsetYFraction, range: -0.5...0.5, step: 0.005)
+                HStack {
+                    Button("Reset this") { value = .init() }
+                    Spacer()
+                    Button(copied ? "Copied" : "Copy all") {
+                        UIPasteboard.general.string = exportJSON
+                        copied = true
+                    }
+                    ShareLink(item: exportJSON) { Image(systemName: "square.and.arrow.up") }
+                        .accessibilityLabel("Share all Duo tuning values")
+                }.font(.caption.weight(.semibold)).buttonStyle(.bordered)
+                Text("Saved automatically. +X moves right; +Y moves down.")
+                    .font(.caption2).foregroundStyle(.secondary)
+            }
+        }
+        .padding(12)
+        .foregroundStyle(.primary)
+        .background(.regularMaterial, in: RoundedRectangle(cornerRadius: 18))
+        .overlay(RoundedRectangle(cornerRadius: 18).stroke(.white.opacity(0.7)))
+        .onChange(of: exportJSON) { _, _ in copied = false }
+    }
+
+    private func tuningSlider(_ title: String, value: Binding<Double>, range: ClosedRange<Double>,
+                              step: Double, percentage: Bool = true) -> some View {
+        VStack(spacing: 2) {
+            HStack {
+                Text(title)
+                Spacer()
+                Text(percentage ? String(format: "%+.1f%%", value.wrappedValue * 100)
+                                : String(format: "%.2f×", value.wrappedValue))
+                    .monospacedDigit()
+            }.font(.caption)
+            Slider(value: value, in: range, step: step)
+                .accessibilityLabel(title)
+        }
     }
 }
+#endif

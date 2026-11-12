@@ -1,0 +1,133 @@
+{
+  "method": "Larger local recognizer check of corrected language conditioning",
+  "clips": {
+    "fr/atlas/resume": {
+      "sha256": "f5050877e125bc46ff286cd54d93387382c909ab733d43e76ca36b74118a9ca3",
+      "expected": "On continue !",
+      "heard": "On continue.",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    },
+    "fr/atlas/reset": {
+      "sha256": "2a597e6fbf56ebe474a0ad709bc8291922dc073d85ffe9ef2c36506d8589e550",
+      "expected": "On repart du bon pied.",
+      "heard": "On repart du bon pied.",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    },
+    "fr/atlas/breakComplete": {
+      "sha256": "14cb26fa8ad4d0517366efbd73fb9c456f315a30dff51722c68de8485b2cceb4",
+      "expected": "La pause est finie. On reprend quand tu veux !",
+      "heard": "La pause est finie. On reprend quand tu veux.",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    },
+    "fr/atlas/greeting": {
+      "sha256": "e5b94d21885ead01d645e01a749f94ce9015643cb88a43fa30d7c8b33affb42d",
+      "expected": "Un coin tranquille pour les esprits curieux.",
+      "heard": "Un coin tranquille pour les esprit curieux.",
+      "similarity": 0.986,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    },
+    "fr/pip/resume": {
+      "sha256": "2d1480439ca1a31fd9e5e4c30d9adfd23231568bcf2bf83a3b01d94c7a352bf0",
+      "expected": "On continue !",
+      "heard": "On continue!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    },
+    "fr/pip/reset": {
+      "sha256": "2c5b11beeb57f3fd92b3bbb91ecbd168f684313d9825f2488d569c786b11a379",
+      "expected": "On repart du bon pied.",
+      "heard": "En repart du bon pied.",
+      "similarity": 0.941,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    },
+    "fr/pip/breakComplete": {
+      "sha256": "ed5c6248f1e0ccb89ba99b1cfc283671fd33e2fdac9d29bb7aea88fce38e3957",
+      "expected": "La pause est finie. On reprend quand tu veux !",
+      "heard": "La pause est finie. On reprend quand tu veux !",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    },
+    "fr/pip/greeting": {
+      "sha256": "0d01b428a81207e878d1de12a8a6a486f10e6b3baa3840720595b0b8b3063e83",
+      "expected": "Une page, un petit sort à la fois.",
+      "heard": "Une page, une petite sœur à la fois.",
+      "similarity": 0.885,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    },
+    "de/atlas/resume": {
+      "sha256": "b942d44d46e4233e48e04810a2cee303b37129fb87929cff522f1e2c1fd35bb0",
+      "expected": "Weiter geht's!",
+      "heard": "Vitergates",
+      "similarity": 0.667,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "check"
+    },
+    "de/atlas/reset": {
+      "sha256": "c7152d21087aaf29b29c4e069e3fb8cb85fc06ee9856949fb78b0f13b5626dd1",
+      "expected": "Ein frischer Start. Wir sind bereit.",
+      "heard": "Ein frischer Start. Wir sind bereit.",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    },
+    "de/atlas/breakComplete": {
+      "sha256": "ca2b722dfea6705179f020e6d061f59f1338869d8b2e869cad203233ae06b261",
+      "expected": "Die Pause ist vorbei. Bereit, wenn du es bist!",
+      "heard": "Die Pause ist vorbei. Bereit wenn du es bist.",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    },
+    "de/atlas/greeting": {
+      "sha256": "2718a9727cfcedb08024fccc04262d69f7622311b9882fb247b973920edaf611",
+      "expected": "Ein ruhiger Platz für neugierige Köpfe.",
+      "heard": "Ein Ruhiger Platz für Neugierige Kupfe.",
+      "similarity": 0.97,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    },
+    "de/pip/resume": {
+      "sha256": "714c066f7a7ce3100f02dcd2652e8e9b0b77140b225b8ff58db8331fba126b3d",
+      "expected": "Weiter geht's!",
+      "heard": "Fighter Gates!",
+      "similarity": 0.609,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "check"
+    },
+    "de/pip/reset": {
+      "sha256": "71616c4830d451cdfd8f11630b67a1bfdad94cc66b2186f700fe6b6d817f4c30",
+      "expected": "Ein frischer Start. Wir sind bereit.",
+      "heard": "Ein frischer Start. Wir sind bereit!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    },
+    "de/pip/breakComplete": {
+      "sha256": "3ec363d19fc1f557b9f76b6b168c6ddaf9b1f65f3b9dd57b18429ac3d30661b3",
+      "expected": "Die Pause ist vorbei. Bereit, wenn du es bist!",
+      "heard": "Die Pause ist vorbei. Bereit, wenn du es bist.",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "transcript-match"
+    },
+    "de/pip/greeting": {
+      "sha256": "64fcdad1933bded5af3c83039c6a6f64318d6f766c0d6a6c8e43259dc1a9b96e",
+      "expected": "Eine Seite, ein kleiner Zauber nach dem anderen.",
+      "heard": "Eine Zeit, an kleinertes Helb, oder nach dem anderen.",
+      "similarity": 0.79,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-medium/snapshots/08e178d48790749d25932bbc082711ddcfdfbc4f",
+      "review": "check"
+    }
+  }
+}

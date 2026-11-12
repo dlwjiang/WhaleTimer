@@ -1,0 +1,11 @@
+{
+  "voice": "comet-a",
+  "name": "Bunny chime",
+  "model": "Qwen3-TTS-12Hz-1.7B-VoiceDesign-bf16",
+  "description": "A tiny female cartoon bunny with a very high clear bell-like voice, bright forward resonance and quick springy hopping phrases. Cute youthful excitement, crisp little consonants and delighted upward scoops. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises.",
+  "text": "Hi! I'm right here. Let's do one little thing together. Ready? Here we go!",
+  "auditionSHA256": "c5a64daf3aeacb273f1141cb5a2e1737bb4045bb2c5ee7a9da643bebe4389e54",
+  "referenceSHA256": "a62311991f381d1ab93503a09611c378cffe0bbc7e9a78dcce16d2fa209b96e3",
+  "source": "ios/Design/Voices/VoiceCasting/audio/comet-a.m4a",
+  "method": "Decode exact selected audition to PCM, no pitch or speed changes."
+}

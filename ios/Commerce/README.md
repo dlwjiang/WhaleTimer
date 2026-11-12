@@ -6,7 +6,7 @@ Start at **US $3.99 per pack** and **$8.99 for the three-pack collection**, paid
 
 This is a launch hypothesis, not a measured profit maximum. The closest useful public benchmark is Focus Friend’s US listing: Base Bean Pack $3.99, Jelly Bean Pack $5.99, Kitt-ney Bean $4.99, and Blue Jello Bean $2.99. Our three characters plus scenes at $3.99 fit that range, but competitors’ prices do not reveal their conversion or profit. [App Store listing, checked November 9, 2026](https://apps.apple.com/us/app/focus-friend-by-hank-green/id6742278016).
 
-The strongest reason to buy should be wanting to spend time with a particular group of companions. A free pose preview makes that choice concrete. No timed countdown sale, mandatory subscription, focus penalties, or language paywall is included. The existing four poses with gentle breathing should be described accurately; these are not full animated characters with conversational AI.
+The strongest reason to buy should be wanting to spend time with a particular group of companions. A free pose preview makes that choice concrete. No timed countdown sale, mandatory subscription, focus penalties, or language paywall is included. The shared seated idle and happy expressions should be described accurately; these are not full animated characters with conversational AI.
 
 ## Find the profitable price
 

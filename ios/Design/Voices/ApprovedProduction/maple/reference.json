@@ -1,0 +1,11 @@
+{
+  "voice": "maple-d",
+  "name": "Honey fairy",
+  "model": "VoxCPM2-bf16",
+  "description": "A miniature feminine woodland fairy with a thin breathy flute-like high voice, soft gentle flowing speech and a shy smiling lilt. Delicate youthful warmth, lightly musical inflections without singing. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises.",
+  "text": "Hi! I'm right here. Let's do one little thing together. Ready? Here we go!",
+  "auditionSHA256": "781e6f0097ddaf650980892f43de3ff784f6d44dd1e75724c28dbf1a53413e16",
+  "referenceSHA256": "6e108fa1a51aadfa26f268893ecf6b55e135850467839ac5b73485b219a449ea",
+  "source": "ios/Design/Voices/VoiceCasting/audio/maple-d.m4a",
+  "method": "Decode exact selected audition to PCM, no pitch or speed changes."
+}

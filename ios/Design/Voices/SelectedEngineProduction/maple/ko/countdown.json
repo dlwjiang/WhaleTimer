@@ -1,0 +1,92 @@
+{
+  "method": "natural-countdown-v2",
+  "recognizer": "medium",
+  "direction": "Count quickly and crisply at about two numbers per second. Keep your character voice. Say each number briefly, without stretching vowels, adding noises, or singing.",
+  "contextOrder": [
+    6,
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+  ],
+  "synthesisInstruction": "A miniature feminine woodland fairy with a thin breathy flute-like high voice, soft gentle flowing speech and a shy smiling lilt. Delicate youthful warmth, lightly musical inflections without singing. Speak only the supplied Korean words. Keep it cute and conversational, with no music, singing, added laughter or animal noises. Speak in Korean. Count quickly and crisply at about two numbers per second. Keep your character voice. Say each number briefly, without stretching vowels, adding noises, or singing.",
+  "sourceWords": [
+    {
+      "text": " 6",
+      "start": 0.0,
+      "end": 0.44
+    },
+    {
+      "text": " 5",
+      "start": 0.44,
+      "end": 1.04
+    },
+    {
+      "text": " 4",
+      "start": 1.04,
+      "end": 1.44
+    },
+    {
+      "text": " 3",
+      "start": 1.44,
+      "end": 1.92
+    },
+    {
+      "text": " 2",
+      "start": 1.92,
+      "end": 2.26
+    },
+    {
+      "text": " 1",
+      "start": 2.26,
+      "end": 2.74
+    },
+    {
+      "text": " 0",
+      "start": 2.74,
+      "end": 2.96
+    }
+  ],
+  "text": "육, 오, 사, 삼, 이, 일, 영.",
+  "words": [
+    {
+      "text": " 5",
+      "start": 0.44,
+      "end": 1.04
+    },
+    {
+      "text": " 4",
+      "start": 1.04,
+      "end": 1.44
+    },
+    {
+      "text": " 3",
+      "start": 1.44,
+      "end": 1.92
+    },
+    {
+      "text": " 2",
+      "start": 1.92,
+      "end": 2.26
+    },
+    {
+      "text": " 1",
+      "start": 2.26,
+      "end": 2.74
+    }
+  ],
+  "boundaries": [
+    0.44,
+    1.04,
+    1.44,
+    1.92,
+    2.26,
+    2.74
+  ],
+  "sourceSHA256": "c28961e05f4c38e17b4c8d821b7f9d5de27693c1d0052cfdeee292a053c6747e",
+  "seed": 3680685061,
+  "speed": 1,
+  "pitch": 1
+}

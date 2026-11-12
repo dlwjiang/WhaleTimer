@@ -37,7 +37,7 @@ th:first-child{width:130px}.note{font-size:13px;color:#6a665e}.flag{color:#855b1
 const clips=__DATA__;
 const languages={'en':'English','zh-Hans':'Mandarin · 中文','ja':'Japanese · 日本語','ko':'Korean · 한국어','es':'Spanish · Español','pt-BR':'Portuguese · Brasil','fr':'French · Français','de':'German · Deutsch'};
 const characters=['mochi','pip','pebble','jun','bean','maple','luna','atlas','wisp','nova','orbit','comet'];
-const cueNames={'greeting':'Greeting','5':'5','4':'4','3':'3','2':'2','1':'1','go':'Begin','pause':'Pause','resume':'Resume','reset':'Start over','focusComplete':'Focus complete','breakComplete':'Break complete'};
+const cueNames={'greeting':'Greeting','poke':'Tap reaction','5':'5','4':'4','3':'3','2':'2','1':'1','go':'Begin','pause':'Pause','resume':'Resume','reset':'Start over','focusComplete':'Focus complete','breakComplete':'Break complete'};
 const cueOrder=['greeting','poke','5','4','3','2','1','go','pause','resume','reset','focusComplete','breakComplete'];
 const character=document.querySelector('#character'),language=document.querySelector('#language'),player=document.querySelector('#player');
 for(const name of characters)character.add(new Option(name[0].toUpperCase()+name.slice(1),name));
@@ -56,7 +56,7 @@ function render(){
     const title=document.createElement('th');title.scope='row';title.textContent=cueNames[cue];
     const script=document.createElement('td');script.textContent=clip.text;
     const diagnostic=document.createElement('div');diagnostic.className='note'+(clip.review==='check'?' flag':'');
-    diagnostic.textContent=clip.review==='check'?`Transcript differs; listen to judge: ${clip.heard}`:`${clip.seconds.toFixed(2)} seconds`;
+    diagnostic.textContent=clip.review==='check'?`Transcript differs; listen to judge: ${clip.heard}`:clip.review==='equivalent-wording'?`Wording variant (interjection/ending particle): ${clip.heard}`:`${clip.seconds.toFixed(2)} seconds`;
     script.append(diagnostic);
     const action=document.createElement('td'),button=document.createElement('button');button.textContent='Play';
     button.setAttribute('aria-label',`Play ${cueNames[cue]}`);

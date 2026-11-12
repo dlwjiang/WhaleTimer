@@ -1,0 +1,168 @@
+{
+  "reason": "Finite, meaning-preserving reaction variants; no broad lowering of wording thresholds. Audio style still requires human listening.",
+  "clips": {
+    "zh-Hans/jun/poke": {
+      "sha256": "bef98a3fff8096406f3445d74383bb023b6eb5e62524a24a4329d598d27419c1",
+      "expected": "呀，被你发现啦！",
+      "heard": "呀,被你发现了。",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--mlx-community--whisper-large-v3-turbo/snapshots/a4aaeec0636e6fef84abdcbe3544cb2bf7e9f6fb",
+      "segments": [
+        {
+          "id": 0,
+          "seek": 0,
+          "start": 0.0,
+          "end": 3.0,
+          "text": "呀,被你发现了。",
+          "tokens": [
+            50365,
+            15348,
+            11,
+            23238,
+            2166,
+            28926,
+            20204,
+            2289,
+            1543,
+            50515
+          ],
+          "temperature": 0,
+          "avg_logprob": -0.772831223227761,
+          "compression_ratio": 0.6666666666666666,
+          "no_speech_prob": 9.382186000328474e-11
+        }
+      ],
+      "similarity": 0.833,
+      "review": "equivalent-wording",
+      "note": "Accepted complete reaction variant: interjection or ending particle only. This is not an exact transcript match or native-speaker style approval."
+    },
+    "ko/luna/poke": {
+      "sha256": "d91be1b1458a6ac158452525874319bec44bf4e0fe385b3fd756260d97b82acb",
+      "expected": "앗, 나 찾았네!",
+      "heard": " 아 나 찾았네",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--mlx-community--whisper-large-v3-turbo/snapshots/a4aaeec0636e6fef84abdcbe3544cb2bf7e9f6fb",
+      "segments": [
+        {
+          "id": 0,
+          "seek": 0,
+          "start": 0.0,
+          "end": 4.0,
+          "text": " 아 나 찾았네",
+          "tokens": [
+            50365,
+            2216,
+            3948,
+            18283,
+            36501,
+            5626,
+            50565
+          ],
+          "temperature": 0,
+          "avg_logprob": -0.6942298412322998,
+          "compression_ratio": 0.6538461538461539,
+          "no_speech_prob": 4.649797213929219e-11
+        }
+      ],
+      "similarity": 0.8,
+      "review": "equivalent-wording",
+      "note": "Accepted complete reaction variant: interjection or ending particle only. This is not an exact transcript match or native-speaker style approval."
+    },
+    "ko/nova/poke": {
+      "sha256": "3e4eb1122ecd3ecb628ceffcce3144d1872aae6ab44d311435da452697d2992b",
+      "expected": "앗, 나 찾았네!",
+      "heard": " 아 나 찾았네!",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--mlx-community--whisper-large-v3-turbo/snapshots/a4aaeec0636e6fef84abdcbe3544cb2bf7e9f6fb",
+      "segments": [
+        {
+          "id": 0,
+          "seek": 0,
+          "start": 0.0,
+          "end": 2.0,
+          "text": " 아 나 찾았네!",
+          "tokens": [
+            50365,
+            2216,
+            3948,
+            18283,
+            36501,
+            5626,
+            0,
+            50465
+          ],
+          "temperature": 0,
+          "avg_logprob": -0.4752159118652344,
+          "compression_ratio": 0.6666666666666666,
+          "no_speech_prob": 4.1202537909290626e-11
+        }
+      ],
+      "similarity": 0.8,
+      "review": "equivalent-wording",
+      "note": "Accepted complete reaction variant: interjection or ending particle only. This is not an exact transcript match or native-speaker style approval."
+    },
+    "ko/wisp/poke": {
+      "sha256": "6d05f615a23a79b9bb97e516009bf1a7dbdb41109ba732e9efdcec332118eec4",
+      "expected": "앗, 나 찾았네!",
+      "heard": " 아, 나 찾았네?",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--mlx-community--whisper-large-v3-turbo/snapshots/a4aaeec0636e6fef84abdcbe3544cb2bf7e9f6fb",
+      "segments": [
+        {
+          "id": 0,
+          "seek": 0,
+          "start": 0.0,
+          "end": 2.54,
+          "text": " 아, 나 찾았네?",
+          "tokens": [
+            50365,
+            2216,
+            11,
+            3948,
+            18283,
+            36501,
+            5626,
+            30,
+            50492
+          ],
+          "temperature": 0,
+          "avg_logprob": -0.522504472732544,
+          "compression_ratio": 0.6785714285714286,
+          "no_speech_prob": 1.162636740353884e-11
+        }
+      ],
+      "similarity": 0.8,
+      "review": "equivalent-wording",
+      "note": "Accepted complete reaction variant: interjection or ending particle only. This is not an exact transcript match or native-speaker style approval."
+    },
+    "ko/orbit/poke": {
+      "sha256": "398e5367a0c2c33e01b0bb207e53d66963f0089c8edbdeb51eb57674f64da497",
+      "expected": "앗, 나 찾았네!",
+      "heard": " 아! 나 찾았네!",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--mlx-community--whisper-large-v3-turbo/snapshots/a4aaeec0636e6fef84abdcbe3544cb2bf7e9f6fb",
+      "segments": [
+        {
+          "id": 0,
+          "seek": 0,
+          "start": 0.0,
+          "end": 1.82,
+          "text": " 아! 나 찾았네!",
+          "tokens": [
+            50365,
+            2216,
+            0,
+            3948,
+            18283,
+            36501,
+            5626,
+            0,
+            50456
+          ],
+          "temperature": 0,
+          "avg_logprob": -0.3866901874542236,
+          "compression_ratio": 0.6785714285714286,
+          "no_speech_prob": 3.8123438433901313e-11
+        }
+      ],
+      "similarity": 0.8,
+      "review": "equivalent-wording",
+      "note": "Accepted complete reaction variant: interjection or ending particle only. This is not an exact transcript match or native-speaker style approval."
+    }
+  }
+}

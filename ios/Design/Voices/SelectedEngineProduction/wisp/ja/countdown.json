@@ -1,0 +1,92 @@
+{
+  "method": "natural-countdown-v2",
+  "recognizer": "medium",
+  "direction": "Count quickly and crisply at about two numbers per second. Keep your character voice. Say each number briefly, without stretching vowels, adding noises, or singing.",
+  "contextOrder": [
+    6,
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+  ],
+  "synthesisInstruction": "A miniature feminine moth fairy with a very high crystalline voice, thin bell-like resonance and delicate quick little phrases. Youthful sparkling curiosity and tiny precise consonants, sweet magical energy. Speak only the supplied Japanese words. Keep it cute and conversational, with no music, singing, added laughter or animal noises. Speak in Japanese. Count quickly and crisply at about two numbers per second. Keep your character voice. Say each number briefly, without stretching vowels, adding noises, or singing.",
+  "sourceWords": [
+    {
+      "text": "6",
+      "start": 0.0,
+      "end": 0.52
+    },
+    {
+      "text": " 5",
+      "start": 0.52,
+      "end": 1.06
+    },
+    {
+      "text": " 4",
+      "start": 1.06,
+      "end": 1.4
+    },
+    {
+      "text": " 3",
+      "start": 1.4,
+      "end": 1.74
+    },
+    {
+      "text": " 2",
+      "start": 1.74,
+      "end": 2.32
+    },
+    {
+      "text": " 1",
+      "start": 2.32,
+      "end": 3.06
+    },
+    {
+      "text": " 0",
+      "start": 3.06,
+      "end": 3.52
+    }
+  ],
+  "text": "六、ご、よん、さん、に、いち、ゼロ.",
+  "words": [
+    {
+      "text": " 5",
+      "start": 0.52,
+      "end": 1.06
+    },
+    {
+      "text": " 4",
+      "start": 1.06,
+      "end": 1.4
+    },
+    {
+      "text": " 3",
+      "start": 1.4,
+      "end": 1.74
+    },
+    {
+      "text": " 2",
+      "start": 1.74,
+      "end": 2.32
+    },
+    {
+      "text": " 1",
+      "start": 2.32,
+      "end": 3.06
+    }
+  ],
+  "boundaries": [
+    0.52,
+    1.06,
+    1.4,
+    1.74,
+    2.32,
+    3.06
+  ],
+  "sourceSHA256": "6e23aaf437f167d9ae66d711e81fe3b44eb6fb502898d1d2a32d00657fd5145b",
+  "seed": 3215038402,
+  "speed": 1,
+  "pitch": 1
+}

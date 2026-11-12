@@ -1,0 +1,11 @@
+{
+  "voice": "pip-a",
+  "name": "Garden sprite",
+  "model": "Qwen3-TTS-12Hz-1.7B-VoiceDesign-bf16",
+  "description": "A tiny cheerful anime garden girl with a high silver soprano, bright forward resonance and fast curious rising intonation. Youthful exuberance and tiny precise consonants, sweet sparkling kawaii delivery. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises.",
+  "text": "Hi! I'm right here. Let's do one little thing together. Ready? Here we go!",
+  "auditionSHA256": "7049b1e18d7c606ce25384d340bb4f047d648c92e383688cbdda2914e5e71fb7",
+  "referenceSHA256": "22354dec3906ae6f5f82aa1cd3992a525445b141d8b7f366808825e1a9d3379b",
+  "source": "ios/Design/Voices/VoiceCasting/audio/pip-a.m4a",
+  "method": "Decode exact selected audition to PCM, no pitch or speed changes."
+}

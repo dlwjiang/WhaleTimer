@@ -6,3 +6,12 @@ xcuserdata/
 *.xcuserstate
 __pycache__/
 *.pyc
+
+# Voice-render staging and rollback copies; shipping audio lives in Banke/Audio.
+Verification/ApprovedVoices/
+Verification/ApprovedVoicesBatchB/
+Verification/ApprovedVoiceInstall-*/
+Verification/VoiceBackups/
+
+# Reviewed replacement voice staging; the installed bundle remains tracked.
+Verification/SelectedEngineVoices/

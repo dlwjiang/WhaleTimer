@@ -14,14 +14,15 @@ struct AvatarSpeechOverlay: View {
     let companion: Companion
     let pose: String
     var sceneMouth: CGPoint? = nil
+    var compact = false
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @Environment(\.dynamicTypeSize) private var dynamicTypeSize
 
     var body: some View {
         MouthSpeechLayout(mouth: companion.mouthAnchor(pose: pose), expanded: dynamicTypeSize.isAccessibilitySize,
-                          sceneMouth: sceneMouth) {
+                          sceneMouth: sceneMouth, compact: compact, singleLine: speech.map { Int($0.cue) != nil || $0.cue == "go" } ?? false) {
             if let speech {
-                FloatingSpeechText(speech: speech, color: CompanionTheme(companion).accent)
+                FloatingSpeechText(speech: speech, color: CompanionTheme(companion).accent, compact: compact)
                     .id(speech.id)
                     .transition(.asymmetric(insertion: .opacity,
                         removal: reduceMotion ? .opacity : .opacity.combined(with: .offset(y: -10))))
@@ -33,23 +34,31 @@ struct AvatarSpeechOverlay: View {
     }
 }
 
-private struct FloatingSpeechText: View {
+struct FloatingSpeechText: View {
     let speech: CompanionSpeech
     let color: Color
+    var compact = false
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @ScaledMetric(relativeTo: .title2) private var phraseSize: CGFloat = 25
     @ScaledMetric(relativeTo: .largeTitle) private var numberSize: CGFloat = 62
+    @ScaledMetric(relativeTo: .body) private var compactPhraseSize: CGFloat = 18
+    @ScaledMetric(relativeTo: .title) private var compactNumberSize: CGFloat = 36
     @State private var entered = false
 
     private var fontSize: CGFloat {
-        Int(speech.cue) != nil ? numberSize : speech.cue == "go" ? phraseSize * 1.28 : phraseSize
+        let phrase = compact ? compactPhraseSize : phraseSize
+        return Int(speech.cue) != nil ? (compact ? compactNumberSize : numberSize)
+            : speech.cue == "go" ? phrase * (compact ? 1.22 : 1.28) : phrase
     }
+    private var singleLine: Bool { Int(speech.cue) != nil || speech.cue == "go" }
     var body: some View {
         Text(verbatim: speech.text)
             .font(.system(size: fontSize, weight: .bold, design: .rounded))
             .foregroundStyle(color)
             .multilineTextAlignment(.leading)
-            .lineSpacing(4)
+            .lineSpacing(compact ? 2 : 4)
+            .lineLimit(singleLine ? 1 : nil)
+            .minimumScaleFactor(singleLine ? 0.5 : 1)
             .fixedSize(horizontal: false, vertical: true)
             // Hard cream outline and colored drop shadow, matching the web's unboxed lettering.
             .shadow(color: Palette.paper, radius: 0, x: -2, y: 0)
@@ -77,6 +86,8 @@ private struct MouthSpeechLayout: Layout {
     let mouth: CGPoint
     let expanded: Bool
     var sceneMouth: CGPoint? = nil
+    var compact = false
+    var singleLine = false
 
     func sizeThatFits(proposal: ProposedViewSize, subviews: Subviews, cache: inout ()) -> CGSize {
         proposal.replacingUnspecifiedDimensions()
@@ -86,9 +97,14 @@ private struct MouthSpeechLayout: Layout {
         let mouthX = sceneMouth.map { bounds.width * $0.x } ?? ((bounds.width - size) / 2 + size * mouth.x)
         let mouthY = sceneMouth.map { bounds.height * $0.y } ?? ((bounds.height - size) / 2 + size * mouth.y)
         let desiredX = mouthX + size * 0.055 - 20
-        let x = expanded ? 12 : max(12, min(desiredX, bounds.width - 158))
-        let width = max(1, min(expanded ? bounds.width - 24 : 224, bounds.width - x - 12))
         for view in subviews {
+            // Countdown words need their natural single-line width, rather than
+            // the old 146-point strip to the right of the mouth.
+            let available = max(1, bounds.width - 24)
+            let preferred = singleLine ? view.sizeThatFits(.unspecified).width
+                : compact ? min(240, bounds.width * 0.72) : 224
+            let width = expanded ? available : min(available, preferred)
+            let x = expanded ? 12 : max(12, min(desiredX, bounds.width - width - 12))
             let measured = view.sizeThatFits(ProposedViewSize(width: width, height: nil))
             let y = max(12, min(mouthY + 8, bounds.height - measured.height - 12))
             view.place(at: CGPoint(x: bounds.minX + x, y: bounds.minY + y), anchor: .topLeading,
@@ -97,7 +113,7 @@ private struct MouthSpeechLayout: Layout {
     }
 }
 
-private extension Companion {
+extension Companion {
     /// Normalized mouth positions in the extracted square art: idle, focus, rest, happy.
     func mouthAnchor(pose: String) -> CGPoint {
         let anchors: [CGPoint]

@@ -1,0 +1,565 @@
+{
+  "entries": [
+    {
+      "character": "mochi",
+      "language": "zh-Hans",
+      "reasons": [
+        "5: missing",
+        "4: missing",
+        "3: missing",
+        "2: missing",
+        "1: missing"
+      ]
+    },
+    {
+      "character": "mochi",
+      "language": "ja",
+      "reasons": [
+        "5: missing",
+        "4: missing",
+        "3: missing",
+        "2: missing",
+        "1: missing"
+      ]
+    },
+    {
+      "character": "mochi",
+      "language": "ko",
+      "reasons": [
+        "5: missing",
+        "4: missing",
+        "3: missing",
+        "2: missing",
+        "1: missing"
+      ]
+    },
+    {
+      "character": "mochi",
+      "language": "es",
+      "reasons": [
+        "5: missing",
+        "4: missing",
+        "3: missing",
+        "2: missing",
+        "1: missing"
+      ]
+    },
+    {
+      "character": "mochi",
+      "language": "pt-BR",
+      "reasons": [
+        "5: missing",
+        "4: missing",
+        "3: missing",
+        "2: missing",
+        "1: missing"
+      ]
+    },
+    {
+      "character": "mochi",
+      "language": "fr",
+      "reasons": [
+        "5: missing",
+        "4: missing",
+        "3: missing",
+        "2: missing",
+        "1: missing"
+      ]
+    },
+    {
+      "character": "mochi",
+      "language": "de",
+      "reasons": [
+        "5: missing",
+        "4: missing",
+        "3: missing",
+        "2: missing",
+        "1: missing"
+      ]
+    },
+    {
+      "character": "pip",
+      "language": "es",
+      "reasons": [
+        "5: missing explicit target-language conditioning",
+        "4: missing explicit target-language conditioning",
+        "3: missing explicit target-language conditioning",
+        "2: missing explicit target-language conditioning",
+        "1: missing explicit target-language conditioning"
+      ]
+    },
+    {
+      "character": "pip",
+      "language": "fr",
+      "reasons": [
+        "5: missing explicit target-language conditioning",
+        "4: missing explicit target-language conditioning",
+        "3: missing explicit target-language conditioning",
+        "2: missing explicit target-language conditioning",
+        "1: missing explicit target-language conditioning"
+      ]
+    },
+    {
+      "character": "bean",
+      "language": "zh-Hans",
+      "reasons": [
+        "5: missing",
+        "4: missing",
+        "3: missing",
+        "2: missing",
+        "1: missing"
+      ]
+    },
+    {
+      "character": "bean",
+      "language": "ko",
+      "reasons": [
+        "5: missing",
+        "4: missing",
+        "3: missing",
+        "2: missing",
+        "1: missing"
+      ]
+    },
+    {
+      "character": "bean",
+      "language": "es",
+      "reasons": [
+        "5: missing",
+        "4: missing",
+        "3: missing",
+        "2: missing",
+        "1: missing"
+      ]
+    },
+    {
+      "character": "bean",
+      "language": "pt-BR",
+      "reasons": [
+        "5: missing",
+        "4: missing",
+        "3: missing",
+        "2: missing",
+        "1: missing"
+      ]
+    },
+    {
+      "character": "maple",
+      "language": "zh-Hans",
+      "reasons": [
+        "5: missing",
+        "4: missing",
+        "3: missing",
+        "2: missing",
+        "1: missing"
+      ]
+    },
+    {
+      "character": "maple",
+      "language": "ja",
+      "reasons": [
+        "5: missing",
+        "4: missing",
+        "3: missing",
+        "2: missing",
+        "1: missing"
+      ]
+    },
+    {
+      "character": "maple",
+      "language": "ko",
+      "reasons": [
+        "5: missing",
+        "4: missing",
+        "3: missing",
+        "2: missing",
+        "1: missing"
+      ]
+    },
+    {
+      "character": "maple",
+      "language": "es",
+      "reasons": [
+        "5: missing",
+        "4: missing",
+        "3: missing",
+        "2: missing",
+        "1: missing"
+      ]
+    },
+    {
+      "character": "maple",
+      "language": "pt-BR",
+      "reasons": [
+        "5: missing",
+        "4: missing",
+        "3: missing",
+        "2: missing",
+        "1: missing"
+      ]
+    },
+    {
+      "character": "maple",
+      "language": "fr",
+      "reasons": [
+        "5: missing",
+        "4: missing",
+        "3: missing",
+        "2: missing",
+        "1: missing"
+      ]
+    },
+    {
+      "character": "maple",
+      "language": "de",
+      "reasons": [
+        "5: missing",
+        "4: missing",
+        "3: missing",
+        "2: missing",
+        "1: missing"
+      ]
+    },
+    {
+      "character": "luna",
+      "language": "ja",
+      "reasons": [
+        "5: missing",
+        "4: missing",
+        "3: missing",
+        "2: missing",
+        "1: missing"
+      ]
+    },
+    {
+      "character": "luna",
+      "language": "ko",
+      "reasons": [
+        "5: missing",
+        "4: missing",
+        "3: missing",
+        "2: missing",
+        "1: missing"
+      ]
+    },
+    {
+      "character": "luna",
+      "language": "es",
+      "reasons": [
+        "5: missing",
+        "4: missing",
+        "3: missing",
+        "2: missing",
+        "1: missing"
+      ]
+    },
+    {
+      "character": "luna",
+      "language": "pt-BR",
+      "reasons": [
+        "5: missing",
+        "4: missing",
+        "3: missing",
+        "2: missing",
+        "1: missing"
+      ]
+    },
+    {
+      "character": "luna",
+      "language": "fr",
+      "reasons": [
+        "5: missing",
+        "4: missing",
+        "3: missing",
+        "2: missing",
+        "1: missing"
+      ]
+    },
+    {
+      "character": "luna",
+      "language": "de",
+      "reasons": [
+        "5: missing",
+        "4: missing",
+        "3: missing",
+        "2: missing",
+        "1: missing"
+      ]
+    },
+    {
+      "character": "atlas",
+      "language": "fr",
+      "reasons": [
+        "5: missing explicit target-language conditioning",
+        "4: missing explicit target-language conditioning",
+        "3: missing explicit target-language conditioning",
+        "2: missing explicit target-language conditioning",
+        "1: missing explicit target-language conditioning"
+      ]
+    },
+    {
+      "character": "wisp",
+      "language": "zh-Hans",
+      "reasons": [
+        "5: missing",
+        "4: missing",
+        "3: missing",
+        "2: missing",
+        "1: missing"
+      ]
+    },
+    {
+      "character": "wisp",
+      "language": "ja",
+      "reasons": [
+        "5: missing",
+        "4: missing",
+        "3: missing",
+        "2: missing",
+        "1: missing"
+      ]
+    },
+    {
+      "character": "wisp",
+      "language": "ko",
+      "reasons": [
+        "5: missing",
+        "4: missing",
+        "3: missing",
+        "2: missing",
+        "1: missing"
+      ]
+    },
+    {
+      "character": "wisp",
+      "language": "es",
+      "reasons": [
+        "5: missing",
+        "4: missing",
+        "3: missing",
+        "2: missing",
+        "1: missing"
+      ]
+    },
+    {
+      "character": "wisp",
+      "language": "pt-BR",
+      "reasons": [
+        "5: missing",
+        "4: missing",
+        "3: missing",
+        "2: missing",
+        "1: missing"
+      ]
+    },
+    {
+      "character": "wisp",
+      "language": "fr",
+      "reasons": [
+        "5: missing",
+        "4: missing",
+        "3: missing",
+        "2: missing",
+        "1: missing"
+      ]
+    },
+    {
+      "character": "wisp",
+      "language": "de",
+      "reasons": [
+        "5: missing",
+        "4: missing",
+        "3: missing",
+        "2: missing",
+        "1: missing"
+      ]
+    },
+    {
+      "character": "nova",
+      "language": "zh-Hans",
+      "reasons": [
+        "5: missing",
+        "4: missing",
+        "3: missing",
+        "2: missing",
+        "1: missing"
+      ]
+    },
+    {
+      "character": "nova",
+      "language": "ja",
+      "reasons": [
+        "5: missing",
+        "4: missing",
+        "3: missing",
+        "2: missing",
+        "1: missing"
+      ]
+    },
+    {
+      "character": "nova",
+      "language": "ko",
+      "reasons": [
+        "5: missing",
+        "4: missing",
+        "3: missing",
+        "2: missing",
+        "1: missing"
+      ]
+    },
+    {
+      "character": "nova",
+      "language": "es",
+      "reasons": [
+        "5: missing",
+        "4: missing",
+        "3: missing",
+        "2: missing",
+        "1: missing"
+      ]
+    },
+    {
+      "character": "nova",
+      "language": "pt-BR",
+      "reasons": [
+        "5: missing",
+        "4: missing",
+        "3: missing",
+        "2: missing",
+        "1: missing"
+      ]
+    },
+    {
+      "character": "nova",
+      "language": "fr",
+      "reasons": [
+        "5: missing",
+        "4: missing",
+        "3: missing",
+        "2: missing",
+        "1: missing"
+      ]
+    },
+    {
+      "character": "nova",
+      "language": "de",
+      "reasons": [
+        "5: missing",
+        "4: missing",
+        "3: missing",
+        "2: missing",
+        "1: missing"
+      ]
+    },
+    {
+      "character": "orbit",
+      "language": "zh-Hans",
+      "reasons": [
+        "5: missing",
+        "4: missing",
+        "3: missing",
+        "2: missing",
+        "1: missing"
+      ]
+    },
+    {
+      "character": "orbit",
+      "language": "ja",
+      "reasons": [
+        "5: missing",
+        "4: missing",
+        "3: missing",
+        "2: missing",
+        "1: missing"
+      ]
+    },
+    {
+      "character": "orbit",
+      "language": "ko",
+      "reasons": [
+        "5: missing",
+        "4: missing",
+        "3: missing",
+        "2: missing",
+        "1: missing"
+      ]
+    },
+    {
+      "character": "orbit",
+      "language": "es",
+      "reasons": [
+        "5: missing",
+        "4: missing",
+        "3: missing",
+        "2: missing",
+        "1: missing"
+      ]
+    },
+    {
+      "character": "orbit",
+      "language": "pt-BR",
+      "reasons": [
+        "5: missing",
+        "4: missing",
+        "3: missing",
+        "2: missing",
+        "1: missing"
+      ]
+    },
+    {
+      "character": "orbit",
+      "language": "fr",
+      "reasons": [
+        "5: missing",
+        "4: missing",
+        "3: missing",
+        "2: missing",
+        "1: missing"
+      ]
+    },
+    {
+      "character": "orbit",
+      "language": "de",
+      "reasons": [
+        "5: missing",
+        "4: missing",
+        "3: missing",
+        "2: missing",
+        "1: missing"
+      ]
+    },
+    {
+      "character": "comet",
+      "language": "fr",
+      "reasons": [
+        "5: missing explicit target-language conditioning",
+        "4: missing explicit target-language conditioning",
+        "3: missing explicit target-language conditioning",
+        "2: missing explicit target-language conditioning",
+        "1: missing explicit target-language conditioning"
+      ]
+    },
+    {
+      "character": "jun",
+      "language": "es",
+      "reasons": [
+        "5: missing",
+        "4: missing",
+        "3: missing",
+        "2: missing",
+        "1: missing"
+      ]
+    },
+    {
+      "character": "jun",
+      "language": "fr",
+      "reasons": [
+        "5: missing",
+        "4: missing",
+        "3: missing",
+        "2: missing",
+        "1: missing"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "device": "iPhone Duo",
+    "path": "/Users/davidjiang/Library/Developer/CoreSimulator/Devices/CE0BCDDB-229C-4CF3-B4D4-7C0579AE01B3/data/Containers/Bundle/Application/9AFC882E-04D9-40A2-A251-1929159D78DC/Banke.app/Audio/Voices",
+    "total": 1248,
+    "missing": [],
+    "different": []
+  },
+  {
+    "device": "iPhone 18 Pro",
+    "path": "/Users/davidjiang/Library/Developer/CoreSimulator/Devices/E517C316-E386-4834-BCCE-4B4409A707B6/data/Containers/Bundle/Application/9B24BC6B-9B82-4F26-B77C-FC37214E32F6/Banke.app/Audio/Voices",
+    "total": 1248,
+    "missing": [],
+    "different": []
+  },
+  {
+    "device": "iPhone 18 Pro Max",
+    "path": "/Users/davidjiang/Library/Developer/CoreSimulator/Devices/5270AE25-E880-4165-BBFC-3A71CDAF8E42/data/Containers/Bundle/Application/D412A349-7FAE-4F95-A4DC-8C0616FB26B0/Banke.app/Audio/Voices",
+    "total": 1248,
+    "missing": [],
+    "different": []
+  },
+  {
+    "device": "iPhone Air",
+    "path": "/Users/davidjiang/Library/Developer/CoreSimulator/Devices/010F33F2-79B4-4CD8-BA54-DDE16F3ADFCC/data/Containers/Bundle/Application/A263321D-6745-4F25-8FF2-4CE4EE6745C2/Banke.app/Audio/Voices",
+    "total": 1248,
+    "missing": [],
+    "different": []
+  },
+  {
+    "device": "iPad Pro 11-inch (M5)",
+    "path": "/Users/davidjiang/Library/Developer/CoreSimulator/Devices/D015F1F5-4616-4C34-819F-C17E28E371B3/data/Containers/Bundle/Application/667B1AB0-44A4-4BAE-A63B-380CECAC48FE/Banke.app/Audio/Voices",
+    "total": 1248,
+    "missing": [],
+    "different": []
+  }
+]

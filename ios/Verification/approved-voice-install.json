@@ -1,0 +1,10 @@
+{
+  "installedAt": "2026-11-12T00:58:19.922218",
+  "clips": 1248,
+  "castingChoicesSHA256": "7a6c93394b3e9b8172676a16bf0bb773b82e96a43d5acbcb9e01a928135e78ae",
+  "reviewSHA256": "15bc54ccc32443bf858d822931c750850dbb65cb565dcb8d2678396c783475ed",
+  "transcriptsSHA256": "34c032385c247578c7adaaf8533efb73366487a9c3cc8a13000d2a6040c41194",
+  "pipelineRevision": "selected-engine-v2",
+  "backup": "Verification/VoiceBackups/before-approved-20261112-005819",
+  "source": "Verification/SelectedEngineVoices"
+}

@@ -4426,65 +4426,6 @@
         }
       }
     },
-    "A little company. One thing at a time.": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "A little company. One thing at a time."
-          }
-        },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "そばにいるよ。一つずつ進もう。"
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "함께 있으니까, 한 번에 한 가지씩."
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "有个伙伴，一次做好一件事。"
-          }
-        },
-        "zh-Hant": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "有個夥伴，一次做好一件事。"
-          }
-        },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Un poco de compañía. Una cosa a la vez."
-          }
-        },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Um pouco de companhia. Uma coisa de cada vez."
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Un peu de compagnie. Une chose à la fois."
-          }
-        },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ein bisschen Gesellschaft. Eins nach dem anderen."
-          }
-        }
-      }
-    },
     "Session progress": {
       "extractionState": "manual",
       "localizations": {

@@ -1,0 +1,367 @@
+{
+  "generator": "Built-in imagegen",
+  "assets": [
+    {
+      "name": "phone-window",
+      "layout": "phone",
+      "room": "window",
+      "prompt": "Use case: stylized-concept. Production full-bleed background ONLY for Tick & Kin, a cozy companion focus timer. Match reference's fine pixel-edged painted watercolor, paper grain, soft light and tiny storybook game environment. No characters, animals, people, text, numbers, symbols, UI, devices, border, watermark or pedestals. Preserve the room's identity but RECOMPOSE it for the specified canvas, not merely crop or stretch the reference.\nTall PHONE PORTRAIT canvas, aspect ratio 9:19.5, target 1080x2340. Full room from top to bottom. The upper 13% must be pale and calm behind a title bar. A clear centered standing area for an overlaid character spans x=25–75%, y=21–55%. Put window edges, curtain and flowers at x<20% and x>85%, never across the center. A straight horizontal wall/floor junction at exactly y=56%, with an empty flat floor below it extending all the way to the bottom. Lower 40% is softly lit, VERY pale and low-contrast blue/cream wooden flooring, with only faint broad plank lines, no objects: the timer overlays this area. Compose a charming real room, with airy center, softly painted atmospheric depth, no oval platform. Do not draw the character or timer.\nMochi's sunny window nook: cream plaster, soft blue window trim and pale blue wooden floor, spring blossom branches, cream linen curtains, dappled morning sun.",
+      "reference": "../DuoLandscape/window.png",
+      "source": "phone-window.png",
+      "asset": "device-phone-window",
+      "sha256": "c60b2492b225898ed59ab0dbe4ca239fa8b6d3c0aee5826b2569e6ba27214d02",
+      "size": [
+        852,
+        1846
+      ],
+      "floorFraction": 0.553
+    },
+    {
+      "name": "phone-study",
+      "layout": "phone",
+      "room": "study",
+      "prompt": "Use case: stylized-concept. Production full-bleed background ONLY for Tick & Kin, a cozy companion focus timer. Match reference's fine pixel-edged painted watercolor, paper grain, soft light and tiny storybook game environment. No characters, animals, people, text, numbers, symbols, UI, devices, border, watermark or pedestals. Preserve the room's identity but RECOMPOSE it for the specified canvas, not merely crop or stretch the reference.\nTall PHONE PORTRAIT canvas, aspect ratio 9:19.5, target 1080x2340. Full room from top to bottom. The upper 13% must be pale and calm behind a title bar. A clear centered standing area for an overlaid character spans x=25–75%, y=21–55%. Put window edges, curtain and flowers at x<20% and x>85%, never across the center. A straight horizontal wall/floor junction at exactly y=56%, with an empty flat floor below it extending all the way to the bottom. Lower 40% is softly lit, VERY pale and low-contrast blue/cream wooden flooring, with only faint broad plank lines, no objects: the timer overlays this area. Compose a charming real room, with airy center, softly painted atmospheric depth, no oval platform. Do not draw the character or timer.\nPip's miniature woodland study: warm honey wood window frames, rounded window showing sunlit green leaves, leafy ivy and tiny white flowers around edges, a few books on a narrow edge shelf. Pale sage cream plaster and light honey wooden floor.",
+      "reference": "../DuoLandscape/study.png",
+      "source": "phone-study.png",
+      "asset": "device-phone-study",
+      "sha256": "b9c5a0d42417e122bd377f98534a42ca0bad19c96ad20e5da7db718fbd82a3bb",
+      "size": [
+        852,
+        1846
+      ],
+      "floorFraction": 0.559
+    },
+    {
+      "name": "phone-river",
+      "layout": "phone",
+      "room": "river",
+      "prompt": "Use case: stylized-concept. Production full-bleed background ONLY for Tick & Kin, a cozy companion focus timer. Match reference's fine pixel-edged painted watercolor, paper grain, soft light and tiny storybook game environment. No characters, animals, people, text, numbers, symbols, UI, devices, border, watermark or pedestals. Preserve the room's identity but RECOMPOSE it for the specified canvas, not merely crop or stretch the reference.\nTall PHONE PORTRAIT canvas, aspect ratio 9:19.5, target 1080x2340. Full room from top to bottom. The upper 13% must be pale and calm behind a title bar. A clear centered standing area for an overlaid character spans x=25–75%, y=21–55%. Put window edges, curtain and flowers at x<20% and x>85%, never across the center. A straight horizontal wall/floor junction at exactly y=56%, with an empty flat floor below it extending all the way to the bottom. Lower 40% is softly lit, VERY pale and low-contrast blue/cream wooden flooring, with only faint broad plank lines, no objects: the timer overlays this area. Compose a charming real room, with airy center, softly painted atmospheric depth, no oval platform. Do not draw the character or timer.\nPebble's peaceful riverside reading veranda: blue-gray wooden decking, graceful willow branches and reeds along edges, tranquil blue river and distant sage trees seen through the open veranda. Center luminous misty blue-white air, watercolor morning light. No railing through the character zone.",
+      "reference": "../DuoLandscape/river.png",
+      "source": "phone-river-v2.png",
+      "asset": "device-phone-river",
+      "sha256": "ae8269ae23fd94269f61ea051de2a828228d226160ff034065d117ca766f7a43",
+      "size": [
+        852,
+        1846
+      ],
+      "floorFraction": 0.569
+    },
+    {
+      "name": "phone-cafe",
+      "layout": "phone",
+      "room": "cafe",
+      "prompt": "Use case: stylized-concept. Production full-bleed background ONLY for Tick & Kin, a cozy companion focus timer. Match reference's fine pixel-edged painted watercolor, paper grain, soft light and tiny storybook game environment. No characters, animals, people, text, numbers, symbols, UI, devices, border, watermark or pedestals. Preserve the room's identity but RECOMPOSE it for the specified canvas, not merely crop or stretch the reference.\nTall PHONE PORTRAIT canvas, aspect ratio 9:19.5, target 1080x2340. Full room from top to bottom. The upper 13% must be pale and calm behind a title bar. A clear centered standing area for an overlaid character spans x=25–75%, y=21–55%. Put window edges, curtain and flowers at x<20% and x>85%, never across the center. A straight horizontal wall/floor junction at exactly y=56%, with an empty flat floor below it extending all the way to the bottom. Lower 40% is softly lit, VERY pale and low-contrast blue/cream wooden flooring, with only faint broad plank lines, no objects: the timer overlays this area. Compose a charming real room, with airy center, softly painted atmospheric depth, no oval platform. Do not draw the character or timer.\nMidnight Café for Jun, Bean and Maple: warm pale peach plaster, pale honey oak floor, narrow arched window with moonlit town at side, edge shelf with tiny pastries, warm pendant lamp, trailing ivy. Keep interior light and cozy, no dark central walls.",
+      "reference": "../DuoLandscape/cafe.png",
+      "source": "phone-cafe.png",
+      "asset": "device-phone-cafe",
+      "sha256": "12b477b8aabf4d6457203ccf8eafb8d18cea0eb6bf573e80ac6b77b208c27afe",
+      "size": [
+        852,
+        1846
+      ],
+      "floorFraction": 0.577
+    },
+    {
+      "name": "phone-academy",
+      "layout": "phone",
+      "room": "academy",
+      "prompt": "Use case: stylized-concept. Production full-bleed background ONLY for Tick & Kin, a cozy companion focus timer. Match reference's fine pixel-edged painted watercolor, paper grain, soft light and tiny storybook game environment. No characters, animals, people, text, numbers, symbols, UI, devices, border, watermark or pedestals. Preserve the room's identity but RECOMPOSE it for the specified canvas, not merely crop or stretch the reference.\nTall PHONE PORTRAIT canvas, aspect ratio 9:19.5, target 1080x2340. Full room from top to bottom. The upper 13% must be pale and calm behind a title bar. A clear centered standing area for an overlaid character spans x=25–75%, y=21–55%. Put window edges, curtain and flowers at x<20% and x>85%, never across the center. A straight horizontal wall/floor junction at exactly y=56%, with an empty flat floor below it extending all the way to the bottom. Lower 40% is softly lit, VERY pale and low-contrast blue/cream wooden flooring, with only faint broad plank lines, no objects: the timer overlays this area. Compose a charming real room, with airy center, softly painted atmospheric depth, no oval platform. Do not draw the character or timer.\nMoonlight Academy for Luna, Atlas and Wisp: pearl-lavender stone wall and pale lilac stone floor, slender arched window with moon and stars, violet ivy around edges, slim bookcase with indigo and gold books. Gentle moonlight, quiet magical library, luminous center.",
+      "reference": "../DuoLandscape/academy.png",
+      "source": "phone-academy.png",
+      "asset": "device-phone-academy",
+      "sha256": "b8f06daee1c7e1393c056fc2037104bbd40cc2320e957b0b6feba746d8f86004",
+      "size": [
+        852,
+        1846
+      ],
+      "floorFraction": 0.576
+    },
+    {
+      "name": "phone-orbit",
+      "layout": "phone",
+      "room": "orbit",
+      "prompt": "Use case: stylized-concept. Production full-bleed background ONLY for Tick & Kin, a cozy companion focus timer. Match reference's fine pixel-edged painted watercolor, paper grain, soft light and tiny storybook game environment. No characters, animals, people, text, numbers, symbols, UI, devices, border, watermark or pedestals. Preserve the room's identity but RECOMPOSE it for the specified canvas, not merely crop or stretch the reference.\nTall PHONE PORTRAIT canvas, aspect ratio 9:19.5, target 1080x2340. Full room from top to bottom. The upper 13% must be pale and calm behind a title bar. A clear centered standing area for an overlaid character spans x=25–75%, y=21–55%. Put window edges, curtain and flowers at x<20% and x>85%, never across the center. A straight horizontal wall/floor junction at exactly y=56%, with an empty flat floor below it extending all the way to the bottom. Lower 40% is softly lit, VERY pale and low-contrast blue/cream wooden flooring, with only faint broad plank lines, no objects: the timer overlays this area. Compose a charming real room, with airy center, softly painted atmospheric depth, no oval platform. Do not draw the character or timer.\nOrbital Night Shift for Nova, Orbit and Comet: warm pearl-blue rounded cabin walls and pale blue-gray floor, large rounded porthole with pastel blue planet and stars near edge, tiny terracotta plant, subtle amber lights at edge. Cozy retro spaceship painted as a storybook, not photoreal.",
+      "reference": "../DuoLandscape/orbit.png",
+      "source": "phone-orbit.png",
+      "asset": "device-phone-orbit",
+      "sha256": "d317cf937939ecf3c22ae80e3ddfed150b4bfcfddca06b1a1c0f4e03de618a3f",
+      "size": [
+        852,
+        1846
+      ],
+      "floorFraction": 0.574
+    },
+    {
+      "name": "phone-landscape-window",
+      "layout": "phone-landscape",
+      "room": "window",
+      "prompt": "Use case: stylized-concept. Production full-bleed background ONLY for Tick & Kin, a cozy companion focus timer. Match reference's fine pixel-edged painted watercolor, paper grain, soft light and tiny storybook game environment. No characters, animals, people, text, numbers, symbols, UI, devices, border, watermark or pedestals. Preserve the room's identity but RECOMPOSE it for the specified canvas, not merely crop or stretch the reference.\nPHONE LANDSCAPE canvas, aspect ratio 19.5:9, target 2340x1080. Full-bleed ultra-wide room. Companion overlay at x=24%, y=25–79%; timer in right half x=52–94%, y=25–88%. Top 17% calm for title bar. Put the straight horizontal wall/floor junction at y=78%, with empty standing area at x=24%, y=79%. Window, books, plants confined to extreme left x<12% and small upper-left details, so character has clear background. Entire right half softly lit very pale low contrast wall with no objects, behind controls. Keep tiny side margins calm for device safe areas. Floor extends to bottom, broad faint simple texture. No foreground furniture, pedestals, character or timer. This must be a new ultra-wide composition, NOT a vertical crop.\nMochi's sunny window nook: cream plaster, soft blue window trim and pale blue wooden floor, spring blossom branches, cream linen curtains, dappled morning sun.",
+      "reference": "../DuoLandscape/window.png",
+      "source": "phone-landscape-window.png",
+      "asset": "device-phone-landscape-window",
+      "sha256": "2fd2ef1c625320c37ba1ab709a8841cfd5a47f7b58ce25c1cb971877cfa063f1",
+      "size": [
+        1847,
+        852
+      ],
+      "floorFraction": 0.779
+    },
+    {
+      "name": "phone-landscape-study",
+      "layout": "phone-landscape",
+      "room": "study",
+      "prompt": "Use case: stylized-concept. Production full-bleed background ONLY for Tick & Kin, a cozy companion focus timer. Match reference's fine pixel-edged painted watercolor, paper grain, soft light and tiny storybook game environment. No characters, animals, people, text, numbers, symbols, UI, devices, border, watermark or pedestals. Preserve the room's identity but RECOMPOSE it for the specified canvas, not merely crop or stretch the reference.\nPHONE LANDSCAPE canvas, aspect ratio 19.5:9, target 2340x1080. Full-bleed ultra-wide room. Companion overlay at x=24%, y=25–79%; timer in right half x=52–94%, y=25–88%. Top 17% calm for title bar. Put the straight horizontal wall/floor junction at y=78%, with empty standing area at x=24%, y=79%. Window, books, plants confined to extreme left x<12% and small upper-left details, so character has clear background. Entire right half softly lit very pale low contrast wall with no objects, behind controls. Keep tiny side margins calm for device safe areas. Floor extends to bottom, broad faint simple texture. No foreground furniture, pedestals, character or timer. This must be a new ultra-wide composition, NOT a vertical crop.\nPip's miniature woodland study: warm honey wood window frames, rounded window showing sunlit green leaves, leafy ivy and tiny white flowers around edges, a few books on a narrow edge shelf. Pale sage cream plaster and light honey wooden floor.",
+      "reference": "../DuoLandscape/study.png",
+      "source": "phone-landscape-study.png",
+      "asset": "device-phone-landscape-study",
+      "sha256": "c5e998211aabb7230ce2a3eeb4857f7f538eb1f4c16af4073d2d57d0845982db",
+      "size": [
+        1846,
+        852
+      ],
+      "floorFraction": 0.772
+    },
+    {
+      "name": "phone-landscape-river",
+      "layout": "phone-landscape",
+      "room": "river",
+      "prompt": "Use case: stylized-concept. Production full-bleed background ONLY for Tick & Kin, a cozy companion focus timer. Match reference's fine pixel-edged painted watercolor, paper grain, soft light and tiny storybook game environment. No characters, animals, people, text, numbers, symbols, UI, devices, border, watermark or pedestals. Preserve the room's identity but RECOMPOSE it for the specified canvas, not merely crop or stretch the reference.\nPHONE LANDSCAPE canvas, aspect ratio 19.5:9, target 2340x1080. Full-bleed ultra-wide room. Companion overlay at x=24%, y=25–79%; timer in right half x=52–94%, y=25–88%. Top 17% calm for title bar. Put the straight horizontal wall/floor junction at y=78%, with empty standing area at x=24%, y=79%. Window, books, plants confined to extreme left x<12% and small upper-left details, so character has clear background. Entire right half softly lit very pale low contrast wall with no objects, behind controls. Keep tiny side margins calm for device safe areas. Floor extends to bottom, broad faint simple texture. No foreground furniture, pedestals, character or timer. This must be a new ultra-wide composition, NOT a vertical crop.\nPebble's peaceful riverside reading veranda: blue-gray wooden decking, graceful willow branches and reeds along edges, tranquil blue river and distant sage trees seen through the open veranda. Center luminous misty blue-white air, watercolor morning light. No railing through the character zone.",
+      "reference": "../DuoLandscape/river.png",
+      "source": "phone-landscape-river.png",
+      "asset": "device-phone-landscape-river",
+      "sha256": "c19135053cb28a52f6ca4f4fd93422ffc6edc6c169afdc79a09023cc65cbedbc",
+      "size": [
+        1846,
+        852
+      ],
+      "floorFraction": 0.794
+    },
+    {
+      "name": "phone-landscape-cafe",
+      "layout": "phone-landscape",
+      "room": "cafe",
+      "prompt": "Use case: stylized-concept. Production full-bleed background ONLY for Tick & Kin, a cozy companion focus timer. Match reference's fine pixel-edged painted watercolor, paper grain, soft light and tiny storybook game environment. No characters, animals, people, text, numbers, symbols, UI, devices, border, watermark or pedestals. Preserve the room's identity but RECOMPOSE it for the specified canvas, not merely crop or stretch the reference.\nPHONE LANDSCAPE canvas, aspect ratio 19.5:9, target 2340x1080. Full-bleed ultra-wide room. Companion overlay at x=24%, y=25–79%; timer in right half x=52–94%, y=25–88%. Top 17% calm for title bar. Put the straight horizontal wall/floor junction at y=78%, with empty standing area at x=24%, y=79%. Window, books, plants confined to extreme left x<12% and small upper-left details, so character has clear background. Entire right half softly lit very pale low contrast wall with no objects, behind controls. Keep tiny side margins calm for device safe areas. Floor extends to bottom, broad faint simple texture. No foreground furniture, pedestals, character or timer. This must be a new ultra-wide composition, NOT a vertical crop.\nMidnight Café for Jun, Bean and Maple: warm pale peach plaster, pale honey oak floor, narrow arched window with moonlit town at side, edge shelf with tiny pastries, warm pendant lamp, trailing ivy. Keep interior light and cozy, no dark central walls.",
+      "reference": "../DuoLandscape/cafe.png",
+      "source": "phone-landscape-cafe.png",
+      "asset": "device-phone-landscape-cafe",
+      "sha256": "2875236f23f91c85a4b0c8841d0c21f4fa5c585a47bfa8a3e8a56a9b74f4e487",
+      "size": [
+        1846,
+        852
+      ],
+      "floorFraction": 0.782
+    },
+    {
+      "name": "phone-landscape-academy",
+      "layout": "phone-landscape",
+      "room": "academy",
+      "prompt": "Use case: stylized-concept. Production full-bleed background ONLY for Tick & Kin, a cozy companion focus timer. Match reference's fine pixel-edged painted watercolor, paper grain, soft light and tiny storybook game environment. No characters, animals, people, text, numbers, symbols, UI, devices, border, watermark or pedestals. Preserve the room's identity but RECOMPOSE it for the specified canvas, not merely crop or stretch the reference.\nPHONE LANDSCAPE canvas, aspect ratio 19.5:9, target 2340x1080. Full-bleed ultra-wide room. Companion overlay at x=24%, y=25–79%; timer in right half x=52–94%, y=25–88%. Top 17% calm for title bar. Put the straight horizontal wall/floor junction at y=78%, with empty standing area at x=24%, y=79%. Window, books, plants confined to extreme left x<12% and small upper-left details, so character has clear background. Entire right half softly lit very pale low contrast wall with no objects, behind controls. Keep tiny side margins calm for device safe areas. Floor extends to bottom, broad faint simple texture. No foreground furniture, pedestals, character or timer. This must be a new ultra-wide composition, NOT a vertical crop.\nMoonlight Academy for Luna, Atlas and Wisp: pearl-lavender stone wall and pale lilac stone floor, slender arched window with moon and stars, violet ivy around edges, slim bookcase with indigo and gold books. Gentle moonlight, quiet magical library, luminous center.",
+      "reference": "../DuoLandscape/academy.png",
+      "source": "phone-landscape-academy.png",
+      "asset": "device-phone-landscape-academy",
+      "sha256": "d6edea03cf1505d44017997e531efae9a17a7154650fcfb86a5250f1542a66c0",
+      "size": [
+        1846,
+        852
+      ],
+      "floorFraction": 0.781
+    },
+    {
+      "name": "phone-landscape-orbit",
+      "layout": "phone-landscape",
+      "room": "orbit",
+      "prompt": "Use case: stylized-concept. Production full-bleed background ONLY for Tick & Kin, a cozy companion focus timer. Match reference's fine pixel-edged painted watercolor, paper grain, soft light and tiny storybook game environment. No characters, animals, people, text, numbers, symbols, UI, devices, border, watermark or pedestals. Preserve the room's identity but RECOMPOSE it for the specified canvas, not merely crop or stretch the reference.\nPHONE LANDSCAPE canvas, aspect ratio 19.5:9, target 2340x1080. Full-bleed ultra-wide room. Companion overlay at x=24%, y=25–79%; timer in right half x=52–94%, y=25–88%. Top 17% calm for title bar. Put the straight horizontal wall/floor junction at y=78%, with empty standing area at x=24%, y=79%. Window, books, plants confined to extreme left x<12% and small upper-left details, so character has clear background. Entire right half softly lit very pale low contrast wall with no objects, behind controls. Keep tiny side margins calm for device safe areas. Floor extends to bottom, broad faint simple texture. No foreground furniture, pedestals, character or timer. This must be a new ultra-wide composition, NOT a vertical crop.\nOrbital Night Shift for Nova, Orbit and Comet: warm pearl-blue rounded cabin walls and pale blue-gray floor, large rounded porthole with pastel blue planet and stars near edge, tiny terracotta plant, subtle amber lights at edge. Cozy retro spaceship painted as a storybook, not photoreal.",
+      "reference": "../DuoLandscape/orbit.png",
+      "source": "phone-landscape-orbit.png",
+      "asset": "device-phone-landscape-orbit",
+      "sha256": "f473385e7bf7f373440d5b8de0d91824af7e7791286475a6edc943ecb2f60cff",
+      "size": [
+        1846,
+        852
+      ],
+      "floorFraction": 0.778
+    },
+    {
+      "name": "pad-portrait-window",
+      "layout": "pad-portrait",
+      "room": "window",
+      "prompt": "Use case: stylized-concept. Production full-bleed background ONLY for Tick & Kin, a cozy companion focus timer. Match reference's fine pixel-edged painted watercolor, paper grain, soft light and tiny storybook game environment. No characters, animals, people, text, numbers, symbols, UI, devices, border, watermark or pedestals. Preserve the room's identity but RECOMPOSE it for the specified canvas, not merely crop or stretch the reference.\nIPAD PORTRAIT canvas, aspect ratio 3:4, target 1536x2048. Full-bleed room with spacious architecture composed for this broad portrait canvas. Upper 12% calm and pale behind header. Character overlay centered at x=50%, y=21–53%; keep x=29–71% clear. Attractive room details, windows, plants, shelves form asymmetrical framing at far left and right. Horizontal wall/floor junction at y=55%. Broad empty floor from y=55% to bottom, very pale, quiet and low contrast for centered timer at y=65–90%. No furniture, pedestals, rug or objects in center or lower half. A real charming room, fine watercolor pixel edges. No characters or timer.\nMochi's sunny window nook: cream plaster, soft blue window trim and pale blue wooden floor, spring blossom branches, cream linen curtains, dappled morning sun.",
+      "reference": "../DuoLandscape/window.png",
+      "source": "pad-portrait-window.png",
+      "asset": "device-pad-portrait-window",
+      "sha256": "c12bbab0a0d40e66596a9eb4d33cb4a162950463a5940a93d830e2b39eb9a65a",
+      "size": [
+        1086,
+        1448
+      ],
+      "floorFraction": 0.535
+    },
+    {
+      "name": "pad-portrait-study",
+      "layout": "pad-portrait",
+      "room": "study",
+      "prompt": "Use case: stylized-concept. Production full-bleed background ONLY for Tick & Kin, a cozy companion focus timer. Match reference's fine pixel-edged painted watercolor, paper grain, soft light and tiny storybook game environment. No characters, animals, people, text, numbers, symbols, UI, devices, border, watermark or pedestals. Preserve the room's identity but RECOMPOSE it for the specified canvas, not merely crop or stretch the reference.\nIPAD PORTRAIT canvas, aspect ratio 3:4, target 1536x2048. Full-bleed room with spacious architecture composed for this broad portrait canvas. Upper 12% calm and pale behind header. Character overlay centered at x=50%, y=21–53%; keep x=29–71% clear. Attractive room details, windows, plants, shelves form asymmetrical framing at far left and right. Horizontal wall/floor junction at y=55%. Broad empty floor from y=55% to bottom, very pale, quiet and low contrast for centered timer at y=65–90%. No furniture, pedestals, rug or objects in center or lower half. A real charming room, fine watercolor pixel edges. No characters or timer.\nPip's miniature woodland study: warm honey wood window frames, rounded window showing sunlit green leaves, leafy ivy and tiny white flowers around edges, a few books on a narrow edge shelf. Pale sage cream plaster and light honey wooden floor.",
+      "reference": "../DuoLandscape/study.png",
+      "source": "pad-portrait-study.png",
+      "asset": "device-pad-portrait-study",
+      "sha256": "b1a02ed408d5d33a1be950b94b1b51b7eb273ae3d960d5bd30262d5d20e5f720",
+      "size": [
+        1086,
+        1448
+      ],
+      "floorFraction": 0.539
+    },
+    {
+      "name": "pad-portrait-river",
+      "layout": "pad-portrait",
+      "room": "river",
+      "prompt": "Use case: stylized-concept. Production full-bleed background ONLY for Tick & Kin, a cozy companion focus timer. Match reference's fine pixel-edged painted watercolor, paper grain, soft light and tiny storybook game environment. No characters, animals, people, text, numbers, symbols, UI, devices, border, watermark or pedestals. Preserve the room's identity but RECOMPOSE it for the specified canvas, not merely crop or stretch the reference.\nIPAD PORTRAIT canvas, aspect ratio 3:4, target 1536x2048. Full-bleed room with spacious architecture composed for this broad portrait canvas. Upper 12% calm and pale behind header. Character overlay centered at x=50%, y=21–53%; keep x=29–71% clear. Attractive room details, windows, plants, shelves form asymmetrical framing at far left and right. Horizontal wall/floor junction at y=55%. Broad empty floor from y=55% to bottom, very pale, quiet and low contrast for centered timer at y=65–90%. No furniture, pedestals, rug or objects in center or lower half. A real charming room, fine watercolor pixel edges. No characters or timer.\nPebble's peaceful riverside reading veranda: blue-gray wooden decking, graceful willow branches and reeds along edges, tranquil blue river and distant sage trees seen through the open veranda. Center luminous misty blue-white air, watercolor morning light. No railing through the character zone.",
+      "reference": "../DuoLandscape/river.png",
+      "source": "pad-portrait-river.png",
+      "asset": "device-pad-portrait-river",
+      "sha256": "f5c8fb9cdbbdf2e1597c0bcb45bf421b7be95d33a3bc79910bac55fefd6b3365",
+      "size": [
+        1086,
+        1448
+      ],
+      "floorFraction": 0.531
+    },
+    {
+      "name": "pad-portrait-cafe",
+      "layout": "pad-portrait",
+      "room": "cafe",
+      "prompt": "Use case: stylized-concept. Production full-bleed background ONLY for Tick & Kin, a cozy companion focus timer. Match reference's fine pixel-edged painted watercolor, paper grain, soft light and tiny storybook game environment. No characters, animals, people, text, numbers, symbols, UI, devices, border, watermark or pedestals. Preserve the room's identity but RECOMPOSE it for the specified canvas, not merely crop or stretch the reference.\nIPAD PORTRAIT canvas, aspect ratio 3:4, target 1536x2048. Full-bleed room with spacious architecture composed for this broad portrait canvas. Upper 12% calm and pale behind header. Character overlay centered at x=50%, y=21–53%; keep x=29–71% clear. Attractive room details, windows, plants, shelves form asymmetrical framing at far left and right. Horizontal wall/floor junction at y=55%. Broad empty floor from y=55% to bottom, very pale, quiet and low contrast for centered timer at y=65–90%. No furniture, pedestals, rug or objects in center or lower half. A real charming room, fine watercolor pixel edges. No characters or timer.\nMidnight Café for Jun, Bean and Maple: warm pale peach plaster, pale honey oak floor, narrow arched window with moonlit town at side, edge shelf with tiny pastries, warm pendant lamp, trailing ivy. Keep interior light and cozy, no dark central walls.",
+      "reference": "../DuoLandscape/cafe.png",
+      "source": "pad-portrait-cafe.png",
+      "asset": "device-pad-portrait-cafe",
+      "sha256": "a491b7f32a0a065fe7c7a61c3ecf099cfb34c30332617cfcc02ab59359c88137",
+      "size": [
+        1086,
+        1448
+      ],
+      "floorFraction": 0.528
+    },
+    {
+      "name": "pad-portrait-academy",
+      "layout": "pad-portrait",
+      "room": "academy",
+      "prompt": "Use case: stylized-concept. Production full-bleed background ONLY for Tick & Kin, a cozy companion focus timer. Match reference's fine pixel-edged painted watercolor, paper grain, soft light and tiny storybook game environment. No characters, animals, people, text, numbers, symbols, UI, devices, border, watermark or pedestals. Preserve the room's identity but RECOMPOSE it for the specified canvas, not merely crop or stretch the reference.\nIPAD PORTRAIT canvas, aspect ratio 3:4, target 1536x2048. Full-bleed room with spacious architecture composed for this broad portrait canvas. Upper 12% calm and pale behind header. Character overlay centered at x=50%, y=21–53%; keep x=29–71% clear. Attractive room details, windows, plants, shelves form asymmetrical framing at far left and right. Horizontal wall/floor junction at y=55%. Broad empty floor from y=55% to bottom, very pale, quiet and low contrast for centered timer at y=65–90%. No furniture, pedestals, rug or objects in center or lower half. A real charming room, fine watercolor pixel edges. No characters or timer.\nMoonlight Academy for Luna, Atlas and Wisp: pearl-lavender stone wall and pale lilac stone floor, slender arched window with moon and stars, violet ivy around edges, slim bookcase with indigo and gold books. Gentle moonlight, quiet magical library, luminous center.",
+      "reference": "../DuoLandscape/academy.png",
+      "source": "pad-portrait-academy.png",
+      "asset": "device-pad-portrait-academy",
+      "sha256": "4ad9d19c53cdbaa11f3ae1facc5db7e7f808cad78c2799fc4c4824f99bf79236",
+      "size": [
+        1086,
+        1448
+      ],
+      "floorFraction": 0.531
+    },
+    {
+      "name": "pad-portrait-orbit",
+      "layout": "pad-portrait",
+      "room": "orbit",
+      "prompt": "Use case: stylized-concept. Production full-bleed background ONLY for Tick & Kin, a cozy companion focus timer. Match reference's fine pixel-edged painted watercolor, paper grain, soft light and tiny storybook game environment. No characters, animals, people, text, numbers, symbols, UI, devices, border, watermark or pedestals. Preserve the room's identity but RECOMPOSE it for the specified canvas, not merely crop or stretch the reference.\nIPAD PORTRAIT canvas, aspect ratio 3:4, target 1536x2048. Full-bleed room with spacious architecture composed for this broad portrait canvas. Upper 12% calm and pale behind header. Character overlay centered at x=50%, y=21–53%; keep x=29–71% clear. Attractive room details, windows, plants, shelves form asymmetrical framing at far left and right. Horizontal wall/floor junction at y=55%. Broad empty floor from y=55% to bottom, very pale, quiet and low contrast for centered timer at y=65–90%. No furniture, pedestals, rug or objects in center or lower half. A real charming room, fine watercolor pixel edges. No characters or timer.\nOrbital Night Shift for Nova, Orbit and Comet: warm pearl-blue rounded cabin walls and pale blue-gray floor, large rounded porthole with pastel blue planet and stars near edge, tiny terracotta plant, subtle amber lights at edge. Cozy retro spaceship painted as a storybook, not photoreal.",
+      "reference": "../DuoLandscape/orbit.png",
+      "source": "pad-portrait-orbit.png",
+      "asset": "device-pad-portrait-orbit",
+      "sha256": "9664fe2039e000737c6f8149691ddbcbca8f50d527e7d83fd888e2c350747dbc",
+      "size": [
+        1086,
+        1448
+      ],
+      "floorFraction": 0.515
+    },
+    {
+      "name": "pad-landscape-window",
+      "layout": "pad-landscape",
+      "room": "window",
+      "prompt": "Use case: stylized-concept. Production full-bleed background ONLY for Tick & Kin, a cozy companion focus timer. Match reference's fine pixel-edged painted watercolor, paper grain, soft light and tiny storybook game environment. No characters, animals, people, text, numbers, symbols, UI, devices, border, watermark or pedestals. Preserve the room's identity but RECOMPOSE it for the specified canvas, not merely crop or stretch the reference.\nIPAD LANDSCAPE canvas, aspect ratio 4:3, target 2048x1536. Full-bleed room composed for companion at x=23%, y=27–76% and timer in entire right half. Upper 14% calm behind header. A straight horizontal wall/floor junction at exactly y=77%; empty standing ground at x=23%, y=78%. Keep x=10–38%, y=25–78% free of objects. Concentrate window, plants, bookshelf and charming details at far left/top left. ENTIRE right 53% soft pale low contrast wall, no small objects, reserved for timer. Floor extends to bottom, broad simple grain. A real spacious room with atmospheric depth; no dividing seam, oval platform, characters or timer.\nMochi's sunny window nook: cream plaster, soft blue window trim and pale blue wooden floor, spring blossom branches, cream linen curtains, dappled morning sun.",
+      "reference": "../DuoLandscape/window.png",
+      "source": "pad-landscape-window.png",
+      "asset": "device-pad-landscape-window",
+      "sha256": "eeac17fe43738802abcbe7697bfa6ba8582b4f927f821a8a2981bb17148a28c8",
+      "size": [
+        1448,
+        1086
+      ],
+      "floorFraction": 0.772
+    },
+    {
+      "name": "pad-landscape-study",
+      "layout": "pad-landscape",
+      "room": "study",
+      "prompt": "Use case: stylized-concept. Production full-bleed background ONLY for Tick & Kin, a cozy companion focus timer. Match reference's fine pixel-edged painted watercolor, paper grain, soft light and tiny storybook game environment. No characters, animals, people, text, numbers, symbols, UI, devices, border, watermark or pedestals. Preserve the room's identity but RECOMPOSE it for the specified canvas, not merely crop or stretch the reference.\nIPAD LANDSCAPE canvas, aspect ratio 4:3, target 2048x1536. Full-bleed room composed for companion at x=23%, y=27–76% and timer in entire right half. Upper 14% calm behind header. A straight horizontal wall/floor junction at exactly y=77%; empty standing ground at x=23%, y=78%. Keep x=10–38%, y=25–78% free of objects. Concentrate window, plants, bookshelf and charming details at far left/top left. ENTIRE right 53% soft pale low contrast wall, no small objects, reserved for timer. Floor extends to bottom, broad simple grain. A real spacious room with atmospheric depth; no dividing seam, oval platform, characters or timer.\nPip's miniature woodland study: warm honey wood window frames, rounded window showing sunlit green leaves, leafy ivy and tiny white flowers around edges, a few books on a narrow edge shelf. Pale sage cream plaster and light honey wooden floor.",
+      "reference": "../DuoLandscape/study.png",
+      "source": "pad-landscape-study.png",
+      "asset": "device-pad-landscape-study",
+      "sha256": "434a68103d1e0f81ac197b28bc64d7201adc9d7e867e73e3d9f8613a1ba76c3d",
+      "size": [
+        1448,
+        1086
+      ],
+      "floorFraction": 0.78
+    },
+    {
+      "name": "pad-landscape-river",
+      "layout": "pad-landscape",
+      "room": "river",
+      "prompt": "Use case: stylized-concept. Production full-bleed background ONLY for Tick & Kin, a cozy companion focus timer. Match reference's fine pixel-edged painted watercolor, paper grain, soft light and tiny storybook game environment. No characters, animals, people, text, numbers, symbols, UI, devices, border, watermark or pedestals. Preserve the room's identity but RECOMPOSE it for the specified canvas, not merely crop or stretch the reference.\nIPAD LANDSCAPE canvas, aspect ratio 4:3, target 2048x1536. Full-bleed room composed for companion at x=23%, y=27–76% and timer in entire right half. Upper 14% calm behind header. A straight horizontal wall/floor junction at exactly y=77%; empty standing ground at x=23%, y=78%. Keep x=10–38%, y=25–78% free of objects. Concentrate window, plants, bookshelf and charming details at far left/top left. ENTIRE right 53% soft pale low contrast wall, no small objects, reserved for timer. Floor extends to bottom, broad simple grain. A real spacious room with atmospheric depth; no dividing seam, oval platform, characters or timer.\nPebble's peaceful riverside reading veranda: blue-gray wooden decking, graceful willow branches and reeds along edges, tranquil blue river and distant sage trees seen through the open veranda. Center luminous misty blue-white air, watercolor morning light. No railing through the character zone.",
+      "reference": "../DuoLandscape/river.png",
+      "source": "pad-landscape-river.png",
+      "asset": "device-pad-landscape-river",
+      "sha256": "5d8b413afd43a90863e2a2121ce44c1606ec318920490106823e4c1a97cb164c",
+      "size": [
+        1448,
+        1086
+      ],
+      "floorFraction": 0.749
+    },
+    {
+      "name": "pad-landscape-cafe",
+      "layout": "pad-landscape",
+      "room": "cafe",
+      "prompt": "Use case: stylized-concept. Production full-bleed background ONLY for Tick & Kin, a cozy companion focus timer. Match reference's fine pixel-edged painted watercolor, paper grain, soft light and tiny storybook game environment. No characters, animals, people, text, numbers, symbols, UI, devices, border, watermark or pedestals. Preserve the room's identity but RECOMPOSE it for the specified canvas, not merely crop or stretch the reference.\nIPAD LANDSCAPE canvas, aspect ratio 4:3, target 2048x1536. Full-bleed room composed for companion at x=23%, y=27–76% and timer in entire right half. Upper 14% calm behind header. A straight horizontal wall/floor junction at exactly y=77%; empty standing ground at x=23%, y=78%. Keep x=10–38%, y=25–78% free of objects. Concentrate window, plants, bookshelf and charming details at far left/top left. ENTIRE right 53% soft pale low contrast wall, no small objects, reserved for timer. Floor extends to bottom, broad simple grain. A real spacious room with atmospheric depth; no dividing seam, oval platform, characters or timer.\nMidnight Café for Jun, Bean and Maple: warm pale peach plaster, pale honey oak floor, narrow arched window with moonlit town at side, edge shelf with tiny pastries, warm pendant lamp, trailing ivy. Keep interior light and cozy, no dark central walls.",
+      "reference": "../DuoLandscape/cafe.png",
+      "source": "pad-landscape-cafe.png",
+      "asset": "device-pad-landscape-cafe",
+      "sha256": "73f9c4d93f330c79b10085876e0447f33aa99b23879b82661559887a24944558",
+      "size": [
+        1448,
+        1086
+      ],
+      "floorFraction": 0.773
+    },
+    {
+      "name": "pad-landscape-academy",
+      "layout": "pad-landscape",
+      "room": "academy",
+      "prompt": "Use case: stylized-concept. Production full-bleed background ONLY for Tick & Kin, a cozy companion focus timer. Match reference's fine pixel-edged painted watercolor, paper grain, soft light and tiny storybook game environment. No characters, animals, people, text, numbers, symbols, UI, devices, border, watermark or pedestals. Preserve the room's identity but RECOMPOSE it for the specified canvas, not merely crop or stretch the reference.\nIPAD LANDSCAPE canvas, aspect ratio 4:3, target 2048x1536. Full-bleed room composed for companion at x=23%, y=27–76% and timer in entire right half. Upper 14% calm behind header. A straight horizontal wall/floor junction at exactly y=77%; empty standing ground at x=23%, y=78%. Keep x=10–38%, y=25–78% free of objects. Concentrate window, plants, bookshelf and charming details at far left/top left. ENTIRE right 53% soft pale low contrast wall, no small objects, reserved for timer. Floor extends to bottom, broad simple grain. A real spacious room with atmospheric depth; no dividing seam, oval platform, characters or timer.\nMoonlight Academy for Luna, Atlas and Wisp: pearl-lavender stone wall and pale lilac stone floor, slender arched window with moon and stars, violet ivy around edges, slim bookcase with indigo and gold books. Gentle moonlight, quiet magical library, luminous center.",
+      "reference": "../DuoLandscape/academy.png",
+      "source": "pad-landscape-academy.png",
+      "asset": "device-pad-landscape-academy",
+      "sha256": "7d6823cc3aab4cffd0992fcfc8287ab17387cad097f5e0b31396aacfe9df96d0",
+      "size": [
+        1448,
+        1086
+      ],
+      "floorFraction": 0.766
+    },
+    {
+      "name": "pad-landscape-orbit",
+      "layout": "pad-landscape",
+      "room": "orbit",
+      "prompt": "Use case: stylized-concept. Production full-bleed background ONLY for Tick & Kin, a cozy companion focus timer. Match reference's fine pixel-edged painted watercolor, paper grain, soft light and tiny storybook game environment. No characters, animals, people, text, numbers, symbols, UI, devices, border, watermark or pedestals. Preserve the room's identity but RECOMPOSE it for the specified canvas, not merely crop or stretch the reference.\nIPAD LANDSCAPE canvas, aspect ratio 4:3, target 2048x1536. Full-bleed room composed for companion at x=23%, y=27–76% and timer in entire right half. Upper 14% calm behind header. A straight horizontal wall/floor junction at exactly y=77%; empty standing ground at x=23%, y=78%. Keep x=10–38%, y=25–78% free of objects. Concentrate window, plants, bookshelf and charming details at far left/top left. ENTIRE right 53% soft pale low contrast wall, no small objects, reserved for timer. Floor extends to bottom, broad simple grain. A real spacious room with atmospheric depth; no dividing seam, oval platform, characters or timer.\nOrbital Night Shift for Nova, Orbit and Comet: warm pearl-blue rounded cabin walls and pale blue-gray floor, large rounded porthole with pastel blue planet and stars near edge, tiny terracotta plant, subtle amber lights at edge. Cozy retro spaceship painted as a storybook, not photoreal.",
+      "reference": "../DuoLandscape/orbit.png",
+      "source": "pad-landscape-orbit.png",
+      "asset": "device-pad-landscape-orbit",
+      "sha256": "223bca6870eeca88df8311970edfa78e7edc16837d2cd2eb8dbc2184a8a5ed21",
+      "size": [
+        1448,
+        1086
+      ],
+      "floorFraction": 0.783
+    }
+  ],
+  "generatedWith": "Built-in imagegen, one image per room and format",
+  "inspected": "All 24 compositions visually inspected; river phone seam repaired in v2."
+}

@@ -1,0 +1,92 @@
+{
+  "method": "natural-countdown-v2",
+  "recognizer": "medium",
+  "direction": "Count quickly and crisply at about two numbers per second. Keep your character voice. Say each number briefly, without stretching vowels, adding noises, or singing.",
+  "contextOrder": [
+    6,
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+  ],
+  "synthesisInstruction": "A tiny boyish toy robot with a reedy nasal squeak, eager quick bursts and endearingly jerky comic timing. High youthful playful voice, little pitch jumps and bright curious excitement, no buzzing. Speak only the supplied Spanish words. Keep it cute and conversational, with no music, singing, added laughter or animal noises. Speak in Spanish. Count quickly and crisply at about two numbers per second. Keep your character voice. Say each number briefly, without stretching vowels, adding noises, or singing.",
+  "sourceWords": [
+    {
+      "text": " ¡6",
+      "start": 0.0,
+      "end": 0.68
+    },
+    {
+      "text": "-5",
+      "start": 0.68,
+      "end": 1.24
+    },
+    {
+      "text": "-4",
+      "start": 1.24,
+      "end": 1.76
+    },
+    {
+      "text": "-3",
+      "start": 1.76,
+      "end": 2.32
+    },
+    {
+      "text": "-2",
+      "start": 2.32,
+      "end": 2.88
+    },
+    {
+      "text": "-1",
+      "start": 2.88,
+      "end": 3.16
+    },
+    {
+      "text": "-0!",
+      "start": 3.16,
+      "end": 3.48
+    }
+  ],
+  "text": "seis, Cinco, Cuatro, Tres, Dos, Uno, cero.",
+  "words": [
+    {
+      "text": "-5",
+      "start": 0.68,
+      "end": 1.24
+    },
+    {
+      "text": "-4",
+      "start": 1.24,
+      "end": 1.76
+    },
+    {
+      "text": "-3",
+      "start": 1.76,
+      "end": 2.32
+    },
+    {
+      "text": "-2",
+      "start": 2.32,
+      "end": 2.88
+    },
+    {
+      "text": "-1",
+      "start": 2.88,
+      "end": 3.16
+    }
+  ],
+  "boundaries": [
+    0.68,
+    1.24,
+    1.76,
+    2.32,
+    2.88,
+    3.16
+  ],
+  "sourceSHA256": "bb1fe42569609d80ac5a8d5fbe6ac0ff1d122eb95fdbc17e1b043e2d2266ac5e",
+  "seed": 505362745,
+  "speed": 1,
+  "pitch": 1
+}

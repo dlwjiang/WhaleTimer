@@ -1,0 +1,89 @@
+{
+  "method": "Re-encode the original lossless audition with its original AAC command; compare the user-selected file hash.",
+  "clips": {
+    "mochi": {
+      "voice": "maple-b",
+      "sourceWAVSHA256": "7918d9c5edbc5238522da39d77fe6030479125f641820c60480c208fa2003015",
+      "auditionSHA256": "670858f7b4fc74289190476b7b96a06cee71307529450c77d3aac1f95f5bd095",
+      "reencodedSHA256": "670858f7b4fc74289190476b7b96a06cee71307529450c77d3aac1f95f5bd095",
+      "exactAuditionMatch": true
+    },
+    "pip": {
+      "voice": "pip-a",
+      "sourceWAVSHA256": "a893315cafd4c8d662b425b5f5b565c098fe73e4b36fa9caa41232fd3f41bbca",
+      "auditionSHA256": "7049b1e18d7c606ce25384d340bb4f047d648c92e383688cbdda2914e5e71fb7",
+      "reencodedSHA256": "7049b1e18d7c606ce25384d340bb4f047d648c92e383688cbdda2914e5e71fb7",
+      "exactAuditionMatch": true
+    },
+    "pebble": {
+      "voice": "pebble-a",
+      "sourceWAVSHA256": "b34d12ac41cfe7163640817e3c8d4fbcc8d745ca5e7e533849fa5e355523b811",
+      "auditionSHA256": "ab24e364b5dae6f3b52219aadef6cb8cfe01ed7f1616ada9e2f0b4e5ee229b8d",
+      "reencodedSHA256": "ab24e364b5dae6f3b52219aadef6cb8cfe01ed7f1616ada9e2f0b4e5ee229b8d",
+      "exactAuditionMatch": true
+    },
+    "bean": {
+      "voice": "bean-a",
+      "sourceWAVSHA256": "7d23740780e78c1acabec0aa893a5e0e8e842ee27fa631db442260da57f67395",
+      "auditionSHA256": "40051f6b942e3d455c6ee8a1a78a95c06d23b6713871325b6d36fb5be96c8179",
+      "reencodedSHA256": "40051f6b942e3d455c6ee8a1a78a95c06d23b6713871325b6d36fb5be96c8179",
+      "exactAuditionMatch": true
+    },
+    "maple": {
+      "voice": "maple-d",
+      "sourceWAVSHA256": "04cf098e1054deac4ef8d54aea6216ff2650a9a4f23250db468e9094b8d9e0ad",
+      "auditionSHA256": "781e6f0097ddaf650980892f43de3ff784f6d44dd1e75724c28dbf1a53413e16",
+      "reencodedSHA256": "781e6f0097ddaf650980892f43de3ff784f6d44dd1e75724c28dbf1a53413e16",
+      "exactAuditionMatch": true
+    },
+    "luna": {
+      "voice": "luna-b",
+      "sourceWAVSHA256": "3a987e46a818590028c2afe4c1ebcee79ad8f2241339865e963c0971d37c7a5a",
+      "auditionSHA256": "85be97cd7e5112ba34f1b662081722ba1ae22ee1266f6fc84b27fdaa86ec0d4f",
+      "reencodedSHA256": "85be97cd7e5112ba34f1b662081722ba1ae22ee1266f6fc84b27fdaa86ec0d4f",
+      "exactAuditionMatch": true
+    },
+    "atlas": {
+      "voice": "atlas-b",
+      "sourceWAVSHA256": "2305ac20a06c5f31adec7ae0e5e292811a75e606c8390277558aaae813b81632",
+      "auditionSHA256": "6872746d1a75c2cb86d40b79cfeb16d69262f85f54a7d3f664aa9c8427009245",
+      "reencodedSHA256": "6872746d1a75c2cb86d40b79cfeb16d69262f85f54a7d3f664aa9c8427009245",
+      "exactAuditionMatch": true
+    },
+    "wisp": {
+      "voice": "wisp-a",
+      "sourceWAVSHA256": "fa9f30e96d5d3d8c83a5535a2b54a3e8273e6258e32a8fe7c1ca4c5f93184380",
+      "auditionSHA256": "b5f6016c5e3e298794ef647766e82678968ddfe51f1522e7845a6443816200bb",
+      "reencodedSHA256": "b5f6016c5e3e298794ef647766e82678968ddfe51f1522e7845a6443816200bb",
+      "exactAuditionMatch": true
+    },
+    "nova": {
+      "voice": "nova-b",
+      "sourceWAVSHA256": "91b9315ccac6bdc275b939b263c1ec57be608b6d9ce27485d7f90356d8037783",
+      "auditionSHA256": "f9564d7a09e4b20206c025c78b73c9f98a46f19ad9cffc2876a54205d6055ea3",
+      "reencodedSHA256": "f9564d7a09e4b20206c025c78b73c9f98a46f19ad9cffc2876a54205d6055ea3",
+      "exactAuditionMatch": true
+    },
+    "orbit": {
+      "voice": "orbit-c",
+      "sourceWAVSHA256": "e0824f7c192678401d16be736c9c5e9969a2028131810089e1bd63f8daeef541",
+      "auditionSHA256": "93514b9d491d9bfa580f1580c043d19b7379147e9f1f13df7615fe8993f916cf",
+      "reencodedSHA256": "93514b9d491d9bfa580f1580c043d19b7379147e9f1f13df7615fe8993f916cf",
+      "exactAuditionMatch": true
+    },
+    "comet": {
+      "voice": "comet-a",
+      "sourceWAVSHA256": "001c6c68d81e3de39f046809804ad0fd034ac6c1377f36f205e9ab17532d6f68",
+      "auditionSHA256": "c5a64daf3aeacb273f1141cb5a2e1737bb4045bb2c5ee7a9da643bebe4389e54",
+      "reencodedSHA256": "c5a64daf3aeacb273f1141cb5a2e1737bb4045bb2c5ee7a9da643bebe4389e54",
+      "exactAuditionMatch": true
+    },
+    "jun": {
+      "voice": "jun-r2-c",
+      "sourceWAVSHA256": "229539228bfa5bf649905de0ce82673b7046473e2533f4c910eea06ce4afccd2",
+      "auditionSHA256": "5486872a9d865175b272904f680bae0b67fa5084e9414c15c1b186b25563a368",
+      "reencodedSHA256": "5486872a9d865175b272904f680bae0b67fa5084e9414c15c1b186b25563a368",
+      "exactAuditionMatch": true
+    }
+  }
+}

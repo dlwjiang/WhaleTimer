@@ -1,0 +1,14 @@
+{
+  "phone": {
+    "result": "passed",
+    "xcresult": "/tmp/banke-expansion/Logs/Test/Test-BankeStoreKit-2026.11.11_16-51-51-+0800.xcresult",
+    "captureMethod": "Simulator rotation, native window safe areas",
+    "geometryTests": "Passed: shared idle/poked sheet placement and rendered expression changes for all 12 companions in four layouts"
+  },
+  "ipad": {
+    "result": "passed",
+    "xcresult": "/tmp/banke-expansion/Logs/Test/Test-BankeStoreKit-2026.11.11_16-54-22-+0800.xcresult",
+    "captureMethod": "Native production-view render at explicit portrait and landscape dimensions; parent window safe area disabled",
+    "geometryTests": "Passed: shared idle/poked sheet placement and rendered expression changes for all 12 companions in four layouts"
+  }
+}

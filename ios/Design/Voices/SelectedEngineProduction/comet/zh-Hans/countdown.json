@@ -1,0 +1,45 @@
+{
+  "method": "natural-countdown-v2",
+  "recognizer": "small",
+  "direction": null,
+  "text": "五。 四。 三。 二。 一。",
+  "words": [
+    {
+      "text": "五",
+      "start": 0.0,
+      "end": 0.4
+    },
+    {
+      "text": " 四",
+      "start": 0.64,
+      "end": 1.2
+    },
+    {
+      "text": " 三",
+      "start": 1.44,
+      "end": 1.94
+    },
+    {
+      "text": " 二",
+      "start": 2.02,
+      "end": 2.56
+    },
+    {
+      "text": " 一",
+      "start": 2.56,
+      "end": 3.2
+    }
+  ],
+  "boundaries": [
+    0,
+    0.52,
+    1.3199999999999998,
+    1.98,
+    2.56,
+    3.366
+  ],
+  "sourceSHA256": "7c913c927640848e830d8222e3969946af57b6718e5fa9adf2416ca2ad091629",
+  "seed": 1676834678,
+  "speed": 1,
+  "pitch": 1
+}

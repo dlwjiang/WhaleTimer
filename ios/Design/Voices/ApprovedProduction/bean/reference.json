@@ -1,0 +1,11 @@
+{
+  "voice": "bean-a",
+  "name": "Troublemaker kitten",
+  "model": "Qwen3-TTS-12Hz-1.7B-VoiceDesign-bf16",
+  "description": "A tiny boyish cartoon kitten with an unusually thin squeaky nasal voice, cheeky grin and fast punchy syllables. Mischievous little upward pitch flicks, youthful funny creature energy, affectionately impish. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises.",
+  "text": "Hi! I'm right here. Let's do one little thing together. Ready? Here we go!",
+  "auditionSHA256": "40051f6b942e3d455c6ee8a1a78a95c06d23b6713871325b6d36fb5be96c8179",
+  "referenceSHA256": "fb7916d5ba5a07a608e74d5847f6308a2b5b7c27cf5260ccb15801a3e4ee283e",
+  "source": "ios/Design/Voices/VoiceCasting/audio/bean-a.m4a",
+  "method": "Decode exact selected audition to PCM, no pitch or speed changes."
+}

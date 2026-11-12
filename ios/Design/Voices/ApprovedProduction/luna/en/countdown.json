@@ -1,0 +1,43 @@
+{
+  "method": "context-countdown-v1",
+  "text": "Five. Four. Three. Two. One.",
+  "instruct": "Speak in English naturally. Clearly count down from five to one.",
+  "seed": 548100455,
+  "words": [
+    {
+      "text": " Five,",
+      "start": 0.0,
+      "end": 0.36
+    },
+    {
+      "text": " four,",
+      "start": 0.86,
+      "end": 1.22
+    },
+    {
+      "text": " three,",
+      "start": 1.52,
+      "end": 1.86
+    },
+    {
+      "text": " two,",
+      "start": 2.28,
+      "end": 2.58
+    },
+    {
+      "text": " one.",
+      "start": 3.3,
+      "end": 3.54
+    }
+  ],
+  "boundaries": [
+    0,
+    0.61,
+    1.37,
+    2.07,
+    2.94,
+    3.8699375
+  ],
+  "recognizer": "faster-whisper-small",
+  "note": "Transcript and boundary check; not native-speaker approval."
+}

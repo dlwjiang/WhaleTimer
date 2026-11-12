@@ -1,0 +1,11 @@
+{
+  "voice": "pebble-a",
+  "name": "Otter pup",
+  "model": "Qwen3-TTS-12Hz-1.7B-VoiceDesign-bf16",
+  "description": "A baby cartoon otter with a very small boyish voice, round bubbly vowels and an earnest little squeak at phrase endings. Bright playful delight, adorable youthful mascot, short soft consonants. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises.",
+  "text": "Hi! I'm right here. Let's do one little thing together. Ready? Here we go!",
+  "auditionSHA256": "ab24e364b5dae6f3b52219aadef6cb8cfe01ed7f1616ada9e2f0b4e5ee229b8d",
+  "referenceSHA256": "c09484c007731fb87bc18a096351056db6b3ef1b7f6eff3540c6cad77abb0e1e",
+  "source": "ios/Design/Voices/VoiceCasting/audio/pebble-a.m4a",
+  "method": "Decode exact selected audition to PCM, no pitch or speed changes."
+}

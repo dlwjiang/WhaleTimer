@@ -1,0 +1,45 @@
+{
+  "method": "natural-countdown-v2",
+  "recognizer": "medium",
+  "direction": "For this countdown, say each number as a quick, clear beat. Do not draw out the vowels.",
+  "text": "五, 四, 三, 二, 一.",
+  "words": [
+    {
+      "text": "五",
+      "start": 0.0,
+      "end": 0.66
+    },
+    {
+      "text": "四",
+      "start": 0.66,
+      "end": 1.02
+    },
+    {
+      "text": "三",
+      "start": 1.02,
+      "end": 1.58
+    },
+    {
+      "text": "二",
+      "start": 1.58,
+      "end": 2.0
+    },
+    {
+      "text": "一",
+      "start": 2.0,
+      "end": 2.42
+    }
+  ],
+  "boundaries": [
+    0,
+    0.66,
+    1.02,
+    1.58,
+    2.0,
+    2.5224166666666665
+  ],
+  "sourceSHA256": "e216d5f58db7e99b67ea0c2e0c28e359eae84964767eb04495a6da3e4e0a8735",
+  "seed": 581872030,
+  "speed": 1,
+  "pitch": 1
+}

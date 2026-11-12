@@ -1,0 +1,45 @@
+{
+  "method": "natural-countdown-v2",
+  "recognizer": "small",
+  "direction": null,
+  "text": "ご。 よん。 さん。 に。 いち。",
+  "words": [
+    {
+      "text": "5、",
+      "start": 0.0,
+      "end": 0.28
+    },
+    {
+      "text": "4、",
+      "start": 0.48,
+      "end": 0.98
+    },
+    {
+      "text": "3、",
+      "start": 1.26,
+      "end": 1.72
+    },
+    {
+      "text": "2、",
+      "start": 2.12,
+      "end": 2.44
+    },
+    {
+      "text": "1",
+      "start": 2.66,
+      "end": 3.0
+    }
+  ],
+  "boundaries": [
+    0,
+    0.38,
+    1.12,
+    1.92,
+    2.55,
+    3.163125
+  ],
+  "sourceSHA256": "f215bd4dd3871fda0f4a9f4c96b7c81d5fbfa135b9c17f05efafc4f4b0d499aa",
+  "seed": 1676834678,
+  "speed": 1,
+  "pitch": 1
+}

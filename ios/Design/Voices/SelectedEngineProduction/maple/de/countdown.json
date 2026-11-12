@@ -1,0 +1,93 @@
+{
+  "method": "natural-countdown-v2",
+  "recognizer": "medium",
+  "direction": "Say each number crisply and briefly, with a distinct quiet pause between numbers. Keep your character voice. Do not stretch vowels, add noises, or sing.",
+  "boundaryMethod": "quiet-pauses",
+  "contextOrder": [
+    6,
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+  ],
+  "synthesisInstruction": "A miniature feminine woodland fairy with a thin breathy flute-like high voice, soft gentle flowing speech and a shy smiling lilt. Delicate youthful warmth, lightly musical inflections without singing. Speak only the supplied German words. Keep it cute and conversational, with no music, singing, added laughter or animal noises. Speak in German. Say each number crisply and briefly, with a distinct quiet pause between numbers. Keep your character voice. Do not stretch vowels, add noises, or sing.",
+  "sourceWords": [
+    {
+      "text": " Sechs,",
+      "start": 0.0,
+      "end": 0.8
+    },
+    {
+      "text": " fünf,",
+      "start": 0.94,
+      "end": 1.44
+    },
+    {
+      "text": " vier,",
+      "start": 1.74,
+      "end": 2.12
+    },
+    {
+      "text": " drei,",
+      "start": 2.54,
+      "end": 2.76
+    },
+    {
+      "text": " zwei,",
+      "start": 3.18,
+      "end": 3.52
+    },
+    {
+      "text": " eins,",
+      "start": 3.92,
+      "end": 4.24
+    },
+    {
+      "text": " null.",
+      "start": 4.68,
+      "end": 4.8
+    }
+  ],
+  "text": "sechs, Fünf, Vier, Drei, Zwei, Eins, null.",
+  "words": [
+    {
+      "text": " fünf,",
+      "start": 0.94,
+      "end": 1.44
+    },
+    {
+      "text": " vier,",
+      "start": 1.74,
+      "end": 2.12
+    },
+    {
+      "text": " drei,",
+      "start": 2.54,
+      "end": 2.76
+    },
+    {
+      "text": " zwei,",
+      "start": 3.18,
+      "end": 3.52
+    },
+    {
+      "text": " eins,",
+      "start": 3.92,
+      "end": 4.24
+    }
+  ],
+  "boundaries": [
+    0.695,
+    1.5,
+    2.17,
+    2.835,
+    3.56,
+    4.355
+  ],
+  "sourceSHA256": "fa71b1a3eaf531bf43992c2aec4132a0991dbacf9fa6e7d4e391c743e0cae603",
+  "seed": 3681681028,
+  "speed": 1,
+  "pitch": 1
+}

@@ -3,7 +3,9 @@ import SwiftUI
 /// Drag from the handle; releasing before 88% springs back without changing the timer.
 struct SlideToReset: View {
     let theme: CompanionTheme
+    var compact = false
     let action: () -> Void
+    @Environment(\.dynamicTypeSize) private var dynamicTypeSize
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @Environment(\.scenePhase) private var scenePhase
     @ScaledMetric(relativeTo: .caption) private var controlHeight: CGFloat = 60
@@ -15,8 +17,10 @@ struct SlideToReset: View {
             let travel = max(0, proxy.size.width - 60)
             let fraction = InteractionGeometry.resetFraction(translation: translation, travel: travel)
             ZStack(alignment: .leading) {
-                Text("Slide to start over")
+                Text(compact ? LocalizedStringKey("Start over") : LocalizedStringKey("Slide to start over"))
                     .font(.system(.caption, weight: .semibold))
+                    .lineLimit(dynamicTypeSize.isAccessibilitySize ? nil : compact ? 1 : 2)
+                    .minimumScaleFactor(dynamicTypeSize.isAccessibilitySize ? 1 : 0.8)
                     .multilineTextAlignment(.center).padding(.leading, 56).padding(.trailing, 10)
                     .frame(maxWidth: .infinity)
                     .foregroundStyle(theme.accent.opacity(1 - fraction))

@@ -1,0 +1,92 @@
+{
+  "method": "natural-countdown-v2",
+  "recognizer": "medium",
+  "direction": "Count quickly and crisply at about two numbers per second. Keep your character voice. Say each number briefly, without stretching vowels, adding noises, or singing.",
+  "contextOrder": [
+    6,
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+  ],
+  "synthesisInstruction": "A tiny feminine moon fairy with a very light breathy high voice, short, lightly floating syllables and delicate airy consonants. Youthful shy wonder, soft intimate delivery that stays clearly audible, weightless and magical. Speak only the supplied German words. Keep it cute and conversational, with no music, singing, added laughter or animal noises. Speak in German. Count quickly and crisply at about two numbers per second. Keep your character voice. Say each number briefly, without stretching vowels, adding noises, or singing.",
+  "sourceWords": [
+    {
+      "text": " 6,",
+      "start": 0.0,
+      "end": 0.7
+    },
+    {
+      "text": " 5,",
+      "start": 0.92,
+      "end": 2.06
+    },
+    {
+      "text": " 4,",
+      "start": 2.56,
+      "end": 3.22
+    },
+    {
+      "text": " 3,",
+      "start": 3.8,
+      "end": 4.32
+    },
+    {
+      "text": " 2,",
+      "start": 4.9,
+      "end": 5.34
+    },
+    {
+      "text": " 1,",
+      "start": 6.36,
+      "end": 7.0
+    },
+    {
+      "text": " 0",
+      "start": 7.28,
+      "end": 7.52
+    }
+  ],
+  "text": "sechs, Fünf, Vier, Drei, Zwei, Eins, null.",
+  "words": [
+    {
+      "text": " 5,",
+      "start": 0.92,
+      "end": 2.06
+    },
+    {
+      "text": " 4,",
+      "start": 2.56,
+      "end": 3.22
+    },
+    {
+      "text": " 3,",
+      "start": 3.8,
+      "end": 4.32
+    },
+    {
+      "text": " 2,",
+      "start": 4.9,
+      "end": 5.34
+    },
+    {
+      "text": " 1,",
+      "start": 6.36,
+      "end": 7.0
+    }
+  ],
+  "boundaries": [
+    0.81,
+    2.31,
+    3.51,
+    4.61,
+    5.85,
+    7.140000000000001
+  ],
+  "sourceSHA256": "113bfbde8e878510bfdf3d565b7699db7026f606e5453a484c996e3fc1c731d4",
+  "seed": 1553048512,
+  "speed": 1,
+  "pitch": 1
+}

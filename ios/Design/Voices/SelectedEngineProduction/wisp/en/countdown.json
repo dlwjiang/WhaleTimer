@@ -1,0 +1,43 @@
+{
+  "method": "natural-countdown-v2",
+  "text": "Five. Four. Three. Two. One.",
+  "words": [
+    {
+      "text": " Five,",
+      "start": 0.0,
+      "end": 0.2
+    },
+    {
+      "text": " four,",
+      "start": 0.38,
+      "end": 0.58
+    },
+    {
+      "text": " three,",
+      "start": 0.9,
+      "end": 1.24
+    },
+    {
+      "text": " two,",
+      "start": 1.66,
+      "end": 2.0
+    },
+    {
+      "text": " one.",
+      "start": 2.6,
+      "end": 2.84
+    }
+  ],
+  "boundaries": [
+    0,
+    0.29000000000000004,
+    0.74,
+    1.45,
+    2.3,
+    3.106375
+  ],
+  "sourceSHA256": "3801d5879c943ce764795a1881e64f41cd92437e0bceaa3c8165f1af34e52136",
+  "seed": 3213039405,
+  "speed": 1,
+  "pitch": 1
+}

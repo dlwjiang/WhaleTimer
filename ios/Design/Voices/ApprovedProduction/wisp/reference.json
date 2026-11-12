@@ -1,0 +1,11 @@
+{
+  "voice": "wisp-a",
+  "name": "Glass-wing fairy",
+  "model": "Qwen3-TTS-12Hz-1.7B-VoiceDesign-bf16",
+  "description": "A miniature feminine moth fairy with a very high crystalline voice, thin bell-like resonance and delicate quick little phrases. Youthful sparkling curiosity and tiny precise consonants, sweet magical energy. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises.",
+  "text": "Hi! I'm right here. Let's do one little thing together. Ready? Here we go!",
+  "auditionSHA256": "b5f6016c5e3e298794ef647766e82678968ddfe51f1522e7845a6443816200bb",
+  "referenceSHA256": "8cb08f3ee5c50cd6e10622e425cec7aeb66de3314bf2d585f9be199fdc160ab9",
+  "source": "ios/Design/Voices/VoiceCasting/audio/wisp-a.m4a",
+  "method": "Decode exact selected audition to PCM, no pitch or speed changes."
+}

@@ -1,0 +1,92 @@
+{
+  "method": "natural-countdown-v2",
+  "recognizer": "medium",
+  "direction": "Count quickly and crisply at about two numbers per second. Keep your character voice. Say each number briefly, without stretching vowels, adding noises, or singing.",
+  "contextOrder": [
+    6,
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+  ],
+  "synthesisInstruction": "A miniature feminine moth fairy with a very high crystalline voice, thin bell-like resonance and delicate quick little phrases. Youthful sparkling curiosity and tiny precise consonants, sweet magical energy. Speak only the supplied Mandarin Chinese words. Keep it cute and conversational, with no music, singing, added laughter or animal noises. Speak in Mandarin Chinese. Count quickly and crisply at about two numbers per second. Keep your character voice. Say each number briefly, without stretching vowels, adding noises, or singing.",
+  "sourceWords": [
+    {
+      "text": "6",
+      "start": 0.0,
+      "end": 0.76
+    },
+    {
+      "text": "5",
+      "start": 0.76,
+      "end": 1.96
+    },
+    {
+      "text": "4",
+      "start": 1.96,
+      "end": 2.96
+    },
+    {
+      "text": "3",
+      "start": 2.96,
+      "end": 3.88
+    },
+    {
+      "text": "2",
+      "start": 3.88,
+      "end": 4.92
+    },
+    {
+      "text": "1",
+      "start": 4.92,
+      "end": 6.06
+    },
+    {
+      "text": "0",
+      "start": 6.06,
+      "end": 6.6
+    }
+  ],
+  "text": "六, 五, 四, 三, 二, 一, 零.",
+  "words": [
+    {
+      "text": "5",
+      "start": 0.76,
+      "end": 1.96
+    },
+    {
+      "text": "4",
+      "start": 1.96,
+      "end": 2.96
+    },
+    {
+      "text": "3",
+      "start": 2.96,
+      "end": 3.88
+    },
+    {
+      "text": "2",
+      "start": 3.88,
+      "end": 4.92
+    },
+    {
+      "text": "1",
+      "start": 4.92,
+      "end": 6.06
+    }
+  ],
+  "boundaries": [
+    0.76,
+    1.96,
+    2.96,
+    3.88,
+    4.92,
+    6.06
+  ],
+  "sourceSHA256": "110f359afcf3d73f3ab146d4441da8e4d811db8d8f5354e49acf7879490ecfbb",
+  "seed": 3215038402,
+  "speed": 1,
+  "pitch": 1
+}

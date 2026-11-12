@@ -1,0 +1,93 @@
+{
+  "method": "natural-countdown-v2",
+  "recognizer": "medium",
+  "direction": "Say each number crisply and briefly, with a distinct quiet pause between numbers. Keep your character voice. Do not stretch vowels, add noises, or sing.",
+  "boundaryMethod": "quiet-pauses",
+  "contextOrder": [
+    6,
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+  ],
+  "synthesisInstruction": "A tiny tomboy space scout with a small reedy high tenor, smiling nasal twang and punchy staccato rhythm. Scrappy youthful charm, quick cheeky confidence and buoyant cartoon adventure energy. Speak only the supplied Brazilian Portuguese words. Keep it cute and conversational, with no music, singing, added laughter or animal noises. Speak in Brazilian Portuguese. Say each number crisply and briefly, with a distinct quiet pause between numbers. Keep your character voice. Do not stretch vowels, add noises, or sing.",
+  "sourceWords": [
+    {
+      "text": " Seis,",
+      "start": 0.0,
+      "end": 0.72
+    },
+    {
+      "text": " cinco,",
+      "start": 0.82,
+      "end": 1.32
+    },
+    {
+      "text": " quatro,",
+      "start": 1.7,
+      "end": 2.22
+    },
+    {
+      "text": " três,",
+      "start": 2.56,
+      "end": 3.1
+    },
+    {
+      "text": " dois,",
+      "start": 3.7,
+      "end": 4.04
+    },
+    {
+      "text": " um,",
+      "start": 4.68,
+      "end": 5.2
+    },
+    {
+      "text": " zero!",
+      "start": 5.58,
+      "end": 5.88
+    }
+  ],
+  "text": "seis, Cinco, Quatro, Três, Dois, Um, zero.",
+  "words": [
+    {
+      "text": " cinco,",
+      "start": 0.82,
+      "end": 1.32
+    },
+    {
+      "text": " quatro,",
+      "start": 1.7,
+      "end": 2.22
+    },
+    {
+      "text": " três,",
+      "start": 2.56,
+      "end": 3.1
+    },
+    {
+      "text": " dois,",
+      "start": 3.7,
+      "end": 4.04
+    },
+    {
+      "text": " um,",
+      "start": 4.68,
+      "end": 5.2
+    }
+  ],
+  "boundaries": [
+    0.66,
+    1.475,
+    2.305,
+    3.22,
+    4.255,
+    5.125
+  ],
+  "sourceSHA256": "69e037b8eabbb298aeb1ebc3c7545b4a595a99a2306ca3f11b0366e302aada0b",
+  "seed": 583870018,
+  "speed": 1,
+  "pitch": 1
+}

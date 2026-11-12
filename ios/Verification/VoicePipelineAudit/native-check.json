@@ -1,0 +1,9 @@
+{
+  "result": "passed",
+  "xcresult": "/tmp/banke-expansion/Logs/Test/Test-BankeStoreKit-2026.11.11_17-15-21-+0800.xcresult",
+  "scope": [
+    "AVAudioPlayer opens all 1,248 bundled files with expected durations",
+    "Recorded playback completes and mechanical effects do not cancel speech"
+  ],
+  "limits": "Does not assess perceived audio quality or prove fidelity to the selected performances."
+}

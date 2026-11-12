@@ -13,7 +13,10 @@ struct CompanionScene: View {
     var sceneHeight: CGFloat?
     var tabletopHingeY: CGFloat?
     var showsSelector = true
+    var showsName = true
     var showsBackdrop = true
+    var roomLedgeY: CGFloat?
+    var framingAdjustments: [Companion: DuoFramingAdjustment] = [:]
     @State private var selection: Companion = .mochi
     @State private var position = 0.0
     @State private var settling = false
@@ -21,17 +24,13 @@ struct CompanionScene: View {
     @GestureState private var touching = false
     @State private var settleTask: Task<Void, Never>?
     @State private var isGreeting = false
-    @State private var greetedAt = Date.distantPast
     @State private var greetingTask: Task<Void, Never>?
 
     private var theme: CompanionTheme { CompanionTheme(anchor) }
+    private var selectorNameHeight: CGFloat { showsName ? nameHeight : 0 }
     private var companions: [Companion] { purchases.availableCompanions }
     private var anchor: Companion { companions.contains(selection) ? selection : companions[0] }
-    private var pose: String {
-        if isGreeting || (audio.speaking && audio.captionCompanion == store.companion) || store.session.status == .complete { return "happy" }
-        if store.session.phase != .focus { return "rest" }
-        return store.session.status == .running ? "focus" : "idle"
-    }
+    private var pose: String { isGreeting ? "happy" : "idle" }
     private var neighbors: [Companion] {
         let list = companions
         let index = list.firstIndex(of: anchor) ?? 0
@@ -40,24 +39,16 @@ struct CompanionScene: View {
 
     var body: some View {
         GeometryReader { proxy in
-            let artHeight = tabletopHingeY == nil && showsSelector ? max(100, proxy.size.height - nameHeight - 24) : proxy.size.height
+            let artHeight = tabletopHingeY == nil && showsSelector ? max(100, proxy.size.height - selectorNameHeight - 24) : proxy.size.height
+            let ledgeY = roomLedgeY ?? artHeight * 0.70
             VStack(spacing: 0) {
                 ZStack {
-                    Group {
-                        if let hingeY = tabletopHingeY {
-                            TabletopArtwork(companions: neighbors, pose: pose, position: position,
-                                width: proxy.size.width, height: artHeight, hingeY: hingeY,
-                                reduceMotion: reduceMotion, poked: isGreeting, speech: speech)
-                        } else {
-                            TimelineView(.animation(minimumInterval: 1 / 20, paused: reduceMotion || scenePhase != .active)) { timeline in
-                                let breath = reduceMotion ? 0 : sin(timeline.date.timeIntervalSinceReferenceDate * 1.5)
-                                CylinderArtwork(companions: neighbors, pose: pose, position: position,
-                                                width: proxy.size.width, height: artHeight, breath: breath,
-                                                reduceMotion: reduceMotion, speech: speech,
-                                                pokeElapsed: isGreeting ? timeline.date.timeIntervalSince(greetedAt) : nil)
-                            }
-                        }
-                    }
+                    CompanionArtwork(companions: neighbors, position: position,
+                        width: proxy.size.width, height: artHeight,
+                        layout: tabletopHingeY.map { .seated(hingeY: $0) }
+                            ?? .perched(y: ledgeY),
+                        reduceMotion: reduceMotion, poked: isGreeting, speech: speech,
+                        framingAdjustments: framingAdjustments)
                     .contentShape(Rectangle())
                     .simultaneousGesture(sceneGesture(width: proxy.size.width))
                     .accessibilityElement(children: .ignore)
@@ -85,14 +76,9 @@ struct CompanionScene: View {
             .frame(width: proxy.size.width, height: proxy.size.height)
             .background {
                 if tabletopHingeY == nil && showsBackdrop {
-                    CylinderBackdrop(companions: neighbors, position: position, width: proxy.size.width, height: proxy.size.height)
-                        .mask {
-                            LinearGradient(stops: [.init(color: .clear, location: 0), .init(color: .black, location: 0.18), .init(color: .black, location: 0.82), .init(color: .clear, location: 1)], startPoint: .top, endPoint: .bottom)
-                        }
-                        .mask {
-                            LinearGradient(stops: [.init(color: .clear, location: 0), .init(color: .black, location: 0.12), .init(color: .black, location: 0.88), .init(color: .clear, location: 1)], startPoint: .leading, endPoint: .trailing)
-                        }
-                        .opacity(0.85 + openness * 0.15).accessibilityHidden(true)
+                    ShelfCarouselBackdrop(companions: neighbors, position: position,
+                        width: proxy.size.width, height: proxy.size.height, ledgeY: ledgeY)
+                        .accessibilityHidden(true)
                 }
             }
             .clipped()
@@ -100,8 +86,8 @@ struct CompanionScene: View {
         }
         // A shallow tabletop pane needs less empty stage beneath the face. Retain
         // scaled space for speech and the selector so accessibility sizes can scroll.
-        .frame(height: tabletopHingeY != nil || !showsSelector ? sceneHeight : max(sceneHeight ?? (compact ? 300 : 440),
-                           speechSpace * 2 + nameHeight + (compact ? 52 : 96)))
+        .frame(height: tabletopHingeY != nil || roomLedgeY != nil || !showsSelector ? sceneHeight : max(sceneHeight ?? (compact ? 300 : 440),
+                           speechSpace * 2 + selectorNameHeight + (compact ? 52 : 96)))
         .onAppear { selection = store.companion }
         .onChange(of: store.companion) { _, value in cancelRotation(); selection = value }
         .onChange(of: purchases.availableCompanions) { _, _ in cancelRotation(); selection = store.companion }
@@ -116,8 +102,10 @@ struct CompanionScene: View {
 
     private var selector: some View {
         VStack(spacing: 0) {
-            Text(anchor.name).font(.subheadline.weight(.semibold)).foregroundStyle(theme.accent)
-                .frame(minHeight: nameHeight)
+            if showsName {
+                Text(anchor.name).font(.subheadline.weight(.semibold)).foregroundStyle(theme.accent)
+                    .frame(minHeight: nameHeight)
+            }
             HStack(spacing: 7) {
                 ForEach(companions) { companion in
                     Circle().fill(companion == anchor ? theme.accent : theme.accent.opacity(0.22))
@@ -193,7 +181,7 @@ struct CompanionScene: View {
     private func greet() {
         guard store.session.status != .preparing, !isGreeting, !settling else { return }
         store.greet()
-        greetingTask?.cancel(); greetedAt = Date(); isGreeting = true
+        greetingTask?.cancel(); isGreeting = true
         greetingTask = Task { @MainActor in
             try? await Task.sleep(for: .seconds(2))
             if !Task.isCancelled { isGreeting = false }
@@ -201,51 +189,62 @@ struct CompanionScene: View {
     }
 }
 
-/// Rooms remain fixed at the hinge; only the transparent companion layers turn.
-private struct TabletopArtwork: View, Animatable {
+/// Every display uses the same registered idle/poked sheets, speech, and carousel.
+/// Layout changes only the sprite frame and the carousel's geometric anchor.
+struct CompanionArtwork: View, Animatable {
     let companions: [Companion]
-    let pose: String
     var position: Double
     let width: CGFloat
     let height: CGFloat
-    let hingeY: CGFloat
+    let layout: CompanionArtworkLayout
     let reduceMotion: Bool
     let poked: Bool
     let speech: CompanionSpeech?
+    var framingAdjustments: [Companion: DuoFramingAdjustment] = [:]
     var animatableData: Double { get { position } set { position = newValue } }
 
     var body: some View {
         ZStack {
-            room(companions[1].duoRoom)
-            let incoming = companions[position < 0 ? 0 : 2].duoRoom
-            if incoming != companions[1].duoRoom {
-                room(incoming).opacity(min(1, abs(position)))
+            if case .seated(let hingeY) = layout {
+                room(companions[1].duoRoom, hingeY: hingeY)
+                let incoming = companions[position < 0 ? 0 : 2].duoRoom
+                if incoming != companions[1].duoRoom {
+                    room(incoming, hingeY: hingeY).opacity(min(1, abs(position)))
+                }
             }
             ForEach(0..<3, id: \.self) { index in
                 let companion = companions[index]
-                let offset = Double(index - 1) - position
-                let registration = DuoSpriteRegistration(companion, poked: poked && index == 1)
-                let spriteHeight = min(max(width / 1.5, hingeY / 0.78), hingeY / registration.seat) * registration.scale
-                let spriteWidth = spriteHeight * registration.aspect
-                SpriteSheetFrame(asset: companion.duoSprite, frame: poked && index == 1 ? 1 : 0)
-                    .frame(width: spriteWidth, height: spriteHeight)
+                let isPoked = poked && index == 1
+                let registration = CompanionSpriteRegistration(companion, poked: isPoked)
+                let baseline = layout.frame(companion: companion, width: width, height: height)
+                let frame = (framingAdjustments[companion] ?? .init()).apply(to: baseline,
+                    seat: registration.seat, pane: CGSize(width: width, height: height))
+                SpriteSheetFrame(asset: companion.duoSprite, frame: isPoked ? 1 : 0)
+                    .frame(width: frame.width, height: frame.height)
+                    .position(x: frame.midX, y: frame.midY)
+                    .frame(width: width, height: height)
                     .overlay {
                         AvatarSpeechOverlay(speech: speech?.speaker == companion ? speech : nil,
-                            companion: companion, pose: pose, sceneMouth: registration.mouth)
+                            companion: companion, pose: isPoked ? "happy" : "idle",
+                            sceneMouth: CGPoint(x: (frame.minX + registration.mouth.x * frame.width) / max(1, width),
+                                                y: (frame.minY + registration.mouth.y * frame.height) / max(1, height)),
+                            compact: width < 600 || height < 400)
                     }
-                    .scaleEffect(registration.approvedFraming.scale,
-                        anchor: UnitPoint(x: 0.5, y: registration.seat))
-                    .offset(x: registration.approvedFraming.x * width,
-                            y: registration.approvedFraming.y * hingeY)
-                    .position(x: width / 2, y: hingeY + spriteHeight * (0.5 - registration.seat))
-                    .frame(width: width, height: height)
-                    .modifier(CarouselMotion(offset: offset, width: width, reduceMotion: reduceMotion,
-                        anchor: UnitPoint(x: 0.5, y: hingeY / max(1, height))))
+                    .modifier(CarouselMotion(offset: Double(index - 1) - position,
+                        width: width, reduceMotion: reduceMotion, anchor: carouselAnchor))
             }
         }.frame(width: width, height: height)
     }
 
-    private func room(_ room: DuoRoom) -> some View {
+    private var carouselAnchor: UnitPoint {
+        switch layout {
+        case .seated(let y), .perched(let y): return UnitPoint(x: 0.5, y: y / max(1, height))
+        case .platform: break
+        }
+        return .center
+    }
+
+    private func room(_ room: DuoRoom, hingeY: CGFloat) -> some View {
         let roomHeight = max(width / 1.5, hingeY / room.ledgeFraction)
         return Image(room.asset).resizable().interpolation(.none)
             .frame(width: roomHeight * 1.5, height: roomHeight)
@@ -273,105 +272,6 @@ private struct SpriteSheetFrame: View {
     }
 }
 
-private struct DuoSpriteRegistration {
-    let aspect: CGFloat
-    let seat: CGFloat
-    let mouth: CGPoint
-    let scale: CGFloat
-    let approvedFraming: (scale: CGFloat, x: CGFloat, y: CGFloat)
-    init(_ companion: Companion, poked: Bool = false) {
-        let imageSize = UIImage(named: companion.duoSprite)?.size ?? CGSize(width: 3, height: 1)
-        aspect = imageSize.width / 2 / max(1, imageSize.height)
-        // Scale about the seat so smaller companions still rest on the ledge.
-        switch companion {
-        case .atlas: scale = 0.70
-        case .mochi, .pebble, .bean, .maple: scale = 0.74
-        default: scale = 1
-        }
-        // User-approved Duo calibration, relative to the original baseline above.
-        // Keep this transform after the speech overlay to reproduce the audition
-        // exactly. Offsets use pane width and top-to-hinge height, respectively.
-        approvedFraming = switch companion {
-        case .mochi: (0.70, 0, -0.085)
-        case .pip: (0.79, -0.015, -0.015)
-        case .pebble: (0.77, 0, -0.080)
-        case .jun: (0.83, 0, -0.035)
-        case .bean: (0.83, 0, -0.100)
-        case .maple: (0.85, 0, -0.105)
-        case .luna: (0.74, 0, -0.110)
-        case .atlas: (0.93, 0, -0.095)
-        case .wisp: (0.75, 0, -0.090)
-        case .nova: (0.80, 0, -0.065)
-        case .orbit: (0.69, 0, -0.060)
-        case .comet: (0.80, 0, -0.090)
-        }
-        switch companion {
-        case .mochi: seat = 0.77; mouth = CGPoint(x: 0.591, y: poked ? 0.401 : 0.388)
-        case .pip: seat = 0.72; mouth = CGPoint(x: 0.558, y: 0.327)
-        case .pebble: seat = 0.78; mouth = CGPoint(x: poked ? 0.460 : 0.464, y: poked ? 0.345 : 0.328)
-        case .maple: seat = 0.74; mouth = CGPoint(x: poked ? 0.581 : 0.576, y: poked ? 0.335 : 0.328)
-        case .bean: seat = 0.85; mouth = CGPoint(x: 0.600, y: poked ? 0.397 : 0.375)
-        case .jun: seat = 0.72; mouth = CGPoint(x: 0.545, y: poked ? 0.350 : 0.343)
-        case .wisp: seat = 0.72; mouth = CGPoint(x: poked ? 0.562 : 0.613, y: 0.411)
-        case .luna: seat = 0.70; mouth = CGPoint(x: 0.548, y: 0.312)
-        case .atlas: seat = 0.93; mouth = CGPoint(x: 0.566, y: poked ? 0.315 : 0.298)
-        case .nova: seat = 0.73; mouth = CGPoint(x: 0.552, y: poked ? 0.343 : 0.335)
-        case .orbit: seat = 0.76; mouth = CGPoint(x: 0.560, y: 0.433)
-        case .comet: seat = 0.74; mouth = CGPoint(x: 0.535, y: poked ? 0.436 : 0.425)
-        }
-    }
-}
-
-private struct CylinderArtwork: View, Animatable {
-    let companions: [Companion]
-    let pose: String
-    var position: Double
-    let width: CGFloat
-    let height: CGFloat
-    let breath: Double
-    let reduceMotion: Bool
-    let speech: CompanionSpeech?
-    var pokeElapsed: TimeInterval? = nil
-    var animatableData: Double { get { position } set { position = newValue } }
-    var body: some View {
-        ZStack {
-            ForEach(0..<3, id: \.self) { index in
-                let offset = Double(index - 1) - position
-                let reaction = !reduceMotion && index == 1 ? pokeReaction : 0
-                let artSize = min(width - 54, 500, height)
-                let placement = companions[index].platformOffset
-                Image("\(companions[index].rawValue)-\(pose)")
-                    .resizable().interpolation(.none).scaledToFit()
-                    .frame(width: min(width - 54, 500), height: height)
-                    .overlay {
-                        AvatarSpeechOverlay(speech: speech?.speaker == companions[index] ? speech : nil,
-                                            companion: companions[index], pose: pose)
-                    }
-                    .scaleEffect(x: 1 + reaction * 0.04, y: 1 + breath * 0.007 - reaction * 0.04, anchor: .bottom)
-                    .rotationEffect(.degrees(reaction * 4), anchor: .bottom)
-                    .offset(x: placement.x * artSize,
-                            y: placement.y * artSize + breath * 2 - abs(reaction) * 6)
-                    .modifier(CarouselMotion(offset: offset, width: width, reduceMotion: reduceMotion))
-            }
-        }.frame(width: width, height: height)
-    }
-    private var pokeReaction: Double {
-        guard let elapsed = pokeElapsed, elapsed >= 0, elapsed < 0.7 else { return 0 }
-        return sin(elapsed * 24) * exp(-elapsed * 5)
-    }
-}
-
-private extension Companion {
-    /// Correct the transparent padding in the original square pose images.
-    var platformOffset: CGPoint {
-        switch self {
-        case .pebble, .wisp, .comet: CGPoint(x: 0, y: 0.065)
-        case .pip: CGPoint(x: -0.055, y: 0)
-        default: .zero
-        }
-    }
-}
-
 /// Both layouts use the web carousel's orbit, turn, depth and visibility curve.
 private struct CarouselMotion: ViewModifier {
     let offset: Double
@@ -391,24 +291,57 @@ private struct CarouselMotion: ViewModifier {
     }
 }
 
-private struct CylinderBackdrop: View, Animatable {
+private struct ShelfCarouselBackdrop: View, Animatable {
     let companions: [Companion]
     var position: Double
     let width: CGFloat
     let height: CGFloat
+    let ledgeY: CGFloat
     var animatableData: Double { get { position } set { position = newValue } }
     var body: some View {
         ZStack {
             backdrop(companions[1])
             let incoming = companions[position < 0 ? 0 : 2]
-            if CompanionTheme(incoming).backdrop != CompanionTheme(companions[1]).backdrop {
+            if incoming.duoRoom != companions[1].duoRoom {
                 backdrop(incoming).opacity(min(1, abs(position)))
             }
         }.frame(width: width, height: height)
     }
     private func backdrop(_ companion: Companion) -> some View {
-        Image(CompanionTheme(companion).backdrop).resizable().scaledToFill()
-            .frame(width: width, height: height * 1.65).clipped()
-            .position(x: width / 2, y: height * 0.42)
+        DeviceRoomBackdrop(room: companion.duoRoom,
+            format: DeviceRoomFormat.resolve(size: CGSize(width: width, height: height), isPad: false),
+            size: CGSize(width: width, height: height), ledgeY: ledgeY, characterX: width / 2)
+    }
+}
+
+/// Storefronts and settings preview the same seated expressions as the live scene.
+/// The painted shelf and every sprite share one seat coordinate, even in thumbnails.
+struct CompanionShelfPreview: View {
+    let companions: [Companion]
+    var poked = false
+
+    var body: some View {
+        GeometryReader { proxy in
+            let size = proxy.size
+            let ledgeY = size.height * 0.70
+            let columnWidth = size.width / CGFloat(max(1, companions.count))
+            ZStack(alignment: .topLeading) {
+                if let first = companions.first {
+                    DeviceRoomBackdrop(room: first.duoRoom,
+                        format: DeviceRoomFormat.resolve(size: size, isPad: false),
+                        size: size, ledgeY: ledgeY, characterX: size.width / 2)
+                }
+                ForEach(Array(companions.enumerated()), id: \.element.id) { index, companion in
+                    let frame = DeviceRoomSprite.perchedFrame(companion: companion,
+                        width: columnWidth, height: size.height, ledgeY: ledgeY,
+                        horizontalInset: min(12, columnWidth * 0.08), topInset: 6, bottomInset: 4)
+                    SpriteSheetFrame(asset: companion.duoSprite, frame: poked ? 1 : 0)
+                        .frame(width: frame.width, height: frame.height)
+                        .position(x: CGFloat(index) * columnWidth + frame.midX, y: frame.midY)
+                }
+            }
+            .frame(width: size.width, height: size.height).clipped()
+        }
+        .allowsHitTesting(false).accessibilityHidden(true)
     }
 }

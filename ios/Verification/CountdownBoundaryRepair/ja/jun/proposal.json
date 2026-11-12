@@ -1,0 +1,119 @@
+{
+  "language": "ja",
+  "character": "jun",
+  "sourceSHA256": "a81776f86d26515b208667f813a0d9eb5d4a1844d6ad8ee7eea262f09e1cd620",
+  "originalHashes": {
+    "ja/jun/5": "778e0dc8475ac4957a8c9da828a45aed1cf0c70970f5e7fc1bdb31f4e3e70308",
+    "ja/jun/4": "82b86dc08bdf8b3b70bcc4ac60946f06d7cde99af050c3a8d5f226b1dcc1fdc1",
+    "ja/jun/3": "c6be20373635b953a624c6ecfcfb6b4ea6433b0fd8c08199562dd513050c0f01",
+    "ja/jun/2": "e5520a8add50ada6cf3d7ee25575528c1d9f88970a9726f9e6a6b4dd08622c60",
+    "ja/jun/1": "a81483350e80769ca4528026e5e4bbcd50c8aec821f2c41ff025ef62e07af4ff"
+  },
+  "encodings": {
+    "ja/jun/5": {
+      "duration": 0.3458,
+      "sourceDuration": 0.3458,
+      "bytes": 5760,
+      "audioSHA256": "778e0dc8475ac4957a8c9da828a45aed1cf0c70970f5e7fc1bdb31f4e3e70308",
+      "rawSHA256": "c49dfa8b57d9ac4b5f5316d49acc0bbe729e7fb6c895f165636261d3af05aa5e",
+      "encoding": {
+        "codec": "aac",
+        "bitrateTarget": 128000,
+        "sampleRate": 24000,
+        "channels": 1,
+        "decodedPeak": 0.698698,
+        "speed": 1,
+        "pitch": 1,
+        "loudnessTarget": -19,
+        "truePeakTarget": -3
+      }
+    },
+    "ja/jun/4": {
+      "duration": 0.4091,
+      "sourceDuration": 0.4091,
+      "bytes": 6666,
+      "audioSHA256": "e1fb0952fdb94a08d23b07276ba0e767ed1e86d059ed8850a6f6665e4bbf46ce",
+      "rawSHA256": "0f6d19eb4195cfa6d7f39db965a6a586d38d36b4439a940b1dca89b6bf89eeb9",
+      "encoding": {
+        "codec": "aac",
+        "bitrateTarget": 128000,
+        "sampleRate": 24000,
+        "channels": 1,
+        "decodedPeak": 0.382548,
+        "speed": 1,
+        "pitch": 1,
+        "loudnessTarget": -19,
+        "truePeakTarget": -3
+      }
+    },
+    "ja/jun/3": {
+      "duration": 0.5627,
+      "sourceDuration": 0.5627,
+      "bytes": 9094,
+      "audioSHA256": "1972bf1037cba5d24d2df5c39fe8b5b5f2d096de3d1662a4cce5625a2fb994ce",
+      "rawSHA256": "aa6996eb6c430c698c79b031f47dfe6a1c57442765168e1e750c79e2404a2c9a",
+      "encoding": {
+        "codec": "aac",
+        "bitrateTarget": 128000,
+        "sampleRate": 24000,
+        "channels": 1,
+        "decodedPeak": 0.405726,
+        "speed": 1,
+        "pitch": 1,
+        "loudnessTarget": -19,
+        "truePeakTarget": -3
+      }
+    },
+    "ja/jun/2": {
+      "duration": 0.3568,
+      "sourceDuration": 0.3568,
+      "bytes": 6228,
+      "audioSHA256": "772dcde616856dee23d4eb9efa431e3838a3796f7624163a7c7112a3bed85760",
+      "rawSHA256": "4a0f62ab78453ee6dda024cc4cd9c49e32407e93250a3af3f07b142f1f07b92f",
+      "encoding": {
+        "codec": "aac",
+        "bitrateTarget": 128000,
+        "sampleRate": 24000,
+        "channels": 1,
+        "decodedPeak": 0.705095,
+        "speed": 1,
+        "pitch": 1,
+        "loudnessTarget": -19,
+        "truePeakTarget": -3
+      }
+    },
+    "ja/jun/1": {
+      "duration": 0.4746,
+      "sourceDuration": 0.4746,
+      "bytes": 7587,
+      "audioSHA256": "f96a0f9d4202ef6a7275ec9b3bdec044b46f36cc2c2b0d83bc26744a3cc75806",
+      "rawSHA256": "1e7716c1468b3e0781b85a04201f704d6b22de826e2481dcda6d538d208c3cb1",
+      "encoding": {
+        "codec": "aac",
+        "bitrateTarget": 128000,
+        "sampleRate": 24000,
+        "channels": 1,
+        "decodedPeak": 0.458052,
+        "speed": 1,
+        "pitch": 1,
+        "loudnessTarget": -19,
+        "truePeakTarget": -3
+      }
+    }
+  },
+  "boundaries": [
+    0.0,
+    0.745,
+    1.985,
+    3.19,
+    4.185,
+    5.206041666666667
+  ],
+  "heard": [
+    "5、",
+    "4、",
+    "3、",
+    "2、",
+    "1"
+  ]
+}

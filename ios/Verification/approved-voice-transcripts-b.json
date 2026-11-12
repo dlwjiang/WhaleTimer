@@ -1,0 +1,89 @@
+{
+  "method": "Local faster-whisper small/int8; diagnostics only, not native-speaker approval.",
+  "clips": {
+    "en/luna/greeting": {
+      "sha256": "ba16d983413f0b2fbbecb6f40f84f8823dd089f72665e2dedbb53a09380d62a0",
+      "expected": "One page closer to the stars.",
+      "heard": "One page closer to the stars!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "en/atlas/greeting": {
+      "sha256": "175b65ad160992a6d11cde1a90a292b02181fc00edd28f0527c3efc841e7f406",
+      "expected": "A quiet place for curious minds.",
+      "heard": "A quiet place for curious minds?",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "en/wisp/greeting": {
+      "sha256": "2945f509224f76920ac7cc88413d466d31cbb1ab0359475d0687c369ccdf0fa5",
+      "expected": "Let’s find a little light together.",
+      "heard": "Let's find a little light together",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "en/nova/greeting": {
+      "sha256": "e441010c105372ddd16a80b05c2c044eca27a7750073abfb85599c123ecf27fc",
+      "expected": "One small task. One giant step.",
+      "heard": "One small task! One giant step!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "en/orbit/greeting": {
+      "sha256": "ca40d6d8718d55c5bbfc81c97b5afaa116c92c7cdde37d89699793289d535776",
+      "expected": "Your mission has company.",
+      "heard": "YOUR MISSION HAS COMPANY!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "en/comet/greeting": {
+      "sha256": "de543203e1747a0854827ca4276f39e2af984034c6d23d1044880c8668545b3b",
+      "expected": "One small delivery. One big adventure.",
+      "heard": "One small delivery! One big adventure!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    },
+    "en/luna/5": {
+      "sha256": "59ef5aad512ac2297fb415514a5b5219dd2cce1d8897927d9ced5cd7f89eb999",
+      "expected": "Five.",
+      "heard": " Five,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "en/luna/4": {
+      "sha256": "372b3de3667d32ad5ca2d0bf69771d4666234a5bf5744bd4ce58298d7e1a21c3",
+      "expected": "Four.",
+      "heard": " four,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "en/luna/3": {
+      "sha256": "ee080ab199536c72f3ae07b1f453f59774a5b92321e04df383c1fc173c6cb69f",
+      "expected": "Three.",
+      "heard": " three,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "en/luna/2": {
+      "sha256": "13d81d0a9a26746fced9d46e1efbe4f36603a7c858a0ec23d885b31092c1d856",
+      "expected": "Two.",
+      "heard": " two,",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "en/luna/1": {
+      "sha256": "e24257491fb618d56e3f5c62889a87ae7c17272e3516aad3b45e1400747564ee",
+      "expected": "One.",
+      "heard": " one.",
+      "review": "context-verified",
+      "note": "Full source countdown recognized in order; clip boundary/format checked separately."
+    },
+    "en/luna/go": {
+      "sha256": "501d60fd734b9032182b646a70c1cb4daaf6c250a83a7a025dcd8d79b257ede0",
+      "expected": "Let's begin!",
+      "heard": "Let's begin!",
+      "similarity": 1.0,
+      "review": "transcript-match"
+    }
+  }
+}

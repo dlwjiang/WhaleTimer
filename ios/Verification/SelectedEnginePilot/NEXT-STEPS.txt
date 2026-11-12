@@ -1,0 +1,22 @@
+Voice repair completed and installed.
+
+All 1,248 app clips now use the user-reviewed per-character methods.
+The prior library is backed up; see ../approved-voice-install.json.
+Full decode, source/encoding/review hashes and wording checks passed.
+480 countdown clips verified as packaged 5–1 sequences.
+763 phrases matched transcripts; five explicit interjection/particle variants
+are retained in ../selected-engine-wording-variants.json.
+
+20 regression tests and both native playback/library tests passed on the
+isolated Tick Kin Duo QA simulator. All 1,248 source, built and installed
+file hashes match. See ../selected-engine-install-verification.json.
+
+Open production-english.html to compare the original selected auditions
+with actual app greetings. Images and audio are embedded.
+../voices.html lists all installed cues and wording-variant notes; keep it
+in Verification beside the app sources so its relative audio paths work.
+Rebuild your own simulator with Command-R to hear the replacement library.
+
+Methods were reviewed by the user. Automated transcription is not a human
+assessment of accent or acting quality in every localized line.
+No further generation is running or required for this installation.

@@ -1,0 +1,4 @@
+{
+  "prompt": "Use case: precise-object-edit. Repair this tall phone background only: the top 13% currently looks like a pasted rectangular strip, with a hard horizontal cutoff through the willow branches and curtains. Remove that seam and extend the willow branches and the veranda/curtain architecture naturally up to the top edge, so this is ONE continuous painted scene. Keep the center top pale and quiet, but no straight seam or blank rectangular strip. Keep the entire floor at the same y=57% height and everything below y=30% unchanged. Same portrait 9:19.5 aspect, same watercolor pixel-art texture and colors. No characters, UI, lettering, border or new props.",
+  "path": "/Users/davidjiang/.codex/generated_images/01a1bef4-202f-7771-a228-b955dc86fb16/exec-b3dabd9c-a0fd-459d-877b-9d6f01991529.png"
+}

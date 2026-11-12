@@ -1,0 +1,11 @@
+{
+  "voice": "jun-r2-c",
+  "name": "Sleepy café boy",
+  "model": "Qwen3-TTS-12Hz-1.7B-VoiceDesign-bf16",
+  "description": "A clearly male soft-spoken youthful café boy. Gentle lower-tenor speaking register with small warm rounded chest resonance, a light breathy texture and shy unhurried pauses. Cuddly, tender and youthful rather than mature or authoritative; a bashful little smile. 男声，温柔少年音，圆润柔软，带一点气声，害羞乖巧。 Use a natural male speaking voice, not a female voice or falsetto. Speak only the supplied English text. No extra words, music, singing or laughter.",
+  "text": "Hi! I'm right here. Let's do one little thing together. Ready? Here we go!",
+  "auditionSHA256": "5486872a9d865175b272904f680bae0b67fa5084e9414c15c1b186b25563a368",
+  "referenceSHA256": "8c0f595bf8ab924f7e6a2ab9e08d5a9ede1521b5df9c160b85068f6cc6ec5a57",
+  "source": "ios/Design/Voices/VoiceCasting/audio/jun-r2-c.m4a",
+  "method": "Decode exact selected audition to PCM, no pitch or speed changes."
+}

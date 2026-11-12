@@ -89,7 +89,8 @@ struct CompanionShopContent: View {
     private func companionButton(_ companion: Companion) -> some View {
         Button { store.select(companion) } label: {
             VStack {
-                Image("\(companion.rawValue)-idle").resizable().interpolation(.none).scaledToFit().frame(height: 100)
+                CompanionShelfPreview(companions: [companion]).frame(height: 100)
+                    .clipShape(RoundedRectangle(cornerRadius: 12))
                 Label(companion.name, systemImage: store.companion == companion ? "checkmark.circle.fill" : "circle")
                     .font(.subheadline)
             }.frame(maxWidth: .infinity, minHeight: 140)
@@ -121,7 +122,7 @@ private struct PackDetailView: View {
     @EnvironmentObject private var purchases: PurchaseStore
     @EnvironmentObject private var audio: CompanionAudio
     @State private var pose = "idle"
-    private let poses = ["idle", "focus", "rest", "happy"]
+    private let poses = ["idle", "happy"]
     private var theme: CompanionTheme { CompanionTheme(pack.companions[0]) }
 
     var body: some View {
@@ -137,7 +138,8 @@ private struct PackDetailView: View {
                     .font(.caption).foregroundStyle(.secondary).multilineTextAlignment(.center)
                 ForEach(pack.companions) { companion in
                     HStack(spacing: 16) {
-                        Image("\(companion.rawValue)-\(pose)").resizable().interpolation(.none).scaledToFit().frame(width: 78, height: 88).accessibilityHidden(true)
+                        CompanionShelfPreview(companions: [companion], poked: pose == "happy")
+                            .frame(width: 78, height: 88).clipShape(RoundedRectangle(cornerRadius: 12))
                         VStack(alignment: .leading, spacing: 5) {
                             Text(companion.name).font(.headline)
                             Text(companion.role).font(.subheadline)
@@ -158,7 +160,9 @@ private struct PackDetailView: View {
                 }
                 if !pack.isOwned(in: purchases.ownedProductIDs) {
                     PurchaseButton(productID: pack.productID, title: L10n.text("Get %@", pack.title), theme: theme)
-                    Text("Three companions, four poses each, all voice languages, scenes and timer colors. No subscription.")
+                    Text("3 companions · Voices · Scenes")
+                        .font(.footnote).foregroundStyle(.secondary).multilineTextAlignment(.center)
+                    Text("One purchase. No subscription.")
                         .font(.footnote).foregroundStyle(.secondary).multilineTextAlignment(.center)
                 }
                 if let message = purchases.message { Text(L10n.text(message)).font(.footnote).multilineTextAlignment(.center) }
@@ -205,23 +209,10 @@ private struct PackArtwork: View {
     let pack: CompanionPack
     let pose: String
     var body: some View {
-        GeometryReader { proxy in
-            HStack(alignment: .bottom, spacing: 0) {
-                ForEach(pack.companions) { companion in
-                    Image("\(companion.rawValue)-\(pose)").resizable().interpolation(.none).scaledToFit()
-                        .frame(width: proxy.size.width / CGFloat(pack.companions.count), height: proxy.size.height * 0.88)
-                }
-            }
-            .frame(width: proxy.size.width, height: proxy.size.height, alignment: .bottom)
-            .padding(.bottom, 8)
-            .background {
-                Image(pack.backdrop).resizable().scaledToFill()
-                    .frame(width: proxy.size.width, height: proxy.size.height).clipped()
-            }
+        CompanionShelfPreview(companions: pack.companions, poked: pose == "happy")
             .clipShape(RoundedRectangle(cornerRadius: 22))
+            .accessibilityHidden(false)
             .accessibilityElement(children: .ignore)
             .accessibilityLabel([pack.title, pack.companions.map(\.name).joined(separator: ", "), L10n.text(pose.capitalized)].joined(separator: ", "))
-        }
-        .allowsHitTesting(false)
     }
 }

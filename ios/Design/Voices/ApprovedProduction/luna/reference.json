@@ -1,0 +1,11 @@
+{
+  "voice": "luna-b",
+  "name": "Dreamy moon fairy",
+  "model": "Qwen3-TTS-12Hz-1.7B-VoiceDesign-bf16",
+  "description": "A tiny feminine moon fairy with a very light breathy high voice, smooth floating phrases and delicate airy consonants. Youthful shy wonder, soft intimate delivery that stays clearly audible, weightless and magical. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises.",
+  "text": "Hi! I'm right here. Let's do one little thing together. Ready? Here we go!",
+  "auditionSHA256": "85be97cd7e5112ba34f1b662081722ba1ae22ee1266f6fc84b27fdaa86ec0d4f",
+  "referenceSHA256": "8531b2c9f9518085787d401763b084b7f1873e4eecd9bc001f21546faaa618e5",
+  "source": "ios/Design/Voices/VoiceCasting/audio/luna-b.m4a",
+  "method": "Decode exact selected audition to PCM, no pitch or speed changes."
+}

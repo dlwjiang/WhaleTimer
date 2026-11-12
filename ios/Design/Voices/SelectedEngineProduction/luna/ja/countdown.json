@@ -1,0 +1,45 @@
+{
+  "method": "natural-countdown-v2",
+  "recognizer": "medium",
+  "direction": "For this countdown, say each number as a quick, clear beat. Do not draw out the vowels.",
+  "text": "ご、よん、さん、に、いち.",
+  "words": [
+    {
+      "text": "5、",
+      "start": 0.0,
+      "end": 0.68
+    },
+    {
+      "text": "4、",
+      "start": 0.84,
+      "end": 1.56
+    },
+    {
+      "text": "3、",
+      "start": 1.98,
+      "end": 2.28
+    },
+    {
+      "text": "2、",
+      "start": 2.72,
+      "end": 3.06
+    },
+    {
+      "text": "1",
+      "start": 3.5,
+      "end": 3.74
+    }
+  ],
+  "boundaries": [
+    0,
+    0.76,
+    1.77,
+    2.5,
+    3.2800000000000002,
+    3.8935416666666667
+  ],
+  "sourceSHA256": "2fd7be3920456d38d5308fbb7f7ec64fe09a24aff95de8e9755239ec66442276",
+  "seed": 1552047500,
+  "speed": 1,
+  "pitch": 1
+}

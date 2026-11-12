@@ -1,0 +1,43 @@
+{
+  "method": "context-countdown-v1",
+  "text": "오. 사. 삼. 이. 일.",
+  "instruct": "Speak in Korean naturally. Clearly count down from five to one.",
+  "seed": 1872871937,
+  "words": [
+    {
+      "text": " 5,",
+      "start": 0.0,
+      "end": 0.3
+    },
+    {
+      "text": " 4,",
+      "start": 0.6,
+      "end": 1.38
+    },
+    {
+      "text": " 3,",
+      "start": 1.74,
+      "end": 2.62
+    },
+    {
+      "text": " 2,",
+      "start": 2.92,
+      "end": 3.64
+    },
+    {
+      "text": " 1!",
+      "start": 3.78,
+      "end": 4.6
+    }
+  ],
+  "boundaries": [
+    0,
+    0.44999999999999996,
+    1.56,
+    2.77,
+    3.71,
+    4.927375
+  ],
+  "recognizer": "faster-whisper-small",
+  "note": "Transcript and boundary check; not native-speaker approval."
+}

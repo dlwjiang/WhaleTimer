@@ -1,0 +1,1613 @@
+{
+  "method": "Local faster-whisper small/int8; diagnostics only, not native-speaker approval.",
+  "clips": {
+    "en/atlas/go": {
+      "sha256": "5b9e6abf0dd19dc5926745b4244422f1c89cd4a950fc84ef5f616ff2cd9c7eb6",
+      "expected": "Let's begin!",
+      "heard": "Let's begin!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/atlas/pause": {
+      "sha256": "6e9a98e02ac0da2805f1545bd9fc1973b59ee5cd93990ecaa448dc6c4c3b3841",
+      "expected": "Take a breath. I'll wait.",
+      "heard": "Take a breath. I'll wait.",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/atlas/resume": {
+      "sha256": "809f2536d9d9ed3dd00b3dc7aa31244e1971b14f82693ba71950a99d3830ab1b",
+      "expected": "Let's keep going!",
+      "heard": "Let's keep going!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/atlas/reset": {
+      "sha256": "a29ec2b03fea63ee89bfcc8a1fcdf45ea05b18e3b11f74ad147de5879c180773",
+      "expected": "A fresh start. We're ready.",
+      "heard": "A fresh start. We're ready!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/atlas/focusComplete": {
+      "sha256": "848e457441f09f6c2bc0390a6bd2d0ee43833b7b5c959928d9df8f9b79534976",
+      "expected": "Well done! Time for a little break.",
+      "heard": "Well done! Time for a little break!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/atlas/breakComplete": {
+      "sha256": "0929b9a8ef3edf871e3ed3817e9d3bcc9bef84dae9ba7623f54c1a74c18649ce",
+      "expected": "Break's over. Ready when you are!",
+      "heard": "Break's over. Ready when you are.",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/atlas/greeting": {
+      "sha256": "3124292aed34f1ed99499a6dfd1f0ea50845edc5b225f6737dccb8b72f0c5a9e",
+      "expected": "A quiet place for curious minds.",
+      "heard": "A quiet place for curious minds.",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/atlas/poke": {
+      "sha256": "3d2686b218b4bcda6efa2b93320f434826db6a5bd485a17b3beb89fb976be50f",
+      "expected": "Oh! You found me!",
+      "heard": "Oh, you found me!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/bean/go": {
+      "sha256": "e466c9726c033a00c88248ecb628454f8d931660078e2f576d1983aa24f78df0",
+      "expected": "Let's begin!",
+      "heard": "Let's begin!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/bean/pause": {
+      "sha256": "f95f9fd010fc25d0427ddfca3b2061347d090201568b7295ba8e430372bd8e3d",
+      "expected": "Take a breath. I'll wait.",
+      "heard": "Take a breath. I'll wait.",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/bean/resume": {
+      "sha256": "1583951fb3fca47b4b9f47cd376791f900c47e402b7e4f49279d367bdecf1129",
+      "expected": "Let's keep going!",
+      "heard": "Let's keep going!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/bean/reset": {
+      "sha256": "2c4af45d6b4ee4c5f7d968ae2818ee702d06dcf09d415d35d3e8b3c8ecdbff1d",
+      "expected": "A fresh start. We're ready.",
+      "heard": "A fresh start! We're ready!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/bean/focusComplete": {
+      "sha256": "cad7347a08d3ab4b4f9eabd3a89d5418872ec451b861e41c2b203e8beba056cc",
+      "expected": "Well done! Time for a little break.",
+      "heard": "Well done! Time for a little break!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/bean/breakComplete": {
+      "sha256": "b3d3389786b723c8cf9e421155b95956ba12da0e78a64a6154e34c22a64854d1",
+      "expected": "Break's over. Ready when you are!",
+      "heard": "Break solar! Ready when you are!",
+      "similarity": 0.92,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "check"
+    },
+    "en/bean/greeting": {
+      "sha256": "51c94953340d3febe432d18adf03850b57a4260e5f312c29c54964fd0cd217fc",
+      "expected": "This seat beside you is taken.",
+      "heard": "This seat beside you is taken.",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/bean/poke": {
+      "sha256": "7fff1e3726ce22a6a677fc464c5d6f96082e2f0d4d9ac799c6eec345025f80a0",
+      "expected": "Oh! You found me!",
+      "heard": "Oh, you found me!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/comet/go": {
+      "sha256": "4657040998a18761d0a9d8a64ddc05aed1ec1195deb1656e8b9333e4cb8f49c7",
+      "expected": "Let's begin!",
+      "heard": "Let's begin!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/comet/pause": {
+      "sha256": "a782d95399d4ddbf730ea01b2fc740a50ffc01b63a56d0d43b3a9ae846bcd6dc",
+      "expected": "Take a breath. I'll wait.",
+      "heard": "Take a breath. I'll wait.",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/comet/resume": {
+      "sha256": "7aecc87f657dacadac30535b1a14a4980d6fa8f2938b3c529288f9d6724b6f83",
+      "expected": "Let's keep going!",
+      "heard": "Let's keep going",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/comet/reset": {
+      "sha256": "1ccb4005e8995eac9b47512cb557aa4b6a1edf4e5bac6a650d4c52d42c4996af",
+      "expected": "A fresh start. We're ready.",
+      "heard": "A fresh start! We're ready!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/comet/focusComplete": {
+      "sha256": "0784762fd97e2a1c0e76c4d05b67530ec9830c268e26a0f31d3da682a203ee76",
+      "expected": "Well done! Time for a little break.",
+      "heard": "Well done! Time for a little break!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/comet/breakComplete": {
+      "sha256": "1a57b3bd44f03c5d29a3a0be8e5ad5bfa07aa76702746ad87c18ccd688426d88",
+      "expected": "Break's over. Ready when you are!",
+      "heard": "Break's over! Ready when you are!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/comet/greeting": {
+      "sha256": "97da74206f07062e609974c2c6bf1b3f2a972572b2b3fe1a8e235bbd6b49e51f",
+      "expected": "One small delivery. One big adventure.",
+      "heard": "One small delivery, one big adventure!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/comet/poke": {
+      "sha256": "fce9b90eff08dcc7c724e2c2461f96af3bb4605a149eeabad74912283881a9f3",
+      "expected": "Oh! You found me!",
+      "heard": "Oh! You found me!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/jun/go": {
+      "sha256": "f78bae189cba7f99b46ec6eea6d8b95943c650dcfae4b90a6ffdf363b3e3e04b",
+      "expected": "Let's begin!",
+      "heard": "Let's begin.",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/jun/pause": {
+      "sha256": "8c2dd84a86b748f437576f7a4e499f7786f176acd9f323384b999d69f6f866b5",
+      "expected": "Take a breath. I'll wait.",
+      "heard": "Take a breath. I'll wait.",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/jun/resume": {
+      "sha256": "e58965c5d0c5078a4e188f8d4cbbaf9e909893eaec3213be02c7719bd99ee91a",
+      "expected": "Let's keep going!",
+      "heard": "Let's keep going.",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/jun/reset": {
+      "sha256": "1937feab1de3ddf03a34a041b0ee358e9cc0ee412754d6133e106461f6801d6f",
+      "expected": "A fresh start. We're ready.",
+      "heard": "A fresh start. We're ready.",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/jun/focusComplete": {
+      "sha256": "a34e609713a668efb2197cb40c84f781ff1e83940c200169fcb32ea6be262dbe",
+      "expected": "Well done! Time for a little break.",
+      "heard": "Well done. Time for a little break.",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/jun/breakComplete": {
+      "sha256": "de3f0375a1bf4a269d5dc2c4d85a57b7dbe8ac052a3907e632f4cfb84577fcc9",
+      "expected": "Break's over. Ready when you are!",
+      "heard": "Break's over. Ready when you are.",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/jun/greeting": {
+      "sha256": "af5eee7fe237fb5ec42413672b50f1782a21d6d86af9176d45599cdb7683e789",
+      "expected": "The café is open. Take your time.",
+      "heard": "The cafe is open. Take your time.",
+      "similarity": 0.96,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/jun/poke": {
+      "sha256": "927b93cd6a1e8181b8ec06da52db23bfd99a3b71246e25acf49025e01b16f346",
+      "expected": "Oh! You found me!",
+      "heard": "Oh! You found me!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/luna/go": {
+      "sha256": "440d9abe6f7da36b0ff1ab94eeb98586bcad4d2646b958c6c6a84b45b7f95785",
+      "expected": "Let's begin!",
+      "heard": "Let's begin!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/luna/pause": {
+      "sha256": "117e2df7c0245584a7beb3403792678e4d5f09decefbb5c19feee6532d89b3f0",
+      "expected": "Take a breath. I'll wait.",
+      "heard": "Take a breath. I'll wait.",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/luna/resume": {
+      "sha256": "136fe5049b436462c85bfea8a06760f81877589ffa59a36187dc55edde274f50",
+      "expected": "Let's keep going!",
+      "heard": "Let's keep going",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/luna/reset": {
+      "sha256": "15c64ad87301504fb824643fdaf97fbbf400df21e20c1f012d45ad4cfaf8e126",
+      "expected": "A fresh start. We're ready.",
+      "heard": "A fresh start. We're ready.",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/luna/focusComplete": {
+      "sha256": "ef0c1268d4c505f5d2879e09e6257cffff8f0c46be8c750bafbef0bf665610c8",
+      "expected": "Well done! Time for a little break.",
+      "heard": "Well done. Time for a little break.",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/luna/breakComplete": {
+      "sha256": "1ff2c8b54721b002be4f912335b56a9ff2909c0193f8a21affa6c28c9f43b9bc",
+      "expected": "Break's over. Ready when you are!",
+      "heard": "Brick's over. Ready when you are.",
+      "similarity": 0.92,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "check"
+    },
+    "en/luna/greeting": {
+      "sha256": "a152ca962030a62348374345a48fc22f5d71fb3b8c38a2809daf5849ad1ecb5e",
+      "expected": "One page closer to the stars.",
+      "heard": "One page closer to the stars",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/luna/poke": {
+      "sha256": "1c51e86e79f065e47d65d55652cebb357db313986441634cccff76ef500a1f6a",
+      "expected": "Oh! You found me!",
+      "heard": "Oh! You found me!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/mochi/go": {
+      "sha256": "f29e20af66e15576e3ad9bb1ff77c23bd6377182ab9036483609631f792fec8f",
+      "expected": "Let's begin!",
+      "heard": "Let's begin.",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/mochi/pause": {
+      "sha256": "6c3ed9e084cd61a23850d25043b4e529fe29fbdc9c6d6bcfbad2bf52c3f53e71",
+      "expected": "Take a breath. I'll wait.",
+      "heard": "Take a breath. I'll wait.",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/mochi/resume": {
+      "sha256": "298f9a2f2db69de8ef1e539f3c3e8b0fcf7f011c87a236a9723d127ff1204000",
+      "expected": "Let's keep going!",
+      "heard": "Let's keep going",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/mochi/reset": {
+      "sha256": "999b8ec226c200ed7bb940c18a04e226713244afab8357a55071a718ba67e205",
+      "expected": "A fresh start. We're ready.",
+      "heard": "A fresh start! We're ready!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/mochi/focusComplete": {
+      "sha256": "b4c9b86e2bb8c287e2fabbd88beca73fe0ec167e1f5d0bf356cc1ce67da47260",
+      "expected": "Well done! Time for a little break.",
+      "heard": "Well done! Time for a little break!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/mochi/breakComplete": {
+      "sha256": "2fada9d011062745563a74c99024ea1bb9ff36b8e5f58d8850ffc38db150ad9a",
+      "expected": "Break's over. Ready when you are!",
+      "heard": "Breaks over. Ready when you are.",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/mochi/greeting": {
+      "sha256": "7d2af331246c86def195c704088d0e91518dfffe7fd41124fd8a16cc379b9010",
+      "expected": "A little company. A little progress.",
+      "heard": "A little company. A little progress.",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/mochi/poke": {
+      "sha256": "9b0e8fe0c0da6e4fe1f2f0d03305623d56f1e7c4034a5e52050054fa9a58db2e",
+      "expected": "Oh! You found me!",
+      "heard": "Oh, you found me.",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/nova/go": {
+      "sha256": "cf3fb202d7bdd54f50873ef19f4d864ef10240d8a6fa55d576bd29570423cba2",
+      "expected": "Let's begin!",
+      "heard": "Let's begin!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/nova/pause": {
+      "sha256": "c7f52ebba404178e09907a1271289304e544a90d1bff6990394e38a0b2dd1048",
+      "expected": "Take a breath. I'll wait.",
+      "heard": "Take a breath! I'll wait!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/nova/resume": {
+      "sha256": "e4c163e688daa2bb89c1b6ee51b033157fe9fe04da357c251bce8b0ec9047050",
+      "expected": "Let's keep going!",
+      "heard": "Let's keep going!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/nova/reset": {
+      "sha256": "2af8b9467c3582244a7c17ba843ef0f745ac0b3d3d59d57f393d4c9872d68ee6",
+      "expected": "A fresh start. We're ready.",
+      "heard": "A fresh start. We're ready!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/nova/focusComplete": {
+      "sha256": "32b6aae624c9617c53ac843ac4806d6297bd2e454d6945435d058bde78cb9b99",
+      "expected": "Well done! Time for a little break.",
+      "heard": "Well done! Time for a little break!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/nova/breakComplete": {
+      "sha256": "01b0773a8f8dee5e61ed7464f84dbd031d0ea0381d5cfbeecd7683d5a631cb03",
+      "expected": "Break's over. Ready when you are!",
+      "heard": "Break's over! Ready when you are!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/nova/greeting": {
+      "sha256": "51d84d179ff1056a25276f25f1ff5af59cc3db8731ec55f5296f94c576eb0d75",
+      "expected": "One small task. One giant step.",
+      "heard": "One small task, one giant step.",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/nova/poke": {
+      "sha256": "f9b6928995a08223f4474753eb194d5b1e278edceae4e2cbb1c359b7a4c9a618",
+      "expected": "Oh! You found me!",
+      "heard": "Oh, you found me!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/pebble/go": {
+      "sha256": "0467e20c2aa1035196ebf89a3827b6d0f9ae6fdad245231e88e2e4b43385fd93",
+      "expected": "Let's begin!",
+      "heard": "Let's begin!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/pebble/pause": {
+      "sha256": "8576b321c645a28fe961152013cc877842aedf5e7c6643554b481e08a1694ca9",
+      "expected": "Take a breath. I'll wait.",
+      "heard": "Take a breath! I'll wait!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/pebble/resume": {
+      "sha256": "3591d43d203cdc9924829fa28518970ffec8f3dcf12c238782f5f7ca2883214d",
+      "expected": "Let's keep going!",
+      "heard": "Let's keep going!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/pebble/reset": {
+      "sha256": "af8d00d6dad682cc66399a1f6fa6ec72030c7866b307400aaa6a3ce55d0c5f4e",
+      "expected": "A fresh start. We're ready.",
+      "heard": "A fresh start! We're ready!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/pebble/focusComplete": {
+      "sha256": "6c3b79b0d0afedaf0155fbaaf9baf15abb2c60bc8c7f3ea2a7449dd2290180b2",
+      "expected": "Well done! Time for a little break.",
+      "heard": "Well done! Time for a little break!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/pebble/breakComplete": {
+      "sha256": "c60f9e85a35235834cc685828fc0803dad7f1d11762e62a2e446704caffbd6fc",
+      "expected": "Break's over. Ready when you are!",
+      "heard": "Break's over! Ready when you are!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/pebble/greeting": {
+      "sha256": "65e674d42bdc0d410d9fd1f141988f57908da0fd2535f01e95e5073a55fd0977",
+      "expected": "One little ripple at a time.",
+      "heard": "One little ripple at a time",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/pebble/poke": {
+      "sha256": "cb3caa93b739dbee54376dcfce3949b45f003d8122371288d51e7d53ab1dfd70",
+      "expected": "Oh! You found me!",
+      "heard": "Oh, you found me?",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/pip/go": {
+      "sha256": "02fb69e502405a65cc536a87eda9ba780f1025d12f8cd59ab3e4e973a78fcf54",
+      "expected": "Let's begin!",
+      "heard": "Let's begin!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/pip/pause": {
+      "sha256": "ab1fd5a32c382a78075b51efccda6e3fdcb7004938bd73e0a00e71846abe7c37",
+      "expected": "Take a breath. I'll wait.",
+      "heard": "Take a breath. I'll wait",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/pip/resume": {
+      "sha256": "a6d9cb72fa05f01d7a582f7eccf7e13f32ee888f71ae24000f17719470e03f3a",
+      "expected": "Let's keep going!",
+      "heard": "Let's keep going!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/pip/reset": {
+      "sha256": "21661096bfb6d9e87a76e95bccf064bcc73befab6c97b3d01bae2fc9e4ccda93",
+      "expected": "A fresh start. We're ready.",
+      "heard": "A fresh start! We're ready!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/pip/focusComplete": {
+      "sha256": "99d13a4b593e0d20821c072baf811648fd3f62d306d9cd97349e7c59b9490929",
+      "expected": "Well done! Time for a little break.",
+      "heard": "Well done! Time for a little break!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/pip/breakComplete": {
+      "sha256": "6962a064f70179af3332ad7299e13147e3d1fd61d86378569d095cf9e7cf1288",
+      "expected": "Break's over. Ready when you are!",
+      "heard": "Break's over! Ready when you are!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/pip/greeting": {
+      "sha256": "43e3cb16c0d6b1975876588e85e3e0bc7abe38c06b0d3609f7286a79c8e007cc",
+      "expected": "One page, one little spell at a time.",
+      "heard": "One page, one little spell at a time.",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/pip/poke": {
+      "sha256": "dcce56f99adaa75bfea02e56ef7dfa06645be392646a81ca2a34cf5efff62ac6",
+      "expected": "Oh! You found me!",
+      "heard": "Oh! You found me!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/wisp/go": {
+      "sha256": "d089ccf6362dcb644804af5d8b8212216d64f0c062d44e79ebb11c83888b27b7",
+      "expected": "Let's begin!",
+      "heard": "Let's begin",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/wisp/pause": {
+      "sha256": "de6f238abd8d5b37403c57350f77d1364dfce90356e0cde82a2ba8079695a289",
+      "expected": "Take a breath. I'll wait.",
+      "heard": "Take a breath. I'll wait.",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/wisp/resume": {
+      "sha256": "714c38e32d51ac4447edfc9170225e390cce7e1192eac3de17330feaed27930f",
+      "expected": "Let's keep going!",
+      "heard": "Let's keep going.",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/wisp/reset": {
+      "sha256": "fa2ad7eac5b1083244c625f6e6d8eac24b599e8c7232254e7681c12a0ed3bc21",
+      "expected": "A fresh start. We're ready.",
+      "heard": "A fresh start! We're ready!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/wisp/focusComplete": {
+      "sha256": "0c9c0c0a8d8a5d3c94f14e2e71ab0c2986026d012623a91889faf43a59680bab",
+      "expected": "Well done! Time for a little break.",
+      "heard": "Well done! Time for a little break!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/wisp/breakComplete": {
+      "sha256": "63795748c14f82e2d62766146cd2e77667e01279ba0c3a7dc2c49e8f7bd099be",
+      "expected": "Break's over. Ready when you are!",
+      "heard": "Break's over? Ready when you are!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/wisp/greeting": {
+      "sha256": "6fd489e03b7f246b2c9fff24f9bcc4aa0b9fb3db6a7d4d4b5e460535d6f99308",
+      "expected": "Let’s find a little light together.",
+      "heard": "Let's find a little light together",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/wisp/poke": {
+      "sha256": "46a5b43282400830f4d26ed301513160f1ecd3e1fdeed96c58db99d6103e833f",
+      "expected": "Oh! You found me!",
+      "heard": "Oh! You found me!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/maple/go": {
+      "sha256": "f4d2d8a65fee746ac1d4fa09e2f888b19fc96ba546748d624081af38d5268b87",
+      "expected": "Let's begin!",
+      "heard": "Let's begin",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/maple/pause": {
+      "sha256": "9892cdff144d5ece2ca098a49c8c20ed94f6392131711f7fb7bd2db23ebf6dfe",
+      "expected": "Take a breath. I'll wait.",
+      "heard": "Take a breath. I'll wait.",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/maple/resume": {
+      "sha256": "7bb1c083b1ecb28fb312c6c69f141d5bd331d03aa3f04b4b6b8187e66110ea00",
+      "expected": "Let's keep going!",
+      "heard": "Let's keep going!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/maple/reset": {
+      "sha256": "36b32f5448356979b2c0a381452b3f9ccd431f8a4286ee7901ce2e117beef4a0",
+      "expected": "A fresh start. We're ready.",
+      "heard": "A fresh start. We're ready.",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/maple/focusComplete": {
+      "sha256": "9f06411a42bfa26f8ab9c49c4966ee11627ee327c9f0ca242161f454363801ba",
+      "expected": "Well done! Time for a little break.",
+      "heard": "Well, done. Time for a little break.",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/maple/breakComplete": {
+      "sha256": "3edd13eeec9e7b9545b18ad9aec7fe9418f082a0c9204c3563058b7d5da0e6ee",
+      "expected": "Break's over. Ready when you are!",
+      "heard": "Break's over. Ready when you are.",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/maple/greeting": {
+      "sha256": "7124a23b7d72fd1f82a4f36e6d2e2893f32a6a9bd3d5d57c946793fb46d20475",
+      "expected": "A little focus, fresh from the oven.",
+      "heard": "A little focus, fresh from the oven.",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/maple/poke": {
+      "sha256": "4774ef458025c3477a332f138646e493365b87662cfd8bab7948265773009fa8",
+      "expected": "Oh! You found me!",
+      "heard": "Oh! You found me!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/orbit/go": {
+      "sha256": "250f6b2aef16c9d330fa7e2b188e3b3dea4c9ee5b95a9b63f902533da67b6a14",
+      "expected": "Let's begin!",
+      "heard": "Let's begin!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/orbit/pause": {
+      "sha256": "53d4384cf922972137208b28e4410b539b20050159c604e98b165289cb782789",
+      "expected": "Take a breath. I'll wait.",
+      "heard": "Take a breath. Uh-oh, wait!",
+      "similarity": 0.811,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "check"
+    },
+    "en/orbit/resume": {
+      "sha256": "8b97859b747add8d6a439775437c35ae42d875dc0ea1cb145675ac03ea4aa641",
+      "expected": "Let's keep going!",
+      "heard": "Let's keep going!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/orbit/reset": {
+      "sha256": "4bb462258c12d1fb313bd1776c1d890e7b0cd1b723bc1d6369bb569fe4d6c37e",
+      "expected": "A fresh start. We're ready.",
+      "heard": "A fresh start! We're ready!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/orbit/focusComplete": {
+      "sha256": "f5a7ffa3da0b6a5a03978cc7ed1f604fdf874fa45cdf30e65be2c160a5fa2a7d",
+      "expected": "Well done! Time for a little break.",
+      "heard": "Well done! Time for a little break!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/orbit/breakComplete": {
+      "sha256": "34663c6c12cb882812ddae0d975ebe6a754c6e299f866d16e5342fede95201f4",
+      "expected": "Break's over. Ready when you are!",
+      "heard": "BREAKS OVER! READY WHEN YOU ARE!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/orbit/greeting": {
+      "sha256": "9cb8f179c11bd5114188b702989f77ddcb5b0c498b8f772faa715adff1a5859e",
+      "expected": "Your mission has company.",
+      "heard": "Your mission has company!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/orbit/poke": {
+      "sha256": "42790ce02e69bb8d768903874ce258113338eddda217fd62ba8cf9cb967b6648",
+      "expected": "Oh! You found me!",
+      "heard": "Oh! You found me!",
+      "similarity": 1.0,
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "review": "transcript-match"
+    },
+    "en/atlas/5": {
+      "sha256": "f1bc79b0247c3d7bf4f317c36a724f41a2a58750ed5e3fa5123de9af79211251",
+      "expected": "Five.",
+      "heardCountdown": [
+        " Five,",
+        " four,",
+        " three,",
+        " two,",
+        " one."
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "en/atlas/4": {
+      "sha256": "803bacd1a489f518909e80940ff15748f91244d189c1bb508732d6620df7aa08",
+      "expected": "Four.",
+      "heardCountdown": [
+        " Five,",
+        " four,",
+        " three,",
+        " two,",
+        " one."
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "en/atlas/3": {
+      "sha256": "75a02242fb627a60dab7b6e5521a4e673461a2465e82b3c078710d17e5ed7ae8",
+      "expected": "Three.",
+      "heardCountdown": [
+        " Five,",
+        " four,",
+        " three,",
+        " two,",
+        " one."
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "en/atlas/2": {
+      "sha256": "d1b51fbef1379e9912c484e9cb360ac3efc11494de304436e1a942dd13dcd67e",
+      "expected": "Two.",
+      "heardCountdown": [
+        " Five,",
+        " four,",
+        " three,",
+        " two,",
+        " one."
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "en/atlas/1": {
+      "sha256": "d4fadb7355c53a34b628612b33ce512f0202af5a3ce09b3dd61cf43212bcc4a3",
+      "expected": "One.",
+      "heardCountdown": [
+        " Five,",
+        " four,",
+        " three,",
+        " two,",
+        " one."
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "en/comet/5": {
+      "sha256": "167c5dd4ba0369d03bbbc99db3ad49a8926e1bc3162b6a1ff1bd183102373ef2",
+      "expected": "Five.",
+      "heardCountdown": [
+        " Five,",
+        " four,",
+        " three,",
+        " two,",
+        " one."
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "en/comet/4": {
+      "sha256": "28a64c33e913633cc14540fe512a2b9e7e7a468b2c912bc7e6a262999d2abd96",
+      "expected": "Four.",
+      "heardCountdown": [
+        " Five,",
+        " four,",
+        " three,",
+        " two,",
+        " one."
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "en/comet/3": {
+      "sha256": "7db7032de2df540a41bd15f24cd9b7351e49a6cedc196eebf1a4b7dca9a3f9cc",
+      "expected": "Three.",
+      "heardCountdown": [
+        " Five,",
+        " four,",
+        " three,",
+        " two,",
+        " one."
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "en/comet/2": {
+      "sha256": "2f3732ce837e7604e13b720ef1deb75455050de87b2d1284631310fc97f34c3a",
+      "expected": "Two.",
+      "heardCountdown": [
+        " Five,",
+        " four,",
+        " three,",
+        " two,",
+        " one."
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "en/comet/1": {
+      "sha256": "6812aeb696a139b014d5fa0a99e4ed338376218b3b3b39743704b014056a4103",
+      "expected": "One.",
+      "heardCountdown": [
+        " Five,",
+        " four,",
+        " three,",
+        " two,",
+        " one."
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "en/pebble/5": {
+      "sha256": "510227564055e0682eb28a5a7e6205ae0bad42c08fbde0ef15c4f89ab2f12744",
+      "expected": "Five.",
+      "heardCountdown": [
+        " Five,",
+        " four,",
+        " three,",
+        " two,",
+        " one."
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "en/pebble/4": {
+      "sha256": "19af170d16b58fc996b6b2c271be7436d45da13f67d9289721cf4aa85e328e1f",
+      "expected": "Four.",
+      "heardCountdown": [
+        " Five,",
+        " four,",
+        " three,",
+        " two,",
+        " one."
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "en/pebble/3": {
+      "sha256": "6cd4b9f65dbc8a2fc387914e089bf38813ffbfd33ddcc2247391d094c8eac0e9",
+      "expected": "Three.",
+      "heardCountdown": [
+        " Five,",
+        " four,",
+        " three,",
+        " two,",
+        " one."
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "en/pebble/2": {
+      "sha256": "f35b290b94a6c8ceda2a7167e1c6332c93384d583d125b8d8cbc7cacfdc24401",
+      "expected": "Two.",
+      "heardCountdown": [
+        " Five,",
+        " four,",
+        " three,",
+        " two,",
+        " one."
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "en/pebble/1": {
+      "sha256": "93e28ace935d4f440796156d730d87440358f15aac0e8d010300c64b219a3336",
+      "expected": "One.",
+      "heardCountdown": [
+        " Five,",
+        " four,",
+        " three,",
+        " two,",
+        " one."
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "en/pip/5": {
+      "sha256": "0eb276b96e8fdb966cc9497cfaa5fcfd84a9ab76b181070e0d27cb8d6296309c",
+      "expected": "Five.",
+      "heardCountdown": [
+        " Five,",
+        " four,",
+        " three,",
+        " two,",
+        " one!"
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "en/pip/4": {
+      "sha256": "0f0faf99caf0a9663071dd87ea87d26cadc5663d7d81559e79ef40ff6a6365ef",
+      "expected": "Four.",
+      "heardCountdown": [
+        " Five,",
+        " four,",
+        " three,",
+        " two,",
+        " one!"
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "en/pip/3": {
+      "sha256": "6ec52cb55bf63e95e897489a674b4fec122004494ea390352e91c3ca2bbb9767",
+      "expected": "Three.",
+      "heardCountdown": [
+        " Five,",
+        " four,",
+        " three,",
+        " two,",
+        " one!"
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "en/pip/2": {
+      "sha256": "6d91fbb648971e8c5befe22bf188984d7b11e9870f91fa7a840c34ea8bcc7cba",
+      "expected": "Two.",
+      "heardCountdown": [
+        " Five,",
+        " four,",
+        " three,",
+        " two,",
+        " one!"
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "en/pip/1": {
+      "sha256": "ce8eaceb1d418b14a1a9de850cdbcf85256644b3d8815726dcb803c6f50646aa",
+      "expected": "One.",
+      "heardCountdown": [
+        " Five,",
+        " four,",
+        " three,",
+        " two,",
+        " one!"
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "en/bean/5": {
+      "sha256": "727d9d342a6473175d1883253fc0a305155722f2c907d286427ebccc2c03f81a",
+      "expected": "Five.",
+      "heardCountdown": [
+        " Five,",
+        " four,",
+        " three,",
+        " two,",
+        " one."
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "en/bean/4": {
+      "sha256": "9e20c1f0dae2e3ca1194d6195d55d68e835acedaa29f91ed78a2381606b97b70",
+      "expected": "Four.",
+      "heardCountdown": [
+        " Five,",
+        " four,",
+        " three,",
+        " two,",
+        " one."
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "en/bean/3": {
+      "sha256": "5b3146e63249940cda803ad07fdcc126a2ee2f8faba8ae79891d7382063219da",
+      "expected": "Three.",
+      "heardCountdown": [
+        " Five,",
+        " four,",
+        " three,",
+        " two,",
+        " one."
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "en/bean/2": {
+      "sha256": "3b0ac1264521c0b927333172096b64ba510de7e02512d33f3a17d26c27ec0c1c",
+      "expected": "Two.",
+      "heardCountdown": [
+        " Five,",
+        " four,",
+        " three,",
+        " two,",
+        " one."
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "en/bean/1": {
+      "sha256": "a75cf5e0cbd4dc61c3be7ecaaacc118a268d4dc36f13a36385ea38cd30edc5c7",
+      "expected": "One.",
+      "heardCountdown": [
+        " Five,",
+        " four,",
+        " three,",
+        " two,",
+        " one."
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "en/jun/5": {
+      "sha256": "468faa03ae60ce86b758f5e59581fa0247eded05d464c873e33abaf438f4f6a5",
+      "expected": "Five.",
+      "heardCountdown": [
+        " 5,",
+        " 4,",
+        " 3,",
+        " 2,",
+        " 1."
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "en/jun/4": {
+      "sha256": "bce4ede411b180bbebe56cc8613c3525af28d3328a0b24cce6372871593f8fcc",
+      "expected": "Four.",
+      "heardCountdown": [
+        " 5,",
+        " 4,",
+        " 3,",
+        " 2,",
+        " 1."
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "en/jun/3": {
+      "sha256": "e1c70eef452f330b1eb0368a06bf23d6b6d60514a9e2170c1a95edefa7055e34",
+      "expected": "Three.",
+      "heardCountdown": [
+        " 5,",
+        " 4,",
+        " 3,",
+        " 2,",
+        " 1."
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "en/jun/2": {
+      "sha256": "0d6987802afb134400ca66aac67629d2740f562393c8433c34a6bcb784dc8aaf",
+      "expected": "Two.",
+      "heardCountdown": [
+        " 5,",
+        " 4,",
+        " 3,",
+        " 2,",
+        " 1."
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "en/jun/1": {
+      "sha256": "b5eb50f2c4e8d1ef569cd72d81c5a4feadaaea1fa66476a470063f342687b86a",
+      "expected": "One.",
+      "heardCountdown": [
+        " 5,",
+        " 4,",
+        " 3,",
+        " 2,",
+        " 1."
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "en/luna/5": {
+      "sha256": "319efd547665beb3751bca1920bf5e8e0e9d31557a66972602121b79f40a2c77",
+      "expected": "Five.",
+      "heardCountdown": [
+        " Five",
+        " four",
+        " three",
+        " two",
+        " one"
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "en/luna/4": {
+      "sha256": "bd1e959ca669fce53341a20675f4d868051796c624f8177d7f7a6b91f50cd3a2",
+      "expected": "Four.",
+      "heardCountdown": [
+        " Five",
+        " four",
+        " three",
+        " two",
+        " one"
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "en/luna/3": {
+      "sha256": "23e4444f0e4d7e3b5aeabb2ea68b5514edd49e00f139effcb685715a87f362bd",
+      "expected": "Three.",
+      "heardCountdown": [
+        " Five",
+        " four",
+        " three",
+        " two",
+        " one"
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "en/luna/2": {
+      "sha256": "3b2df9baf8c6690bbbd7f820db7bf22a8d72a79247f2248b30e8143150740705",
+      "expected": "Two.",
+      "heardCountdown": [
+        " Five",
+        " four",
+        " three",
+        " two",
+        " one"
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "en/luna/1": {
+      "sha256": "e0b2a973430e3af8a992bd4fbe600d8b231c45d0902f86c0200d798473dcc35a",
+      "expected": "One.",
+      "heardCountdown": [
+        " Five",
+        " four",
+        " three",
+        " two",
+        " one"
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "en/mochi/5": {
+      "sha256": "6f96c4c259a987c6c81c12fdce08ccb227e437939282074425361884e8d82ba8",
+      "expected": "Five.",
+      "heardCountdown": [
+        " Five,",
+        " four,",
+        " three,",
+        " two,",
+        " one."
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "en/mochi/4": {
+      "sha256": "f0743db784a66185feb12a822670494e0e2bf25d2b0222b0af6f87aa7e6355d8",
+      "expected": "Four.",
+      "heardCountdown": [
+        " Five,",
+        " four,",
+        " three,",
+        " two,",
+        " one."
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "en/mochi/3": {
+      "sha256": "08ac8960d657304d3bd31a4eeee5c1996d7dfec11df3cce06d2a062bfa54c37a",
+      "expected": "Three.",
+      "heardCountdown": [
+        " Five,",
+        " four,",
+        " three,",
+        " two,",
+        " one."
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "en/mochi/2": {
+      "sha256": "d34d98f6e34e6650c89932563b18af6e49f7ad8e39a501bfc1d876710826450c",
+      "expected": "Two.",
+      "heardCountdown": [
+        " Five,",
+        " four,",
+        " three,",
+        " two,",
+        " one."
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "en/mochi/1": {
+      "sha256": "d24b5c636294e02a0fdfb86d6dcde4574f65206eb4b6e920a71669f34395f761",
+      "expected": "One.",
+      "heardCountdown": [
+        " Five,",
+        " four,",
+        " three,",
+        " two,",
+        " one."
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "en/nova/5": {
+      "sha256": "ad8db5cb1d2c4e9dd98261909f650697b49708109e15624d73e293ab69053140",
+      "expected": "Five.",
+      "heardCountdown": [
+        " Five,",
+        " four,",
+        " three,",
+        " two,",
+        " one."
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "en/nova/4": {
+      "sha256": "4597892ab913ab336f1281ecfa06caad61950b16856aa9582ce10434544ce11b",
+      "expected": "Four.",
+      "heardCountdown": [
+        " Five,",
+        " four,",
+        " three,",
+        " two,",
+        " one."
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "en/nova/3": {
+      "sha256": "d5a63fa6a7505726fccb87675d651076fd8d9f9c7db4ffca7eec4e6741fbf645",
+      "expected": "Three.",
+      "heardCountdown": [
+        " Five,",
+        " four,",
+        " three,",
+        " two,",
+        " one."
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "en/nova/2": {
+      "sha256": "a99eeb0234eb65575c373b4a944017d150c81b6839f2d71fa2c55b12f12992b8",
+      "expected": "Two.",
+      "heardCountdown": [
+        " Five,",
+        " four,",
+        " three,",
+        " two,",
+        " one."
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "en/nova/1": {
+      "sha256": "4917f4506b3aa435d3309d4f445c171b3f6b304aeb2ec385a3c431bdc1946ed8",
+      "expected": "One.",
+      "heardCountdown": [
+        " Five,",
+        " four,",
+        " three,",
+        " two,",
+        " one."
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "en/wisp/5": {
+      "sha256": "b2e08734df6f262bb9e0ec1c22f17d7e5020b7f3a7016e5070a7e4dc4e3b7f21",
+      "expected": "Five.",
+      "heardCountdown": [
+        " Five,",
+        " four,",
+        " three,",
+        " two,",
+        " one."
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "en/wisp/4": {
+      "sha256": "e92f4845a12e3bbefbb9843e83cee33ad14f08d1d81e028d1a596458cb6528ee",
+      "expected": "Four.",
+      "heardCountdown": [
+        " Five,",
+        " four,",
+        " three,",
+        " two,",
+        " one."
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "en/wisp/3": {
+      "sha256": "066ee87460821c8a3affec57e1ebbe1e0d9b9c5f2ef7a55ed715dfd80d96cab9",
+      "expected": "Three.",
+      "heardCountdown": [
+        " Five,",
+        " four,",
+        " three,",
+        " two,",
+        " one."
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "en/wisp/2": {
+      "sha256": "2582e861bf7309196c3952d6045daa670a7ee3e744e1950b8d3dcfef326c970f",
+      "expected": "Two.",
+      "heardCountdown": [
+        " Five,",
+        " four,",
+        " three,",
+        " two,",
+        " one."
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "en/wisp/1": {
+      "sha256": "434d31395657ef03093673de6060a8cc7a7f655380c1a78234a547ad585cd1de",
+      "expected": "One.",
+      "heardCountdown": [
+        " Five,",
+        " four,",
+        " three,",
+        " two,",
+        " one."
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "en/maple/5": {
+      "sha256": "9c696d77e0d8ac72ea807666f5fe1ef0258023bc0fa423f8e2ca0265bd1be555",
+      "expected": "Five.",
+      "heardCountdown": [
+        " Five,",
+        " four,",
+        " three,",
+        " two,",
+        " one."
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "en/maple/4": {
+      "sha256": "a7b6d0864e9d380fa3f9a54d3377f13958b0143562b537912537411072a3c6d5",
+      "expected": "Four.",
+      "heardCountdown": [
+        " Five,",
+        " four,",
+        " three,",
+        " two,",
+        " one."
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "en/maple/3": {
+      "sha256": "db20ac40f741093bdef3fa2635965fd21b8541b7ef24e86468a552addc4d461b",
+      "expected": "Three.",
+      "heardCountdown": [
+        " Five,",
+        " four,",
+        " three,",
+        " two,",
+        " one."
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "en/maple/2": {
+      "sha256": "d75d9dfe8584344230623b7782a9d24543a47e6886a8765a5acd03d3eec718ff",
+      "expected": "Two.",
+      "heardCountdown": [
+        " Five,",
+        " four,",
+        " three,",
+        " two,",
+        " one."
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "en/maple/1": {
+      "sha256": "9ca2e5d842097c37cb677e6a964425108764f4c4100f3007614f79e52852d8fb",
+      "expected": "One.",
+      "heardCountdown": [
+        " Five,",
+        " four,",
+        " three,",
+        " two,",
+        " one."
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "en/orbit/5": {
+      "sha256": "04ff377ac2769c583a8b2e3719a92b2182c5b09632f1b5074640709d642cdd30",
+      "expected": "Five.",
+      "heardCountdown": [
+        " Five",
+        " four",
+        " three",
+        " two",
+        " one"
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "en/orbit/4": {
+      "sha256": "c75e2584d06989e81f586b01bd82012a6db0d913ce7d210afbe7c355999146a6",
+      "expected": "Four.",
+      "heardCountdown": [
+        " Five",
+        " four",
+        " three",
+        " two",
+        " one"
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "en/orbit/3": {
+      "sha256": "47476f1085bee08e46a1b7ec6b3f0d0476a4371530263d440348255526ee376e",
+      "expected": "Three.",
+      "heardCountdown": [
+        " Five",
+        " four",
+        " three",
+        " two",
+        " one"
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "en/orbit/2": {
+      "sha256": "ab0fb2b5636cd4dc58bc93e4b62ac88c32de2d800fdbbf78aed088f058adcbe7",
+      "expected": "Two.",
+      "heardCountdown": [
+        " Five",
+        " four",
+        " three",
+        " two",
+        " one"
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    },
+    "en/orbit/1": {
+      "sha256": "e97ad7c06bb258ca1309b2af2ceb8210a416ee9b5a2bf13d62be73f6097543ab",
+      "expected": "One.",
+      "heardCountdown": [
+        " Five",
+        " four",
+        " three",
+        " two",
+        " one"
+      ],
+      "review": "encoded-countdown-match",
+      "recognizer": "/Users/davidjiang/.cache/huggingface/hub/models--Systran--faster-whisper-small/snapshots/536b0662742c02347bc0e980a01041f333bce120",
+      "note": "Recognized the actual packaged 5–1 clips played in sequence; no inference from source timestamps."
+    }
+  }
+}

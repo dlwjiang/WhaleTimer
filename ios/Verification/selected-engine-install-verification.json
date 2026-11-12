@@ -1,0 +1,93 @@
+{
+  "completedAt": "2026-11-12T01:01:30.669025",
+  "status": "installed-and-native-tested",
+  "pipelineRevision": "selected-engine-v2",
+  "clipCount": 1248,
+  "reviewSHA256": "15bc54ccc32443bf858d822931c750850dbb65cb565dcb8d2678396c783475ed",
+  "choicesSHA256": "7a6c93394b3e9b8172676a16bf0bb773b82e96a43d5acbcb9e01a928135e78ae",
+  "transcriptsSHA256": "34c032385c247578c7adaaf8533efb73366487a9c3cc8a13000d2a6040c41194",
+  "methods": {
+    "mochi": {
+      "voice": "maple-b",
+      "route": "direct"
+    },
+    "pip": {
+      "voice": "pip-a",
+      "route": "reference"
+    },
+    "pebble": {
+      "voice": "pebble-a",
+      "route": "reference"
+    },
+    "bean": {
+      "voice": "bean-a",
+      "route": "direct"
+    },
+    "maple": {
+      "voice": "maple-d",
+      "route": "direct"
+    },
+    "luna": {
+      "voice": "luna-b",
+      "route": "direct"
+    },
+    "atlas": {
+      "voice": "atlas-b",
+      "route": "reference"
+    },
+    "wisp": {
+      "voice": "wisp-a",
+      "route": "direct"
+    },
+    "nova": {
+      "voice": "nova-b",
+      "route": "direct"
+    },
+    "orbit": {
+      "voice": "orbit-c",
+      "route": "direct"
+    },
+    "comet": {
+      "voice": "comet-a",
+      "route": "reference"
+    },
+    "jun": {
+      "voice": "jun-r2-c",
+      "route": "direct"
+    }
+  },
+  "wordingChecks": {
+    "transcript-match": 763,
+    "encoded-countdown-match": 480,
+    "equivalent-wording": 5
+  },
+  "variants": "selected-engine-wording-variants.json",
+  "sourceBuiltAndInstalledHashesMatch": 1248,
+  "originalAuditionsVerified": 12,
+  "nativeTests": {
+    "status": "passed",
+    "count": 2,
+    "failures": 0,
+    "device": "Tick Kin Duo QA",
+    "deviceID": "E1696114-AD92-4FAA-B650-ACD386C9A947",
+    "resultBundle": "/tmp/banke-selected-audio-tests.xcresult",
+    "tests": [
+      "testCompleteOfflineVoiceLibraryIsBundledAndFitsCountdownBeats",
+      "testRecordedPlaybackCompletesAndEffectsDoNotCancelSpeech"
+    ]
+  },
+  "regressionTests": {
+    "passed": 20,
+    "failures": 0
+  },
+  "audio": {
+    "codec": "AAC",
+    "bitrateTarget": 128000,
+    "speed": 1,
+    "pitch": 1,
+    "maximumDecodedPeak": 0.876013,
+    "maximumCountdownSourceDuration": 0.88
+  },
+  "backup": "Verification/VoiceBackups/before-approved-20261112-005819",
+  "listeningReview": "User approved per-character pilot methods. Automated checks do not certify every localized performance’s accent or acting; the offline comparison contains the actual installed English greetings."
+}

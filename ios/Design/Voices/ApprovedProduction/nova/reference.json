@@ -1,0 +1,11 @@
+{
+  "voice": "nova-b",
+  "name": "Space scout",
+  "model": "Qwen3-TTS-12Hz-1.7B-VoiceDesign-bf16",
+  "description": "A tiny tomboy space scout with a small reedy high tenor, smiling nasal twang and punchy staccato rhythm. Scrappy youthful charm, quick cheeky confidence and buoyant cartoon adventure energy. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises.",
+  "text": "Hi! I'm right here. Let's do one little thing together. Ready? Here we go!",
+  "auditionSHA256": "f9564d7a09e4b20206c025c78b73c9f98a46f19ad9cffc2876a54205d6055ea3",
+  "referenceSHA256": "fba14cc65f4a91a53f0721ed1ba8bc9b4bd8425fafa5a4146c9218183fc25b28",
+  "source": "ios/Design/Voices/VoiceCasting/audio/nova-b.m4a",
+  "method": "Decode exact selected audition to PCM, no pitch or speed changes."
+}

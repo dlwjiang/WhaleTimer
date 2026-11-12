@@ -1,0 +1,221 @@
+{
+  "method": "Local Whisper small and PCM checks; no perceptual approval inferred",
+  "clips": {
+    "mochi/direct": {
+      "sha256": "61817a69cf59d289f1079e8799fab6a0aa76b8c40cd9d769c9c3f1d64914e7f0",
+      "text": "Oh! You found me! Let's begin. Take a breath. I'll wait.",
+      "heard": "Oh! You found me! Let's begin. Take a breath. I'll wait.",
+      "wordingScore": 1.0,
+      "finite": true,
+      "decodedPeak": 0.58073,
+      "status": "words-match"
+    },
+    "pip/direct": {
+      "sha256": "51313faac113fecf99acde2a1d23cfba009acd80094b5d5885a9084fba7a099d",
+      "text": "Oh! You found me! Let's begin. Take a breath. I'll wait.",
+      "heard": "Oh, you found me! Let's begin. Take a breath. I'll wait.",
+      "wordingScore": 1.0,
+      "finite": true,
+      "decodedPeak": 0.66743,
+      "status": "words-match"
+    },
+    "pebble/direct": {
+      "sha256": "15c15605b3bbaf30af99de90715a2cb1cac341eab9d433c1af2f657b4389e4ea",
+      "text": "Oh! You found me! Let's begin. Take a breath. I'll wait.",
+      "heard": "Oh, you found me! Let's begin. Take a breath. I'll wait.",
+      "wordingScore": 1.0,
+      "finite": true,
+      "decodedPeak": 0.75646,
+      "status": "words-match"
+    },
+    "jun/direct": {
+      "sha256": "6a705371ca982a8e8a7df9222378e75051518aeae5f9eb5ddb3e8d4dc4fdd223",
+      "text": "Oh! You found me! Let's begin. Take a breath. I'll wait.",
+      "heard": "Oh, you found me. Let's begin. Take a breath. I'll wait.",
+      "wordingScore": 1.0,
+      "finite": true,
+      "decodedPeak": 0.78255,
+      "status": "words-match"
+    },
+    "bean/direct": {
+      "sha256": "4e27cc200b12ed4cc46f74cad3b0c85b36e0632bc5d92780f58414fc6ab2c984",
+      "text": "Oh! You found me! Let's begin. Take a breath. I'll wait.",
+      "heard": "Oh, you found me. Let's begin. Take a breath. I'll wait.",
+      "wordingScore": 1.0,
+      "finite": true,
+      "decodedPeak": 0.78169,
+      "status": "words-match"
+    },
+    "maple/direct": {
+      "sha256": "af79b27be9424ec9fff378e1963c54435b87c833706510596fdd8c0995a5cb0b",
+      "text": "Oh! You found me! Let's begin. Take a breath. I'll wait.",
+      "heard": "Oh! You found me! Let's begin. Take a breath. I'll wait.",
+      "wordingScore": 1.0,
+      "finite": true,
+      "decodedPeak": 0.79328,
+      "status": "words-match"
+    },
+    "luna/direct": {
+      "sha256": "47c77cc8553940e0d96a0484d05d24c476a0dd43adecc309f14daaf96af5e5b6",
+      "text": "Oh! You found me! Let's begin. Take a breath. I'll wait.",
+      "heard": "Oh, you found me! Let's begin. Take a breath. I'll wait.",
+      "wordingScore": 1.0,
+      "finite": true,
+      "decodedPeak": 0.65511,
+      "status": "words-match"
+    },
+    "atlas/direct": {
+      "sha256": "409c69ad7d66f95e2d25edcf98a16f5bddc9faa8fa05c343053f6a1710bde97a",
+      "text": "Oh! You found me! Let's begin. Take a breath. I'll wait.",
+      "heard": "Oh, you found me! Let's begin! Take a breath. I'll wait.",
+      "wordingScore": 1.0,
+      "finite": true,
+      "decodedPeak": 0.642,
+      "status": "words-match"
+    },
+    "wisp/direct": {
+      "sha256": "ecd0a01664ec8b0ba0b19ffcb6502d77da3abf2c7ad2e21c1ad1589a7407c1e3",
+      "text": "Oh! You found me! Let's begin. Take a breath. I'll wait.",
+      "heard": "Oh, you found me! Let's begin. Take a breath. I'll wait.",
+      "wordingScore": 1.0,
+      "finite": true,
+      "decodedPeak": 0.82382,
+      "status": "words-match"
+    },
+    "nova/direct": {
+      "sha256": "e40c109dd8e2d0f1ac9b501bd356c0e6363c184516115412ad075fc122423dd2",
+      "text": "Oh! You found me! Let's begin. Take a breath. I'll wait.",
+      "heard": "Oh! You found me! Let's begin. Take a breath. I'll wait.",
+      "wordingScore": 1.0,
+      "finite": true,
+      "decodedPeak": 0.79509,
+      "status": "words-match"
+    },
+    "orbit/direct": {
+      "sha256": "310f54d4750fdf2db33109011b024a1f26f302619180f4c77ab23a29926f4255",
+      "text": "Oh! You found me! Let's begin. Take a breath. I'll wait.",
+      "heard": "Oh! You found me! Let's begin! Take a breath! I'll wait!",
+      "wordingScore": 1.0,
+      "finite": true,
+      "decodedPeak": 0.6701,
+      "status": "words-match"
+    },
+    "comet/direct": {
+      "sha256": "4f937e1408127f809882e3111d56ae5fa52c698bad9244fbc8f70a9b9bb48b22",
+      "text": "Oh! You found me! Let's begin. Take a breath. I'll wait.",
+      "heard": "Oh, you found me! Let's begin. Take a breath. I'll wait.",
+      "wordingScore": 1.0,
+      "finite": true,
+      "decodedPeak": 0.50868,
+      "status": "words-match"
+    },
+    "maple/reference": {
+      "sha256": "7cd3614814f05d06eddaaf05314d498dc257c22c0f11a57e20d4535d175cd265",
+      "text": "Oh! You found me! Let's begin. Take a breath. I'll wait.",
+      "heard": "Oh! You found me! Let's begin! Take a breath! I'll wait!",
+      "wordingScore": 1.0,
+      "finite": true,
+      "decodedPeak": 0.80231,
+      "status": "words-match"
+    },
+    "orbit/reference": {
+      "sha256": "b434da51d9d986bb1c0617b75d6cce730dd94573bc66b898b5811de9862546c5",
+      "text": "Oh! You found me! Let's begin. Take a breath. I'll wait.",
+      "heard": "Oh! You found me! Let's begin! Take a breath! I'll wait!",
+      "wordingScore": 1.0,
+      "finite": true,
+      "decodedPeak": 0.56191,
+      "status": "words-match"
+    },
+    "mochi/reference": {
+      "sha256": "3c1a7c26619b162d73059f1b7a4dd7c540f66c959ed6882f027b22f94501fdf1",
+      "text": "Oh! You found me! Let's begin. Take a breath. I'll wait.",
+      "heard": "Oh, you found me! Let's begin. Take a breath. I'll wait.",
+      "wordingScore": 1.0,
+      "finite": true,
+      "decodedPeak": 0.5669,
+      "status": "words-match"
+    },
+    "pip/reference": {
+      "sha256": "7de07959a2cfd5fd7c7463eb1946f54a7dde66d652cf808dbe03323ec2519e2f",
+      "text": "Oh! You found me! Let's begin. Take a breath. I'll wait.",
+      "heard": "Oh! You found me! Let's begin. Take a breath. I'll wait.",
+      "wordingScore": 1.0,
+      "finite": true,
+      "decodedPeak": 0.63672,
+      "status": "words-match"
+    },
+    "pebble/reference": {
+      "sha256": "699dc35832b8b154102f5dfd50cf450402013a2600900f03ad5e6af3fba12797",
+      "text": "Oh! You found me! Let's begin. Take a breath. I'll wait.",
+      "heard": "Oh, you found me. Let's begin. Take a breath. I'll wait.",
+      "wordingScore": 1.0,
+      "finite": true,
+      "decodedPeak": 0.79497,
+      "status": "words-match"
+    },
+    "jun/reference": {
+      "sha256": "35b30199edeec15fadab4c31ca8b4014b5f6b768db72e6c9dc6006c22cbe7709",
+      "text": "Oh! You found me! Let's begin. Take a breath. I'll wait.",
+      "heard": "Oh, you found me. Let's begin. Take a breath. I'll wait.",
+      "wordingScore": 1.0,
+      "finite": true,
+      "decodedPeak": 0.67869,
+      "status": "words-match"
+    },
+    "bean/reference": {
+      "sha256": "bdd3b8a5c4501a401d797eeec831eaa85b8256eaf11be227a75593d824bffb72",
+      "text": "Oh! You found me! Let's begin. Take a breath. I'll wait.",
+      "heard": "Oh, you found me. Let's begin. Take a breath. I'll wait.",
+      "wordingScore": 1.0,
+      "finite": true,
+      "decodedPeak": 0.78862,
+      "status": "words-match"
+    },
+    "luna/reference": {
+      "sha256": "7c29d93ee7e265f7c0bf59196f27dda3647c8266341621b9069639e56040c4b3",
+      "text": "Oh! You found me! Let's begin. Take a breath. I'll wait.",
+      "heard": "Oh, you found me! Let's begin. Take a breath. I'll wait.",
+      "wordingScore": 1.0,
+      "finite": true,
+      "decodedPeak": 0.63716,
+      "status": "words-match"
+    },
+    "atlas/reference": {
+      "sha256": "0328a845e552d0deb48737599f5ca572018f46e3e72d7aeee68105743ee4fd7b",
+      "text": "Oh! You found me! Let's begin. Take a breath. I'll wait.",
+      "heard": "Oh! You found me! Let's begin. Take a breath. I'll wait.",
+      "wordingScore": 1.0,
+      "finite": true,
+      "decodedPeak": 0.77753,
+      "status": "words-match"
+    },
+    "wisp/reference": {
+      "sha256": "5168befb185e506723129e05d382f58f8a3845d3d743f24720165ee75a9b50b9",
+      "text": "Oh! You found me! Let's begin. Take a breath. I'll wait.",
+      "heard": "Oh! You found me! Let's begin! Take a breath! I'll wait!",
+      "wordingScore": 1.0,
+      "finite": true,
+      "decodedPeak": 0.76392,
+      "status": "words-match"
+    },
+    "nova/reference": {
+      "sha256": "517038b80d0910dd2926118ac53d5e9a5a27438b511ed91652abca6750c8bfe5",
+      "text": "Oh! You found me! Let's begin. Take a breath. I'll wait.",
+      "heard": "Oh, you found me! Let's begin! Take a breath! I'll wait!",
+      "wordingScore": 1.0,
+      "finite": true,
+      "decodedPeak": 0.7809,
+      "status": "words-match"
+    },
+    "comet/reference": {
+      "sha256": "f83f5796bc07483377a2afeab4c427091321e6a041feff115dda4a54d7ea8a86",
+      "text": "Oh! You found me! Let's begin. Take a breath. I'll wait.",
+      "heard": "Oh! You found me! Let's begin! Take a breath. I'll wait.",
+      "wordingScore": 1.0,
+      "finite": true,
+      "decodedPeak": 0.79044,
+      "status": "words-match"
+    }
+  }
+}

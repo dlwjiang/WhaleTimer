@@ -1,0 +1,345 @@
+{
+  "zh-Hans/mochi/go": {
+    "instruct": "Speak Mandarin Chinese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "zh-Hans/mochi/poke": {
+    "instruct": "Speak Mandarin Chinese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "ja/mochi/pause": {
+    "instruct": "Speak Japanese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "ja/mochi/resume": {
+    "instruct": "Speak Japanese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "ja/mochi/breakComplete": {
+    "instruct": "Speak Japanese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "ja/mochi/greeting": {
+    "instruct": "Speak Japanese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "pt-BR/mochi/go": {
+    "instruct": "Speak Brazilian Portuguese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "pt-BR/mochi/poke": {
+    "instruct": "Speak Brazilian Portuguese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "fr/mochi/pause": {
+    "instruct": "Speak French naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "de/mochi/resume": {
+    "instruct": "Speak German naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "de/mochi/poke": {
+    "instruct": "Speak German naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "zh-Hans/pip/breakComplete": {
+    "instruct": "Speak Mandarin Chinese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "zh-Hans/pip/greeting": {
+    "instruct": "Speak Mandarin Chinese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "zh-Hans/pip/poke": {
+    "instruct": "Speak Mandarin Chinese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "ja/pip/pause": {
+    "instruct": "Speak Japanese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "ja/pip/resume": {
+    "instruct": "Speak Japanese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "ja/pip/reset": {
+    "instruct": "Speak Japanese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "ja/pip/focusComplete": {
+    "instruct": "Speak Japanese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "ja/pip/breakComplete": {
+    "instruct": "Speak Japanese naturally and clearly. Say only the supplied words, with no extra sounds or laughter.",
+    "text": "キュウケイ、おしまい。ジュンビができたら、はじめよう。"
+  },
+  "ja/pip/greeting": {
+    "instruct": "Speak Japanese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "ja/pip/poke": {
+    "instruct": "Speak Japanese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "ko/pip/breakComplete": {
+    "instruct": "Speak Korean naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "ko/pip/greeting": {
+    "instruct": "Speak Korean naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "ko/pip/poke": {
+    "instruct": "Speak Korean naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "es/pip/poke": {
+    "instruct": "Speak Spanish naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "pt-BR/pip/go": {
+    "instruct": "Speak Brazilian Portuguese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "pt-BR/pip/resume": {
+    "instruct": "Speak Brazilian Portuguese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "pt-BR/pip/poke": {
+    "instruct": "Speak Brazilian Portuguese naturally and clearly. Say only the supplied words, with no extra sounds or laughter.",
+    "text": "Oi, você me achou."
+  },
+  "de/pip/go": {
+    "instruct": "Speak German naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "de/pip/reset": {
+    "instruct": "Speak German naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "de/pip/poke": {
+    "instruct": "Speak German naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "zh-Hans/pebble/resume": {
+    "instruct": "Speak Mandarin Chinese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "zh-Hans/pebble/greeting": {
+    "instruct": "Speak Mandarin Chinese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "zh-Hans/pebble/poke": {
+    "instruct": "Speak Mandarin Chinese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "ja/pebble/pause": {
+    "instruct": "Speak Japanese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "ja/pebble/breakComplete": {
+    "instruct": "Speak Japanese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "ja/pebble/greeting": {
+    "instruct": "Speak Japanese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "ko/pebble/breakComplete": {
+    "instruct": "Speak Korean naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "ko/pebble/poke": {
+    "instruct": "Speak Korean naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "fr/pebble/resume": {
+    "instruct": "Speak French naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "fr/pebble/poke": {
+    "instruct": "Speak French naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "de/pebble/go": {
+    "instruct": "Speak German naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "de/pebble/greeting": {
+    "instruct": "Speak German naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "zh-Hans/jun/poke": {
+    "instruct": "Speak Mandarin Chinese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "ja/jun/pause": {
+    "instruct": "Speak Japanese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "zh-Hans/bean/go": {
+    "instruct": "Speak Mandarin Chinese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "zh-Hans/bean/poke": {
+    "instruct": "Speak Mandarin Chinese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "ja/bean/pause": {
+    "instruct": "Speak Japanese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "ja/bean/greeting": {
+    "instruct": "Speak Japanese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "ko/bean/focusComplete": {
+    "instruct": "Speak Korean naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "es/bean/go": {
+    "instruct": "Speak Spanish naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "es/bean/pause": {
+    "instruct": "Speak Spanish naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "pt-BR/bean/go": {
+    "instruct": "Speak Brazilian Portuguese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "pt-BR/bean/pause": {
+    "instruct": "Speak Brazilian Portuguese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "pt-BR/bean/resume": {
+    "instruct": "Speak Brazilian Portuguese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "fr/bean/pause": {
+    "instruct": "Speak French naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "fr/bean/resume": {
+    "instruct": "Speak French naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "fr/bean/reset": {
+    "instruct": "Speak French naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "de/bean/poke": {
+    "instruct": "Speak German naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "zh-Hans/maple/poke": {
+    "instruct": "Speak Mandarin Chinese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "ja/maple/focusComplete": {
+    "instruct": "Speak Japanese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "ko/maple/greeting": {
+    "instruct": "Speak Korean naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "pt-BR/maple/greeting": {
+    "instruct": "Speak Brazilian Portuguese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "fr/maple/go": {
+    "instruct": "Speak French naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "fr/maple/reset": {
+    "instruct": "Speak French naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "de/maple/poke": {
+    "instruct": "Speak German naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "zh-Hans/luna/pause": {
+    "instruct": "Speak Mandarin Chinese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "zh-Hans/luna/greeting": {
+    "instruct": "Speak Mandarin Chinese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "zh-Hans/luna/poke": {
+    "instruct": "Speak Mandarin Chinese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "es/luna/go": {
+    "instruct": "Speak Spanish naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "pt-BR/luna/resume": {
+    "instruct": "Speak Brazilian Portuguese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "fr/luna/resume": {
+    "instruct": "Speak French naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "zh-Hans/atlas/poke": {
+    "instruct": "Speak Mandarin Chinese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "ja/atlas/pause": {
+    "instruct": "Speak Japanese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "ja/atlas/focusComplete": {
+    "instruct": "Speak Japanese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "pt-BR/atlas/reset": {
+    "instruct": "Speak Brazilian Portuguese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "de/atlas/poke": {
+    "instruct": "Speak German naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "zh-Hans/wisp/poke": {
+    "instruct": "Speak Mandarin Chinese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "ja/wisp/resume": {
+    "instruct": "Speak Japanese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "ja/wisp/focusComplete": {
+    "instruct": "Speak Japanese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "ja/wisp/poke": {
+    "instruct": "Speak Japanese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "ko/wisp/pause": {
+    "instruct": "Speak Korean naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "ko/wisp/poke": {
+    "instruct": "Speak Korean naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "pt-BR/wisp/resume": {
+    "instruct": "Speak Brazilian Portuguese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "fr/wisp/resume": {
+    "instruct": "Speak French naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "fr/wisp/reset": {
+    "instruct": "Speak French naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "fr/wisp/poke": {
+    "instruct": "Speak French naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "de/wisp/resume": {
+    "instruct": "Speak German naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "zh-Hans/nova/poke": {
+    "instruct": "Speak Mandarin Chinese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "ja/nova/go": {
+    "instruct": "Speak Japanese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "ja/nova/poke": {
+    "instruct": "Speak Japanese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "ko/nova/poke": {
+    "instruct": "Speak Korean naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "pt-BR/nova/poke": {
+    "instruct": "Speak Brazilian Portuguese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "fr/nova/resume": {
+    "instruct": "Speak French naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "fr/nova/greeting": {
+    "instruct": "Speak French naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "fr/nova/poke": {
+    "instruct": "Speak French naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "zh-Hans/orbit/poke": {
+    "instruct": "Speak Mandarin Chinese naturally and clearly. Say only the supplied words, with no extra sounds or laughter.",
+    "text": "呀，被你发现啦。"
+  },
+  "ja/orbit/go": {
+    "instruct": "Speak Japanese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "ja/orbit/pause": {
+    "instruct": "Speak Japanese naturally and clearly. Say only the supplied words, with no extra sounds or laughter.",
+    "text": "ひといき、つこう。まってるね。"
+  },
+  "ja/orbit/reset": {
+    "instruct": "Speak Japanese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "ja/orbit/greeting": {
+    "instruct": "Speak Japanese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "ko/orbit/focusComplete": {
+    "instruct": "Speak Korean naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "ko/orbit/breakComplete": {
+    "instruct": "Speak Korean naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "pt-BR/orbit/poke": {
+    "instruct": "Speak Brazilian Portuguese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "fr/orbit/resume": {
+    "instruct": "Speak French naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "fr/orbit/poke": {
+    "instruct": "Speak French naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "zh-Hans/comet/poke": {
+    "instruct": "Speak Mandarin Chinese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "ja/comet/pause": {
+    "instruct": "Speak Japanese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "ko/comet/greeting": {
+    "instruct": "Speak Korean naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "es/comet/breakComplete": {
+    "instruct": "Speak Spanish naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "pt-BR/comet/reset": {
+    "instruct": "Speak Brazilian Portuguese naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "fr/comet/poke": {
+    "instruct": "Speak French naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  },
+  "de/comet/breakComplete": {
+    "instruct": "Speak German naturally and clearly. Say only the supplied words, with no extra sounds or laughter."
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "voice": "orbit-c",
+  "name": "Pocket gadget",
+  "model": "VoxCPM2-bf16",
+  "description": "A tiny boyish toy robot with a reedy nasal squeak, eager quick bursts and endearingly jerky comic timing. High youthful playful voice, little pitch jumps and bright curious excitement, no buzzing. Speak only the supplied English words. Keep it cute and conversational, with no music, singing, added laughter or animal noises.",
+  "text": "Hi! I'm right here. Let's do one little thing together. Ready? Here we go!",
+  "auditionSHA256": "93514b9d491d9bfa580f1580c043d19b7379147e9f1f13df7615fe8993f916cf",
+  "referenceSHA256": "1f811c1264fa8d8ac83bbdd8bd255e771c68550ed28e28352eba1d1acb316838",
+  "source": "ios/Design/Voices/VoiceCasting/audio/orbit-c.m4a",
+  "method": "Decode exact selected audition to PCM, no pitch or speed changes."
+}

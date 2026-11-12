@@ -164,15 +164,16 @@ import Testing
     let landscape = TabletopHeaderLayout(width: 951, topInset: 0, headerHeight: 56,
                                         occlusions: [rail], division: fold)
     #expect(landscape.frame.height == 52)
-    #expect(landscape.frame.midY == 62)
-    #expect(landscape.frame.minY >= 24)
+    #expect(landscape.frame.minY == 16)
     #expect(landscape.frame.maxX < fold.minX)
     #expect(!landscape.frame.intersects(rail))
     let closedRail = CGRect(x: 382, y: 0, width: 84, height: 174)
     let camera = CGRect(x: 400, y: 29, width: 37, height: 37)
     let closed = TabletopHeaderLayout(width: 466, topInset: 0, headerHeight: 56,
                                      occlusions: [camera, closedRail])
-    #expect(closed.frame.midY == 112)
+    #expect(closed.frame.minY == 16)
+    #expect(closed.frame.maxY < closedRail.maxY)
+    #expect(!closed.frame.intersects(camera))
     #expect(closed.frame.width >= 300)
     #expect(!closed.frame.intersects(closedRail))
     let leftRail = CGRect(x: 0, y: 0, width: 84, height: 82)
@@ -181,4 +182,90 @@ import Testing
     #expect(rotated.frame.midY == 48)
     #expect(rotated.frame.minX > leftRail.maxX)
     #expect(!rotated.frame.intersects(leftRail))
+}
+
+@Test func devicePerchesKeepSeatsRegisteredAndBothPosesInsideTheStage() {
+    for size in [CGSize(width: 320, height: 300), CGSize(width: 393, height: 390),
+                 CGSize(width: 360, height: 200), CGSize(width: 600, height: 780),
+                 CGSize(width: 760, height: 600)] {
+        let ledge = size.height * 0.72
+        for companion in Companion.allCases {
+            let frame = CompanionArtworkLayout.perched(y: ledge)
+                .frame(companion: companion, width: size.width, height: size.height)
+            #expect(abs(frame.minY + frame.height * CompanionSpriteRegistration(companion).seat - ledge) < 0.001)
+            for poked in [false, true] {
+                let bounds = DeviceRoomSprite.bounds(companion: companion, poked: poked)
+                #expect(frame.minX + bounds.minX * frame.width >= 0)
+                #expect(frame.minX + bounds.maxX * frame.width <= size.width)
+                #expect(frame.minY + bounds.minY * frame.height >= 23.99)
+                #expect(frame.minY + bounds.maxY * frame.height <= size.height - 7.99)
+            }
+        }
+    }
+}
+
+@Test func reusedRoomArchitectureCoversTheStageWithoutStretching() {
+    for size in [CGSize(width: 393, height: 852), CGSize(width: 852, height: 393),
+                 CGSize(width: 1024, height: 1366), CGSize(width: 1366, height: 1024),
+                 CGSize(width: 375, height: 1024)] {
+        let format = DeviceRoomFormat.resolve(size: size, isPad: true)
+        let ledge = size.height * (format.isLandscape ? 0.65 : 0.46)
+        for room in DuoRoom.allCases {
+            let frame = format.imageFrame(size: size, ledgeY: ledge, room: room,
+                characterX: size.width * (format.isLandscape ? 0.23 : 0.5))
+            #expect(format.asset(room: room) == room.asset)
+            #expect(abs(frame.width / frame.height - 1.5) < 0.001)
+            #expect(frame.minX <= 0.001 && frame.maxX >= size.width - 0.001)
+            #expect(frame.minY <= 0.001 && frame.maxY > ledge)
+            #expect(abs(frame.minY + frame.height * room.perchFraction - ledge) < 0.001)
+        }
+    }
+}
+
+@Test func shelfPreviewsRegisterEverySeatAtThumbnailAndPackSizes() {
+    for size in [CGSize(width: 56, height: 56), CGSize(width: 78, height: 88),
+                 CGSize(width: 100, height: 220), CGSize(width: 180, height: 340)] {
+        let ledge = size.height * 0.70
+        for companion in Companion.allCases {
+            let frame = DeviceRoomSprite.perchedFrame(companion: companion,
+                width: size.width, height: size.height, ledgeY: ledge,
+                horizontalInset: min(12, size.width * 0.08), topInset: 6, bottomInset: 4)
+            #expect(abs(frame.minY + frame.height * CompanionSpriteRegistration(companion).seat - ledge) < 0.001)
+            for poked in [false, true] {
+                let bounds = DeviceRoomSprite.bounds(companion: companion, poked: poked)
+                #expect(frame.minX + bounds.minX * frame.width >= 0)
+                #expect(frame.minX + bounds.maxX * frame.width <= size.width)
+                #expect(frame.minY + bounds.minY * frame.height >= 5.99)
+                #expect(frame.minY + bounds.maxY * frame.height <= size.height - 3.99)
+            }
+        }
+    }
+}
+
+@Test func duoTuningSeparatesOuterAndInnerDisplays() {
+    #expect(DuoTuningLayout.resolve(size: CGSize(width: 466, height: 900), division: nil) == .frontPortrait)
+    #expect(DuoTuningLayout.resolve(size: CGSize(width: 900, height: 466), division: nil) == .frontLandscape)
+    #expect(DuoTuningLayout.resolve(size: CGSize(width: 1100, height: 760),
+        division: CGRect(x: 545, y: 0, width: 10, height: 760)) == .unfoldedLandscape)
+    #expect(DuoTuningLayout.resolve(size: CGSize(width: 760, height: 1100),
+        division: CGRect(x: 0, y: 545, width: 760, height: 10)) == nil)
+    #expect(DuoTuningLayout.resolve(size: CGSize(width: 900, height: 466),
+        division: CGRect(x: 1000, y: 0, width: 10, height: 466)) == .frontLandscape)
+}
+
+@Test func duoTuningKeepsSeatAnchorAndExportsIndependentValues() throws {
+    let base = CGRect(x: 50, y: 30, width: 200, height: 300)
+    let pane = CGSize(width: 400, height: 500)
+    let adjustment = DuoFramingAdjustment(scaleMultiplier: 0.7, offsetXFraction: 0.1, offsetYFraction: -0.05)
+    let adjusted = adjustment.apply(to: base, seat: 0.75, pane: pane)
+    #expect(abs(adjusted.midX - base.midX - 40) < 0.001)
+    #expect(abs(adjusted.minY + adjusted.height * 0.75 - (base.minY + base.height * 0.75) + 25) < 0.001)
+    #expect(DuoFramingAdjustment().apply(to: base, seat: 0.75, pane: pane) == base)
+    var draft = DuoFramingDraft()
+    draft.set(adjustment, companion: .mochi, layout: .frontPortrait)
+    let restored = try JSONDecoder().decode(DuoFramingDraft.self, from: Data(draft.exportJSON().utf8))
+    #expect(restored.entries.count == Companion.allCases.count * 3)
+    #expect(restored.value(for: .mochi, layout: .frontPortrait) == adjustment)
+    #expect(restored.value(for: .mochi, layout: .frontLandscape) == .init())
+    #expect(restored.value(for: .pip, layout: .frontPortrait) == .init())
 }

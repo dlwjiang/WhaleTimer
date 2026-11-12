@@ -1,0 +1,40 @@
+Tick & Kin — voice production audit, November 11, 2026
+
+Finding
+The selected auditions were used as reference recordings, but the app does not play those performances. Every production line was resynthesized by VoxCPM2. Ten of the twelve selected auditions were originally made by Qwen3 VoiceDesign; only Maple and Orbit were VoxCPM2 designs. Reference provenance was verified, but that was insufficient evidence of perceptual fidelity. The user's report of garbling is not contradicted by passing hashes, decoding or transcript checks.
+
+What was verified
+- All 12 selected audition files match the hashes in approved-choices.json, including Mochi -> maple-b (Marshmallow baker) and Jun -> jun-r2-c (Sleepy café boy).
+- Each production reference WAV matches the decoded selected audition PCM within 16-bit quantization tolerance. The reference was not silently replaced.
+- All 1,248 bundled recordings match their manifest's encoded-content hashes and selected voice IDs.
+- On all five running simulators (Duo, iPhone 18 Pro, iPhone 18 Pro Max, iPhone Air, iPad Pro 11-inch), every installed recording matched the current bundle. No missing or stale files were found. The audit did not restart or change those apps.
+- FFmpeg decoded all 1,248 recordings without errors. All raw sources are present. Native iOS tests opened every file through AVAudioPlayer and passed the existing representative playback/completion check.
+- Recorded playback code does not apply pitch shifting or playback-rate changes. It sets volume to 0.8. System TTS remains an error fallback; the audit found no missing bundled files or decode failures that would require that fallback. The native tests do not prove which path every prior user playback took.
+
+Where the production pipeline changes the sound
+1. Resynthesis/voice transfer: generate_voices.py always loads VoxCPM2-bf16. All 12 voices are generated from short audition audio references. The generator uses reference-cloning mode; the final output is not the selected performance. Cross-engine transfer affects ten selections. This is a plausible source of voice/timbre or intelligibility drift, not a proven sole cause of the reported garbling.
+2. Reference input: the script decoded the audition AAC rather than using a lossless original performance. This preserves the exact chosen encoded audition but feeds its encoding artifacts into the cloning stage.
+3. Encoding: auditions used AAC targeted at 128 kb/s, while production used 64 kb/s. Both delivered 24 kHz mono audio. The production model generated 48 kHz WAVs, then resampled/encoded them. Auditions used loudness normalization with a -2 dB true-peak target; production used per-clip peak normalization to 0.88 and no final encoded true-peak check.
+4. Countdown processing: 59 of 480 digit clips were time-compressed to approximately 0.76 seconds with FFmpeg atempo. The largest speedup is 1.938x. This preserves nominal pitch but changes timing and may introduce artifacts. Whole-number performances were also split using ASR word boundaries. These operations were not applied to the original casting auditions.
+
+Measured encoding experiment
+36 saved source WAVs were re-encoded without generating new speech: English greetings and pokes for all 12 companions, plus 12 low-similarity clips from the all-file scan. Re-encoding at the existing 64k settings reproduced the bundled bytes exactly in all 36 cases, confirming these are the production sources/settings. Median aligned waveform SNR versus a consistently resampled raw source was 20.29 dB at 64k and 33.775 dB at 128k. This demonstrates substantially lower signal error at 128k; SNR is not a perceptual quality or voice-similarity score, and higher bitrate cannot repair speech that was already garbled in the generated WAV.
+
+Peak findings
+No raw-source samples exceeded full scale. Decoding the packaged AAC produced above-full-scale samples in 29 clips (108 samples total); the largest decoded peak was 1.295. This is an encoding/headroom issue and a clipping risk, not proof of sustained audible clipping. The app's 0.8 playback gain reduces most of these peaks. See audit.json for per-file counts rather than treating every affected file as entirely distorted.
+
+Why previous acceptance missed this
+The release verifier checks file completeness, reference/output hashes, formats, durations and decoding. Whisper checks recognized wording. Neither verifies that the voice still sounds like the chosen audition or that speech is free of audible artifacts. The current transcript report still contains 16 'check' entries (Mandarin/Korean short phrases); all entries match the current encoded hashes. The chosen audition approval was incorrectly treated as sufficient approval of regenerated production lines. No human sign-off of those regenerated lines is recorded in the current production provenance.
+
+Scope and limits
+This audit covers every production file and every selected reference. The controlled encoding comparison covers 36 clips, not the whole library. It does not claim human listening approval or determine the sole perceptual cause of widespread garbling. Simulator/audio-output issues are not ruled out by file tests. The local comparison page isolates the original selection, the saved generated WAV, and the actual bundled AAC for all 12 characters' English greeting and poke. B and C use identical words; A uses the original audition sentence. No external media service was used.
+
+Corrective direction
+Treat the current production sound as unapproved despite valid provenance. First establish a small, same-sentence pilot that preserves the chosen voice, using the appropriate source model/continuation or a demonstrably faithful cloning path. Compare raw generation before packaging. Use high-quality/lossless staging and adequate peak headroom; do not aggressively speed up digits to hide generation timing problems. Regenerate or replace the library only after the pilot's sound is accepted. Raising bitrate alone will not fix generation artifacts. This audit did not replace any app audio or overwrite the user's voice selections.
+
+Evidence
+- audit.json: all references and all 1,248 source/encoded measurements.
+- installed-bundles.json: file-by-file mismatches for the running simulators (all empty).
+- encoding-experiment.json: 36 controlled re-encodes and byte reproduction results.
+- native-check.json: current native test result bundle and verification scope.
+- compare.html: 60 embedded samples, directly openable without a server.
