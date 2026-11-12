@@ -1,0 +1,35 @@
+name
+Tiempo y Compañía
+
+subtitle
+Tu compañía para concentrarte
+
+keywords
+pomodoro,estudio,temporizador,gato,descanso,trabajo,sin conexión,kawaii
+
+promotionalText
+Concéntrate con Mochi, Pip y Pebble gratis. Un temporizador acogedor, descansos a tu medida y tres packs opcionales de compañeros. Sin suscripción.
+
+description
+Un rincón acogedor para estudiar, leer o trabajar.
+
+Tiempo y Compañía combina un temporizador Pomodoro con personajes ilustrados, voces suaves y un reloj de hojas. Mochi, Pip y Pebble están incluidos gratis. Toca a tu compañero para ver su reacción.
+
+Ajusta los tiempos de concentración y de descanso corto o largo. Desactiva cada tipo de descanso si lo prefieres. Pausa, continúa o empieza de nuevo. Activa los avisos de fin de sesión cuando los necesites.
+
+Compatible con orientación vertical y horizontal en iPhone y iPad. En iPhone Duo, el diseño se adapta al plegado: en modo de sobremesa, el compañero queda arriba y el temporizador abajo. Tu sesión continúa al cambiar de posición.
+
+Puedes silenciar las voces y conservar el texto flotante. La interfaz está disponible en nueve idiomas, incluido el español. Todos los idiomas son gratuitos.
+
+Elige más compañía con Café de medianoche, Academia de la luz de luna y Turno nocturno orbital. Cada pack opcional añade tres compañeros y sus escenarios mediante un pago único. La colección incluye los nueve compañeros de estos tres packs de lanzamiento; no incluye packs futuros.
+
+Sin cuenta, anuncios ni suscripción. El temporizador y las voces incluidas funcionan sin conexión. Las compras y su restauración requieren conexión con el App Store.
+
+supportURL
+https://tick-and-kin.theory-a.com/support/
+
+marketingURL
+https://tick-and-kin.theory-a.com/
+
+privacyPolicyURL
+https://tick-and-kin.theory-a.com/privacy/

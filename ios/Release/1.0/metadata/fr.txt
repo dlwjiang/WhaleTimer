@@ -1,0 +1,35 @@
+name
+Temps Complice
+
+subtitle
+Un peu de compagnie pour créer
+
+keywords
+pomodoro,étude,minuteur,chat,pause,travail,hors ligne,mignon,concentration
+
+promotionalText
+Concentrez-vous avec Mochi, Pip et Pebble, gratuitement. Un minuteur chaleureux, des pauses à votre rythme et trois packs optionnels. Sans abonnement.
+
+description
+Un petit coin chaleureux pour étudier, lire ou travailler.
+
+Temps Complice associe un minuteur Pomodoro à des compagnons illustrés, des voix douces et une horloge à volets. Mochi, Pip et Pebble sont inclus gratuitement. Touchez votre compagnon pour découvrir sa réaction.
+
+Réglez la durée des séances, des pauses courtes et des pauses longues. Chaque type de pause peut être désactivé. Mettez en pause, reprenez ou recommencez à votre rythme. Des rappels de fin de séance sont disponibles en option.
+
+Profitez des modes portrait et paysage sur iPhone et iPad. Sur iPhone Duo, la disposition suit le pliage : en mode posé sur une table, le compagnon apparaît en haut et le minuteur en bas. Votre séance continue lorsque la disposition change.
+
+Coupez les voix tout en gardant le texte flottant. L’interface propose neuf langues, dont le français. Toutes les langues sont gratuites.
+
+Trois packs optionnels ajoutent chacun trois compagnons et leurs décors : Café de minuit, Académie au clair de lune et Quart de nuit en orbite. Achat unique, sans abonnement. La collection regroupe les neuf compagnons de ces trois packs de lancement ; les futurs packs ne sont pas inclus.
+
+Sans compte ni publicité. Le minuteur et les voix intégrées fonctionnent hors ligne. Les achats et leur restauration nécessitent un accès à l’App Store.
+
+supportURL
+https://tick-and-kin.theory-a.com/support/
+
+marketingURL
+https://tick-and-kin.theory-a.com/
+
+privacyPolicyURL
+https://tick-and-kin.theory-a.com/privacy/

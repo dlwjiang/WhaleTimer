@@ -1,0 +1,49 @@
+name
+Tick & Kin
+
+subtitle
+A cozy Pomodoro companion
+
+keywords
+study,timer,cute,cat,desk,offline,kawaii,break,work,productivity,focus,companion
+
+promotionalText
+Make room for a little company. Focus with Mochi, Pip and Pebble for free, or find your favorites in three optional companion packs. No subscription.
+
+description
+A cozy corner for your next focus session.
+
+Tick & Kin pairs a Pomodoro timer with illustrated companions, gentle voice cues and a tactile flip clock. Study, read or work with a little company beside you.
+
+START WITH THREE FREE COMPANIONS
+Mochi, Pip and Pebble are included. Tap your companion for a little reaction, switch between them, and settle into their painted rooms.
+
+FIND YOUR RHYTHM
+Set your focus, short-break and long-break lengths. Turn either kind of break off if you prefer. Pause, resume or start over when you need to. Optional reminders let you know when a session ends.
+
+A COMPANION FOR YOUR DESK
+Use portrait or landscape on iPhone and iPad. On iPhone Duo, the layout adapts as you fold: a companion above and a timer below in tabletop mode, with room artwork arranged around the hinge. Changing the layout keeps your timer going.
+
+LITTLE VOICES, AT YOUR PACE
+Hear character voice cues or mute them and keep the floating captions. Interface and language support are always free: English, Japanese, Korean, Simplified and Traditional Chinese, Spanish, Brazilian Portuguese, French and German.
+
+CHOOSE MORE COMPANY
+Three optional, one-time purchases each add three companions and their scenes:
+• Midnight Café: Jun, Bean and Maple
+• Moonlight Academy: Luna, Atlas and Wisp
+• Orbital Night Shift: Nova, Orbit and Comet
+
+The three-pack collection includes all nine paid companions from these launch packs. Future packs are not included. Paid companions require an in-app purchase; the timer and three starter companions remain free.
+
+No account. No ads. No subscription. The timer and bundled voices work offline. Purchases and restoration require access to the App Store.
+
+A focus timer with personality—not an AI chat service or an app blocker.
+
+supportURL
+https://tick-and-kin.theory-a.com/support/
+
+marketingURL
+https://tick-and-kin.theory-a.com/
+
+privacyPolicyURL
+https://tick-and-kin.theory-a.com/privacy/

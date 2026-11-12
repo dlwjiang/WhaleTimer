@@ -75,7 +75,7 @@ common = {
     "INFOPLIST_KEY_UILaunchScreen_Generation": "YES",
     "INFOPLIST_KEY_UISupportedInterfaceOrientations": "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight",
     "ASSETCATALOG_COMPILER_APPICON_NAME": "AppIcon", "CURRENT_PROJECT_VERSION": "1",
-    "MARKETING_VERSION": "0.1.0", "CODE_SIGN_STYLE": "Automatic",
+    "MARKETING_VERSION": "1.0", "CODE_SIGN_STYLE": "Automatic",
     "SUPPORTED_PLATFORMS": "iphoneos iphonesimulator", "SUPPORTS_MACCATALYST": "NO",
     "LD_RUNPATH_SEARCH_PATHS": "$(inherited) @executable_path/Frameworks",
     "ENABLE_USER_SCRIPT_SANDBOXING": "YES",

@@ -1,0 +1,736 @@
+{
+  "images": [
+    {
+      "path": "iap-review/iap-collection-purchase.png",
+      "width": 2007,
+      "height": 2853,
+      "bytes": 6918727,
+      "colorType": 2,
+      "sha256": "56b959dd45312169fd24203280010d7287d240574d8b04f16b3f30b8d95d39e0"
+    },
+    {
+      "path": "iap-review/iap-midnightCafe-purchase.png",
+      "width": 2007,
+      "height": 2853,
+      "bytes": 3100249,
+      "colorType": 2,
+      "sha256": "afecb8cacf794f658316b455f7ac4189103be491f1f4f3a3b3116b8a19a2e92c"
+    },
+    {
+      "path": "iap-review/iap-moonlightAcademy-purchase.png",
+      "width": 2007,
+      "height": 2853,
+      "bytes": 3073248,
+      "colorType": 2,
+      "sha256": "a35752913911a691a966a1bea86f4acc70ddbb94d661a3ca6809880d7f8671f2"
+    },
+    {
+      "path": "iap-review/iap-orbitalNightShift-purchase.png",
+      "width": 2007,
+      "height": 2853,
+      "bytes": 3158577,
+      "colorType": 2,
+      "sha256": "d3da43c3cc3f300401a0883ad28f5a206a3af969b054c0216cba2fd078ee0d2b"
+    },
+    {
+      "path": "marketing/app-icon-1024.png",
+      "width": 1024,
+      "height": 1024,
+      "bytes": 928161,
+      "colorType": 2,
+      "sha256": "d5d1ed48b38ef8f4e0f135b45e8883b0a32b4df28805f66e4880533d1d68704c"
+    },
+    {
+      "path": "marketing/duo-desk-evening.png",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 2199823,
+      "colorType": 2,
+      "sha256": "8558e99752b08a0513abd059b55d7fd189d752dfb862937c117d65cebdb26810"
+    },
+    {
+      "path": "marketing/duo-desk-morning.png",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 2285282,
+      "colorType": 2,
+      "sha256": "a1ac90d0d4a1ae2dd120acd64340ff145c383190c61d37b90b8263c3f4d8f1f3"
+    },
+    {
+      "path": "marketing/launch-header.png",
+      "width": 2400,
+      "height": 1200,
+      "bytes": 1222755,
+      "colorType": 2,
+      "sha256": "414206098c5cf59f52a4431fc0e3cff255d60e82e35b6df31a59f2df939dcd0c"
+    },
+    {
+      "path": "marketing/launch-square.png",
+      "width": 1080,
+      "height": 1080,
+      "bytes": 395656,
+      "colorType": 2,
+      "sha256": "9e7d97dcbb054b7158a6f00b8ab70759fbd393c0ebb15efce4361f5d9b6beae7"
+    },
+    {
+      "path": "marketing/social-preview.png",
+      "width": 1200,
+      "height": 630,
+      "bytes": 374328,
+      "colorType": 2,
+      "sha256": "7a337884f78e6ff6ca037696e740f0488ee35b378468f0f707df7398021064cd"
+    },
+    {
+      "path": "screenshots/duo-current/01-mochi-focus.png",
+      "width": 1398,
+      "height": 2034,
+      "bytes": 5366455,
+      "colorType": 2,
+      "sha256": "7c640cf9d7f30b9865f17ae0f2c456a661c1f75a4a2c563cab0491b88f47bbcc"
+    },
+    {
+      "path": "screenshots/duo-current/02-pip-focus.png",
+      "width": 1398,
+      "height": 2034,
+      "bytes": 6029468,
+      "colorType": 2,
+      "sha256": "cf789d8f4371017686cd9cbe2c1441bb3d8c0f53fce76b19f7e4477ab361de19"
+    },
+    {
+      "path": "screenshots/duo-current/03-pebble-focus.png",
+      "width": 1398,
+      "height": 2034,
+      "bytes": 5763509,
+      "colorType": 2,
+      "sha256": "1a3363d2b7a1251479a3b5850764b5a800846ad05e5e2fefb491b8b2757c4746"
+    },
+    {
+      "path": "screenshots/duo-current/04-your-rhythm.png",
+      "width": 1398,
+      "height": 2034,
+      "bytes": 285665,
+      "colorType": 2,
+      "sha256": "e542b3490e9c56799adadf5130a586a1d9acb91a5d80d7cd4053463a71a33cd8"
+    },
+    {
+      "path": "screenshots/duo-current/05-companion-packs.png",
+      "width": 1398,
+      "height": 2034,
+      "bytes": 4365461,
+      "colorType": 2,
+      "sha256": "9fd4c6000dfa233dcef59e934fbc9eec4d05a1bf7690e3c45d32e5f0bf6ee726"
+    },
+    {
+      "path": "screenshots/duo-current/06-luna-focus.png",
+      "width": 1398,
+      "height": 2034,
+      "bytes": 5984441,
+      "colorType": 2,
+      "sha256": "d66f40f1fbbcae8623557d8395f85507ab379e101c1a3bd9dcb4915986c15991"
+    },
+    {
+      "path": "screenshots/duo-current/iap-midnightCafe.png",
+      "width": 1398,
+      "height": 2034,
+      "bytes": 3573513,
+      "colorType": 2,
+      "sha256": "b33d178382638d713c79f87891f7380a2006d1f1eae10f1cf0e04042c5e21f68"
+    },
+    {
+      "path": "screenshots/duo-current/iap-moonlightAcademy.png",
+      "width": 1398,
+      "height": 2034,
+      "bytes": 3732805,
+      "colorType": 2,
+      "sha256": "7164045f8cdca61c9fb4ffa7f335c852a0ac50d054ba24f2f6eb3a72e2e36baa"
+    },
+    {
+      "path": "screenshots/duo-current/iap-orbitalNightShift.png",
+      "width": 1398,
+      "height": 2034,
+      "bytes": 3391632,
+      "colorType": 2,
+      "sha256": "0fb9988c34aa91b5ec5d246d127e1178fe81dee3d0df5a87e589a1e98a781230"
+    },
+    {
+      "path": "screenshots/duo-inner/01-mochi-focus.png",
+      "width": 2853,
+      "height": 2007,
+      "bytes": 7809197,
+      "colorType": 2,
+      "sha256": "075d857aacc7efed502378daf93d954e40d3471041f6aa1f4d87a1385c6c709b"
+    },
+    {
+      "path": "screenshots/duo-inner/02-pip-focus.png",
+      "width": 2853,
+      "height": 2007,
+      "bytes": 8198516,
+      "colorType": 2,
+      "sha256": "e7f9fcee3b8ea0c2ea6cd21e56615dd617bd28fac0d1d00a8558d5ae2b55f4b9"
+    },
+    {
+      "path": "screenshots/duo-inner/03-pebble-focus.png",
+      "width": 2853,
+      "height": 2007,
+      "bytes": 8003666,
+      "colorType": 2,
+      "sha256": "d713e6a824767b27ee93484d78ff4086a80bc1ed540aae3cef0f59ce6a66ff50"
+    },
+    {
+      "path": "screenshots/duo-inner/04-your-rhythm.png",
+      "width": 2853,
+      "height": 2007,
+      "bytes": 377842,
+      "colorType": 2,
+      "sha256": "3aee2ab6f4eed5e81a8a018545f24f873f777886d9b0fa18f071a6a6b7ddba7a"
+    },
+    {
+      "path": "screenshots/duo-inner/05-companion-packs.png",
+      "width": 2853,
+      "height": 2007,
+      "bytes": 6723552,
+      "colorType": 2,
+      "sha256": "0df929779d6ceec5419a8e0b06edb6e2d8c95037fe22230d2e3095f3e0945fef"
+    },
+    {
+      "path": "screenshots/duo-inner/06-luna-focus.png",
+      "width": 2853,
+      "height": 2007,
+      "bytes": 8239920,
+      "colorType": 2,
+      "sha256": "f3323d48fdb28a511a317d11d7007d76d927846013ed2b0d08570916521f5cde"
+    },
+    {
+      "path": "screenshots/duo-inner/iap-midnightCafe.png",
+      "width": 2853,
+      "height": 2007,
+      "bytes": 5000297,
+      "colorType": 2,
+      "sha256": "fa0532df71a742adf904bfa3c3f7a01e3eb0b1558cb4a0346b4f298ce7ddaa64"
+    },
+    {
+      "path": "screenshots/duo-inner/iap-moonlightAcademy.png",
+      "width": 2853,
+      "height": 2007,
+      "bytes": 4960990,
+      "colorType": 2,
+      "sha256": "7b76c795bd6a478e784078fd1f8495b27f0b35a48af7ffe1dc0985280d25d1d8"
+    },
+    {
+      "path": "screenshots/duo-inner/iap-orbitalNightShift.png",
+      "width": 2853,
+      "height": 2007,
+      "bytes": 4706775,
+      "colorType": 2,
+      "sha256": "36da88711dd90773b56f734b3fe563fba20a8e7da196475c88fbeea1db0611ee"
+    },
+    {
+      "path": "screenshots/duo-tabletop/01-mochi-focus.png",
+      "width": 2007,
+      "height": 2853,
+      "bytes": 8055141,
+      "colorType": 2,
+      "sha256": "8bee22ec0b0b121aea4b70d64eeb9ab91f36832f3c4bbf76995a5a55f221c7a2"
+    },
+    {
+      "path": "screenshots/duo-tabletop/02-pip-focus.png",
+      "width": 2007,
+      "height": 2853,
+      "bytes": 8274239,
+      "colorType": 2,
+      "sha256": "9203b37c99a1d84201dbfd9188c64115d123de28222eb995c5b6e20bb6e237f1"
+    },
+    {
+      "path": "screenshots/duo-tabletop/03-pebble-focus.png",
+      "width": 2007,
+      "height": 2853,
+      "bytes": 8416354,
+      "colorType": 2,
+      "sha256": "9192a8954188655d123a2f5ba52c24d794835cf6a15fb8bbc3982d5dbb6651f5"
+    },
+    {
+      "path": "screenshots/duo-tabletop/04-your-rhythm.png",
+      "width": 2007,
+      "height": 2853,
+      "bytes": 426500,
+      "colorType": 2,
+      "sha256": "9f16ab5d39ae64286ae0212ce382a0a5e6dc39fbd70a1011216f9cbaf5b58c89"
+    },
+    {
+      "path": "screenshots/duo-tabletop/05-companion-packs.png",
+      "width": 2007,
+      "height": 2853,
+      "bytes": 9328535,
+      "colorType": 2,
+      "sha256": "fbdcd1210cde9ddb89087cb29f4060e8d7e5643f41b71a588d9f91ceb69bab4d"
+    },
+    {
+      "path": "screenshots/duo-tabletop/06-luna-focus.png",
+      "width": 2007,
+      "height": 2853,
+      "bytes": 8585472,
+      "colorType": 2,
+      "sha256": "f5c8a281a07f97bdafc77c3f5f8db4f5cdcb88db922ede6c4ff9cf8fdf47f743"
+    },
+    {
+      "path": "screenshots/duo-tabletop/iap-midnightCafe.png",
+      "width": 2007,
+      "height": 2853,
+      "bytes": 5193408,
+      "colorType": 2,
+      "sha256": "96ebff0c0dab746f8697f957a70a9fe4f4b986314c2d2a5878aecdd8190a8529"
+    },
+    {
+      "path": "screenshots/duo-tabletop/iap-moonlightAcademy.png",
+      "width": 2007,
+      "height": 2853,
+      "bytes": 5199378,
+      "colorType": 2,
+      "sha256": "8dbf5a74ed5a90006c2d396e467f773ab8b88d0cb3c1402aa0ed0f38cdd5cc23"
+    },
+    {
+      "path": "screenshots/duo-tabletop/iap-orbitalNightShift.png",
+      "width": 2007,
+      "height": 2853,
+      "bytes": 4904084,
+      "colorType": 2,
+      "sha256": "0badbea243b09f54f83aa08e697deb6ce964c39e07738d9d583cebc304ea5986"
+    },
+    {
+      "path": "screenshots/ipad-13/01-mochi-focus.png",
+      "width": 2064,
+      "height": 2752,
+      "bytes": 7260018,
+      "colorType": 2,
+      "sha256": "106c1cbe379592e21ceb698b4b2cdf8b3a472799c1788110eeef410cceac9c1f"
+    },
+    {
+      "path": "screenshots/ipad-13/02-pip-focus.png",
+      "width": 2064,
+      "height": 2752,
+      "bytes": 8079153,
+      "colorType": 2,
+      "sha256": "c6d4c42d4161775322aca790d53dc3f6e37d52b75c50d3780f6b5434a18c3472"
+    },
+    {
+      "path": "screenshots/ipad-13/03-pebble-focus.png",
+      "width": 2064,
+      "height": 2752,
+      "bytes": 7710959,
+      "colorType": 2,
+      "sha256": "b136acf5e9b34f0b3720cea8ea18b1b169c621a50b42fef8269aed639409be15"
+    },
+    {
+      "path": "screenshots/ipad-13/04-your-rhythm.png",
+      "width": 2064,
+      "height": 2752,
+      "bytes": 417573,
+      "colorType": 2,
+      "sha256": "a80aa1d2a699f219db2b8fd3739ac1d2a219966af518ee2710a479f343f20ffa"
+    },
+    {
+      "path": "screenshots/ipad-13/05-companion-packs.png",
+      "width": 2064,
+      "height": 2752,
+      "bytes": 7509899,
+      "colorType": 2,
+      "sha256": "0f8fdce4636834fce6d72827c7e7b8b5d742cb0d65b648e143277301026ed25a"
+    },
+    {
+      "path": "screenshots/ipad-13/06-luna-focus.png",
+      "width": 2064,
+      "height": 2752,
+      "bytes": 7851770,
+      "colorType": 2,
+      "sha256": "db711dfe4c1b867565cd6e237860e0bc4f26197a7e8d63a66fab1285a83129a7"
+    },
+    {
+      "path": "screenshots/ipad-13/iap-midnightCafe.png",
+      "width": 2064,
+      "height": 2752,
+      "bytes": 3865448,
+      "colorType": 2,
+      "sha256": "a014d7a1926a06c01b4d86779c7a20cb4da768a5ff0d31a6a7d29bec1ecd6e64"
+    },
+    {
+      "path": "screenshots/ipad-13/iap-moonlightAcademy.png",
+      "width": 2064,
+      "height": 2752,
+      "bytes": 3871420,
+      "colorType": 2,
+      "sha256": "bd8cf8ad307dbe97d48455e370b987049495b83655c58db9eceb1cef25be42f7"
+    },
+    {
+      "path": "screenshots/ipad-13/iap-orbitalNightShift.png",
+      "width": 2064,
+      "height": 2752,
+      "bytes": 3799962,
+      "colorType": 2,
+      "sha256": "7beb2a05f149d5491271a6fb82aa27432a592f1c8a6087e3752b3bdd68518a71"
+    },
+    {
+      "path": "screenshots/iphone-large/01-mochi-focus.png",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 4965055,
+      "colorType": 2,
+      "sha256": "bf4072506d9e8440e3b325fa79e38dc5ec8fb7e64b12a322a31423c1b063d1ca"
+    },
+    {
+      "path": "screenshots/iphone-large/02-pip-focus.png",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 5498197,
+      "colorType": 2,
+      "sha256": "a2102bf3555bcf7d4562d8a8540a2463ac65b94a143902feeedd40c868099778"
+    },
+    {
+      "path": "screenshots/iphone-large/03-pebble-focus.png",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 5287867,
+      "colorType": 2,
+      "sha256": "81d761aecd90fc40aff75dd8f90abe0afcfdf77b5e52d67c975c3904868544c1"
+    },
+    {
+      "path": "screenshots/iphone-large/04-your-rhythm.png",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 351337,
+      "colorType": 2,
+      "sha256": "7330a4da08772e940e29d27e35c2bebfdb621477d4a3d6eef9f778ff8dbfd9a4"
+    },
+    {
+      "path": "screenshots/iphone-large/05-companion-packs.png",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 7103159,
+      "colorType": 2,
+      "sha256": "494953787565c93f2cf9f8597a2853e111cb7459e0809e79ff082987a97ca85a"
+    },
+    {
+      "path": "screenshots/iphone-large/06-luna-focus.png",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 5369916,
+      "colorType": 2,
+      "sha256": "17277cfeec01a34004c6464778b866a042cb945dc34fe154b571c6ef33becc4c"
+    },
+    {
+      "path": "screenshots/iphone-large/iap-midnightCafe.png",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 4484837,
+      "colorType": 2,
+      "sha256": "0a5901f516caf431e57542930ef54980531d25004f3c71500a33122e50ad93cf"
+    },
+    {
+      "path": "screenshots/iphone-large/iap-moonlightAcademy.png",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 4652572,
+      "colorType": 2,
+      "sha256": "394384b54e8e60b4fb07935ff8c61bd2f488b48823d44064b359c8205e99724f"
+    },
+    {
+      "path": "screenshots/iphone-large/iap-orbitalNightShift.png",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 4199064,
+      "colorType": 2,
+      "sha256": "497859b034c802aa33bc1bfdede6688dde21419a4eda85383904c2297a43dcf4"
+    },
+    {
+      "path": "screenshots/iphone-medium/01-mochi-focus.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 4667747,
+      "colorType": 2,
+      "sha256": "77c7b35307ba8181ced105bdde7e4331df7ea6f7f201b16051804118742a7918"
+    },
+    {
+      "path": "screenshots/iphone-medium/02-pip-focus.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 5102014,
+      "colorType": 2,
+      "sha256": "740166d27389dfe581b2f06fbf4f6de0d041184e254b24ef7121d6fedb4be8e8"
+    },
+    {
+      "path": "screenshots/iphone-medium/03-pebble-focus.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 4918627,
+      "colorType": 2,
+      "sha256": "e913d5384da7ae22755c8540b6eb0f588bce746424f9bc5a4ca8fb3bed942c5a"
+    },
+    {
+      "path": "screenshots/iphone-medium/04-your-rhythm.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 317245,
+      "colorType": 2,
+      "sha256": "b232d325b6eb28863ec628744d51418e599c04a920ab0686cef5a6032a68f418"
+    },
+    {
+      "path": "screenshots/iphone-medium/05-companion-packs.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 5520386,
+      "colorType": 2,
+      "sha256": "6d63735942fd12a33907d10a41c012a02f48aa1185010bc294f78a88fa120d54"
+    },
+    {
+      "path": "screenshots/iphone-medium/06-luna-focus.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 4999057,
+      "colorType": 2,
+      "sha256": "c7ee5e4664389b33400435b15739192d2f6345d914b753910089a46140222401"
+    },
+    {
+      "path": "screenshots/iphone-medium/iap-midnightCafe.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 4073424,
+      "colorType": 2,
+      "sha256": "1df03547cd9a67f08058e360fe68142a49e7a64d6a37c7bf76877d8375ca30ac"
+    },
+    {
+      "path": "screenshots/iphone-medium/iap-moonlightAcademy.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 4242235,
+      "colorType": 2,
+      "sha256": "54fcecbb56260a45885afeaa3b84670208a0d7f6477983084e858b97413eee1b"
+    },
+    {
+      "path": "screenshots/iphone-medium/iap-orbitalNightShift.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 3797986,
+      "colorType": 2,
+      "sha256": "543fa0e3ce3b55b9655ec21cf0dc61f8ac2d2a94b32a8c2d28ea1edd0f6a2c84"
+    },
+    {
+      "path": "store-upload/en/duo-current/01-mochi-focus.png",
+      "width": 1398,
+      "height": 2034,
+      "bytes": 2412050,
+      "colorType": 2,
+      "sha256": "31ca02ecee2678fc2fdb46fa3b2c94908b793efc0076b37a933b6a99acc0e702"
+    },
+    {
+      "path": "store-upload/en/duo-current/02-pip-focus.png",
+      "width": 1398,
+      "height": 2034,
+      "bytes": 2582751,
+      "colorType": 2,
+      "sha256": "ee5e0cebcf9f6b81ab8a48720ba6a104054b55ca6d8658a0961f720b16f7061f"
+    },
+    {
+      "path": "store-upload/en/duo-current/04-your-rhythm.png",
+      "width": 1398,
+      "height": 2034,
+      "bytes": 329585,
+      "colorType": 2,
+      "sha256": "dca4c2d6590a592739a64217c56ac96df84ac87b90f164e43a668b67969b4f82"
+    },
+    {
+      "path": "store-upload/en/duo-current/06-luna-focus.png",
+      "width": 1398,
+      "height": 2034,
+      "bytes": 2530576,
+      "colorType": 2,
+      "sha256": "0565698a1c477ed6f0da221eac5eeafcbca1fee64785e9b9a7c0e5d43770f368"
+    },
+    {
+      "path": "store-upload/en/duo-inner/01-mochi-focus.png",
+      "width": 2853,
+      "height": 2007,
+      "bytes": 4009990,
+      "colorType": 2,
+      "sha256": "65c06a29b469e14e76ed57b64e07ae316c4c4f056108bb64adbf355a5142fd76"
+    },
+    {
+      "path": "store-upload/en/duo-inner/02-pip-focus.png",
+      "width": 2853,
+      "height": 2007,
+      "bytes": 4366765,
+      "colorType": 2,
+      "sha256": "fbdd6c44fc3df34b27adbf2a873ec783afb4c47216b38cf2de64983363eabca7"
+    },
+    {
+      "path": "store-upload/en/duo-inner/04-your-rhythm.png",
+      "width": 2853,
+      "height": 2007,
+      "bytes": 394150,
+      "colorType": 2,
+      "sha256": "b986e5d8466bdb46db5ec5f2c1d9a2b74264f6426c743c3f1293ebb33c6223d1"
+    },
+    {
+      "path": "store-upload/en/duo-inner/06-luna-focus.png",
+      "width": 2853,
+      "height": 2007,
+      "bytes": 4237983,
+      "colorType": 2,
+      "sha256": "4d26a896af6f6152f12c28bbaf0c9ea051beba4f3b15d1c3219189a516f885c6"
+    },
+    {
+      "path": "store-upload/en/duo-tabletop/01-mochi-focus.png",
+      "width": 2007,
+      "height": 2853,
+      "bytes": 4567405,
+      "colorType": 2,
+      "sha256": "39340c31c002d41d5b06c27c74c30e13768f224497ed0b560c3dabc025dfb3eb"
+    },
+    {
+      "path": "store-upload/en/duo-tabletop/02-pip-focus.png",
+      "width": 2007,
+      "height": 2853,
+      "bytes": 4906217,
+      "colorType": 2,
+      "sha256": "40cc49e1ce11c80bb28eb485c4d07cf717513ce7073c0656889b0d7a1b3cbf9d"
+    },
+    {
+      "path": "store-upload/en/duo-tabletop/04-your-rhythm.png",
+      "width": 2007,
+      "height": 2853,
+      "bytes": 474099,
+      "colorType": 2,
+      "sha256": "bcf421b1566bd7d9566ed2434dee575564974c39363d8a2b96f1e163feeac3db"
+    },
+    {
+      "path": "store-upload/en/duo-tabletop/06-luna-focus.png",
+      "width": 2007,
+      "height": 2853,
+      "bytes": 4821082,
+      "colorType": 2,
+      "sha256": "46284f61cc0da91a1e6bb63ba995fab0440fc8e3a011b92ebb275620f70a9b83"
+    },
+    {
+      "path": "store-upload/en/ipad-13/01-mochi-focus.png",
+      "width": 2064,
+      "height": 2752,
+      "bytes": 4274845,
+      "colorType": 2,
+      "sha256": "afe81011f1cb2a9b1f625f0840f39499bd8c9069d9ec622134cb64115f908d4f"
+    },
+    {
+      "path": "store-upload/en/ipad-13/02-pip-focus.png",
+      "width": 2064,
+      "height": 2752,
+      "bytes": 4710804,
+      "colorType": 2,
+      "sha256": "8999a9a9658f15459feee1e0962b8ee97f9b0158b3c10afd298e7f8e2db59c06"
+    },
+    {
+      "path": "store-upload/en/ipad-13/04-your-rhythm.png",
+      "width": 2064,
+      "height": 2752,
+      "bytes": 434064,
+      "colorType": 2,
+      "sha256": "9c25ee38953bd8be5281cd6e2765b600d63096842e3425ed56e4f854fbb2b584"
+    },
+    {
+      "path": "store-upload/en/ipad-13/06-luna-focus.png",
+      "width": 2064,
+      "height": 2752,
+      "bytes": 4489917,
+      "colorType": 2,
+      "sha256": "bf59b9fb31472f1dd60c07790a494a8536b47b0c3a4b7df7d0db8fed7456759c"
+    },
+    {
+      "path": "store-upload/en/iphone-large/01-mochi-focus.png",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 2964365,
+      "colorType": 2,
+      "sha256": "a902ad611c3d33b9227fb348feed82bab00d56d1e067a3b7cba26d4b68fb2d72"
+    },
+    {
+      "path": "store-upload/en/iphone-large/02-pip-focus.png",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 3220748,
+      "colorType": 2,
+      "sha256": "9168ef6520a98c7ef736b25f6e27c99634307d4313bf7161f6c242e46c3f81f2"
+    },
+    {
+      "path": "store-upload/en/iphone-large/04-your-rhythm.png",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 396807,
+      "colorType": 2,
+      "sha256": "c6f4848418a468c2e75678f97a32f43eb70fb46b583e17e46daa0229c331b48a"
+    },
+    {
+      "path": "store-upload/en/iphone-large/06-luna-focus.png",
+      "width": 1320,
+      "height": 2868,
+      "bytes": 3122994,
+      "colorType": 2,
+      "sha256": "ea45ecacd5fb94a7903753ccd08bcf5b8dd9d58e8abac7406943c9fe1c53b23e"
+    },
+    {
+      "path": "store-upload/en/iphone-medium/01-mochi-focus.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 2563141,
+      "colorType": 2,
+      "sha256": "cc5579f2a6907b4148f767369fe3f9d733410e8ad29b7d729d445b514dd49228"
+    },
+    {
+      "path": "store-upload/en/iphone-medium/02-pip-focus.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 2767020,
+      "colorType": 2,
+      "sha256": "76afba9a1e795893462a22580e255c10292172a3426cf26f3eb1f5c999745d0d"
+    },
+    {
+      "path": "store-upload/en/iphone-medium/04-your-rhythm.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 361896,
+      "colorType": 2,
+      "sha256": "640a710900c8c00d4c5b01e3418f2a5a4323fb40199bfe2aee713224d19f624b"
+    },
+    {
+      "path": "store-upload/en/iphone-medium/06-luna-focus.png",
+      "width": 1206,
+      "height": 2622,
+      "bytes": 2702766,
+      "colorType": 2,
+      "sha256": "a7d96b061547e8e569686e3db8850a58033a16ae5823150f24c07b2b92c48462"
+    }
+  ],
+  "preparedDisplayGroups": {
+    "iphone-medium": [
+      1206,
+      2622
+    ],
+    "iphone-large": [
+      1320,
+      2868
+    ],
+    "ipad-13": [
+      2064,
+      2752
+    ],
+    "duo-current": [
+      1398,
+      2034
+    ],
+    "duo-inner": [
+      2853,
+      2007
+    ],
+    "duo-tabletop": [
+      2007,
+      2853
+    ]
+  },
+  "captionedScreenshotCount": 24,
+  "iapReviewCount": 4
+}

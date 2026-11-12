@@ -1,0 +1,13 @@
+{
+  "version": "1.0",
+  "build": "1",
+  "bundleID": "app.banke.timer",
+  "nonExemptEncryption": false,
+  "bytesOnDiskFiles": 155176579,
+  "testBundles": [],
+  "localStoreKitFiles": [],
+  "voiceClipCount": 1248,
+  "privacyManifestBundled": true,
+  "fontLicenseBundled": true,
+  "debugTabletopArgumentInRelease": false
+}

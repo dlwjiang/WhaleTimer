@@ -1,0 +1,16 @@
+Tick & Kin is a Pomodoro timer with illustrated companions. No account, login, server connection, or demo credentials are required to use the free timer.
+
+Mochi, Pip and Pebble are included free. All nine interface languages and language support are free. Paid content is cosmetic companion artwork, voices and scenes, sold through four non-consumable StoreKit products. There are no subscriptions, external digital purchases, ads, user-generated content or AI chat.
+
+To test the timer quickly: Settings (gear) → Quick try · 1 min focus + 1 min break → Done → Start focusing. A short lead-in precedes a fresh focus session. Breaks start explicitly rather than automatically. Both short and long breaks may be disabled separately. The timer restores its deadline after backgrounding.
+
+To review purchases: Settings → Companion packs. Select Midnight Café, Moonlight Academy or Orbital Night Shift. Each pack includes three companions. Scroll down the pack detail to its purchase button. The three-pack collection appears at the bottom of the main packs page for users who own no paid pack; it includes only the three named launch packs. It is hidden after an individual pack purchase to avoid selling overlapping content. Restore purchases is on the packs page.
+
+All twelve companions and their voice recordings are bundled; no content download is required after purchase. The store needs a connection to load prices, purchase or restore. Previously verified ownership is read from StoreKit. A refund removes the affected entitlement, preserving independent purchases.
+
+On iPhone Duo, the layout responds to folding and orientation. Tabletop mode places the companion above the timer with a painted ledge aligned to the hinge. Portrait/landscape and iPad layouts share the same companion interactions. Folding does not start or reset a session.
+
+Notifications are optional local session reminders. The app does not record speech, request camera/microphone/location access, or include app analytics. Privacy, support and terms links are in Settings → Help and legal.
+
+Support: support@theory-a.com
+Privacy: https://tick-and-kin.theory-a.com/privacy/

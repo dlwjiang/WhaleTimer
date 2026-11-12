@@ -1,0 +1,89 @@
+Building for debugging...
+[1 / 5]
+Build complete! (0.40 sec)
+Test Suite 'All tests' started at 2026-11-12 16:29:20.151.
+Test Suite 'All tests' passed at 2026-11-12 16:29:20.153.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.002) seconds
+◇ Test run started.
+↳ Testing Library Version: 2084
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Test localeResolutionHonorsUserChoiceAndRegionalPreferences() started.
+◇ Test collectionIsOfferedOnlyBeforeOwningAnyPack() started.
+◇ Test fourCompletedFocusSessionsEarnLongBreak() started.
+◇ Test pauseResumePreservesTimeAcrossRelaunch() started.
+◇ Test paidCompanionSurvivesStateRoundTripWithoutChangingDeadline() started.
+◇ Test lateWakeCompletesOnlyOneFocusAndRestoresExactlyOnce() started.
+◇ Test carouselDistinguishesScrollFlickAndIncompleteDrag() started.
+◇ Test resetAndCompanionChangesNeverGrantFocusCredit() started.
+◇ Test disablingAnUnstartedBreakReturnsToFocus() started.
+◇ Test togglingBreaksPreservesActiveSessionAndUpdatesPendingChoice() started.
+◇ Test openingCountdownDoesNotSpendFocusTimeAndCannotFinishAfterCancellation() started.
+◇ Test halfSecondRefreshesAdvanceDisplayedSecondsAtRealTimeRate() started.
+◇ Test cancelledOrPartialResetNeverResets() started.
+◇ Test devicePerchesKeepSeatsRegisteredAndBothPosesInsideTheStage() started.
+◇ Test breakTogglesControlTwoCompleteCycles(short:long:) started.
+◇ Test tabletopTimerStaysFixedWhenCompanionsChange() started.
+◇ Test tabletopArtTracksHingeWithoutStretchingOrCoveringTimer() started.
+◇ Test reusedRoomArchitectureCoversTheStageWithoutStretching() started.
+◇ Test backwardsClockNeverRefillsTimer() started.
+◇ Test oldSettingsPreserveMuteAndGainSeparateAudioControls() started.
+◇ Test tabletopHeaderDoesNotExpandToFillSystemControlClearance() started.
+◇ Test completionTimestampUsesDeadlineRatherThanReopenTime() started.
+◇ Test packsPartitionPaidCompanionsAndUnknownProductsUnlockNothing() started.
+◇ Test shelfPreviewsRegisterEverySeatAtThumbnailAndPackSizes() started.
+◇ Test hingePaintedShelfAndSpriteUseTheSameLandmark() started.
+◇ Test shelfSolverFitsUnseenWindowsAndResizesContinuously() started.
+◇ Test invalidStorageAndDurationsRecover() started.
+◇ Test tabletopHeaderKeepsNarrowAndAccessibleLayoutsBelowStatusArea() started.
+◇ Test duoHeaderHandlesRightStatusRailAndNeverCrossesVerticalFold() started.
+◇ Test tabletopHeaderSharesStatusRowWithoutCoveringNativeControls() started.
+◇ Test invalidStoredSettingsRecoverToUsableDefaults() started.
+◇ Test tabletopHeaderTracksNativeControlRowRatherThanSafeAreaMidpoint() started.
+◇ Test skipLongBreakStartsAFreshCycle() started.
+◇ Test automaticShelfFramingMatchesApprovedReferenceProportions() started.
+◇ Test legacyJournalAndIntentionRestoreTimerWithoutKeepingRemovedInputs() started.
+◇ Test narrowPhonePreservesMochisSmallerOpticalProportions() started.
+◇ Test pauseOnDeadlineStillCreditsSessionThroughState() started.
+◇ Test case passing 2 arguments short → true, long → true to breakTogglesControlTwoCompleteCycles(short:long:) started.
+◇ Test case passing 2 arguments short → true, long → false to breakTogglesControlTwoCompleteCycles(short:long:) started.
+◇ Test case passing 2 arguments short → false, long → true to breakTogglesControlTwoCompleteCycles(short:long:) started.
+◇ Test case passing 2 arguments short → false, long → false to breakTogglesControlTwoCompleteCycles(short:long:) started.
+✔ Test togglingBreaksPreservesActiveSessionAndUpdatesPendingChoice() passed after 0.001 seconds.
+✔ Test disablingAnUnstartedBreakReturnsToFocus() passed after 0.001 seconds.
+✔ Test fourCompletedFocusSessionsEarnLongBreak() passed after 0.001 seconds.
+✔ Test carouselDistinguishesScrollFlickAndIncompleteDrag() passed after 0.001 seconds.
+✔ Test collectionIsOfferedOnlyBeforeOwningAnyPack() passed after 0.001 seconds.
+✔ Test cancelledOrPartialResetNeverResets() passed after 0.001 seconds.
+✔ Test tabletopTimerStaysFixedWhenCompanionsChange() passed after 0.001 seconds.
+✔ Test backwardsClockNeverRefillsTimer() passed after 0.001 seconds.
+✔ Test tabletopArtTracksHingeWithoutStretchingOrCoveringTimer() passed after 0.001 seconds.
+✔ Test paidCompanionSurvivesStateRoundTripWithoutChangingDeadline() passed after 0.001 seconds.
+✔ Test openingCountdownDoesNotSpendFocusTimeAndCannotFinishAfterCancellation() passed after 0.001 seconds.
+✔ Test localeResolutionHonorsUserChoiceAndRegionalPreferences() passed after 0.001 seconds.
+✔ Test lateWakeCompletesOnlyOneFocusAndRestoresExactlyOnce() passed after 0.001 seconds.
+✔ Test oldSettingsPreserveMuteAndGainSeparateAudioControls() passed after 0.001 seconds.
+✔ Test resetAndCompanionChangesNeverGrantFocusCredit() passed after 0.001 seconds.
+✔ Test completionTimestampUsesDeadlineRatherThanReopenTime() passed after 0.001 seconds.
+✔ Test halfSecondRefreshesAdvanceDisplayedSecondsAtRealTimeRate() passed after 0.001 seconds.
+✔ Test reusedRoomArchitectureCoversTheStageWithoutStretching() passed after 0.001 seconds.
+✔ Test packsPartitionPaidCompanionsAndUnknownProductsUnlockNothing() passed after 0.001 seconds.
+✔ Test devicePerchesKeepSeatsRegisteredAndBothPosesInsideTheStage() passed after 0.001 seconds.
+✔ Test hingePaintedShelfAndSpriteUseTheSameLandmark() passed after 0.001 seconds.
+✔ Test pauseResumePreservesTimeAcrossRelaunch() passed after 0.001 seconds.
+✔ Test tabletopHeaderSharesStatusRowWithoutCoveringNativeControls() passed after 0.001 seconds.
+✔ Test tabletopHeaderKeepsNarrowAndAccessibleLayoutsBelowStatusArea() passed after 0.001 seconds.
+✔ Test skipLongBreakStartsAFreshCycle() passed after 0.001 seconds.
+✔ Test invalidStoredSettingsRecoverToUsableDefaults() passed after 0.001 seconds.
+✔ Test tabletopHeaderTracksNativeControlRowRatherThanSafeAreaMidpoint() passed after 0.001 seconds.
+✔ Test duoHeaderHandlesRightStatusRailAndNeverCrossesVerticalFold() passed after 0.001 seconds.
+✔ Test pauseOnDeadlineStillCreditsSessionThroughState() passed after 0.001 seconds.
+✔ Test invalidStorageAndDurationsRecover() passed after 0.001 seconds.
+✔ Test narrowPhonePreservesMochisSmallerOpticalProportions() passed after 0.001 seconds.
+✔ Test tabletopHeaderDoesNotExpandToFillSystemControlClearance() passed after 0.001 seconds.
+✔ Test legacyJournalAndIntentionRestoreTimerWithoutKeepingRemovedInputs() passed after 0.001 seconds.
+✔ Test breakTogglesControlTwoCompleteCycles(short:long:) with 4 test cases passed after 0.001 seconds.
+✔ Test shelfPreviewsRegisterEverySeatAtThumbnailAndPackSizes() passed after 0.001 seconds.
+Confirmed shelf references: 96, mean size error 0.030317604202739323, max size error 0.09482758620689657, max vertical-center error 0.04320770662331963
+✔ Test automaticShelfFramingMatchesApprovedReferenceProportions() passed after 0.003 seconds.
+✔ Test shelfSolverFitsUnseenWindowsAndResizesContinuously() passed after 0.011 seconds.
+✔ Test run with 37 tests in 0 suites passed after 0.012 seconds.

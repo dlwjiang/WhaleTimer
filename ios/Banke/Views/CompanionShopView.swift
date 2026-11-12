@@ -116,7 +116,7 @@ struct CompanionShopContent: View {
     }
 }
 
-private struct PackDetailView: View {
+struct PackDetailView: View {
     let pack: CompanionPack
     @EnvironmentObject private var store: StudyStore
     @EnvironmentObject private var purchases: PurchaseStore

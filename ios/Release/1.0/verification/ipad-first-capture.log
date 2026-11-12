@@ -1,0 +1,75 @@
+Command line invocation:
+    /Applications/Xcode-27.1.0.app/Contents/Developer/usr/bin/xcodebuild -project ios/Banke.xcodeproj -scheme BankeStoreKit -destination "platform=iOS Simulator,id=9312AECE-A7A4-453B-9DBB-A7F199B315B9" -derivedDataPath /tmp/banke-shelf-release -collect-test-diagnostics never "-only-testing:BankePurchaseTests/ReleaseExperienceTests/testReleaseScreenshots" test-without-building
+
+2026-11-12 16:51:30.667 xcodebuild[44327:67012866] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-11-12 16:52:24.327568+0800 Banke[44901:67018070] [loading] Error loading /System/Library/Extensions/AppleGameControllerPersonality.kext/Contents/PlugIns/GCHIDLib.plugin/Contents/MacOS/GCHIDLib (119):  dlopen(/System/Library/Extensions/AppleGameControllerPersonality.kext/Contents/PlugIns/GCHIDLib.plugin/Contents/MacOS/GCHIDLib, 0x0106): tried: '/tmp/banke-shelf-release/Build/Products/Debug-iphonesimulator/GCHIDLib' (no such file), '/Applications/Xcode-27.1.0.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/GCHIDLib' (no such file), '/tmp/banke-shelf-release/Build/Products/Debug-iphonesimulator/GCHIDLib' (no such file), '/Applications/Xcode-27.1.0.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/GCHIDLib' (no such file), '/Library/Developer/CoreSimulator/Volumes/iOS_24A434/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/Extensions/AppleGameControllerPersonality.kext/Contents/PlugIns/GCHIDLib.plugin/Contents/MacOS/GCHIDLib' (no such file), '/System/Library/Extensions/AppleGameControllerPersonality.kext/Contents/PlugIns/GCHIDLib.plugin/Contents/MacOS/GCHIDLib' (fat file, but missing compatible architecture (have 'x86_64,arm64e,arm64e.x1', need 'arm64, arm64'))
+2026-11-12 16:52:24.328005+0800 Banke[44901:67018070] [plugin] Cannot find function pointer GCHIDLibFactory for factory <CFUUID 0x1036d6240> E071DA1B-55D5-4D29-B6BE-D47438269B7B in CFBundle/CFPlugIn 0x103495260 </System/Library/Extensions/AppleGameControllerPersonality.kext/Contents/PlugIns/GCHIDLib.plugin> (bundle, not loaded)
+2026-11-12 16:52:24.328114+0800 Banke[44901:67018070] [default] failed to create instance for plugin for <CFUUID 0x1036d6140> 7DDEECA8-A7B4-11DA-8A0E-0014519758EF
+2026-11-12 16:52:24.328194+0800 Banke[44901:67018070] [default] IOCreatePlugInInterfaceForService:0xe00002be for serviceID:0x1002684b8
+2026-11-12 16:52:24.333430+0800 Banke[44901:67018070] [loading] Error loading /System/Library/Extensions/AppleGameControllerPersonality.kext/Contents/PlugIns/GCHIDLib.plugin/Contents/MacOS/GCHIDLib (119):  dlopen(/System/Library/Extensions/AppleGameControllerPersonality.kext/Contents/PlugIns/GCHIDLib.plugin/Contents/MacOS/GCHIDLib, 0x0106): tried: '/tmp/banke-shelf-release/Build/Products/Debug-iphonesimulator/GCHIDLib' (no such file), '/Applications/Xcode-27.1.0.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/GCHIDLib' (no such file), '/tmp/banke-shelf-release/Build/Products/Debug-iphonesimulator/GCHIDLib' (no such file), '/Applications/Xcode-27.1.0.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/GCHIDLib' (no such file), '/Library/Developer/CoreSimulator/Volumes/iOS_24A434/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/Extensions/AppleGameControllerPersonality.kext/Contents/PlugIns/GCHIDLib.plugin/Contents/MacOS/GCHIDLib' (no such file), '/System/Library/Extensions/AppleGameControllerPersonality.kext/Contents/PlugIns/GCHIDLib.plugin/Contents/MacOS/GCHIDLib' (fat file, but missing compatible architecture (have 'x86_64,arm64e,arm64e.x1', need 'arm64, arm64'))
+2026-11-12 16:52:24.333796+0800 Banke[44901:67018070] [plugin] Cannot find function pointer GCHIDLibFactory for factory <CFUUID 0x1036d6240> E071DA1B-55D5-4D29-B6BE-D47438269B7B in CFBundle/CFPlugIn 0x103495260 </System/Library/Extensions/AppleGameControllerPersonality.kext/Contents/PlugIns/GCHIDLib.plugin> (bundle, not loaded)
+2026-11-12 16:52:24.333860+0800 Banke[44901:67018070] [default] failed to create instance for plugin for <CFUUID 0x1036d6140> 7DDEECA8-A7B4-11DA-8A0E-0014519758EF
+2026-11-12 16:52:24.333914+0800 Banke[44901:67018070] [default] IOCreatePlugInInterfaceForService:0xe00002be for serviceID:0x10022b99b
+IOSurfaceClientSetSurfaceNotify failed e00002c7
+2026-11-12 16:52:24.751434+0800 Banke[44901:67018070] fopen failed for data file: errno = 2 (No such file or directory)
+2026-11-12 16:52:25.048308+0800 Banke[44901:67018070] fopen failed for data file: errno = 2 (No such file or directory)
+2026-11-12 16:52:25.321683+0800 Banke[44901:67018070] [XPCErrors] non-launching port is incompatible with service identifier "com.apple.PointerUI.pointeruid.default-service"
+2026-11-12 16:52:25.330637+0800 Banke[44901:67018070] [API] cannot add handler to 0 from 0 - dropping
+2026-11-12 16:52:25.332544+0800 Banke[44901:67018070] [API] cannot add handler to 0 from 0 - dropping
+2026-11-12 16:52:25.540828+0800 Banke[44901:67018070] [loading] Error loading /System/Library/Extensions/AppleGameControllerPersonality.kext/Contents/PlugIns/GCHIDLib.plugin/Contents/MacOS/GCHIDLib (119):  dlopen(/System/Library/Extensions/AppleGameControllerPersonality.kext/Contents/PlugIns/GCHIDLib.plugin/Contents/MacOS/GCHIDLib, 0x0106): tried: '/tmp/banke-shelf-release/Build/Products/Debug-iphonesimulator/GCHIDLib' (no such file), '/Applications/Xcode-27.1.0.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/GCHIDLib' (no such file), '/tmp/banke-shelf-release/Build/Products/Debug-iphonesimulator/GCHIDLib' (no such file), '/Applications/Xcode-27.1.0.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/GCHIDLib' (no such file), '/Library/Developer/CoreSimulator/Volumes/iOS_24A434/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/Extensions/AppleGameControllerPersonality.kext/Contents/PlugIns/GCHIDLib.plugin/Contents/MacOS/GCHIDLib' (no such file), '/System/Library/Extensions/AppleGameControllerPersonality.kext/Contents/PlugIns/GCHIDLib.plugin/Contents/MacOS/GCHIDLib' (fat file, but missing compatible architecture (have 'x86_64,arm64e,arm64e.x1', need 'arm64, arm64'))
+2026-11-12 16:52:25.541171+0800 Banke[44901:67018070] [plugin] Cannot find function pointer GCHIDLibFactory for factory <CFUUID 0x1036d6240> E071DA1B-55D5-4D29-B6BE-D47438269B7B in CFBundle/CFPlugIn 0x103495260 </System/Library/Extensions/AppleGameControllerPersonality.kext/Contents/PlugIns/GCHIDLib.plugin> (bundle, not loaded)
+2026-11-12 16:52:25.541223+0800 Banke[44901:67018070] [default] failed to create instance for plugin for <CFUUID 0x1036d6140> 7DDEECA8-A7B4-11DA-8A0E-0014519758EF
+2026-11-12 16:52:25.541378+0800 Banke[44901:67018070] [default] IOCreatePlugInInterfaceForService:0xe00002be for serviceID:0x1002684b8
+2026-11-12 16:52:25.553063+0800 Banke[44901:67018070] [loading] Error loading /System/Library/Extensions/AppleGameControllerPersonality.kext/Contents/PlugIns/GCHIDLib.plugin/Contents/MacOS/GCHIDLib (119):  dlopen(/System/Library/Extensions/AppleGameControllerPersonality.kext/Contents/PlugIns/GCHIDLib.plugin/Contents/MacOS/GCHIDLib, 0x0106): tried: '/tmp/banke-shelf-release/Build/Products/Debug-iphonesimulator/GCHIDLib' (no such file), '/Applications/Xcode-27.1.0.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/GCHIDLib' (no such file), '/tmp/banke-shelf-release/Build/Products/Debug-iphonesimulator/GCHIDLib' (no such file), '/Applications/Xcode-27.1.0.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/GCHIDLib' (no such file), '/Library/Developer/CoreSimulator/Volumes/iOS_24A434/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.0.simruntime/Contents/Resources/RuntimeRoot/System/Library/Extensions/AppleGameControllerPersonality.kext/Contents/PlugIns/GCHIDLib.plugin/Contents/MacOS/GCHIDLib' (no such file), '/System/Library/Extensions/AppleGameControllerPersonality.kext/Contents/PlugIns/GCHIDLib.plugin/Contents/MacOS/GCHIDLib' (fat file, but missing compatible architecture (have 'x86_64,arm64e,arm64e.x1', need 'arm64, arm64'))
+2026-11-12 16:52:25.553511+0800 Banke[44901:67018070] [plugin] Cannot find function pointer GCHIDLibFactory for factory <CFUUID 0x1036d6240> E071DA1B-55D5-4D29-B6BE-D47438269B7B in CFBundle/CFPlugIn 0x103495260 </System/Library/Extensions/AppleGameControllerPersonality.kext/Contents/PlugIns/GCHIDLib.plugin> (bundle, not loaded)
+2026-11-12 16:52:25.553604+0800 Banke[44901:67018070] [default] failed to create instance for plugin for <CFUUID 0x1036d6140> 7DDEECA8-A7B4-11DA-8A0E-0014519758EF
+2026-11-12 16:52:25.553681+0800 Banke[44901:67018070] [default] IOCreatePlugInInterfaceForService:0xe00002be for serviceID:0x10022b99b
+Test Suite 'Selected tests' started at 2026-11-12 16:52:25.850.
+Test Suite 'BankePurchaseTests.xctest' started at 2026-11-12 16:52:25.851.
+Test Suite 'ReleaseExperienceTests' started at 2026-11-12 16:52:25.851.
+Test Case '-[BankePurchaseTests.ReleaseExperienceTests testReleaseScreenshots]' started.
+2026-11-12 16:53:08.286734+0800 Banke[44901:67018070] [API] cannot add handler to 0 from 0 - dropping
+RELEASE_CAPTURE 01-mochi-focus 2064.0x2752.0
+2026-11-12 16:53:09.704980+0800 Banke[44901:67018070] [API] cannot add handler to 0 from 0 - dropping
+RELEASE_CAPTURE 02-pip-focus 2064.0x2752.0
+2026-11-12 16:53:11.149752+0800 Banke[44901:67018070] [API] cannot add handler to 0 from 0 - dropping
+RELEASE_CAPTURE 03-pebble-focus 2064.0x2752.0
+2026-11-12 16:53:13.099966+0800 Banke[44901:67018070] [API] cannot add handler to 0 from 0 - dropping
+RELEASE_CAPTURE 04-your-rhythm 2064.0x2752.0
+2026-11-12 16:53:13.856381+0800 Banke[44901:67018070] [API] cannot add handler to 0 from 0 - dropping
+RELEASE_CAPTURE 05-companion-packs 2064.0x2752.0
+2026-11-12 16:53:15.018193+0800 Banke[44901:67018070] [API] cannot add handler to 0 from 0 - dropping
+RELEASE_CAPTURE iap-midnightCafe 2064.0x2752.0
+2026-11-12 16:53:16.234160+0800 Banke[44901:67018070] [API] cannot add handler to 0 from 0 - dropping
+RELEASE_CAPTURE iap-moonlightAcademy 2064.0x2752.0
+2026-11-12 16:53:17.441917+0800 Banke[44901:67018070] [API] cannot add handler to 0 from 0 - dropping
+RELEASE_CAPTURE iap-orbitalNightShift 2064.0x2752.0
+/Users/davidjiang/Documents/GitHub/whaleTimer/ios/PurchaseTests/ReleaseExperienceTests.swift:338: error: -[BankePurchaseTests.ReleaseExperienceTests testReleaseScreenshots] : XCTAssertTrue failed
+/Users/davidjiang/Documents/GitHub/whaleTimer/ios/PurchaseTests/ReleaseExperienceTests.swift:340: error: -[BankePurchaseTests.ReleaseExperienceTests testReleaseScreenshots] : XCTAssertEqual failed: ("pebble") is not equal to ("luna")
+2026-11-12 16:53:18.994246+0800 Banke[44901:67018070] [API] cannot add handler to 0 from 0 - dropping
+RELEASE_CAPTURE 06-luna-focus 2064.0x2752.0
+RELEASE_CAPTURE_DIRECTORY /Users/davidjiang/Library/Developer/CoreSimulator/Devices/9312AECE-A7A4-453B-9DBB-A7F199B315B9/data/Containers/Data/Application/BF592B93-7712-416D-9602-3A8CEC34D71C/tmp/ReleaseScreenshots
+Test Case '-[BankePurchaseTests.ReleaseExperienceTests testReleaseScreenshots]' failed (54.551 seconds).
+Test Suite 'ReleaseExperienceTests' failed at 2026-11-12 16:53:20.405.
+	 Executed 1 test, with 2 failures (0 unexpected) in 54.551 (54.553) seconds
+Test Suite 'BankePurchaseTests.xctest' failed at 2026-11-12 16:53:20.405.
+	 Executed 1 test, with 2 failures (0 unexpected) in 54.551 (54.554) seconds
+Test Suite 'Selected tests' failed at 2026-11-12 16:53:20.405.
+	 Executed 1 test, with 2 failures (0 unexpected) in 54.551 (54.555) seconds
+2026-11-12 16:53:20.508 xcodebuild[44327:67012866] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-11-12 16:53:20.509 xcodebuild[44327:67012866] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-11-12 16:53:20.512 xcodebuild[44327:67012866] [MT] IDESchemeActionSDKRecord: operatingSystemBuild = <DVTBuildVersion 24A94232>, error = invalidDigitCount(94232).
+2026-11-12 16:53:20.790 xcodebuild[44327:67012866] [MT] IDETestOperationsObserverDebug: 114.369 elapsed -- Testing started completed.
+2026-11-12 16:53:20.790 xcodebuild[44327:67012866] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-11-12 16:53:20.790 xcodebuild[44327:67012866] [MT] IDETestOperationsObserverDebug: 114.369 sec, +114.369 sec -- end
+
+Test session results, code coverage, and logs:
+	/tmp/banke-shelf-release/Logs/Test/Test-BankeStoreKit-2026.11.12_16-51-26-+0800.xcresult
+
+Failing tests:
+	ReleaseExperienceTests.testReleaseScreenshots()
+	ReleaseExperienceTests.testReleaseScreenshots()
+
+** TEST EXECUTE FAILED **
+
+Testing started

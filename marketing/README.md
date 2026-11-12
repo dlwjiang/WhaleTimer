@@ -2,7 +2,7 @@
 
 A standalone Vite 8 site for `https://tick-and-kin.theory-a.com`. It has its own dependencies, lockfile, assets, and build output. It does not change the existing web timer or iOS app.
 
-The site uses warm paper colors, the app’s actual painted rooms and companions, a working flip-clock Pomodoro timer, and locally hosted typography. A small JavaScript module runs the homepage timer and saves its session in browser local storage. There is no analytics, cookie storage, contact form backend, or remote font dependency. Navigation, FAQ disclosures, legal content, and email links work without JavaScript; the timer shows an enable-JavaScript message when scripting is disabled.
+The site uses warm paper colors, the app’s actual painted rooms and companions, a working flip-clock Pomodoro timer, and locally hosted typography. A small JavaScript module runs the homepage timer and saves its session in browser local storage. Vercel Web Analytics measures page views across the site. There is no advertising, contact form backend, or remote font dependency. Navigation, FAQ disclosures, legal content, and email links work without JavaScript; the timer shows an enable-JavaScript message when scripting is disabled.
 
 ## Run or build
 
@@ -32,7 +32,7 @@ The homepage timer supports start, pause, resume, reset, explicit focus/break tr
 
 `src/lib/timer.js` and `src/lib/flip-clock.js` are unchanged copies of the repository's existing `src/timer.js` and `src/flip-clock.js`. They are intentionally included here so this folder remains independently deployable. `src/timer.css` adapts the existing split-flap stylesheet to the marketing palette without its paper-texture dependency. When updating the original modules, review and update these copies together.
 
-`src/pomodoro.js` adapts the engine's single countdown to alternating focus and break sessions; the original engine's grace/overtime behavior is not a Pomodoro break. `src/web-timer.js` binds the accessible controls and saves state under `tick-and-kin.web-pomodoro.v1`. Elapsed time comes from the engine's clock, not the number of interval callbacks. Refreshes and suspended tabs catch up to the current session, but never automatically start the next one. Storage failures fall back to an in-memory timer. There is no network sync, analytics, or service worker; loading or reloading the site requires a connection.
+`src/pomodoro.js` adapts the engine's single countdown to alternating focus and break sessions; the original engine's grace/overtime behavior is not a Pomodoro break. `src/web-timer.js` binds the accessible controls and saves state under `tick-and-kin.web-pomodoro.v1`. Elapsed time comes from the engine's clock, not the number of interval callbacks. Refreshes and suspended tabs catch up to the current session, but never automatically start the next one. Storage failures fall back to an in-memory timer. Timer state is not sent to analytics. There is no network sync or service worker; loading or reloading the site requires a connection.
 
 ## Deployment
 
@@ -52,6 +52,14 @@ Use static directory-index routing: `/privacy/` serves `privacy/index.html`, and
 
 The production origin is already configured. Add the DNS record your chosen host provides; the site itself does not change DNS or provision hosting. After connecting the domain, verify each URL below responds publicly over HTTPS, including in a signed-out browser. Submit `/sitemap.xml` to search tools when ready.
 
+## Vercel Web Analytics
+
+`src/analytics.js` initializes `@vercel/analytics` on every page, including support, legal pages, and the 404 page. The homepage imports it alongside the timer; other pages load only the analytics entry. Vercel handles automatic page views. No custom timer events or local-storage contents are sent.
+
+Development uses the SDK's development mode; production builds use production mode. Web Analytics has been enabled in the Vercel dashboard by the owner. Redeploy this folder after installing the SDK so Vercel can serve its analytics routes. Visit the deployed homepage and a support/legal page, then confirm those visits appear in the project's Analytics dashboard. Collection on a deployed Vercel site has not been verified locally; no preview server was started.
+
+References: [Vercel quickstart](https://vercel.com/docs/analytics/quickstart), [SDK options](https://vercel.com/docs/analytics/package), [analytics privacy](https://vercel.com/docs/analytics/privacy-policy). The native app's no-analytics statement remains separate from website analytics.
+
 ## App Store URLs
 
 | App Store field/use | URL |
@@ -66,7 +74,7 @@ Publisher: **Wei Jiang**. Support: **support@theory-a.com**. These values were p
 
 There is no App Store listing URL yet, so the site says “Coming soon” and does not invent a download link, App Store badge, reviews, or ratings. Set `appStoreUrl` to the real `https://apps.apple.com/...` URL and rebuild when the listing is live; the download links and structured data update together.
 
-The privacy content follows the current native implementation: local UserDefaults storage, no accounts or app analytics, optional local notifications, and StoreKit purchases. It separately explains web-timer local storage, website delivery logs, and support email. Verify that it still matches the shipping app and the selected host/email practices when deploying. The terms link Apple’s Standard EULA rather than presenting this website page as a custom replacement license. Keep the app’s own privacy link and App Store Connect privacy answers consistent; this change only creates the website.
+The privacy content follows the current native implementation: local UserDefaults storage, no accounts or app analytics, optional local notifications, and StoreKit purchases. It separately explains web-timer local storage, Vercel Web Analytics, website delivery logs, and support email. Verify that it still matches the shipping app and the selected host/email practices when deploying. The terms link Apple’s Standard EULA rather than presenting this website page as a custom replacement license. Keep the app’s own privacy link and App Store Connect privacy answers consistent; this change only creates the website.
 
 Apple requires publicly accessible support/contact and privacy information; creating these pages alone does not constitute App Review approval. References: [App Review](https://developer.apple.com/app-store/review/), [Review Guidelines](https://developer.apple.com/app-store/review/guidelines/), [Apple Standard EULA](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/), [seller identity](https://developer.apple.com/help/account/membership/program-enrollment).
 
@@ -113,7 +121,7 @@ After deployment and the App Store release:
 
 `npm test` covers focus/break transitions, pause/resume/reset, long background delays, reload recovery, clock corrections, invalid saved data, duration validation, actual homepage controls in jsdom, tab titles, reduced motion, accessible announcements, and unavailable browser storage. jsdom is a development-only dependency, not part of the shipped bundle.
 
-`npm run build` validates all five HTML documents, local links and fragments, page titles, canonical URLs, JSON-LD, image attributes, CSS asset paths, sitemap coverage, absence of placeholder content, social-image dimensions, and main-image size budgets. It checks that only the homepage loads the timer JavaScript. These checks do not claim browser visual QA, deployed HTTP status verification, indexing, or App Store approval.
+`npm run build` validates all five HTML documents, local links and fragments, page titles, canonical URLs, JSON-LD, image attributes, CSS asset paths, sitemap coverage, absence of placeholder content, social-image dimensions, and main-image size budgets. It checks that every page has a JavaScript entry point for analytics; the timer remains in the homepage bundle. These checks do not claim browser visual QA, deployed HTTP status verification, indexing, or App Store approval.
 
 The WebP files are compressed copies of existing `ios/Banke/Assets.xcassets/duo-room-*` and `duo-sprite-*` images. The gallery shows all twelve companions grouped into the three included characters and the three optional packs. Each uses its matching room; the paid companions are aligned to the painted ledge, including Wisp’s narrower sprite. Full two-frame sprites are preserved; CSS shows only the idle half. The icon and touch icon reuse `public/brand/` assets. Manrope Bold is copied from the iOS font bundle; its SIL Open Font License ships beside it. All required files are inside this folder, so it can be deployed or moved independently.
 

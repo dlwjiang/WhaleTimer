@@ -1,5 +1,7 @@
 # Tick & Kin for iPhone, iPad, and iPhone Duo
 
+**v1.0 release handoff:** [asset gallery](Release/1.0/index.html), [submission checklist](Release/1.0/SUBMISSION.md), and [current audit](Release/1.0/AUDIT.md). Local release checks are complete; Apple account/product setup, signing and the owner’s TestFlight/hardware checks remain. Older verification notes describe earlier builds.
+
 A native, offline SwiftUI companion Pomodoro app inspired by the web timer. The free starter set is **Mochi**, a cream desk cat, **Pip**, a botanical apprentice, and **Pebble**, a gentle river otter. This is an independent iOS target; the web app is unchanged.
 
 ## Localized app names

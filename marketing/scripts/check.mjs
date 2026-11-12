@@ -37,8 +37,8 @@ for (const page of pages) {
     }
   }
   if (page.noindex) assert(html.includes('noindex, follow'));
-  assert.equal((html.match(/<script\b[^>]*\btype="module"/g) || []).length, page.kind === 'home' ? 1 : 0,
-    `${page.path}: only the homepage should load the interactive timer`);
+  assert.equal((html.match(/<script\b[^>]*\btype="module"/g) || []).length, 1,
+    `${page.path}: every page should load its analytics entry point`);
 }
 const home = htmlByPath.get('/');
 const faqSchema = JSON.parse(home.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/)[1])['@graph'].find((n) => n['@type'] === 'FAQPage');

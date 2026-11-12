@@ -1,0 +1,41 @@
+{
+  "scope": "Optimized Release build, iPhone 18 Pro simulator, ready timer; host ps sampling, no physical-device/battery claim",
+  "durationSeconds": 21,
+  "samples": [
+    {
+      "elapsedSeconds": 3,
+      "cpuPercent": 96.1,
+      "residentMiB": 318.41
+    },
+    {
+      "elapsedSeconds": 6,
+      "cpuPercent": 0.0,
+      "residentMiB": 318.44
+    },
+    {
+      "elapsedSeconds": 9,
+      "cpuPercent": 0.0,
+      "residentMiB": 312.08
+    },
+    {
+      "elapsedSeconds": 12,
+      "cpuPercent": 0.0,
+      "residentMiB": 312.08
+    },
+    {
+      "elapsedSeconds": 15,
+      "cpuPercent": 0.0,
+      "residentMiB": 312.03
+    },
+    {
+      "elapsedSeconds": 18,
+      "cpuPercent": 0.0,
+      "residentMiB": 312.03
+    },
+    {
+      "elapsedSeconds": 21,
+      "cpuPercent": 0.0,
+      "residentMiB": 311.94
+    }
+  ]
+}

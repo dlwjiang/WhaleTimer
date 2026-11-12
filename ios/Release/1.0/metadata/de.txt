@@ -1,0 +1,35 @@
+name
+Taktfreunde
+
+subtitle
+Dein gemütlicher Fokustimer
+
+keywords
+pomodoro,lernen,timer,katze,pause,arbeit,offline,niedlich,konzentration
+
+promotionalText
+Konzentriere dich mit Mochi, Pip und Pebble – kostenlos. Ein gemütlicher Timer, flexible Pausen und drei optionale Begleiterpakete. Ohne Abo.
+
+description
+Ein gemütlicher Platz zum Lernen, Lesen und Arbeiten.
+
+Taktfreunde verbindet einen Pomodoro-Timer mit illustrierten Begleitern, sanften Stimmen und einer Klappzahlen-Uhr. Mochi, Pip und Pebble sind kostenlos dabei. Tippe deinen Begleiter an und entdecke seine Reaktion.
+
+Bestimme die Länge deiner Fokusphasen, kurzen und langen Pausen. Beide Pausenarten lassen sich einzeln ausschalten. Pausiere, mache weiter oder starte neu. Auf Wunsch erinnert dich die App an das Ende einer Sitzung.
+
+Für Hoch- und Querformat auf iPhone und iPad. Auf dem iPhone Duo passt sich die Anordnung dem Faltwinkel an: Im Tischmodus sitzt der Begleiter oben, der Timer unten. Deine Sitzung läuft beim Wechsel weiter.
+
+Schalte die Stimmen stumm und behalte die schwebenden Texte. Die Oberfläche bietet neun Sprachen, darunter Deutsch. Alle Sprachfunktionen sind kostenlos.
+
+Drei optionale Pakete bringen jeweils drei weitere Begleiter und ihre Kulissen: Mitternachtscafé, Mondlicht-Akademie und Nachtschicht im Orbit. Jedes Paket ist ein einmaliger Kauf. Die Sammlung enthält die neun kostenpflichtigen Begleiter aus diesen drei Startpaketen; zukünftige Pakete sind nicht enthalten.
+
+Kein Konto, keine Werbung, kein Abo. Timer und mitgelieferte Stimmen funktionieren offline. Käufe und Wiederherstellung benötigen eine Verbindung zum App Store.
+
+supportURL
+https://tick-and-kin.theory-a.com/support/
+
+marketingURL
+https://tick-and-kin.theory-a.com/
+
+privacyPolicyURL
+https://tick-and-kin.theory-a.com/privacy/

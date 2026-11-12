@@ -1,0 +1,35 @@
+name
+Tempo & Companhia
+
+subtitle
+Companhia para se concentrar
+
+keywords
+pomodoro,estudo,timer,gato,pausa,trabalho,offline,fofo,concentração
+
+promotionalText
+Concentre-se com Mochi, Pip e Pebble de graça. Um timer aconchegante, pausas do seu jeito e três pacotes opcionais de companheiros. Sem assinatura.
+
+description
+Um cantinho aconchegante para estudar, ler ou trabalhar.
+
+Tempo & Companhia combina um timer Pomodoro com personagens ilustrados, vozes suaves e um relógio de abas. Mochi, Pip e Pebble estão incluídos gratuitamente. Toque no seu companheiro para ver sua reação.
+
+Ajuste os tempos de foco, pausa curta e pausa longa. Você pode desativar cada tipo de pausa. Pause, continue ou recomece quando precisar, com lembretes opcionais de fim de sessão.
+
+Use na vertical ou na horizontal no iPhone e no iPad. No iPhone Duo, o layout acompanha a dobra: no modo de mesa, o companheiro fica em cima e o timer embaixo. A sessão continua ao mudar de posição.
+
+Desative as vozes sem perder o texto flutuante. A interface está disponível em nove idiomas, incluindo português do Brasil. Todo o suporte a idiomas é gratuito.
+
+Conheça mais amigos nos pacotes Café da Meia-Noite, Academia do Luar e Turno Noturno Orbital. Cada pacote opcional inclui três companheiros e cenários, em uma compra única. A coleção reúne os nove companheiros dos três pacotes de lançamento; pacotes futuros não estão incluídos.
+
+Sem conta, anúncios ou assinatura. O timer e as vozes incluídas funcionam offline. Compras e restauração precisam de acesso à App Store.
+
+supportURL
+https://tick-and-kin.theory-a.com/support/
+
+marketingURL
+https://tick-and-kin.theory-a.com/
+
+privacyPolicyURL
+https://tick-and-kin.theory-a.com/privacy/

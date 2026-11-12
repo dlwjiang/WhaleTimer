@@ -1,3 +1,4 @@
+import './analytics.js';
 import { mountTimer } from './web-timer.js';
 
 const root = document.querySelector('[data-web-timer]');

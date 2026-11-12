@@ -285,6 +285,78 @@ final class ReleaseExperienceTests: XCTestCase {
         try await captureDeviceRoomVisualReview(companions: [.mochi, .pip, .pebble], purchases: PurchaseStore())
     }
 
+    /// Opt-in marketing capture, never part of the shipping app or an ownership bypass.
+    /// Uses actual window geometry and production views. Each run captures one device/posture.
+    func testReleaseScreenshots() async throws {
+        let purchases = PurchaseStore()
+        let config = try XCTUnwrap(Bundle(for: Self.self).url(forResource: "Companions", withExtension: "storekit"))
+        let commerce = try SKTestSession(contentsOf: config)
+        commerce.resetToDefaultState(); commerce.clearTransactions(); commerce.disableDialogs = true
+        defer { commerce.clearTransactions(); commerce.resetToDefaultState() }
+        await purchases.start()
+        let scene = try XCTUnwrap(UIApplication.shared.connectedScenes.compactMap { $0 as? UIWindowScene }.first)
+        let previousWindow = scene.windows.first { $0.isKeyWindow }
+        let window = UIWindow(windowScene: scene)
+        let directory = FileManager.default.temporaryDirectory.appendingPathComponent("ReleaseScreenshots")
+        try FileManager.default.createDirectory(at: directory, withIntermediateDirectories: true)
+        let suite = "BankeReleaseScreenshots"
+        let defaults = try XCTUnwrap(UserDefaults(suiteName: suite))
+        defaults.removePersistentDomain(forName: suite)
+        let study = StudyStore(purchases: purchases, defaults: defaults)
+        var settings = study.state.settings; settings.soundEnabled = false; study.updateSettings(settings)
+        defer {
+            study.background(); window.isHidden = true; previousWindow?.makeKey()
+            defaults.removePersistentDomain(forName: suite)
+        }
+        func capture<V: View>(_ name: String, _ view: V, bottom: Bool = false) async throws {
+            let host = UIHostingController(rootView: view
+                .environmentObject(study).environmentObject(study.audio).environmentObject(purchases)
+                .environment(\.locale, Locale(identifier: "en")))
+            window.rootViewController = host
+            window.makeKeyAndVisible()
+            try await Task.sleep(for: .milliseconds(700))
+            host.view.layoutIfNeeded()
+            if bottom {
+                func scrollView(in view: UIView) -> UIScrollView? {
+                    if let scroll = view as? UIScrollView, scroll.contentSize.height > scroll.bounds.height { return scroll }
+                    return view.subviews.lazy.compactMap { scrollView(in: $0) }.first
+                }
+                let scroll = try XCTUnwrap(scrollView(in: host.view))
+                scroll.setContentOffset(CGPoint(x: 0, y: max(0, scroll.contentSize.height - scroll.bounds.height + scroll.adjustedContentInset.bottom)), animated: false)
+                try await Task.sleep(for: .milliseconds(300))
+            }
+            let format = UIGraphicsImageRendererFormat(); format.opaque = true
+            let image = UIGraphicsImageRenderer(bounds: window.bounds, format: format).image { _ in
+                window.drawHierarchy(in: window.bounds, afterScreenUpdates: true)
+            }
+            try XCTUnwrap(image.pngData()).write(to: directory.appendingPathComponent(name + ".png"))
+            print("RELEASE_CAPTURE \(name) \(image.size.width * image.scale)x\(image.size.height * image.scale)")
+        }
+        try await capture("01-mochi-focus", StudyView())
+        study.select(.pip)
+        try await capture("02-pip-focus", StudyView())
+        study.select(.pebble)
+        try await capture("03-pebble-focus", StudyView())
+        try await capture("04-your-rhythm", SettingsView())
+        try await capture("05-companion-packs", CompanionShopView())
+        try await capture("iap-collection-purchase", CompanionShopView(), bottom: true)
+        for pack in CompanionPack.allCases {
+            try await capture("iap-\(pack.rawValue)", NavigationStack { PackDetailView(pack: pack) })
+            try await capture("iap-\(pack.rawValue)-purchase", NavigationStack { PackDetailView(pack: pack) }, bottom: true)
+        }
+        // This real local StoreKit purchase also proves premium artwork is reachable.
+        await purchases.purchase(CompanionPack.collectionProductID)
+        guard purchases.ownedProductIDs.contains(CompanionPack.collectionProductID) else {
+            XCTFail("Capture purchase failed: \(purchases.message ?? "No StoreKit message"); products=\(purchases.products.count)")
+            print("RELEASE_CAPTURE_DIRECTORY \(directory.path)")
+            return
+        }
+        study.select(.luna)
+        XCTAssertEqual(study.companion, .luna)
+        try await capture("06-luna-focus", StudyView())
+        print("RELEASE_CAPTURE_DIRECTORY \(directory.path)")
+    }
+
     private func captureDeviceRoomVisualReview(companions: [Companion], purchases: PurchaseStore) async throws {
         let suite = "BankeDeviceRoomReview"
         let defaults = try XCTUnwrap(UserDefaults(suiteName: suite))

@@ -1,0 +1,24 @@
+TITLE
+A little desk companion, built around the fold
+
+SHORT PITCH
+Tick & Kin turns iPhone Duo’s tabletop posture into a cozy place to focus: an illustrated companion sits on a painted ledge at the hinge, with a tactile Pomodoro clock below. Open, fold or rotate the device and the session keeps its place.
+
+WHAT IS DISTINCTIVE
+The fold is part of the scene composition. The character’s seat and the room’s ledge meet at the hinge, while the timer and controls remain in the lower pane. In other postures and on iPhone/iPad, the same companions and interactions adapt to the available space. It is a practical desk use for Duo: visible company and an easy-to-read timer while a person studies, reads or works nearby.
+
+The app’s focus is deliberately small: a deadline-based Pomodoro timer, adjustable or optional breaks, soft prerecorded character cues and painted rooms. It runs offline without an app account, advertising, or a subscription. Three companions and all language support are free. Three optional one-time packs add café, academy and orbital companions. The collection contains those launch packs only.
+
+LOCALIZATION AND ACCESS
+Nine interface languages: English, Japanese, Korean, Simplified and Traditional Chinese, Spanish, Brazilian Portuguese, French and German. Voice cues follow the selected language. Captions remain available when muted. The app responds to Dynamic Type and Reduce Motion. Formal accessibility label claims await the owner's device evaluation.
+
+REVIEW MATERIALS
+Use the signed TestFlight build once available, the actual Duo tabletop and landscape screenshots, and the supplied device-independent app screenshots. The two desk images are clearly labeled promotional visualizations. A short real-device clip demonstrating a running session through a fold would strengthen this nomination; no physical-device footage has been claimed or fabricated.
+
+OWNER FIELDS TO COMPLETE
+App Store app ID, TestFlight link, intended launch date, distribution territories, private contact phone, and any requested editorial templates. These are unavailable until the account/app setup is complete.
+
+TIMING
+Prepare this nomination after a reviewable build is in App Store Connect. Allow several weeks before the planned launch if you want editorial consideration. Featuring is discretionary, not part of App Review approval.
+
+Reference: https://developer.apple.com/app-store/featuring/

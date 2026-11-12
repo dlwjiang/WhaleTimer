@@ -80,6 +80,11 @@ struct SettingsView: View {
                     Text("Your timer stays on this device. No account or ads. Purchases use the App Store.")
                     Text("On iPhone Duo, folding changes the layout, never the timer.")
                 } header: { Text("Made for your study corner") }
+                Section("Help and legal") {
+                    Link(L10n.text("Support"), destination: URL(string: "https://tick-and-kin.theory-a.com/support/")!)
+                    Link(L10n.text("Privacy policy"), destination: URL(string: "https://tick-and-kin.theory-a.com/privacy/")!)
+                    Link(L10n.text("Terms of use"), destination: URL(string: "https://tick-and-kin.theory-a.com/terms/")!)
+                }
             }
             .navigationTitle(L10n.text("Your rhythm"))
             .toolbar { ToolbarItem(placement: .confirmationAction) { Button("Done") { dismiss() } } }
