@@ -190,8 +190,8 @@ import Testing
                  CGSize(width: 760, height: 600)] {
         let ledge = size.height * 0.72
         for companion in Companion.allCases {
-            let frame = CompanionArtworkLayout.perched(y: ledge)
-                .frame(companion: companion, width: size.width, height: size.height)
+            let frame = ShelfComposition(viewport: size, stage: size, shelfY: ledge,
+                minimumY: 24, maximumY: size.height - 8).frame(companion: companion)
             #expect(abs(frame.minY + frame.height * CompanionSpriteRegistration(companion).seat - ledge) < 0.001)
             for poked in [false, true] {
                 let bounds = DeviceRoomSprite.bounds(companion: companion, poked: poked)
@@ -242,30 +242,111 @@ import Testing
     }
 }
 
-@Test func duoTuningSeparatesOuterAndInnerDisplays() {
-    #expect(DuoTuningLayout.resolve(size: CGSize(width: 466, height: 900), division: nil) == .frontPortrait)
-    #expect(DuoTuningLayout.resolve(size: CGSize(width: 900, height: 466), division: nil) == .frontLandscape)
-    #expect(DuoTuningLayout.resolve(size: CGSize(width: 1100, height: 760),
-        division: CGRect(x: 545, y: 0, width: 10, height: 760)) == .unfoldedLandscape)
-    #expect(DuoTuningLayout.resolve(size: CGSize(width: 760, height: 1100),
-        division: CGRect(x: 0, y: 545, width: 760, height: 10)) == nil)
-    #expect(DuoTuningLayout.resolve(size: CGSize(width: 900, height: 466),
-        division: CGRect(x: 1000, y: 0, width: 10, height: 466)) == .frontLandscape)
+struct ShelfReferenceFile: Decodable {
+    struct Reference: Decodable {
+        let scenario: String
+        let companion: String
+        let viewport: [Double]
+        let stage: [Double]
+        let shelfY: Double
+        let minimumY: Double
+        let referenceFrame: [Double]
+        let kind: String
+        let confirmed: Bool
+    }
+    let references: [Reference]
 }
 
-@Test func duoTuningKeepsSeatAnchorAndExportsIndependentValues() throws {
-    let base = CGRect(x: 50, y: 30, width: 200, height: 300)
-    let pane = CGSize(width: 400, height: 500)
-    let adjustment = DuoFramingAdjustment(scaleMultiplier: 0.7, offsetXFraction: 0.1, offsetYFraction: -0.05)
-    let adjusted = adjustment.apply(to: base, seat: 0.75, pane: pane)
-    #expect(abs(adjusted.midX - base.midX - 40) < 0.001)
-    #expect(abs(adjusted.minY + adjusted.height * 0.75 - (base.minY + base.height * 0.75) + 25) < 0.001)
-    #expect(DuoFramingAdjustment().apply(to: base, seat: 0.75, pane: pane) == base)
-    var draft = DuoFramingDraft()
-    draft.set(adjustment, companion: .mochi, layout: .frontPortrait)
-    let restored = try JSONDecoder().decode(DuoFramingDraft.self, from: Data(draft.exportJSON().utf8))
-    #expect(restored.entries.count == Companion.allCases.count * 3)
-    #expect(restored.value(for: .mochi, layout: .frontPortrait) == adjustment)
-    #expect(restored.value(for: .mochi, layout: .frontLandscape) == .init())
-    #expect(restored.value(for: .pip, layout: .frontPortrait) == .init())
+@Test func automaticShelfFramingMatchesApprovedReferenceProportions() throws {
+    let source = URL(fileURLWithPath: #filePath).deletingLastPathComponent().deletingLastPathComponent()
+        .appendingPathComponent("Verification/ShelfCalibration/references.json")
+    let refs = try JSONDecoder().decode(ShelfReferenceFile.self, from: Data(contentsOf: source)).references
+    #expect(refs.count == 144)
+    #expect(refs.filter(\.confirmed).count == 96)
+    #expect(refs.filter { $0.scenario.hasPrefix("max") || $0.scenario.hasPrefix("phone") }.allSatisfy { !$0.confirmed })
+    var sizeErrors: [Double] = []
+    var centerErrors: [Double] = []
+    for ref in refs where ref.confirmed {
+        let companion = try #require(Companion(rawValue: ref.companion))
+        let composition = ShelfComposition(viewport: CGSize(width: ref.viewport[0], height: ref.viewport[1]),
+            stage: CGSize(width: ref.stage[0], height: ref.stage[1]), shelfY: ref.shelfY,
+            minimumY: ref.minimumY, maximumY: ref.stage[1] + 32)
+        let frame = composition.frame(companion: companion)
+        let target = CGRect(x: ref.referenceFrame[0], y: ref.referenceFrame[1],
+                            width: ref.referenceFrame[2], height: ref.referenceFrame[3])
+        let error = abs(frame.height / target.height - 1)
+        let bounds = DeviceRoomSprite.bounds(companion: companion, poked: false)
+            .union(DeviceRoomSprite.bounds(companion: companion, poked: true))
+        let centerError = abs(frame.minY + bounds.midY * frame.height - target.minY - bounds.midY * target.height) / target.height
+        let horizontalError = abs(frame.minX + bounds.midX * frame.width - target.minX - bounds.midX * target.width) / target.height
+        sizeErrors.append(error); centerErrors.append(centerError)
+        #expect(horizontalError <= 0.10, "\(ref.scenario) / \(companion): horizontal-center error \(horizontalError)")
+        #expect(error <= 0.10, "\(ref.scenario) / \(companion): size error \(error)")
+        #expect(centerError <= 0.10, "\(ref.scenario) / \(companion): vertical-center error \(centerError)")
+        #expect(abs(frame.minY + ShelfCharacterMetrics(companion).seatY * frame.height - ref.shelfY) < 0.001)
+    }
+    print("Confirmed shelf references: \(sizeErrors.count), mean size error \(sizeErrors.reduce(0,+)/Double(sizeErrors.count)), max size error \(sizeErrors.max() ?? 0), max vertical-center error \(centerErrors.max() ?? 0)")
+}
+
+@Test func shelfSolverFitsUnseenWindowsAndResizesContinuously() {
+    for companion in Companion.allCases {
+        var previousLandscape: CGFloat?
+        for width in stride(from: 780.0, through: 1500.0, by: 5) {
+            let stage = CGSize(width: width * 0.46, height: 540)
+            let geometry = ShelfComposition(viewport: CGSize(width: width, height: 650), stage: stage,
+                shelfY: 320, minimumY: 0, maximumY: 572)
+            let frame = geometry.frame(companion: companion)
+            if let previousLandscape { #expect(abs(frame.height / previousLandscape - 1) < 0.04) }
+            previousLandscape = frame.height
+            #expect(abs(frame.minY + frame.height * ShelfCharacterMetrics(companion).seatY - 320) < 0.001)
+        }
+        var previous: CGFloat?
+        for width in stride(from: 320.0, through: 850.0, by: 5) {
+            let stage = CGSize(width: min(760, width), height: 430)
+            let geometry = ShelfComposition(viewport: CGSize(width: width, height: 1000), stage: stage,
+                shelfY: 300, minimumY: 0, maximumY: 462)
+            let frame = geometry.frame(companion: companion)
+            if let previous { #expect(abs(frame.height / previous - 1) < 0.04) }
+            previous = frame.height
+            #expect(abs(frame.width / frame.height - (companion == .wisp ? 0.75 : 1.5)) < 0.001)
+            for poked in [false, true] {
+                let bounds = DeviceRoomSprite.bounds(companion: companion, poked: poked)
+                #expect(frame.minX + bounds.minX * frame.width >= 11.99)
+                #expect(frame.minX + bounds.maxX * frame.width <= stage.width - 11.99)
+                #expect(frame.minY + bounds.minY * frame.height >= -0.01)
+                #expect(frame.minY + bounds.maxY * frame.height <= 462.01)
+            }
+        }
+    }
+}
+
+@Test func hingePaintedShelfAndSpriteUseTheSameLandmark() {
+    for size in [CGSize(width: 669, height: 951), CGSize(width: 760, height: 1100)] {
+        let hinge = size.height * 0.5
+        for companion in Companion.allCases {
+            let room = companion.duoRoom
+            let painting = room.hingeFrame(width: size.width, hingeY: hinge)
+            let frame = CompanionArtworkLayout.seated(hingeY: hinge)
+                .frame(companion: companion, width: size.width, height: hinge + 200, viewport: size)
+            #expect(abs(painting.minY + painting.height * room.ledgeFraction - hinge) < 0.001)
+            #expect(abs(frame.minY + frame.height * ShelfCharacterMetrics(companion).seatY
+                - painting.minY - painting.height * room.perchFraction) < 0.001)
+        }
+    }
+}
+
+@Test func narrowPhonePreservesMochisSmallerOpticalProportions() {
+    // A tall screen previously bypassed Mochi's 0.74 weight and substituted
+    // a generic 500-point ceiling, making it much larger than the approved pets.
+    for viewport in [CGSize(width: 393, height: 852), CGSize(width: 440, height: 956),
+                     CGSize(width: 956, height: 440)] {
+        let stage = CGSize(width: 440, height: 400)
+        let composition = ShelfComposition(viewport: viewport, stage: stage, shelfY: 300,
+            minimumY: 0, maximumY: 432)
+        let mochi = composition.frame(companion: .mochi)
+        let jun = composition.frame(companion: .jun)
+        #expect(mochi.height / jun.height < 0.80)
+        #expect(mochi.height < 290)
+        #expect(abs(mochi.minY + mochi.height * ShelfCharacterMetrics(.mochi).seatY - 300) < 0.001)
+    }
 }

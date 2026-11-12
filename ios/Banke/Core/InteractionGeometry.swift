@@ -236,46 +236,24 @@ struct TabletopHeaderLayout {
     }
 }
 
-/// Display-specific geometry for the same two-frame companion artwork.
+/// All live layouts differ only in their shelf coordinate and available stage.
 enum CompanionArtworkLayout {
     case seated(hingeY: CGFloat)
     case perched(y: CGFloat)
-    case platform(calibrated: Bool)
 
-    func frame(companion: Companion, width: CGFloat, height: CGFloat) -> CGRect {
-        let registration = CompanionSpriteRegistration(companion)
+    func frame(companion: Companion, width: CGFloat, height: CGFloat,
+               viewport: CGSize? = nil, minimumY: CGFloat = 0) -> CGRect {
+        let shelf: CGFloat
         switch self {
-        case .seated(let hingeY):
-            let baselineHeight = min(max(width / 1.5, hingeY / 0.78), hingeY / registration.seat) * registration.scale
-            let framing = registration.approvedFraming
-            let h = baselineHeight * framing.scale
-            return CGRect(x: width / 2 - h * registration.aspect / 2 + framing.x * width,
-                          y: hingeY - h * registration.seat + framing.y * hingeY,
-                          width: h * registration.aspect, height: h)
-        case .perched(let ledgeY):
-            return DeviceRoomSprite.perchedFrame(companion: companion, width: width, height: height, ledgeY: ledgeY)
-        case .platform(let calibrated):
-            let base = DeviceRoomSprite.frame(companion: companion, width: width, floorY: height * 0.87)
-            guard calibrated else { return base }
-            let framing = companion.landscapeFraming
-            let center = CGPoint(x: base.midX + framing.x * width, y: base.midY + framing.y * height)
-            let bounds = DeviceRoomSprite.bounds(companion: companion, poked: false)
-                .union(DeviceRoomSprite.bounds(companion: companion, poked: true))
-            let scale = min(framing.scale, (width - 24) / (base.width * bounds.width),
-                            (height - 24) / (base.height * bounds.height))
-            var frame = CGRect(x: center.x - base.width * scale / 2,
-                               y: center.y - base.height * scale / 2,
-                               width: base.width * scale, height: base.height * scale)
-            // Preserve calibration where it fits; keep ears and feet in the pane
-            // now that every posture uses the same registered illustration.
-            let left = frame.minX + bounds.minX * frame.width
-            let right = frame.minX + bounds.maxX * frame.width
-            let top = frame.minY + bounds.minY * frame.height
-            let bottom = frame.minY + bounds.maxY * frame.height
-            frame.origin.x += max(0, 12 - left) - max(0, right - width + 12)
-            frame.origin.y += max(0, 12 - top) - max(0, bottom - height + 12)
-            return frame
+        case .seated(let hinge):
+            let room = companion.duoRoom
+            let painting = room.hingeFrame(width: width, hingeY: hinge)
+            shelf = painting.minY + painting.height * room.perchFraction
+        case .perched(let y): shelf = y
         }
+        return ShelfComposition(viewport: viewport ?? CGSize(width: width, height: height),
+            stage: CGSize(width: width, height: height), shelfY: shelf,
+            minimumY: minimumY, maximumY: height + 32).frame(companion: companion)
     }
 }
 
@@ -283,70 +261,24 @@ struct CompanionSpriteRegistration {
     let aspect: CGFloat
     let seat: CGFloat
     let mouth: CGPoint
-    let scale: CGFloat
-    let approvedFraming: (scale: CGFloat, x: CGFloat, y: CGFloat)
     init(_ companion: Companion, poked: Bool = false) {
         aspect = companion == .wisp ? 0.75 : 1.5
-        // Scale about the seat so smaller companions still rest on the ledge.
+        seat = ShelfCharacterMetrics(companion).seatY
         switch companion {
-        case .atlas: scale = 0.70
-        case .mochi, .pebble, .bean, .maple: scale = 0.74
-        default: scale = 1
-        }
-        // User-approved Duo calibration, relative to the original baseline above.
-        // Keep this transform after the speech overlay to reproduce the audition
-        // exactly. Offsets use pane width and top-to-hinge height, respectively.
-        approvedFraming = switch companion {
-        case .mochi: (0.70, 0, -0.085)
-        case .pip: (0.79, -0.015, -0.015)
-        case .pebble: (0.77, 0, -0.080)
-        case .jun: (0.83, 0, -0.035)
-        case .bean: (0.83, 0, -0.100)
-        case .maple: (0.85, 0, -0.105)
-        case .luna: (0.74, 0, -0.110)
-        case .atlas: (0.93, 0, -0.095)
-        case .wisp: (0.75, 0, -0.090)
-        case .nova: (0.80, 0, -0.065)
-        case .orbit: (0.69, 0, -0.060)
-        case .comet: (0.80, 0, -0.090)
-        }
-        switch companion {
-        case .mochi: seat = 0.77; mouth = CGPoint(x: 0.591, y: poked ? 0.401 : 0.388)
-        case .pip: seat = 0.72; mouth = CGPoint(x: 0.558, y: 0.327)
-        case .pebble: seat = 0.78; mouth = CGPoint(x: poked ? 0.460 : 0.464, y: poked ? 0.345 : 0.328)
-        case .maple: seat = 0.74; mouth = CGPoint(x: poked ? 0.581 : 0.576, y: poked ? 0.335 : 0.328)
-        case .bean: seat = 0.85; mouth = CGPoint(x: 0.600, y: poked ? 0.397 : 0.375)
-        case .jun: seat = 0.72; mouth = CGPoint(x: 0.545, y: poked ? 0.350 : 0.343)
-        case .wisp: seat = 0.72; mouth = CGPoint(x: poked ? 0.562 : 0.613, y: 0.411)
-        case .luna: seat = 0.70; mouth = CGPoint(x: 0.548, y: 0.312)
-        case .atlas: seat = 0.93; mouth = CGPoint(x: 0.566, y: poked ? 0.315 : 0.298)
-        case .nova: seat = 0.73; mouth = CGPoint(x: 0.552, y: poked ? 0.343 : 0.335)
-        case .orbit: seat = 0.76; mouth = CGPoint(x: 0.560, y: 0.433)
-        case .comet: seat = 0.74; mouth = CGPoint(x: 0.535, y: poked ? 0.436 : 0.425)
+        case .mochi: mouth = CGPoint(x: 0.591, y: poked ? 0.401 : 0.388)
+        case .pip: mouth = CGPoint(x: 0.558, y: 0.327)
+        case .pebble: mouth = CGPoint(x: poked ? 0.460 : 0.464, y: poked ? 0.345 : 0.328)
+        case .maple: mouth = CGPoint(x: poked ? 0.581 : 0.576, y: poked ? 0.335 : 0.328)
+        case .bean: mouth = CGPoint(x: 0.600, y: poked ? 0.397 : 0.375)
+        case .jun: mouth = CGPoint(x: 0.545, y: poked ? 0.350 : 0.343)
+        case .wisp: mouth = CGPoint(x: poked ? 0.562 : 0.613, y: 0.411)
+        case .luna: mouth = CGPoint(x: 0.548, y: 0.312)
+        case .atlas: mouth = CGPoint(x: 0.566, y: poked ? 0.315 : 0.298)
+        case .nova: mouth = CGPoint(x: 0.552, y: poked ? 0.343 : 0.335)
+        case .orbit: mouth = CGPoint(x: 0.560, y: 0.433)
+        case .comet: mouth = CGPoint(x: 0.535, y: poked ? 0.436 : 0.425)
         }
     }
-}
-
-extension Companion {
-    /// Approved for the side-by-side Duo rooms. Offsets are fractions of the
-    /// character pane; these multiply/offset the existing platform baseline.
-    var landscapeFraming: (scale: CGFloat, x: CGFloat, y: CGFloat) {
-        switch self {
-        case .mochi: (0.68, 0.025, 0.100)
-        case .pip: (1.08, 0, -0.025)
-        case .pebble: (0.93, 0, 0)
-        case .jun: (1.13, 0.025, -0.005)
-        case .bean: (0.77, 0.015, 0.095)
-        case .maple: (0.92, 0, 0.040)
-        case .luna: (1, 0, 0)
-        case .atlas: (0.78, 0, 0.070)
-        case .wisp: (0.90, 0, 0.010)
-        case .nova: (1.11, 0, 0.010)
-        case .orbit: (0.92, 0.020, 0.060)
-        case .comet: (1.11, 0, -0.035)
-        }
-    }
-
 }
 
 /// Alpha bounds of both registered sprite cells. One fixed frame contains both
@@ -356,15 +288,10 @@ enum DeviceRoomSprite {
     static func perchedFrame(companion: Companion, width: CGFloat, height: CGFloat, ledgeY: CGFloat,
                              horizontalInset: CGFloat = 44, topInset: CGFloat = 24,
                              bottomInset: CGFloat = 8) -> CGRect {
-        let union = allBounds(companion)[0].union(allBounds(companion)[1])
-        let registration = CompanionSpriteRegistration(companion)
-        let seat = registration.seat
-        let h = max(1, min(500,
-            max(1, width - horizontalInset * 2) / (registration.aspect * union.width),
-            max(1, ledgeY - topInset) / max(0.01, seat - union.minY),
-            max(1, height - bottomInset - ledgeY) / max(0.01, union.maxY - seat)))
-        let w = h * registration.aspect
-        return CGRect(x: width / 2 - union.midX * w, y: ledgeY - seat * h, width: w, height: h)
+        ShelfComposition(viewport: CGSize(width: width, height: height),
+            stage: CGSize(width: width, height: height), shelfY: ledgeY,
+            minimumY: topInset, maximumY: height - bottomInset,
+            horizontalInset: horizontalInset, preferredHorizontalInset: horizontalInset).frame(companion: companion)
     }
     static func frame(companion: Companion, width: CGFloat, floorY: CGFloat) -> CGRect {
         let poses = allBounds(companion)
@@ -405,84 +332,95 @@ enum DeviceRoomSprite {
     }
 }
 
-/// Separate calibration slots for the outer display and the open inner display.
-enum DuoTuningLayout: String, Codable, CaseIterable {
-    case frontPortrait = "duo-front-portrait"
-    case frontLandscape = "duo-front-landscape"
-    case unfoldedLandscape = "duo-unfolded-landscape"
-
-    var title: String {
-        switch self {
-        case .frontPortrait: "Front portrait"
-        case .frontLandscape: "Front landscape"
-        case .unfoldedLandscape: "Unfolded landscape"
-        }
-    }
-
-    static func resolve(size: CGSize, division: CGRect?) -> Self? {
-        let visibleDivision = division.flatMap { rect -> CGRect? in
-            rect.intersects(CGRect(origin: .zero, size: size)) ? rect : nil
-        }
-        if let visibleDivision, visibleDivision.width > visibleDivision.height { return nil }
-        if size.width > size.height * 1.1 {
-            return visibleDivision == nil ? .frontLandscape : .unfoldedLandscape
-        }
-        return .frontPortrait
+/// The room and character renderer consume the same painted shelf landmark.
+extension DuoRoom {
+    func hingeFrame(width: CGFloat, hingeY: CGFloat) -> CGRect {
+        let height = max(width / 1.5, hingeY / ledgeFraction)
+        return CGRect(x: (width - height * 1.5) / 2,
+                      y: hingeY - height * ledgeFraction, width: height * 1.5, height: height)
     }
 }
 
-struct DuoFramingAdjustment: Codable, Equatable {
-    var scaleMultiplier: Double = 1
-    var offsetXFraction: Double = 0
-    var offsetYFraction: Double = 0
-
-    func apply(to frame: CGRect, seat: CGFloat, pane: CGSize) -> CGRect {
-        let width = frame.width * scaleMultiplier
-        let height = frame.height * scaleMultiplier
-        return CGRect(x: frame.midX - width / 2 + offsetXFraction * pane.width,
-                      y: frame.minY + frame.height * seat - height * seat + offsetYFraction * pane.height,
-                      width: width, height: height)
+/// One intrinsic calibration per character, shared by every screen and expression.
+/// Seat is measured in sprite-cell coordinates. Optical weight controls scene
+/// occupancy; comfortable height prevents large windows inflating the pet endlessly.
+/// Fitted against the approved references in Verification/ShelfCalibration.
+struct ShelfCharacterMetrics {
+    let seatY: CGFloat
+    let opticalWeight: CGFloat
+    let comfortableHeight: CGFloat
+    init(_ companion: Companion) {
+        (seatY, opticalWeight, comfortableHeight) = switch companion {
+        case .mochi: (0.77, 0.74, 360)
+        case .pip: (0.6922, 0.98, 505)
+        case .pebble: (0.7645, 0.81, 415)
+        case .jun: (0.6871, 1.0, 525)
+        case .bean: (0.8737, 0.89, 375)
+        case .maple: (0.7652, 1.0, 435)
+        case .luna: (0.7, 1.01, 485)
+        case .atlas: (0.93, 0.97, 380)
+        case .wisp: (0.7133, 0.98, 510)
+        case .nova: (0.7192, 0.99, 505)
+        case .orbit: (0.7369, 0.94, 500)
+        case .comet: (0.7342, 1.01, 510)
+        }
     }
 }
 
-struct DuoFramingDraft: Codable {
-    struct Entry: Codable {
-        let companion: String
-        let layout: DuoTuningLayout
-        var scaleMultiplier: Double
-        var offsetXFraction: Double
-        var offsetYFraction: Double
-        var adjustment: DuoFramingAdjustment {
-            DuoFramingAdjustment(scaleMultiplier: scaleMultiplier,
-                offsetXFraction: offsetXFraction, offsetYFraction: offsetYFraction)
-        }
-    }
-    var version = 3
-    var baseline = "Shared seated shelf geometry, November 12 2026"
-    var units = "Scale multiplies the current fitted sprite around its seat. X and Y are fractions of the character pane width and height. Positive offsets move right/down. Backgrounds stay fixed."
-    var entries: [Entry] = []
+/// Two continuous compositions (stacked / side-by-side), not device model tables.
+/// Sizing depends on the actual window and artwork stage; registration is exact:
+/// frame.minY + seatY * frame.height == shelfY, including after a poke.
+struct ShelfComposition {
+    let viewport: CGSize
+    let stage: CGSize
+    let shelfY: CGFloat
+    var minimumY: CGFloat = 0
+    var maximumY: CGFloat? = nil
+    var horizontalInset: CGFloat = 12
+    var preferredHorizontalInset: CGFloat = 44
 
-    func value(for companion: Companion, layout: DuoTuningLayout) -> DuoFramingAdjustment {
-        entries.first { $0.companion == companion.rawValue && $0.layout == layout }?.adjustment ?? .init()
+    func frame(companion: Companion) -> CGRect {
+        let metrics = ShelfCharacterMetrics(companion)
+        let bounds = DeviceRoomSprite.bounds(companion: companion, poked: false)
+            .union(DeviceRoomSprite.bounds(companion: companion, poked: true))
+        let aspect: CGFloat = companion == .wisp ? 0.75 : 1.5
+        let shortEdge = max(1, min(viewport.width, viewport.height))
+        let ratio = max(viewport.width, viewport.height) / shortEdge
+        // Window shape changes available head/leg room, never the character's
+        // intrinsic proportions. Smooth blending avoids device-family thresholds
+        // and size jumps during window resizing.
+        let t = min(1, max(0, (ratio - 1.7) / 0.3))
+        let narrow = t * t * (3 - 2 * t)
+        let landscape = viewport.width > viewport.height
+        let seatedBody = max(0.01, metrics.seatY - bounds.minY)
+        let hangingLegs = max(0.01, bounds.maxY - metrics.seatY)
+        let normalHeadroom = max(1, shelfY - 24)
+        let airyHeadroom = landscape ? normalHeadroom : max(normalHeadroom, stage.height * 0.96)
+        let headroom = normalHeadroom * narrow + airyHeadroom * (1 - narrow)
+        let normalLegroom = max(1, stage.height - 8 - shelfY)
+        let legroom = normalLegroom * narrow + max(normalLegroom, stage.height * 0.5) * (1 - narrow)
+        let widthBudget = max(1, stage.width - preferredHorizontalInset * 2) / (aspect * bounds.width)
+        let naturalHeight = min(widthBudget, headroom / seatedBody, legroom / hangingLegs)
+        let weight = metrics.opticalWeight
+        let comfort = metrics.comfortableHeight * min(1.4, pow(shortEdge / 834, 0.4))
+        let ceiling = comfort
+        // Physical fit takes precedence at tiny sizes and large accessibility
+        // text: keep both expressions visible without moving the seat off shelf.
+        let fit = min(max(1, stage.width - horizontalInset * 2) / (aspect * bounds.width),
+                      max(1, shelfY - minimumY) / seatedBody,
+                      max(1, (maximumY ?? stage.height) - shelfY) / hangingLegs)
+        let height = max(1, min(naturalHeight * weight, ceiling, fit))
+        let width = height * aspect
+        return CGRect(x: stage.width / 2 - bounds.midX * width,
+                      y: shelfY - metrics.seatY * height, width: width, height: height)
     }
-    mutating func set(_ value: DuoFramingAdjustment, companion: Companion, layout: DuoTuningLayout) {
-        entries.removeAll { $0.companion == companion.rawValue && $0.layout == layout }
-        entries.append(Entry(companion: companion.rawValue, layout: layout,
-            scaleMultiplier: value.scaleMultiplier, offsetXFraction: value.offsetXFraction,
-            offsetYFraction: value.offsetYFraction))
-    }
-    func exportJSON() -> String {
-        var complete = self
-        complete.entries = DuoTuningLayout.allCases.flatMap { layout in
-            Companion.allCases.map { companion in
-                let value = value(for: companion, layout: layout)
-                return Entry(companion: companion.rawValue, layout: layout,
-                    scaleMultiplier: value.scaleMultiplier, offsetXFraction: value.offsetXFraction,
-                    offsetYFraction: value.offsetYFraction)
-            }
-        }
-        let encoder = JSONEncoder()
-        encoder.outputFormatting = [.prettyPrinted, .sortedKeys]
-        return (try? String(decoding: encoder.encode(complete), as: UTF8.self)) ?? "{}"
+}
+
+/// Shared geometry for the Duo stacked canvas, independent of its character.
+enum ShelfSceneLayout {
+    static func duoPortraitHeight(size: CGSize, availableHeight: CGFloat) -> CGFloat {
+        let dense = size.width < 600
+        let clockHeight = min(dense ? 112.0 : 160.0, max(76, (size.width - 110) * 96 / 304))
+        return max(140, min(450, availableHeight - clockHeight - (dense ? 156 : 184)))
     }
 }

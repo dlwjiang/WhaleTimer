@@ -1,0 +1,1017 @@
+{
+  "comparisonCount" : 144,
+  "comparisons" : [
+    {
+      "companion" : "mochi",
+      "confirmed" : true,
+      "scenario" : "duoHinge",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 4.3808548516390378
+    },
+    {
+      "companion" : "pip",
+      "confirmed" : true,
+      "scenario" : "duoHinge",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -3.9909007713071154
+    },
+    {
+      "companion" : "pebble",
+      "confirmed" : true,
+      "scenario" : "duoHinge",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 9.3890271803792835
+    },
+    {
+      "companion" : "jun",
+      "confirmed" : true,
+      "scenario" : "duoHinge",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -4.9987500772983973
+    },
+    {
+      "companion" : "bean",
+      "confirmed" : true,
+      "scenario" : "duoHinge",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -0.070460308018549522
+    },
+    {
+      "companion" : "maple",
+      "confirmed" : true,
+      "scenario" : "duoHinge",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 3.8691839945231621
+    },
+    {
+      "companion" : "luna",
+      "confirmed" : true,
+      "scenario" : "duoHinge",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -1.5630549385237336
+    },
+    {
+      "companion" : "atlas",
+      "confirmed" : true,
+      "scenario" : "duoHinge",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 4.5295455280658814
+    },
+    {
+      "companion" : "wisp",
+      "confirmed" : true,
+      "scenario" : "duoHinge",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 2.1308675359481555
+    },
+    {
+      "companion" : "nova",
+      "confirmed" : true,
+      "scenario" : "duoHinge",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -5.1910145116657809
+    },
+    {
+      "companion" : "orbit",
+      "confirmed" : true,
+      "scenario" : "duoHinge",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 8.8351103324255664
+    },
+    {
+      "companion" : "comet",
+      "confirmed" : true,
+      "scenario" : "duoHinge",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -4.2523116850486158
+    },
+    {
+      "companion" : "mochi",
+      "confirmed" : true,
+      "scenario" : "duoL",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -2.6315789473684181
+    },
+    {
+      "companion" : "pip",
+      "confirmed" : true,
+      "scenario" : "duoL",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 1.9675246659627721
+    },
+    {
+      "companion" : "pebble",
+      "confirmed" : true,
+      "scenario" : "duoL",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 0
+    },
+    {
+      "companion" : "jun",
+      "confirmed" : true,
+      "scenario" : "duoL",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 5.0309579769737933
+    },
+    {
+      "companion" : "bean",
+      "confirmed" : true,
+      "scenario" : "duoL",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -2.7829934441129245
+    },
+    {
+      "companion" : "maple",
+      "confirmed" : true,
+      "scenario" : "duoL",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 3.9140122147390599
+    },
+    {
+      "companion" : "luna",
+      "confirmed" : true,
+      "scenario" : "duoL",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 1.0000000000000009
+    },
+    {
+      "companion" : "atlas",
+      "confirmed" : true,
+      "scenario" : "duoL",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -3.0000000000000027
+    },
+    {
+      "companion" : "wisp",
+      "confirmed" : true,
+      "scenario" : "duoL",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -1.3147079249852367
+    },
+    {
+      "companion" : "nova",
+      "confirmed" : true,
+      "scenario" : "duoL",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 0.53988403342464242
+    },
+    {
+      "companion" : "orbit",
+      "confirmed" : true,
+      "scenario" : "duoL",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -2.9265958305084383
+    },
+    {
+      "companion" : "comet",
+      "confirmed" : true,
+      "scenario" : "duoL",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 1.8339597284861897
+    },
+    {
+      "companion" : "mochi",
+      "confirmed" : true,
+      "scenario" : "duoOpen",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 2.7777777777777901
+    },
+    {
+      "companion" : "pip",
+      "confirmed" : true,
+      "scenario" : "duoOpen",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 1.9675246659627943
+    },
+    {
+      "companion" : "pebble",
+      "confirmed" : true,
+      "scenario" : "duoOpen",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 3.3958574610549519
+    },
+    {
+      "companion" : "jun",
+      "confirmed" : true,
+      "scenario" : "duoOpen",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -2.7491129842835194
+    },
+    {
+      "companion" : "bean",
+      "confirmed" : true,
+      "scenario" : "duoOpen",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 6.8186862157277872
+    },
+    {
+      "companion" : "maple",
+      "confirmed" : true,
+      "scenario" : "duoOpen",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 5.5654621540490723
+    },
+    {
+      "companion" : "luna",
+      "confirmed" : true,
+      "scenario" : "duoOpen",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 1.1400644518612779
+    },
+    {
+      "companion" : "atlas",
+      "confirmed" : true,
+      "scenario" : "duoOpen",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 7.7777777777777501
+    },
+    {
+      "companion" : "wisp",
+      "confirmed" : true,
+      "scenario" : "duoOpen",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 1.7047593940586303
+    },
+    {
+      "companion" : "nova",
+      "confirmed" : true,
+      "scenario" : "duoOpen",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 0.53988403342464242
+    },
+    {
+      "companion" : "orbit",
+      "confirmed" : true,
+      "scenario" : "duoOpen",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -2.9265958305084272
+    },
+    {
+      "companion" : "comet",
+      "confirmed" : true,
+      "scenario" : "duoOpen",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 1.8339597284861675
+    },
+    {
+      "companion" : "mochi",
+      "confirmed" : true,
+      "scenario" : "duoP",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -0.93504587155961438
+    },
+    {
+      "companion" : "pip",
+      "confirmed" : true,
+      "scenario" : "duoP",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -3.5977997249178051
+    },
+    {
+      "companion" : "pebble",
+      "confirmed" : true,
+      "scenario" : "duoP",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -8.9357585664103016
+    },
+    {
+      "companion" : "jun",
+      "confirmed" : true,
+      "scenario" : "duoP",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -2.35654059633017
+    },
+    {
+      "companion" : "bean",
+      "confirmed" : true,
+      "scenario" : "duoP",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -5.9822472521357977
+    },
+    {
+      "companion" : "maple",
+      "confirmed" : true,
+      "scenario" : "duoP",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -3.163535021641406
+    },
+    {
+      "companion" : "luna",
+      "confirmed" : true,
+      "scenario" : "duoP",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -1.7367185833155441
+    },
+    {
+      "companion" : "atlas",
+      "confirmed" : true,
+      "scenario" : "duoP",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -5.0764525993883813
+    },
+    {
+      "companion" : "wisp",
+      "confirmed" : true,
+      "scenario" : "duoP",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 0.41424658581277196
+    },
+    {
+      "companion" : "nova",
+      "confirmed" : true,
+      "scenario" : "duoP",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -1.0335949935420641
+    },
+    {
+      "companion" : "orbit",
+      "confirmed" : true,
+      "scenario" : "duoP",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 6.8698027554035868
+    },
+    {
+      "companion" : "comet",
+      "confirmed" : true,
+      "scenario" : "duoP",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -5.3286735245877681
+    },
+    {
+      "companion" : "mochi",
+      "confirmed" : false,
+      "scenario" : "maxL",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -26
+    },
+    {
+      "companion" : "pip",
+      "confirmed" : false,
+      "scenario" : "maxL",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 1.9675246659627943
+    },
+    {
+      "companion" : "pebble",
+      "confirmed" : false,
+      "scenario" : "maxL",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -17.283314031156028
+    },
+    {
+      "companion" : "jun",
+      "confirmed" : false,
+      "scenario" : "maxL",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 5.0309579769738155
+    },
+    {
+      "companion" : "bean",
+      "confirmed" : false,
+      "scenario" : "maxL",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -13.476864165260505
+    },
+    {
+      "companion" : "maple",
+      "confirmed" : false,
+      "scenario" : "maxL",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -3.3599686402926876
+    },
+    {
+      "companion" : "luna",
+      "confirmed" : false,
+      "scenario" : "maxL",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 1.0000000000000009
+    },
+    {
+      "companion" : "atlas",
+      "confirmed" : false,
+      "scenario" : "maxL",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -2.9999999999999916
+    },
+    {
+      "companion" : "wisp",
+      "confirmed" : false,
+      "scenario" : "maxL",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -0.98957100625866046
+    },
+    {
+      "companion" : "nova",
+      "confirmed" : false,
+      "scenario" : "maxL",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 0.53988403342466462
+    },
+    {
+      "companion" : "orbit",
+      "confirmed" : false,
+      "scenario" : "maxL",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -2.9265958305084272
+    },
+    {
+      "companion" : "comet",
+      "confirmed" : false,
+      "scenario" : "maxL",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 1.8339597284861675
+    },
+    {
+      "companion" : "mochi",
+      "confirmed" : false,
+      "scenario" : "maxP",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -26.000000000000011
+    },
+    {
+      "companion" : "pip",
+      "confirmed" : false,
+      "scenario" : "maxP",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -2.7038499706717456
+    },
+    {
+      "companion" : "pebble",
+      "confirmed" : false,
+      "scenario" : "maxP",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -17.283314031156038
+    },
+    {
+      "companion" : "jun",
+      "confirmed" : false,
+      "scenario" : "maxP",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -6.3776714846710325
+    },
+    {
+      "companion" : "bean",
+      "confirmed" : false,
+      "scenario" : "maxP",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -13.476864165260494
+    },
+    {
+      "companion" : "maple",
+      "confirmed" : false,
+      "scenario" : "maxP",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -11.469072147330072
+    },
+    {
+      "companion" : "luna",
+      "confirmed" : false,
+      "scenario" : "maxP",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -4.3953533992813103
+    },
+    {
+      "companion" : "atlas",
+      "confirmed" : false,
+      "scenario" : "maxP",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -2.9999999999999916
+    },
+    {
+      "companion" : "wisp",
+      "confirmed" : false,
+      "scenario" : "maxP",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -5.9836251398278861
+    },
+    {
+      "companion" : "nova",
+      "confirmed" : false,
+      "scenario" : "maxP",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -0.011770682834133517
+    },
+    {
+      "companion" : "orbit",
+      "confirmed" : false,
+      "scenario" : "maxP",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -2.9265958305084272
+    },
+    {
+      "companion" : "comet",
+      "confirmed" : false,
+      "scenario" : "maxP",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 1.421283336561574
+    },
+    {
+      "companion" : "mochi",
+      "confirmed" : true,
+      "scenario" : "miniL",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -1.3333333333333308
+    },
+    {
+      "companion" : "pip",
+      "confirmed" : true,
+      "scenario" : "miniL",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -1.9624831203065574
+    },
+    {
+      "companion" : "pebble",
+      "confirmed" : true,
+      "scenario" : "miniL",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 4.7046657833467842
+    },
+    {
+      "companion" : "jun",
+      "confirmed" : true,
+      "scenario" : "miniL",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 0.31180682525728809
+    },
+    {
+      "companion" : "bean",
+      "confirmed" : true,
+      "scenario" : "miniL",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 2.8749672755771005
+    },
+    {
+      "companion" : "maple",
+      "confirmed" : true,
+      "scenario" : "miniL",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -1.5294710309412318
+    },
+    {
+      "companion" : "luna",
+      "confirmed" : true,
+      "scenario" : "miniL",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -2.4536815834590886
+    },
+    {
+      "companion" : "atlas",
+      "confirmed" : true,
+      "scenario" : "miniL",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -0.27303290877674913
+    },
+    {
+      "companion" : "wisp",
+      "confirmed" : true,
+      "scenario" : "miniL",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -0.56555591665459204
+    },
+    {
+      "companion" : "nova",
+      "confirmed" : true,
+      "scenario" : "miniL",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -3.2436704188204324
+    },
+    {
+      "companion" : "orbit",
+      "confirmed" : true,
+      "scenario" : "miniL",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -2.9265958305084383
+    },
+    {
+      "companion" : "comet",
+      "confirmed" : true,
+      "scenario" : "miniL",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -1.8569367207122212
+    },
+    {
+      "companion" : "mochi",
+      "confirmed" : true,
+      "scenario" : "miniP",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -4.464945880707349
+    },
+    {
+      "companion" : "pip",
+      "confirmed" : true,
+      "scenario" : "miniP",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -1.3464730438283334
+    },
+    {
+      "companion" : "pebble",
+      "confirmed" : true,
+      "scenario" : "miniP",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -4.4649458807073605
+    },
+    {
+      "companion" : "jun",
+      "confirmed" : true,
+      "scenario" : "miniP",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 2.5605973306734642
+    },
+    {
+      "companion" : "bean",
+      "confirmed" : true,
+      "scenario" : "miniP",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 5.8496481389509247
+    },
+    {
+      "companion" : "maple",
+      "confirmed" : true,
+      "scenario" : "miniP",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -2.2170622543710716
+    },
+    {
+      "companion" : "luna",
+      "confirmed" : true,
+      "scenario" : "miniP",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 1.3608820938441291
+    },
+    {
+      "companion" : "atlas",
+      "confirmed" : true,
+      "scenario" : "miniP",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 6.990343632157292
+    },
+    {
+      "companion" : "wisp",
+      "confirmed" : true,
+      "scenario" : "miniP",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -2.5542447983214922
+    },
+    {
+      "companion" : "nova",
+      "confirmed" : true,
+      "scenario" : "miniP",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -0.32340878296983622
+    },
+    {
+      "companion" : "orbit",
+      "confirmed" : true,
+      "scenario" : "miniP",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -4.464945880707349
+    },
+    {
+      "companion" : "comet",
+      "confirmed" : true,
+      "scenario" : "miniP",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -2.4127172491145488
+    },
+    {
+      "companion" : "mochi",
+      "confirmed" : false,
+      "scenario" : "phoneL",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -26
+    },
+    {
+      "companion" : "pip",
+      "confirmed" : false,
+      "scenario" : "phoneL",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 1.9675246659627721
+    },
+    {
+      "companion" : "pebble",
+      "confirmed" : false,
+      "scenario" : "phoneL",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -17.283314031156017
+    },
+    {
+      "companion" : "jun",
+      "confirmed" : false,
+      "scenario" : "phoneL",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 5.0309579769737933
+    },
+    {
+      "companion" : "bean",
+      "confirmed" : false,
+      "scenario" : "phoneL",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -13.476864165260494
+    },
+    {
+      "companion" : "maple",
+      "confirmed" : false,
+      "scenario" : "phoneL",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -3.3599686402926765
+    },
+    {
+      "companion" : "luna",
+      "confirmed" : false,
+      "scenario" : "phoneL",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 1.0000000000000009
+    },
+    {
+      "companion" : "atlas",
+      "confirmed" : false,
+      "scenario" : "phoneL",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -3.0000000000000027
+    },
+    {
+      "companion" : "wisp",
+      "confirmed" : false,
+      "scenario" : "phoneL",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -0.98957100625863825
+    },
+    {
+      "companion" : "nova",
+      "confirmed" : false,
+      "scenario" : "phoneL",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 0.53988403342464242
+    },
+    {
+      "companion" : "orbit",
+      "confirmed" : false,
+      "scenario" : "phoneL",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -2.9265958305084383
+    },
+    {
+      "companion" : "comet",
+      "confirmed" : false,
+      "scenario" : "phoneL",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 1.8339597284861675
+    },
+    {
+      "companion" : "mochi",
+      "confirmed" : false,
+      "scenario" : "phoneP",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -26
+    },
+    {
+      "companion" : "pip",
+      "confirmed" : false,
+      "scenario" : "phoneP",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 1.9675246659627943
+    },
+    {
+      "companion" : "pebble",
+      "confirmed" : false,
+      "scenario" : "phoneP",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -17.283314031156017
+    },
+    {
+      "companion" : "jun",
+      "confirmed" : false,
+      "scenario" : "phoneP",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 3.8941543026535186
+    },
+    {
+      "companion" : "bean",
+      "confirmed" : false,
+      "scenario" : "phoneP",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -13.476864165260494
+    },
+    {
+      "companion" : "maple",
+      "confirmed" : false,
+      "scenario" : "phoneP",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -3.3599686402926876
+    },
+    {
+      "companion" : "luna",
+      "confirmed" : false,
+      "scenario" : "phoneP",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 1.0000000000000009
+    },
+    {
+      "companion" : "atlas",
+      "confirmed" : false,
+      "scenario" : "phoneP",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -3.0000000000000027
+    },
+    {
+      "companion" : "wisp",
+      "confirmed" : false,
+      "scenario" : "phoneP",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -0.98957100625863825
+    },
+    {
+      "companion" : "nova",
+      "confirmed" : false,
+      "scenario" : "phoneP",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 0.53988403342466462
+    },
+    {
+      "companion" : "orbit",
+      "confirmed" : false,
+      "scenario" : "phoneP",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -2.9265958305084383
+    },
+    {
+      "companion" : "comet",
+      "confirmed" : false,
+      "scenario" : "phoneP",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 1.8339597284861675
+    },
+    {
+      "companion" : "mochi",
+      "confirmed" : true,
+      "scenario" : "proL",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 2.857142857142847
+    },
+    {
+      "companion" : "pip",
+      "confirmed" : true,
+      "scenario" : "proL",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 1.0000000000000009
+    },
+    {
+      "companion" : "pebble",
+      "confirmed" : true,
+      "scenario" : "proL",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 1.2195121951219301
+    },
+    {
+      "companion" : "jun",
+      "confirmed" : true,
+      "scenario" : "proL",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -9.4827586206896584
+    },
+    {
+      "companion" : "bean",
+      "confirmed" : true,
+      "scenario" : "proL",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -8.790134936233617
+    },
+    {
+      "companion" : "maple",
+      "confirmed" : true,
+      "scenario" : "proL",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -2.2471910112359383
+    },
+    {
+      "companion" : "luna",
+      "confirmed" : true,
+      "scenario" : "proL",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -3.0000000000000027
+    },
+    {
+      "companion" : "atlas",
+      "confirmed" : true,
+      "scenario" : "proL",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -8.5782329513126818
+    },
+    {
+      "companion" : "wisp",
+      "confirmed" : true,
+      "scenario" : "proL",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -0.97087378640776656
+    },
+    {
+      "companion" : "nova",
+      "confirmed" : true,
+      "scenario" : "proL",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 1.0000000000000009
+    },
+    {
+      "companion" : "orbit",
+      "confirmed" : true,
+      "scenario" : "proL",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 0
+    },
+    {
+      "companion" : "comet",
+      "confirmed" : true,
+      "scenario" : "proL",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 2.0000000000000018
+    },
+    {
+      "companion" : "mochi",
+      "confirmed" : true,
+      "scenario" : "proP",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 0
+    },
+    {
+      "companion" : "pip",
+      "confirmed" : true,
+      "scenario" : "proP",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 1.0000000000000009
+    },
+    {
+      "companion" : "pebble",
+      "confirmed" : true,
+      "scenario" : "proP",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -3.4883720930232731
+    },
+    {
+      "companion" : "jun",
+      "confirmed" : true,
+      "scenario" : "proP",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 5.0000000000000044
+    },
+    {
+      "companion" : "bean",
+      "confirmed" : true,
+      "scenario" : "proP",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 0
+    },
+    {
+      "companion" : "maple",
+      "confirmed" : true,
+      "scenario" : "proP",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : -2.2471910112359383
+    },
+    {
+      "companion" : "luna",
+      "confirmed" : true,
+      "scenario" : "proP",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 2.7015604304635454
+    },
+    {
+      "companion" : "atlas",
+      "confirmed" : true,
+      "scenario" : "proP",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 2.648439707960426
+    },
+    {
+      "companion" : "wisp",
+      "confirmed" : true,
+      "scenario" : "proP",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 2.0000000000000018
+    },
+    {
+      "companion" : "nova",
+      "confirmed" : true,
+      "scenario" : "proP",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 1.0000000000000009
+    },
+    {
+      "companion" : "orbit",
+      "confirmed" : true,
+      "scenario" : "proP",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 0
+    },
+    {
+      "companion" : "comet",
+      "confirmed" : true,
+      "scenario" : "proP",
+      "seatErrorPoints" : 0,
+      "sizeErrorPercent" : 2.0000000000000018
+    }
+  ],
+  "confirmedReferenceCount" : 96,
+  "maximumAbsoluteSizeErrorPercent" : 9.4827586206896584,
+  "meanAbsoluteSizeErrorPercent" : 3.031760420273931,
+  "unverifiedBaselineCount" : 48
+}

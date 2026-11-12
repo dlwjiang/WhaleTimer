@@ -147,8 +147,21 @@ python3 ios/Scripts/make_voice_audition.py
 
 The synthesis tools require local Qwen3-TTS VoiceDesign/Base and VoxCPM2 models, MLX Audio, NumPy and SoundFile. The Qwen Base download is currently cached at `/tmp/banke-models/Qwen3-TTS-12Hz-1.7B-Base-bf16`; use `--base-model` if moved. The original design models are in `~/Models/tts`. Transcript/countdown checks use the cached faster-whisper small model and zhconv. These are development tools; none runs inside the app. Audio-session activation and player preparation run off the UI actor, while effects and speech have independent cancellation.
 
-### Temporary Duo shelf tuning (Debug only)
+### Automatic shelf composition
 
-Rebuild with ⌘R, then open the bottom-left **Tune [companion]** panel on the Duo front portrait, front landscape, or unfolded landscape view. The panel shows the detected layout. Scale, Horizontal, and Vertical are saved independently for every companion and layout. Scaling anchors at the seat; offsets use the character pane's width/height and leave the painted shelf fixed. The panel overlays the scene without changing its layout. Collapse it to inspect the result.
+`ShelfComposition` calculates one sprite frame from the actual window/stage dimensions and the painted shelf coordinate. `ShelfCharacterMetrics` stores each character's sitting landmark, optical weight, and comfortable display height once. Idle and poked frames use the same geometry. Phone, Max, iPad, mini, and Duo all use this solver; no hardware-name lookup, tuning preferences, or per-device character transforms remain.
 
-**Reset this** restores only the current companion/layout. **Copy all** or the share button exports all 36 combinations as version-3 JSON, including untouched defaults. Values survive relaunches in local debug preferences (`duo-shelf-framing-v3`). These controls and saved overrides are excluded from Release behavior. Previously approved horizontal-hinge/tabletop calibration is unchanged.
+The shared portrait/landscape rules preserve the confirmed shelf positions. In Duo hinge mode the room's lower edge tracks the hinge while its painted upper seat surface provides the character's sitting coordinate. For every layout: `sprite.minY + sprite.height * seatY == paintedShelfY`. Width, headroom, and hanging feet constrain the fit without stretching the sprite. Aspect-based blending is continuous rather than keyed to device families.
+
+The iPad exports (`valspadmini.md`, `valspro11.md`) and prior Duo confirmations provide **96 confirmed geometry references**. Another 48 phone/Max cases are explicitly **unverified old baselines**, not manual approvals; their exports contained only `tuned: false` placeholders. Only confirmed cases enter the ±10% tolerance check. The original exports lack viewport/safe-area measurements, so the reference geometry uses representative header allowances and is not a pixel-exact screenshot reconstruction.
+
+Phone aspect ratio no longer bypasses a character's optical weight or substitutes a generic height ceiling. This fixes oversized Mochi on tall/Max screens. Phone results are extrapolated from the confirmed character proportions and require visual review, not a fabricated approval percentage.
+
+Review `Verification/ShelfCalibration/index.html` locally, or regenerate the sheets without starting a server:
+
+```sh
+swiftc -module-cache-path /tmp/whale-module-cache ios/Banke/Core/*.swift ios/Scripts/review_shelf_layout.swift -o /tmp/review-shelf-layout
+/tmp/review-shelf-layout
+```
+
+Temporary controls and their preference readers are removed. Rebuild normally; no reinstall or preference reset is necessary. For a new character, register its sitting point and optical proportions once. New device sizes use the same solver automatically. Replacing a room painting requires measuring its shelf landmark once.

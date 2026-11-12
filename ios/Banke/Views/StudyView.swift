@@ -3,7 +3,6 @@ import Combine
 
 struct StudyView: View {
     #if DEBUG
-    @AppStorage("duo-shelf-framing-v3") private var framingJSON = ""
     var previewTabletop = ProcessInfo.processInfo.arguments.contains("-preview-tabletop")
     #else
     private let previewTabletop = false
@@ -85,7 +84,8 @@ struct StudyView: View {
                 let availableHeight = max(120, bottom - top)
                 HStack(spacing: 0) {
                     CompanionScene(compact: true, openness: openness, sceneHeight: availableHeight,
-                        showsSelector: false, showsBackdrop: false, roomLedgeY: ledgeY - top)
+                        showsSelector: false, showsBackdrop: false, roomLedgeY: ledgeY - top,
+                        viewportSize: size)
                         .frame(width: characterWidth, height: availableHeight)
                     ScrollView {
                         TimerPanel(compact: true,
@@ -103,7 +103,8 @@ struct StudyView: View {
                 // Keep the seat attached to its painted ledge while the timer scrolls.
                 VStack(spacing: 8) {
                     CompanionScene(openness: openness, sceneHeight: sceneHeight,
-                        showsName: showName, showsBackdrop: false, roomLedgeY: ledgeY - top)
+                        showsName: showName, showsBackdrop: false, roomLedgeY: ledgeY - top,
+                        viewportSize: size)
                         .frame(maxWidth: 760).frame(height: sceneHeight)
                     ScrollView {
                         TimerPanel(compact: size.width < 740,
@@ -154,7 +155,6 @@ struct StudyView: View {
                           height: proxy.size.height + safe.top + safe.bottom)
         return GeometryReader { canvas in
             let division = canvasDivision(canvas)
-            let tuningLayout = DuoTuningLayout.resolve(size: size, division: division)
             let occlusions = canvasOcclusions(canvas)
             let placement = TabletopHeaderLayout(width: size.width, topInset: safe.top,
                 headerHeight: tabletopHeaderHeight, occlusions: occlusions, division: division,
@@ -166,9 +166,9 @@ struct StudyView: View {
                 if let division, division.width > division.height {
                     tabletop(size: size, division: division, bottomInset: safe.bottom)
                 } else if size.width > size.height * 1.1 {
-                    sideBySide(size: size, division: division, top: contentTop, bottom: contentBottom, tuningLayout: tuningLayout)
+                    sideBySide(size: size, division: division, top: contentTop, bottom: contentBottom, artworkTop: placement.frame.maxY + 12 - contentTop)
                 } else {
-                    singleColumn(size: size, top: contentTop, bottom: contentBottom, tuningLayout: tuningLayout)
+                    singleColumn(size: size, top: contentTop, bottom: contentBottom, artworkTop: placement.frame.maxY + 12 - contentTop)
                 }
                 headerContent(compactHeight: headerTextSize.isAccessibilitySize ? nil : placement.frame.height)
                     .frame(width: placement.frame.width)
@@ -178,17 +178,9 @@ struct StudyView: View {
                         }
                     }
                     .offset(x: placement.frame.minX, y: placement.frame.minY)
-                #if DEBUG
-                if let tuningLayout {
-                    DuoFramingPanel(companion: store.companion, layout: tuningLayout,
-                        value: framingBinding(layout: tuningLayout), exportJSON: framingDraft.exportJSON())
-                        .frame(width: min(350, size.width - 32))
-                        .padding(.leading, 16).padding(.bottom, safe.bottom + 12)
-                        .frame(width: size.width, height: size.height, alignment: .bottomLeading)
-                }
-                #endif
             }
             .frame(width: size.width, height: size.height, alignment: .topLeading)
+            .clipped()
         }
         .frame(width: size.width, height: size.height)
         .onPreferenceChange(TabletopHeaderHeight.self) { tabletopHeaderHeight = $0 }
@@ -217,7 +209,7 @@ struct StudyView: View {
                                         division: division)
         return ZStack(alignment: .top) {
             CompanionScene(compact: true, openness: openness,
-                sceneHeight: layout.sceneHeight, tabletopHingeY: layout.hingeY)
+                sceneHeight: layout.sceneHeight, tabletopHingeY: layout.hingeY, viewportSize: size)
             ScrollView {
                 TimerPanel(compact: true, clockHeight: layout.clockHeight(width: size.width))
                     .frame(maxWidth: 900)
@@ -233,7 +225,7 @@ struct StudyView: View {
         .clipped()
     }
 
-    private func sideBySide(size: CGSize, division: CGRect?, top: CGFloat, bottom: CGFloat, tuningLayout: DuoTuningLayout?) -> some View {
+    private func sideBySide(size: CGSize, division: CGRect?, top: CGFloat, bottom: CGFloat, artworkTop: CGFloat) -> some View {
         let split = division ?? CGRect(x: size.width * 0.43, y: 0, width: 8, height: size.height)
         let height = max(0, bottom - top)
         let timerWidth = max(0, size.width - split.maxX)
@@ -241,7 +233,7 @@ struct StudyView: View {
         return HStack(spacing: 0) {
             CompanionScene(compact: true, openness: openness, sceneHeight: height,
                            showsSelector: false, showsBackdrop: false, roomLedgeY: ledgeY,
-                           framingAdjustments: adjustments(layout: tuningLayout))
+                           viewportSize: size, minimumArtworkY: artworkTop)
                 .frame(width: max(0, split.minX), height: height)
             Color.clear.frame(width: max(0, split.width), height: height)
             ScrollView {
@@ -260,16 +252,16 @@ struct StudyView: View {
         }
     }
 
-    private func singleColumn(size: CGSize, top: CGFloat, bottom: CGFloat, tuningLayout: DuoTuningLayout?) -> some View {
+    private func singleColumn(size: CGSize, top: CGFloat, bottom: CGFloat, artworkTop: CGFloat) -> some View {
         let height = max(0, bottom - top)
         let dense = size.width < 600
         let clockHeight = min(dense ? 112.0 : 160.0, max(76, (size.width - 110) * 96 / 304))
-        let companionHeight = max(140, min(450, height - clockHeight - (dense ? 156 : 184)))
+        let companionHeight = ShelfSceneLayout.duoPortraitHeight(size: size, availableHeight: height)
         let ledgeY = companionHeight * 0.70
         return VStack(spacing: 8) {
             CompanionScene(compact: true, openness: openness, sceneHeight: companionHeight,
                 showsSelector: false, showsBackdrop: false, roomLedgeY: ledgeY,
-                framingAdjustments: adjustments(layout: tuningLayout))
+                viewportSize: size, minimumArtworkY: artworkTop)
                 .frame(maxWidth: 760).frame(height: companionHeight)
             ScrollView {
                 TimerPanel(compact: true, clockHeight: clockHeight, dense: dense)
@@ -295,30 +287,6 @@ struct StudyView: View {
         .animation(reduceMotion ? nil : .easeInOut(duration: 0.28), value: store.companion.duoRoom)
         .allowsHitTesting(false).accessibilityHidden(true)
     }
-
-    private func adjustments(layout: DuoTuningLayout?) -> [Companion: DuoFramingAdjustment] {
-        #if DEBUG
-        guard let layout else { return [:] }
-        let draft = framingDraft
-        return Dictionary(uniqueKeysWithValues: Companion.allCases.map { ($0, draft.value(for: $0, layout: layout)) })
-        #else
-        return [:]
-        #endif
-    }
-
-    #if DEBUG
-    private var framingDraft: DuoFramingDraft {
-        (try? JSONDecoder().decode(DuoFramingDraft.self, from: Data(framingJSON.utf8))) ?? .init()
-    }
-    private func framingBinding(layout: DuoTuningLayout) -> Binding<DuoFramingAdjustment> {
-        let companion = store.companion
-        return Binding(get: { framingDraft.value(for: companion, layout: layout) }, set: { value in
-            var draft = framingDraft
-            draft.set(value, companion: companion, layout: layout)
-            if let data = try? JSONEncoder().encode(draft) { framingJSON = String(decoding: data, as: UTF8.self) }
-        })
-    }
-    #endif
 
     private func headerContent(compactHeight: CGFloat? = nil) -> some View {
         HStack(spacing: 8) {
@@ -510,68 +478,3 @@ struct DeviceRoomBackdrop: View {
     }
 
 }
-
-#if DEBUG
-/// Temporary calibration overlay: it never participates in the scene's sizing.
-private struct DuoFramingPanel: View {
-    let companion: Companion
-    let layout: DuoTuningLayout
-    @Binding var value: DuoFramingAdjustment
-    let exportJSON: String
-    @State private var expanded = false
-    @State private var copied = false
-
-    var body: some View {
-        VStack(spacing: 10) {
-            Button { expanded.toggle() } label: {
-                HStack(spacing: 8) {
-                    Image(systemName: "slider.horizontal.3")
-                    VStack(alignment: .leading, spacing: 2) {
-                        Text("Tune \(companion.name)").font(.subheadline.weight(.semibold))
-                        Text(layout.title).font(.caption)
-                    }
-                    Spacer(minLength: 4)
-                    Image(systemName: expanded ? "chevron.down" : "chevron.up")
-                }.contentShape(Rectangle())
-            }.buttonStyle(.plain)
-            if expanded {
-                tuningSlider("Scale", value: $value.scaleMultiplier, range: 0.3...1.8, step: 0.01, percentage: false)
-                tuningSlider("Horizontal", value: $value.offsetXFraction, range: -0.5...0.5, step: 0.005)
-                tuningSlider("Vertical", value: $value.offsetYFraction, range: -0.5...0.5, step: 0.005)
-                HStack {
-                    Button("Reset this") { value = .init() }
-                    Spacer()
-                    Button(copied ? "Copied" : "Copy all") {
-                        UIPasteboard.general.string = exportJSON
-                        copied = true
-                    }
-                    ShareLink(item: exportJSON) { Image(systemName: "square.and.arrow.up") }
-                        .accessibilityLabel("Share all Duo tuning values")
-                }.font(.caption.weight(.semibold)).buttonStyle(.bordered)
-                Text("Saved automatically. +X moves right; +Y moves down.")
-                    .font(.caption2).foregroundStyle(.secondary)
-            }
-        }
-        .padding(12)
-        .foregroundStyle(.primary)
-        .background(.regularMaterial, in: RoundedRectangle(cornerRadius: 18))
-        .overlay(RoundedRectangle(cornerRadius: 18).stroke(.white.opacity(0.7)))
-        .onChange(of: exportJSON) { _, _ in copied = false }
-    }
-
-    private func tuningSlider(_ title: String, value: Binding<Double>, range: ClosedRange<Double>,
-                              step: Double, percentage: Bool = true) -> some View {
-        VStack(spacing: 2) {
-            HStack {
-                Text(title)
-                Spacer()
-                Text(percentage ? String(format: "%+.1f%%", value.wrappedValue * 100)
-                                : String(format: "%.2f×", value.wrappedValue))
-                    .monospacedDigit()
-            }.font(.caption)
-            Slider(value: value, in: range, step: step)
-                .accessibilityLabel(title)
-        }
-    }
-}
-#endif

@@ -16,7 +16,8 @@ struct CompanionScene: View {
     var showsName = true
     var showsBackdrop = true
     var roomLedgeY: CGFloat?
-    var framingAdjustments: [Companion: DuoFramingAdjustment] = [:]
+    var viewportSize: CGSize?
+    var minimumArtworkY: CGFloat = 0
     @State private var selection: Companion = .mochi
     @State private var position = 0.0
     @State private var settling = false
@@ -48,7 +49,7 @@ struct CompanionScene: View {
                         layout: tabletopHingeY.map { .seated(hingeY: $0) }
                             ?? .perched(y: ledgeY),
                         reduceMotion: reduceMotion, poked: isGreeting, speech: speech,
-                        framingAdjustments: framingAdjustments)
+                        viewportSize: viewportSize, minimumArtworkY: minimumArtworkY)
                     .contentShape(Rectangle())
                     .simultaneousGesture(sceneGesture(width: proxy.size.width))
                     .accessibilityElement(children: .ignore)
@@ -81,7 +82,10 @@ struct CompanionScene: View {
                         .accessibilityHidden(true)
                 }
             }
-            .clipped()
+            // The character can grow above its original stage during calibration.
+            // Keep carousel neighbors inside their column, but do not cut off heads
+            // or hanging feet at the stage's invisible top/bottom boundaries.
+            .clipShape(CompanionStageBounds(verticalOverflow: roomLedgeY == nil ? 0 : proxy.size.height * 2))
 
         }
         // A shallow tabletop pane needs less empty stage beneath the face. Retain
@@ -200,7 +204,8 @@ struct CompanionArtwork: View, Animatable {
     let reduceMotion: Bool
     let poked: Bool
     let speech: CompanionSpeech?
-    var framingAdjustments: [Companion: DuoFramingAdjustment] = [:]
+    var viewportSize: CGSize?
+    var minimumArtworkY: CGFloat = 0
     var animatableData: Double { get { position } set { position = newValue } }
 
     var body: some View {
@@ -216,9 +221,8 @@ struct CompanionArtwork: View, Animatable {
                 let companion = companions[index]
                 let isPoked = poked && index == 1
                 let registration = CompanionSpriteRegistration(companion, poked: isPoked)
-                let baseline = layout.frame(companion: companion, width: width, height: height)
-                let frame = (framingAdjustments[companion] ?? .init()).apply(to: baseline,
-                    seat: registration.seat, pane: CGSize(width: width, height: height))
+                let frame = layout.frame(companion: companion, width: width, height: height,
+                    viewport: viewportSize, minimumY: minimumArtworkY)
                 SpriteSheetFrame(asset: companion.duoSprite, frame: isPoked ? 1 : 0)
                     .frame(width: frame.width, height: frame.height)
                     .position(x: frame.midX, y: frame.midY)
@@ -239,13 +243,12 @@ struct CompanionArtwork: View, Animatable {
     private var carouselAnchor: UnitPoint {
         switch layout {
         case .seated(let y), .perched(let y): return UnitPoint(x: 0.5, y: y / max(1, height))
-        case .platform: break
         }
-        return .center
     }
 
     private func room(_ room: DuoRoom, hingeY: CGFloat) -> some View {
-        let roomHeight = max(width / 1.5, hingeY / room.ledgeFraction)
+        let painting = room.hingeFrame(width: width, hingeY: hingeY)
+        let roomHeight = painting.height
         return Image(room.asset).resizable().interpolation(.none)
             .frame(width: roomHeight * 1.5, height: roomHeight)
             .mask {
@@ -253,7 +256,7 @@ struct CompanionArtwork: View, Animatable {
                     .init(color: .black, location: 0.94), .init(color: .clear, location: 1)],
                     startPoint: .top, endPoint: .bottom)
             }
-            .position(x: width / 2, y: hingeY + roomHeight * (0.5 - room.ledgeFraction))
+            .position(x: painting.midX, y: painting.midY)
             .frame(width: width, height: height)
             .allowsHitTesting(false)
     }
@@ -343,5 +346,12 @@ struct CompanionShelfPreview: View {
             .frame(width: size.width, height: size.height).clipped()
         }
         .allowsHitTesting(false).accessibilityHidden(true)
+    }
+}
+
+private struct CompanionStageBounds: Shape {
+    let verticalOverflow: CGFloat
+    func path(in rect: CGRect) -> Path {
+        Path(rect.insetBy(dx: 0, dy: -verticalOverflow))
     }
 }

@@ -277,6 +277,15 @@ final class ReleaseExperienceTests: XCTestCase {
         XCTAssertEqual(purchases.availableCompanions, Companion.allCases,
             "Local StoreKit did not deliver the review transaction")
         guard purchases.availableCompanions == Companion.allCases else { return }
+        try await captureDeviceRoomVisualReview(companions: [.mochi, .pip, .pebble, .jun, .luna, .nova], purchases: purchases)
+    }
+
+    /// Free-companion layout checks must not depend on store availability.
+    func testFreeCompanionPhoneVisualReview() async throws {
+        try await captureDeviceRoomVisualReview(companions: [.mochi, .pip, .pebble], purchases: PurchaseStore())
+    }
+
+    private func captureDeviceRoomVisualReview(companions: [Companion], purchases: PurchaseStore) async throws {
         let suite = "BankeDeviceRoomReview"
         let defaults = try XCTUnwrap(UserDefaults(suiteName: suite))
         defaults.removePersistentDomain(forName: suite)
@@ -327,7 +336,7 @@ final class ReleaseExperienceTests: XCTestCase {
             defer { host.willMove(toParent: nil); host.view.removeFromSuperview(); host.removeFromParent() }
             try await Task.sleep(for: .milliseconds(500))
             var captures: [UIImage] = []
-            for companion in [Companion.mochi, .pip, .pebble, .jun, .luna, .nova] {
+            for companion in companions {
                 study.select(companion)
                 XCTAssertEqual(study.companion, companion)
                 try await Task.sleep(for: .milliseconds(450))
@@ -341,7 +350,7 @@ final class ReleaseExperienceTests: XCTestCase {
             let cellWidth: CGFloat = name == "portrait" ? 300 : 500
             let cellHeight = cellWidth * size.height / size.width
             let format = UIGraphicsImageRendererFormat(); format.scale = 1
-            let sheet = UIGraphicsImageRenderer(size: CGSize(width: cellWidth * 3, height: cellHeight * 2), format: format).image { _ in
+            let sheet = UIGraphicsImageRenderer(size: CGSize(width: cellWidth * 3, height: cellHeight * CGFloat((companions.count + 2) / 3)), format: format).image { _ in
                 for (index, image) in captures.enumerated() {
                     image.draw(in: CGRect(x: CGFloat(index % 3) * cellWidth, y: CGFloat(index / 3) * cellHeight,
                                           width: cellWidth, height: cellHeight))
@@ -424,11 +433,11 @@ final class ReleaseExperienceTests: XCTestCase {
         }
     }
 
-    func testSharedPlatformArtworkKeepsBothExpressionsInsidePane() {
+    func testSharedShelfArtworkKeepsBothExpressionsInsideAvailableBounds() {
         for size in [CGSize(width: 320, height: 220), CGSize(width: 400, height: 400), CGSize(width: 600, height: 540)] {
             for companion in Companion.allCases {
-                let frame = CompanionArtworkLayout.platform(calibrated: true)
-                    .frame(companion: companion, width: size.width, height: size.height)
+                let frame = ShelfComposition(viewport: size, stage: size, shelfY: size.height * 0.65,
+                    minimumY: 12, maximumY: size.height - 12).frame(companion: companion)
                 for poked in [false, true] {
                     let bounds = DeviceRoomSprite.bounds(companion: companion, poked: poked)
                     XCTAssertGreaterThanOrEqual(frame.minX + bounds.minX * frame.width, 11.99)
@@ -449,7 +458,7 @@ final class ReleaseExperienceTests: XCTestCase {
             ("phone", CGSize(width: 361, height: 390), .perched(y: 280)),
             ("ipad", CGSize(width: 760, height: 600), .perched(y: 440)),
             ("duo", CGSize(width: 760, height: 620), .seated(hingeY: 480)),
-            ("duo-landscape", CGSize(width: 400, height: 400), .platform(calibrated: true))]
+            ("duo-landscape", CGSize(width: 400, height: 400), .perched(y: 260))]
         for companion in Companion.allCases {
             for (name, size, layout) in layouts {
                 var images: [UIImage] = []

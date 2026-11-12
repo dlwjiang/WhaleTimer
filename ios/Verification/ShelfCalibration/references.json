@@ -1,0 +1,3317 @@
+{
+  "description": "Confirmed Duo/iPad transforms evaluated at representative scene sizes. Phone/Max unadjusted baselines are unverified comparisons, NOT manual approvals. Simulator dimensions are real; header/safe-area allowances are representative because exports omitted viewport geometry.",
+  "references": [
+    {
+      "scenario": "miniP",
+      "companion": "mochi",
+      "viewport": [
+        744,
+        1133
+      ],
+      "stage": [
+        744,
+        535.82
+      ],
+      "shelfY": 413.18000000000006,
+      "minimumY": 0,
+      "referenceFrame": [
+        122.027625,
+        135.98000000000008,
+        540.0,
+        360.0
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "miniP",
+      "companion": "pip",
+      "viewport": [
+        744,
+        1133
+      ],
+      "stage": [
+        744,
+        535.82
+      ],
+      "shelfY": 413.18000000000006,
+      "minimumY": 0,
+      "referenceFrame": [
+        -1.532154594317774,
+        71.78992444330713,
+        733.555157409777,
+        489.036771606518
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "miniP",
+      "companion": "pebble",
+      "viewport": [
+        744,
+        1133
+      ],
+      "stage": [
+        744,
+        535.82
+      ],
+      "shelfY": 413.18000000000006,
+      "minimumY": 0,
+      "referenceFrame": [
+        25.87387499999994,
+        94.83820000000003,
+        622.5000000000001,
+        415.00000000000006
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "miniP",
+      "companion": "jun",
+      "viewport": [
+        744,
+        1133
+      ],
+      "stage": [
+        744,
+        535.82
+      ],
+      "shelfY": 413.18000000000006,
+      "minimumY": 0,
+      "referenceFrame": [
+        -22.134051190171533,
+        77.14812444330697,
+        733.5551574097774,
+        489.03677160651824
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "miniP",
+      "companion": "bean",
+      "viewport": [
+        744,
+        1133
+      ],
+      "stage": [
+        744,
+        535.82
+      ],
+      "shelfY": 413.18000000000006,
+      "minimumY": 0,
+      "referenceFrame": [
+        117.50754222425144,
+        117.4535197719293,
+        507.686788637772,
+        338.457859091848
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "miniP",
+      "companion": "maple",
+      "viewport": [
+        744,
+        1133
+      ],
+      "stage": [
+        744,
+        535.82
+      ],
+      "shelfY": 413.18000000000006,
+      "minimumY": 0,
+      "referenceFrame": [
+        83.98199999999991,
+        87.9636,
+        637.5000000000001,
+        425.00000000000006
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "miniP",
+      "companion": "luna",
+      "viewport": [
+        744,
+        1133
+      ],
+      "stage": [
+        744,
+        535.82
+      ],
+      "shelfY": 413.18000000000006,
+      "minimumY": 0,
+      "referenceFrame": [
+        20.18150069780819,
+        93.19313521057404,
+        685.6861388344844,
+        457.1240925563229
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "miniP",
+      "companion": "atlas",
+      "viewport": [
+        744,
+        1133
+      ],
+      "stage": [
+        744,
+        535.82
+      ],
+      "shelfY": 413.18000000000006,
+      "minimumY": 0,
+      "referenceFrame": [
+        128.0597489126158,
+        97.61798776985711,
+        508.9709874679725,
+        339.313991645315
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "miniP",
+      "companion": "wisp",
+      "viewport": [
+        744,
+        1133
+      ],
+      "stage": [
+        744,
+        535.82
+      ],
+      "shelfY": 413.18000000000006,
+      "minimumY": 0,
+      "referenceFrame": [
+        182.30287500000003,
+        53.180000000000064,
+        375.0,
+        500
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "miniP",
+      "companion": "nova",
+      "viewport": [
+        744,
+        1133
+      ],
+      "stage": [
+        744,
+        535.82
+      ],
+      "shelfY": 413.18000000000006,
+      "minimumY": 0,
+      "referenceFrame": [
+        -31.79355468205739,
+        70.5637140497614,
+        726.0260670210383,
+        484.01737801402555
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "miniP",
+      "companion": "orbit",
+      "viewport": [
+        744,
+        1133
+      ],
+      "stage": [
+        744,
+        535.82
+      ],
+      "shelfY": 413.18000000000006,
+      "minimumY": 0,
+      "referenceFrame": [
+        -5.4168750000000045,
+        43.89640000000007,
+        750.0,
+        500
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "miniP",
+      "companion": "comet",
+      "viewport": [
+        744,
+        1133
+      ],
+      "stage": [
+        744,
+        535.82
+      ],
+      "shelfY": 413.18000000000006,
+      "minimumY": 0,
+      "referenceFrame": [
+        -1.7667763584813088,
+        43.71659853753948,
+        748.9123002617445,
+        499.274866841163
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "miniL",
+      "companion": "mochi",
+      "viewport": [
+        1133,
+        744
+      ],
+      "stage": [
+        521.1800000000001,
+        604
+      ],
+      "shelfY": 375.6,
+      "minimumY": 0,
+      "referenceFrame": [
+        19.434113071458682,
+        109.03109543883323,
+        519.2900738204547,
+        346.1933825469698
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "miniL",
+      "companion": "pip",
+      "viewport": [
+        1133,
+        744
+      ],
+      "stage": [
+        521.1800000000001,
+        604
+      ],
+      "shelfY": 375.6,
+      "minimumY": 0,
+      "referenceFrame": [
+        -115.28921088911443,
+        39.40109450995489,
+        738.1643864375942,
+        492.1095909583961
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "miniL",
+      "companion": "pebble",
+      "viewport": [
+        1133,
+        744
+      ],
+      "stage": [
+        521.1800000000001,
+        604
+      ],
+      "shelfY": 375.6,
+      "minimumY": 0,
+      "referenceFrame": [
+        -51.18288522074681,
+        91.54743802980782,
+        557.8703114811389,
+        371.9135409874259
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "miniL",
+      "companion": "jun",
+      "viewport": [
+        1133,
+        744
+      ],
+      "stage": [
+        521.1800000000001,
+        604
+      ],
+      "shelfY": 375.6,
+      "minimumY": 0,
+      "referenceFrame": [
+        -142.37975,
+        30.70000000000004,
+        750.0,
+        500
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "miniL",
+      "companion": "bean",
+      "viewport": [
+        1133,
+        744
+      ],
+      "stage": [
+        521.1800000000001,
+        604
+      ],
+      "shelfY": 375.6,
+      "minimumY": 0,
+      "referenceFrame": [
+        -1.1797909532661492,
+        73.55214398823047,
+        522.3668047266522,
+        348.2445364844348
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "miniL",
+      "companion": "maple",
+      "viewport": [
+        1133,
+        744
+      ],
+      "stage": [
+        521.1800000000001,
+        604
+      ],
+      "shelfY": 375.6,
+      "minimumY": 0,
+      "referenceFrame": [
+        -26.118403202507807,
+        54.23606253802733,
+        633.0485218823771,
+        422.03234792158474
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "miniL",
+      "companion": "luna",
+      "viewport": [
+        1133,
+        744
+      ],
+      "stage": [
+        521.1800000000001,
+        604
+      ],
+      "shelfY": 375.6,
+      "minimumY": 0,
+      "referenceFrame": [
+        -105.67362499999996,
+        46.120000000000026,
+        712.5,
+        475.0
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "miniL",
+      "companion": "atlas",
+      "viewport": [
+        1133,
+        744
+      ],
+      "stage": [
+        521.1800000000001,
+        604
+      ],
+      "shelfY": 375.6,
+      "minimumY": 0,
+      "referenceFrame": [
+        -2.9033667113862407,
+        40.07477887766483,
+        546.0406792295729,
+        364.02711948638193
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "miniL",
+      "companion": "wisp",
+      "viewport": [
+        1133,
+        744
+      ],
+      "stage": [
+        521.1800000000001,
+        604
+      ],
+      "shelfY": 375.6,
+      "minimumY": 0,
+      "referenceFrame": [
+        74.64287500000006,
+        28.840000000000018,
+        367.5,
+        490.0
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "miniL",
+      "companion": "nova",
+      "viewport": [
+        1133,
+        744
+      ],
+      "stage": [
+        521.1800000000001,
+        604
+      ],
+      "shelfY": 375.6,
+      "minimumY": 0,
+      "referenceFrame": [
+        -155.3906935663657,
+        11.603165337848736,
+        747.9387013605848,
+        498.62580090705654
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "miniL",
+      "companion": "orbit",
+      "viewport": [
+        1133,
+        744
+      ],
+      "stage": [
+        521.1800000000001,
+        604
+      ],
+      "shelfY": 375.6,
+      "minimumY": 0,
+      "referenceFrame": [
+        -103.16386197888471,
+        24.456525719799394,
+        722.8489623951328,
+        481.8993082634219
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "miniL",
+      "companion": "comet",
+      "viewport": [
+        1133,
+        744
+      ],
+      "stage": [
+        521.1800000000001,
+        604
+      ],
+      "shelfY": 375.6,
+      "minimumY": 0,
+      "referenceFrame": [
+        -111.06014896248689,
+        11.248856081058214,
+        744.6712376735308,
+        496.44749178235384
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "proP",
+      "companion": "mochi",
+      "viewport": [
+        834,
+        1210
+      ],
+      "stage": [
+        760,
+        577.4000000000001
+      ],
+      "shelfY": 448.6,
+      "minimumY": 0,
+      "referenceFrame": [
+        130.027625,
+        171.40000000000003,
+        540.0,
+        360.0
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "proP",
+      "companion": "pip",
+      "viewport": [
+        834,
+        1210
+      ],
+      "stage": [
+        760,
+        577.4000000000001
+      ],
+      "shelfY": 448.6,
+      "minimumY": 0,
+      "referenceFrame": [
+        -1.906000000000006,
+        103.03500000000004,
+        750.0,
+        500
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "proP",
+      "companion": "pebble",
+      "viewport": [
+        834,
+        1210
+      ],
+      "stage": [
+        760,
+        577.4000000000001
+      ],
+      "shelfY": 448.6,
+      "minimumY": 0,
+      "referenceFrame": [
+        22.62387499999994,
+        118.97399999999999,
+        645.0000000000001,
+        430.00000000000006
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "proP",
+      "companion": "jun",
+      "viewport": [
+        834,
+        1210
+      ],
+      "stage": [
+        760,
+        577.4000000000001
+      ],
+      "shelfY": 448.6,
+      "minimumY": 0,
+      "referenceFrame": [
+        -22.969750000000033,
+        103.03500000000004,
+        750.0,
+        500
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "proP",
+      "companion": "bean",
+      "viewport": [
+        834,
+        1210
+      ],
+      "stage": [
+        760,
+        577.4000000000001
+      ],
+      "shelfY": 448.6,
+      "minimumY": 0,
+      "referenceFrame": [
+        98.05962499999998,
+        118.302,
+        562.5,
+        375.0
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "proP",
+      "companion": "maple",
+      "viewport": [
+        834,
+        1210
+      ],
+      "stage": [
+        760,
+        577.4000000000001
+      ],
+      "shelfY": 448.6,
+      "minimumY": 0,
+      "referenceFrame": [
+        76.98200000000003,
+        107.75200000000005,
+        667.4999999999999,
+        444.99999999999994
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "proP",
+      "companion": "luna",
+      "viewport": [
+        834,
+        1210
+      ],
+      "stage": [
+        760,
+        577.4000000000001
+      ],
+      "shelfY": 448.6,
+      "minimumY": 0,
+      "referenceFrame": [
+        16.360718683664118,
+        118.03053389157975,
+        708.3631416609007,
+        472.24209444060045
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "proP",
+      "companion": "atlas",
+      "viewport": [
+        834,
+        1210
+      ],
+      "stage": [
+        760,
+        577.4000000000001
+      ],
+      "shelfY": 448.6,
+      "minimumY": 0,
+      "referenceFrame": [
+        113.85829022122584,
+        107.20509858441159,
+        555.2933893799812,
+        370.1955929199875
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "proP",
+      "companion": "wisp",
+      "viewport": [
+        834,
+        1210
+      ],
+      "stage": [
+        760,
+        577.4000000000001
+      ],
+      "shelfY": 448.6,
+      "minimumY": 0,
+      "referenceFrame": [
+        190.30287500000003,
+        94.37400000000002,
+        375.0,
+        500
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "proP",
+      "companion": "nova",
+      "viewport": [
+        834,
+        1210
+      ],
+      "stage": [
+        760,
+        577.4000000000001
+      ],
+      "shelfY": 448.6,
+      "minimumY": 0,
+      "referenceFrame": [
+        -37.12712499999998,
+        98.03500000000004,
+        750.0,
+        500
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "proP",
+      "companion": "orbit",
+      "viewport": [
+        834,
+        1210
+      ],
+      "stage": [
+        760,
+        577.4000000000001
+      ],
+      "shelfY": 448.6,
+      "minimumY": 0,
+      "referenceFrame": [
+        2.5831249999999955,
+        80.14800000000004,
+        750.0,
+        500
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "proP",
+      "companion": "comet",
+      "viewport": [
+        834,
+        1210
+      ],
+      "stage": [
+        760,
+        577.4000000000001
+      ],
+      "shelfY": 448.6,
+      "minimumY": 0,
+      "referenceFrame": [
+        5.690375000000017,
+        81.48700000000002,
+        750.0,
+        500
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "proL",
+      "companion": "mochi",
+      "viewport": [
+        1210,
+        834
+      ],
+      "stage": [
+        556.6,
+        694
+      ],
+      "shelfY": 434.1,
+      "minimumY": 0,
+      "referenceFrame": [
+        35.82762500000001,
+        164.60000000000002,
+        525.0,
+        350.0
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "proL",
+      "companion": "pip",
+      "viewport": [
+        1210,
+        834
+      ],
+      "stage": [
+        556.6,
+        694
+      ],
+      "shelfY": 434.1,
+      "minimumY": 0,
+      "referenceFrame": [
+        -103.606,
+        87.98000000000003,
+        750.0,
+        500
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "proL",
+      "companion": "pebble",
+      "viewport": [
+        1210,
+        834
+      ],
+      "stage": [
+        556.6,
+        694
+      ],
+      "shelfY": 434.1,
+      "minimumY": 0,
+      "referenceFrame": [
+        -64.07612500000005,
+        121.23999999999997,
+        615.0000000000001,
+        410.00000000000006
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "proL",
+      "companion": "jun",
+      "viewport": [
+        1210,
+        834
+      ],
+      "stage": [
+        556.6,
+        694
+      ],
+      "shelfY": 434.1,
+      "minimumY": 0,
+      "referenceFrame": [
+        -184.66975000000002,
+        37.32000000000008,
+        870.0,
+        580.0
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "proL",
+      "companion": "bean",
+      "viewport": [
+        1210,
+        834
+      ],
+      "stage": [
+        556.6,
+        694
+      ],
+      "shelfY": 434.1,
+      "minimumY": 0,
+      "referenceFrame": [
+        -30.738756536107644,
+        77.69122293607562,
+        616.709606583396,
+        411.139737722264
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "proL",
+      "companion": "maple",
+      "viewport": [
+        1210,
+        834
+      ],
+      "stage": [
+        556.6,
+        694
+      ],
+      "shelfY": 434.1,
+      "minimumY": 0,
+      "referenceFrame": [
+        -24.71799999999996,
+        94.39000000000006,
+        667.4999999999999,
+        444.99999999999994
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "proL",
+      "companion": "luna",
+      "viewport": [
+        1210,
+        834
+      ],
+      "stage": [
+        556.6,
+        694
+      ],
+      "shelfY": 434.1,
+      "minimumY": 0,
+      "referenceFrame": [
+        -106.71362499999998,
+        84.10000000000002,
+        750.0,
+        500
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "proL",
+      "companion": "atlas",
+      "viewport": [
+        1210,
+        834
+      ],
+      "stage": [
+        556.6,
+        694
+      ],
+      "shelfY": 434.1,
+      "minimumY": 0,
+      "referenceFrame": [
+        -22.32985862643568,
+        51.009981080441925,
+        623.4839014831582,
+        415.65593432210545
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "proL",
+      "companion": "wisp",
+      "viewport": [
+        1210,
+        834
+      ],
+      "stage": [
+        556.6,
+        694
+      ],
+      "shelfY": 434.1,
+      "minimumY": 0,
+      "referenceFrame": [
+        82.97787500000004,
+        66.77000000000001,
+        386.25,
+        515.0
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "proL",
+      "companion": "nova",
+      "viewport": [
+        1210,
+        834
+      ],
+      "stage": [
+        556.6,
+        694
+      ],
+      "shelfY": 434.1,
+      "minimumY": 0,
+      "referenceFrame": [
+        -138.82712499999997,
+        86.45000000000005,
+        750.0,
+        500
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "proL",
+      "companion": "orbit",
+      "viewport": [
+        1210,
+        834
+      ],
+      "stage": [
+        556.6,
+        694
+      ],
+      "shelfY": 434.1,
+      "minimumY": 0,
+      "referenceFrame": [
+        -99.116875,
+        67.98000000000003,
+        750.0,
+        500
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "proL",
+      "companion": "comet",
+      "viewport": [
+        1210,
+        834
+      ],
+      "stage": [
+        556.6,
+        694
+      ],
+      "shelfY": 434.1,
+      "minimumY": 0,
+      "referenceFrame": [
+        -96.00962499999997,
+        67.57000000000002,
+        750.0,
+        500
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "phoneP",
+      "companion": "mochi",
+      "viewport": [
+        393,
+        852
+      ],
+      "stage": [
+        393,
+        352.08000000000004
+      ],
+      "shelfY": 251.92000000000002,
+      "minimumY": 0,
+      "referenceFrame": [
+        -15.929888186232915,
+        21.520361290932385,
+        448.8304650176642,
+        299.2203100117761
+      ],
+      "kind": "shelf",
+      "confirmed": false,
+      "provenance": "unverified-unadjusted-baseline"
+    },
+    {
+      "scenario": "phoneP",
+      "companion": "pip",
+      "viewport": [
+        393,
+        852
+      ],
+      "stage": [
+        393,
+        352.08000000000004
+      ],
+      "shelfY": 251.92000000000002,
+      "minimumY": 0,
+      "referenceFrame": [
+        -47.15867390741454,
+        22.23750586094684,
+        478.5051961230274,
+        319.0034640820183
+      ],
+      "kind": "shelf",
+      "confirmed": false,
+      "provenance": "unverified-unadjusted-baseline"
+    },
+    {
+      "scenario": "phoneP",
+      "companion": "pebble",
+      "viewport": [
+        393,
+        852
+      ],
+      "stage": [
+        393,
+        352.08000000000004
+      ],
+      "shelfY": 251.92000000000002,
+      "minimumY": 0,
+      "referenceFrame": [
+        -53.66761418274859,
+        13.88376519546739,
+        457.76199000871657,
+        305.17466000581106
+      ],
+      "kind": "shelf",
+      "confirmed": false,
+      "provenance": "unverified-unadjusted-baseline"
+    },
+    {
+      "scenario": "phoneP",
+      "companion": "jun",
+      "viewport": [
+        393,
+        852
+      ],
+      "stage": [
+        393,
+        352.08000000000004
+      ],
+      "shelfY": 251.92000000000002,
+      "minimumY": 0,
+      "referenceFrame": [
+        -70.93752406271523,
+        13.000059576239948,
+        497.74987588283346,
+        331.83325058855564
+      ],
+      "kind": "shelf",
+      "confirmed": false,
+      "provenance": "unverified-unadjusted-baseline"
+    },
+    {
+      "scenario": "phoneP",
+      "companion": "bean",
+      "viewport": [
+        393,
+        852
+      ],
+      "stage": [
+        393,
+        352.08000000000004
+      ],
+      "shelfY": 251.92000000000002,
+      "minimumY": 0,
+      "referenceFrame": [
+        -10.354081031427683,
+        17.916175871269644,
+        412.9479249330536,
+        275.29861662203575
+      ],
+      "kind": "shelf",
+      "confirmed": false,
+      "provenance": "unverified-unadjusted-baseline"
+    },
+    {
+      "scenario": "phoneP",
+      "companion": "maple",
+      "viewport": [
+        393,
+        852
+      ],
+      "stage": [
+        393,
+        352.08000000000004
+      ],
+      "shelfY": 251.92000000000002,
+      "minimumY": 0,
+      "referenceFrame": [
+        -20.014361919793856,
+        19.22246810530251,
+        471.6841862730355,
+        314.45612418202364
+      ],
+      "kind": "shelf",
+      "confirmed": false,
+      "provenance": "unverified-unadjusted-baseline"
+    },
+    {
+      "scenario": "phoneP",
+      "companion": "luna",
+      "viewport": [
+        393,
+        852
+      ],
+      "stage": [
+        393,
+        352.08000000000004
+      ],
+      "shelfY": 251.92000000000002,
+      "minimumY": 0,
+      "referenceFrame": [
+        -64.52152786536107,
+        14.6360993253775,
+        508.46550144561974,
+        338.9770009637465
+      ],
+      "kind": "shelf",
+      "confirmed": false,
+      "provenance": "unverified-unadjusted-baseline"
+    },
+    {
+      "scenario": "phoneP",
+      "companion": "atlas",
+      "viewport": [
+        393,
+        852
+      ],
+      "stage": [
+        393,
+        352.08000000000004
+      ],
+      "shelfY": 251.92000000000002,
+      "minimumY": 0,
+      "referenceFrame": [
+        16.379116447918364,
+        20.91219568228658,
+        372.59323277050555,
+        248.39548851367036
+      ],
+      "kind": "shelf",
+      "confirmed": false,
+      "provenance": "unverified-unadjusted-baseline"
+    },
+    {
+      "scenario": "phoneP",
+      "companion": "wisp",
+      "viewport": [
+        393,
+        852
+      ],
+      "stage": [
+        393,
+        352.08000000000004
+      ],
+      "shelfY": 251.92000000000002,
+      "minimumY": 0,
+      "referenceFrame": [
+        64.78863960592395,
+        1.9631820362729115,
+        260.3716853788824,
+        347.1622471718432
+      ],
+      "kind": "shelf",
+      "confirmed": false,
+      "provenance": "unverified-unadjusted-baseline"
+    },
+    {
+      "scenario": "phoneP",
+      "companion": "nova",
+      "viewport": [
+        393,
+        852
+      ],
+      "stage": [
+        393,
+        352.08000000000004
+      ],
+      "shelfY": 251.92000000000002,
+      "minimumY": 0,
+      "referenceFrame": [
+        -73.15392399785577,
+        15.963917644489442,
+        484.8412651140628,
+        323.2275100760419
+      ],
+      "kind": "shelf",
+      "confirmed": false,
+      "provenance": "unverified-unadjusted-baseline"
+    },
+    {
+      "scenario": "phoneP",
+      "companion": "orbit",
+      "viewport": [
+        393,
+        852
+      ],
+      "stage": [
+        393,
+        352.08000000000004
+      ],
+      "shelfY": 251.92000000000002,
+      "minimumY": 0,
+      "referenceFrame": [
+        -39.29857856151139,
+        14.50756354396097,
+        468.5771772158665,
+        312.3847848105777
+      ],
+      "kind": "shelf",
+      "confirmed": false,
+      "provenance": "unverified-unadjusted-baseline"
+    },
+    {
+      "scenario": "phoneP",
+      "companion": "comet",
+      "viewport": [
+        393,
+        852
+      ],
+      "stage": [
+        393,
+        352.08000000000004
+      ],
+      "shelfY": 251.92000000000002,
+      "minimumY": 0,
+      "referenceFrame": [
+        -44.41724104530721,
+        13.77656677472919,
+        482.7231754566301,
+        321.81545030442004
+      ],
+      "kind": "shelf",
+      "confirmed": false,
+      "provenance": "unverified-unadjusted-baseline"
+    },
+    {
+      "scenario": "phoneL",
+      "companion": "mochi",
+      "viewport": [
+        852,
+        393
+      ],
+      "stage": [
+        337.64,
+        270
+      ],
+      "shelfY": 165.45000000000002,
+      "minimumY": 0,
+      "referenceFrame": [
+        36.98335695005861,
+        22.46110523254822,
+        278.54979500152945,
+        185.69986333435298
+      ],
+      "kind": "shelf",
+      "confirmed": false,
+      "provenance": "unverified-unadjusted-baseline"
+    },
+    {
+      "scenario": "phoneL",
+      "companion": "pip",
+      "viewport": [
+        852,
+        393
+      ],
+      "stage": [
+        337.64,
+        270
+      ],
+      "shelfY": 165.45000000000002,
+      "minimumY": 0,
+      "referenceFrame": [
+        17.602382308688192,
+        22.906174113859834,
+        296.9663039294587,
+        197.9775359529725
+      ],
+      "kind": "shelf",
+      "confirmed": false,
+      "provenance": "unverified-unadjusted-baseline"
+    },
+    {
+      "scenario": "phoneL",
+      "companion": "pebble",
+      "viewport": [
+        852,
+        393
+      ],
+      "stage": [
+        337.64,
+        270
+      ],
+      "shelfY": 165.45000000000002,
+      "minimumY": 0,
+      "referenceFrame": [
+        13.562852640620406,
+        17.721738271757033,
+        284.0928110158519,
+        189.39520734390126
+      ],
+      "kind": "shelf",
+      "confirmed": false,
+      "provenance": "unverified-unadjusted-baseline"
+    },
+    {
+      "scenario": "phoneL",
+      "companion": "jun",
+      "viewport": [
+        852,
+        393
+      ],
+      "stage": [
+        337.64,
+        270
+      ],
+      "shelfY": 165.45000000000002,
+      "minimumY": 0,
+      "referenceFrame": [
+        2.844930771011434,
+        17.173299522021523,
+        308.90979266245523,
+        205.93986177497015
+      ],
+      "kind": "shelf",
+      "confirmed": false,
+      "provenance": "unverified-unadjusted-baseline"
+    },
+    {
+      "scenario": "phoneL",
+      "companion": "bean",
+      "viewport": [
+        852,
+        393
+      ],
+      "stage": [
+        337.64,
+        270
+      ],
+      "shelfY": 165.45000000000002,
+      "minimumY": 0,
+      "referenceFrame": [
+        40.44377254345628,
+        20.22430272460113,
+        256.2806422507039,
+        170.8537615004693
+      ],
+      "kind": "shelf",
+      "confirmed": false,
+      "provenance": "unverified-unadjusted-baseline"
+    },
+    {
+      "scenario": "phoneL",
+      "companion": "maple",
+      "viewport": [
+        852,
+        393
+      ],
+      "stage": [
+        337.64,
+        270
+      ],
+      "shelfY": 165.45000000000002,
+      "minimumY": 0,
+      "referenceFrame": [
+        34.448481513009625,
+        21.035004007963494,
+        292.7330999838578,
+        195.15539998923853
+      ],
+      "kind": "shelf",
+      "confirmed": false,
+      "provenance": "unverified-unadjusted-baseline"
+    },
+    {
+      "scenario": "phoneL",
+      "companion": "luna",
+      "viewport": [
+        852,
+        393
+      ],
+      "stage": [
+        337.64,
+        270
+      ],
+      "shelfY": 165.45000000000002,
+      "minimumY": 0,
+      "referenceFrame": [
+        6.826778182891701,
+        18.188646233654993,
+        315.5600437850251,
+        210.37336252335007
+      ],
+      "kind": "shelf",
+      "confirmed": false,
+      "provenance": "unverified-unadjusted-baseline"
+    },
+    {
+      "scenario": "phoneL",
+      "companion": "atlas",
+      "viewport": [
+        852,
+        393
+      ],
+      "stage": [
+        337.64,
+        270
+      ],
+      "shelfY": 165.45000000000002,
+      "minimumY": 0,
+      "referenceFrame": [
+        57.03472894681488,
+        22.08367005642083,
+        231.23601603803093,
+        154.15734402535395
+      ],
+      "kind": "shelf",
+      "confirmed": false,
+      "provenance": "unverified-unadjusted-baseline"
+    },
+    {
+      "scenario": "phoneL",
+      "companion": "wisp",
+      "viewport": [
+        852,
+        393
+      ],
+      "stage": [
+        337.64,
+        270
+      ],
+      "shelfY": 165.45000000000002,
+      "minimumY": 0,
+      "referenceFrame": [
+        87.07828392531562,
+        10.323675408173045,
+        161.58992144981977,
+        215.45322859975968
+      ],
+      "kind": "shelf",
+      "confirmed": false,
+      "provenance": "unverified-unadjusted-baseline"
+    },
+    {
+      "scenario": "phoneL",
+      "companion": "nova",
+      "viewport": [
+        852,
+        393
+      ],
+      "stage": [
+        337.64,
+        270
+      ],
+      "shelfY": 165.45000000000002,
+      "minimumY": 0,
+      "referenceFrame": [
+        1.4694052759884926,
+        19.012706874399043,
+        300.89854751835816,
+        200.59903167890545
+      ],
+      "kind": "shelf",
+      "confirmed": false,
+      "provenance": "unverified-unadjusted-baseline"
+    },
+    {
+      "scenario": "phoneL",
+      "companion": "orbit",
+      "viewport": [
+        852,
+        393
+      ],
+      "stage": [
+        337.64,
+        270
+      ],
+      "shelfY": 165.45000000000002,
+      "minimumY": 0,
+      "referenceFrame": [
+        22.480455697061302,
+        18.108875321574573,
+        290.80485133899754,
+        193.86990089266504
+      ],
+      "kind": "shelf",
+      "confirmed": false,
+      "provenance": "unverified-unadjusted-baseline"
+    },
+    {
+      "scenario": "phoneL",
+      "companion": "comet",
+      "viewport": [
+        852,
+        393
+      ],
+      "stage": [
+        337.64,
+        270
+      ],
+      "shelfY": 165.45000000000002,
+      "minimumY": 0,
+      "referenceFrame": [
+        19.303749798794712,
+        17.655209592336973,
+        299.5840346101278,
+        199.7226897400852
+      ],
+      "kind": "shelf",
+      "confirmed": false,
+      "provenance": "unverified-unadjusted-baseline"
+    },
+    {
+      "scenario": "maxP",
+      "companion": "mochi",
+      "viewport": [
+        440,
+        956
+      ],
+      "stage": [
+        440,
+        408.24
+      ],
+      "shelfY": 299.76,
+      "minimumY": 0,
+      "referenceFrame": [
+        -37.01854144540005,
+        20.9998895647048,
+        543.0391761726529,
+        362.0261174484353
+      ],
+      "kind": "shelf",
+      "confirmed": false,
+      "provenance": "unverified-unadjusted-baseline"
+    },
+    {
+      "scenario": "maxP",
+      "companion": "pip",
+      "viewport": [
+        440,
+        956
+      ],
+      "stage": [
+        440,
+        408.24
+      ],
+      "shelfY": 299.76,
+      "minimumY": 0,
+      "referenceFrame": [
+        -74.80219338675255,
+        21.867561496203507,
+        578.9425802162427,
+        385.9617201441618
+      ],
+      "kind": "shelf",
+      "confirmed": false,
+      "provenance": "unverified-unadjusted-baseline"
+    },
+    {
+      "scenario": "maxP",
+      "companion": "pebble",
+      "viewport": [
+        440,
+        956
+      ],
+      "stage": [
+        440,
+        408.24
+      ],
+      "shelfY": 299.76,
+      "minimumY": 0,
+      "referenceFrame": [
+        -82.67734857421357,
+        11.76038561908598,
+        553.8454122709884,
+        369.23027484732563
+      ],
+      "kind": "shelf",
+      "confirmed": false,
+      "provenance": "unverified-unadjusted-baseline"
+    },
+    {
+      "scenario": "maxP",
+      "companion": "jun",
+      "viewport": [
+        440,
+        956
+      ],
+      "stage": [
+        440,
+        408.24
+      ],
+      "shelfY": 299.76,
+      "minimumY": 0,
+      "referenceFrame": [
+        -103.57218162308857,
+        10.691191772305785,
+        602.2266838076963,
+        401.48445587179754
+      ],
+      "kind": "shelf",
+      "confirmed": false,
+      "provenance": "unverified-unadjusted-baseline"
+    },
+    {
+      "scenario": "maxP",
+      "companion": "bean",
+      "viewport": [
+        440,
+        956
+      ],
+      "stage": [
+        440,
+        408.24
+      ],
+      "shelfY": 299.76,
+      "minimumY": 0,
+      "referenceFrame": [
+        -30.272382350063623,
+        16.639192077313567,
+        499.62495515768194,
+        333.0833034384546
+      ],
+      "kind": "shelf",
+      "confirmed": false,
+      "provenance": "unverified-unadjusted-baseline"
+    },
+    {
+      "scenario": "maxP",
+      "companion": "maple",
+      "viewport": [
+        440,
+        956
+      ],
+      "stage": [
+        440,
+        408.24
+      ],
+      "shelfY": 299.76,
+      "minimumY": 0,
+      "referenceFrame": [
+        -41.96033890401168,
+        18.219672712873887,
+        570.6898526090393,
+        380.45990173935957
+      ],
+      "kind": "shelf",
+      "confirmed": false,
+      "provenance": "unverified-unadjusted-baseline"
+    },
+    {
+      "scenario": "maxP",
+      "companion": "luna",
+      "viewport": [
+        440,
+        956
+      ],
+      "stage": [
+        440,
+        408.24
+      ],
+      "shelfY": 299.76,
+      "minimumY": 0,
+      "referenceFrame": [
+        -82.47081942603819,
+        24.79625865418825,
+        589.2080171695967,
+        392.8053447797311
+      ],
+      "kind": "shelf",
+      "confirmed": false,
+      "provenance": "unverified-unadjusted-baseline"
+    },
+    {
+      "scenario": "maxP",
+      "companion": "atlas",
+      "viewport": [
+        440,
+        956
+      ],
+      "stage": [
+        440,
+        408.24
+      ],
+      "shelfY": 299.76,
+      "minimumY": 0,
+      "referenceFrame": [
+        2.0720654250525286,
+        20.264071083482577,
+        450.79988534922165,
+        300.5332568994811
+      ],
+      "kind": "shelf",
+      "confirmed": false,
+      "provenance": "unverified-unadjusted-baseline"
+    },
+    {
+      "scenario": "maxP",
+      "companion": "wisp",
+      "viewport": [
+        440,
+        956
+      ],
+      "stage": [
+        440,
+        408.24
+      ],
+      "shelfY": 299.76,
+      "minimumY": 0,
+      "referenceFrame": [
+        60.642660835949414,
+        -2.662306606166112,
+        315.0232360480897,
+        420.03098139745293
+      ],
+      "kind": "shelf",
+      "confirmed": false,
+      "provenance": "unverified-unadjusted-baseline"
+    },
+    {
+      "scenario": "maxP",
+      "companion": "nova",
+      "viewport": [
+        440,
+        956
+      ],
+      "stage": [
+        440,
+        408.24
+      ],
+      "shelfY": 299.76,
+      "minimumY": 0,
+      "referenceFrame": [
+        -106.25379993703359,
+        14.277158343473161,
+        586.608578746288,
+        391.07238583085865
+      ],
+      "kind": "shelf",
+      "confirmed": false,
+      "provenance": "unverified-unadjusted-baseline"
+    },
+    {
+      "scenario": "maxP",
+      "companion": "orbit",
+      "viewport": [
+        440,
+        956
+      ],
+      "stage": [
+        440,
+        408.24
+      ],
+      "shelfY": 299.76,
+      "minimumY": 0,
+      "referenceFrame": [
+        -65.29227809811505,
+        12.515118124265882,
+        566.9306879126332,
+        377.9537919417554
+      ],
+      "kind": "shelf",
+      "confirmed": false,
+      "provenance": "unverified-unadjusted-baseline"
+    },
+    {
+      "scenario": "maxP",
+      "companion": "comet",
+      "viewport": [
+        440,
+        956
+      ],
+      "stage": [
+        440,
+        408.24
+      ],
+      "shelfY": 299.76,
+      "minimumY": 0,
+      "referenceFrame": [
+        -71.48533867433275,
+        11.630686441730916,
+        584.0459058613562,
+        389.36393724090414
+      ],
+      "kind": "shelf",
+      "confirmed": false,
+      "provenance": "unverified-unadjusted-baseline"
+    },
+    {
+      "scenario": "maxL",
+      "companion": "mochi",
+      "viewport": [
+        956,
+        440
+      ],
+      "stage": [
+        385.48,
+        317
+      ],
+      "shelfY": 196.0,
+      "minimumY": 0,
+      "referenceFrame": [
+        32.42962456988394,
+        22.128738776940907,
+        338.7102491358294,
+        225.80683275721958
+      ],
+      "kind": "shelf",
+      "confirmed": false,
+      "provenance": "unverified-unadjusted-baseline"
+    },
+    {
+      "scenario": "maxL",
+      "companion": "pip",
+      "viewport": [
+        956,
+        440
+      ],
+      "stage": [
+        385.48,
+        317
+      ],
+      "shelfY": 196.0,
+      "minimumY": 0,
+      "referenceFrame": [
+        8.86279785856749,
+        22.669932467896018,
+        361.10430735855,
+        240.7362049057
+      ],
+      "kind": "shelf",
+      "confirmed": false,
+      "provenance": "unverified-unadjusted-baseline"
+    },
+    {
+      "scenario": "maxL",
+      "companion": "pebble",
+      "viewport": [
+        956,
+        440
+      ],
+      "stage": [
+        385.48,
+        317
+      ],
+      "shelfY": 196.0,
+      "minimumY": 0,
+      "referenceFrame": [
+        3.950821167809977,
+        16.365775770535237,
+        345.4504312105091,
+        230.30028747367277
+      ],
+      "kind": "shelf",
+      "confirmed": false,
+      "provenance": "unverified-unadjusted-baseline"
+    },
+    {
+      "scenario": "maxL",
+      "companion": "jun",
+      "viewport": [
+        956,
+        440
+      ],
+      "stage": [
+        385.48,
+        317
+      ],
+      "shelfY": 196.0,
+      "minimumY": 0,
+      "referenceFrame": [
+        -9.081929355857369,
+        15.698886658096143,
+        375.6273194622997,
+        250.41821297486646
+      ],
+      "kind": "shelf",
+      "confirmed": false,
+      "provenance": "unverified-unadjusted-baseline"
+    },
+    {
+      "scenario": "maxL",
+      "companion": "bean",
+      "viewport": [
+        956,
+        440
+      ],
+      "stage": [
+        385.48,
+        317
+      ],
+      "shelfY": 196.0,
+      "minimumY": 0,
+      "referenceFrame": [
+        36.63741164704476,
+        19.408837530091176,
+        311.6314631821921,
+        207.75430878812804
+      ],
+      "kind": "shelf",
+      "confirmed": false,
+      "provenance": "unverified-unadjusted-baseline"
+    },
+    {
+      "scenario": "maxL",
+      "companion": "maple",
+      "viewport": [
+        956,
+        440
+      ],
+      "stage": [
+        385.48,
+        317
+      ],
+      "shelfY": 196.0,
+      "minimumY": 0,
+      "referenceFrame": [
+        29.347273384500966,
+        20.394631950298475,
+        355.95682712777335,
+        237.30455141851556
+      ],
+      "kind": "shelf",
+      "confirmed": false,
+      "provenance": "unverified-unadjusted-baseline"
+    },
+    {
+      "scenario": "maxL",
+      "companion": "luna",
+      "viewport": [
+        956,
+        440
+      ],
+      "stage": [
+        385.48,
+        317
+      ],
+      "shelfY": 196.0,
+      "minimumY": 0,
+      "referenceFrame": [
+        -4.240092983687703,
+        16.933525289421397,
+        383.71387437981133,
+        255.8092495865409
+      ],
+      "kind": "shelf",
+      "confirmed": false,
+      "provenance": "unverified-unadjusted-baseline"
+    },
+    {
+      "scenario": "maxL",
+      "companion": "atlas",
+      "viewport": [
+        956,
+        440
+      ],
+      "stage": [
+        385.48,
+        317
+      ],
+      "shelfY": 196.0,
+      "minimumY": 0,
+      "referenceFrame": [
+        56.811639299060886,
+        21.669786141423685,
+        281.1777642880263,
+        187.4518428586842
+      ],
+      "kind": "shelf",
+      "confirmed": false,
+      "provenance": "unverified-unadjusted-baseline"
+    },
+    {
+      "scenario": "maxL",
+      "companion": "wisp",
+      "viewport": [
+        956,
+        440
+      ],
+      "stage": [
+        385.48,
+        317
+      ],
+      "shelfY": 196.0,
+      "minimumY": 0,
+      "referenceFrame": [
+        93.34392248253297,
+        7.369898693572026,
+        196.4896888608625,
+        261.9862518144833
+      ],
+      "kind": "shelf",
+      "confirmed": false,
+      "provenance": "unverified-unadjusted-baseline"
+    },
+    {
+      "scenario": "maxL",
+      "companion": "nova",
+      "viewport": [
+        956,
+        440
+      ],
+      "stage": [
+        385.48,
+        317
+      ],
+      "shelfY": 196.0,
+      "minimumY": 0,
+      "referenceFrame": [
+        -10.754537239519067,
+        17.935564385978353,
+        365.8858266041541,
+        243.9238844027694
+      ],
+      "kind": "shelf",
+      "confirmed": false,
+      "provenance": "unverified-unadjusted-baseline"
+    },
+    {
+      "scenario": "maxL",
+      "companion": "orbit",
+      "viewport": [
+        956,
+        440
+      ],
+      "stage": [
+        385.48,
+        317
+      ],
+      "shelfY": 196.0,
+      "minimumY": 0,
+      "referenceFrame": [
+        14.79442474298017,
+        16.836525664975824,
+        353.61212039807407,
+        235.74141359871604
+      ],
+      "kind": "shelf",
+      "confirmed": false,
+      "provenance": "unverified-unadjusted-baseline"
+    },
+    {
+      "scenario": "maxL",
+      "companion": "comet",
+      "viewport": [
+        956,
+        440
+      ],
+      "stage": [
+        385.48,
+        317
+      ],
+      "shelfY": 196.0,
+      "minimumY": 0,
+      "referenceFrame": [
+        10.93162223678118,
+        16.28487840142779,
+        364.2874086457545,
+        242.858272430503
+      ],
+      "kind": "shelf",
+      "confirmed": false,
+      "provenance": "unverified-unadjusted-baseline"
+    },
+    {
+      "scenario": "duoP",
+      "companion": "mochi",
+      "viewport": [
+        466,
+        678
+      ],
+      "stage": [
+        466,
+        190
+      ],
+      "shelfY": 133.0,
+      "minimumY": -90,
+      "referenceFrame": [
+        104.5769879862888,
+        -4.732321753731384,
+        268.3097177020741,
+        178.87314513471608
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "duoP",
+      "companion": "pip",
+      "viewport": [
+        466,
+        678
+      ],
+      "stage": [
+        466,
+        190
+      ],
+      "shelfY": 133.0,
+      "minimumY": -90,
+      "referenceFrame": [
+        28.370015745827317,
+        -53.821918191679224,
+        405.0456628993317,
+        270.0304419328878
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "duoP",
+      "companion": "pebble",
+      "viewport": [
+        466,
+        678
+      ],
+      "stage": [
+        466,
+        190
+      ],
+      "shelfY": 133.0,
+      "minimumY": -90,
+      "referenceFrame": [
+        56.44136213247356,
+        -37.18371087405654,
+        332.75713629626256,
+        221.83809086417503
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "duoP",
+      "companion": "jun",
+      "viewport": [
+        466,
+        678
+      ],
+      "stage": [
+        466,
+        190
+      ],
+      "shelfY": 133.0,
+      "minimumY": -90,
+      "referenceFrame": [
+        9.884061463112118,
+        -62.21906068419496,
+        428.4772097587395,
+        285.651473172493
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "duoP",
+      "companion": "bean",
+      "viewport": [
+        466,
+        678
+      ],
+      "stage": [
+        466,
+        190
+      ],
+      "shelfY": 133.0,
+      "minimumY": -90,
+      "referenceFrame": [
+        80.75292969811605,
+        -45.04065425697034,
+        304.13056633583005,
+        202.75371089055335
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "duoP",
+      "companion": "maple",
+      "viewport": [
+        466,
+        678
+      ],
+      "stage": [
+        466,
+        190
+      ],
+      "shelfY": 133.0,
+      "minimumY": -90,
+      "referenceFrame": [
+        53.88621660662767,
+        -58.54561131446026,
+        376.7140769887708,
+        251.14271799251387
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "duoP",
+      "companion": "luna",
+      "viewport": [
+        466,
+        678
+      ],
+      "stage": [
+        466,
+        190
+      ],
+      "shelfY": 133.0,
+      "minimumY": -90,
+      "referenceFrame": [
+        20.629287407640987,
+        -61.232457434530644,
+        418.2481230739943,
+        278.83208204932953
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "duoP",
+      "companion": "atlas",
+      "viewport": [
+        466,
+        678
+      ],
+      "stage": [
+        466,
+        190
+      ],
+      "shelfY": 133.0,
+      "minimumY": -90,
+      "referenceFrame": [
+        83.60252961902597,
+        -55.91516605290718,
+        304.7018807304954,
+        203.13458715366363
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "duoP",
+      "companion": "wisp",
+      "viewport": [
+        466,
+        678
+      ],
+      "stage": [
+        466,
+        190
+      ],
+      "shelfY": 133.0,
+      "minimumY": -90,
+      "referenceFrame": [
+        129.54174606220954,
+        -62.33909139512247,
+        205.45738686991925,
+        273.94318249322566
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "duoP",
+      "companion": "nova",
+      "viewport": [
+        466,
+        678
+      ],
+      "stage": [
+        466,
+        190
+      ],
+      "shelfY": 133.0,
+      "minimumY": -90,
+      "referenceFrame": [
+        22.886925325255476,
+        -55.983371623710546,
+        394.1781608706381,
+        262.7854405804254
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "duoP",
+      "companion": "orbit",
+      "viewport": [
+        466,
+        678
+      ],
+      "stage": [
+        466,
+        190
+      ],
+      "shelfY": 133.0,
+      "minimumY": -90,
+      "referenceFrame": [
+        61.968400028508256,
+        -34.83025830131865,
+        340.61893085786573,
+        227.07928723857717
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "duoP",
+      "companion": "comet",
+      "viewport": [
+        466,
+        678
+      ],
+      "stage": [
+        466,
+        190
+      ],
+      "shelfY": 133.0,
+      "minimumY": -90,
+      "referenceFrame": [
+        25.441603528222373,
+        -70.10062126534808,
+        415.5417998621921,
+        277.0278665747947
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "duoL",
+      "companion": "mochi",
+      "viewport": [
+        678,
+        466
+      ],
+      "stage": [
+        291.54,
+        336
+      ],
+      "shelfY": 218.4,
+      "minimumY": 0,
+      "referenceFrame": [
+        23.365259712295114,
+        83.23259997128966,
+        263.31311693904615,
+        175.5420779593641
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "duoL",
+      "companion": "pip",
+      "viewport": [
+        678,
+        466
+      ],
+      "stage": [
+        291.54,
+        336
+      ],
+      "shelfY": 218.4,
+      "minimumY": 0,
+      "referenceFrame": [
+        -62.05400055985166,
+        27.53671437069176,
+        408.13184506105887,
+        272.0878967073726
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "duoL",
+      "companion": "pebble",
+      "viewport": [
+        678,
+        466
+      ],
+      "stage": [
+        291.54,
+        336
+      ],
+      "shelfY": 218.4,
+      "minimumY": 0,
+      "referenceFrame": [
+        -29.01430323916898,
+        58.70594918435934,
+        313.5654823377705,
+        209.043654891847
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "duoL",
+      "companion": "jun",
+      "viewport": [
+        678,
+        466
+      ],
+      "stage": [
+        291.54,
+        336
+      ],
+      "shelfY": 218.4,
+      "minimumY": 0,
+      "referenceFrame": [
+        -82.3357155045272,
+        24.697811432173793,
+        424.5462261829713,
+        283.0308174553142
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "duoL",
+      "companion": "bean",
+      "viewport": [
+        678,
+        466
+      ],
+      "stage": [
+        291.54,
+        336
+      ],
+      "shelfY": 218.4,
+      "minimumY": 0,
+      "referenceFrame": [
+        -11.290346345758735,
+        35.725717640152645,
+        313.47226298796596,
+        208.98150865864397
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "duoL",
+      "companion": "maple",
+      "viewport": [
+        678,
+        466
+      ],
+      "stage": [
+        291.54,
+        336
+      ],
+      "shelfY": 218.4,
+      "minimumY": 0,
+      "referenceFrame": [
+        -24.82078954811422,
+        27.09833895092072,
+        374.1520156400256,
+        249.4346770933504
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "duoL",
+      "companion": "luna",
+      "viewport": [
+        678,
+        466
+      ],
+      "stage": [
+        291.54,
+        336
+      ],
+      "shelfY": 218.4,
+      "minimumY": 0,
+      "referenceFrame": [
+        -76.8633143955168,
+        16.013240210834425,
+        433.6859138339263,
+        289.12394255595086
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "duoL",
+      "companion": "atlas",
+      "viewport": [
+        678,
+        466
+      ],
+      "stage": [
+        291.54,
+        336
+      ],
+      "shelfY": 218.4,
+      "minimumY": 0,
+      "referenceFrame": [
+        -7.860658838735816,
+        21.366316429609128,
+        317.7962638232111,
+        211.86417588214073
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "duoL",
+      "companion": "wisp",
+      "viewport": [
+        678,
+        466
+      ],
+      "stage": [
+        291.54,
+        336
+      ],
+      "shelfY": 218.4,
+      "minimumY": 0,
+      "referenceFrame": [
+        33.429317038397755,
+        5.204118058316283,
+        222.07904368925387,
+        296.10539158567184
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "duoL",
+      "companion": "nova",
+      "viewport": [
+        678,
+        466
+      ],
+      "stage": [
+        291.54,
+        336
+      ],
+      "shelfY": 218.4,
+      "minimumY": 0,
+      "referenceFrame": [
+        -84.2261513916425,
+        17.145777422291786,
+        413.53607378981144,
+        275.6907158598743
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "duoL",
+      "companion": "orbit",
+      "viewport": [
+        678,
+        466
+      ],
+      "stage": [
+        291.54,
+        336
+      ],
+      "shelfY": 218.4,
+      "minimumY": 0,
+      "referenceFrame": [
+        -55.349882732352626,
+        25.983608077158706,
+        399.66393142666044,
+        266.44262095110696
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "duoL",
+      "companion": "comet",
+      "viewport": [
+        678,
+        466
+      ],
+      "stage": [
+        291.54,
+        336
+      ],
+      "shelfY": 218.4,
+      "minimumY": 0,
+      "referenceFrame": [
+        -59.715747890521754,
+        15.280118379288155,
+        411.72948977171325,
+        274.4863265144755
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "duoOpen",
+      "companion": "mochi",
+      "viewport": [
+        951,
+        669
+      ],
+      "stage": [
+        471.5,
+        515
+      ],
+      "shelfY": 334.75,
+      "minimumY": 0,
+      "referenceFrame": [
+        31.791512928754003,
+        108.57583729042304,
+        440.59901826540965,
+        293.73267884360644
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "duoOpen",
+      "companion": "pip",
+      "viewport": [
+        951,
+        669
+      ],
+      "stage": [
+        471.5,
+        515
+      ],
+      "shelfY": 334.75,
+      "minimumY": 0,
+      "referenceFrame": [
+        -96.45837538052416,
+        21.596985548829537,
+        652.4021134399384,
+        434.9347422932923
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "duoOpen",
+      "companion": "pebble",
+      "viewport": [
+        951,
+        669
+      ],
+      "stage": [
+        471.5,
+        515
+      ],
+      "shelfY": 334.75,
+      "minimumY": 0,
+      "referenceFrame": [
+        -42.92072774556101,
+        80.26588288694799,
+        499.2963790635615,
+        332.864252709041
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "duoOpen",
+      "companion": "jun",
+      "viewport": [
+        951,
+        669
+      ],
+      "stage": [
+        471.5,
+        515
+      ],
+      "shelfY": 334.75,
+      "minimumY": 0,
+      "referenceFrame": [
+        -156.02448911772717,
+        -1.6073060969555293,
+        732.9318877019907,
+        488.6212584679938
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "duoOpen",
+      "companion": "bean",
+      "viewport": [
+        951,
+        669
+      ],
+      "stage": [
+        471.5,
+        515
+      ],
+      "shelfY": 334.75,
+      "minimumY": 0,
+      "referenceFrame": [
+        7.208552335967681,
+        73.74872077096175,
+        456.0463751100675,
+        304.03091674004503
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "duoOpen",
+      "companion": "maple",
+      "viewport": [
+        951,
+        669
+      ],
+      "stage": [
+        471.5,
+        515
+      ],
+      "shelfY": 334.75,
+      "minimumY": 0,
+      "referenceFrame": [
+        -20.863225313773228,
+        45.25788402981756,
+        565.9299648044239,
+        377.2866432029492
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "duoOpen",
+      "companion": "luna",
+      "viewport": [
+        951,
+        669
+      ],
+      "stage": [
+        471.5,
+        515
+      ],
+      "shelfY": 334.75,
+      "minimumY": 0,
+      "referenceFrame": [
+        -102.79992286681852,
+        29.98394380525185,
+        658.5879775601746,
+        439.0586517067831
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "duoOpen",
+      "companion": "atlas",
+      "viewport": [
+        951,
+        669
+      ],
+      "stage": [
+        471.5,
+        515
+      ],
+      "shelfY": 334.75,
+      "minimumY": 0,
+      "referenceFrame": [
+        15.570124562839453,
+        51.28603162268996,
+        457.1999489956613,
+        304.79996599710756
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "duoOpen",
+      "companion": "wisp",
+      "viewport": [
+        951,
+        669
+      ],
+      "stage": [
+        471.5,
+        515
+      ],
+      "shelfY": 334.75,
+      "minimumY": 0,
+      "referenceFrame": [
+        61.49742135842919,
+        4.1784891770738,
+        344.3453237738815,
+        459.1270983651753
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "duoOpen",
+      "companion": "nova",
+      "viewport": [
+        951,
+        669
+      ],
+      "stage": [
+        471.5,
+        515
+      ],
+      "shelfY": 334.75,
+      "minimumY": 0,
+      "referenceFrame": [
+        -131.90074097197999,
+        13.0434687961789,
+        661.0408175420982,
+        440.6938783613988
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "duoOpen",
+      "companion": "orbit",
+      "viewport": [
+        951,
+        669
+      ],
+      "stage": [
+        471.5,
+        515
+      ],
+      "shelfY": 334.75,
+      "minimumY": 0,
+      "referenceFrame": [
+        -85.74178785534252,
+        11.057850874367603,
+        638.8660838005902,
+        425.9107225337268
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "duoOpen",
+      "companion": "comet",
+      "viewport": [
+        951,
+        669
+      ],
+      "stage": [
+        471.5,
+        515
+      ],
+      "shelfY": 334.75,
+      "minimumY": 0,
+      "referenceFrame": [
+        -92.72065924372237,
+        10.061197460719086,
+        658.152978120164,
+        438.76865208010935
+      ],
+      "kind": "shelf",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "duoHinge",
+      "companion": "mochi",
+      "viewport": [
+        669,
+        951
+      ],
+      "stage": [
+        669.0,
+        660
+      ],
+      "shelfY": 435.6193548387096,
+      "minimumY": 0,
+      "referenceFrame": [
+        97.66442307692307,
+        191.93130769230766,
+        473.67115384615386,
+        315.78076923076924
+      ],
+      "kind": "hinge",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "duoHinge",
+      "companion": "pip",
+      "viewport": [
+        669,
+        951
+      ],
+      "stage": [
+        669.0,
+        660
+      ],
+      "shelfY": 446.3877551020408,
+      "minimumY": 0,
+      "referenceFrame": [
+        -36.73211538461541,
+        121.61826923076922,
+        722.3942307692308,
+        481.59615384615387
+      ],
+      "kind": "hinge",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "duoHinge",
+      "companion": "pebble",
+      "viewport": [
+        669,
+        951
+      ],
+      "stage": [
+        669.0,
+        660
+      ],
+      "shelfY": 430.90304182509504,
+      "minimumY": 0,
+      "referenceFrame": [
+        73.98086538461536,
+        166.52009999999999,
+        521.0382692307693,
+        347.3588461538462
+      ],
+      "kind": "hinge",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "duoHinge",
+      "companion": "jun",
+      "viewport": [
+        669,
+        951
+      ],
+      "stage": [
+        669.0,
+        660
+      ],
+      "shelfY": 436.6836734693877,
+      "minimumY": 0,
+      "referenceFrame": [
+        -44.985576923076906,
+        94.55134615384615,
+        758.9711538461538,
+        505.9807692307692
+      ],
+      "kind": "hinge",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "duoHinge",
+      "companion": "bean",
+      "viewport": [
+        669,
+        951
+      ],
+      "stage": [
+        669.0,
+        660
+      ],
+      "shelfY": 436.6836734693877,
+      "minimumY": 0,
+      "referenceFrame": [
+        76.80697058823534,
+        135.89790000000005,
+        515.3860588235293,
+        343.5907058823529
+      ],
+      "kind": "hinge",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "duoHinge",
+      "companion": "maple",
+      "viewport": [
+        669,
+        951
+      ],
+      "stage": [
+        669.0,
+        660
+      ],
+      "shelfY": 436.6836734693877,
+      "minimumY": 0,
+      "referenceFrame": [
+        46.91394230769231,
+        141.82092307692307,
+        575.1721153846154,
+        383.44807692307694
+      ],
+      "kind": "hinge",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "duoHinge",
+      "companion": "luna",
+      "viewport": [
+        669,
+        951
+      ],
+      "stage": [
+        669.0,
+        660
+      ],
+      "shelfY": 428.3129770992366,
+      "minimumY": 0,
+      "referenceFrame": [
+        -3.836538461538453,
+        107.41423076923076,
+        676.6730769230769,
+        451.11538461538464
+      ],
+      "kind": "hinge",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "duoHinge",
+      "companion": "atlas",
+      "viewport": [
+        669,
+        951
+      ],
+      "stage": [
+        669.0,
+        660
+      ],
+      "shelfY": 428.3129770992366,
+      "minimumY": 0,
+      "referenceFrame": [
+        84.86250000000001,
+        120.777,
+        499.275,
+        332.84999999999997
+      ],
+      "kind": "hinge",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "duoHinge",
+      "companion": "wisp",
+      "viewport": [
+        669,
+        951
+      ],
+      "stage": [
+        669.0,
+        660
+      ],
+      "shelfY": 428.3129770992366,
+      "minimumY": 0,
+      "referenceFrame": [
+        163.0456730769231,
+        103.51269230769232,
+        342.9086538461538,
+        457.21153846153845
+      ],
+      "kind": "hinge",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "duoHinge",
+      "companion": "nova",
+      "viewport": [
+        669,
+        951
+      ],
+      "stage": [
+        669.0,
+        660
+      ],
+      "shelfY": 436.2385321100917,
+      "minimumY": 0,
+      "referenceFrame": [
+        -31.26923076923083,
+        88.57711538461538,
+        731.5384615384617,
+        487.69230769230774
+      ],
+      "kind": "hinge",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "duoHinge",
+      "companion": "orbit",
+      "viewport": [
+        669,
+        951
+      ],
+      "stage": [
+        669.0,
+        660
+      ],
+      "shelfY": 436.2385321100917,
+      "minimumY": 0,
+      "referenceFrame": [
+        19.024038461538453,
+        127.28769230769231,
+        630.9519230769231,
+        420.63461538461536
+      ],
+      "kind": "hinge",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    },
+    {
+      "scenario": "duoHinge",
+      "companion": "comet",
+      "viewport": [
+        669,
+        951
+      ],
+      "stage": [
+        669.0,
+        660
+      ],
+      "shelfY": 436.2385321100917,
+      "minimumY": 0,
+      "referenceFrame": [
+        -31.26923076923083,
+        71.81269230769227,
+        731.5384615384617,
+        487.69230769230774
+      ],
+      "kind": "hinge",
+      "confirmed": true,
+      "provenance": "manual-approval"
+    }
+  ]
+}
